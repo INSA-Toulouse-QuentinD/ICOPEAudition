@@ -32,13 +32,10 @@ MonoBehaviour:
     'Facile'. Analysez ses sympt\xF4mes et ses r\xE9ponses en parcourant l'algorithme."
   steps:
   - type: 0
-    contextDescription: 
-    questionnaireData: {fileID: 0}
+    dialoguePatient: 
     predefinedAnwser: []
     spriteEarExams: {fileID: 0}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: "Je convoque la patiente pour r\xE9aliser l\u2019otoscopie et
           l\u2019audiom\xE9trie."
@@ -64,9 +61,7 @@ MonoBehaviour:
           qui pr\xE9sentent un tableau qui \xE9voque une surdit\xE9 plus complexe
           \xE0 prendre en charge qu\u2019une presbyacousie."
         sprites: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Que faites-vous ?
       answerData:
       - answerText: "Je la convoque pour r\xE9aliser l\u2019\xE9valuation (step 2?)"
         isCorrect: 0
@@ -96,5 +91,3 @@ MonoBehaviour:
           !! Tu as bien identifi\xE9 le cas pr\xE9sent. \r\n\r\nPrise en charge r\xE9ussie.
           Tu as d\xE9bloqu\xE9 un nouveau niveau.\r\n"
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 1

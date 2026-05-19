@@ -35,17 +35,12 @@ MonoBehaviour:
     'Tutoriel'."
   steps:
   - type: 0
-    contextDescription: 
-    questionnaireData: {fileID: 0}
+    dialoguePatient: 
     predefinedAnwser: []
     spriteEarExams: {fileID: 0}
-    hasDiagnosticPhase: 0
     diagnosticPhase:
-      questionText: 
       answerData: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
         isCorrect: 0
@@ -79,37 +74,18 @@ MonoBehaviour:
           refaire. \LDonc vous devez simplement poursuivre le parcours ICOPE Audition
           avec le test Go-No-Go."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 2
-    contextDescription: 
-    questionnaireData: {fileID: 11400000, guid: a0759d5e048f0664aa15389120c01ca3, type: 2}
+    dialoguePatient: 
     predefinedAnwser:
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
     spriteEarExams: {fileID: 0}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: "Ses r\xE9ponse montrent des signes d'un trouble neurologique."
         isCorrect: 0
@@ -145,9 +121,7 @@ MonoBehaviour:
           brusques r\xE9centes, indiquant une corticoth\xE9rapie\n- Les otorrh\xE9es
           avec otalgies, \xE9vocatrices d\u2019une otite externe."
         sprites: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: Je la laisse repartir chez elle.
         isCorrect: 0
@@ -178,16 +152,11 @@ MonoBehaviour:
           du pavillon et vid\xE9o-otoscopie)\n\L* Rappel des drapeaux rouges / questionnaire
           go no go"
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 4
-    contextDescription: 
-    questionnaireData: {fileID: 0}
+    dialoguePatient: 
     predefinedAnwser: []
     spriteEarExams: {fileID: 21300000, guid: 074d65b9d59894e45a6ce7148c6c22f1, type: 3}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
         isCorrect: 0
@@ -224,9 +193,7 @@ MonoBehaviour:
         sprites:
         - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
         - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: "Je commence par lui faire passer le questionnaire HHIE-S pour
           savoir si je dois ou non retirer le Bouchon De C\xE9rumen."
@@ -248,16 +215,11 @@ MonoBehaviour:
         correctionText: "Oui, selon la formation et la forme du Bouchon De C\xE9rumen,
           on peut aussi proc\xE9der \xE0 une aspiration."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 4
-    contextDescription: 
-    questionnaireData: {fileID: 0}
+    dialoguePatient: 
     predefinedAnwser: []
     spriteEarExams: {fileID: 7734625416832987213, guid: c4249b8004b2a0746ae11898619a721d, type: 3}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: "Cette otoscopie peut \xEAtre consid\xE9r\xE9e comme normale,
           en tous cas, cet aspect n\u2019est g\xE9n\xE9ralement pas associ\xE9 \xE0
@@ -300,9 +262,7 @@ MonoBehaviour:
         correctionText: "Non, ce ne sont pas des l\xE9sions li\xE9es au vieillissement
           de la membrane."
         sprites: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: Je l'adresse chez l'ORL.
         isCorrect: 0
@@ -342,16 +302,11 @@ MonoBehaviour:
           pour savoir si l\u2019audition est redevenue normale ou s\u2019il persiste
           un trouble \xE0 explorer."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 1
-    contextDescription: "J'ai entendu 2 mots \xE0 gauche et 2 mots \xE0 droite."
-    questionnaireData: {fileID: 0}
+    dialoguePatient: "J'ai entendu 2 mots \xE0 gauche et 2 mots \xE0 droite."
     predefinedAnwser: []
     spriteEarExams: {fileID: 0}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: "Il y a une anomalie car elle n\u2019a pas su restituer les 2
           mots du c\xF4t\xE9 droit."
@@ -397,9 +352,7 @@ MonoBehaviour:
           oreilles.\n\LLe test aurait \xE9t\xE9 normal si la patiente avait r\xE9p\xE9t\xE9
           les 3 mots minimum de chaque c\xF4t\xE9."
         sprites: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: "Je peux proc\xE9der \xE0 l'audiom\xE9trie."
         isCorrect: 0
@@ -430,16 +383,11 @@ MonoBehaviour:
           si n\xE9cessaire.\n\LLe test aurait \xE9t\xE9 normal si la patiente avait
           r\xE9p\xE9t\xE9 les 3 mots minimum de chaque c\xF4t\xE9."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 6
-    contextDescription: 
-    questionnaireData: {fileID: 0}
+    dialoguePatient: 
     predefinedAnwser: []
     spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es."
         isCorrect: 1
@@ -473,9 +421,7 @@ MonoBehaviour:
           d\xE9ficience auditive r\xE9pondant aux crit\xE8res d\u2019appareillage
           auditif."
         sprites: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: "Je l\u2019oriente vers un ORL."
         isCorrect: 0
@@ -504,16 +450,11 @@ MonoBehaviour:
           s\xE9v\xE9rit\xE9 de la surdit\xE9,\_et l\u2019indication ou non d\u2019un
           appareillage audioproth\xE9tique."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 7
-    contextDescription: 
-    questionnaireData: {fileID: 0}
+    dialoguePatient: 
     predefinedAnwser: []
     spriteEarExams: {fileID: -3945972827715425317, guid: bf736be000460ec48b32643e9fc2c3e4, type: 3}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: "Le score montre une surdit\xE9 de transmission bilat\xE9rale."
         isCorrect: 0
@@ -543,9 +484,7 @@ MonoBehaviour:
           neurosensorielle bilat\xE9rale et sym\xE9trique, qui pr\xE9domine sur les
           aigus et qui \xE9voque donc une presbyacousie."
         sprites: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: "J\u2019adresse le patient vers l\u2019ORL."
         isCorrect: 0
@@ -573,5 +512,3 @@ MonoBehaviour:
           bien identifi\xE9 le cas pr\xE9sent.\_\n\LPrise en charge r\xE9ussie. Tu
           as d\xE9bloqu\xE9 un nouveau niveau."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 1

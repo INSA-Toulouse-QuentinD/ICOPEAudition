@@ -32,17 +32,12 @@ MonoBehaviour:
     apr\xE8s avoir \xE9t\xE9 adress\xE9e par son audioproth\xE9siste."
   steps:
   - type: 0
-    contextDescription: 
-    questionnaireData: {fileID: 0}
+    dialoguePatient: 
     predefinedAnwser: []
     spriteEarExams: {fileID: 0}
-    hasDiagnosticPhase: 0
     diagnosticPhase:
-      questionText: 
       answerData: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
         isCorrect: 0
@@ -76,17 +71,12 @@ MonoBehaviour:
           commencez par cette \xE9tape pour vous assurer qu\u2019il y a bien eu une
           anomalie \xE0 l\u2019\xE9tape 1."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 1
-    contextDescription: "Je n'ai entendu aucun mot \xE0 droite. J'ai entendu 2 mots
+    dialoguePatient: "Je n'ai entendu aucun mot \xE0 droite. J'ai entendu 2 mots
       \xE0 gauche."
-    questionnaireData: {fileID: 0}
     predefinedAnwser: []
     spriteEarExams: {fileID: 0}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: "Il y a une anomalie car elle n\u2019a pas su restituer les 2
           mots du c\xF4t\xE9 droit."
@@ -136,9 +126,7 @@ MonoBehaviour:
           normal si la patiente avait r\xE9p\xE9t\xE9 les 3 mots minimum de chaque
           c\xF4t\xE9.\r"
         sprites: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: Je la laisse repartir chez elle.
         isCorrect: 0
@@ -170,37 +158,18 @@ MonoBehaviour:
           il faut donc poursuivre l\u2019\xE9valuation auditive en commen\xE7ant
           par l\u2019interrogatoire (\xE0 l\u2019aide du questionnaire Go-No Go)."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 2
-    contextDescription: 
-    questionnaireData: {fileID: 11400000, guid: a0759d5e048f0664aa15389120c01ca3, type: 2}
+    dialoguePatient: 
     predefinedAnwser:
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
-    - question:
-        questionText: 
-      patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
+    - patientAnswer: 1
     spriteEarExams: {fileID: 0}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
           avanc\xE9."
@@ -238,9 +207,7 @@ MonoBehaviour:
           brusques r\xE9centes, indiquant une corticoth\xE9rapie.\r\nLes otorrh\xE9es
           avec otalgies, \xE9vocatrices d\u2019une otite externe.\r\n"
         sprites: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: Je la laisse repartir chez elle.
         isCorrect: 0
@@ -271,16 +238,11 @@ MonoBehaviour:
           du pavillon et vid\xE9o-otoscopie)\r\n\r\n* Rappel des drapeaux rouges
           / questionnaire go no go\r\n"
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 4
-    contextDescription: 
-    questionnaireData: {fileID: 0}
+    dialoguePatient: 
     predefinedAnwser: []
     spriteEarExams: {fileID: 21300000, guid: 3baedf2dff3bdcd4194820c202086473, type: 3}
-    hasDiagnosticPhase: 1
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData:
       - answerText: Il s'agit d'une otomycose.
         isCorrect: 0
@@ -307,9 +269,7 @@ MonoBehaviour:
         isCorrect: 0
         correctionText: ...
         sprites: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: "La patient \xE0 une otomycose, je mets en place un traitement
           par gouttes auriculaire et lui conseille de respecter une \xE9viction aquatique
@@ -334,20 +294,13 @@ MonoBehaviour:
           y a une contre indication si il y a la pr\xE9sence d\u2019un a\xE9rateur
           Transtympanique r\xE9cent, car il y a un risque de perforation."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 4
-    contextDescription: 
-    questionnaireData: {fileID: 0}
+    dialoguePatient: 
     predefinedAnwser: []
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
-    hasDiagnosticPhase: 0
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: "Son otoscopie est normale, je r\xE9p\xE8te le test de chuchotement."
         isCorrect: 1
@@ -373,20 +326,13 @@ MonoBehaviour:
           qu\u2019on parvient \xE0 retirer le bouchon de c\xE9rumen, alors on r\xE9p\xE8te
           le d\xE9pistage puis on suit l\u2019algorithme."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 0
   - type: 1
-    contextDescription: "J'ai entendu 3 mots \xE0 droite et \xE0 gauche."
-    questionnaireData: {fileID: 0}
+    dialoguePatient: "J'ai entendu 3 mots \xE0 droite et \xE0 gauche."
     predefinedAnwser: []
     spriteEarExams: {fileID: 0}
-    hasDiagnosticPhase: 0
     diagnosticPhase:
-      questionText: Quel est votre diagnostic ?
       answerData: []
-    hasActionPhase: 1
     actionPhase:
-      questionText: Ques faites-vous ?
       answerData:
       - answerText: "Le test est normal, je la rassure et lui propose un nouveau
           d\xE9pistage dans 6 mois."
@@ -419,5 +365,3 @@ MonoBehaviour:
           bouchon de c\xE9rumen qui a pu provoquer une asym\xE9trie auditive, et
           donc une g\xE8ne dans le bruit."
         sprites: []
-    IsOptional: 0
-    isTerminatingStep: 1
