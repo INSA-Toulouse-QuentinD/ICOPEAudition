@@ -318,7 +318,7 @@ MonoBehaviour:
           est la r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots (ou 3 minimum)."
         sprites: []
       - answerText: "Il y a une anomalie car elle n\u2019a pas su restituer les 3
-          mots minimum de chaque\_ c\xF4t\xE9."
+          mots minimum de chaque\_c\xF4t\xE9."
         isCorrect: 1
         correctionText: "Lors du test de chuchotement, on consid\xE8re que l\u2019audition
           est normale si le patient est capable de r\xE9p\xE9ter correctement au

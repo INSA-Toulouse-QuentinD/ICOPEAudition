@@ -125,6 +125,7 @@ public class OpenFolder : MonoBehaviour
 
         float time = 0;
         bool elementsHided = false;
+        pagesSteps[pageId].GetComponent<Image>().color = new Color(1, 1, 1, 1);
         while (time < duration)
         {
             if (!elementsHided && time >= duration/2) { elementsHided = true; pagesSteps[pageId].GetChild(0).gameObject.SetActive(false); }
@@ -133,6 +134,7 @@ public class OpenFolder : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
+        pagesSteps[pageId].GetComponent<Image>().color = new Color(0.97f, 0.97f, 0.97f, 1);
         pageId++;
         HideButtons();
     }
@@ -142,6 +144,7 @@ public class OpenFolder : MonoBehaviour
         pageId--;
         float time = 0;
         bool elementsShowed = false;
+        pagesSteps[pageId].GetComponent<Image>().color = new Color(1, 1, 1, 1);
         while (time < duration)
         {
             if (!elementsShowed && time >= duration/2) { elementsShowed = true; pagesSteps[pageId].GetChild(0).gameObject.SetActive(true); }
@@ -150,6 +153,7 @@ public class OpenFolder : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
+        pagesSteps[pageId].GetComponent<Image>().color = new Color(0.97f, 0.97f, 0.97f, 1);
         pagesSteps[pageId].SetParent(folderInside);
         HideButtons();
     }
