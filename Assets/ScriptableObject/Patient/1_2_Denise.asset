@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: 1_2_Denise
   m_EditorClassIdentifier: 
   characterSprites:
-  - {fileID: 7102689100218679052, guid: 92b06a55c6e292f449725a0c8c5901c8, type: 3}
-  - {fileID: 6823558343195017428, guid: 92b06a55c6e292f449725a0c8c5901c8, type: 3}
+  - {fileID: 7432370467228855199, guid: 1aba4c21790e76c4d8d1545a687f3cd3, type: 3}
+  - {fileID: 7014893959246603455, guid: 1aba4c21790e76c4d8d1545a687f3cd3, type: 3}
   surname: Roux
-  firstName: Desine
+  firstName: Denise
   age: 76
   familySituation: "Ancien chef cuisini\xE8re."
   occupationalActivities: Elle donne des cours de cuisine aux jeunes du quartier.

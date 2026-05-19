@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: 43e0127be3a9ace45877d227d03ee22b
+guid: ed7b6d6ccaaedb0498e82833b2dc3103
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3518700876127652132
+    second: noName2_0
+  - first:
+      213: 3082165611890211923
+    second: noName2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -69,20 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -107,7 +100,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Server
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -120,7 +113,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WindowsStoreApps
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -136,45 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GranPaFichier_1_0
+      name: noName2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 177
-        height: 600
+        x: 93
+        y: 46
+        width: 302
+        height: 941
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: df3eed5b48a25b940ba1d101ac7c20f1
-      internalID: -339668673
+      spriteID: cd63e8f22301b2fc0800000000000000
+      internalID: -3518700876127652132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GranPaFichier_1_1
+      name: noName2_1
       rect:
         serializedVersion: 2
-        x: 293
-        y: 7
-        width: 176
-        height: 600
+        x: 502
+        y: 47
+        width: 454
+        height: 771
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 36c140db099949c4288972b627b1f715
-      internalID: -463965721
+      spriteID: 35cf3a34b4d06ca20800000000000000
+      internalID: 3082165611890211923
       vertices: []
       indices: 
       edges: []
@@ -183,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -193,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GranPaFichier_1_0: -339668673
-      GranPaFichier_1_1: -463965721
+      noName2_0: -3518700876127652132
+      noName2_1: 3082165611890211923
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

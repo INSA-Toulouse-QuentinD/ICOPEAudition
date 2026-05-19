@@ -1,7 +1,4 @@
-using Assets.Scripts.Managers;
 using DG.Tweening;
-using System.Net;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,9 +6,6 @@ namespace Assets.Scripts
 {
     public class PatientAnimation : MonoBehaviour
     {
-        // Sprite List
-        [Header("Sprite characters list")]
-        [SerializeField] private Sprite[] characterSprites;
         // Animation size variable
         [SerializeField] private float scaleFactor = 1.15f;
         [SerializeField] private float animationDuration = 2f;
@@ -81,36 +75,12 @@ namespace Assets.Scripts
         }
 
         /// <summary>
-        /// Set new sprite to stimule life.
-        /// </summary>
-        private void SetNewSprite()
-        {
-            if (characterSprites == null)
-            {
-                Debug.LogError("no sprite set in the sprites library.");
-                return;
-            }
-
-            int randIndex = Random.Range(0, characterSprites.Length - 1);
-            Sprite newSprite = characterSprites[randIndex];
-            imageCharacter.GetComponent<Image>().sprite = newSprite;
-            // Set the gameObject rectTransfor with the new sprite size
-            imageCharacter.sizeDelta = new Vector2(newSprite.rect.width, newSprite.rect.height);
-        }
-
-        /// <summary>
         /// Sets the sprite image for the character and adjusts the image size to match the sprite's dimensions.
         /// Logs an error if the sprite library is not initialized.
         /// </summary>
         /// <param name="characterSprite">The sprite to display for the character.</param>
         private void SetSprite(Sprite characterSprite)
         {
-            if (characterSprites == null)
-            {
-                Debug.LogError("no sprite set in the sprites library.");
-                return;
-            }
-
             imageCharacter.GetComponent<Image>().sprite = characterSprite;
             imageCharacter.sizeDelta = new Vector2(characterSprite.rect.width, characterSprite.rect.height);
         }

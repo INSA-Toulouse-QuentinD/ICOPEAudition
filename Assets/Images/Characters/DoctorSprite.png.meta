@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 12f84633320e5c84b898d1fe5ebbae21
+guid: ce2c87ae6ddc42b44ac7a287b8838536
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 50502624185141281
-    second: elder_person_M_0
+      213: 7980856816745209919
+    second: gDoctorSprite_0
   - first:
-      213: -5748631628606466991
-    second: elder_person_M_1
+      213: -8603473853748788035
+    second: gDoctorSprite_1
   - first:
-      213: 8865871069334193953
-    second: elder_person_M_2
-  - first:
-      213: 3127567346927292012
-    second: elder_person_M_3
+      213: 4467637358421277366
+    second: gDoctorSprite_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 95.63
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,17 +128,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: elder_person_M_0
+      name: gDoctorSprite_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 151
-        height: 508
+        x: 26
+        y: 258
+        width: 378
+        height: 1153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 128c7ce7edb63b000800000000000000
-      internalID: 50502624185141281
+      spriteID: f306a5d8df2b1ce60800000000000000
+      internalID: 7980856816745209919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: elder_person_M_1
+      name: gDoctorSprite_1
       rect:
         serializedVersion: 2
-        x: 178
-        y: 0
-        width: 152
-        height: 510
+        x: 434
+        y: 259
+        width: 378
+        height: 1150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1541658cdf1c830b0800000000000000
-      internalID: -5748631628606466991
+      spriteID: db441f8fc125a9880800000000000000
+      internalID: -8603473853748788035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: elder_person_M_2
+      name: gDoctorSprite_2
       rect:
         serializedVersion: 2
-        x: 365
-        y: 0
-        width: 153
-        height: 510
+        x: 869
+        y: 260
+        width: 443
+        height: 1149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,30 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 127c310a3c6e90b70800000000000000
-      internalID: 8865871069334193953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: elder_person_M_3
-      rect:
-        serializedVersion: 2
-        x: 547
-        y: 0
-        width: 150
-        height: 510
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6e46b47ee9576b20800000000000000
-      internalID: 3127567346927292012
+      spriteID: 6baf6f5c18c300e30800000000000000
+      internalID: 4467637358421277366
       vertices: []
       indices: 
       edges: []
@@ -236,10 +224,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      elder_person_M_0: 50502624185141281
-      elder_person_M_1: -5748631628606466991
-      elder_person_M_2: 8865871069334193953
-      elder_person_M_3: 3127567346927292012
+      gDoctorSprite_0: 7980856816745209919
+      gDoctorSprite_1: -8603473853748788035
+      gDoctorSprite_2: 4467637358421277366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
