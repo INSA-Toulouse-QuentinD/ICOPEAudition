@@ -143,7 +143,7 @@ namespace Assets.Scripts.Managers
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
-                case Step.Additional_questionnaire:
+                case Step.Additional_questionnaire: //DEBUG!!! Complètement inutile pour le moment, à voir avec les patientCase plus difficile !
                     // Load questionary & answer
                     List<QuestionData> questions2 = questionnaireData.questions;
                     List<PatientQuestionAnswer> answers2 = patientData.steps[_indexStep].predefinedAnwser;
@@ -254,7 +254,7 @@ namespace Assets.Scripts.Managers
         /// </summary>
         private void SetResponses()
         {
-            if (patientData.steps[_indexStep].hasDiagnosticPhase && !_isDiagnosticValid)
+            if (patientData.steps[_indexStep].diagnosticPhase.answerData.Count > 0 && !_isDiagnosticValid)
             {
                 questionText.text = "Quel est votre diagnostic ?";
                 answerState = AnswerState.DIAGNOSTIC;
@@ -265,7 +265,7 @@ namespace Assets.Scripts.Managers
                 _isDiagnosticValid = true;
             }
 
-            if (patientData.steps[_indexStep].hasActionPhase && _isDiagnosticValid)
+            if (patientData.steps[_indexStep].actionPhase.answerData.Count > 0 && _isDiagnosticValid)
             {
                 questionText.text = "Que faites-vous ?";
                 answerState = AnswerState.ACTION;
@@ -525,7 +525,7 @@ namespace Assets.Scripts.Managers
         /// <returns>True if the step is completed, false otherwise.</returns>
         private bool IsStepCompleted(AlgoStep step)
         {
-            bool diagnoticOK = !step.hasDiagnosticPhase || _isDiagnosticValid;
+            bool diagnoticOK = !(step.diagnosticPhase.answerData.Count > 0) || _isDiagnosticValid;
            
             return diagnoticOK && _isActionValid;
         }

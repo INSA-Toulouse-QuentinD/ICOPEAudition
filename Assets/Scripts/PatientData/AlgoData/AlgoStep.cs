@@ -86,11 +86,9 @@ namespace Assets.Scripts.PatientData.AlgoData
 
 
         [Header("Phase 1: Diagnotic")]
-        public bool hasDiagnosticPhase; // Whether diagnostic phase exists
         public PhaseData diagnosticPhase;  // Diagnostic phase data
 
         [Header("Phase 2: Action")]
-        public bool hasActionPhase; // Whether action phase exists
         public PhaseData actionPhase;   // Action phase data
     }
 }
