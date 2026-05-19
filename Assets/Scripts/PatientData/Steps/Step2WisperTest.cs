@@ -135,7 +135,7 @@ namespace Assets.Scripts.PatientData.Steps
         public void PlayFirstText(AlgoStep step)
         {
             // Load in memory patient text form algoStep
-            patientText = step.contextDescription;
+            patientText = step.dialoguePatient;
 
             // Clear texts & docotor sprite
             ClearTexts();

@@ -86,7 +86,7 @@ public class LevelSelector : MonoBehaviour
         {
             
             // assign current description and patient buttons
-            ShowPatientButtons(nbPatient);
+            ShowPatientButtons(nbPatient, index);
             ActivePatientUiElements(true);
             ChangeDescription(0);
             ButtonsManager.SetButtonFocused(patientButtonsContainer.transform.GetChild(0).GetComponent<ButtonPressDetector>());
@@ -103,9 +103,10 @@ public class LevelSelector : MonoBehaviour
     /// Instantiates and configures patient selection buttons for the selected level.
     /// </summary>
     /// <param name="nbPatient">Number of patient cases to display for the selected level.</param>
-    private void ShowPatientButtons(int nbPatient)
+    /// <param name="level">Index of the selected level.</param>
+    private void ShowPatientButtons(int nbPatient, int level)
     {
-        int currentPatient = GameManager.Instance.GameStateManager.GetCurrentPatientCase();
+        int currentPatient = GameManager.Instance.GameStateManager.GetMaxPatientCase(level);
 
         // Get nb patient case
         if (patientButtonsContainer.transform.childCount < nbPatient)

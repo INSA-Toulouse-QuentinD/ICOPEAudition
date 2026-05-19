@@ -57,11 +57,14 @@ namespace Assets.Scripts.Managers
         #endregion
 
         #region Configurable Attributes
+        [Header("Debug")]
+        public bool canAccessAllLevel;
+        
         [Header("Levels")]
         [SerializeField] public LevelsData LevelsData;
 
         [Header("Tutoriel")]
-        [SerializeField] private bool _isTutorialEnable = true; // Par défault true car on suppose que le joueur y joue pour la première fois.
+        [SerializeField] private bool _isTutorialEnable = true; // Par dÃ©fault true car on suppose que le joueur y joue pour la premiÃ¨re fois.
         public readonly string _pathXmlFile = "Assets/Resources/Data/Tutorial.xml";
         private readonly string _pathXsdFile = "Assets/Resources/Data/TutorialSchema.xsd";
         [Header("Money")]
@@ -74,6 +77,8 @@ namespace Assets.Scripts.Managers
         [SerializeField] private GameObject _stepMenu;
         [SerializeField] private GameObject _isTutoriaActive;
         [SerializeField] private GameObject _scorePanel;
+        [SerializeField] private GameObject _levelButton;
+        [SerializeField] private GameObject _shopButton;
 
         [Header("Panels")]
         [SerializeField] private GameObject _pausePanel;
@@ -91,6 +96,7 @@ namespace Assets.Scripts.Managers
 
         #region Private variables
         private bool isTutorialUIEnable = false;
+        private bool tutorialAnswer = true;
         #endregion
 
         #region Internal methods
@@ -148,6 +154,9 @@ namespace Assets.Scripts.Managers
             ClearScreen();
             ClearAnimation();
             _gameMenu.SetActive(true);
+            _levelButton.SetActive(true);
+            _shopButton.SetActive(true);
+            _shopPanel.SetActive(false);
 
             var currentLevel = GameStateManager.GetCurrentLevel();
             var currentPatient = GameStateManager.GetCurrentPatientCase();
@@ -160,7 +169,13 @@ namespace Assets.Scripts.Managers
         
         private void EnableTutorial()
         {
-            if (Instance.GameData.FirstGameSession()) _isTutoriaActive.SetActive(true); 
+            if (Instance.GameData.FirstGameSession()) {
+                _isTutoriaActive.SetActive(tutorialAnswer);
+            } 
+        }
+
+        public void AnswerTutoriel(){
+            tutorialAnswer = false;
         }
 
         // SAVE BOUGHT ITEM IN PLAYERPREFS
@@ -242,6 +257,9 @@ namespace Assets.Scripts.Managers
             //TelemetryManager = GetComponent<TelemetryManager>();
             AudioManager = GetComponent<AudioManager>();
             PatientAnimation = GetComponent<PatientAnimation>();
+            
+            _mainMenu.SetActive(true);
+            _gameMenu.SetActive(false);
 
             AudioManager.LoopBgm(true);
             AudioManager.LoopSfx(true, "AMBIANT");

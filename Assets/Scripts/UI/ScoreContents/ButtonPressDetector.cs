@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Assets.Scripts.Managers;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
@@ -28,13 +29,14 @@ public class ButtonPressDetector : Graphic, IPointerDownHandler, IPointerUpHandl
 
     public UnityEvent OnPress, OnPressExit, OnHover, OnHoverExit;
 
-    private ButtonState currentButtonState = ButtonState.None;
+    public ButtonState currentButtonState = ButtonState.None;
 
     protected override void Awake()
     {
         ButtonsManager.Connectbutton(this);
         if (isFocus) ButtonsManager.SetButtonFocused(this);
         if (isDisable) AssignState(ButtonState.Disable);
+        if (GameManager.Instance.canAccessAllLevel) AssignState(ButtonState.None);
     }
 
     protected override void OnEnable()
@@ -45,8 +47,8 @@ public class ButtonPressDetector : Graphic, IPointerDownHandler, IPointerUpHandl
 
     public void AssignState(ButtonState state, bool overrideDisable = false)
     {
-        if (currentButtonState != ButtonState.Disable || overrideDisable)
-        {
+        if ((GameManager.Instance.canAccessAllLevel && currentButtonState == ButtonState.Disable) ||
+            (currentButtonState != ButtonState.Disable || overrideDisable)) {
             currentButtonState = state;
             AssignColor();
         }

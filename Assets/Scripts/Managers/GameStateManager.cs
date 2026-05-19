@@ -1,11 +1,6 @@
 using Assets.Scripts.PatientData;
 using Assets.Scripts.PatientData.AlgoData;
-using JetBrains.Annotations;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Xml.Serialization;
-using TMPro;
 using UnityEngine;
 
 namespace Assets.Scripts.Managers
@@ -24,6 +19,7 @@ namespace Assets.Scripts.Managers
         private GameState gameState;
         private LevelState currentLevel;
         private PatientCase currentPatientCase;
+        private Dictionary<LevelState, PatientCase> maxPatientCase;
         private Step currentStep;
 
         private LevelsData LevelsData;
@@ -102,6 +98,12 @@ namespace Assets.Scripts.Managers
         {
             currentPatientCase = patientCase;
             patientData = newPatient;
+            
+            if (!maxPatientCase.TryAdd(currentLevel, currentPatientCase)) {
+                if (maxPatientCase[currentLevel] < currentPatientCase) {
+                    maxPatientCase[currentLevel] = currentPatientCase;
+                }
+            }
 
             GameManager.Instance.GameData.SetPatientCaseRecorder(patientData.firstName);
             
@@ -113,6 +115,15 @@ namespace Assets.Scripts.Managers
         /// </summary>
         /// <returns>Integer representation of the current patient case.</returns>
         public int GetCurrentPatientCase() { return (int)currentPatientCase; }
+
+        /// <summary>
+        /// Returns the max patient case the player can do for a level as an integer.
+        /// </summary>
+        /// <param name="level">Index of the selected level.</param>
+        /// <returns>Integer representation of the current patient case.</returns>
+        public int GetMaxPatientCase(int level){
+            return (int)maxPatientCase.GetValueOrDefault((LevelState)level, PatientCase.PATIENT_0);
+        }
 
         /// <summary>
         /// Sets the current step of the game algorithm.
@@ -167,8 +178,8 @@ namespace Assets.Scripts.Managers
         public void NextPatientCase()
         {
             currentPatientCase++;
-            if ((int)currentPatientCase < patientCaseData.patientsCase.Count )
-            {
+            maxPatientCase[currentLevel] = currentPatientCase;
+            if ((int)currentPatientCase < patientCaseData.patientsCase.Count) {
                 SetPatientCase(currentPatientCase, patientCaseData.patientsCase[(int)currentPatientCase]);
                 ReturnToGameMenu();
             }
@@ -177,6 +188,7 @@ namespace Assets.Scripts.Managers
                 Debug.Log("Tous les cas patient sont terminer! Next Level !");
                 currentPatientCase = PatientCase.PATIENT_0; // Reset patient case
                 currentLevel++;
+                maxPatientCase[currentLevel] = PatientCase.PATIENT_0;
                 // Clear patient case records                 
                 NextLevel();
             }
@@ -208,7 +220,7 @@ namespace Assets.Scripts.Managers
         }
 
         /// <summary>
-        /// Saves the player’s progress related to the current patient case,
+        /// Saves the players progress related to the current patient case,
         /// updates the level records and main game records at the end of the level.
         /// </summary>
         private void SavePlayerData()
@@ -271,6 +283,7 @@ namespace Assets.Scripts.Managers
             // Set by default current level and current patient case (change later if player has a save)
             currentLevel = LevelState.LEVEL_0;
             currentPatientCase = PatientCase.PATIENT_0;
+            maxPatientCase = new Dictionary<LevelState, PatientCase>();
         }
     }
 }

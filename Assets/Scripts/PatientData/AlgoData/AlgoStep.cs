@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Assets.Scripts.PatientData.AlgoData
 {
@@ -16,7 +17,6 @@ namespace Assets.Scripts.PatientData.AlgoData
         Weber_test,
         HHIES_test,
         Audiometry,
-        End,
     }
 
     /// <summary>
@@ -34,12 +34,11 @@ namespace Assets.Scripts.PatientData.AlgoData
 
 
     /// <summary>
-    /// Stores a question and the patient’s yes/no response.
+    /// Stores a question and the patients yes/no response.
     /// </summary>
     [System.Serializable]
     public class PatientQuestionAnswer
     {
-        public QuestionData question;
         public YesNo patientAnswer;
     }
 
@@ -50,7 +49,6 @@ namespace Assets.Scripts.PatientData.AlgoData
     [System.Serializable]
     public class PhaseData
     {
-        public string questionText;
         public List<AnswerData> answerData;
         
 
@@ -75,13 +73,12 @@ namespace Assets.Scripts.PatientData.AlgoData
     public class AlgoStep
     {
         public Step type; // The step type enum
-
-        [Header("Contexte medicale")]
+        
+        [Header("Si type Wisper / Weber")]
         [TextArea]
-        public string contextDescription;
+        public string dialoguePatient;
         
         [Header("Si type: Questionnary")]
-        public QuestionnaireData questionnaireData; // Questionnaire data if applicable
         public List<PatientQuestionAnswer> predefinedAnwser;  // Predefined answers for patient
 
         [Header("Si type: Video Otoscopie / test HHIES / audiometrie")]
@@ -95,8 +92,5 @@ namespace Assets.Scripts.PatientData.AlgoData
         [Header("Phase 2: Action")]
         public bool hasActionPhase; // Whether action phase exists
         public PhaseData actionPhase;   // Action phase data
-
-        public bool IsOptional; // Marks if this step is optional
-        public bool isTerminatingStep; // Marks if this step is the final step in workflow
     }
 }

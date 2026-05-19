@@ -82,7 +82,7 @@ namespace Assets.Scripts.UI.ScoreContents
                     realName = "Etape: Questionnaire additionnel";
                     break;
                 case Step.Otoscopy:
-                    realName = "Etape: Vidéo otoscopie";
+                    realName = "Etape: VidÃ©o otoscopie";
                     break;
                 case Step.Weber_test:
                     realName = "Etape: Test Weber";
@@ -91,7 +91,7 @@ namespace Assets.Scripts.UI.ScoreContents
                     realName = "Etape: Test HHIE-S";
                     break;
                 case Step.Audiometry:
-                    realName = "Etape: Audiométrie";
+                    realName = "Etape: AudiomÃ©trie";
                     break;
             }
             realName = realName + index == null ? realName : realName+" "+(index + 1).ToString() ;

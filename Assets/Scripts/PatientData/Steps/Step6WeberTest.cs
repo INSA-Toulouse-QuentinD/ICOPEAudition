@@ -16,7 +16,7 @@ namespace Assets.Scripts.PatientData.Steps
         [Header("Patient images")]
         [SerializeField] private Image patient;
 
-        private readonly string doctorDialogue = "De quel côté avez-vous entendu le son ?";
+        private readonly string doctorDialogue = "De quel cÃ´tÃ© avez-vous entendu le son ?";
 
         /// <summary>
         /// Sets the dialogue text for the doctor and patient.

@@ -24,6 +24,7 @@ namespace Assets.Scripts.Managers
 
         [Header("Question gameObject")]
         [SerializeField] private GameObject questionsDisplay;
+        [SerializeField] private TextMeshProUGUI questionText;
         [SerializeField] private Button[] choiceButtons;
 
         [Header("Correction gameObject")]
@@ -45,6 +46,9 @@ namespace Assets.Scripts.Managers
 
         [Header("GameObject Image correction")]
         [SerializeField] private Image doctorExpressionsImages;
+        
+        [Header("Questionnary")]
+        [SerializeField] private QuestionnaireData questionnaireData;
         
         // Script of each step display
         private Step1PresentationPatient step1PresentationPatient;
@@ -130,7 +134,7 @@ namespace Assets.Scripts.Managers
                     break;
                 case Step.Questionnary:
                     // Load questionary & answer
-                    List<QuestionData> questions = patientData.steps[_indexStep].questionnaireData.questions;
+                    List<QuestionData> questions = questionnaireData.questions;
                     List<PatientQuestionAnswer> answers = patientData.steps[_indexStep].predefinedAnwser;
                     // Set texts
                     step4And5Questionnary.SetQuestionayText(questions, answers);
@@ -141,7 +145,7 @@ namespace Assets.Scripts.Managers
                     break;
                 case Step.Additional_questionnaire:
                     // Load questionary & answer
-                    List<QuestionData> questions2 = patientData.steps[_indexStep].questionnaireData.questions;
+                    List<QuestionData> questions2 = questionnaireData.questions;
                     List<PatientQuestionAnswer> answers2 = patientData.steps[_indexStep].predefinedAnwser;
                     step4And5Questionnary.SetQuestionayText(questions2, answers2);
                     // Display current step
@@ -160,7 +164,7 @@ namespace Assets.Scripts.Managers
                     break;
                 case Step.Weber_test:
                     // Load texts dialogue & sprite
-                    step6HhiesTest.SetTextDialogue(patientData.steps[_indexStep].contextDescription);
+                    step6HhiesTest.SetTextDialogue(patientData.steps[_indexStep].dialoguePatient);
                     step6HhiesTest.SetImage(patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
@@ -186,7 +190,7 @@ namespace Assets.Scripts.Managers
         // SET TEXT AND INTERACTION
         /// <summary>
         /// Updates the navigation buttons' interactability and text based on the current interaction state.
-        /// - In ISREADING state: disables the return button, enables the confirm/next button with text "Répondre".
+        /// - In ISREADING state: disables the return button, enables the confirm/next button with text "RÃ©pondre".
         /// - In ISANSWERING state: enables the return button, disables the confirm/next button with text "Suivant".
         /// - In ISCORRECTION state: 
         ///     - Checks if the current answer is valid (diagnostic or action).
@@ -202,7 +206,7 @@ namespace Assets.Scripts.Managers
                 // update buttons and text
                 returnButton.interactable = false;
                 confirmNextButton.interactable = true;
-                confirmeNextText.text = "Répondre";
+                confirmeNextText.text = "RÃ©pondre";
             }
             if (interactionState == InteractionState.ISANSWERING)
             {
@@ -252,6 +256,7 @@ namespace Assets.Scripts.Managers
         {
             if (patientData.steps[_indexStep].hasDiagnosticPhase && !_isDiagnosticValid)
             {
+                questionText.text = "Quel est votre diagnostic ?";
                 answerState = AnswerState.DIAGNOSTIC;
                 CreateAnwserButtons(patientData.steps[_indexStep].diagnosticPhase);
             } 
@@ -262,6 +267,7 @@ namespace Assets.Scripts.Managers
 
             if (patientData.steps[_indexStep].hasActionPhase && _isDiagnosticValid)
             {
+                questionText.text = "Que faites-vous ?";
                 answerState = AnswerState.ACTION;
                 CreateAnwserButtons(patientData.steps[_indexStep].actionPhase);
             }
@@ -365,7 +371,7 @@ namespace Assets.Scripts.Managers
 
         /// <summary>
         /// Deactivates all answer choice buttons.
-        /// Clears the current question’s answer options from the UI.
+        /// Clears the current questions answer options from the UI.
         /// </summary>
         private void ClearQuestion()
         {
@@ -391,7 +397,7 @@ namespace Assets.Scripts.Managers
 
             bool isCorrectAnswer = IsAnswerCorrect(phaseData.answerData, index);
             isCorrect = isCorrectAnswer;
-            string feedBackText = isCorrectAnswer ? "Bonne réponse !" : "Mauvaise réponse !";
+            string feedBackText = isCorrectAnswer ? "Bonne rÃ©ponse !" : "Mauvaise rÃ©ponse !";
 
             if (!isCorrectAnswer)
             {
@@ -498,16 +504,16 @@ namespace Assets.Scripts.Managers
             // Control if dignostic & action is completed
             bool isStepCompleted = IsStepCompleted(patientData.steps[_indexStep]);
 
-            if (isStepCompleted && patientData.steps[_indexStep].isTerminatingStep )
-            {
-                // Show player scores
-                GameManager.Instance.GameStateManager.SaveShowScores();
-            } else if (isStepCompleted && _indexStep < patientData.steps.Count)
+            if (isStepCompleted && _indexStep < patientData.steps.Count)
             {
                 // LOAD NEXT STEP 
                 _indexStep++;
-                print("Increased indexstep : " + _indexStep);
-                GameManager.Instance.GameStateManager.NextStep(patientData.steps[_indexStep]);
+                if (_indexStep >= patientData.steps.Count) {
+                    GameManager.Instance.GameStateManager.SaveShowScores();
+                } else {
+                    print("Increased indexstep : " + _indexStep);
+                    GameManager.Instance.GameStateManager.NextStep(patientData.steps[_indexStep]);
+                }
             }   
         }
 

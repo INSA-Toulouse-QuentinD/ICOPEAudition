@@ -49,7 +49,7 @@ namespace Assets.Scripts.Managers
                     }
                     else
                     {
-                        Debug.LogError("Erreur lors de la récupération de l'UUID : " + webRequest.error);
+                        Debug.LogError("Erreur lors de la rÃ©cupÃ©ration de l'UUID : " + webRequest.error);
                     }
                 }
             }
@@ -129,15 +129,15 @@ namespace Assets.Scripts.Managers
             {
                 float timeElapsed = Time.realtimeSinceStartup - gameTime + lastSessionTime;
                 /*
-                 * Nombre de patients traités
-                 * Nombre de patients traités réussis
-                 * Pourcentage réussite
-                 * Nombre erreurs étape 1
-                 * Nombre erreurs étape 2
-                 * Nombre erreurs étape 3
-                 * Nombre erreurs étape 4
-                 * Nombre erreurs étape 5
-                 * Temps passé sur le jeu
+                 * Nombre de patients traitÃ©s
+                 * Nombre de patients traitÃ©s rÃ©ussis
+                 * Pourcentage rÃ©ussite
+                 * Nombre erreurs Ã©tape 1
+                 * Nombre erreurs Ã©tape 2
+                 * Nombre erreurs Ã©tape 3
+                 * Nombre erreurs Ã©tape 4
+                 * Nombre erreurs Ã©tape 5
+                 * Temps passÃ© sur le jeu
                  * Questionnaire de satisfaction (Q1)
                  * Questionnaire de satisfaction (Q2)
                  * Questionnaire de satisfaction (Q3)
@@ -194,7 +194,7 @@ namespace Assets.Scripts.Managers
                     string stringValue => stringValue,
                     bool boolValue => boolValue.ToString(),
                     DateTime dateTimeValue => dateTimeValue.ToString("o"),
-                    _ => null // Gérer les autres types d'objets
+                    _ => null // GÃ©rer les autres types d'objets
                 };
 
                 if (dataString != null)
