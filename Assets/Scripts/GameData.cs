@@ -247,11 +247,16 @@ namespace Assets.Scripts
         /// <param name="patientName">The name of the patient for whom the case records are being set. Cannot be null or empty.</param>
         public void SetPatientCaseRecorder(string patientName)
         {
-            foreach(var a in _patientCaseRecords)
+            if (_patientCaseRecords == null)
             {
-                Debug.Log($"Key: {a.Key}");
+                _patientCaseRecords = new Dictionary<string, PatientCaseRecords>();
             }
-            if (!_patientCaseRecords.ContainsKey(patientName)) _patientCaseRecords[patientName] = new PatientCaseRecords();
+
+            // Hard reset du dossier de travail du patient courant.
+            _currentKey = null;
+            _stepRecords = new Dictionary<string, StepRecords>();
+
+            _patientCaseRecords[patientName] = new PatientCaseRecords(new Dictionary<string, StepRecords>());
         }
 
         /// <summary>
@@ -307,8 +312,33 @@ namespace Assets.Scripts
             patientCaseRecords.totStepFailed += patientCaseRecords.numberStepFailed;
 
             patientCaseRecords.timePassed = Time.time - _levelTimer.startTime;
-            patientCaseRecords.stepRecords = _stepRecords;
+            patientCaseRecords.stepRecords = CloneStepRecords(_stepRecords);
             _patientCaseRecords[patientName] = patientCaseRecords;
+        }
+
+        private static Dictionary<string, StepRecords> CloneStepRecords(Dictionary<string, StepRecords> source)
+        {
+            Dictionary<string, StepRecords> clonedRecords = new Dictionary<string, StepRecords>();
+
+            if (source == null)
+            {
+                return clonedRecords;
+            }
+
+            foreach (KeyValuePair<string, StepRecords> record in source)
+            {
+                List<string> diagnosticAnswer = record.Value.diagnosticAnswer != null ? new List<string>(record.Value.diagnosticAnswer) : new List<string>();
+                List<string> actionAnswer = record.Value.actionAnswer != null ? new List<string>(record.Value.actionAnswer) : new List<string>();
+
+                StepRecords copiedRecord = new StepRecords(record.Value.diagnoticsAttempt, record.Value.actionAttempt, diagnosticAnswer, actionAnswer)
+                {
+                    succeeded = record.Value.succeeded
+                };
+
+                clonedRecords[record.Key] = copiedRecord;
+            }
+
+            return clonedRecords;
         }
 
         /// <summary>
@@ -390,15 +420,24 @@ namespace Assets.Scripts
         {
             Step step = (Step)indexStep;
             
-            string key = GetUniqueKeyStep(_stepRecords, step.ToString()); 
+            string keyPrefix = step + "_";
+            string key = _stepRecords.Keys
+                .Where(k => k.StartsWith(keyPrefix))
+                .OrderBy(k => int.TryParse(k.Substring(keyPrefix.Length), out int idx) ? idx : -1)
+                .LastOrDefault();
+
+            if (string.IsNullOrEmpty(key))
+            {
+                return new Dictionary<string, string[]>();
+            }
 
             Dictionary<string, string[]> stringRecords = new Dictionary<string, string[]>();
             
-            string[] dataStep = new string[4];
+            string[] dataStep = new string[5];
             dataStep[0] = _stepRecords[key].diagnoticsAttempt.ToString();
             dataStep[1] = _stepRecords[key].actionAttempt.ToString();
-            dataStep[2] = _stepRecords[key].actionAnswer.AsEnumerable<string>().Last();
-            dataStep[3] = _stepRecords[key].diagnosticAnswer.AsEnumerable<string>().Last();
+            dataStep[2] = _stepRecords[key].actionAnswer != null && _stepRecords[key].actionAnswer.Count > 0 ? _stepRecords[key].actionAnswer.Last() : string.Empty;
+            dataStep[3] = _stepRecords[key].diagnosticAnswer != null && _stepRecords[key].diagnosticAnswer.Count > 0 ? _stepRecords[key].diagnosticAnswer.Last() : string.Empty;
             dataStep[4] = _stepRecords[key].succeeded ? "No error" : "Error";
             stringRecords.Add(_stepRecords[key].ToString(), dataStep);
 
