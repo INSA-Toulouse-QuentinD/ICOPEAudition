@@ -8,7 +8,6 @@ using Assets.Scripts.PatientData;
 namespace Assets.Scripts.Managers
 {
     [RequireComponent(typeof(GameStateManager))]
-    //[RequireComponent(typeof(TelemetryManager))]
     [RequireComponent(typeof(AudioManager))]
     [RequireComponent(typeof(PatientAnimation))]
     public class GameManager : MonoBehaviour
@@ -21,7 +20,6 @@ namespace Assets.Scripts.Managers
         public static GameManager Instance;
         public GameStateManager GameStateManager { get; private set; }
         public GameData GameData { get; set; }
-        //public TelemetryManager TelemetryManager { get; private set; }
         public AudioManager AudioManager { get; private set; }
         public PatientAnimation PatientAnimation { get; private set; }
         public StepManagerN StepManagerN { get; private set; }
@@ -253,8 +251,7 @@ namespace Assets.Scripts.Managers
             GameStateManager = GetComponent<GameStateManager>();
             GameData = GetComponent<GameData>();
             StepManagerN = GetComponent<StepManagerN>();
-
-            //TelemetryManager = GetComponent<TelemetryManager>();
+            
             AudioManager = GetComponent<AudioManager>();
             PatientAnimation = GetComponent<PatientAnimation>();
             

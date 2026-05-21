@@ -45,7 +45,7 @@ namespace Assets.Scripts.UI.TutorialContents
             var pathToXml = Resources.Load<TextAsset>($"Data/Tutorial");
             if ( pathToXml != null )
             {
-                TutorialEntry tutoEntry = XmlManager.LoadTutoriaDataByID(pathToXml, nameStep, idSteps);
+                TutorialEntry tutoEntry = XmlManager.LoadTutorialDataByID(pathToXml, nameStep, idSteps);
                 if (tutoEntry != null)
                 {
                     _intituleText.text = tutoEntry.Intitule;
