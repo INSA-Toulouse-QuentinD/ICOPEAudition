@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f051c218c98bb484ba7775d21b9ad792
+guid: 9fa2f4e419dd64246badffa6beea228f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8219933437575208986
-    second: bouchon_cerumen_2 1_0
+      213: 7913261295642011928
+    second: cholesteatomes_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WindowsStoreApps
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bouchon_cerumen_2 1_0
+      name: cholesteatomes_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 195
+        height: 156
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ef59ffe61eeced80800000000000000
-      internalID: -8219933437575208986
+      spriteID: 819e69dd83d81dd60800000000000000
+      internalID: 7913261295642011928
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bouchon_cerumen_2 1_0: -8219933437575208986
+      cholesteatomes_0: 7913261295642011928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

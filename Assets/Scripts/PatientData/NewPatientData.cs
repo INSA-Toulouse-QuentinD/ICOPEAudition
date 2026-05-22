@@ -26,7 +26,8 @@ namespace Assets.Scripts.PatientData
         [TextArea]
         public string context;
 
-        public List<NamedValue> autonomies;
+        public string ADL = "6";
+        public string IADL = "8";
 
         [Header("Medical History")]
         [TextArea]
@@ -36,16 +37,5 @@ namespace Assets.Scripts.PatientData
 
         [Header("Algoritm steps")]
         public List<AlgoStep> steps;
-
-    }
-
-    /// <summary>
-    /// Simple name-value pair structure.
-    /// </summary>
-    [System.Serializable]
-    public class NamedValue
-    {
-        public string name;
-        public string value;
     }
 }

@@ -1,19 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.PatientData.AlgoData
-{
+namespace Assets.Scripts.PatientData.AlgoData{
     /// <summary>
     /// Simple enum to represent a Yes or No response.
     /// </summary>
-    public enum YesNo {Yes, no }
+    public enum YesNo{
+        No,
+        Yes,
+    }
 
     /// <summary>
     /// ScriptableObject holding a list of questions for a questionnaire.
     /// </summary>
     [CreateAssetMenu(fileName = "QuestionnaireData", menuName = "Medical/QuestionnaireData")]
-    public class QuestionnaireData : ScriptableObject
-    {
+    public class QuestionnaireData : ScriptableObject{
         public List<QuestionData> questions;
     }
 
@@ -21,9 +22,7 @@ namespace Assets.Scripts.PatientData.AlgoData
     /// Serializable class representing a single question, with the question text.
     /// </summary>
     [System.Serializable]
-    public class QuestionData
-    {
-        [TextArea]
-        public string questionText;
+    public class QuestionData{
+        [TextArea] public string questionText;
     }
 }

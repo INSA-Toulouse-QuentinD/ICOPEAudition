@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c4249b8004b2a0746ae11898619a721d
+guid: 6751ff46d80eb624ca7a0619b16be793
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7734625416832987213
-    second: pb_oreillle_0
+      213: -4662591224280970991
+    second: Perforation_tympan_2 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -124,7 +124,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pb_oreillle_0
+      name: Perforation_tympan_2 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d40b90936d8e65b60800000000000000
-      internalID: 7734625416832987213
+      spriteID: 11901e72cf52b4fb0800000000000000
+      internalID: -4662591224280970991
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pb_oreillle_0: 7734625416832987213
+      Perforation_tympan_2 1_0: -4662591224280970991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

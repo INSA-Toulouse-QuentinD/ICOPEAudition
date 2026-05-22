@@ -10,31 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0049b67a3b555774f9c393f9988504b7, type: 3}
-  m_Name: 0_0_Michel
+  m_Name: 1_4_L
   m_EditorClassIdentifier: 
   characterSprites:
   - {fileID: -1683400333343287881, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
   - {fileID: 5001668446368383778, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
-  surname: Dupont
-  firstName: Michel
-  age: 68
-  familySituation: "Mari\xE9 avec 3 enfants et retrait\xE9 de la SNCF."
-  occupationalActivities: Il adore jardiner et raconter ses voyages en trains.
-  context: "\xC0 la suite de la lecture d\u2019un article dans le journal, il a r\xE9alis\xE9
-    un auto-d\xE9pistage ICOPE. La synth\xE8se de l\u2019\xE9valuation signale qu\u2019il
-    y a peut-\xEAtre un d\xE9clin de l\u2019audition. Il a constat\xE9 aussi qu\u2019il
-    avait une g\xEAne auditive r\xE9cente dans le bruit. L\u2019interpr\xE9tation
-    de l\u2019alerte r\xE9alis\xE9e par un professionnel de sant\xE9 ICOPE, confirme
-    cette suspicion de d\xE9clin et vous l\u2019adresse pour une \xE9valuation auditive.
-    Vous le rencontrez pour la premi\xE8re fois."
-  autonomies:
-  - name: ADL
-    value: 6/6
-  - name: IALD
-    value: 8/8
-  medicalHistory: "Dans ses ant\xE9c\xE9dents on retrouve une Hypertension art\xE9rielle
-    trait\xE9e par Ramipril 5mg.\r"
-  descriptionLevel: Ce tutoriel vous guide dans la prise en main du jeu et de l'algorithme.
+  surname: L
+  firstName: Doe
+  age: 84
+  familySituation: 
+  occupationalActivities: 
+  context: "Elle a entendu parler du programme ICOPE par le biais d\u2019une amie.
+    Elle se plaint d\u2019une baisse auditive \xE0 gauche depuis quelques semaines,
+    qui l\u2019inqui\xE8te un petit peu car elle n\u2019arrive pas \xE0 prendre RDV
+    chez un ORL."
+  ADL: 6
+  IADL: 8
+  medicalHistory: "Aucun ant\xE9c\xE9dent ORL connu."
+  descriptionLevel: 
   steps:
   - type: 0
     dialoguePatient: "\r"
@@ -66,21 +59,19 @@ MonoBehaviour:
         sprites: []
       - answerText: "Je ne peux rien faire, je renvoie le patient vers l\u2019ORL."
         isCorrect: 0
-        correctionText: "Le patient est un bon candidat pour l\u2019\xE9valuation
-          ICOPE : il a plus de 60 ans, son autonomie est pr\xE9serv\xE9e, le d\xE9pistage
+        correctionText: "La patiente est un bon candidat pour l\u2019\xE9valuation
+          ICOPE : elle a plus de 60 ans, son autonomie est pr\xE9serv\xE9e, le d\xE9pistage
           semble \xEAtre anormal.\r\nA ce stade, aucun drapeau rouge identifi\xE9,
           je poursuis son \xE9valuation."
         sprites: []
       - answerText: "Je r\xE9alise le test de chuchotement."
         isCorrect: 1
-        correctionText: "Le patient ayant proc\xE9d\xE9 \xE0 un auto-d\xE9pistage
-          ICOPE, le test de chuchotement n\u2019a pas \xE9t\xE9 r\xE9alis\xE9. Vous
-          commencez par cette \xE9tape pour vous assurer qu\u2019il y a bien eu une
-          anomalie \xE0 l\u2019\xE9tape 1."
+        correctionText: "La patiente n'a pas encore \xE9tait soumis au test de chuchotement.
+          Vous commencez par cette \xE9tape pour vous assurer qu\u2019il y a bien
+          une anomalie \xE0 l\u2019\xE9tape 1."
         sprites: []
   - type: 1
-    dialoguePatient: "Je n'ai entendu aucun mot \xE0 droite. J'ai entendu 2 mots
-      \xE0 gauche.\r"
+    dialoguePatient: "J'ai entendu 2 mots \xE0 gauche et 3 \xE0 droite.\r"
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
@@ -133,38 +124,33 @@ MonoBehaviour:
         sprites: []
     actionPhase:
       answerData:
-      - answerText: Je le laisse repartir chez lui.
-        isCorrect: 0
-        correctionText: "Le test de chuchotement est anormal, on peut donc commencer
-          le questionnaire Go-No-Go afin de rep\xE9rer des signaux alertant sur une
-          probable surdit\xE9 complexe, diff\xE9rente d'une simple prebyacousie dans
-          sa pr\xE9sentation."
-        sprites: []
-      - answerText: "Je r\xE9alise le test de Weber."
-        isCorrect: 0
-        correctionText: "Avant de d\xE9marer l'\xE9valuation audition, on doit interroger
-          le participant afin de rep\xE9rer les signaux alertant sur des \xE9ventuels
-          dignostics diff\xE9rentiels (questionnaire Go-No-Go)."
-        sprites: []
-      - answerText: Je fais passer le questionnaire Go-No-Go.
+      - answerText: "Je continue le parcours audition et lui fais passer une vid\xE9o
+          otoscopie."
         isCorrect: 1
-        correctionText: "Le test de chuchotement \xE9tait anormal, nous poursuivons
-          le d\xE9roul\xE9 de l\u2019\xE9tape 2 d\u2019ICOPE Audition, avec le questionnaire
-          Go-No-Go."
+        correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
+          le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas
+          complexe n\xE9cessitant une prise en charge par l\u2019ORL."
         sprites: []
-      - answerText: "Je lui propose l\u2019application H\xD6RA pour se retester dans
-          6 mois."
+      - answerText: Je lui fais passer le test HHIES.
         isCorrect: 0
-        correctionText: "Si le test de chuchotement avait \xE9t\xE9 normal, on aurait
-          pu conclure a un faux positif du d\xE9pistage. On aurait alors rassur\xE9
-          le participant, en lui rappelant les consignes de pr\xE9vention et de bonne
-          hygi\xE8ne auriculaire. Un nouveau d\xE9pistage aurait alors \xE9t\xE9
-          propos\xE9, par exemple avec H\xF6ra.\r\n\r\nIci : le test est anormal,
-          il faut donc poursuivre l\u2019\xE9valuation auditive en commen\xE7ant
-          par l\u2019interrogatoire (\xE0 l\u2019aide du questionnaire Go-No-Go)."
+        correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
+          le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas
+          complexe n\xE9cessitant une prise en charge par l\u2019ORL."
+        sprites: []
+      - answerText: "Je passe \xE0 l\u2019examen audiom\xE9trique."
+        isCorrect: 0
+        correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
+          le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas
+          complexe n\xE9cessitant une prise en charge par l\u2019ORL."
+        sprites: []
+      - answerText: Je lui fais passer le test HHIES.
+        isCorrect: 0
+        correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
+          le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas
+          complexe n\xE9cessitant une prise en charge par l\u2019ORL."
         sprites: []
   - type: 2
-    dialoguePatient: 
+    dialoguePatient: "\r"
     predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
@@ -439,6 +425,68 @@ MonoBehaviour:
           sur les fr\xE9quences aigu\xEBs.\r\nIl va \xE9galement renseigner sur la
           s\xE9v\xE9rit\xE9 de la surdit\xE9, et l\u2019indication ou non d\u2019un
           appareillage audioproth\xE9tique."
+        sprites: []
+  - type: 7
+    dialoguePatient: 
+    predefinedAnwser: 
+    spriteEarExams: {fileID: -5245042425183677352, guid: 5b62bf5af497b444fbc1267b2524724b, type: 3}
+    diagnosticPhase:
+      answerData:
+      - answerText: "Le score montre une surdit\xE9 de transmission."
+        isCorrect: 0
+        correctionText: "Ce n\u2019est pas une surdit\xE9 de transmission car l\u2019audiogramme
+          montre une atteinte au niveau de l\u2019oreille interne (ou plus pr\xE9cis\xE9ment,
+          une atteinte cochl\xE9aire), ce qui caract\xE9rise une surdit\xE9 de perception."
+        sprites: []
+      - answerText: Le score montre une audition normale.
+        isCorrect: 0
+        correctionText: "Ce n\u2019est pas une audition normale, car les seuils d\u2019audition
+          mesur\xE9s sont sup\xE9rieurs \xE0 20 dB HL sur plusieurs fr\xE9quences
+          pour les deux oreilles. \r\n\r\nOn consid\xE8re qu\u2019une audition est
+          normale lorsque les seuils sont compris entre -10 et 20 dB HL sur toutes
+          les fr\xE9quences test\xE9es (500 Hz \xE0 6000 Hz)."
+        sprites: []
+      - answerText: "Le score montre une surdit\xE9 de perception."
+        isCorrect: 1
+        correctionText: "Oui, oreille droite et oreille gauche en faveur d\u2019une
+          surdit\xE9 de perception bilat\xE9rale mod\xE9r\xE9e \xE9voquant une presbyacousie.
+          \r\nIl s'agit d'une surdit\xE9 de perception car les seuils auditifs sont
+          \xE9lev\xE9s en conduction a\xE9rienne sans qu\u2019un \xE9cart avec la
+          conduction osseuse ne soit visible, et la courbe pr\xE9sente une pente
+          descendante dans les aigus, typique d'une atteinte cochl\xE9aire."
+        sprites: []
+      - answerText: "Le score montre une surdit\xE9 de persuasion."
+        isCorrect: 0
+        correctionText: "Le terme \"surdit\xE9 de persuasion\" n\u2019existe pas
+          en audiologie m\xE9dicale. Il s\u2019agit l\xE0 d\u2019une surdit\xE9 de
+          perception."
+        sprites: []
+    actionPhase:
+      answerData:
+      - answerText: "Je recommande un traitement antibiotique pour am\xE9liorer l\u2019audition
+          de Monsieur Dupont."
+        isCorrect: 0
+        correctionText: "Les antibiotiques n\u2019ont aucun effet sur une surdit\xE9
+          de perception comme la presbyacousie."
+        sprites: []
+      - answerText: "Je propose une chirurgie de l\u2019oreille moyenne pour corriger
+          cette perte auditive."
+        isCorrect: 0
+        correctionText: "La chirurgie est indiqu\xE9e dans certaines surdit\xE9s
+          de transmission, mais pas dans la presbyacousie, qui est une atteinte de
+          l\u2019oreille interne."
+        sprites: []
+      - answerText: "Je rassure Monsieur D. que son audition est dans la norme et
+          qu\u2019aucune prise en charge n\u2019est n\xE9cessaire."
+        isCorrect: 0
+        correctionText: "L\u2019audiogramme montre une surdit\xE9 bilat\xE9rale av\xE9r\xE9e,
+          donc une prise en charge est indispensable, notamment par appareillage."
+        sprites: []
+      - answerText: "En accord avec votre m\xE9decin r\xE9f\xE9rent, une prescription
+          de proth\xE8se auditive est d\xE9livr\xE9e \xE0 Mr Dupont."
+        isCorrect: 0
+        correctionText: "Bravo !! Tu as bien identifi\xE9 le cas pr\xE9sent. \r\n\r\nPrise
+          en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
         sprites: []
   - type: 7
     dialoguePatient: 

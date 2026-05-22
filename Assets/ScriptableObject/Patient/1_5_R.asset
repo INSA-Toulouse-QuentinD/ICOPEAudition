@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0049b67a3b555774f9c393f9988504b7, type: 3}
-  m_Name: 0_0_Michel
+  m_Name: 1_5_R
   m_EditorClassIdentifier: 
   characterSprites:
   - {fileID: -1683400333343287881, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
@@ -27,11 +27,8 @@ MonoBehaviour:
     de l\u2019alerte r\xE9alis\xE9e par un professionnel de sant\xE9 ICOPE, confirme
     cette suspicion de d\xE9clin et vous l\u2019adresse pour une \xE9valuation auditive.
     Vous le rencontrez pour la premi\xE8re fois."
-  autonomies:
-  - name: ADL
-    value: 6/6
-  - name: IALD
-    value: 8/8
+  ADL: 6
+  IADL: 8
   medicalHistory: "Dans ses ant\xE9c\xE9dents on retrouve une Hypertension art\xE9rielle
     trait\xE9e par Ramipril 5mg.\r"
   descriptionLevel: Ce tutoriel vous guide dans la prise en main du jeu et de l'algorithme.
@@ -164,7 +161,7 @@ MonoBehaviour:
           par l\u2019interrogatoire (\xE0 l\u2019aide du questionnaire Go-No-Go)."
         sprites: []
   - type: 2
-    dialoguePatient: 
+    dialoguePatient: "\r"
     predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:

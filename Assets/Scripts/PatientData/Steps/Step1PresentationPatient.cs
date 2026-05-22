@@ -50,8 +50,8 @@ namespace Assets.Scripts.PatientData.Steps
             contextField.text = patientData.context;
 
             // Set autonomie data
-            adlField.text = patientData.autonomies[0].value;
-            iadlField.text = patientData.autonomies[1].value;
+            adlField.text = patientData.ADL;
+            iadlField.text = patientData.IADL;
 
             // Set medical history data
             historyField.text = patientData.medicalHistory;

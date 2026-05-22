@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c4249b8004b2a0746ae11898619a721d
+guid: f051c218c98bb484ba7775d21b9ad792
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7734625416832987213
-    second: pb_oreillle_0
+      213: -8219933437575208986
+    second: bouchon_cerumen_2 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pb_oreillle_0
+      name: bouchon_cerumen_2 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d40b90936d8e65b60800000000000000
-      internalID: 7734625416832987213
+      spriteID: 6ef59ffe61eeced80800000000000000
+      internalID: -8219933437575208986
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pb_oreillle_0: 7734625416832987213
+      bouchon_cerumen_2 1_0: -8219933437575208986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

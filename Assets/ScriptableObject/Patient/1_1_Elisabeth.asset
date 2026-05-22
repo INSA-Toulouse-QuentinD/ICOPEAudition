@@ -20,20 +20,23 @@ MonoBehaviour:
   age: 67
   familySituation: Ancienne professeure de lettre.
   occupationalActivities: Elle organise un club de lecture.
-  context: "Survenue d\u2019une surdit\xE9 depuis 2 ans. \nEtape 1 en autodiagnostic
-    avec H\xF6ra : patho, gestion de l\u2019alerte."
+  context: "Etape 1 en autodiagnostic avec H\xF6ra : patho, gestion de l\u2019alerte."
   autonomies:
   - name: ADL
     value: 6/6
   - name: IADL
     value: 8/8
-  medicalHistory: 
+  medicalHistory: "A l\u2019interrogatoire lors de votre gestion d\u2019alerte, vous
+    apprenez qu\u2019elle pr\xE9sente une surdit\xE9 depuis environ 2 ans, qui semble
+    s\u2019aggraver quand elle a des vertiges. Elle a pris un RDV chez l\u2019ORL,
+    mais n\u2019a pas pu s\u2019y rendre et est en attente d\u2019un nouveau RDV.
+    Elle n\u2019a pas d\u2019autre ant\xE9c\xE9dent particulier. "
   descriptionLevel: "\xC9lisabeth Martin est votre deuxi\xE8me patiente de ce niveau
     'Facile'. Analysez ses sympt\xF4mes et ses r\xE9ponses en parcourant l'algorithme."
   steps:
   - type: 0
     dialoguePatient: 
-    predefinedAnwser: []
+    predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
       answerData:
@@ -48,7 +51,7 @@ MonoBehaviour:
         correctionText: "Non, il n\u2019est pas n\xE9cessaire de r\xE9p\xE9ter le
           test apr\xE8s avoir r\xE9alis\xE9 le test H\xF6ra."
         sprites: []
-      - answerText: "Je convoque la patiente pour r\xE9aliser le questionnaire Go-No-Go"
+      - answerText: "Je convoque la patiente pour r\xE9aliser le questionnaire Go-No-Go."
         isCorrect: 0
         correctionText: "On recherche d\u2019abord des signes \xE9vocateurs d\u2019une
           surdit\xE9 complexe par t\xE9l\xE9phone afin d\u2019\xE9viter de convoquer
@@ -63,7 +66,7 @@ MonoBehaviour:
         sprites: []
     actionPhase:
       answerData:
-      - answerText: "Je la convoque pour r\xE9aliser l\u2019\xE9valuation (step 2?)"
+      - answerText: "Je la convoque pour r\xE9aliser l\u2019\xE9valuation step 2"
         isCorrect: 0
         correctionText: "Non, ici on est dans une situation No-Go, il faut l\u2019adresser
           vers un ORL. Ce tableau \xE9voque en premier lieu une maladie de M\xE9ni\xE8re
@@ -82,12 +85,12 @@ MonoBehaviour:
         correctionText: "Non, certains bouchons peuvent provoquer ce genre de sympt\xF4mes,
           a minima. Mais depuis 2 ans, on peut quand m\xEAme esp\xE9rer qu\u2019elle
           a b\xE9n\xE9fici\xE9 d\u2019une consultation chez son m\xE9decin qui a
-          d\xE9douan\xE9 un Bouchon De C\xE9rumen. "
+          d\xE9douan\xE9 un Bouchon De C\xE9rumen."
         sprites: []
       - answerText: "Je l\u2019adresse chez l\u2019ORL."
         isCorrect: 1
         correctionText: "Oui, surdit\xE9 fluctuante et vertige : 2 raisons de l\u2019adresser.
           Tableau tr\xE8s \xE9vocateur d\u2019une maladie de M\xE9ni\xE8re.\r\n\r\nBravo
-          !! Tu as bien identifi\xE9 le cas pr\xE9sent. \r\n\r\nPrise en charge r\xE9ussie.
-          Tu as d\xE9bloqu\xE9 un nouveau niveau.\r\n"
+          !! Tu as bien identifi\xE9 le cas pr\xE9sent.\n\nPrise en charge r\xE9ussie.
+          Tu as d\xE9bloqu\xE9 un nouveau niveau."
         sprites: []

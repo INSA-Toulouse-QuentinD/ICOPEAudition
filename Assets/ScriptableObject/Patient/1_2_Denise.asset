@@ -21,19 +21,19 @@ MonoBehaviour:
   familySituation: "Ancien chef cuisini\xE8re."
   occupationalActivities: Elle donne des cours de cuisine aux jeunes du quartier.
   context: "Adress\xE9e par un audioproth\xE9siste form\xE9 au rep\xE9rage ICOPE
-    (\xE9tape 1), qui met en \xE9vidence un score pathologique."
+    step 1, qui met en \xE9vidence un score pathologique."
   autonomies:
   - name: ADL
     value: 6/6
   - name: IADL
     value: 8/8
-  medicalHistory: "N\xE9o mammaire en r\xE9mission, allergie aux crustac\xE9s."
+  medicalHistory: "N\xE9oplasie mammaire en r\xE9mission; Allergie aux crustac\xE9s."
   descriptionLevel: "Denise Roux, ancienne cheffe cuisini\xE8re, vient vous voir
     apr\xE8s avoir \xE9t\xE9 adress\xE9e par son audioproth\xE9siste."
   steps:
   - type: 0
     dialoguePatient: 
-    predefinedAnwser: []
+    predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
       answerData: []
@@ -41,40 +41,44 @@ MonoBehaviour:
       answerData:
       - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
         isCorrect: 0
-        correctionText: "Le rep\xE9rage a \xE9t\xE9 fait en autod\xE9pistage. La
+        correctionText: "Il est important de bien respecter l\u2019algorithme d\xE9cisionnel.
+          \r\nLa patiente ayant proc\xE9d\xE9 \xE0 un d\xE9pistage avec un audioproth\xE9siste,
+          le test de chuchotement n\u2019a pas \xE9t\xE9 r\xE9alis\xE9. <color=red>La
           premi\xE8re \xE9tape du Step 2 vise donc \xE0 confirmer la suspicion de
-          surdit\xE9 d\xE9tect\xE9e lors du rep\xE9rage. Pour cela, je peux utiliser
-          :\r\n Le test de chuchotement\r\n Le test H\xF6ra\r\n Le questionnaire
+          surdit\xE9</color> d\xE9tect\xE9e lors du rep\xE9rage. Pour cela, je peux
+          utiliser :\r\n- Le test de chuchotement\r\n- Le test H\xF6ra\r\n- Le questionnaire
           HHIE-S\r\nSi la suspicion n\u2019est pas confirm\xE9e, il n\u2019est pas
-          n\xE9cessaire de poursuivre l\u2019\xE9valuation.\r"
+          n\xE9cessaire de poursuivre l\u2019\xE9valuation."
         sprites: []
       - answerText: "Je v\xE9rifie ses oreilles."
         isCorrect: 0
-        correctionText: "Le rep\xE9rage a \xE9t\xE9 fait en auto d\xE9pistage. La
+        correctionText: "Il est important de bien respecter l\u2019algorithme d\xE9cisionnel.
+          \r\nLa patiente ayant proc\xE9d\xE9 \xE0 un d\xE9pistage avec un audioproth\xE9siste,
+          le test de chuchotement n\u2019a pas \xE9t\xE9 r\xE9alis\xE9. <color=red>La
           premi\xE8re \xE9tape du Step 2 vise donc \xE0 confirmer la suspicion de
-          surdit\xE9 d\xE9tect\xE9e lors du rep\xE9rage. Pour cela, je peux utiliser
-          :\r\n Le test de chuchotement\r\n Le test H\xF6ra\r\n Le questionnaire
+          surdit\xE9</color> d\xE9tect\xE9e lors du rep\xE9rage. Pour cela, je peux
+          utiliser :\r\n- Le test de chuchotement\r\n- Le test H\xF6ra\r\n- Le questionnaire
           HHIE-S\r\nSi la suspicion n\u2019est pas confirm\xE9e, il n\u2019est pas
-          n\xE9cessaire de poursuivre l\u2019\xE9valuation.\r"
+          n\xE9cessaire de poursuivre l\u2019\xE9valuation."
         sprites: []
       - answerText: Je ne peux rien faire, je renvois le patient vers l'ORL.
         isCorrect: 0
-        correctionText: "La patiente est une bonne candidate pour l'\xE9valuation
-          ICOPE. Elle a plus de 60 ans, son autonomie est pr\xE9serv\xE9e et le test
-          de chuchotement fait par son m\xE9decin est anormal.\n\LVous devez donc
-          poursuivre le parcours ICOPE Audition avec le questionnaire Go-No-Go."
+        correctionText: "La patiente est une bonne candidate pour l\u2019\xE9valuation
+          ICOPE : elle a plus de 60 ans, son autonomie est pr\xE9serv\xE9e, le d\xE9pistage
+          semble \xEAtre anormal.\r\nA ce stade, aucun drapeau rouge identifi\xE9,
+          je poursuis son \xE9valuation."
         sprites: []
-      - answerText: "Je r\xE9alise le test de chuchotement."
+      - answerText: "Je r\xE9alise le test de chuchotement pour contr\xF4ler."
         isCorrect: 1
-        correctionText: "La patiente ayant proc\xE9d\xE9 \xE0 un auto-d\xE9pistage
-          ICOPE, le test de chuchotement n\u2019a pas \xE9t\xE9 r\xE9alis\xE9. Vous
-          commencez par cette \xE9tape pour vous assurer qu\u2019il y a bien eu une
-          anomalie \xE0 l\u2019\xE9tape 1."
+        correctionText: "la patiente ayant proc\xE9d\xE9 \xE0 un d\xE9pistage avec
+          un audioproth\xE9siste, le test de chuchotement n\u2019a pas \xE9t\xE9
+          r\xE9alis\xE9. Vous commencez par cette \xE9tape pour vous assurer qu\u2019il
+          y a bien eu une anomalie \xE0 l\u2019\xE9tape 1."
         sprites: []
   - type: 1
     dialoguePatient: "Je n'ai entendu aucun mot \xE0 droite. J'ai entendu 2 mots
       \xE0 gauche."
-    predefinedAnwser: []
+    predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
       answerData:
@@ -90,7 +94,7 @@ MonoBehaviour:
           la r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots (ou 3 minimum)."
         sprites: []
       - answerText: "Il y a une anomalie car elle n\u2019a pas su restituer les 3
-          mots minimum de chaque  c\xF4t\xE9."
+          mots minimum de chaque c\xF4t\xE9."
         isCorrect: 1
         correctionText: "Lors du test de chuchotement, on consid\xE8re que l\u2019audition
           est normale si le patient est capable de r\xE9p\xE9ter correctement au
@@ -124,7 +128,7 @@ MonoBehaviour:
           signifie qu\u2019elle n\u2019atteint pas le seuil minimal requis pour une
           audition normale sur aucune des deux oreilles.\r\n\r\nLe test aurait \xE9t\xE9
           normal si la patiente avait r\xE9p\xE9t\xE9 les 3 mots minimum de chaque
-          c\xF4t\xE9.\r"
+          c\xF4t\xE9."
         sprites: []
     actionPhase:
       answerData:
@@ -160,14 +164,7 @@ MonoBehaviour:
         sprites: []
   - type: 2
     dialoguePatient: 
-    predefinedAnwser:
-    - patientAnswer: 1
-    - patientAnswer: 1
-    - patientAnswer: 1
-    - patientAnswer: 1
-    - patientAnswer: 1
-    - patientAnswer: 1
-    - patientAnswer: 1
+    predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
       answerData:
@@ -195,7 +192,7 @@ MonoBehaviour:
           ou d\u2019estimer la fonction auditive du patient. Il s\u2019agit d\u2019un
           outil d\u2019aide \xE0 l\u2019interrogatoire, afin de ne pas oublier les
           situations fortement \xE9vocatrices d\u2019une surdit\xE9 complexe qui
-          justifieraient alors d\u2019un adressage ORL.\r\n"
+          justifieraient alors d\u2019un adressage ORL."
         sprites: []
       - answerText: "Elle n\u2019a r\xE9pondu que des \"non\", ce qui indique une
           urgence ORL."
@@ -203,9 +200,9 @@ MonoBehaviour:
         correctionText: "Les urgences ORL et autres situations n\xE9cessitant un
           avis ORL, sont plut\xF4t \xE9voqu\xE9es lorsque le candidat r\xE9pond \xAB
           OUI \xBB \xE0 une ou plusieurs questions.\r\n\r\nLes urgences vraies, justifiant
-          de la mise en place d\u2019un traitement rapide sont :\r\nLes surdit\xE9s
-          brusques r\xE9centes, indiquant une corticoth\xE9rapie.\r\nLes otorrh\xE9es
-          avec otalgies, \xE9vocatrices d\u2019une otite externe.\r\n"
+          de la mise en place d\u2019un traitement rapide sont :\r\n- Les surdit\xE9s
+          brusques r\xE9centes, indiquant une corticoth\xE9rapie.\r\n- Les otorrh\xE9es
+          avec otalgies, \xE9vocatrices d\u2019une otite externe."
         sprites: []
     actionPhase:
       answerData:
@@ -220,11 +217,10 @@ MonoBehaviour:
         isCorrect: 0
         correctionText: "Aucune indication !\r\nSuspicion de surdit\xE9 sans signal
           d\u2019alarme \xE0 l\u2019interrogatoire, je peux donc r\xE9aliser mon
-          examen physique.\r\n\r\n* Rappel des drapeaux rouges / questionnaire go
-          no go\r"
+          examen physique."
         sprites: []
       - answerText: "Je continue le parcours audition et lui fais passer une vid\xE9o
-          otoscopie"
+          otoscopie."
         isCorrect: 1
         correctionText: "Les \xE9tapes pr\xE9c\xE9dentes ne permettent pas de confirmer
           qu\u2019il n\u2019y a pas d\u2019anomalie auditive. La vid\xE9o otoscopie
@@ -235,16 +231,17 @@ MonoBehaviour:
         correctionText: "Ici il n\u2019existe aucun drapeau rouge : il n\u2019y a
           donc pas d\u2019indication \xE0 un adressage ORL, je peux continuer mon
           \xE9valuation avec la r\xE9alisation de l\u2019examen physique (examen
-          du pavillon et vid\xE9o-otoscopie)\r\n\r\n* Rappel des drapeaux rouges
-          / questionnaire go no go\r\n"
+          du pavillon et vid\xE9o-otoscopie)."
         sprites: []
   - type: 4
     dialoguePatient: 
-    predefinedAnwser: []
+    predefinedAnwser: 
     spriteEarExams: {fileID: 21300000, guid: 3baedf2dff3bdcd4194820c202086473, type: 3}
     diagnosticPhase:
       answerData:
-      - answerText: Il s'agit d'une otomycose.
+      - answerText: "Il existe une otomycose, je mets en place un traitement par
+          gouttes auriculaire et lui conseille de respecter une \xE9viction aquatique
+          pendant toute la dur\xE9e du traitement."
         isCorrect: 0
         correctionText: "Non, ici il s\u2019agit d\u2019un Bouchon de c\xE9rumen.
           Si on est face \xE0 cette otoscopie, oui on peut prescrire un traitement
@@ -264,39 +261,19 @@ MonoBehaviour:
           avec curette si le bouchon est lat\xE9ral et qu\u2019il est possible de
           glisser la curette entre le bouchpn et la paroi du conduit auditif externe."
         sprites: []
-      - answerText: "Il s'agit d'une l\xE9sion bourgeonnante du Conduit Auditif Externe,
+      - answerText: "Il existe une l\xE9sion bourgeonnante du Conduit Auditif Externe,
           je peux suspecter un carcinome, ou une ost\xE9ite de la base du cr\xE2ne."
         isCorrect: 0
-        correctionText: ...
-        sprites: []
-    actionPhase:
-      answerData:
-      - answerText: "La patient \xE0 une otomycose, je mets en place un traitement
-          par gouttes auriculaire et lui conseille de respecter une \xE9viction aquatique
-          pendant toute la dur\xE9e du traitement."
-        isCorrect: 0
         correctionText: "Non, ici il s\u2019agit d\u2019un Bouchon de c\xE9rumen.
-          Si on est face \xE0 cette otoscopie, oui on peut prescrire un traitement
-          antifongique local et conseiller au patient un contr\xF4le chez son m\xE9decin
-          traitant \xE0 la fin du traitement. Il sera reconvoqu\xE9 pour une nouvelle
-          \xE9valuation \xE0 distance."
-        sprites: []
-      - answerText: "Je propose de proc\xE9der \xE0 l\u2019ablation du Bouchon De
-          C\xE9rumen en utilisation la m\xE9thode de l\u2019irrigation."
-        isCorrect: 1
-        correctionText: "Oui, selon la formation et la forme du Bouchon De C\xE9rumen,
-          on peut aussi proc\xE9der \xE0 une aspiration."
-        sprites: []
-      - answerText: Je l'adresse chez l'ORL.
-        isCorrect: 0
-        correctionText: "Non\_: aucun redflag, a\xE9rateurs Trans tympaniques dans
-          l\u2019enfance fr\xE9quent et ne constitue pas une contre indication. Il
-          y a une contre indication si il y a la pr\xE9sence d\u2019un a\xE9rateur
-          Transtympanique r\xE9cent, car il y a un risque de perforation."
-        sprites: []
+          \r\nost\xE9\xEFte image de droite et cholest\xE9atomes image de gauche"
+        sprites:
+        - {fileID: 623191396153291949, guid: 90c37bdd3e40c8042a90077a4e4e2fed, type: 3}
+        - {fileID: 7913261295642011928, guid: 9fa2f4e419dd64246badffa6beea228f, type: 3}
+    actionPhase:
+      answerData: []
   - type: 4
     dialoguePatient: 
-    predefinedAnwser: []
+    predefinedAnwser: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
     diagnosticPhase:
       answerData: []
@@ -315,9 +292,8 @@ MonoBehaviour:
       - answerText: "Son otoscopie est normale, je peux r\xE9aliser l\u2019audiom\xE9trie."
         isCorrect: 0
         correctionText: "Non, il faut d\u2019abord r\xE9p\xE9ter le test de chuchotement
-          : si il est normal > \xBE : alors je n\u2019ai pas besoin de poursuivre
-          l\u2019\xE9valuation, je le rassure et lui rappelle les consignes de bonne
-          hygi\xE8ne auriculaire."
+          : s'il est normal > 3/4 : alors je n\u2019ai pas besoin de poursuivre l\u2019\xE9valuation,
+          je le rassure et lui rappelle les consignes de bonne hygi\xE8ne auriculaire."
         sprites: []
       - answerText: "Je reconvoque la patiente pour r\xE9aliser une nouvelle \xE9valuation
           \xE0 distance de l\u2019extraction du bouchon de c\xE9rumen."
@@ -327,17 +303,17 @@ MonoBehaviour:
           le d\xE9pistage puis on suit l\u2019algorithme."
         sprites: []
   - type: 1
-    dialoguePatient: "J'ai entendu 3 mots \xE0 droite et \xE0 gauche."
-    predefinedAnwser: []
+    dialoguePatient: "J'ai entendu 3 mots \xE0 droite et \xE0 gauche, mais \xE0 gauche,
+      pour le 4\xE8me mot, j\u2019ai confondu \xAB\_Ballon\_\xBB et \xAB\_B\xE2ton\_\xBB."
+    predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData: []
-    actionPhase:
       answerData:
       - answerText: "Le test est normal, je la rassure et lui propose un nouveau
           d\xE9pistage dans 6 mois."
         isCorrect: 1
-        correctionText: "Oui, en premier, on v\xE9rifie que la g\xE8ne persiste."
+        correctionText: "OUI\n\nBravo !! Tu as bien identifi\xE9 le cas pr\xE9sent.
+          \r\n\r\nPrise en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
         sprites: []
       - answerText: "Le test est normal, je lui rappelle l\u2019importance d\u2019un
           soin quotidien avec le coton tige pour \xE9viter une r\xE9cidive de son
@@ -350,13 +326,14 @@ MonoBehaviour:
           rin\xE7age \xE0 l\u2019eau lors de la toilette."
         sprites: []
       - answerText: "Le test est anormal, je peux maintenant r\xE9aliser le questionnaire
-          HHIES"
+          HHIES."
         isCorrect: 0
-        correctionText: ...
+        correctionText: "Je r\xE9alise le questionnaire HHIES apr\xE8s avoir v\xE9rifier
+          que\r\nLe test de chuchotement est normal."
         sprites: []
       - answerText: "Le test est anormal, on enchaine avec le questionnaire HHIE-S,
           tout en gardant \xE0 l\u2019esprit cette confusion phon\xE9mique, qui nous
-          poussera \xE0 r\xE9aliser ensuite l\u2019\xE9valuation de la cognition"
+          poussera \xE0 r\xE9aliser ensuite l\u2019\xE9valuation de la cognition."
         isCorrect: 0
         correctionText: "Non, on retrouve fr\xE9quemment des confusions phon\xE9miques
           dans les premiers stades de la surdit\xE9. Ici, elle a r\xE9p\xE9t\xE9
@@ -365,3 +342,5 @@ MonoBehaviour:
           bouchon de c\xE9rumen qui a pu provoquer une asym\xE9trie auditive, et
           donc une g\xE8ne dans le bruit."
         sprites: []
+    actionPhase:
+      answerData: []

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ab0791b59991394478c7e63451d833f5
+guid: fc7d0d00f382e004d92c33d39f462ec6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2151581365343164228
-    second: Otite_1 1_0
+      213: -7859703598650466171
+    second: 0_5_Audiometrie_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WindowsStoreApps
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Otite_1 1_0
+      name: 0_5_Audiometrie_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 605
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44711aa2ad3fbdd10800000000000000
-      internalID: 2151581365343164228
+      spriteID: 58064923839bce290800000000000000
+      internalID: -7859703598650466171
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Otite_1 1_0: 2151581365343164228
+      0_5_Audiometrie_0: -7859703598650466171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
