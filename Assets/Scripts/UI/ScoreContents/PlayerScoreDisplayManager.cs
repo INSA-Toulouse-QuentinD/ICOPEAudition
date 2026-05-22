@@ -1,11 +1,11 @@
-using Assets.Scripts.Managers;
-using Assets.Scripts.PatientData.AlgoData;
+using Managers;
+using PatientData.AlgoData;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.UI.ScoreContents
+namespace UI.ScoreContents
 {
     [System.Serializable]
     public enum FieldsName { 
@@ -46,8 +46,8 @@ namespace Assets.Scripts.UI.ScoreContents
         [SerializeField] private List<FieldsTable> fieldsList;
 
         [Header("Score calcul")]
-        [SerializeField] private static int _stepMulticateur = 10;
-        [SerializeField] private static int _diagActionMulticateur = 5;
+        private static int _stepMulticateur = 10;
+        private static int _diagActionMulticateur = 5;
 
         [Header("Script Open folder")]
         [SerializeField] private OpenFolder openFolder;

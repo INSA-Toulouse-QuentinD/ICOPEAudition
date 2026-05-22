@@ -1,8 +1,8 @@
-using Assets.Scripts.PatientData.AlgoData;
+using PatientData.AlgoData;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.PatientData
+namespace PatientData
 {
     /// <summary>
     /// ScriptableObject representing detailed patient data for medical scenarios.

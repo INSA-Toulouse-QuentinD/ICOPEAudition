@@ -1,11 +1,10 @@
-using Assets.Scripts.PatientData.AlgoData;
+using PatientData.AlgoData;
 using DG.Tweening;
-using System.Xml.Serialization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.PatientData.Steps
+namespace PatientData.Steps
 {
     /// <summary>
     /// Manages the Whisper Test step UI, including doctor dialogue animations and patient sprite display.

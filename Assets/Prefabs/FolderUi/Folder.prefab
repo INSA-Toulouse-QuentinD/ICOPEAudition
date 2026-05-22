@@ -1342,7 +1342,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1273755347549140548}
-        m_TargetAssemblyTypeName: Assets.Scripts.UI.ScoreContents.PlayerScoreDisplayManager,
+        m_TargetAssemblyTypeName: UI.ScoreContents.PlayerScoreDisplayManager,
           Assembly-CSharp
         m_MethodName: GoToMenu
         m_Mode: 1

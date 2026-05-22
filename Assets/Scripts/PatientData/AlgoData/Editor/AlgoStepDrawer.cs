@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Assets.Scripts.PatientData.AlgoData.Editor{
+namespace PatientData.AlgoData.Editor{
     /// <summary>
     /// Custom drawer to show only relevant fields for AlgoStep depending on its Step type.
     /// This is editor-only and does not affect runtime behavior.
@@ -44,19 +44,19 @@ namespace Assets.Scripts.PatientData.AlgoData.Editor{
             Step stepType = (Step)typeProp.enumValueIndex;
 
             // Show/hide fields based on the step type.
-            if (stepType == Step.Wisper_test || stepType == Step.Weber_test) {
+            if (stepType == Step.WisperTest || stepType == Step.WeberTest) {
                 line = new Rect(position.x, y, position.width, EditorGUI.GetPropertyHeight(dialoguePatientProp, true));
                 EditorGUI.PropertyField(line, dialoguePatientProp, true);
                 y = Next(line);
             }
 
-            if (stepType == Step.Questionnary || stepType == Step.Additional_questionnaire) {
+            if (stepType == Step.Questionnary || stepType == Step.AdditionalQuestionnaire) {
                 line = new Rect(position.x, y, position.width, EditorGUI.GetPropertyHeight(predefinedProp, true));
                 EditorGUI.PropertyField(line, predefinedProp, true);
                 y = Next(line);
             }
 
-            if (stepType == Step.Otoscopy || stepType == Step.HHIES_test || stepType == Step.Audiometry) {
+            if (stepType == Step.Otoscopy || stepType == Step.HhiesTest || stepType == Step.Audiometry) {
                 line = new Rect(position.x, y, position.width, EditorGUI.GetPropertyHeight(spriteEarExamsProp, true));
                 EditorGUI.PropertyField(line, spriteEarExamsProp, true);
                 y = Next(line);
@@ -90,13 +90,13 @@ namespace Assets.Scripts.PatientData.AlgoData.Editor{
 
             Step stepType = (Step)typeProp.enumValueIndex;
 
-            if (stepType == Step.Wisper_test || stepType == Step.Weber_test)
+            if (stepType == Step.WisperTest || stepType == Step.WeberTest)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(dialoguePatientProp, true);
 
-            if (stepType == Step.Questionnary || stepType == Step.Additional_questionnaire)
+            if (stepType == Step.Questionnary || stepType == Step.AdditionalQuestionnaire)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(predefinedProp, true);
 
-            if (stepType == Step.Otoscopy || stepType == Step.HHIES_test || stepType == Step.Audiometry)
+            if (stepType == Step.Otoscopy || stepType == Step.HhiesTest || stepType == Step.Audiometry)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(spriteEarExamsProp, true);
 
             h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(diagnosticPhaseProp, true);

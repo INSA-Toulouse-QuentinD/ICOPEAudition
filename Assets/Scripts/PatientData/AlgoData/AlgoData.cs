@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.PatientData.AlgoData
+namespace PatientData.AlgoData
 {
     /// <summary>
     /// AlgoData is a ScriptableObject that stores a list of AlgoStep objects,

@@ -2,10 +2,8 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts
+public class PatientAnimation : MonoBehaviour
 {
-    public class PatientAnimation : MonoBehaviour
-    {
         // Animation size variable
         [SerializeField] private float scaleFactor = 1.15f;
         [SerializeField] private float animationDuration = 2f;
@@ -158,5 +156,4 @@ namespace Assets.Scripts
             fadePanel.DOFade(1f, 1f).SetEase(Ease.Linear);
             imageCharacter.GetComponent<Button>().enabled = true;
         }
-    }
 }

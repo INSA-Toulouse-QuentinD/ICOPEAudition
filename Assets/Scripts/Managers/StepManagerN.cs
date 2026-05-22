@@ -1,13 +1,13 @@
-using Assets.Scripts.PatientData;
-using Assets.Scripts.PatientData.AlgoData;
-using Assets.Scripts.PatientData.Steps;
+using PatientData;
+using PatientData.AlgoData;
+using PatientData.Steps;
 using System.Collections.Generic;
 using TMPro;
+using UI.Buttons;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-namespace Assets.Scripts.Managers{
+namespace Managers{
     public class StepManagerN : MonoBehaviour{
         [SerializeField] private Button returnButton;
         [SerializeField] private Button confirmNextButton;
@@ -118,7 +118,7 @@ namespace Assets.Scripts.Managers{
             Sprite patientSprite = null;
 
             switch (currentStep) {
-                case Step.Case_presentation:
+                case Step.CasePresentation:
                     // Load patient sprite & patient text
                     step1PresentationPatient.SetSprites(patientData.characterSprites[0]);
                     step1PresentationPatient.SetPresentationTexts(patientData);
@@ -126,7 +126,7 @@ namespace Assets.Scripts.Managers{
 
                     displayList[_currentDisplay].SetActive(true);
                     break;
-                case Step.Wisper_test:
+                case Step.WisperTest:
                     // Load wisper text (animation with dotween)
                     if (patientData.characterSprites.Length > 1) {
                         patientSprite = patientData.characterSprites[1];
@@ -148,7 +148,7 @@ namespace Assets.Scripts.Managers{
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
-                case Step.Additional_questionnaire
+                case Step.AdditionalQuestionnaire
                     : //DEBUG!!! Complètement inutile pour le moment, à voir avec les patientCase plus difficile !
                     // Load questionary & answer
                     List<QuestionData> questions2 = questionnaireData.questions;
@@ -167,14 +167,14 @@ namespace Assets.Scripts.Managers{
                     // Display current step 
                     displayList[_currentDisplay].SetActive(true);
                     break;
-                case Step.Weber_test:
+                case Step.WeberTest:
                     // Load texts dialogue & sprite
                     step6HhiesTest.SetTextDialogue(patientData.steps[_indexStep].dialoguePatient);
                     step6HhiesTest.SetImage(patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
-                case Step.HHIES_test:
+                case Step.HhiesTest:
                     // Load patient ear image
                     step7HhiesTest.SetImages(patientData.steps[_indexStep].spriteEarExams,
                         patientData.characterSprites[0]);
@@ -532,13 +532,13 @@ namespace Assets.Scripts.Managers{
             returnButton.onClick.AddListener(BackToQuestion);
 
             mappingDisplays = new Dictionary<Step, int>(){
-                { Step.Case_presentation, 0 },
-                { Step.Wisper_test, 1 },
+                { Step.CasePresentation, 0 },
+                { Step.WisperTest, 1 },
                 { Step.Questionnary, 2 },
-                { Step.Additional_questionnaire, 2 },
+                { Step.AdditionalQuestionnaire, 2 },
                 { Step.Otoscopy, 3 },
-                { Step.Weber_test, 4 },
-                { Step.HHIES_test, 5 },
+                { Step.WeberTest, 4 },
+                { Step.HhiesTest, 5 },
                 { Step.Audiometry, 6 },
             };
         }

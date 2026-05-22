@@ -1,10 +1,10 @@
-using Assets.Scripts.PatientData.AlgoData;
+using PatientData.AlgoData;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.PatientData.Steps{
+namespace PatientData.Steps{
     /// <summary>
     /// Manages the display of questionnaire questions and patient answers, along with patient sprite.
     /// </summary>

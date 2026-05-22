@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.PatientData.Steps
+namespace PatientData.Steps
 {
     /// <summary>
     /// Manages the HHIES test step UI, displaying the HHIES image and the patient sprite.

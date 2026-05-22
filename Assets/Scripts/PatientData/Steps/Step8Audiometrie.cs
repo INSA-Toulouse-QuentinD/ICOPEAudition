@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.PatientData.Steps
+namespace PatientData.Steps
 {
     /// <summary>
     /// Manages the Audiometrie step UI, displaying the audiometry image and patient sprite.

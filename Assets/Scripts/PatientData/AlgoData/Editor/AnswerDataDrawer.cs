@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Assets.Scripts.PatientData.AlgoData.Editor{
+namespace PatientData.AlgoData.Editor{
     [CustomPropertyDrawer(typeof(AnswerData))]
     public class AnswerDataDrawer : PropertyDrawer{
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label){

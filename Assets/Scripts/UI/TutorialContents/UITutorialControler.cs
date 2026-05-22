@@ -1,8 +1,8 @@
-using Assets.Scripts.Managers;
+using Managers;
 using TMPro;
 using UnityEngine;
 
-namespace Assets.Scripts.UI.TutorialContents
+namespace UI.TutorialContents
 {
     /// <summary>
     /// Controler that manage text placement for the Tutorial.

@@ -1,18 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.PatientData.AlgoData{
+namespace PatientData.AlgoData{
     /// <summary>
     /// Enum representing the different steps in the medical algorithm.
     /// </summary>
     public enum Step{
-        Case_presentation,
-        Wisper_test,
+        CasePresentation,
+        WisperTest,
         Questionnary,
-        Additional_questionnaire,
+        AdditionalQuestionnaire,
         Otoscopy,
-        Weber_test,
-        HHIES_test,
+        WeberTest,
+        HhiesTest,
         Audiometry,
     }
 

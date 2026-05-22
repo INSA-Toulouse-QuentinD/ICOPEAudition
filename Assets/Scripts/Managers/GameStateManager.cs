@@ -1,9 +1,9 @@
-using Assets.Scripts.PatientData;
-using Assets.Scripts.PatientData.AlgoData;
+using PatientData;
+using PatientData.AlgoData;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.Managers
+namespace Managers
 {
     public class GameStateManager : MonoBehaviour
     {

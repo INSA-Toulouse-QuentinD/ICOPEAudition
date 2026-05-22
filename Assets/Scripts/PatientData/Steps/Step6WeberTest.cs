@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.PatientData.Steps
+namespace PatientData.Steps
 {
     /// <summary>
     /// Handles the Weber test step UI, including patient and doctor dialogues and patient image.

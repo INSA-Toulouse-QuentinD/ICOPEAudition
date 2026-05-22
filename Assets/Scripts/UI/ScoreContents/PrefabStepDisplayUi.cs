@@ -1,11 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
-using Assets.Scripts.PatientData.AlgoData;
-using JetBrains.Annotations;
+using PatientData.AlgoData;
 using System.Text.RegularExpressions;
 using System;
 
-namespace Assets.Scripts.UI.ScoreContents
+namespace UI.ScoreContents
 {
     public class PrefabStepDisplayUi : MonoBehaviour
     {
@@ -69,25 +68,25 @@ namespace Assets.Scripts.UI.ScoreContents
             string realName = "";
             switch (step)
             {
-                case Step.Case_presentation:
+                case Step.CasePresentation:
                     realName = "Etape: Presentation du patient";
                     break;
-                case Step.Wisper_test:
+                case Step.WisperTest:
                     realName = "Etape: Test de chuchotement";
                     break;
                 case Step.Questionnary:
                     realName = "Etape: Questionnaire Go-No-Go";
                     break;
-                case Step.Additional_questionnaire:
+                case Step.AdditionalQuestionnaire:
                     realName = "Etape: Questionnaire additionnel";
                     break;
                 case Step.Otoscopy:
                     realName = "Etape: Vidéo otoscopie";
                     break;
-                case Step.Weber_test:
+                case Step.WeberTest:
                     realName = "Etape: Test Weber";
                     break;
-                case Step.HHIES_test:
+                case Step.HhiesTest:
                     realName = "Etape: Test HHIE-S";
                     break;
                 case Step.Audiometry:

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.PatientData{
+namespace PatientData{
     /// <summary>
     /// ScriptableObject storing patient cases organized by levels.
     /// </summary>

@@ -1,11 +1,12 @@
 using System.Collections;
+using Audio;
 using UnityEngine;
 using UnityEngine.UI;
-using Assets.Scripts.PatientData.AlgoData;
-using Assets.Scripts.UI.ScoreContents;
-using Assets.Scripts.PatientData;
+using PatientData.AlgoData;
+using UI.ScoreContents;
+using PatientData;
 
-namespace Assets.Scripts.Managers
+namespace Managers
 {
     [RequireComponent(typeof(GameStateManager))]
     [RequireComponent(typeof(AudioManager))]
@@ -71,7 +72,6 @@ namespace Assets.Scripts.Managers
         [Header("Menus")]
         [SerializeField] private GameObject _mainMenu;
         [SerializeField] private GameObject _gameMenu;
-        [SerializeField] private TipsPanel _tipsPanel;
         [SerializeField] private GameObject _stepMenu;
         [SerializeField] private GameObject _isTutoriaActive;
         [SerializeField] private GameObject _scorePanel;

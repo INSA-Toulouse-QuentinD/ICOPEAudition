@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace Telemetry{
+namespace Managers{
     public class TelemetryManager : MonoBehaviour{
         public static TelemetryManager Instance{ get; private set; }
 

@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.PatientData.Steps
+namespace PatientData.Steps
 {
     /// <summary>
     /// Manages the UI presentation of patient data in Step 1 of the algorithm.

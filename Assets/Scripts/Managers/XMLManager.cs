@@ -1,11 +1,11 @@
-using Assets.Scripts.UI.TutorialContents;
+using UI.TutorialContents;
 using System;
 using System.IO;
 using System.Xml;
 using System.Xml.Schema;
 using UnityEngine;
 
-namespace Assets.Scripts.Managers{
+namespace Managers{
     /// <summary>
     /// XML Manager handles loading, saving, and validating game data using XML files.
     /// It supports deserialization of complex nested data structures (including dictionaries, lists, and custom structs),

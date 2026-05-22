@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.PatientData.AlgoData{
+namespace PatientData.AlgoData{
     /// <summary>
     /// Simple enum to represent a Yes or No response.
     /// </summary>

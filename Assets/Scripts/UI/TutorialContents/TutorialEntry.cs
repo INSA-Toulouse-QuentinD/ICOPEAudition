@@ -1,4 +1,4 @@
-namespace Assets.Scripts.UI.TutorialContents
+namespace UI.TutorialContents
 {
     /// <summary>
     /// Represents a single tutorial entry with an identifier, title, and descriptive text.
