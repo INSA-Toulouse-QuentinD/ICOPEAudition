@@ -35,10 +35,8 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
-    diagnosticPhase:
-      answerData: []
+    diagnosticPhase: []
     actionPhase:
-      answerData:
       - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
         isCorrect: 0
         correctionText: "Il est important de bien respecter l\u2019algorithme d\xE9cisionnel.
@@ -81,7 +79,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData:
       - answerText: "Il y a une anomalie car elle n\u2019a pas su restituer les 2
           mots du c\xF4t\xE9 droit."
         isCorrect: 0
@@ -131,7 +128,6 @@ MonoBehaviour:
           c\xF4t\xE9."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: Je la laisse repartir chez elle.
         isCorrect: 0
         correctionText: "Le test de chuchotement est anormal, on peut donc commencer
@@ -167,7 +163,6 @@ MonoBehaviour:
     predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData:
       - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
           avanc\xE9."
         isCorrect: 0
@@ -205,7 +200,6 @@ MonoBehaviour:
           avec otalgies, \xE9vocatrices d\u2019une otite externe."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: Je la laisse repartir chez elle.
         isCorrect: 0
         correctionText: "Non, son test de chuchotement est pathologique, il faut
@@ -238,7 +232,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 21300000, guid: 3baedf2dff3bdcd4194820c202086473, type: 3}
     diagnosticPhase:
-      answerData:
       - answerText: "Il existe une otomycose, je mets en place un traitement par
           gouttes auriculaire et lui conseille de respecter une \xE9viction aquatique
           pendant toute la dur\xE9e du traitement."
@@ -269,16 +262,13 @@ MonoBehaviour:
         sprites:
         - {fileID: 623191396153291949, guid: 90c37bdd3e40c8042a90077a4e4e2fed, type: 3}
         - {fileID: 7913261295642011928, guid: 9fa2f4e419dd64246badffa6beea228f, type: 3}
-    actionPhase:
-      answerData: []
+    actionPhase: []
   - type: 4
     dialoguePatient: 
     predefinedAnwser: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
-    diagnosticPhase:
-      answerData: []
+    diagnosticPhase: []
     actionPhase:
-      answerData:
       - answerText: "Son otoscopie est normale, je r\xE9p\xE8te le test de chuchotement."
         isCorrect: 1
         correctionText: "Oui, en premier, on v\xE9rifie que la g\xE8ne persiste."
@@ -308,7 +298,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData:
       - answerText: "Le test est normal, je la rassure et lui propose un nouveau
           d\xE9pistage dans 6 mois."
         isCorrect: 1
@@ -342,5 +331,4 @@ MonoBehaviour:
           bouchon de c\xE9rumen qui a pu provoquer une asym\xE9trie auditive, et
           donc une g\xE8ne dans le bruit."
         sprites: []
-    actionPhase:
-      answerData: []
+    actionPhase: []

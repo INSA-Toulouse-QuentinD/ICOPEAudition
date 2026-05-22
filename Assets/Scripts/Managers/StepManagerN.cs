@@ -2,10 +2,7 @@ using Assets.Scripts.PatientData;
 using Assets.Scripts.PatientData.AlgoData;
 using Assets.Scripts.PatientData.Steps;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -257,7 +254,7 @@ namespace Assets.Scripts.Managers{
         ///   it sets the answer state to ACTION and creates the corresponding action answer buttons.
         /// </summary>
         private void SetResponses(){
-            if (patientData.steps[_indexStep].diagnosticPhase.answerData.Count > 0 && !_isDiagnosticValid) {
+            if (patientData.steps[_indexStep].diagnosticPhase.Count > 0 && !_isDiagnosticValid) {
                 questionText.text = "Quel est votre diagnostic ?";
                 answerState = AnswerState.DIAGNOSTIC;
                 CreateAnwserButtons(patientData.steps[_indexStep].diagnosticPhase);
@@ -265,7 +262,7 @@ namespace Assets.Scripts.Managers{
                 _isDiagnosticValid = true;
             }
 
-            if (patientData.steps[_indexStep].actionPhase.answerData.Count > 0 && _isDiagnosticValid) {
+            if (patientData.steps[_indexStep].actionPhase.Count > 0 && _isDiagnosticValid) {
                 questionText.text = "Que faites-vous ?";
                 answerState = AnswerState.ACTION;
                 CreateAnwserButtons(patientData.steps[_indexStep].actionPhase);
@@ -280,19 +277,19 @@ namespace Assets.Scripts.Managers{
         /// - Adds a click listener that triggers OnAnswerCorrect with the corresponding answer index.
         /// - Enables and makes the button visible.
         /// </summary>
-        /// <param name="phaseData">Data containing the possible answers for the current phase.</param>
-        private void CreateAnwserButtons(PhaseData phaseData){
+        /// <param name="answerData">List of possible answers for the current phase.</param>
+        private void CreateAnwserButtons(List<AnswerData> answerData){
             ClearQuestion();
 
-            int max = Mathf.Min(phaseData.answerData.Count, choiceButtons.Length);
+            int max = Mathf.Min(answerData.Count, choiceButtons.Length);
 
             for (int i = 0; i < max; i++) {
                 int index = i;
                 TextMeshProUGUI text = choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-                text.text = phaseData.answerData[i].answerText;
+                text.text = answerData[i].answerText;
                 choiceButtons[i].onClick.RemoveAllListeners();
                 choiceButtons[i].GetComponent<AnswerButton>().Reset();
-                choiceButtons[i].onClick.AddListener(() => OnAnswerCorrect(phaseData, index));
+                choiceButtons[i].onClick.AddListener(() => OnAnswerCorrect(answerData, index));
                 choiceButtons[i].interactable = true;
                 choiceButtons[i].enabled = true;
                 choiceButtons[i].gameObject.SetActive(true);
@@ -374,15 +371,13 @@ namespace Assets.Scripts.Managers{
         /// Provides feedback by marking incorrect answers and displaying messages.
         /// Records the answer in the game data for persistence.
         /// </summary>
-        /// <param name="phaseData">The phase data containing possible answers.</param>
+        /// <param name="answerData">List of possible answers for the current phase.</param>
         /// <param name="index">The index of the selected answer button.</param>
-        private void OnAnswerCorrect(PhaseData phaseData, int index){
-            bool isCorrect = false;
+        private void OnAnswerCorrect(List<AnswerData> answerData, int index){
             bool isDiagnosticAnswer = false;
             bool isActionAnswer = false;
 
-            bool isCorrectAnswer = IsAnswerCorrect(phaseData.answerData, index);
-            isCorrect = isCorrectAnswer;
+            bool isCorrectAnswer = IsAnswerCorrect(answerData, index);
             string feedBackText = isCorrectAnswer ? "Bonne réponse !" : "Mauvaise réponse !";
 
             if (!isCorrectAnswer) {
@@ -404,7 +399,7 @@ namespace Assets.Scripts.Managers{
 
             GameManager.Instance.GameData.RecordsSteps(step, isDiagnosticAnswer, isActionAnswer,
                 choiceButtons[index].GetComponentInChildren<TextMeshProUGUI>().text);
-            ShowAnswerDetail(phaseData.answerData[index], feedBackText, isCorrect);
+            ShowAnswerDetail(answerData[index], feedBackText, isCorrectAnswer);
         }
 
         /// <summary>
@@ -502,7 +497,7 @@ namespace Assets.Scripts.Managers{
         /// <param name="step">The current AlgoStep to check.</param>
         /// <returns>True if the step is completed, false otherwise.</returns>
         private bool IsStepCompleted(AlgoStep step){
-            bool diagnoticOK = !(step.diagnosticPhase.answerData.Count > 0) || _isDiagnosticValid;
+            bool diagnoticOK = !(step.diagnosticPhase.Count > 0) || _isDiagnosticValid;
 
             return diagnoticOK && _isActionValid;
         }

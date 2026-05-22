@@ -38,10 +38,8 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
-    diagnosticPhase:
-      answerData: []
+    diagnosticPhase: []
     actionPhase:
-      answerData:
       - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
         isCorrect: 0
         correctionText: "Il est important de bien respecter l\u2019algorithme d\xE9cisionnel.
@@ -81,7 +79,6 @@ MonoBehaviour:
     predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData:
       - answerText: "Ses r\xE9ponse montrent des signes d'un trouble neurologique
           avanc\xE9."
         isCorrect: 0
@@ -119,7 +116,6 @@ MonoBehaviour:
           avec otalgies, \xE9vocatrices d\u2019une otite externe"
         sprites: []
     actionPhase:
-      answerData:
       - answerText: Je la laisse repartir chez elle.
         isCorrect: 0
         correctionText: "Non, son test de chuchotement est pathologique, il faut
@@ -152,7 +148,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 21300000, guid: 074d65b9d59894e45a6ce7148c6c22f1, type: 3}
     diagnosticPhase:
-      answerData:
       - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
         isCorrect: 0
         correctionText: "Une Otite Moyenne Aigu\xEB est diagnostiqu\xE9e quand il
@@ -189,7 +184,6 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
         - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
     actionPhase:
-      answerData:
       - answerText: "Je commence par lui faire passer le questionnaire HHIE-S pour
           savoir si je dois ou non retirer le Bouchon De C\xE9rumen."
         isCorrect: 0
@@ -216,7 +210,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 7734625416832987213, guid: c4249b8004b2a0746ae11898619a721d, type: 3}
     diagnosticPhase:
-      answerData:
       - answerText: "Cette otoscopie peut \xEAtre consid\xE9r\xE9e comme normale,
           en tous cas, cet aspect n\u2019est g\xE9n\xE9ralement pas associ\xE9 \xE0
           une surdit\xE9."
@@ -259,7 +252,6 @@ MonoBehaviour:
           de la membrane."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: Je l'adresse chez l'ORL.
         isCorrect: 0
         correctionText: "Non, car la myringoscl\xE9rose est une d\xE9couverte b\xE9nigne,
@@ -303,7 +295,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData:
       - answerText: Le test est normal.
         isCorrect: 0
         correctionText: "Pour que le test soit consid\xE9r\xE9 comme normal, le patient
@@ -340,7 +331,6 @@ MonoBehaviour:
           une anomalie du test."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: "Je peux proc\xE9der \xE0 l'audiom\xE9trie."
         isCorrect: 0
         correctionText: "Non il faut d'abord faire le test HHIE-S puis dans un second
@@ -374,7 +364,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
     diagnosticPhase:
-      answerData:
       - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es."
         isCorrect: 1
         correctionText: "Un score > \xE0 8/40 permet de d\xE9pister une d\xE9ficience
@@ -407,7 +396,6 @@ MonoBehaviour:
           auditif."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: "Je l\u2019oriente vers un ORL."
         isCorrect: 0
         correctionText: "Non, son questionnaire HHIES est alt\xE9r\xE9, ce qui sugg\xE8re
@@ -440,7 +428,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: -3945972827715425317, guid: bf736be000460ec48b32643e9fc2c3e4, type: 3}
     diagnosticPhase:
-      answerData:
       - answerText: "Le score montre une surdit\xE9 de transmission bilat\xE9rale."
         isCorrect: 0
         correctionText: "Non, il s\u2019agit d\u2019une surdit\xE9 neurosensorielle
@@ -470,7 +457,6 @@ MonoBehaviour:
           qui pr\xE9domine sur les aigus et qui \xE9voque donc une presbyacousie."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: "J\u2019adresse le patient vers l\u2019ORL."
         isCorrect: 0
         correctionText: "Non, ici on reste dans le cadre du parcours ICOPE audition

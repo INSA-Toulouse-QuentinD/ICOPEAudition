@@ -27,35 +27,6 @@ namespace Assets.Scripts.PatientData.AlgoData{
         public List<Sprite> sprites;
     }
 
-
-    /// <summary>
-    /// Stores a question and the patients yes/no response.
-    /// </summary>
-    [System.Serializable]
-    public class PatientQuestionAnswer{
-        public YesNo patientAnswer;
-    }
-
-    /// <summary>
-    /// Represents a phase within a step, such as diagnostic or action phase,
-    /// including question text and possible answers.
-    /// </summary>
-    [System.Serializable]
-    public class PhaseData{
-        public List<AnswerData> answerData;
-
-
-        public bool IsAnswerCorrect(int index){
-            if (index < 0 || index >= answerData.Count) return false;
-            return answerData[index].isCorrect;
-        }
-
-        public string GetCorrection(int index){
-            if (index < 0 || index >= answerData.Count) return "";
-            return answerData[index].correctionText;
-        }
-    }
-
     /// <summary>
     /// Represents a step in the medical algorithm workflow.
     /// Includes context, questionnaire data, exam sprites, diagnostic and action phases, and metadata.
@@ -72,8 +43,8 @@ namespace Assets.Scripts.PatientData.AlgoData{
 
         public Sprite spriteEarExams; // Image representing ear exams, HHIES exam or audimetry
         
-        public PhaseData diagnosticPhase; // Diagnostic phase data
+        public List<AnswerData> diagnosticPhase; // Diagnostic phase data
 
-        public PhaseData actionPhase; // Action phase data
+        public List<AnswerData> actionPhase; // Action phase data
     }
 }

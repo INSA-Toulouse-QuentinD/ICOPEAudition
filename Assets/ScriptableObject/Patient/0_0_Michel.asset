@@ -40,10 +40,8 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
-    diagnosticPhase:
-      answerData: []
+    diagnosticPhase: []
     actionPhase:
-      answerData:
       - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
         isCorrect: 0
         correctionText: "Il est important de bien respecter l\u2019algorithme d\xE9cisionnel.
@@ -84,7 +82,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData:
       - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 2 mots
           du c\xF4t\xE9 droit."
         isCorrect: 0
@@ -132,7 +129,6 @@ MonoBehaviour:
           normal si le patient avait r\xE9p\xE9t\xE9 les 3 mots de chaque c\xF4t\xE9."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: Je le laisse repartir chez lui.
         isCorrect: 0
         correctionText: "Le test de chuchotement est anormal, on peut donc commencer
@@ -168,7 +164,6 @@ MonoBehaviour:
     predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData:
       - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
           avanc\xE9. "
         isCorrect: 0
@@ -206,7 +201,6 @@ MonoBehaviour:
           avec otalgies, \xE9vocatrices d\u2019une otite externe."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: Je le laisse repartir chez lui.
         isCorrect: 0
         correctionText: "Non, son test de chuchotement est pathologique, il faut
@@ -239,7 +233,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
     diagnosticPhase:
-      answerData:
       - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
         isCorrect: 0
         correctionText: "Une OMA est diagnostiqu\xE9e quand il existe une congestion
@@ -273,7 +266,6 @@ MonoBehaviour:
         - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
         - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
     actionPhase:
-      answerData:
       - answerText: Je le laisse repartir chez lui.
         isCorrect: 0
         correctionText: "On a un cas simple, avec un d\xE9pistage pathologique :
@@ -308,7 +300,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData:
       - answerText: "Ses r\xE9ponses r\xE9v\xE8lent une surdit\xE9 de perception."
         isCorrect: 0
         correctionText: "Ici, c\u2019est un test de Weber qui est r\xE9alis\xE9 (pied
@@ -344,7 +335,6 @@ MonoBehaviour:
         sprites:
         - {fileID: 21300000, guid: f503c7a4e7193c945b6f71187b1b4708, type: 3}
     actionPhase:
-      answerData:
       - answerText: Je le laisse repartir chez lui.
         isCorrect: 0
         correctionText: "Non, le test de Weber est utile afin d\u2019orienter son
@@ -383,7 +373,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
     diagnosticPhase:
-      answerData:
       - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es."
         isCorrect: 1
         correctionText: "Le score > 8/40 permet de d\xE9pister une d\xE9ficience
@@ -412,7 +401,6 @@ MonoBehaviour:
           selon les crit\xE8res actuellement admis en France."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: "Je l\u2019oriente vers un ORL."
         isCorrect: 0
         correctionText: "Non, son questionnaire HHIES est alt\xE9r\xE9, ce qui sugg\xE8re
@@ -445,7 +433,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: -5245042425183677352, guid: 5b62bf5af497b444fbc1267b2524724b, type: 3}
     diagnosticPhase:
-      answerData:
       - answerText: "Le score montre une surdit\xE9 de transmission."
         isCorrect: 0
         correctionText: "Ce n\u2019est pas une surdit\xE9 de transmission car l\u2019audiogramme
@@ -476,7 +463,6 @@ MonoBehaviour:
           perception."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: "Je recommande un traitement antibiotique pour am\xE9liorer l\u2019audition
           de Monsieur Dupont."
         isCorrect: 0

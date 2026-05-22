@@ -39,7 +39,6 @@ MonoBehaviour:
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-      answerData:
       - answerText: "Je convoque la patiente pour r\xE9aliser l\u2019otoscopie et
           l\u2019audiom\xE9trie."
         isCorrect: 0
@@ -65,7 +64,6 @@ MonoBehaviour:
           \xE0 prendre en charge qu\u2019une presbyacousie."
         sprites: []
     actionPhase:
-      answerData:
       - answerText: "Je la convoque pour r\xE9aliser l\u2019\xE9valuation step 2"
         isCorrect: 0
         correctionText: "Non, ici on est dans une situation No-Go, il faut l\u2019adresser
