@@ -77,9 +77,6 @@ namespace UI.ScoreContents
                 case Step.Questionnary:
                     realName = "Etape: Questionnaire Go-No-Go";
                     break;
-                case Step.AdditionalQuestionnaire:
-                    realName = "Etape: Questionnaire additionnel";
-                    break;
                 case Step.Otoscopy:
                     realName = "Etape: Vidéo otoscopie";
                     break;

@@ -6,32 +6,31 @@ using PatientData.AlgoData;
 using UI.ScoreContents;
 using PatientData;
 
-namespace Managers
-{
+namespace Managers{
     [RequireComponent(typeof(GameStateManager))]
     [RequireComponent(typeof(AudioManager))]
     [RequireComponent(typeof(PatientAnimation))]
-    public class GameManager : MonoBehaviour
-    {
+    public class GameManager : MonoBehaviour{
         #region Event System
+
         public event System.Action<int, int> OnMoneyChanged;
         public event System.Action<bool, bool> OnAssistantDisabled;
+
         #endregion
 
         public static GameManager Instance;
-        public GameStateManager GameStateManager { get; private set; }
-        public GameData GameData { get; set; }
-        public AudioManager AudioManager { get; private set; }
-        private PatientAnimation PatientAnimation { get; set; }
-        private StepManagerN StepManagerN { get; set; }
+        public GameStateManager GameStateManager{ get; private set; }
+        public GameData GameData{ get; set; }
+        public AudioManager AudioManager{ get; private set; }
+        private PatientAnimation PatientAnimation{ get; set; }
+        private StepManagerN StepManagerN{ get; set; }
 
 
         #region Structures
-        public int Money
-        {
+
+        public int Money{
             get => money;
-            set
-            {
+            set{
                 int previousMoney = money;
                 money = value;
                 PlayerPrefs.SetInt("money", money);
@@ -39,37 +38,34 @@ namespace Managers
             }
         }
 
-        public bool IsTutorialEnable
-        {
+        public bool IsTutorialEnable{
             get => isTutorialEnable;
-            set
-            {
+            set{
                 bool isEnable = isTutorialEnable;
                 isTutorialEnable = value;
                 PlayerPrefs.SetInt("enableTutorial", isTutorialEnable ? 1 : 0);
                 OnAssistantDisabled?.Invoke(isTutorialEnable, isEnable);
             }
         }
+
         #endregion
 
         #region Configurable Attributes
-        [Header("Debug")]
-        public bool canAccessAllLevel;
+
+        [Header("Debug")] public bool canAccessAllLevel;
         public bool instanteAnimation;
-        
-        [Header("Levels")]
-        [SerializeField] public LevelsData levelsData;
-        
-        [Header("Tutoriel")]
-        [SerializeField] private bool isTutorialEnable = true; // Par défault true car on suppose que le joueur y joue pour la première fois.
+
+        [Header("Levels")] [SerializeField] public LevelsData levelsData;
+
+        [Header("Tutoriel")] [SerializeField]
+        private bool
+            isTutorialEnable = true; // Par défault true car on suppose que le joueur y joue pour la première fois.
 
         private readonly string _pathXmlFile = "Assets/Resources/Data/Tutorial.xml";
         private readonly string _pathXsdFile = "Assets/Resources/Data/TutorialSchema.xsd";
-        [Header("Money")]
-        [SerializeField] private int money = 20;
-        
-        [Header("Menus")]
-        [SerializeField] private GameObject mainMenu;
+        [Header("Money")] [SerializeField] private int money = 20;
+
+        [Header("Menus")] [SerializeField] private GameObject mainMenu;
         [SerializeField] private GameObject gameMenu;
         [SerializeField] private GameObject stepMenu;
         [SerializeField] private GameObject isTutorialActive;
@@ -77,49 +73,48 @@ namespace Managers
         [SerializeField] private GameObject pauseButton;
         [SerializeField] private GameObject levelButton;
         [SerializeField] private GameObject shopButton;
-        
-        [Header("Panels")]
-        [SerializeField] private GameObject shopPanel;
+
+        [Header("Panels")] [SerializeField] private GameObject shopPanel;
         [SerializeField] private GameObject settingsPanelCheckbox;
         [SerializeField] public GameObject tutorialPanel;
 
-        [Header("Scripts")]
-        [SerializeField] private PlayerScoreDisplayManager folderDivider;
+        [Header("Scripts")] [SerializeField] private PlayerScoreDisplayManager folderDivider;
+
         #endregion
 
         #region Private variables
+
         private bool _isTutorialUIEnable;
         private bool _tutorialAnswer = true;
+
         #endregion
 
         #region Internal methods
+
         // LOAD STEP
-        internal void LoadStep(Step stepIndex)
-        {
+        internal void LoadStep(Step stepIndex){
             var currentLevel = GameStateManager.GetCurrentLevel();
             var currentPatient = GameStateManager.GetCurrentPatientCase();
 
-            if (stepIndex == 0)
-            {
+            if (stepIndex == 0) {
                 AudioManager.PlayBGM("tense_dark");
                 AudioManager.StopCurrentSfx();
                 ClearScreen();
-                stepMenu.SetActive(true);                
+                stepMenu.SetActive(true);
                 StepManagerN.Initialize(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient]);
             }
+
             StepManagerN.LoadStep(stepIndex);
         }
 
-        internal void LoadScore(string patientName)
-        {
+        internal void LoadScore(string patientName){
             ClearScreen();
             folderDivider.GetSetDisplayScore(patientName);
             scorePanel.SetActive(true);
         }
 
         // CLEAR SCREEN
-        internal void ClearScreen()
-        {
+        internal void ClearScreen(){
             mainMenu.SetActive(false);
             gameMenu.SetActive(false);
             stepMenu.SetActive(false);
@@ -128,22 +123,20 @@ namespace Managers
         }
 
         // CLEAR ANIMATION
-        internal static void ClearAnimation()
-        {
+        internal static void ClearAnimation(){
             PatientAnimation.StopAnimation();
         }
 
         // LOAD MAIN MENU
-        internal void LoadMainMenu()
-        {
+        internal void LoadMainMenu(){
             AudioManager.StopCurrentSfx();
             ClearScreen();
             mainMenu.SetActive(true);
             pauseButton.SetActive(false);
         }
+
         // LOAD GAME MENU
-        internal void LoadGameMenu()
-        {
+        internal void LoadGameMenu(){
             AudioManager.PlaySFX("ambiant", "AMBIANT");
             ClearScreen();
             ClearAnimation();
@@ -157,18 +150,18 @@ namespace Managers
             var currentPatient = GameStateManager.GetCurrentPatientCase();
 
             // LOAD SPRITE ON SCREEN (BY DEFAULT SPRITE 0 MUST A STAND CHARACTER)
-            PatientAnimation.SetNewCharacterInArea(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient].characterSprites[0]);
+            PatientAnimation.SetNewCharacterInArea(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient]
+                .characterSprites[0]);
             // SHOW TUTORIAL
             if (!instanteAnimation) {
                 Invoke(nameof(EnableTutorial), 4.5f); // total time during the animation done before
             }
         }
-        
-        private void EnableTutorial()
-        {
+
+        private void EnableTutorial(){
             if (Instance.GameData.FirstGameSession()) {
                 isTutorialActive.SetActive(_tutorialAnswer);
-            } 
+            }
         }
 
         public void AnswerTutoriel(){
@@ -176,28 +169,26 @@ namespace Managers
         }
 
         // SAVE BOUGHT ITEM IN PLAYERPREFS
-        public static void AddBoughtItem(string name)
-        {
+        public static void AddBoughtItem(string name){
             PlayerPrefs.SetString("items", $"{name};{PlayerPrefs.GetString("items", "")}");
             PlayerPrefs.Save();
         }
+
         #endregion
 
         #region Main methods
 
         //LOAD GAME ON GRANDMA CLICK -> CALL LaunchGameAfterTime()
-        public void LaunchGame()
-        {
+        public void LaunchGame(){
             ClearAnimation();
             StartCoroutine(LaunchGameAfterTime());
         }
 
         //LOAD GAME ON GRANDMA CLICK -> CHANGE STATE.MANAGER -> LOAD LEVEL 1    
-        private IEnumerator LaunchGameAfterTime()
-        {
+        private IEnumerator LaunchGameAfterTime(){
             if (!instanteAnimation)
                 yield return new WaitForSeconds(0.5f);
-            
+
             GameData.UpdateMainRecordsOnLevelStart();
 
             var currentLevel = GameStateManager.GetCurrentLevel();
@@ -208,53 +199,41 @@ namespace Managers
         }
 
         // PLAY AUDIO
-        public void ClickButton()
-        {
+        public void ClickButton(){
             AudioManager.PlaySFX("ui_click2");
         }
 
-
-        // PLAY AUDIO ON GRANDPA CLICK
-        public void PlayBonjour()
-        {
-            AudioManager.PlaySFX("bonjour");
-        }
-
-        public void SetCheckBoxSettings()
-        {
+        public void SetCheckBoxSettings(){
             settingsPanelCheckbox.GetComponent<Toggle>().isOn = IsTutorialEnable;
         }
 
         // ACTIVATE UI TUTORIAL 
-        public void SetTutorialUI()
-        {
+        public void SetTutorialUI(){
             _isTutorialUIEnable = !_isTutorialUIEnable;
-            if (IsTutorialEnable)
-            {
+            if (IsTutorialEnable) {
                 tutorialPanel.SetActive(_isTutorialUIEnable);
             }
         }
 
-
         #endregion
 
         #region Initializing methods
-        void Awake()
-        {
-            if (Instance != null)
-            {
+
+        void Awake(){
+            if (Instance != null) {
                 Destroy(Instance);
                 return;
             }
+
             Instance = this;
 
             GameStateManager = GetComponent<GameStateManager>();
             GameData = GetComponent<GameData>();
             StepManagerN = GetComponent<StepManagerN>();
-            
+
             AudioManager = GetComponent<AudioManager>();
             PatientAnimation = GetComponent<PatientAnimation>();
-            
+
             mainMenu.SetActive(true);
             gameMenu.SetActive(false);
             stepMenu.SetActive(false);
@@ -264,11 +243,10 @@ namespace Managers
         }
 
 
-        void Start()
-        {
+        void Start(){
             // Check validity of tutorial XML
             XmlManager.ValidateXML(_pathXmlFile, _pathXsdFile);
-            
+
             LoadListItems();
 
             money = PlayerPrefs.GetInt("money", 20);
@@ -277,29 +255,25 @@ namespace Managers
 
             LoadMainMenu();
         }
+
         #endregion
 
         // ON START LOAD ITEM BOUGHT DURING THE LAST SESSION
-        private void LoadListItems()
-        {
+        private void LoadListItems(){
             // TOO CHANGE - LATER
             Transform items = gameMenu.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(1);
 
             string[] savedItems = PlayerPrefs.GetString("items", "").Split(";");
-            for (int i = 0; i < items.childCount; i++)
-            {
-                foreach (string item in savedItems)
-                {
+            for (int i = 0; i < items.childCount; i++) {
+                foreach (string item in savedItems) {
                     Transform loadedItem = items.GetChild(i);
                     if (item.Equals(loadedItem.name)) loadedItem.gameObject.SetActive(true);
                 }
             }
 
             Transform itemButtons = shopPanel.transform.GetChild(0).GetChild(0).GetChild(1);
-            for (int i = 0; i < itemButtons.childCount; i++)
-            {
-                foreach (string item in savedItems)
-                {
+            for (int i = 0; i < itemButtons.childCount; i++) {
+                foreach (string item in savedItems) {
                     Transform loadedItem = itemButtons.GetChild(i);
                     if (item.Equals(loadedItem.name)) loadedItem.gameObject.GetComponent<Button>().interactable = false;
                 }

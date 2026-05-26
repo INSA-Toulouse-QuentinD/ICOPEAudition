@@ -44,19 +44,19 @@ namespace PatientData.AlgoData.Editor{
             Step stepType = (Step)typeProp.enumValueIndex;
 
             // Show/hide fields based on the step type.
-            if (stepType == Step.WisperTest || stepType == Step.WeberTest) {
+            if (stepType is Step.WisperTest or Step.WeberTest) {
                 line = new Rect(position.x, y, position.width, EditorGUI.GetPropertyHeight(dialoguePatientProp, true));
                 EditorGUI.PropertyField(line, dialoguePatientProp, true);
                 y = Next(line);
             }
 
-            if (stepType == Step.Questionnary || stepType == Step.AdditionalQuestionnaire) {
+            if (stepType == Step.Questionnary) {
                 line = new Rect(position.x, y, position.width, EditorGUI.GetPropertyHeight(predefinedProp, true));
                 EditorGUI.PropertyField(line, predefinedProp, true);
                 y = Next(line);
             }
 
-            if (stepType == Step.Otoscopy || stepType == Step.HhiesTest || stepType == Step.Audiometry) {
+            if (stepType is Step.Otoscopy or Step.HhiesTest or Step.Audiometry) {
                 line = new Rect(position.x, y, position.width, EditorGUI.GetPropertyHeight(spriteEarExamsProp, true));
                 EditorGUI.PropertyField(line, spriteEarExamsProp, true);
                 y = Next(line);
@@ -93,7 +93,7 @@ namespace PatientData.AlgoData.Editor{
             if (stepType == Step.WisperTest || stepType == Step.WeberTest)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(dialoguePatientProp, true);
 
-            if (stepType == Step.Questionnary || stepType == Step.AdditionalQuestionnaire)
+            if (stepType == Step.Questionnary)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(predefinedProp, true);
 
             if (stepType == Step.Otoscopy || stepType == Step.HhiesTest || stepType == Step.Audiometry)

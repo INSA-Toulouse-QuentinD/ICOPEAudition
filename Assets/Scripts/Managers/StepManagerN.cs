@@ -173,15 +173,6 @@ namespace Managers{
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
-                case Step.AdditionalQuestionnaire
-                    : //DEBUG!!! Complètement inutile pour le moment, à voir avec les patientCase plus difficile !
-                    // Load questionary & answer
-                    List<QuestionData> questions2 = questionnaireData.questions;
-                    List<YesNo> answers2 = _patientData.steps[_indexStep].predefinedAnwser;
-                    _step4And5Questionnary.SetQuestionayText(questions2, answers2);
-                    // Display current step
-                    displayList[_currentDisplay].SetActive(true);
-                    break;
                 case Step.Otoscopy:
                     // Load patient ear image
                     if (_patientData.characterSprites.Length > 1) {
@@ -195,7 +186,7 @@ namespace Managers{
                 case Step.WeberTest:
                     // Load texts dialogue & sprite
                     _step6HhiesTest.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
-                    _step6HhiesTest.SetImage(_patientData.characterSprites[0]);
+                    _step6HhiesTest.SetImage(_patientData.characterSprites[^1]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
@@ -343,7 +334,7 @@ namespace Managers{
                 choiceButtons[i].gameObject.SetActive(true);
             }
         }
-        
+
         /// <summary>
         /// Advances the game to the next step if the current step's diagnostic and action phases are completed.
         /// If both phases are completed, the current step is the last, it displays the player's scores.
@@ -567,7 +558,6 @@ namespace Managers{
                 { Step.CasePresentation, 0 },
                 { Step.WisperTest, 1 },
                 { Step.Questionnary, 2 },
-                { Step.AdditionalQuestionnaire, 2 },
                 { Step.Otoscopy, 3 },
                 { Step.WeberTest, 4 },
                 { Step.HhiesTest, 5 },

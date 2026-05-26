@@ -3,11 +3,11 @@ guid: ed7b6d6ccaaedb0498e82833b2dc3103
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3518700876127652132
-    second: noName2_0
+      213: -7437278254327989670
+    second: Gerard_0
   - first:
-      213: 3082165611890211923
-    second: noName2_1
+      213: 5038730560819184029
+    second: Gerard_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: noName2_0
+      name: Gerard_0
       rect:
         serializedVersion: 2
         x: 93
@@ -144,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd63e8f22301b2fc0800000000000000
-      internalID: -3518700876127652132
+      spriteID: a5afa0305da79c890800000000000000
+      internalID: -7437278254327989670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: noName2_1
+      name: Gerard_1
       rect:
         serializedVersion: 2
         x: 502
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35cf3a34b4d06ca20800000000000000
-      internalID: 3082165611890211923
+      spriteID: d91488cafba2de540800000000000000
+      internalID: 5038730560819184029
       vertices: []
       indices: 
       edges: []
@@ -186,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      noName2_0: -3518700876127652132
-      noName2_1: 3082165611890211923
+      Gerard_0: -7437278254327989670
+      Gerard_1: 5038730560819184029
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
