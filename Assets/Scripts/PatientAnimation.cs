@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -123,7 +124,11 @@ public class PatientAnimation : MonoBehaviour
             //SetNewSprite();
             SetSprite(sprite);
             SetNewTargetPosition(spawnPatientArea);
-            Invoke(nameof(FadeOut), 1.5f);
+            if (GameManager.Instance.instanteAnimation) {
+                FadeOut();
+            } else {
+                Invoke(nameof(FadeOut), 1.5f);
+            }
         }
 
         /// <summary>
@@ -132,8 +137,13 @@ public class PatientAnimation : MonoBehaviour
         /// </summary>
         private void FadeOut()
         {
-            fadePanel.DOFade(0f, 1f).SetEase(Ease.Linear);
-            Invoke(nameof(ContinueSetNewCharacter), 1f);
+            if (GameManager.Instance.instanteAnimation) {
+                fadePanel.DOFade(0f, 0f).SetEase(Ease.Linear);
+                ContinueSetNewCharacter();
+            } else {
+                fadePanel.DOFade(0f, 1f).SetEase(Ease.Linear);
+                Invoke(nameof(ContinueSetNewCharacter), 1f);
+            }
         }
 
 
@@ -145,7 +155,11 @@ public class PatientAnimation : MonoBehaviour
             ToggleDoor();
             SetNewTargetPosition(interactionArea);
             AnimationSizeImage();
-            Invoke(nameof(FadeIn), 1f);
+            if (GameManager.Instance.instanteAnimation) {
+                FadeIn();
+            } else {
+                Invoke(nameof(FadeIn), 1f);
+            }
         }
         /// <summary>
         /// Fade in animation.

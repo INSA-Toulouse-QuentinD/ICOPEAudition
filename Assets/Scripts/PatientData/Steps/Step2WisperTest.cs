@@ -1,5 +1,6 @@
 using PatientData.AlgoData;
 using DG.Tweening;
+using Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,7 +42,7 @@ namespace PatientData.Steps
         // Words spoken by the doctor (can be moved to ScriptableObject for configurability)
         private readonly string[] doctorWords = { "Ami", "Bateau", "Bureau", "Chameau", "Cheval", "Hibou", "Journal", "Lama", "Lapin", "Moto", "Mouton", "Parfait", "Pompier", "Salon", "Serpent"};
         private string patientText;
-
+        
         // Clears all text UI fields
         private void ClearTexts()
         {
@@ -179,6 +180,17 @@ namespace PatientData.Steps
 
             goPatientText.SetActive(true);
             targetPatientText.text = patientText;
+        }
+        
+        public void SkipAnimation(AlgoStep step){
+            ClearTexts();
+            ClearDialogueBox();
+            ClearDoctorSprite();
+            
+            doctorPos2.SetActive(true);
+
+            goPatientText.SetActive(true);
+            targetPatientText.text = step.dialoguePatient;
         }
     }
 }

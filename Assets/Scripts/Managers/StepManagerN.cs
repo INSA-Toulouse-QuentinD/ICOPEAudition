@@ -133,7 +133,11 @@ namespace Managers{
                     }
 
                     step2WisperTest.SetPatient(patientSprite);
-                    step2WisperTest.PlayFirstText(patientData.steps[_indexStep]);
+                    if (GameManager.Instance.instanteAnimation) {
+                        step2WisperTest.SkipAnimation(patientData.steps[_indexStep]);
+                    } else {
+                        step2WisperTest.PlayFirstText(patientData.steps[_indexStep]);
+                    }
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;

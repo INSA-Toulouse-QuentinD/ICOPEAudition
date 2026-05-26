@@ -58,6 +58,7 @@ namespace Managers
         #region Configurable Attributes
         [Header("Debug")]
         public bool canAccessAllLevel;
+        public bool instanteAnimation;
         
         [Header("Levels")]
         [SerializeField] public LevelsData LevelsData;
@@ -162,7 +163,9 @@ namespace Managers
             // LOAD SPRITE ON SCREEN (BY DEFAULT SPRITE 0 MUST A STAND CHARACTER) 
             PatientAnimation.SetNewCharacterInArea(LevelsData.patientByLevel[currentLevel].patientsCase[currentPatient].characterSprites[0]);
             // SHOW TUTORIAL
-            Invoke(nameof(EnableTutorial), 4.5f); // total time during the animation done before
+            if (!instanteAnimation) {
+                Invoke(nameof(EnableTutorial), 4.5f); // total time during the animation done before
+            }
         }
         
         private void EnableTutorial()
@@ -196,7 +199,8 @@ namespace Managers
         //LOAD GAME ON GRANDMA CLICK -> CHANGE STATE.MANAGER -> LOAD LEVEL 1    
         private IEnumerator LaunchGameAfterTime()
         {
-            yield return new WaitForSeconds(0.5f);
+            if (!instanteAnimation)
+                yield return new WaitForSeconds(0.5f);
             
             GameData.UpdateMainRecordsOnLevelStart();
 
