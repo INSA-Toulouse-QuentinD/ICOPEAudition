@@ -22,35 +22,32 @@ namespace Managers
         public GameStateManager GameStateManager { get; private set; }
         public GameData GameData { get; set; }
         public AudioManager AudioManager { get; private set; }
-        public PatientAnimation PatientAnimation { get; private set; }
-        public StepManagerN StepManagerN { get; private set; }
+        private PatientAnimation PatientAnimation { get; set; }
+        private StepManagerN StepManagerN { get; set; }
 
 
         #region Structures
         public int Money
         {
-            get
-            {
-                return _money;
-            }
+            get => money;
             set
             {
-                int previousMoney = _money;
-                _money = value;
-                PlayerPrefs.SetInt("money", _money);
-                OnMoneyChanged?.Invoke(_money, _money - previousMoney);
+                int previousMoney = money;
+                money = value;
+                PlayerPrefs.SetInt("money", money);
+                OnMoneyChanged?.Invoke(money, money - previousMoney);
             }
         }
 
         public bool IsTutorialEnable
         {
-            get { return _isTutorialEnable; }
+            get => isTutorialEnable;
             set
             {
-                bool _isEnable = _isTutorialEnable;
-                _isTutorialEnable = value;
-                PlayerPrefs.SetInt("enableTutorial", _isTutorialEnable ? 1 : 0);
-                OnAssistantDisabled?.Invoke(_isTutorialEnable, _isEnable);
+                bool isEnable = isTutorialEnable;
+                isTutorialEnable = value;
+                PlayerPrefs.SetInt("enableTutorial", isTutorialEnable ? 1 : 0);
+                OnAssistantDisabled?.Invoke(isTutorialEnable, isEnable);
             }
         }
         #endregion
@@ -61,41 +58,38 @@ namespace Managers
         public bool instanteAnimation;
         
         [Header("Levels")]
-        [SerializeField] public LevelsData LevelsData;
-
+        [SerializeField] public LevelsData levelsData;
+        
         [Header("Tutoriel")]
-        [SerializeField] private bool _isTutorialEnable = true; // Par défault true car on suppose que le joueur y joue pour la première fois.
-        public readonly string _pathXmlFile = "Assets/Resources/Data/Tutorial.xml";
+        [SerializeField] private bool isTutorialEnable = true; // Par défault true car on suppose que le joueur y joue pour la première fois.
+
+        private readonly string _pathXmlFile = "Assets/Resources/Data/Tutorial.xml";
         private readonly string _pathXsdFile = "Assets/Resources/Data/TutorialSchema.xsd";
         [Header("Money")]
-        [SerializeField] private int _money = 20;
-
+        [SerializeField] private int money = 20;
+        
         [Header("Menus")]
-        [SerializeField] private GameObject _mainMenu;
-        [SerializeField] private GameObject _gameMenu;
-        [SerializeField] private GameObject _stepMenu;
-        [SerializeField] private GameObject _isTutoriaActive;
-        [SerializeField] private GameObject _scorePanel;
-        [SerializeField] private GameObject _levelButton;
-        [SerializeField] private GameObject _shopButton;
-
+        [SerializeField] private GameObject mainMenu;
+        [SerializeField] private GameObject gameMenu;
+        [SerializeField] private GameObject stepMenu;
+        [SerializeField] private GameObject isTutorialActive;
+        [SerializeField] private GameObject scorePanel;
+        [SerializeField] private GameObject pauseButton;
+        [SerializeField] private GameObject levelButton;
+        [SerializeField] private GameObject shopButton;
+        
         [Header("Panels")]
-        [SerializeField] private GameObject _pausePanel;
-        [SerializeField] private GameObject _mainPanel;
-        [SerializeField] private GameObject _shopPanel;
-        [SerializeField] private GameObject _settingsPanelCheckbox;
-        [SerializeField] public GameObject _tutorialPanel;
+        [SerializeField] private GameObject shopPanel;
+        [SerializeField] private GameObject settingsPanelCheckbox;
+        [SerializeField] public GameObject tutorialPanel;
 
-        [Header("Character pluse")]
-        [SerializeField] private GameObject _elderPerson; // maybe change to list
-
-        [Header("Scrpits")]
+        [Header("Scripts")]
         [SerializeField] private PlayerScoreDisplayManager folderDivider;
         #endregion
 
         #region Private variables
-        private bool isTutorialUIEnable = false;
-        private bool tutorialAnswer = true;
+        private bool _isTutorialUIEnable;
+        private bool _tutorialAnswer = true;
         #endregion
 
         #region Internal methods
@@ -110,8 +104,8 @@ namespace Managers
                 AudioManager.PlayBGM("tense_dark");
                 AudioManager.StopCurrentSfx();
                 ClearScreen();
-                _stepMenu.SetActive(true);                
-                StepManagerN.Initialize(LevelsData.patientByLevel[currentLevel].patientsCase[currentPatient]);
+                stepMenu.SetActive(true);                
+                StepManagerN.Initialize(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient]);
             }
             StepManagerN.LoadStep(stepIndex);
         }
@@ -120,17 +114,17 @@ namespace Managers
         {
             ClearScreen();
             folderDivider.GetSetDisplayScore(patientName);
-            _scorePanel.SetActive(true);
+            scorePanel.SetActive(true);
         }
 
         // CLEAR SCREEN
         internal void ClearScreen()
         {
-            _mainMenu.SetActive(false);
-            _gameMenu.SetActive(false);
-            _stepMenu.SetActive(false);
-            _scorePanel.SetActive(false);
-            _isTutoriaActive.SetActive(false);
+            mainMenu.SetActive(false);
+            gameMenu.SetActive(false);
+            stepMenu.SetActive(false);
+            scorePanel.SetActive(false);
+            isTutorialActive.SetActive(false);
         }
 
         // CLEAR ANIMATION
@@ -144,7 +138,8 @@ namespace Managers
         {
             AudioManager.StopCurrentSfx();
             ClearScreen();
-            _mainMenu.SetActive(true);
+            mainMenu.SetActive(true);
+            pauseButton.SetActive(false);
         }
         // LOAD GAME MENU
         internal void LoadGameMenu()
@@ -152,16 +147,17 @@ namespace Managers
             AudioManager.PlaySFX("ambiant", "AMBIANT");
             ClearScreen();
             ClearAnimation();
-            _gameMenu.SetActive(true);
-            _levelButton.SetActive(true);
-            _shopButton.SetActive(true);
-            _shopPanel.SetActive(false);
+            gameMenu.SetActive(true);
+            levelButton.SetActive(true);
+            shopButton.SetActive(true);
+            shopPanel.SetActive(false);
+            pauseButton.SetActive(true);
 
             var currentLevel = GameStateManager.GetCurrentLevel();
             var currentPatient = GameStateManager.GetCurrentPatientCase();
 
-            // LOAD SPRITE ON SCREEN (BY DEFAULT SPRITE 0 MUST A STAND CHARACTER) 
-            PatientAnimation.SetNewCharacterInArea(LevelsData.patientByLevel[currentLevel].patientsCase[currentPatient].characterSprites[0]);
+            // LOAD SPRITE ON SCREEN (BY DEFAULT SPRITE 0 MUST A STAND CHARACTER)
+            PatientAnimation.SetNewCharacterInArea(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient].characterSprites[0]);
             // SHOW TUTORIAL
             if (!instanteAnimation) {
                 Invoke(nameof(EnableTutorial), 4.5f); // total time during the animation done before
@@ -171,12 +167,12 @@ namespace Managers
         private void EnableTutorial()
         {
             if (Instance.GameData.FirstGameSession()) {
-                _isTutoriaActive.SetActive(tutorialAnswer);
+                isTutorialActive.SetActive(_tutorialAnswer);
             } 
         }
 
         public void AnswerTutoriel(){
-            tutorialAnswer = false;
+            _tutorialAnswer = false;
         }
 
         // SAVE BOUGHT ITEM IN PLAYERPREFS
@@ -208,7 +204,7 @@ namespace Managers
             var currentPatient = GameStateManager.GetCurrentPatientCase();
 
             // SET ALGO STEP BY DEFAULT LOAD STEP 0 (RESTART THE PARCOURS EVEN IF PLAYER STOP DURING)
-            GameStateManager.SetStep(LevelsData.patientByLevel[currentLevel].patientsCase[currentPatient].steps[0].type);
+            GameStateManager.SetStep(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient].steps[0].type);
         }
 
         // PLAY AUDIO
@@ -226,16 +222,16 @@ namespace Managers
 
         public void SetCheckBoxSettings()
         {
-            _settingsPanelCheckbox.GetComponent<Toggle>().isOn = IsTutorialEnable;
+            settingsPanelCheckbox.GetComponent<Toggle>().isOn = IsTutorialEnable;
         }
 
         // ACTIVATE UI TUTORIAL 
         public void SetTutorialUI()
         {
-            isTutorialUIEnable = !isTutorialUIEnable;
+            _isTutorialUIEnable = !_isTutorialUIEnable;
             if (IsTutorialEnable)
             {
-                _tutorialPanel.SetActive(isTutorialUIEnable);
+                tutorialPanel.SetActive(_isTutorialUIEnable);
             }
         }
 
@@ -259,8 +255,9 @@ namespace Managers
             AudioManager = GetComponent<AudioManager>();
             PatientAnimation = GetComponent<PatientAnimation>();
             
-            _mainMenu.SetActive(true);
-            _gameMenu.SetActive(false);
+            mainMenu.SetActive(true);
+            gameMenu.SetActive(false);
+            stepMenu.SetActive(false);
 
             AudioManager.LoopBgm(true);
             AudioManager.LoopSfx(true, "AMBIANT");
@@ -274,9 +271,11 @@ namespace Managers
             
             LoadListItems();
 
-            _money = PlayerPrefs.GetInt("money", 20);
-            _isTutorialEnable = PlayerPrefs.GetInt("enableTutorial") == 1;
+            money = PlayerPrefs.GetInt("money", 20);
+            isTutorialEnable = PlayerPrefs.GetInt("enableTutorial") == 1;
             AudioManager.PlayBGM("skyline");
+
+            LoadMainMenu();
         }
         #endregion
 
@@ -284,7 +283,7 @@ namespace Managers
         private void LoadListItems()
         {
             // TOO CHANGE - LATER
-            Transform items = _gameMenu.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(1);
+            Transform items = gameMenu.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(1);
 
             string[] savedItems = PlayerPrefs.GetString("items", "").Split(";");
             for (int i = 0; i < items.childCount; i++)
@@ -296,7 +295,7 @@ namespace Managers
                 }
             }
 
-            Transform itemButtons = _shopPanel.transform.GetChild(0).GetChild(0).GetChild(1);
+            Transform itemButtons = shopPanel.transform.GetChild(0).GetChild(0).GetChild(1);
             for (int i = 0; i < itemButtons.childCount; i++)
             {
                 foreach (string item in savedItems)

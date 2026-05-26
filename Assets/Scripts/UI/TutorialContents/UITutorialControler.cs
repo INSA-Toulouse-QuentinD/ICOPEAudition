@@ -89,7 +89,7 @@ namespace UI.TutorialContents
         /// </summary>
         private void Update()
         {
-            if (GameManager.Instance._tutorialPanel.activeSelf) GetInputs();
+            if (GameManager.Instance.tutorialPanel.activeSelf) GetInputs();
         }
         #endregion
     }

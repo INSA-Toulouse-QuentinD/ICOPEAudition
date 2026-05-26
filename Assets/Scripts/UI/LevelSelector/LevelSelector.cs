@@ -46,7 +46,7 @@ namespace UI.LevelSelector{
             startGameButton.onClick.AddListener(LoadPatientCase);
 
             // Load levels
-            levelsData = GameManager.Instance.LevelsData;
+            levelsData = GameManager.Instance.levelsData;
 
             // Le tutoriel et selectionner de base.
             ButtonsManager.SetButtonFocused(levelCompos[0].difficultiesBt);

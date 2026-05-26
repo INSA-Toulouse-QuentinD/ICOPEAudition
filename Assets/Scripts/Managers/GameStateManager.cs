@@ -251,12 +251,12 @@ namespace Managers
         /// <param name="savedPatientCase">The saved patient case to load.</param>
         public void LoadPlayerSaveStates(LevelState savedLevelState, PatientCase savedPatientCase)
         {
-            if ((int)savedLevelState <= GameManager.Instance.LevelsData.patientByLevel.Count)
+            if ((int)savedLevelState <= GameManager.Instance.levelsData.patientByLevel.Count)
             {
                 currentLevel = savedLevelState;
 
                 // WARNING : if cond not good
-                if ((int) savedPatientCase < GameManager.Instance.LevelsData.patientByLevel[(int)currentLevel].patientsCase.Count - 1)
+                if ((int) savedPatientCase < GameManager.Instance.levelsData.patientByLevel[(int)currentLevel].patientsCase.Count - 1)
                 {
                     currentPatientCase = savedPatientCase + 1;
                 }
@@ -278,7 +278,7 @@ namespace Managers
         /// </summary>
         private void Start()
         {
-            LevelsData = GameManager.Instance.LevelsData;
+            LevelsData = GameManager.Instance.levelsData;
 
             // Set by default current level and current patient case (change later if player has a save)
             currentLevel = LevelState.LEVEL_0;
