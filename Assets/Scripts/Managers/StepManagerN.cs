@@ -86,6 +86,11 @@ namespace Managers{
 
         private Dictionary<Step, int> _mappingDisplays;
 
+        // UI state (simple): keep which answers have already been tried and were incorrect
+        // so that "Précédent" (correction -> questions) does not reset buttons.
+        private readonly List<bool> _diagIncorrectTried = new List<bool>();
+        private readonly List<bool> _actionIncorrectTried = new List<bool>();
+
         /// <summary>
         /// Initializes the patient data and resets the step index and display index
         /// to start fresh for a new patient case.
@@ -95,6 +100,20 @@ namespace Managers{
             _indexStep = 0; // reset current step to 0
             _currentDisplay = 0;
             _patientData = newPatient;
+
+            ResetTriedState();
+        }
+
+        private void ResetTriedState(){
+            _diagIncorrectTried.Clear();
+            _actionIncorrectTried.Clear();
+        }
+
+        private static void EnsureSize(List<bool> list, int size){
+            if (size < 0) size = 0;
+
+            while (list.Count < size) list.Add(false);
+            if (list.Count > size) list.RemoveRange(size, list.Count - size);
         }
 
         /// <summary>
@@ -113,6 +132,7 @@ namespace Managers{
             // Set bool to false each step
             _isDiagnosticValid = false;
             _isActionValid = false;
+            ResetTriedState();
             _currentDisplay = _mappingDisplays[currentStep];
 
             Sprite patientSprite = null;
@@ -259,18 +279,41 @@ namespace Managers{
         ///   it sets the answer state to ACTION and creates the corresponding action answer buttons.
         /// </summary>
         private void SetResponses(){
-            if (_patientData.steps[_indexStep].diagnosticPhase.Count > 0 && !_isDiagnosticValid) {
-                questionText.text = "Quel est votre diagnostic ?";
-                _answerState = AnswerState.DIAGNOSTIC;
-                CreateAnswerButtons(_patientData.steps[_indexStep].diagnosticPhase);
-            } else {
+            AlgoStep algoStep = _patientData.steps[_indexStep];
+            int diagCount = algoStep.diagnosticPhase.Count;
+            int actionCount = algoStep.actionPhase.Count;
+
+            // If no diagnostic phase exists, consider it completed to allow action.
+            if (diagCount == 0) {
                 _isDiagnosticValid = true;
             }
 
-            if (_patientData.steps[_indexStep].actionPhase.Count > 0 && _isDiagnosticValid) {
+            if (diagCount > 0 && !_isDiagnosticValid) {
+                questionText.text = "Quel est votre diagnostic ?";
+                _answerState = AnswerState.DIAGNOSTIC;
+                EnsureSize(_diagIncorrectTried, diagCount);
+                CreateAnswerButtons(algoStep.diagnosticPhase);
+                ApplyTriedStateToButtons(_diagIncorrectTried);
+                return;
+            }
+
+            if (actionCount > 0 && _isDiagnosticValid) {
                 questionText.text = "Que faites-vous ?";
                 _answerState = AnswerState.ACTION;
-                CreateAnswerButtons(_patientData.steps[_indexStep].actionPhase);
+                EnsureSize(_actionIncorrectTried, actionCount);
+                CreateAnswerButtons(algoStep.actionPhase);
+                ApplyTriedStateToButtons(_actionIncorrectTried);
+            }
+        }
+
+        private void ApplyTriedStateToButtons(List<bool> triedIncorrect){
+            int max = Mathf.Min(choiceButtons.Length, triedIncorrect.Count);
+            for (int i = 0; i < max; i++) {
+                if (!choiceButtons[i].gameObject.activeSelf) continue;
+                if (!triedIncorrect[i]) continue;
+
+                choiceButtons[i].GetComponent<AnswerButton>().SetIncorrect();
+                choiceButtons[i].interactable = false;
             }
         }
 
@@ -341,6 +384,8 @@ namespace Managers{
 
                 _interactionState = InteractionState.ISANSWERING;
                 questionsDisplay.SetActive(true);
+                // Recreate buttons and re-apply previous incorrect choices for this step/phase.
+                SetResponses();
                 SetTextButtonsNavigation();
             } else if (_interactionState == InteractionState.ISANSWERING) {
                 ClearAllDisplay();
@@ -392,6 +437,17 @@ namespace Managers{
 
             if (!isCorrectAnswer) {
                 choiceButtons[index].GetComponent<AnswerButton>().SetIncorrect();
+
+                // Remember this incorrect attempt so that "Précédent" won't reset it.
+                if (_answerState == AnswerState.DIAGNOSTIC) {
+                    EnsureSize(_diagIncorrectTried, answerData.Count);
+                    if (index >= 0 && index < _diagIncorrectTried.Count) _diagIncorrectTried[index] = true;
+                } else {
+                    EnsureSize(_actionIncorrectTried, answerData.Count);
+                    if (index >= 0 && index < _actionIncorrectTried.Count) _actionIncorrectTried[index] = true;
+                }
+
+                choiceButtons[index].interactable = false;
             }
 
             switch (_answerState) {
