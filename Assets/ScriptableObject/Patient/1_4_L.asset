@@ -15,7 +15,7 @@ MonoBehaviour:
   characterSprites:
   - {fileID: -1683400333343287881, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
   - {fileID: 5001668446368383778, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
-  surname: L
+  lastName: 
   firstName: Doe
   age: 84
   familySituation: 
@@ -55,7 +55,7 @@ MonoBehaviour:
         la suspicion n\u2019est pas confirm\xE9e, il n\u2019est pas n\xE9cessaire
         de poursuivre l\u2019\xE9valuation."
       sprites: []
-    - answerText: "Je ne peux rien faire, je renvoie le patient vers l\u2019ORL."
+    - answerText: "Je ne peux rien faire, je renvoie la patiente vers l\u2019ORL."
       isCorrect: 0
       correctionText: "La patiente est un bon candidat pour l\u2019\xE9valuation
         ICOPE : elle a plus de 60 ans, son autonomie est pr\xE9serv\xE9e, le d\xE9pistage
@@ -74,12 +74,12 @@ MonoBehaviour:
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 2 mots
-        du c\xF4t\xE9 droit."
+        du c\xF4t\xE9 droit. ???"
       isCorrect: 0
       correctionText: "Le test est bien pathologique mais lors du test de chuchotement,
         l'\xE9valuation de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter
         4 mots au patient pour chaque oreille et non 2 mots comme sur cette affirmation.
-        \r\n\r\nDe plus, le patient \xE0 bien \xE9voqu\xE9 qu\u2019il n\u2019avait
+        \r\n\r\nDe plus, la patiente \xE0 bien \xE9voqu\xE9 qu\u2019il n\u2019avait
         entendu aucun mot du c\xF4t\xE9 de l\u2019oreille droite. \r\n\r\nLe crit\xE8re
         normal pour consid\xE9rer qu'il n'y a pas d\u2019anomalie auditive est la
         r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots (ou 3 minimum par
@@ -89,8 +89,8 @@ MonoBehaviour:
         des 2 c\xF4t\xE9s."
       isCorrect: 1
       correctionText: "Lors du test de chuchotement, on consid\xE8re que l\u2019audition
-        est normale si le patient est capable de r\xE9p\xE9ter correctement au moins
-        3 mots sur 4 pour chaque oreille.\r\nDans ce cas, le patient n\u2019a su
+        est normale si la patiente est capable de r\xE9p\xE9ter correctement au moins
+        3 mots sur 4 pour chaque oreille.\r\nDans ce cas, la patiente n\u2019a su
         r\xE9p\xE9ter que 2 mots sur 4 pour chaque c\xF4t\xE9, ce qui est en dessous
         du seuil requis.\r\nCela indique une atteinte de l\u2019audition bilat\xE9rale,
         car aucun des deux c\xF4t\xE9s n\u2019atteint le crit\xE8re minimal de 3
@@ -104,15 +104,15 @@ MonoBehaviour:
         4 mots au patient pour chaque oreille et non 2 mots comme sur cette affirmation.
         \r\n\r\nLe crit\xE8re normal pour consid\xE9rer qu'il n'y a pas d\u2019anomalie
         auditive est la r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots (ou
-        3 mots minimum par oreille).\r\nOr, dans ce cas pr\xE9cis, le patient n\u2019a
+        3 mots minimum par oreille).\r\nOr, dans ce cas pr\xE9cis, la patiente n\u2019a
         r\xE9p\xE9t\xE9 que 2 mots sur 4 pour chaque oreille. Cela traduit une diminution
         de l'acuit\xE9 auditive bilat\xE9rale et constitue une anomalie du test."
       sprites: []
     - answerText: Le test est normal.
       isCorrect: 0
-      correctionText: "Pour que le test soit consid\xE9r\xE9 comme normal, le patient
+      correctionText: "Pour que le test soit consid\xE9r\xE9 comme normal, la patiente
         doit \xEAtre capable de r\xE9p\xE9ter au moins 3 mots sur 4 par oreille.\r\nDans
-        la situation d\xE9crite :\r\nLe patient a r\xE9p\xE9t\xE9 seulement 2 mots
+        la situation d\xE9crite :\r\nla patiente a r\xE9p\xE9t\xE9 seulement 2 mots
         sur 4 du c\xF4t\xE9 gauche et 0 mots sur 4 du c\xF4t\xE9 droit,\r\nCela signifie
         qu\u2019il n\u2019atteint pas le seuil minimal requis pour une audition normale
         sur aucune des deux oreilles.\r\n\r\nLe test aurait \xE9t\xE9 normal si le
@@ -162,9 +162,9 @@ MonoBehaviour:
     - answerText: "Il n\u2019a r\xE9pondu que des \"non\", ce qui indique une suspicion
         de cas simple."
       isCorrect: 1
-      correctionText: "Si aux r\xE9ponses du questionnaire Go-No-Go, le patient r\xE9ponds
-        \"Non\" \xE0 chaque question, il s\u2019agit bien d\u2019une suspicion de
-        cas simple."
+      correctionText: "Si aux r\xE9ponses du questionnaire Go-No-Go, la patiente
+        r\xE9ponds \"Non\" \xE0 chaque question, il s\u2019agit bien d\u2019une suspicion
+        de cas simple."
       sprites: []
     - answerText: "Ses r\xE9ponses ne montrent pas de probl\xE8me significatifs. "
       isCorrect: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   - type: 4
     dialoguePatient: "\r"
     predefinedAnwser: 
-    spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
+    spriteEarExams: {fileID: 21300000, guid: 26192f65446b2384f8cd0a47836d5538, type: 3}
     diagnosticPhase:
     - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
       isCorrect: 0
@@ -229,19 +229,22 @@ MonoBehaviour:
       - {fileID: 21300000, guid: b5ca7212c3dd1014685c70d76ca23d6e, type: 3}
     - answerText: "Il s\u2019agit d\u2019une perforation tympanique."
       isCorrect: 0
-      correctionText: "On peut suivre l\u2019annulus sur toute sa circonf\xE9rence,
-        il n\u2019existe pas de perforation de la membrane."
+      correctionText: "Faux, Il n\u2019existe pas de perforation de la membrane."
       sprites:
       - {fileID: 21300000, guid: c8721d873aaf0b442a563e92ea23f282, type: 3}
       - {fileID: 21300000, guid: 6751ff46d80eb624ca7a0619b16be793, type: 3}
     - answerText: "Il s\u2019agit d\u2019un bouchon de c\xE9rumen."
-      isCorrect: 0
-      correctionText: "Voici l\u2019image d\u2019un bouchon de c\xE9rumen."
+      isCorrect: 1
+      correctionText: "Oui, selon la formation et la forme du bouchon de c\xE9rumen,
+        on peut aussi proc\xE9der \xE0 une aspiration (bouchons \xE0 la sortie du
+        Conduit Auditif Externe, plut\xF4t mous ; ou encore les m\xE9thodes avec
+        curette si le bouchon est lat\xE9ral et qu\u2019il est possible de glisser
+        la curette entre le bouchon et la paroi du conduit auditif externe."
       sprites:
       - {fileID: 21300000, guid: f503c7a4e7193c945b6f71187b1b4708, type: 3}
       - {fileID: 21300000, guid: 074d65b9d59894e45a6ce7148c6c22f1, type: 3}
     - answerText: "Il s\u2019agit d\u2019un tympan normal."
-      isCorrect: 1
+      isCorrect: 0
       correctionText: "Un tympan normal est classiquement transparent, de couleur
         grise, bien tendu autour de la circonf\xE9rence (annulus), que fait le fond
         du Conduit Auditif Externe."
@@ -249,280 +252,76 @@ MonoBehaviour:
       - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
       - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
     actionPhase:
-    - answerText: Je le laisse repartir chez lui.
-      isCorrect: 0
-      correctionText: "On a un cas simple, avec un d\xE9pistage pathologique : il
-        faut continuer son \xE9valuation ! la normalit\xE9 de l'examen otoscopique
-        n'est en rien rassurante vis \xE0 vis du statut auditif du patient."
+    - answerText: "Je tente une ablation du BDC par la m\xE9thode de l\u2019irrigation,
+        apr\xE8s v\xE9rification de l\u2019absence de CI"
+      isCorrect: 1
+      correctionText: ???
       sprites:
       - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
       - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
-    - answerText: Je continue le parcours audition et lui fait passer le test de
-        Weber.
+    - answerText: "Je prescris des gouttes et j\u2019attends 8 jours."
+      isCorrect: 0
+      correctionText: ???
+      sprites: []
+    - answerText: "Je passe \xE0 l\u2019audiom\xE9trie."
+      isCorrect: 0
+      correctionText: ???
+      sprites: []
+    - answerText: "Je r\xE9alise une acoum\xE9trie"
+      isCorrect: 0
+      correctionText: ???
+      sprites: []
+  - type: 4
+    dialoguePatient: 
+    predefinedAnwser: 
+    spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
+    diagnosticPhase: []
+    actionPhase:
+    - answerText: "Son otoscopie est normale, je r\xE9p\xE8te le test de chuchotement."
       isCorrect: 1
-      correctionText: "Les \xE9tapes pr\xE9c\xE9dentes ne permettent pas de confirmer
-        qu\u2019il n\u2019y a pas d\u2019anomalie auditive. Le test de Weber est
-        l\u2019examen \xE0 r\xE9aliser en suivant."
+      correctionText: "Oui, en premier, on v\xE9rifie que la g\xE8ne persiste."
       sprites: []
-    - answerText: "Je l\u2019envoi aux urgences."
+    - answerText: Son otoscopie est normale, je peux lui faire passer le questionnaire
+        HHIE-S.
       isCorrect: 0
-      correctionText: "L\u2019examen du tympan est normal, on peut poursuivre l\u2019exploration
-        auditive par un Test acoum\xE9trique de Weber."
+      correctionText: "Non, d\u2019abord on r\xE9p\xE8te le d\xE9pistage, par exemple
+        avec le test de chuchotement."
       sprites: []
-    - answerText: "Je prescris une proth\xE8se auditive."
+    - answerText: "Son otoscopie est normale, je peux r\xE9aliser l\u2019audiom\xE9trie."
       isCorrect: 0
-      correctionText: "Non, on doit poursuivre l\u2019\xE9valuation auditive, pour
-        confirmer qu\u2019on est bien face \xE0 un tableau de presbyacousie simple,
-        ET avec une surdit\xE9 dans les crit\xE8res d\u2019appareillage audioproth\xE9tique.\r\nOn
-        ne fait JAMAIS de prescription d\u2019appareillage sans avoir au pr\xE9alable
-        r\xE9aliser un examen audiom\xE9trique complet."
+      correctionText: "Non, il faut d\u2019abord r\xE9p\xE9ter le test de chuchotement
+        : s'il est normal > 3/4 : alors je n\u2019ai pas besoin de poursuivre l\u2019\xE9valuation,
+        je le rassure et lui rappelle les consignes de bonne hygi\xE8ne auriculaire."
       sprites: []
-  - type: 5
-    dialoguePatient: "Je n'arrive pas \xE0 savoir, j'ai entendu la m\xEAme chose
-      des deux c\xF4t\xE9s."
+    - answerText: "Je reconvoque la patiente pour r\xE9aliser une nouvelle \xE9valuation
+        \xE0 distance de l\u2019extraction du bouchon de c\xE9rumen."
+      isCorrect: 0
+      correctionText: "Non, aucune raison : si la proc\xE9dure se d\xE9roule bien,
+        qu\u2019on parvient \xE0 retirer le bouchon de c\xE9rumen, alors on r\xE9p\xE8te
+        le d\xE9pistage puis on suit l\u2019algorithme."
+      sprites: []
+  - type: 1
+    dialoguePatient: "Cette fois j'ai entendu 4 mots \xE0 gauche, et toujours 3 \xE0
+      droite."
     predefinedAnwser: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-    - answerText: "Ses r\xE9ponses r\xE9v\xE8lent une surdit\xE9 de perception."
+    - answerText: Je poursuis avec HHIE-S.
       isCorrect: 0
-      correctionText: "Ici, c\u2019est un test de Weber qui est r\xE9alis\xE9 (pied
-        du diapason au centre) : on recherche une asym\xE9trie de l\u2019audition
-        qui se manifesterait par une lat\xE9ralisation du Weber (\xAB\_j\u2019entends
-        \xE0 droite\_\xBB).\r\n\r\nLe test acoum\xE9trique de Rinne quant \xE0 lui
-        de d\xE9terminer si le syst\xE8me tympano-ossiculaire est fonctionnel (dans
-        ce cas, il est Positif : on \xE9voque une audition normale ou une surdit\xE9
-        neurosensorielle) ou non (dans ce cas, il est n\xE9gatif : on \xE9voque une
-        surdit\xE9 de perception)."
+      correctionText: ???
       sprites: []
-    - answerText: "Ses r\xE9ponses ne r\xE9v\xE8lent pas d\u2019anomalie."
+    - answerText: "Je rassure et je conseille un nouveau d\xE9pistage par l\u2019application
+        HORA dans 6 mois."
       isCorrect: 1
-      correctionText: "Un son per\xE7u de la m\xEAme fa\xE7on aux 2 oreilles est
-        un bon signe."
+      correctionText: "OUI\n\nBravo !! Tu as bien identifi\xE9 le cas pr\xE9sent.
+        \r\n\r\nPrise en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
       sprites: []
-    - answerText: "Ses r\xE9ponses r\xE9v\xE8lent une surdit\xE9 de transmission."
+    - answerText: "Je fais l\u2019audiom\xE9trie."
       isCorrect: 0
-      correctionText: "C\u2019est plut\xF4t le test de Rinne qui permet d\u2019\xE9voquer
-        une surdit\xE9 de transmission, quand il est n\xE9gatif.\r\n\r\nAutrement,
-        quand le patient d\xE9crit une asym\xE9trie auditive, on peut \xE9voquer
-        une surdit\xE9 de transmission quand il lat\xE9ralise le Weber du c\xF4t\xE9
-        de l\u2019oreille la plus sourde."
+      correctionText: ???
       sprites: []
-    - answerText: "Ses r\xE9ponses r\xE9v\xE8lent un bouchon de c\xE9rumen."
+    - answerText: Je passe au Go-No-Go.
       isCorrect: 0
-      correctionText: "C\u2019est un diagnostic otoscopique !\r\n\r\nSi il avait
-        un BDC c\xF4t\xE9 droit, avec une otoscopie normale \xE0 gauche, on pourrait
-        s\u2019attendre \xE0 retrouver un Weber lat\xE9ralis\xE9 \xE0 droite si il
-        est obstructif (et \xE0 condition qu\u2019il n\u2019existe pas d\u2019autre
-        cause sous jacente d\u2019asym\xE9trie auditive). Mais le diagnostic du BDC
-        resterait \u2026 clinique !"
-      sprites:
-      - {fileID: 21300000, guid: f503c7a4e7193c945b6f71187b1b4708, type: 3}
-    actionPhase:
-    - answerText: Je le laisse repartir chez lui.
-      isCorrect: 0
-      correctionText: "Non, le test de Weber est utile afin d\u2019orienter son examen
-        audiom\xE9trique. On peut retrouver une surdit\xE9 s\xE9v\xE8re avec un test
-        de Weber centr\xE9, \xE0 condition que l\u2019audition soit sym\xE9trique.\r\n\r\n<color=red>Il
-        n\u2019a aucun caract\xE8re rassurant concernant la normalit\xE9 de l\u2019audition.</color>"
+      correctionText: ???
       sprites: []
-    - answerText: Je continue le parcours audition et lui fait passer le test HHIE-S.
-      isCorrect: 1
-      correctionText: "Les \xE9tapes pr\xE9c\xE9dentes ne permettent pas de confirmer
-        qu\u2019il n\u2019y a pas d\u2019anomalie auditive. Le test HHIE-S est l\u2019examen
-        \xE0 r\xE9aliser en suivant."
-      sprites: []
-    - answerText: Je le laisse repartir et lui propose de refaire ICOPE dans 6 mois.
-      isCorrect: 0
-      correctionText: "Non, le test de Weber est utile afin d\u2019orienter son examen
-        audiom\xE9trique. On peut retrouver une surdit\xE9 s\xE9v\xE8re avec un test
-        de Weber centr\xE9, \xE0 condition que l\u2019audition soit sym\xE9trique.\r\n\r\n<color=red>Il
-        n\u2019a aucun caract\xE8re rassurant concernant la normalit\xE9 de l\u2019audition.</color>"
-      sprites: []
-    - answerText: "J\u2019enl\xE8ve le bouchon de c\xE9rumen."
-      isCorrect: 0
-      correctionText: "Ici l\u2019examen otoscopique est normal, le Weber est en
-        plus centr\xE9 : il n\u2019y aucun argument \xE9voquant la pr\xE9sence d\u2019un
-        BDC !\r\n\r\nEn revanche, si \xE0 l\u2019examen on retrouve un BDC, il faut
-        le retirer (si pas de contre indication) AVANT de r\xE9aliser l\u2019acoum\xE9trie
-        au diapason, autrement les r\xE9ponses seront en lien avec la surdit\xE9
-        occasionn\xE9e par ce BDC."
-      sprites:
-      - {fileID: 21300000, guid: f503c7a4e7193c945b6f71187b1b4708, type: 3}
-  - type: 6
-    dialoguePatient: 
-    predefinedAnwser: 
-    spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
-    diagnosticPhase:
-    - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es."
-      isCorrect: 1
-      correctionText: "Le score > 8/40 permet de d\xE9pister une d\xE9ficience auditive
-        (probabilit\xE9 11% pour un score entre 0 et 8) et le score > 16/40 permettait
-        de d\xE9tecter une surdit\xE9 avec une efficacit\xE9 maximale (88,4\_%) dans
-        le travail de Duchene et al. 2022."
-      sprites: []
-    - answerText: "Le score indique une absence totale de g\xEAne auditive."
-      isCorrect: 0
-      correctionText: "Non, le score \xE0 14/40 est en faveur d\u2019une surdit\xE9
-        mod\xE9r\xE9e.\r\n<color=red>On ne peut donc pas conclure \xE0 l\u2019absence
-        de g\xE8ne auditive.</color>"
-      sprites: []
-    - answerText: "Le test montre des difficult\xE9s auditives s\xE9v\xE8res."
-      isCorrect: 0
-      correctionText: "Non, en cas de difficult\xE9 auditive s\xE9v\xE8re on peut
-        s\u2019attendre \xE0 retrouver un score > 24. Il s\u2019agit donc d\u2019une
-        surdit\xE9 mod\xE9r\xE9e.\r\nLa probabilit\xE9 d\u2019\xEAtre porteur d\u2019une
-        d\xE9ficience auditive augmentant avec le score."
-      sprites: []
-    - answerText: "Le r\xE9sultat sugg\xE8re que les troubles auditifs sont uniquement
-        li\xE9s \xE0 une fatigue passag\xE8re."
-      isCorrect: 0
-      correctionText: "Le score permet d\u2019obtenir la probabilit\xE9 d\u2019\xEAtre
-        atteint d\u2019une d\xE9ficience auditive, \xE9ligible \xE0 un appareillage
-        selon les crit\xE8res actuellement admis en France."
-      sprites: []
-    actionPhase:
-    - answerText: "Je l\u2019oriente vers un ORL."
-      isCorrect: 0
-      correctionText: "Non, son questionnaire HHIES est alt\xE9r\xE9, ce qui sugg\xE8re
-        la pr\xE9sence d'une surdit\xE9. Pour le confirmer, il faut r\xE9aliser l'examen
-        audiom\xE9trique."
-      sprites: []
-    - answerText: "Je l'oriente vers son m\xE9decin traitant."
-      isCorrect: 0
-      correctionText: "Non, son questionnaire HHIES est alt\xE9r\xE9, ce qui sugg\xE8re
-        la pr\xE9sence d\u2019une surdit\xE9. Pour le confirmer, il faut r\xE9aliser
-        l\u2019examen audiom\xE9trique."
-      sprites: []
-    - answerText: Je lui propose un prochain rendez-vous de suivi.
-      isCorrect: 0
-      correctionText: "Non, son questionnaire HHIES est alt\xE9r\xE9, ce qui sugg\xE8re
-        la pr\xE9sence d\u2019une surdit\xE9. Pour le confirmer, il faut r\xE9aliser
-        l\u2019examen audiom\xE9trique."
-      sprites: []
-    - answerText: "Il est pertinent de r\xE9aliser l\u2019audiom\xE9trie. "
-      isCorrect: 1
-      correctionText: "L\u2019audiom\xE9trie va permettre de valider le diagnostic
-        de presbyacousie en confirmant qu\u2019il s\u2019agit d\u2019une surdit\xE9
-        neurosensorielle, bilat\xE9rale et sym\xE9trique, pr\xE9dominant souvent
-        sur les fr\xE9quences aigu\xEBs.\r\nIl va \xE9galement renseigner sur la
-        s\xE9v\xE9rit\xE9 de la surdit\xE9, et l\u2019indication ou non d\u2019un
-        appareillage audioproth\xE9tique."
-      sprites: []
-  - type: 7
-    dialoguePatient: 
-    predefinedAnwser: 
-    spriteEarExams: {fileID: -5245042425183677352, guid: 5b62bf5af497b444fbc1267b2524724b, type: 3}
-    diagnosticPhase:
-    - answerText: "Le score montre une surdit\xE9 de transmission."
-      isCorrect: 0
-      correctionText: "Ce n\u2019est pas une surdit\xE9 de transmission car l\u2019audiogramme
-        montre une atteinte au niveau de l\u2019oreille interne (ou plus pr\xE9cis\xE9ment,
-        une atteinte cochl\xE9aire), ce qui caract\xE9rise une surdit\xE9 de perception."
-      sprites: []
-    - answerText: Le score montre une audition normale.
-      isCorrect: 0
-      correctionText: "Ce n\u2019est pas une audition normale, car les seuils d\u2019audition
-        mesur\xE9s sont sup\xE9rieurs \xE0 20 dB HL sur plusieurs fr\xE9quences pour
-        les deux oreilles. \r\n\r\nOn consid\xE8re qu\u2019une audition est normale
-        lorsque les seuils sont compris entre -10 et 20 dB HL sur toutes les fr\xE9quences
-        test\xE9es (500 Hz \xE0 6000 Hz)."
-      sprites: []
-    - answerText: "Le score montre une surdit\xE9 de perception."
-      isCorrect: 1
-      correctionText: "Oui, oreille droite et oreille gauche en faveur d\u2019une
-        surdit\xE9 de perception bilat\xE9rale mod\xE9r\xE9e \xE9voquant une presbyacousie.
-        \r\nIl s'agit d'une surdit\xE9 de perception car les seuils auditifs sont
-        \xE9lev\xE9s en conduction a\xE9rienne sans qu\u2019un \xE9cart avec la conduction
-        osseuse ne soit visible, et la courbe pr\xE9sente une pente descendante dans
-        les aigus, typique d'une atteinte cochl\xE9aire."
-      sprites: []
-    - answerText: "Le score montre une surdit\xE9 de persuasion."
-      isCorrect: 0
-      correctionText: "Le terme \"surdit\xE9 de persuasion\" n\u2019existe pas en
-        audiologie m\xE9dicale. Il s\u2019agit l\xE0 d\u2019une surdit\xE9 de perception."
-      sprites: []
-    actionPhase:
-    - answerText: "Je recommande un traitement antibiotique pour am\xE9liorer l\u2019audition
-        de Monsieur Dupont."
-      isCorrect: 0
-      correctionText: "Les antibiotiques n\u2019ont aucun effet sur une surdit\xE9
-        de perception comme la presbyacousie."
-      sprites: []
-    - answerText: "Je propose une chirurgie de l\u2019oreille moyenne pour corriger
-        cette perte auditive."
-      isCorrect: 0
-      correctionText: "La chirurgie est indiqu\xE9e dans certaines surdit\xE9s de
-        transmission, mais pas dans la presbyacousie, qui est une atteinte de l\u2019oreille
-        interne."
-      sprites: []
-    - answerText: "Je rassure Monsieur D. que son audition est dans la norme et qu\u2019aucune
-        prise en charge n\u2019est n\xE9cessaire."
-      isCorrect: 0
-      correctionText: "L\u2019audiogramme montre une surdit\xE9 bilat\xE9rale av\xE9r\xE9e,
-        donc une prise en charge est indispensable, notamment par appareillage."
-      sprites: []
-    - answerText: "En accord avec votre m\xE9decin r\xE9f\xE9rent, une prescription
-        de proth\xE8se auditive est d\xE9livr\xE9e \xE0 Mr Dupont."
-      isCorrect: 1
-      correctionText: "Bravo !! Tu as bien identifi\xE9 le cas pr\xE9sent. \r\n\r\nPrise
-        en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
-      sprites: []
-  - type: 7
-    dialoguePatient: 
-    predefinedAnwser: 
-    spriteEarExams: {fileID: -5245042425183677352, guid: 5b62bf5af497b444fbc1267b2524724b, type: 3}
-    diagnosticPhase:
-    - answerText: "Le score montre une surdit\xE9 de transmission."
-      isCorrect: 0
-      correctionText: "Ce n\u2019est pas une surdit\xE9 de transmission car l\u2019audiogramme
-        montre une atteinte au niveau de l\u2019oreille interne (ou plus pr\xE9cis\xE9ment,
-        une atteinte cochl\xE9aire), ce qui caract\xE9rise une surdit\xE9 de perception."
-      sprites: []
-    - answerText: Le score montre une audition normale.
-      isCorrect: 0
-      correctionText: "Ce n\u2019est pas une audition normale, car les seuils d\u2019audition
-        mesur\xE9s sont sup\xE9rieurs \xE0 20 dB HL sur plusieurs fr\xE9quences pour
-        les deux oreilles. \r\n\r\nOn consid\xE8re qu\u2019une audition est normale
-        lorsque les seuils sont compris entre -10 et 20 dB HL sur toutes les fr\xE9quences
-        test\xE9es (500 Hz \xE0 6000 Hz)."
-      sprites: []
-    - answerText: "Le score montre une surdit\xE9 de perception."
-      isCorrect: 1
-      correctionText: "Oui, oreille droite et oreille gauche en faveur d\u2019une
-        surdit\xE9 de perception bilat\xE9rale mod\xE9r\xE9e \xE9voquant une presbyacousie.
-        \r\nIl s'agit d'une surdit\xE9 de perception car les seuils auditifs sont
-        \xE9lev\xE9s en conduction a\xE9rienne sans qu\u2019un \xE9cart avec la conduction
-        osseuse ne soit visible, et la courbe pr\xE9sente une pente descendante dans
-        les aigus, typique d'une atteinte cochl\xE9aire."
-      sprites: []
-    - answerText: "Le score montre une surdit\xE9 de persuasion."
-      isCorrect: 0
-      correctionText: "Le terme \"surdit\xE9 de persuasion\" n\u2019existe pas en
-        audiologie m\xE9dicale. Il s\u2019agit l\xE0 d\u2019une surdit\xE9 de perception."
-      sprites: []
-    actionPhase:
-    - answerText: "Je recommande un traitement antibiotique pour am\xE9liorer l\u2019audition
-        de Monsieur Dupont."
-      isCorrect: 0
-      correctionText: "Les antibiotiques n\u2019ont aucun effet sur une surdit\xE9
-        de perception comme la presbyacousie."
-      sprites: []
-    - answerText: "Je propose une chirurgie de l\u2019oreille moyenne pour corriger
-        cette perte auditive."
-      isCorrect: 0
-      correctionText: "La chirurgie est indiqu\xE9e dans certaines surdit\xE9s de
-        transmission, mais pas dans la presbyacousie, qui est une atteinte de l\u2019oreille
-        interne."
-      sprites: []
-    - answerText: "Je rassure Monsieur D. que son audition est dans la norme et qu\u2019aucune
-        prise en charge n\u2019est n\xE9cessaire."
-      isCorrect: 0
-      correctionText: "L\u2019audiogramme montre une surdit\xE9 bilat\xE9rale av\xE9r\xE9e,
-        donc une prise en charge est indispensable, notamment par appareillage."
-      sprites: []
-    - answerText: "En accord avec votre m\xE9decin r\xE9f\xE9rent, une prescription
-        de proth\xE8se auditive est d\xE9livr\xE9e \xE0 Mr Dupont."
-      isCorrect: 0
-      correctionText: "Bravo !! Tu as bien identifi\xE9 le cas pr\xE9sent. \r\n\r\nPrise
-        en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
-      sprites: []
+    actionPhase: []

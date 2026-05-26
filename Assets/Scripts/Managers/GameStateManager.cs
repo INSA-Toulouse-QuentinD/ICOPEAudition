@@ -107,7 +107,7 @@ namespace Managers
 
             GameManager.Instance.GameData.SetPatientCaseRecorder(patientData.firstName);
             
-            Debug.Log($"Current Patient: {currentPatientCase}, {patientData.surname}");
+            Debug.Log($"Current Patient: {currentPatientCase}, {patientData.lastName}");
         }
 
         /// <summary>

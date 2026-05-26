@@ -40,7 +40,7 @@ namespace PatientData.Steps
         public void SetPresentationTexts(NewPatientData patientData)
         {
             // Set profil data
-            nameFields.text = patientData.surname;
+            nameFields.text = patientData.lastName;
             surnameFields.text = patientData.firstName;
             ageFields.text = patientData.age.ToString();
             situationFields.text = patientData.familySituation;

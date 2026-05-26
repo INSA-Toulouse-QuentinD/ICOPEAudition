@@ -1,6 +1,7 @@
 using PatientData.AlgoData;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace PatientData
 {
@@ -12,7 +13,7 @@ namespace PatientData
     {
         [Header("Profil")]
         public Sprite[] characterSprites;
-        public string surname;
+        public string lastName;
         public string firstName;
         public int age;
 
