@@ -15,8 +15,8 @@ MonoBehaviour:
   characterSprites:
   - {fileID: -1683400333343287881, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
   - {fileID: 5001668446368383778, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
-  lastName: 
-  firstName: Doe
+  lastName: Doe
+  firstName: L
   age: 84
   familySituation: 
   occupationalActivities: 
@@ -123,25 +123,25 @@ MonoBehaviour:
         otoscopie."
       isCorrect: 1
       correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
-        le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas complexe
+        le questionnaire Go-No-Go afin d\u2019identifier d\u2019\xE9ventuel cas complexe
         n\xE9cessitant une prise en charge par l\u2019ORL."
       sprites: []
     - answerText: Je lui fais passer le test HHIES.
       isCorrect: 0
       correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
-        le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas complexe
+        le questionnaire Go-No-Go afin d\u2019identifier d\u2019\xE9ventuel cas complexe
         n\xE9cessitant une prise en charge par l\u2019ORL."
       sprites: []
     - answerText: "Je passe \xE0 l\u2019examen audiom\xE9trique."
       isCorrect: 0
       correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
-        le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas complexe
+        le questionnaire Go-No-Go afin d\u2019identifier d\u2019\xE9ventuel cas complexe
         n\xE9cessitant une prise en charge par l\u2019ORL."
       sprites: []
     - answerText: Je lui fais passer le test HHIES.
       isCorrect: 0
       correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
-        le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas complexe
+        le questionnaire Go-No-Go afin d\u2019identifier d\u2019\xE9ventuel cas complexe
         n\xE9cessitant une prise en charge par l\u2019ORL."
       sprites: []
   - type: 2

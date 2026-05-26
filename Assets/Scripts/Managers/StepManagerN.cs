@@ -36,7 +36,7 @@ namespace Managers{
         private Color correctColor;
 
         [SerializeField] private Color incorrectColor;
-        [SerializeField] private Image backgroudAnswer;
+        [SerializeField] private Image backgroundAnswer;
 
         // Sprite Doctor (1st position happy expression, 2nd position sad expression, 3rd position talking)
         // For the future to change to allow player to choose his character.
@@ -50,13 +50,13 @@ namespace Managers{
         private QuestionnaireData questionnaireData;
 
         // Script of each step display
-        private Step1PresentationPatient step1PresentationPatient;
-        private Step2WisperTest step2WisperTest;
-        private Step3And4Questionnary step4And5Questionnary;
-        private Step5Otoscopie Step5Otoscopie;
-        private Step6WeberTest step6HhiesTest;
-        private Step7HhiesTest step7HhiesTest;
-        private Step8Audiometrie Step8Audiometrie;
+        private Step1PresentationPatient _step1PresentationPatient;
+        private Step2WisperTest _step2WisperTest;
+        private Step3And4Questionnary _step4And5Questionnary;
+        private Step5Otoscopie _step5Otoscopie;
+        private Step6WeberTest _step6HhiesTest;
+        private Step7HhiesTest _step7HhiesTest;
+        private Step8Audiometrie _step8Audiometrie;
 
         // Enums
         private enum InteractionState{
@@ -65,26 +65,26 @@ namespace Managers{
             ISCORRECTION
         };
 
-        private InteractionState interactionState;
+        private InteractionState _interactionState;
 
         private enum AnswerState{
             DIAGNOSTIC,
             ACTION
         }
 
-        private AnswerState answerState;
+        private AnswerState _answerState;
 
         // Private class 
-        private NewPatientData patientData;
+        private NewPatientData _patientData;
 
         // Private variables
         private int _indexStep;
         private int _currentDisplay;
         private bool _isDiagnosticValid;
         private bool _isActionValid;
-        private Step step;
+        private Step _step;
 
-        private Dictionary<Step, int> mappingDisplays;
+        private Dictionary<Step, int> _mappingDisplays;
 
         /// <summary>
         /// Initializes the patient data and resets the step index and display index
@@ -94,7 +94,7 @@ namespace Managers{
         public void Initialize(NewPatientData newPatient){
             _indexStep = 0; // reset current step to 0
             _currentDisplay = 0;
-            patientData = newPatient;
+            _patientData = newPatient;
         }
 
         /// <summary>
@@ -106,49 +106,50 @@ namespace Managers{
         public void LoadStep(Step currentStep){
             ClearAllDisplay();
 
-            step = currentStep;
+            _step = currentStep;
 
-            interactionState = InteractionState.ISREADING;
+            _interactionState = InteractionState.ISREADING;
 
-            // Set bools to fasle each step
+            // Set bool to false each step
             _isDiagnosticValid = false;
             _isActionValid = false;
-            _currentDisplay = mappingDisplays[currentStep];
+            _currentDisplay = _mappingDisplays[currentStep];
 
             Sprite patientSprite = null;
 
             switch (currentStep) {
                 case Step.CasePresentation:
                     // Load patient sprite & patient text
-                    step1PresentationPatient.SetSprites(patientData.characterSprites[0]);
-                    step1PresentationPatient.SetPresentationTexts(patientData);
+                    _step1PresentationPatient.SetSprites(_patientData.characterSprites[0]);
+                    _step1PresentationPatient.SetPresentationTexts(_patientData);
                     // Display current step
 
                     displayList[_currentDisplay].SetActive(true);
                     break;
                 case Step.WisperTest:
                     // Load wisper text (animation with dotween)
-                    if (patientData.characterSprites.Length > 1) {
-                        patientSprite = patientData.characterSprites[1];
+                    if (_patientData.characterSprites.Length > 1) {
+                        patientSprite = _patientData.characterSprites[1];
                     }
 
-                    step2WisperTest.SetPatient(patientSprite);
+                    _step2WisperTest.SetPatient(patientSprite);
                     if (GameManager.Instance.instanteAnimation) {
-                        step2WisperTest.SkipAnimation(patientData.steps[_indexStep]);
+                        _step2WisperTest.SkipAnimation(_patientData.steps[_indexStep]);
                     } else {
-                        step2WisperTest.PlayFirstText(patientData.steps[_indexStep]);
+                        _step2WisperTest.PlayFirstText(_patientData.steps[_indexStep]);
                     }
+
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
                 case Step.Questionnary:
                     // Load questionary & answer
                     List<QuestionData> questions = questionnaireData.questions;
-                    List<YesNo> answers = patientData.steps[_indexStep].predefinedAnwser;
+                    List<YesNo> answers = _patientData.steps[_indexStep].predefinedAnwser;
                     // Set texts
-                    step4And5Questionnary.SetQuestionayText(questions, answers);
+                    _step4And5Questionnary.SetQuestionayText(questions, answers);
                     //Set Patient Sprite
-                    step4And5Questionnary.SetPatientSprite(patientData.characterSprites[0]);
+                    _step4And5Questionnary.SetPatientSprite(_patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
@@ -156,39 +157,39 @@ namespace Managers{
                     : //DEBUG!!! Complètement inutile pour le moment, à voir avec les patientCase plus difficile !
                     // Load questionary & answer
                     List<QuestionData> questions2 = questionnaireData.questions;
-                    List<YesNo> answers2 = patientData.steps[_indexStep].predefinedAnwser;
-                    step4And5Questionnary.SetQuestionayText(questions2, answers2);
+                    List<YesNo> answers2 = _patientData.steps[_indexStep].predefinedAnwser;
+                    _step4And5Questionnary.SetQuestionayText(questions2, answers2);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
                 case Step.Otoscopy:
                     // Load patient ear image
-                    if (patientData.characterSprites.Length > 1) {
-                        patientSprite = patientData.characterSprites[1];
+                    if (_patientData.characterSprites.Length > 1) {
+                        patientSprite = _patientData.characterSprites[1];
                     }
 
-                    Step5Otoscopie.SetImages(patientData.steps[_indexStep].spriteEarExams, patientSprite);
+                    _step5Otoscopie.SetImages(_patientData.steps[_indexStep].spriteEarExams, patientSprite);
                     // Display current step 
                     displayList[_currentDisplay].SetActive(true);
                     break;
                 case Step.WeberTest:
                     // Load texts dialogue & sprite
-                    step6HhiesTest.SetTextDialogue(patientData.steps[_indexStep].dialoguePatient);
-                    step6HhiesTest.SetImage(patientData.characterSprites[0]);
+                    _step6HhiesTest.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
+                    _step6HhiesTest.SetImage(_patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
                 case Step.HhiesTest:
                     // Load patient ear image
-                    step7HhiesTest.SetImages(patientData.steps[_indexStep].spriteEarExams,
-                        patientData.characterSprites[0]);
+                    _step7HhiesTest.SetImages(_patientData.steps[_indexStep].spriteEarExams,
+                        _patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
                 case Step.Audiometry:
                     // Load patient audiometrie + patient sprite
-                    Step8Audiometrie.SetSprite(patientData.steps[_indexStep].spriteEarExams,
-                        patientData.characterSprites[0]);
+                    _step8Audiometrie.SetSprite(_patientData.steps[_indexStep].spriteEarExams,
+                        _patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
                     break;
@@ -211,14 +212,14 @@ namespace Managers{
         private void SetTextButtonsNavigation(){
             TextMeshProUGUI confirmeNextText = confirmNextButton.GetComponentInChildren<TextMeshProUGUI>();
 
-            if (interactionState == InteractionState.ISREADING) {
+            if (_interactionState == InteractionState.ISREADING) {
                 // update buttons and text
                 returnButton.interactable = false;
                 confirmNextButton.interactable = true;
                 confirmeNextText.text = "Répondre";
             }
 
-            if (interactionState == InteractionState.ISANSWERING) {
+            if (_interactionState == InteractionState.ISANSWERING) {
                 // Update button and text
                 returnButton.interactable = true;
 
@@ -226,9 +227,9 @@ namespace Managers{
                 confirmeNextText.text = "Suivant";
             }
 
-            if (interactionState == InteractionState.ISCORRECTION) {
+            if (_interactionState == InteractionState.ISCORRECTION) {
                 bool isValid = false;
-                switch (answerState) {
+                switch (_answerState) {
                     case AnswerState.DIAGNOSTIC:
                         isValid = _isDiagnosticValid;
                         break;
@@ -258,18 +259,18 @@ namespace Managers{
         ///   it sets the answer state to ACTION and creates the corresponding action answer buttons.
         /// </summary>
         private void SetResponses(){
-            if (patientData.steps[_indexStep].diagnosticPhase.Count > 0 && !_isDiagnosticValid) {
+            if (_patientData.steps[_indexStep].diagnosticPhase.Count > 0 && !_isDiagnosticValid) {
                 questionText.text = "Quel est votre diagnostic ?";
-                answerState = AnswerState.DIAGNOSTIC;
-                CreateAnwserButtons(patientData.steps[_indexStep].diagnosticPhase);
+                _answerState = AnswerState.DIAGNOSTIC;
+                CreateAnswerButtons(_patientData.steps[_indexStep].diagnosticPhase);
             } else {
                 _isDiagnosticValid = true;
             }
 
-            if (patientData.steps[_indexStep].actionPhase.Count > 0 && _isDiagnosticValid) {
+            if (_patientData.steps[_indexStep].actionPhase.Count > 0 && _isDiagnosticValid) {
                 questionText.text = "Que faites-vous ?";
-                answerState = AnswerState.ACTION;
-                CreateAnwserButtons(patientData.steps[_indexStep].actionPhase);
+                _answerState = AnswerState.ACTION;
+                CreateAnswerButtons(_patientData.steps[_indexStep].actionPhase);
             }
         }
 
@@ -282,7 +283,7 @@ namespace Managers{
         /// - Enables and makes the button visible.
         /// </summary>
         /// <param name="answerData">List of possible answers for the current phase.</param>
-        private void CreateAnwserButtons(List<AnswerData> answerData){
+        private void CreateAnswerButtons(List<AnswerData> answerData){
             ClearQuestion();
 
             int max = Mathf.Min(answerData.Count, choiceButtons.Length);
@@ -299,47 +300,52 @@ namespace Managers{
                 choiceButtons[i].gameObject.SetActive(true);
             }
         }
-
+        
         /// <summary>
-        /// Switches the UI to the question answering display.
-        /// Sets the interaction state to answering,
-        /// clears all current displays, activates the question display,
-        /// sets up the possible responses, and updates the navigation buttons.
+        /// Advances the game to the next step if the current step's diagnostic and action phases are completed.
+        /// If both phases are completed, the current step is the last, it displays the player's scores.
+        /// If the step is not completed, switches the UI to the question answering display
         /// </summary>
-        private void GoToQuestionDisplay(){
-            interactionState = InteractionState.ISANSWERING;
-            ClearAllDisplay();
-            questionsDisplay.SetActive(true);
-            SetResponses();
-            SetTextButtonsNavigation();
-        }
+        private void ButtonNext(){
+            // Control if diagnostic & action is completed
+            AlgoStep algoStep = _patientData.steps[_indexStep];
+            bool isDiagnosticCompleted = !(algoStep.diagnosticPhase.Count > 0) || _isDiagnosticValid;
+            bool isActionCompleted = !(algoStep.actionPhase.Count > 0) || _isActionValid;
+            bool isStepCompleted = isDiagnosticCompleted && isActionCompleted;
 
-        /// <summary>
-        /// Returns from the correction state back to the question answering display,
-        /// clearing all displays and resetting the interaction state and buttons accordingly.
-        /// Only works if currently in the correction state.
-        /// </summary>
-        private void BackToQuestion(){
-            if (interactionState == InteractionState.ISCORRECTION) {
+            if (isStepCompleted && _indexStep < _patientData.steps.Count) {
+                // LOAD NEXT STEP 
+                _indexStep++;
+                if (_indexStep >= _patientData.steps.Count) {
+                    GameManager.Instance.GameStateManager.SaveShowScores();
+                } else {
+                    print("Increased indexStep : " + _indexStep);
+                    GameManager.Instance.GameStateManager.NextStep(_patientData.steps[_indexStep]);
+                }
+            } else {
+                _interactionState = InteractionState.ISANSWERING;
                 ClearAllDisplay();
-
-                interactionState = InteractionState.ISANSWERING;
                 questionsDisplay.SetActive(true);
+                SetResponses();
                 SetTextButtonsNavigation();
             }
         }
 
-
         /// <summary>
-        /// Returns from the answering state back to the document (reading) display,
-        /// clearing all displays and resetting interaction state and navigation buttons.
-        /// Only works if currently in the answering state.
+        /// Returns from the correction/answering state back to the question answering/document (reading) display
+        /// clearing all displays and resetting the interaction state and buttons accordingly.
         /// </summary>
-        private void BackToDocument(){
-            if (interactionState == InteractionState.ISANSWERING) {
+        private void ButtonBack(){
+            if (_interactionState == InteractionState.ISCORRECTION) {
                 ClearAllDisplay();
 
-                interactionState = InteractionState.ISREADING;
+                _interactionState = InteractionState.ISANSWERING;
+                questionsDisplay.SetActive(true);
+                SetTextButtonsNavigation();
+            } else if (_interactionState == InteractionState.ISANSWERING) {
+                ClearAllDisplay();
+
+                _interactionState = InteractionState.ISREADING;
                 displayList[_currentDisplay].SetActive(true);
                 SetTextButtonsNavigation();
             }
@@ -351,8 +357,8 @@ namespace Managers{
         /// Used to reset the UI before showing new content.
         /// </summary>
         private void ClearAllDisplay(){
-            for (int i = 0; i < displayList.Count; i++) {
-                displayList[i].SetActive(false);
+            foreach (var t in displayList) {
+                t.SetActive(false);
             }
 
             questionsDisplay.SetActive(false);
@@ -364,8 +370,8 @@ namespace Managers{
         /// Clears the current questions answer options from the UI.
         /// </summary>
         private void ClearQuestion(){
-            for (int i = 0; i < choiceButtons.Length; i++) {
-                choiceButtons[i].gameObject.SetActive(false);
+            foreach (var t in choiceButtons) {
+                t.gameObject.SetActive(false);
             }
         }
 
@@ -388,7 +394,7 @@ namespace Managers{
                 choiceButtons[index].GetComponent<AnswerButton>().SetIncorrect();
             }
 
-            switch (answerState) {
+            switch (_answerState) {
                 case AnswerState.DIAGNOSTIC:
                     _isDiagnosticValid = isCorrectAnswer;
                     isDiagnosticAnswer = true;
@@ -401,7 +407,7 @@ namespace Managers{
 
             Debug.Log("Saving step...");
 
-            GameManager.Instance.GameData.RecordsSteps(step, isDiagnosticAnswer, isActionAnswer,
+            GameManager.Instance.GameData.RecordsSteps(_step, isDiagnosticAnswer, isActionAnswer,
                 choiceButtons[index].GetComponentInChildren<TextMeshProUGUI>().text);
             ShowAnswerDetail(answerData[index], feedBackText, isCorrectAnswer);
         }
@@ -428,9 +434,9 @@ namespace Managers{
         /// </summary>
         /// <param name="answer">The answer data containing text, correction, and images.</param>
         /// <param name="feedBackText">Feedback message to display ("Correct!" or "Incorrect!").</param>
-        /// <param name="anwserCorrect">Indicates if the selected answer was correct.</param>
-        private void ShowAnswerDetail(AnswerData answer, string feedBackText, bool anwserCorrect){
-            interactionState = InteractionState.ISCORRECTION;
+        /// <param name="answerCorrect">Indicates if the selected answer was correct.</param>
+        private void ShowAnswerDetail(AnswerData answer, string feedBackText, bool answerCorrect){
+            _interactionState = InteractionState.ISCORRECTION;
 
             // Clear images
             foreach (GameObject go in answerGameObjectSprites) {
@@ -442,11 +448,11 @@ namespace Managers{
             answerSelected.text = answer.answerText;
 
             // Set background color
-            if (anwserCorrect) {
-                backgroudAnswer.color = correctColor;
+            if (answerCorrect) {
+                backgroundAnswer.color = correctColor;
                 doctorExpressionsImages.sprite = doctorSprite[0]; // Happy expression
             } else {
-                backgroudAnswer.color = incorrectColor;
+                backgroundAnswer.color = incorrectColor;
                 doctorExpressionsImages.sprite = doctorSprite[1]; // Sad expression
             }
 
@@ -461,7 +467,7 @@ namespace Managers{
                 int max = Mathf.Min(answer.sprites.Count, answerGameObjectSprites.Count);
                 for (int i = 0; i < max; i++) {
                     answerGameObjectSprites[i].GetComponent<Image>().sprite = answer.sprites[i];
-                    // Set gameobject actif
+                    // Set gameObject actif
                     answerGameObjectSprites[i].SetActive(true);
                 }
             }
@@ -475,38 +481,6 @@ namespace Managers{
         }
 
         /// <summary>
-        /// Advances the game to the next step if the current step's diagnostic and action phases are completed.
-        /// If the current step is marked as terminating, it triggers saving and displaying the player's scores.
-        /// </summary>
-        private void GoToNextStep(){
-            // Control if dignostic & action is completed
-            bool isStepCompleted = IsStepCompleted(patientData.steps[_indexStep]);
-
-            if (isStepCompleted && _indexStep < patientData.steps.Count) {
-                // LOAD NEXT STEP 
-                _indexStep++;
-                if (_indexStep >= patientData.steps.Count) {
-                    GameManager.Instance.GameStateManager.SaveShowScores();
-                } else {
-                    print("Increased indexstep : " + _indexStep);
-                    GameManager.Instance.GameStateManager.NextStep(patientData.steps[_indexStep]);
-                }
-            }
-        }
-
-
-        /// <summary>
-        /// Checks whether the current step's diagnostic and action phases are completed and valid.
-        /// </summary>
-        /// <param name="step">The current AlgoStep to check.</param>
-        /// <returns>True if the step is completed, false otherwise.</returns>
-        private bool IsStepCompleted(AlgoStep step){
-            bool diagnoticOK = !(step.diagnosticPhase.Count > 0) || _isDiagnosticValid;
-
-            return diagnoticOK && _isActionValid;
-        }
-
-        /// <summary>
         /// Initializes component references by searching through the displayList GameObjects,
         /// safely assigning components if they exist without causing errors.
         ///
@@ -516,26 +490,24 @@ namespace Managers{
         private void Awake(){
             // WARNING : don't trigger error if component not found. 
             foreach (GameObject go in displayList) {
-                if (go.TryGetComponent<Step1PresentationPatient>(out Step1PresentationPatient component))
-                    step1PresentationPatient = component;
-                if (go.TryGetComponent<Step2WisperTest>(out Step2WisperTest component1)) step2WisperTest = component1;
-                if (go.TryGetComponent<Step3And4Questionnary>(out Step3And4Questionnary component2))
-                    step4And5Questionnary = component2;
-                if (go.TryGetComponent<Step5Otoscopie>(out Step5Otoscopie component3)) Step5Otoscopie = component3;
-                if (go.TryGetComponent<Step6WeberTest>(out Step6WeberTest component4)) step6HhiesTest = component4;
-                if (go.TryGetComponent<Step7HhiesTest>(out Step7HhiesTest component5)) step7HhiesTest = component5;
-                if (go.TryGetComponent<Step8Audiometrie>(out Step8Audiometrie component6))
-                    Step8Audiometrie = component6;
+                if (go.TryGetComponent(out Step1PresentationPatient component))
+                    _step1PresentationPatient = component;
+                if (go.TryGetComponent(out Step2WisperTest component1)) _step2WisperTest = component1;
+                if (go.TryGetComponent(out Step3And4Questionnary component2))
+                    _step4And5Questionnary = component2;
+                if (go.TryGetComponent(out Step5Otoscopie component3)) _step5Otoscopie = component3;
+                if (go.TryGetComponent(out Step6WeberTest component4)) _step6HhiesTest = component4;
+                if (go.TryGetComponent(out Step7HhiesTest component5)) _step7HhiesTest = component5;
+                if (go.TryGetComponent(out Step8Audiometrie component6))
+                    _step8Audiometrie = component6;
             }
 
 
             //SET LISTENER
-            confirmNextButton.onClick.AddListener(GoToQuestionDisplay);
-            confirmNextButton.onClick.AddListener(GoToNextStep);
-            returnButton.onClick.AddListener(BackToDocument);
-            returnButton.onClick.AddListener(BackToQuestion);
+            confirmNextButton.onClick.AddListener(ButtonNext);
+            returnButton.onClick.AddListener(ButtonBack);
 
-            mappingDisplays = new Dictionary<Step, int>(){
+            _mappingDisplays = new Dictionary<Step, int>(){
                 { Step.CasePresentation, 0 },
                 { Step.WisperTest, 1 },
                 { Step.Questionnary, 2 },

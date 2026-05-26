@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: LevelsData
   m_EditorClassIdentifier: 
   patientByLevel:
-  - levelName: Tutoriel
-    patientsCase:
+  - patientsCase:
     - {fileID: 11400000, guid: 31aa28cc637b6564b94b63c8d953a166, type: 2}
-  - levelName: Niveau 1
-    patientsCase:
+  - patientsCase:
     - {fileID: 11400000, guid: 6e2e4bfa334d27c41a65e7d09f7c8e2b, type: 2}
     - {fileID: 11400000, guid: 1f1d9598fe2ffd74ea5009f2a1efadf0, type: 2}
     - {fileID: 11400000, guid: 32b18b42335e4ec478d85d299eea158f, type: 2}
     - {fileID: 11400000, guid: 2ffcccdcb6328684d9a050f5e363ae3d, type: 2}
+    - {fileID: 11400000, guid: 4afae7c7eab803548bb3c2735995ab46, type: 2}
+    - {fileID: 11400000, guid: eb55510b00a7fba4daaa7ab36ca96584, type: 2}

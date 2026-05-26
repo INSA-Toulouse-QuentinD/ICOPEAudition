@@ -140,6 +140,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49563c7d23b90214195f64ee0793e4cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1748001180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2707213619932236670, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+  m_PrefabInstance: {fileID: 5935560527677680749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1831368390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4498834998070829345, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
@@ -692,6 +703,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2551387162611622009, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 79.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2644743001662781552, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -888,6 +903,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3051102169478287314, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -429.99985
+      objectReference: {fileID: 0}
     - target: {fileID: 3243948352917771347, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -982,7 +1001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3429087798980155197, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 153.74861
+      value: 153.7486
       objectReference: {fileID: 0}
     - target: {fileID: 3429087798980155197, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1500,6 +1519,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7129478607294247758, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129478607294247758, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7222250563978499841, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1592,6 +1619,10 @@ PrefabInstance:
       propertyPath: questionText
       value: 
       objectReference: {fileID: 1871255889}
+    - target: {fileID: 7556847164066251935, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: backgroundAnswer
+      value: 
+      objectReference: {fileID: 1748001180}
     - target: {fileID: 7556847164066251935, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: questionnaireData
       value: 

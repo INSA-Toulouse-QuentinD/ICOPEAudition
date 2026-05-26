@@ -129,13 +129,13 @@ MonoBehaviour:
       - answerText: "Je passe \xE0 l\u2019examen audiom\xE9trique."
         isCorrect: 0
         correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
-          le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas
+          le questionnaire Go-No-Go afin d\u2019identifier d\u2019\xE9ventuel cas
           complexe n\xE9cessitant une prise en charge par l\u2019ORL."
         sprites: []
       - answerText: Je lui fais passer le test HHIES.
         isCorrect: 0
         correctionText: "Non, il faut d\u2019abord faire l\u2019interrogatoire avec
-          le questionnaire Go No Go afin d\u2019identifier d\u2019\xE9ventuel cas
+          le questionnaire Go-No-Go afin d\u2019identifier d\u2019\xE9ventuel cas
           complexe n\xE9cessitant une prise en charge par l\u2019ORL."
         sprites: []
   - type: 2

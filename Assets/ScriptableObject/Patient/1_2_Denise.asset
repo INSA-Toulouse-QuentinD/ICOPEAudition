@@ -152,7 +152,7 @@ MonoBehaviour:
         hygi\xE8ne auriculaire. Un nouveau d\xE9pistage aurait alors \xE9t\xE9 propos\xE9,
         par exemple avec H\xF6ra.\r\n\r\nIci : le test est anormal, il faut donc
         poursuivre l\u2019\xE9valuation auditive en commen\xE7ant par l\u2019interrogatoire
-        (\xE0 l\u2019aide du questionnaire Go-No Go)."
+        (\xE0 l\u2019aide du questionnaire Go-No-Go)."
       sprites: []
   - type: 2
     dialoguePatient: 

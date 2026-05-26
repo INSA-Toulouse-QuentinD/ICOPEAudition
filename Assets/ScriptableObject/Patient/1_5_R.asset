@@ -15,8 +15,8 @@ MonoBehaviour:
   characterSprites:
   - {fileID: -1683400333343287881, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
   - {fileID: 5001668446368383778, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
-  lastName: R
-  firstName: Doe
+  lastName: Doe
+  firstName: R
   age: 81
   familySituation: "Elle vit seule \xE0 domicile, en bonne autonomie."
   occupationalActivities: 
