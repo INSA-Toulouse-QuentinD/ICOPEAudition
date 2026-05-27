@@ -146,11 +146,11 @@ namespace Managers{
                     // Display current step
 
                     displayList[_currentDisplay].SetActive(true);
-                    
+
                     UITutorialControler.Instance.TutorialMichel(0);
                     break;
                 case Step.WisperTest:
-                    // Load wisper text (animation with dotween)
+                    // Load wisper text
                     if (_patientData.characterSprites.Length > 1) {
                         patientSprite = _patientData.characterSprites[1];
                     }
@@ -164,7 +164,7 @@ namespace Managers{
 
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
-                    
+
                     UITutorialControler.Instance.TutorialMichel(4);
                     break;
                 case Step.Questionnary:
@@ -177,7 +177,7 @@ namespace Managers{
                     _step4And5Questionnary.SetPatientSprite(_patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
-                    
+
                     UITutorialControler.Instance.TutorialMichel(6);
                     break;
                 case Step.Otoscopy:
@@ -189,7 +189,7 @@ namespace Managers{
                     _step5Otoscopie.SetImages(_patientData.steps[_indexStep].spriteEarExams, patientSprite);
                     // Display current step 
                     displayList[_currentDisplay].SetActive(true);
-                    
+
                     UITutorialControler.Instance.TutorialMichel(7);
                     break;
                 case Step.WeberTest:
@@ -198,7 +198,7 @@ namespace Managers{
                     _step6HhiesTest.SetImage(_patientData.characterSprites[^1]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
-                    
+
                     UITutorialControler.Instance.TutorialMichel(8);
                     break;
                 case Step.HhiesTest:
@@ -207,7 +207,7 @@ namespace Managers{
                         _patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
-                    
+
                     UITutorialControler.Instance.TutorialMichel(9);
                     break;
                 case Step.Audiometry:
@@ -216,7 +216,7 @@ namespace Managers{
                         _patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
-                    
+
                     UITutorialControler.Instance.TutorialMichel(10);
                     break;
             }
@@ -309,13 +309,12 @@ namespace Managers{
                 EnsureSize(_actionIncorrectTried, actionCount);
                 CreateAnswerButtons(algoStep.actionPhase);
                 ApplyTriedStateToButtons(_actionIncorrectTried);
-
-                // Afficher le tuto 5 uniquement lors de la phase ACTION du step WisperTest.
+                
                 if (_step == Step.WisperTest) {
                     UITutorialControler.Instance.TutorialMichel(5);
                 }
             }
-            
+
             UITutorialControler.Instance.TutorialMichel(1);
         }
 
@@ -374,7 +373,7 @@ namespace Managers{
                 _indexStep++;
                 if (_indexStep >= _patientData.steps.Count) {
                     GameManager.Instance.GameStateManager.SaveShowScores();
-                    
+
                     UITutorialControler.Instance.TutorialMichel(11);
                 } else {
                     print("Increased indexStep : " + _indexStep);
@@ -481,7 +480,7 @@ namespace Managers{
             GameManager.Instance.GameData.RecordsSteps(_step, isDiagnosticAnswer, isActionAnswer,
                 choiceButtons[index].GetComponentInChildren<TextMeshProUGUI>().text);
             ShowAnswerDetail(answerData[index], feedBackText, isCorrectAnswer);
-            
+
             UITutorialControler.Instance.TutorialMichel(isCorrectAnswer ? 3 : 2);
         }
 

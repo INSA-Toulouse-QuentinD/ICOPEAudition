@@ -17,11 +17,11 @@ namespace UI.ScoreContents{
         [SerializeField] private Transform parentTransform;
 
 
-        private bool folderOpen = false;
-        private int pageId = 0;
+        private bool _folderOpen;
+        private int _pageId;
 
-        private Dictionary<string, GameData.StepRecords> records;
-        private List<RectTransform> pagesSteps;
+        private Dictionary<string, GameData.StepRecords> _records;
+        private List<RectTransform> _pagesSteps;
 
         void OnEnable(){
             openDetailsButton.OnPress.AddListener(OpenFolderVoid);
@@ -38,27 +38,41 @@ namespace UI.ScoreContents{
         }
 
         private void InstanciatePages(){
-            pagesSteps = new List<RectTransform>();
+            _pageId = 0;
+            _pagesSteps ??= new List<RectTransform>();
 
-            foreach (var step in records) {
+            foreach (var page in _pagesSteps) {
+                if (page != null) Destroy(page.gameObject);
+            }
+            _pagesSteps.Clear();
+
+            if (_records == null || _records.Count == 0) {
+                return;
+            }
+            
+            var ordered = new List<KeyValuePair<string, GameData.StepRecords>>(_records);
+
+            int stepNumber = 1;
+            foreach (var step in ordered) {
                 GameObject instance = Instantiate(prefab, parentTransform);
                 PrefabStepDisplayUi ui = instance.GetComponent<PrefabStepDisplayUi>();
 
-                // set text fields
-                ui.SetText(step.Key, step.Value.diagnosticAnswer, step.Value.actionAnswer);
-                pagesSteps.Add(instance.GetComponent<RectTransform>());
+                ui.SetText(step.Key, step.Value.diagnosticAnswer, step.Value.actionAnswer, stepNumber);
+
+                _pagesSteps.Add(instance.GetComponent<RectTransform>());
                 instance.SetActive(false);
+                stepNumber++;
             }
 
-            pagesSteps[0].gameObject.SetActive(true);
+            _pagesSteps[0].gameObject.SetActive(true);
         }
 
-        public void OpenFolderVoid(){
-            if (!folderOpen) {
-                folderOpen = true;
+        private void OpenFolderVoid(){
+            if (!_folderOpen) {
+                _folderOpen = true;
                 StartCoroutine(OpenFolderCoroutine(1));
             } else {
-                folderOpen = false;
+                _folderOpen = false;
                 StartCoroutine(CloseFolderCoroutine(1));
             }
         }
@@ -74,8 +88,8 @@ namespace UI.ScoreContents{
                 if (!elementsHided && time >= duration / 2) {
                     elementsHided = true;
                     HideElements(true);
-                    for (int i = 0; i < pageId; i++) {
-                        pagesSteps[i].gameObject.SetActive(true);
+                    for (int i = 0; i < _pageId; i++) {
+                        _pagesSteps[i].gameObject.SetActive(true);
                     }
 
                     folderCover.GetComponent<Image>().color = new Color(1, 0.9557926f, 0.8283019f);
@@ -87,7 +101,7 @@ namespace UI.ScoreContents{
                 time += Time.deltaTime;
                 yield return null;
             }
-            
+
             folderDivider.localScale = new Vector3(-1, 1, 1);
             folderDivider.localPosition = new Vector3(-370, 0, 0);
             folderInside.localPosition = new Vector3(370, 0, 0);
@@ -104,8 +118,8 @@ namespace UI.ScoreContents{
                 if (!elementsShowed && time >= duration / 2) {
                     elementsShowed = true;
                     HideElements(false);
-                    for (int i = 0; i < pageId; i++) {
-                        pagesSteps[i].gameObject.SetActive(false);
+                    for (int i = 0; i < _pageId; i++) {
+                        _pagesSteps[i].gameObject.SetActive(false);
                     }
 
                     folderCover.GetComponent<Image>().color = new Color(1, 1, 1);
@@ -117,16 +131,15 @@ namespace UI.ScoreContents{
                 time += Time.deltaTime;
                 yield return null;
             }
-            
+
             folderDivider.localScale = new Vector3(1, 1, 1);
             folderDivider.localPosition = new Vector3(0, 0, 0);
             folderInside.localPosition = new Vector3(0, 0, 0);
         }
 
-        public void SwitchPages(bool nextPage){
+        private void SwitchPages(bool nextPage){
             InteractableButtons(false);
-            if (nextPage) StartCoroutine(NextPage(1));
-            else StartCoroutine(PreviousPage(1));
+            StartCoroutine(nextPage ? NextPage(1) : PreviousPage(1));
         }
 
         private IEnumerator NextPage(float duration){
@@ -134,28 +147,28 @@ namespace UI.ScoreContents{
                 duration = 0.01f;
             }
 
-            pagesSteps[pageId].SetParent(folderDivider);
-            pagesSteps[pageId + 1].gameObject.SetActive(true);
+            _pagesSteps[_pageId].SetParent(folderDivider);
+            _pagesSteps[_pageId + 1].gameObject.SetActive(true);
 
             float time = 0;
             bool elementsHided = false;
-            pagesSteps[pageId].GetComponent<Image>().color = new Color(1, 1, 1, 1);
+            _pagesSteps[_pageId].GetComponent<Image>().color = new Color(1, 1, 1, 1);
             while (time < duration) {
                 if (!elementsHided && time >= duration / 2) {
                     elementsHided = true;
-                    pagesSteps[pageId].GetChild(0).gameObject.SetActive(false);
+                    _pagesSteps[_pageId].GetChild(0).gameObject.SetActive(false);
                 }
 
-                pagesSteps[pageId].localScale = new Vector3(Mathf.Lerp(-1, 1, time / duration), 1, 1);
-                pagesSteps[pageId].localPosition = new Vector3(Mathf.Lerp(-742, -30, time / duration), 0, 0);
+                _pagesSteps[_pageId].localScale = new Vector3(Mathf.Lerp(-1, 1, time / duration), 1, 1);
+                _pagesSteps[_pageId].localPosition = new Vector3(Mathf.Lerp(-742, -30, time / duration), 0, 0);
                 time += Time.deltaTime;
                 yield return null;
             }
 
-            pagesSteps[pageId].localScale = new Vector3(1, 1, 1);
-            pagesSteps[pageId].localPosition = new Vector3(-30, 0, 0);
-            pagesSteps[pageId].GetComponent<Image>().color = new Color(0.97f, 0.97f, 0.97f, 1);
-            pageId++;
+            _pagesSteps[_pageId].localScale = new Vector3(1, 1, 1);
+            _pagesSteps[_pageId].localPosition = new Vector3(-30, 0, 0);
+            _pagesSteps[_pageId].GetComponent<Image>().color = new Color(0.97f, 0.97f, 0.97f, 1);
+            _pageId++;
             HideButtons();
         }
 
@@ -164,26 +177,26 @@ namespace UI.ScoreContents{
                 duration = 0.01f;
             }
 
-            pageId--;
+            _pageId--;
             float time = 0;
             bool elementsShowed = false;
-            pagesSteps[pageId].GetComponent<Image>().color = new Color(1, 1, 1, 1);
+            _pagesSteps[_pageId].GetComponent<Image>().color = new Color(1, 1, 1, 1);
             while (time < duration) {
                 if (!elementsShowed && time >= duration / 2) {
                     elementsShowed = true;
-                    pagesSteps[pageId].GetChild(0).gameObject.SetActive(true);
+                    _pagesSteps[_pageId].GetChild(0).gameObject.SetActive(true);
                 }
 
-                pagesSteps[pageId].localScale = new Vector3(Mathf.Lerp(1, -1, time / duration), 1, 1);
-                pagesSteps[pageId].localPosition = new Vector3(Mathf.Lerp(-30, -742, time / duration), 0, 0);
+                _pagesSteps[_pageId].localScale = new Vector3(Mathf.Lerp(1, -1, time / duration), 1, 1);
+                _pagesSteps[_pageId].localPosition = new Vector3(Mathf.Lerp(-30, -742, time / duration), 0, 0);
                 time += Time.deltaTime;
                 yield return null;
             }
 
-            pagesSteps[pageId].localScale = new Vector3(-1, 1, 1);
-            pagesSteps[pageId].localPosition = new Vector3(-742, 0, 0);
-            pagesSteps[pageId].GetComponent<Image>().color = new Color(0.97f, 0.97f, 0.97f, 1);
-            pagesSteps[pageId].SetParent(folderInside);
+            _pagesSteps[_pageId].localScale = new Vector3(-1, 1, 1);
+            _pagesSteps[_pageId].localPosition = new Vector3(-742, 0, 0);
+            _pagesSteps[_pageId].GetComponent<Image>().color = new Color(0.97f, 0.97f, 0.97f, 1);
+            _pagesSteps[_pageId].SetParent(folderInside);
             HideButtons();
         }
 
@@ -194,8 +207,8 @@ namespace UI.ScoreContents{
 
         private void HideButtons(){
             InteractableButtons(true);
-            pagesNavigationButs[1].gameObject.SetActive(pageId > 0);
-            pagesNavigationButs[0].gameObject.SetActive(pageId < pagesSteps.Count - 1);
+            pagesNavigationButs[1].gameObject.SetActive(_pageId > 0);
+            pagesNavigationButs[0].gameObject.SetActive(_pageId < _pagesSteps.Count - 1);
         }
 
         private void HideElements(bool hide){
@@ -205,7 +218,7 @@ namespace UI.ScoreContents{
         }
 
         public void SetStepsRecords(Dictionary<string, GameData.StepRecords> dict){
-            records = dict;
+            _records = dict;
         }
     }
 }
