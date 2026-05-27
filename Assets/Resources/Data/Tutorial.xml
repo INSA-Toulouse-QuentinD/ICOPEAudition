@@ -1,36 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Tutorial>
-  <Step Name="Waiting_room">
-    <Entry>
-      <ID>0</ID>
-      <Intitule>Bonjour, et bienvenue ! </Intitule>
-      <Text>Vous allez apprendre à utiliser les fonctionnalités essentielles du jeu.</Text>
-    </Entry>
-    <Entry>
-      <ID>1</ID>
-      <Intitule>Accéder à la boutique :</Intitule>
-      <Text>Cliquez sur le bouton &lt;b&gt;boutique&lt;/b&gt; en haut à droite de l’écran pour acheter des décorations et ainsi décorer votre salle d’attente.</Text>
-    </Entry>
-    <Entry>
-      <ID>2</ID>
-      <Intitule>Mettre le jeu en pause :</Intitule>
-      <Text>Le bouton &lt;b&gt;Pause&lt;/b&gt; en haut à gauche vous perme de mettre en pause le jeu. Vous pourrez retourner au menu ou d’accéder aux &lt;b&gt;paramètre&lt;/b&gt;.</Text>
-    </Entry>
-    <Entry>
-      <ID>3</ID>
-      <Intitule>Démarrer une consultation :</Intitule>
-      <Text>Pour commencer une consultation, cliquez sur le personnage en &lt;b&gt;surbrillance&lt;/b&gt; ou sur l'icone de choix de niveau à côté du bouton "Pause".
-	  
+    <Step Name="Waiting_room">
+        <Entry>
+            <ID>0</ID>
+            <Intitule>Bonjour, et bienvenue !</Intitule>
+            <Text>Vous allez apprendre à utiliser les fonctionnalités essentielles du jeu.</Text>
+        </Entry>
+        <Entry>
+            <ID>1</ID>
+            <Intitule>Accéder à la boutique :</Intitule>
+            <Text>Cliquez sur le bouton &lt;b&gt;boutique&lt;/b&gt; en haut à droite de l’écran pour acheter des décorations et ainsi décorer votre salle d’attente.</Text>
+        </Entry>
+        <Entry>
+            <ID>2</ID>
+            <Intitule>Mettre le jeu en pause :</Intitule>
+            <Text>Le bouton &lt;b&gt;Pause&lt;/b&gt; en haut à gauche vous permet de mettre en pause le jeu. Vous pourrez retourner au menu ou accéder aux &lt;b&gt;paramètres&lt;/b&gt;.</Text>
+        </Entry>
+        <Entry>
+            <ID>3</ID>
+            <Intitule>Démarrer une consultation :</Intitule>
+            <Text>Pour commencer une consultation, cliquez sur le personnage en &lt;b&gt;surbrillance&lt;/b&gt; ou sur l'icône de choix de niveau à côté du bouton "Pause".
+
 Ce patient a besoin de votre expertise pour évaluer son audition.
 Votre premier client vous attend !
-</Text>
-    </Entry>
-  </Step>
-  <Step Name="Choix">
-    <Entry>
-      <ID>0</ID>
-      <Intitule>choix perso</Intitule>
-      <Text>blabla</Text>
-    </Entry>
-  </Step>
+            </Text>
+        </Entry>
+    </Step>
+    <Step Name="Tutorial">
+        <Entry>
+            <ID>0</ID>
+            <Intitule>Présentation du patient</Intitule>
+            <Text>Avant de commencer l'étape 1, il faut vérifier si le patient vient pour un problème auditif et qu’il respecte les critères de prise en charge.
+Pour cela, vous aurez à chaque fois accès à une petite fiche de présentation.
+Prenez le temps de tout lire avant de passer à la suite.
+            </Text>
+        </Entry>
+        <Entry>
+            <ID>1</ID>
+            <Intitule>Phase de choix</Intitule>
+            <Text>Il vous faut maintenant décider de la prochaine étape à suivre pour votre patient.
+Vous pouvez à tout moment revenir en arrière en cliquant sur "Précédent" pour regarder de nouveau les résultats du test ou les informations qui avaient été mis à votre disposition.
+Sélectionnez l'option qui vous semble correcte.
+            </Text>
+        </Entry>
+        <Entry>
+            <ID>2</ID>
+            <Intitule>Mauvaise réponse</Intitule>
+            <Text>On dirait bien que ce n’est pas la bonne réponse. Pas de panique, vous pouvez retourner en arrière pour sélectionner une nouvelle option.
+Prenez le temps de bien lire les informations à votre disposition et de les analyser pour faire le bon choix.
+            </Text>
+        </Entry>
+        <Entry>
+            <ID>3</ID>
+            <Intitule>Bonne réponse</Intitule>
+            <Text>Félicitations, vous avez fait le bon choix ! Vous pouvez maintenant passer à l’étape suivante.
+N’hésitez pas à lire la justification à votre disposition pour mieux comprendre les raisons de ce choix.
+            </Text>
+        </Entry>
+        <Entry>
+            <ID>4</ID>
+            <Intitule>Test du chuchotement</Intitule>
+            <Text>Le patient vous indique le nombre de mots qu'il a entendus pour chaque oreille. Lisez bien cette information pour être sûr de choisir la bonne réponse lors de votre diagnostic.</Text>
+        </Entry>
+        <Entry>
+            <ID>5</ID>
+            <Intitule>Déroulement d'une étape</Intitule>
+            <Text>Sauf exception, les étapes seront divisées en trois parties:
+- Premièrement, des informations ou résultats de test vous seront présentés pour faire votre choix.
+- La deuxième partie vous permettra de faire un diagnostic, il vous sera demandé ce qu'on peut conclure des informations obtenues.
+- En dernier, vous devrez choisir quelle sera la prochaine étape à faire.
+            </Text>
+        </Entry>
+        <Entry>
+            <ID>6</ID>
+            <Intitule>Questionnaire Go-No-Go</Intitule>
+            <Text>Le patient vient de répondre à un questionnaire Go-No-Go. Observez attentivement ces réponses pour faire votre diagnostic.</Text>
+        </Entry>
+        <Entry>
+            <ID>7</ID>
+            <Intitule>Otoscopie</Intitule>
+            <Text>Vous avez devant vous une photographie de la vidéo-otoscopie. Observez-la attentivement pour sélectionner le bon diagnostic.</Text>
+        </Entry>
+        <Entry>
+            <ID>8</ID>
+            <Intitule>Test de Weber</Intitule>
+            <Text>Vous venez de faire passer le test de Weber au patient. Lisez son ressenti et choisissez le bon choix.</Text>
+        </Entry>
+        <Entry>
+            <ID>9</ID>
+            <Intitule>Questionnaire HHEI-S</Intitule>
+            <Text>Le patient vient de répondre à un questionnaire HHEI-S. Comme celui du GO-No-GO, observez ces réponses et faites votre diagnostic.</Text>
+        </Entry>
+        <Entry>
+            <ID>10</ID>
+            <Intitule>Audiométrie</Intitule>
+            <Text>Vous avez le graphique du résultat de l'audiométrie du patient. Analysez-le et faites les bons choix.</Text>
+        </Entry>
+        <Entry>
+            <ID>11</ID>
+            <Intitule>Synthèse</Intitule>
+            <Text>Félicitations, si vous en êtes là, c'est que vous avez fini le cas !
+Vous avez un compte-rendu vous montrant le nombre de bonnes et mauvaises réponses.
+Cliquez sur "Détails" pour observer vos résultats étape par étape.
+Une fois terminé, refermez le dossier en cliquant en haut à gauche, puis cliquez sur "Retour au menu" pour passer au patient suivant.
+            </Text>
+        </Entry>
+    </Step>
 </Tutorial>

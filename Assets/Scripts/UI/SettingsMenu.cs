@@ -9,35 +9,18 @@ namespace UI{
     /// and toggle fullscreen mode. Settings are saved using PlayerPrefs
     /// and applied immediately via the AudioMixer and Screen settings.
     /// </summary>
-    public class SettingsMenu : MonoBehaviour
-    {
-
+    public class SettingsMenu : MonoBehaviour{
         [SerializeField] private AudioMixer mixer;
 
         [SerializeField] private Slider MasterSlider;
         [SerializeField] private Slider MusicSlider;
         [SerializeField] private Slider SFXSlider;
 
-        [SerializeField] private Toggle toggleFullScreen;
-
         /// <summary>
         /// Initializes the settings menu by loading saved preferences
         /// and applying them to the sliders, toggle, AudioMixer, and screen.
         /// </summary>
-        private void Start()
-        {
-            Init();
-        }
-
-        /// <summary>
-        /// Loads saved settings from PlayerPrefs and updates the UI controls and system settings accordingly.
-        /// </summary>
-        public void Init()
-        {
-            bool isFullScreen = PlayerPrefs.GetInt("fullScreen", 0) == 1;
-            toggleFullScreen.isOn = isFullScreen;
-            Screen.fullScreen = isFullScreen;
-            Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
+        private void Start(){
             float volume = PlayerPrefs.GetFloat("mastervolume", 0.5f);
             MasterSlider.value = volume;
             mixer.SetFloat("mastervolume", Mathf.Log10(volume) * 20);
@@ -53,8 +36,7 @@ namespace UI{
         /// Updates the master volume based on the slider value,
         /// applies it to the AudioMixer, and saves the setting.
         /// </summary>
-        public void SetMaster()
-        {
+        public void SetMaster(){
             float volume = MasterSlider.value;
             mixer.SetFloat("mastervolume", Mathf.Log10(volume) * 20);
             PlayerPrefs.SetFloat("mastervolume", volume);
@@ -64,8 +46,7 @@ namespace UI{
         /// Updates the music volume based on the slider value,
         /// applies it to the AudioMixer, and saves the setting.
         /// </summary>
-        public void SetMusic()
-        {
+        public void SetMusic(){
             float volume = MusicSlider.value;
             mixer.SetFloat("musicvolume", Mathf.Log10(volume) * 20);
             PlayerPrefs.SetFloat("musicvolume", volume);
@@ -75,24 +56,10 @@ namespace UI{
         /// Updates the sound effects (SFX) volume based on the slider value,
         /// applies it to the AudioMixer, and saves the setting.
         /// </summary>
-        public void SetSFX()
-        {
+        public void SetSFX(){
             float volume = SFXSlider.value;
             mixer.SetFloat("SFXvolume", Mathf.Log10(volume) * 20);
             PlayerPrefs.SetFloat("SFXvolume", volume);
-        }
-
-
-        /// <summary>
-        /// Toggles fullscreen mode based on the toggle state,
-        /// applies the change to the screen, and saves the preference.
-        /// </summary>
-        public void SetFullscreen()
-        {
-            bool isFullScreen = toggleFullScreen.isOn;
-            Screen.fullScreen = isFullScreen;
-            Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
-            PlayerPrefs.SetInt("fullScreen", isFullScreen ? 1 : 0);
         }
     }
 }

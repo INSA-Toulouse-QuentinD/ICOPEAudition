@@ -1,36 +1,67 @@
 using Managers;
 using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
 
-namespace UI.TutorialContents
-{
+namespace UI.TutorialContents{
     /// <summary>
     /// Controler that manage text placement for the Tutorial.
     /// </summary>
-    public class UITutorialControler : MonoBehaviour
-    {
-        #region SerializedField TMP_text
-        [SerializeField] private TMP_Text _intituleText;
-        [SerializeField] private TMP_Text _Text;
-        #endregion
-
+    public class UITutorialControler : MonoBehaviour{
+        public static UITutorialControler Instance { get; private set; }
+        
+        [SerializeField] private TMP_Text intituleText;
+        [SerializeField] private TMP_Text text;
+        
         #region Local variable
-        private int indexText = 0;
-        private string nameStep;
+
+        private int _indexText;
+        private string _nameStep;
+
+        // Garde en mémoire les index déjà affichés pour TutorialMichel.
+        // Doit être réinitialisé quand le joueur recommence le tutoriel depuis le début.
+        private readonly HashSet<int> _tutorialMichelShownIndexes = new();
+
         #endregion
 
         #region Public methods
+
         /// <summary>
         /// Advances to the next tutorial text by incrementing the index and loading the corresponding text.
         /// </summary>
-        public void NextTextButton()
-        {
-            indexText++;
-            SetTexts(nameStep, indexText);
+        public void NextTextButton(){
+            if (_nameStep == "Waiting_room" && _indexText < 3) {
+                _indexText++;
+                SetTexts(_nameStep, _indexText);
+            } else {
+                GameManager.Instance.SetTutorialUI();
+                _indexText = 0;
+            }
         }
+
+        public void TutorialMichel(int index){
+            if (GameManager.Instance.skipAssistante) return;
+            
+            // Uniquement si le joueur est dans le tutoriel (niveau 0).
+            if (GameManager.Instance.GameStateManager.GetCurrentLevel() != 0) return;
+
+            // Si le joueur recommence le tutoriel depuis le début, on reset la mémoire.
+            if (index == 0) {
+                _tutorialMichelShownIndexes.Clear();
+            }
+
+            // Chaque index une seule fois.
+            if (!_tutorialMichelShownIndexes.Add(index)) return;
+
+            _nameStep = "Tutorial";
+            GameManager.Instance.SetTutorialUI();
+            SetTexts(_nameStep, index);
+        }
+
         #endregion
 
         #region Private methods
+
         /// <summary>
         /// Sets the UI text fields based on XML tutorial data.
         /// </summary>
@@ -40,57 +71,28 @@ namespace UI.TutorialContents
         /// </remarks>
         /// <param name="nameStep">The name of the current tutorial step (used to locate data in the XML).</param>
         /// <param name="idSteps">The ID of the specific text entry to load.</param>
-        private void SetTexts(string nameStep, int idSteps)
-        {
-            var pathToXml = Resources.Load<TextAsset>($"Data/Tutorial");
-            if ( pathToXml != null )
-            {
+        private void SetTexts(string nameStep, int idSteps){
+            Debug.Log(nameStep + " " +  idSteps);
+            TextAsset pathToXml = Resources.Load<TextAsset>($"Data/Tutorial");
+            if (pathToXml) {
                 TutorialEntry tutoEntry = XmlManager.LoadTutorialDataByID(pathToXml, nameStep, idSteps);
-                if (tutoEntry != null)
-                {
-                    _intituleText.text = tutoEntry.Intitule;
-                    _Text.text = tutoEntry.Text;
+                if (tutoEntry != null) {
+                    intituleText.text = tutoEntry.Intitule;
+                    text.text = tutoEntry.Text;
                 }
-                else
-                {
-                    GameManager.Instance.SetTutorialUI();
-                    indexText = 0;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Checks for input from mouse click ("Fire1") or keyboard (Enter key).
-        /// If input is detected, triggers the NextTextButton() method.
-        /// </summary>
-        private void GetInputs()
-        {
-            if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Return))
-            {
-                NextTextButton();
             }
         }
         #endregion
-
-        #region Unity method
+        
         /// <summary>
-        /// Called when the object becomes enabled and active.
+        /// Called the first time the object becomes enabled and active.
         /// Initializes the tutorial step name and sets related texts.
         /// </summary>
-        private void OnEnable()
-        {
-            nameStep = "Waiting_room"; 
-            SetTexts(nameStep, indexText);
+        private void Start(){
+            Instance = this;
+            
+            _nameStep = "Waiting_room";
+            SetTexts(_nameStep, _indexText);
         }
-
-        /// <summary>
-        /// Called once per frame.
-        /// If the tutorial panel is active, it processes user input.
-        /// </summary>
-        private void Update()
-        {
-            if (GameManager.Instance.tutorialPanel.activeSelf) GetInputs();
-        }
-        #endregion
     }
 }

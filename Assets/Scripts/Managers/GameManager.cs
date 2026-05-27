@@ -54,12 +54,11 @@ namespace Managers{
 
         [Header("Debug")] public bool canAccessAllLevel;
         public bool instanteAnimation;
+        public bool skipAssistante;
 
         [Header("Levels")] [SerializeField] public LevelsData levelsData;
 
-        [Header("Tutoriel")] [SerializeField]
-        private bool
-            isTutorialEnable = true; // Par défault true car on suppose que le joueur y joue pour la première fois.
+        [Header("Tutoriel")] [SerializeField] private bool isTutorialEnable;
 
         private readonly string _pathXmlFile = "Assets/Resources/Data/Tutorial.xml";
         private readonly string _pathXsdFile = "Assets/Resources/Data/TutorialSchema.xsd";
@@ -114,16 +113,17 @@ namespace Managers{
         }
 
         // CLEAR SCREEN
-        internal void ClearScreen(){
+        private void ClearScreen(){
             mainMenu.SetActive(false);
             gameMenu.SetActive(false);
             stepMenu.SetActive(false);
             scorePanel.SetActive(false);
+            tutorialPanel.SetActive(false);
             isTutorialActive.SetActive(false);
         }
 
         // CLEAR ANIMATION
-        internal static void ClearAnimation(){
+        private static void ClearAnimation(){
             PatientAnimation.StopAnimation();
         }
 
@@ -150,11 +150,16 @@ namespace Managers{
             var currentPatient = GameStateManager.GetCurrentPatientCase();
 
             // LOAD SPRITE ON SCREEN (BY DEFAULT SPRITE 0 MUST A STAND CHARACTER)
-            PatientAnimation.SetNewCharacterInArea(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient]
-                .characterSprites[0]);
+            PatientAnimation.SetNewCharacterInArea(
+                levelsData.patientByLevel[currentLevel].patientsCase[currentPatient].characterSprites[0]);
+
             // SHOW TUTORIAL
-            if (!instanteAnimation) {
-                Invoke(nameof(EnableTutorial), 4.5f); // total time during the animation done before
+            if (skipAssistante) return;
+
+            if (instanteAnimation) {
+                EnableTutorial();
+            } else {
+                Invoke(nameof(EnableTutorial), 3f); // total time during the animation done before
             }
         }
 
@@ -195,7 +200,8 @@ namespace Managers{
             var currentPatient = GameStateManager.GetCurrentPatientCase();
 
             // SET ALGO STEP BY DEFAULT LOAD STEP 0 (RESTART THE PARCOURS EVEN IF PLAYER STOP DURING)
-            GameStateManager.SetStep(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient].steps[0].type);
+            GameStateManager.SetStep(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient].steps[0]
+                .type);
         }
 
         // PLAY AUDIO

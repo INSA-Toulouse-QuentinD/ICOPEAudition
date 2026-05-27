@@ -117,7 +117,7 @@ public class PatientAnimation : MonoBehaviour{
         if (GameManager.Instance.instanteAnimation) {
             FadeOut();
         } else {
-            Invoke(nameof(FadeOut), 1.5f);
+            Invoke(nameof(FadeOut), 1f);
         }
     }
 
