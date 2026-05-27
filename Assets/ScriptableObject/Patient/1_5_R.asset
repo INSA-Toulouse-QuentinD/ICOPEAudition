@@ -78,14 +78,14 @@ MonoBehaviour:
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 2 mots
         du c\xF4t\xE9 droit. ???"
       isCorrect: 0
-      correctionText: "Le test est bien pathologique mais lors du test de chuchotement,
+      correctionText: "Le test est bien pathologique mais lors du <b>test de chuchotement</b>,
         l'\xE9valuation de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter
-        4 mots au patient pour chaque oreille et non 2 mots comme sur cette affirmation.
-        \r\n\r\nDe plus, la patiente \xE0 bien \xE9voqu\xE9 qu\u2019il n\u2019avait
-        entendu aucun mot du c\xF4t\xE9 de l\u2019oreille droite. \r\n\r\nLe crit\xE8re
-        normal pour consid\xE9rer qu'il n'y a pas d\u2019anomalie auditive est la
-        r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots (ou 3 minimum par
-        oreille)."
+        <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette
+        affirmation.\r\n\r\nDe plus, le patient \xE0 bien \xE9voqu\xE9 qu\u2019il
+        n\u2019avait entendu aucun mot du c\xF4t\xE9 de l\u2019oreille droite. \r\n\r\nLe
+        <b>crit\xE8re normal</b> pour consid\xE9rer qu'il n'y a <b>pas d\u2019anomalie
+        auditive</b> est la <b>r\xE9p\xE9tition correcte de l\u2019ensemble des 4
+        mots</b> (ou 3 minimum par oreille)."
       sprites: []
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 3 mots
         des 2 c\xF4t\xE9s."
@@ -101,24 +101,26 @@ MonoBehaviour:
     - answerText: "Il n\u2019y a pas d\u2019anomalie car il a su restituer les 2
         mots du c\xF4t\xE9 gauche. "
       isCorrect: 0
-      correctionText: "Non, il existe bien une anomalie. Lors du test de chuchotement,
+      correctionText: "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>,
         l'\xE9valuation de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter
-        4 mots au patient pour chaque oreille et non 2 mots comme sur cette affirmation.
-        \r\n\r\nLe crit\xE8re normal pour consid\xE9rer qu'il n'y a pas d\u2019anomalie
-        auditive est la r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots (ou
-        3 mots minimum par oreille).\r\nOr, dans ce cas pr\xE9cis, la patiente n\u2019a
-        r\xE9p\xE9t\xE9 que 2 mots sur 4 pour chaque oreille. Cela traduit une diminution
-        de l'acuit\xE9 auditive bilat\xE9rale et constitue une anomalie du test."
+        <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette
+        affirmation. \r\n\r\nLe <b>crit\xE8re normal</b> pour consid\xE9rer qu'il
+        n'y a <b>pas d\u2019anomalie auditive</b> est la <b>r\xE9p\xE9tition correcte
+        de l\u2019ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\r\nOr,
+        dans ce cas pr\xE9cis, le patient n\u2019a r\xE9p\xE9t\xE9 que <b>2 mots
+        sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuit\xE9
+        auditive</b> bilat\xE9rale et constitue une <b>anomalie du test<b>."
       sprites: []
     - answerText: Le test est normal.
       isCorrect: 0
-      correctionText: "Pour que le test soit consid\xE9r\xE9 comme normal, la patiente
-        doit \xEAtre capable de r\xE9p\xE9ter au moins 3 mots sur 4 par oreille.\r\nDans
-        la situation d\xE9crite :\r\nLa patiente a r\xE9p\xE9t\xE9 seulement 2 mots
-        sur 4 du c\xF4t\xE9 gauche et 0 mots sur 4 du c\xF4t\xE9 droit,\r\nCela signifie
-        qu\u2019il n\u2019atteint pas le seuil minimal requis pour une audition normale
-        sur aucune des deux oreilles.\r\n\r\nLe test aurait \xE9t\xE9 normal si le
-        patient avait r\xE9p\xE9t\xE9 les 3 mots de chaque c\xF4t\xE9."
+      correctionText: "Pour que le test soit consid\xE9r\xE9 comme <b>normal</b>,
+        le patient doit \xEAtre capable de r\xE9p\xE9ter <b>au moins 3 mots sur 4
+        par oreille</b>.\r\nDans la situation d\xE9crite :\r\nLe patient a r\xE9p\xE9t\xE9
+        <b>seulement 2 mots sur 4</b> du <b>c\xF4t\xE9 gauche</b> et <b>0 mots sur
+        4</b> du <b>c\xF4t\xE9 droit</b>,\r\nCela signifie qu\u2019il <b>n\u2019atteint
+        pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des
+        deux oreilles</b>.\r\n\r\nLe test aurait \xE9t\xE9 normal si le patient avait
+        r\xE9p\xE9t\xE9 les 3 mots de chaque c\xF4t\xE9."
       sprites: []
     actionPhase:
     - answerText: Je le laisse repartir chez lui.

@@ -289,38 +289,39 @@ MonoBehaviour:
     diagnosticPhase:
     - answerText: Le test est normal.
       isCorrect: 0
-      correctionText: "Pour que le test soit consid\xE9r\xE9 comme normal, le patient
-        doit \xEAtre capable de r\xE9p\xE9ter au moins 3 mots sur 4 par oreille.\r\nDans
-        la situation d\xE9crite :\r\nLa patiente a r\xE9p\xE9t\xE9 seulement 2 mots
-        sur 4 de chaque c\xF4t\xE9 des oreilles,\r\nCela signifie qu\u2019elle n\u2019atteint
-        pas le seuil minimal requis pour une audition normale sur aucune des deux
-        oreilles.\r\n\r\nLe test aurait \xE9t\xE9 normal si la patiente avait r\xE9p\xE9t\xE9
-        les 3 mots minimum de chaque c\xF4t\xE9."
+      correctionText: "Pour que le test soit consid\xE9r\xE9 comme <b>normal</b>,
+        le patient doit \xEAtre capable de r\xE9p\xE9ter <b>au moins 3 mots sur 4
+        par oreille</b>.\r\nDans la situation d\xE9crite :\r\nLa patiente a r\xE9p\xE9t\xE9
+        <b>seulement 2 mots sur 4</b> de chaque c\xF4t\xE9 des oreilles,\r\nCela
+        signifie qu\u2019elle <b>n\u2019atteint pas le seuil minimal requis</b> pour
+        une audition normale <b>sur aucune des deux oreilles</b>.\r\n\r\nLe test
+        aurait \xE9t\xE9 normal si la patiente avait r\xE9p\xE9t\xE9 les 3 mots de
+        chaque c\xF4t\xE9."
       sprites: []
     - answerText: "Il y a une anomalie car elle n\u2019a pas su restituer les 3 mots
         minimum de chaque c\xF4t\xE9."
       isCorrect: 1
-      correctionText: "Lors du test de chuchotement, on consid\xE8re que l\u2019audition
-        est normale si le patient est capable de r\xE9p\xE9ter correctement au moins
-        3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente n\u2019a su r\xE9p\xE9ter
-        2 mots sur 4 pour chaque oreille, ce qui est en dessous du seuil requis.\nCela
-        indique une atteinte de l\u2019audition bilat\xE9rale, car aucun des deux
-        c\xF4t\xE9s n\u2019atteint le crit\xE8re minimal de 3 mots correctement restitu\xE9s
-        sur 4."
+      correctionText: "Lors du <b>test de chuchotement</b>, on consid\xE8re que l\u2019audition
+        est <b>normale</b> si le patient est capable de <b>r\xE9p\xE9ter correctement
+        au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\r\nDans ce cas, la
+        patiente n\u2019a su r\xE9p\xE9ter que <b>2 mots sur 4</b> pour chaque oreille,
+        ce qui est <b>en dessous du seuil requis</b>.\r\nCela indique une <b>atteinte
+        de l\u2019audition bilat\xE9rale</b>, car <b>aucun des deux c\xF4t\xE9s</b>
+        n\u2019atteint le crit\xE8re minimal de <b>3 mots correctement restitu\xE9s
+        sur 4</b>.\r"
       sprites: []
     - answerText: "Il n\u2019y a pas d\u2019anomalie car elle a su restituer les
         2 mots de chaque c\xF4t\xE9."
       isCorrect: 0
-      correctionText: "Non, il existe bien une anomalie. Lors du test de chuchotement,
+      correctionText: "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>,
         l'\xE9valuation de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter
-        4 mots au patient pour chaque oreille et non 2 mots de chaque c\xF4t\xE9
-        comme sur cette affirmation. \r\n\r\nLe crit\xE8re normal pour consid\xE9rer
-        qu'il n'y a pas d\u2019anomalie auditive est la r\xE9p\xE9tition correcte
-        de l\u2019ensemble des 4 mots (ou 3 mots minimum par oreille).\vOr, dans
-        ce cas pr\xE9cis, la patiente n\u2019a r\xE9p\xE9t\xE9 que 2 mots sur 4 pour
-        l\u2019oreille gauche et 0 mots sur 4 pour l\u2019oreille droite. Cela traduit
-        une diminution de l'acuit\xE9 auditive bilat\xE9rale et constitue une anomalie
-        du test."
+        <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette
+        affirmation. \r\n\r\nLe <b>crit\xE8re normal</b> pour consid\xE9rer qu'il
+        n'y a <b>pas d\u2019anomalie auditive</b> est la <b>r\xE9p\xE9tition correcte
+        de l\u2019ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\r\nOr,
+        dans ce cas pr\xE9cis, la patiente n\u2019a r\xE9p\xE9t\xE9 que <b>2 mots
+        sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuit\xE9
+        auditive</b> bilat\xE9rale et constitue une <b>anomalie du test<b>."
       sprites: []
     actionPhase:
     - answerText: "Je peux proc\xE9der \xE0 l'audiom\xE9trie."
@@ -438,13 +439,14 @@ MonoBehaviour:
       sprites: []
     - answerText: Le score montre une audition normale.
       isCorrect: 0
-      correctionText: "Ce n\u2019est pas une audition normale, car les seuils d\u2019audition
-        mesur\xE9s sont sup\xE9rieurs \xE0 20 dB HL sur plusieurs fr\xE9quences pour
-        les deux oreilles. \r\n\r\nOn consid\xE8re qu\u2019une audition est normale
-        lorsque les seuils sont compris entre -10 et 20 dB HL sur toutes les fr\xE9quences
-        test\xE9es (500 Hz \xE0 6000 Hz).\r\n\r\nil s\u2019agit d\u2019une surdit\xE9
-        neurosensorielle bilat\xE9rale et sym\xE9trique, qui pr\xE9domine sur les
-        aigus et qui \xE9voque donc une presbyacousie."
+      correctionText: "Ce <b>n\u2019est pas une audition normale</b>, car les seuils
+        d\u2019audition mesur\xE9s sont <b>sup\xE9rieurs \xE0 20 dB HL</b> sur plusieurs
+        fr\xE9quences pour les deux oreilles. \r\n\r\nOn consid\xE8re qu\u2019une
+        <b>audition est normale</b> lorsque les seuils sont compris entre <b>-10
+        et 20 dB HL</<b>b> sur toutes les fr\xE9quences test\xE9es (500 Hz \xE0 6000
+        Hz).\r\n\r\nil s\u2019agit d\u2019une surdit\xE9 neurosensorielle bilat\xE9rale
+        et sym\xE9trique, qui pr\xE9domine sur les aigus et qui \xE9voque donc une
+        presbyacousie."
       sprites: []
     actionPhase:
     - answerText: "J\u2019adresse le patient vers l\u2019ORL."
@@ -457,9 +459,9 @@ MonoBehaviour:
         cette perte auditive."
       isCorrect: 0
       correctionText: "Faux : la chirurgie est indiqu\xE9e dans certaines surdit\xE9s
-        de transmission, mais pas dans la presbyacousie, qui est une atteinte de
-        l\u2019oreille interne.\r\n\r\nDans le cas de notre patiente on reste dans
-        le parcours ICOPE audition simple. Je peux lui prescrire un appareillage
+        de transmission, mais <b>pas</b> dans la presbyacousie, qui est une atteinte
+        de l\u2019oreille interne.\r\n\r\nDans le cas de notre patiente on reste
+        dans le parcours ICOPE audition simple. Je peux lui prescrire un appareillage
         audioproth\xE9tique sans avoir besoin de l\u2019adresser vers l\u2019ORL."
       sprites: []
     - answerText: "Je prescris \xE0 la patiente une appareillage audioproth\xE9tique
@@ -469,7 +471,7 @@ MonoBehaviour:
         simple, puisqu\u2019on a une surdit\xE9 neurosensorielle bilat\xE9rale et
         sym\xE9trique, qui pr\xE9domine sur les aigus et qui \xE9voque donc une presbyacousie.
         Je peux lui prescrire un appareillage audioproth\xE9tique sans avoir besoin
-        de l\u2019adresser vers l\u2019ORL\r\n\r\nBravo !! Tu as bien identifi\xE9
+        de l\u2019adresser vers l\u2019ORL\r\n\r\n<b>Bravo !!</b> Tu as bien identifi\xE9
         le cas pr\xE9sent. \r\n\r\nPrise en charge r\xE9ussie. Tu as d\xE9bloqu\xE9
         un nouveau niveau."
       sprites: []

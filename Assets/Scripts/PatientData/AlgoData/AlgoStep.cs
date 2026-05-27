@@ -23,7 +23,7 @@ namespace PatientData.AlgoData{
     public class AnswerData{
         public string answerText;
         public bool isCorrect;
-        [TextArea] public string correctionText;
+        [TextArea(5, 5)] public string correctionText;
         public List<Sprite> sprites;
     }
 

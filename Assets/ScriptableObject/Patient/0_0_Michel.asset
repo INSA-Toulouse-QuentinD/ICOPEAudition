@@ -83,47 +83,51 @@ MonoBehaviour:
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 2 mots
         du c\xF4t\xE9 droit."
       isCorrect: 0
-      correctionText: "Le test est bien pathologique mais lors du test de chuchotement,
+      correctionText: "Le test est bien pathologique mais lors du <b>test de chuchotement</b>,
         l'\xE9valuation de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter
-        4 mots au patient pour chaque oreille et non 2 mots comme sur cette affirmation.
-        \r\n\r\nDe plus, le patient \xE0 bien \xE9voqu\xE9 qu\u2019il n\u2019avait
-        entendu aucun mot du c\xF4t\xE9 de l\u2019oreille droite. \r\n\r\nLe crit\xE8re
-        normal pour consid\xE9rer qu'il n'y a pas d\u2019anomalie auditive est la
-        r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots (ou 3 minimum par
-        oreille)."
+        <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette
+        affirmation.\r\n\r\nDe plus, le patient \xE0 bien \xE9voqu\xE9 qu\u2019il
+        n\u2019avait entendu aucun mot du c\xF4t\xE9 de l\u2019oreille droite. \r\n\r\nLe
+        <b>crit\xE8re normal</b> pour consid\xE9rer qu'il n'y a <b>pas d\u2019anomalie
+        auditive</b> est la <b>r\xE9p\xE9tition correcte de l\u2019ensemble des 4
+        mots</b> (ou 3 minimum par oreille)."
       sprites: []
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 3 mots
         des 2 c\xF4t\xE9s."
       isCorrect: 1
-      correctionText: "Lors du test de chuchotement, on consid\xE8re que l\u2019audition
-        est normale si le patient est capable de r\xE9p\xE9ter correctement au moins
-        3 mots sur 4 pour chaque oreille.\r\nDans ce cas, le patient n\u2019a su
-        r\xE9p\xE9ter que 2 mots sur 4 pour chaque c\xF4t\xE9, ce qui est en dessous
-        du seuil requis.\r\nCela indique une atteinte de l\u2019audition bilat\xE9rale,
-        car aucun des deux c\xF4t\xE9s n\u2019atteint le crit\xE8re minimal de 3
-        mots correctement restitu\xE9s sur 4.\r"
+      correctionText: "Lors du <b>test de chuchotement</b>, on consid\xE8re que l\u2019audition
+        est <b>normale</b> si le patient est capable de <b>r\xE9p\xE9ter correctement
+        au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\r\nDans ce cas, le
+        patient a r\xE9p\xE9t\xE9 <b>seulement 2 mots sur 4</b> du <b>c\xF4t\xE9
+        gauche</b> et <b>0 mots sur 4</b> du <b>c\xF4t\xE9 droit</b>, ce qui est
+        <b>en dessous du seuil requis</b>.\r\nCela indique une <b>atteinte de l\u2019audition
+        bilat\xE9rale</b>, car <b>aucun des deux c\xF4t\xE9s</b> n\u2019atteint le
+        crit\xE8re minimal de <b>3 mots correctement restitu\xE9s sur 4</b>.\r"
       sprites: []
     - answerText: "Il n\u2019y a pas d\u2019anomalie car il a su restituer les 2
         mots du c\xF4t\xE9 gauche. "
       isCorrect: 0
-      correctionText: "Non, il existe bien une anomalie. Lors du test de chuchotement,
+      correctionText: "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>,
         l'\xE9valuation de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter
-        4 mots au patient pour chaque oreille et non 2 mots comme sur cette affirmation.
-        \r\n\r\nLe crit\xE8re normal pour consid\xE9rer qu'il n'y a pas d\u2019anomalie
-        auditive est la r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots (ou
-        3 mots minimum par oreille).\r\nOr, dans ce cas pr\xE9cis, le patient n\u2019a
-        r\xE9p\xE9t\xE9 que 2 mots sur 4 pour chaque oreille. Cela traduit une diminution
-        de l'acuit\xE9 auditive bilat\xE9rale et constitue une anomalie du test."
+        <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette
+        affirmation. \r\n\r\nLe <b>crit\xE8re normal</b> pour consid\xE9rer qu'il
+        n'y a <b>pas d\u2019anomalie auditive</b> est la <b>r\xE9p\xE9tition correcte
+        de l\u2019ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\r\nOr,
+        dans ce cas pr\xE9cis, le patient a r\xE9p\xE9t\xE9 <b>seulement 2 mots sur
+        4</b> du <b>c\xF4t\xE9 gauche</b> et <b>0 mots sur 4</b> du <b>c\xF4t\xE9
+        droit</b>. Cela traduit une <b>diminution de l'acuit\xE9 auditive</b> bilat\xE9rale
+        et constitue une <b>anomalie du test<b>."
       sprites: []
     - answerText: Le test est normal.
       isCorrect: 0
-      correctionText: "Pour que le test soit consid\xE9r\xE9 comme normal, le patient
-        doit \xEAtre capable de r\xE9p\xE9ter au moins 3 mots sur 4 par oreille.\r\nDans
-        la situation d\xE9crite :\r\nLe patient a r\xE9p\xE9t\xE9 seulement 2 mots
-        sur 4 du c\xF4t\xE9 gauche et 0 mots sur 4 du c\xF4t\xE9 droit,\r\nCela signifie
-        qu\u2019il n\u2019atteint pas le seuil minimal requis pour une audition normale
-        sur aucune des deux oreilles.\r\n\r\nLe test aurait \xE9t\xE9 normal si le
-        patient avait r\xE9p\xE9t\xE9 les 3 mots de chaque c\xF4t\xE9."
+      correctionText: "Pour que le test soit consid\xE9r\xE9 comme <b>normal</b>,
+        le patient doit \xEAtre capable de r\xE9p\xE9ter <b>au moins 3 mots sur 4
+        par oreille</b>.\r\nDans la situation d\xE9crite :\r\nLe patient a r\xE9p\xE9t\xE9
+        <b>seulement 2 mots sur 4</b> du <b>c\xF4t\xE9 gauche</b> et <b>0 mots sur
+        4</b> du <b>c\xF4t\xE9 droit</b>,\r\nCela signifie qu\u2019il <b>n\u2019atteint
+        pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des
+        deux oreilles</b>.\r\n\r\nLe test aurait \xE9t\xE9 normal si le patient avait
+        r\xE9p\xE9t\xE9 les 3 mots de chaque c\xF4t\xE9."
       sprites: []
     actionPhase:
     - answerText: Je le laisse repartir chez lui.
@@ -152,8 +156,8 @@ MonoBehaviour:
         pu conclure a un faux positif du d\xE9pistage. On aurait alors rassur\xE9
         le participant, en lui rappelant les consignes de pr\xE9vention et de bonne
         hygi\xE8ne auriculaire. Un nouveau d\xE9pistage aurait alors \xE9t\xE9 propos\xE9,
-        par exemple avec H\xF6ra.\r\n\r\nIci : le test est anormal, il faut donc
-        poursuivre l\u2019\xE9valuation auditive en commen\xE7ant par l\u2019interrogatoire
+        par exemple avec H\xF6ra.\r\n\r\n<b>Ici : le test est anormal, il faut donc
+        poursuivre l\u2019\xE9valuation auditive</b> en commen\xE7ant par l\u2019interrogatoire
         (\xE0 l\u2019aide du questionnaire Go-No-Go)."
       sprites: []
   - type: 2
@@ -332,7 +336,7 @@ MonoBehaviour:
       isCorrect: 0
       correctionText: "Non, le test de Weber est utile afin d\u2019orienter son examen
         audiom\xE9trique. On peut retrouver une surdit\xE9 s\xE9v\xE8re avec un test
-        de Weber centr\xE9, \xE0 condition que l\u2019audition soit sym\xE9trique.\r\n\r\n<color=red>Il
+        de Weber centr\xE9, <b>\xE0 condition que l\u2019audition soit sym\xE9trique</b>.\r\n\r\n<color=red>Il
         n\u2019a aucun caract\xE8re rassurant concernant la normalit\xE9 de l\u2019audition.</color>"
       sprites: []
     - answerText: Je continue le parcours audition et lui fait passer le test HHIE-S.
@@ -345,7 +349,7 @@ MonoBehaviour:
       isCorrect: 0
       correctionText: "Non, le test de Weber est utile afin d\u2019orienter son examen
         audiom\xE9trique. On peut retrouver une surdit\xE9 s\xE9v\xE8re avec un test
-        de Weber centr\xE9, \xE0 condition que l\u2019audition soit sym\xE9trique.\r\n\r\n<color=red>Il
+        de Weber centr\xE9, <b>\xE0 condition que l\u2019audition soit sym\xE9trique</b>.\r\n\r\n<color=red>Il
         n\u2019a aucun caract\xE8re rassurant concernant la normalit\xE9 de l\u2019audition.</color>"
       sprites: []
     - answerText: "J\u2019enl\xE8ve le bouchon de c\xE9rumen."
@@ -372,7 +376,7 @@ MonoBehaviour:
       sprites: []
     - answerText: "Le score indique une absence totale de g\xEAne auditive."
       isCorrect: 0
-      correctionText: "Non, le score \xE0 14/40 est en faveur d\u2019une surdit\xE9
+      correctionText: "Non, le score \xE0 <b>14/40</b> est en faveur d\u2019une surdit\xE9
         mod\xE9r\xE9e.\r\n<color=red>On ne peut donc pas conclure \xE0 l\u2019absence
         de g\xE8ne auditive.</color>"
       sprites: []
@@ -380,8 +384,8 @@ MonoBehaviour:
       isCorrect: 0
       correctionText: "Non, en cas de difficult\xE9 auditive s\xE9v\xE8re on peut
         s\u2019attendre \xE0 retrouver un score > 24. Il s\u2019agit donc d\u2019une
-        surdit\xE9 mod\xE9r\xE9e.\r\nLa probabilit\xE9 d\u2019\xEAtre porteur d\u2019une
-        d\xE9ficience auditive augmentant avec le score."
+        surdit\xE9 mod\xE9r\xE9e.\r\n<b>La probabilit\xE9 d\u2019\xEAtre porteur
+        d\u2019une d\xE9ficience auditive augmentant avec le score.</b>"
       sprites: []
     - answerText: "Le r\xE9sultat sugg\xE8re que les troubles auditifs sont uniquement
         li\xE9s \xE0 une fatigue passag\xE8re."
@@ -425,17 +429,19 @@ MonoBehaviour:
     diagnosticPhase:
     - answerText: "Le score montre une surdit\xE9 de transmission."
       isCorrect: 0
-      correctionText: "Ce n\u2019est pas une surdit\xE9 de transmission car l\u2019audiogramme
-        montre une atteinte au niveau de l\u2019oreille interne (ou plus pr\xE9cis\xE9ment,
-        une atteinte cochl\xE9aire), ce qui caract\xE9rise une surdit\xE9 de perception."
+      correctionText: "Ce n\u2019est <b>pas une surdit\xE9 de transmission</b> car
+        l\u2019audiogramme montre une atteinte au niveau de l\u2019<b>oreille interne</b>
+        (ou plus pr\xE9cis\xE9ment, une atteinte cochl\xE9aire), ce qui caract\xE9rise
+        une <b>surdit\xE9 de perception</b>."
       sprites: []
     - answerText: Le score montre une audition normale.
       isCorrect: 0
-      correctionText: "Ce n\u2019est pas une audition normale, car les seuils d\u2019audition
-        mesur\xE9s sont sup\xE9rieurs \xE0 20 dB HL sur plusieurs fr\xE9quences pour
-        les deux oreilles. \r\n\r\nOn consid\xE8re qu\u2019une audition est normale
-        lorsque les seuils sont compris entre -10 et 20 dB HL sur toutes les fr\xE9quences
-        test\xE9es (500 Hz \xE0 6000 Hz)."
+      correctionText: "Ce <b>n\u2019est pas une audition normale</b>, car les seuils
+        d\u2019audition mesur\xE9s sont <b>sup\xE9rieurs \xE0 20 dB HL</b> sur plusieurs
+        fr\xE9quences pour les deux oreilles. \r\n\r\nOn consid\xE8re qu\u2019une
+        <b>audition est normale</b> lorsque les seuils sont compris entre <b>-10
+        et 20 dB HL</b> sur toutes les fr\xE9quences test\xE9es (500 Hz \xE0 6000
+        Hz)."
       sprites: []
     - answerText: "Le score montre une surdit\xE9 de perception."
       isCorrect: 1
@@ -448,8 +454,9 @@ MonoBehaviour:
       sprites: []
     - answerText: "Le score montre une surdit\xE9 de persuasion."
       isCorrect: 0
-      correctionText: "Le terme \"surdit\xE9 de persuasion\" n\u2019existe pas en
-        audiologie m\xE9dicale. Il s\u2019agit l\xE0 d\u2019une surdit\xE9 de perception."
+      correctionText: "Le terme <b>\"surdit\xE9 de persuasion\"</b> n\u2019existe
+        pas en audiologie m\xE9dicale. Il s\u2019agit l\xE0 d\u2019une surdit\xE9
+        de perception."
       sprites: []
     actionPhase:
     - answerText: "Je recommande un traitement antibiotique pour am\xE9liorer l\u2019audition
@@ -462,18 +469,18 @@ MonoBehaviour:
         cette perte auditive."
       isCorrect: 0
       correctionText: "La chirurgie est indiqu\xE9e dans certaines surdit\xE9s de
-        transmission, mais pas dans la presbyacousie, qui est une atteinte de l\u2019oreille
-        interne."
+        transmission, mais <b>pas</b> dans la presbyacousie, qui est une atteinte
+        de l\u2019oreille interne."
       sprites: []
     - answerText: "Je rassure Monsieur D. que son audition est dans la norme et qu\u2019aucune
         prise en charge n\u2019est n\xE9cessaire."
       isCorrect: 0
       correctionText: "L\u2019audiogramme montre une surdit\xE9 bilat\xE9rale av\xE9r\xE9e,
-        donc une prise en charge est indispensable, notamment par appareillage."
+        donc <b>une prise en charge est indispensable</b>, notamment par appareillage."
       sprites: []
     - answerText: "En accord avec votre m\xE9decin r\xE9f\xE9rent, une prescription
         de proth\xE8se auditive est d\xE9livr\xE9e \xE0 Mr Dupont."
       isCorrect: 1
-      correctionText: "Bravo !! Tu as bien identifi\xE9 le cas pr\xE9sent. \r\n\r\nPrise
-        en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
+      correctionText: "<b>Bravo !!</b> Tu as bien identifi\xE9 le cas pr\xE9sent.
+        \r\n\r\nPrise en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
       sprites: []

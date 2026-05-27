@@ -76,44 +76,47 @@ MonoBehaviour:
     - answerText: "Le test est normal car le patient a r\xE9ussi \xE0 entendre au
         moins un mot de chaque c\xF4t\xE9."
       isCorrect: 0
-      correctionText: "Non, le test est bien pathologique. Le crit\xE8re normal pour
-        consid\xE9rer qu'il n'y a pas d\u2019anomalie auditive est la r\xE9p\xE9tition
-        correcte de l\u2019ensemble des 4 mots (ou 3 minimum par oreille)."
+      correctionText: "Non, le test est bien pathologique. Le <b>crit\xE8re normal</b>
+        pour consid\xE9rer qu'il n'y a <b>pas d\u2019anomalie auditive</b> est la
+        <b>r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots</b> (ou 3 minimum
+        par oreille)."
       sprites: []
     - answerText: "Il n\u2019y a pas d\u2019anomalie auditive car la performance
         est identique des deux c\xF4t\xE9s."
       isCorrect: 0
       correctionText: "Non, m\xEAme si la performance est sym\xE9trique, elle est
-        anormalement basse des deux c\xF4t\xE9s. Lors du test de chuchotement, l'\xE9valuation
-        de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter au moins
-        3 mots sur 4 au patient pour chaque oreille.\r\n\r\nLe crit\xE8re normal
-        pour consid\xE9rer qu'il n'y a pas d\u2019anomalie auditive est la r\xE9p\xE9tition
-        correcte de l\u2019ensemble des 4 mots (ou 3 mots minimum par oreille)."
+        <b>anormalement basse</b> des deux c\xF4t\xE9s. Lors du <b>test de chuchotement</b>,
+        l'\xE9valuation de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter
+        <b>au moins 3 mots</b> sur 4 au patient pour chaque oreille.\r\n\r\nLe <b>crit\xE8re
+        normal</b> pour consid\xE9rer qu'il n'y a <b>pas d\u2019anomalie auditive</b>
+        est la <b>r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots</b> (ou
+        3 mots minimum par oreille)."
       sprites: []
     - answerText: "Le test est anormal car le patient n\u2019a pas su r\xE9p\xE9ter
         au moins 3 mots sur 4 de chaque c\xF4t\xE9."
       isCorrect: 1
-      correctionText: "Lors du test de chuchotement, on consid\xE8re que l\u2019audition
-        est normale si le patient est capable de r\xE9p\xE9ter correctement au moins
-        3 mots sur 4 pour chaque oreille.\r\nDans ce cas, le patient n\u2019a su
-        r\xE9p\xE9ter que 2 mots sur 4 pour chaque c\xF4t\xE9, ce qui est en dessous
-        du seuil requis.\vCela indique une atteinte de l\u2019audition bilat\xE9rale,
-        car aucun des deux c\xF4t\xE9s n\u2019atteint le crit\xE8re minimal de 3
-        mots correctement restitu\xE9s sur 4."
+      correctionText: "Lors du <b>test de chuchotement</b>, on consid\xE8re que l\u2019audition
+        est <b>normale</b> si le patient est capable de <b>r\xE9p\xE9ter correctement
+        au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\r\nDans ce cas, le
+        patient n\u2019a su r\xE9p\xE9ter que <b>2 mots sur 4</b> pour <b>chaque
+        c\xF4t\xE9</b>, ce qui est <b>en dessous du seuil requis</b>.\r\nCela indique
+        une <b>atteinte de l\u2019audition bilat\xE9rale</b>, car <b>aucun des deux
+        c\xF4t\xE9s</b> n\u2019atteint le crit\xE8re minimal de <b>3 mots correctement
+        restitu\xE9s sur 4</b>.\r"
       sprites: []
     - answerText: "Le test montre une audition normale \xE0 gauche mais anormale
         \xE0 droite."
       isCorrect: 0
-      correctionText: "Non, le patient a \xE9chou\xE9 \xE9galement des deux c\xF4t\xE9s,
-        il s\u2019agit donc d\u2019une atteinte bilat\xE9rale, pas unilat\xE9rale."
+      correctionText: "Non, le patient a \xE9chou\xE9 <b>\xE9galement des deux c\xF4t\xE9s</b>,
+        il s\u2019agit donc d\u2019une atteinte <b>bilat\xE9rale</b>, pas unilat\xE9rale."
       sprites: []
     actionPhase:
     - answerText: "Je r\xE9alise une surveillance en programmant un RDV dans 6 mois."
       isCorrect: 0
-      correctionText: "Non, lorsque le test de chuchotement est anormal, cela signifie
-        qu\u2019il existe une suspicion de trouble auditif.\vDans ce cas, il ne s\u2019agit
-        pas d\u2019un simple suivi diff\xE9r\xE9, mais d\u2019une situation qui n\xE9cessite
-        une exploration imm\xE9diate."
+      correctionText: "Non, lorsque le <b>test de chuchotement est anormal</b>, cela
+        signifie qu\u2019il existe une <b>suspicion de trouble auditif</b>.\vDans
+        ce cas, il ne s\u2019agit pas d\u2019un simple <b>suivi diff\xE9r\xE9</b>,
+        mais d\u2019une <b>situation qui n\xE9cessite une exploration imm\xE9diate</b>."
       sprites: []
     - answerText: Je fais passer le questionnaire Go-No-Go.
       isCorrect: 1
@@ -239,18 +242,19 @@ MonoBehaviour:
     actionPhase:
     - answerText: Je lui propose un prochain rendez-vous de suivi ICOPE.
       isCorrect: 0
-      correctionText: FAUX !!!
+      correctionText: "<b>Il s\u2019agit d\u2019un cas complexe avec une indication
+        de prise en charge ORL.</b>"
       sprites:
       - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
       - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
     - answerText: "Je prescris une proth\xE8se auditive."
       isCorrect: 0
-      correctionText: "Il s\u2019agit d\u2019un cas complexe avec une indication
-        de prise en charge ORL."
+      correctionText: "<b>Il s\u2019agit d\u2019un cas complexe avec une indication
+        de prise en charge ORL.</b>"
       sprites: []
     - answerText: "Je ne peux rien faire, je renvoie le patient vers l\u2019ORL"
       isCorrect: 1
-      correctionText: "Il s\u2019agit d\u2019un cas complexe, il faut donc une prise
-        en charge ORL.\n\nPrise en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau
-        niveau."
+      correctionText: "<b>Il s\u2019agit d\u2019un cas complexe, il faut donc une
+        prise en charge ORL.</b>\n\nPrise en charge r\xE9ussie. Tu as d\xE9bloqu\xE9
+        un nouveau niveau."
       sprites: []
