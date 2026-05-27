@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 1_5_R
   m_EditorClassIdentifier: 
   characterSprites:
-  - {fileID: -1683400333343287881, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
-  - {fileID: 5001668446368383778, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
+  - {fileID: 5226648599251546133, guid: e52ebc8284505b649b87988cf62adcf2, type: 3}
+  - {fileID: 5805579910426997946, guid: e52ebc8284505b649b87988cf62adcf2, type: 3}
+  - {fileID: 8421416387262884326, guid: e52ebc8284505b649b87988cf62adcf2, type: 3}
   lastName: Doe
   firstName: R
   age: 81

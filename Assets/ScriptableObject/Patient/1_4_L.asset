@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 1_4_L
   m_EditorClassIdentifier: 
   characterSprites:
-  - {fileID: -1683400333343287881, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
-  - {fileID: 5001668446368383778, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
+  - {fileID: 2388940582529952283, guid: 222169cef653a4741a9a0e05a7267da0, type: 3}
+  - {fileID: -759232035500662259, guid: 222169cef653a4741a9a0e05a7267da0, type: 3}
   lastName: Doe
   firstName: L
   age: 84

@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 910b9736db6936e43a44bd8a92397634
+guid: e52ebc8284505b649b87988cf62adcf2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1683400333343287881
-    second: Michel_0
+      213: 5226648599251546133
+    second: noNameR_0
   - first:
-      213: 5001668446368383778
-    second: Michel_1
+      213: 5805579910426997946
+    second: noNameR_1
+  - first:
+      213: 8421416387262884326
+    second: noNameR_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,34 +103,21 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -142,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Michel_0
+      name: noNameR_0
       rect:
         serializedVersion: 2
-        x: 98
-        y: 34
-        width: 339
-        height: 962
+        x: 87
+        y: 55
+        width: 273
+        height: 930
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,19 +147,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b59c4cd05c53a8e0800000000000000
-      internalID: -1683400333343287881
+      spriteID: 5107e248539c88840800000000000000
+      internalID: 5226648599251546133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michel_1
+      name: noNameR_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 66
-        width: 467
+        x: 499
+        y: 76
+        width: 431
         height: 750
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -179,30 +169,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2234116b3fe796540800000000000000
-      internalID: 5001668446368383778
+      spriteID: ab435245b20919050800000000000000
+      internalID: 5805579910426997946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Michel_2
+      name: noNameR_2
       rect:
         serializedVersion: 2
-        x: 1017
-        y: 74
-        width: 435
-        height: 744
+        x: 1038
+        y: 76
+        width: 431
+        height: 750
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 58a6e5516993113459ebc484c4acda0a
-      internalID: -971202646
+      spriteID: 6e9257ce591eed470800000000000000
+      internalID: 8421416387262884326
       vertices: []
       indices: 
       edges: []
@@ -211,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: eece40a4a542fa145a29607df82a9213
+    spriteID: eba0d5d229e757e4f9434c2509b357b5
     internalID: 0
     vertices: []
     indices: 
@@ -223,9 +213,9 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Michel_0: -1683400333343287881
-      Michel_1: 5001668446368383778
-      Michel_2: -971202646
+      noNameR_0: 5226648599251546133
+      noNameR_1: 5805579910426997946
+      noNameR_2: 8421416387262884326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

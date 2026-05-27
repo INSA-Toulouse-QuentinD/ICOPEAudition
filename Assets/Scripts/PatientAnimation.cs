@@ -74,7 +74,7 @@ public class PatientAnimation : MonoBehaviour{
     /// <param name="characterSprite">The sprite to display for the character.</param>
     private void SetSprite(Sprite characterSprite){
         imageCharacter.GetComponent<Image>().sprite = characterSprite;
-        imageCharacter.sizeDelta = new Vector2(characterSprite.rect.width, characterSprite.rect.height) / 2;
+        imageCharacter.sizeDelta = new Vector2(characterSprite.rect.width, characterSprite.rect.height) / 1.3f;
     }
 
     /// <summary>
