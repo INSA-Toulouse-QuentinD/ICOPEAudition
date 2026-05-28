@@ -1,5 +1,6 @@
 using DG.Tweening;
 using Managers;
+using PatientData;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,32 +9,34 @@ public class PatientAnimation : MonoBehaviour{
     [SerializeField] private float scaleFactor = 1.15f;
     [SerializeField] private float animationDuration = 2f;
 
-    private Vector2 defaultImageSize;
+    private Vector2 _defaultImageSize;
 
     // Interaction Area Variable
     [Header("Patient selection area")] [SerializeField]
     private RectTransform interactionArea;
 
     [SerializeField] private RectTransform imageCharacter;
+    [SerializeField] private RectTransform imageCharacterPhone;
+    public GameObject imageRingtone;
 
-    private Vector2 targetPosition;
+    private Vector2 _targetPosition;
 
     [Header("Animation patient area")] [SerializeField]
     public RectTransform spawnPatientArea;
 
-    private readonly float imageRatio = 1.25f;
+    private readonly float _imageRatio = 1.25f;
 
     [Header("Doors")] [SerializeField] private RectTransform leftDoor;
     [SerializeField] private RectTransform rightDoor;
 
     // Doors variables
     public float openAngle = -90f;
-    public float duration = 0.5f;
-    private bool isOpen = false;
+    private bool _isOpen;
 
     [Header("FadeAnimation")] [SerializeField]
     public CanvasGroup fadePanel;
 
+    private NewPatientData _newPatientData;
 
     /// <summary>
     /// Set a new target position to the sprite to stimule life in the UI.
@@ -46,10 +49,10 @@ public class PatientAnimation : MonoBehaviour{
 
         // Reduce the width and height of the image in the spawnArea else we keep the default size of the image.
         if (targetArea.name == "SpawnArea") {
-            defaultImageSize = imageCharacter.sizeDelta;
-            imageCharacter.sizeDelta = defaultImageSize / imageRatio;
+            _defaultImageSize = imageCharacter.sizeDelta;
+            imageCharacter.sizeDelta = _defaultImageSize / _imageRatio;
         } else {
-            imageCharacter.sizeDelta = defaultImageSize;
+            imageCharacter.sizeDelta = _defaultImageSize;
         }
 
         // Move the sprite around the area
@@ -62,9 +65,9 @@ public class PatientAnimation : MonoBehaviour{
         float randomX = Random.Range(-panelWidth / 2 + imageWidth / 2, panelWidth / 2 - imageWidth / 2);
         float randomY = Random.Range(-panelHeight / 2 + imageHeight / 2, panelHeight / 2 - imageHeight / 2);
 
-        targetPosition = new Vector2(randomX, randomY);
+        _targetPosition = new Vector2(randomX, randomY);
 
-        imageCharacter.anchoredPosition = targetPosition;
+        imageCharacter.anchoredPosition = _targetPosition;
     }
 
     /// <summary>
@@ -80,8 +83,8 @@ public class PatientAnimation : MonoBehaviour{
     /// <summary>
     /// Make a yo-yo animation on the sprite.
     /// </summary>
-    private void AnimationSizeImage(){
-        RectTransform rectTransform = imageCharacter;
+    private void AnimationSizeImage(bool isPhone){
+        RectTransform rectTransform = isPhone ? imageCharacterPhone : imageCharacter;
         rectTransform.DOSizeDelta(rectTransform.sizeDelta * scaleFactor, animationDuration / 2)
             .SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine).SetId("sizeAnim");
     }
@@ -96,24 +99,33 @@ public class PatientAnimation : MonoBehaviour{
     /// <summary>
     /// Open/Close doors between 0 and a targetAngle (openAngle)
     /// </summary>
-    public void ToggleDoor(){
+    private void ToggleDoor(){
         // move door postion and mor angle (-145/145 degree)
-        float targetAngle = isOpen ? 0f : openAngle;
+        float targetAngle = _isOpen ? 0f : openAngle;
         rightDoor.rotation = Quaternion.Euler(0, targetAngle, 0);
         leftDoor.rotation = Quaternion.Euler(0, -targetAngle, 0);
-        isOpen = !isOpen;
+        _isOpen = !_isOpen;
     }
-
-
+    
     /// <summary>
     /// Play a sort of animations like open the doors and spawn the 'patient' in the doors area then fade out the screen by invoking 'FadeOut' function after a delai.
     /// </summary>
-    public void SetNewCharacterInArea(Sprite sprite){
-        imageCharacter.GetComponent<Button>().enabled = false;
-        ToggleDoor();
-        //SetNewSprite();
-        SetSprite(sprite);
-        SetNewTargetPosition(spawnPatientArea);
+    public void SetCharacterInArea(NewPatientData newPatientData){
+        _newPatientData = newPatientData;
+        if (newPatientData.isOnPhone) {
+            imageRingtone.SetActive(true);
+            imageCharacter.gameObject.SetActive(false);
+            imageCharacterPhone.GetComponent<Button>().enabled = false;
+        } else {
+            imageRingtone.SetActive(false);
+            imageCharacter.gameObject.SetActive(true);
+            imageCharacter.GetComponent<Button>().enabled = false;
+            imageCharacterPhone.GetComponent<Button>().enabled = false;
+            ToggleDoor();
+            SetSprite(newPatientData.characterSprites[0]);
+            SetNewTargetPosition(spawnPatientArea);
+        }
+
         if (GameManager.Instance.instanteAnimation) {
             FadeOut();
         } else {
@@ -140,9 +152,12 @@ public class PatientAnimation : MonoBehaviour{
     /// Play the last animations like close door and set new patient in the interaction area then invoking 'FadeIn' function after a delai.
     /// </summary>
     private void ContinueSetNewCharacter(){
-        ToggleDoor();
-        SetNewTargetPosition(interactionArea);
-        AnimationSizeImage();
+        if (!_newPatientData.isOnPhone) {
+            ToggleDoor();
+            SetNewTargetPosition(interactionArea);
+        }
+
+        AnimationSizeImage(_newPatientData.isOnPhone);
         if (GameManager.Instance.instanteAnimation) {
             FadeIn();
         } else {
@@ -156,6 +171,11 @@ public class PatientAnimation : MonoBehaviour{
     /// </summary>
     private void FadeIn(){
         fadePanel.DOFade(1f, 1f).SetEase(Ease.Linear);
-        imageCharacter.GetComponent<Button>().enabled = true;
+
+        if (_newPatientData.isOnPhone) {
+            imageCharacterPhone.GetComponent<Button>().enabled = true;
+        } else {
+            imageCharacter.GetComponent<Button>().enabled = true;
+        }
     }
 }

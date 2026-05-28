@@ -121,6 +121,7 @@ namespace Managers{
             scorePanel.SetActive(false);
             tutorialPanel.SetActive(false);
             isTutorialActive.SetActive(false);
+            PatientAnimation.imageRingtone.gameObject.SetActive(false);
         }
 
         // CLEAR ANIMATION
@@ -150,9 +151,8 @@ namespace Managers{
             var currentLevel = GameStateManager.GetCurrentLevel();
             var currentPatient = GameStateManager.GetCurrentPatientCase();
 
-            // LOAD SPRITE ON SCREEN (BY DEFAULT SPRITE 0 MUST A STAND CHARACTER)
-            PatientAnimation.SetNewCharacterInArea(
-                levelsData.patientByLevel[currentLevel].patientsCase[currentPatient].characterSprites[0]);
+            // LOAD SPRITE ON SCREEN
+            PatientAnimation.SetCharacterInArea(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient]);
 
             // SHOW TUTORIAL
             if (skipAssistante) return;

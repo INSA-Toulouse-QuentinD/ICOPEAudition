@@ -104,8 +104,8 @@ namespace UI.ScoreContents
             var pRecords = GameManager.Instance.GameData.GetPatientCaseRecords(patientName);
             _currentPatientName = patientName;
 
-            SetSyntheseScore(patientName, pRecords.numberStepSucceed, pRecords.numberStepFailed, pRecords.numberDiagCorrect, pRecords.numberDiagIncorrect, pRecords.numberActionCorrect, pRecords.numberActionIncorrect, pRecords.successRate);           
-            openFolder.SetStepsRecords(pRecords.stepRecords);
+            SetSyntheseScore(patientName, pRecords.NumberStepSucceed, pRecords.NumberStepFailed, pRecords.NumberDiagCorrect, pRecords.NumberDiagIncorrect, pRecords.NumberActionCorrect, pRecords.NumberActionIncorrect, pRecords.SuccessRate);           
+            openFolder.SetStepsRecords(pRecords.StepRecordsLevel);
         }
 
         //CALL BY 'RETURN TO WAITING ROOM' BUTTON FROM SCORE CONTENT

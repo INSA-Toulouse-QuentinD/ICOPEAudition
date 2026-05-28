@@ -44,6 +44,9 @@ namespace Managers{
         [Header("Sprite doctor")] [SerializeField]
         private Sprite[] doctorSprite;
 
+        [Header("Phone (case presentation)")] [SerializeField]
+        private Sprite phoneCaseSprite;
+
         [Header("GameObject Image correction")] [SerializeField]
         private Image doctorExpressionsImages;
 
@@ -84,13 +87,14 @@ namespace Managers{
         private bool _isDiagnosticValid;
         private bool _isActionValid;
         private Step _step;
+        private bool _haveSkipDiagnostic;
 
         private Dictionary<Step, int> _mappingDisplays;
 
         // UI state (simple): keep which answers have already been tried and were incorrect
         // so that "Précédent" (correction -> questions) does not reset buttons.
-        private readonly List<bool> _diagIncorrectTried = new List<bool>();
-        private readonly List<bool> _actionIncorrectTried = new List<bool>();
+        private readonly List<bool> _diagIncorrectTried = new();
+        private readonly List<bool> _actionIncorrectTried = new();
 
         /// <summary>
         /// Initializes the patient data and resets the step index and display index
@@ -133,6 +137,7 @@ namespace Managers{
             // Set bool to false each step
             _isDiagnosticValid = false;
             _isActionValid = false;
+            _haveSkipDiagnostic = false;
             ResetTriedState();
             _currentDisplay = _mappingDisplays[currentStep];
 
@@ -141,7 +146,8 @@ namespace Managers{
             switch (currentStep) {
                 case Step.CasePresentation:
                     // Load patient sprite & patient text
-                    _step1PresentationPatient.SetSprites(_patientData.characterSprites[0]);
+                    _step1PresentationPatient.SetSprites(
+                        _patientData.isOnPhone ? phoneCaseSprite : _patientData.characterSprites[0]);
                     _step1PresentationPatient.SetPresentationTexts(_patientData);
                     // Display current step
 
@@ -309,7 +315,7 @@ namespace Managers{
                 EnsureSize(_actionIncorrectTried, actionCount);
                 CreateAnswerButtons(algoStep.actionPhase);
                 ApplyTriedStateToButtons(_actionIncorrectTried);
-                
+
                 if (_step == Step.WisperTest) {
                     UITutorialControler.Instance.TutorialMichel(5);
                 }
@@ -368,8 +374,7 @@ namespace Managers{
             bool isActionCompleted = !(algoStep.actionPhase.Count > 0) || _isActionValid;
             bool isStepCompleted = isDiagnosticCompleted && isActionCompleted;
 
-            if ((isStepCompleted && _indexStep < _patientData.steps.Count) ||
-                (GameManager.Instance.alwaysRight && _interactionState == InteractionState.ISCORRECTION)) {
+            if (isStepCompleted && _indexStep < _patientData.steps.Count) {
                 // LOAD NEXT STEP 
                 _indexStep++;
                 if (_indexStep >= _patientData.steps.Count) {
@@ -381,6 +386,9 @@ namespace Managers{
                     GameManager.Instance.GameStateManager.NextStep(_patientData.steps[_indexStep]);
                 }
             } else {
+                if (GameManager.Instance.alwaysRight && _interactionState == InteractionState.ISCORRECTION)
+                    _haveSkipDiagnostic = true;
+
                 _interactionState = InteractionState.ISANSWERING;
                 ClearAllDisplay();
                 questionsDisplay.SetActive(true);
@@ -395,6 +403,12 @@ namespace Managers{
         /// </summary>
         private void ButtonBack(){
             if (_interactionState == InteractionState.ISCORRECTION) {
+                if (_answerState == AnswerState.DIAGNOSTIC) {
+                    _isDiagnosticValid = false;
+                } else {
+                    _isActionValid = false;
+                }
+                
                 ClearAllDisplay();
 
                 _interactionState = InteractionState.ISANSWERING;
@@ -445,8 +459,6 @@ namespace Managers{
         /// <param name="index">The index of the selected answer button.</param>
         private void OnAnswerCorrect(List<AnswerData> answerData, int index){
             bool isDiagnosticAnswer = false;
-            bool isActionAnswer = false;
-
             bool isCorrectAnswer = IsAnswerCorrect(answerData, index);
             string feedBackText = isCorrectAnswer ? "Bonne réponse !" : "Mauvaise réponse !";
 
@@ -467,18 +479,17 @@ namespace Managers{
 
             switch (_answerState) {
                 case AnswerState.DIAGNOSTIC:
-                    _isDiagnosticValid = isCorrectAnswer;
+                    _isDiagnosticValid = isCorrectAnswer || GameManager.Instance.alwaysRight;
                     isDiagnosticAnswer = true;
                     break;
                 case AnswerState.ACTION:
-                    _isActionValid = isCorrectAnswer;
-                    isActionAnswer = true;
+                    _isActionValid = isCorrectAnswer || GameManager.Instance.alwaysRight;
                     break;
             }
 
             Debug.Log("Saving step...");
 
-            GameManager.Instance.GameData.RecordsSteps(_step, isDiagnosticAnswer, isActionAnswer,
+            GameManager.Instance.GameData.RecordsSteps(_step, isDiagnosticAnswer,
                 choiceButtons[index].GetComponentInChildren<TextMeshProUGUI>().text);
             ShowAnswerDetail(answerData[index], feedBackText, isCorrectAnswer);
 

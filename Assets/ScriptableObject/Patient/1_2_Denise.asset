@@ -15,6 +15,7 @@ MonoBehaviour:
   characterSprites:
   - {fileID: 7432370467228855199, guid: 1aba4c21790e76c4d8d1545a687f3cd3, type: 3}
   - {fileID: 7014893959246603455, guid: 1aba4c21790e76c4d8d1545a687f3cd3, type: 3}
+  isOnPhone: 0
   lastName: Roux
   firstName: Denise
   age: 76

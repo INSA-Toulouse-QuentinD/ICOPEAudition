@@ -15,6 +15,7 @@ MonoBehaviour:
   characterSprites:
   - {fileID: -7437278254327989670, guid: ed7b6d6ccaaedb0498e82833b2dc3103, type: 3}
   - {fileID: 5038730560819184029, guid: ed7b6d6ccaaedb0498e82833b2dc3103, type: 3}
+  isOnPhone: 0
   lastName: Fontaine
   firstName: "G\xE9rard"
   age: 70

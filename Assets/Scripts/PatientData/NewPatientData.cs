@@ -12,6 +12,7 @@ namespace PatientData
     {
         [Header("Profil")]
         public Sprite[] characterSprites;
+        public bool isOnPhone;
         public string lastName;
         public string firstName;
         public int age;

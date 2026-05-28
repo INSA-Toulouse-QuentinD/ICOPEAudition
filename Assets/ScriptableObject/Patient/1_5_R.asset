@@ -16,6 +16,7 @@ MonoBehaviour:
   - {fileID: 5226648599251546133, guid: e52ebc8284505b649b87988cf62adcf2, type: 3}
   - {fileID: 5805579910426997946, guid: e52ebc8284505b649b87988cf62adcf2, type: 3}
   - {fileID: 8421416387262884326, guid: e52ebc8284505b649b87988cf62adcf2, type: 3}
+  isOnPhone: 0
   lastName: Doe
   firstName: R
   age: 81

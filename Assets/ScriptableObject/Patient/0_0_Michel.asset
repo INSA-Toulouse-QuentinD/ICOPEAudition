@@ -16,6 +16,7 @@ MonoBehaviour:
   - {fileID: -1683400333343287881, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
   - {fileID: 5001668446368383778, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
   - {fileID: -971202646, guid: 910b9736db6936e43a44bd8a92397634, type: 3}
+  isOnPhone: 0
   lastName: Dupont
   firstName: Michel
   age: 68

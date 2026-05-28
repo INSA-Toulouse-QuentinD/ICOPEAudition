@@ -57,7 +57,7 @@ namespace UI.ScoreContents{
                 GameObject instance = Instantiate(prefab, parentTransform);
                 PrefabStepDisplayUi ui = instance.GetComponent<PrefabStepDisplayUi>();
 
-                ui.SetText(step.Key, step.Value.diagnosticAnswer, step.Value.actionAnswer, stepNumber);
+                ui.SetText(step.Key, step.Value.DiagnosticAnswer, step.Value.ActionAnswer, stepNumber);
 
                 _pagesSteps.Add(instance.GetComponent<RectTransform>());
                 instance.SetActive(false);
