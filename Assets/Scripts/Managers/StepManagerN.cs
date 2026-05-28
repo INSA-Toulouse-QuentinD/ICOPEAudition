@@ -264,9 +264,9 @@ namespace Managers{
                         break;
                 }
 
-                if (isValid) {
+                if (isValid || GameManager.Instance.alwaysRight) {
                     confirmeNextText.text = "Suivant";
-                    returnButton.interactable = false;
+                    returnButton.interactable = GameManager.Instance.alwaysRight;
                     confirmNextButton.interactable = true;
                     confirmNextButton.gameObject.SetActive(true);
                 } else {
@@ -368,7 +368,8 @@ namespace Managers{
             bool isActionCompleted = !(algoStep.actionPhase.Count > 0) || _isActionValid;
             bool isStepCompleted = isDiagnosticCompleted && isActionCompleted;
 
-            if (isStepCompleted && _indexStep < _patientData.steps.Count) {
+            if ((isStepCompleted && _indexStep < _patientData.steps.Count) ||
+                (GameManager.Instance.alwaysRight && _interactionState == InteractionState.ISCORRECTION)) {
                 // LOAD NEXT STEP 
                 _indexStep++;
                 if (_indexStep >= _patientData.steps.Count) {

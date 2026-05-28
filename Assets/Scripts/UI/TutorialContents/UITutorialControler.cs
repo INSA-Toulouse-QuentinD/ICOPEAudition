@@ -88,7 +88,7 @@ namespace UI.TutorialContents{
         /// Called the first time the object becomes enabled and active.
         /// Initializes the tutorial step name and sets related texts.
         /// </summary>
-        private void Start(){
+        private void Awake(){
             Instance = this;
             
             _nameStep = "Waiting_room";

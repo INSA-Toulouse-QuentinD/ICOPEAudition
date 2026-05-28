@@ -55,6 +55,7 @@ namespace Managers{
         [Header("Debug")] public bool canAccessAllLevel;
         public bool instanteAnimation;
         public bool skipAssistante;
+        public bool alwaysRight;
 
         [Header("Levels")] [SerializeField] public LevelsData levelsData;
 
@@ -243,6 +244,7 @@ namespace Managers{
             mainMenu.SetActive(true);
             gameMenu.SetActive(false);
             stepMenu.SetActive(false);
+            tutorialPanel.SetActive(true);
 
             AudioManager.LoopBgm(true);
             AudioManager.LoopSfx(true, "AMBIANT");
