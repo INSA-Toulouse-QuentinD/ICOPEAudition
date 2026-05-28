@@ -170,7 +170,7 @@ namespace Managers{
                 case Step.Questionnary:
                     // Load questionary & answer
                     List<QuestionData> questions = questionnaireData.questions;
-                    List<YesNo> answers = _patientData.steps[_indexStep].predefinedAnwser;
+                    List<YesNo> answers = _patientData.steps[_indexStep].predefinedAnswer;
                     // Set texts
                     _step4And5Questionnary.SetQuestionayText(questions, answers);
                     //Set Patient Sprite

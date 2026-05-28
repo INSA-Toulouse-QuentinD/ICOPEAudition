@@ -15,7 +15,7 @@ MonoBehaviour:
   characterSprites:
   - {fileID: 7102689100218679052, guid: 92b06a55c6e292f449725a0c8c5901c8, type: 3}
   - {fileID: 6823558343195017428, guid: 92b06a55c6e292f449725a0c8c5901c8, type: 3}
-  lastName: 
+  lastName: Durand
   firstName: Jeanne
   age: 72
   familySituation: "Ancienne professeure de tango \xE0 la retraite."
@@ -33,7 +33,7 @@ MonoBehaviour:
   steps:
   - type: 0
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase: []
     actionPhase:
@@ -73,7 +73,7 @@ MonoBehaviour:
       sprites: []
   - type: 2
     dialoguePatient: 
-    predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
+    predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Ses r\xE9ponse montrent des signes d'un trouble neurologique avanc\xE9."
@@ -140,7 +140,7 @@ MonoBehaviour:
       sprites: []
   - type: 4
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 074d65b9d59894e45a6ce7148c6c22f1, type: 3}
     diagnosticPhase:
     - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
@@ -201,7 +201,7 @@ MonoBehaviour:
       sprites: []
   - type: 4
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: c4249b8004b2a0746ae11898619a721d, type: 3}
     diagnosticPhase:
     - answerText: "Cette otoscopie peut \xEAtre consid\xE9r\xE9e comme normale, en
@@ -284,7 +284,7 @@ MonoBehaviour:
       sprites: []
   - type: 1
     dialoguePatient: "J'ai entendu 2 mots \xE0 gauche et 2 mots \xE0 droite."
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: Le test est normal.
@@ -354,7 +354,7 @@ MonoBehaviour:
       sprites: []
   - type: 6
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
     diagnosticPhase:
     - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es."
@@ -416,7 +416,7 @@ MonoBehaviour:
       sprites: []
   - type: 7
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: bf736be000460ec48b32643e9fc2c3e4, type: 3}
     diagnosticPhase:
     - answerText: "Le score montre une surdit\xE9 de transmission bilat\xE9rale."

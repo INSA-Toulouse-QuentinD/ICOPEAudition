@@ -37,12 +37,12 @@ namespace PatientData.AlgoData{
 
         [TextArea] public string dialoguePatient;
 
-        public List<YesNo> predefinedAnwser = new(){
+        public List<YesNo> predefinedAnswer = new(){
             YesNo.No, YesNo.No, YesNo.No, YesNo.No, YesNo.No, YesNo.No, YesNo.No
         }; // Predefined answers for patient
 
-        public Sprite spriteEarExams; // Image representing ear exams, HHIES exam or audimetry
-        
+        public Sprite spriteEarExams; // Image representing ear exams, HHIES exam or audiometry
+
         public List<AnswerData> diagnosticPhase; // Diagnostic phase data
 
         public List<AnswerData> actionPhase; // Action phase data

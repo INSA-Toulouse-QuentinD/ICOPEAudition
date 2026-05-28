@@ -15,7 +15,7 @@ MonoBehaviour:
   characterSprites:
   - {fileID: -7437278254327989670, guid: ed7b6d6ccaaedb0498e82833b2dc3103, type: 3}
   - {fileID: 5038730560819184029, guid: ed7b6d6ccaaedb0498e82833b2dc3103, type: 3}
-  lastName: 
+  lastName: Fontaine
   firstName: "G\xE9rard"
   age: 70
   familySituation: "Ancien agriculteur. Vit en r\xE9sidence autonomie."
@@ -32,7 +32,7 @@ MonoBehaviour:
   steps:
   - type: 0
     dialoguePatient: "\r"
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase: []
     actionPhase:
@@ -70,7 +70,7 @@ MonoBehaviour:
       sprites: []
   - type: 1
     dialoguePatient: "J'ai entendu 2 mots \xE0 droite. J'ai entendu 2 mots \xE0 gauche.\r"
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Le test est normal car le patient a r\xE9ussi \xE0 entendre au
@@ -138,7 +138,7 @@ MonoBehaviour:
       sprites: []
   - type: 2
     dialoguePatient: "\r"
-    predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
+    predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
@@ -206,7 +206,7 @@ MonoBehaviour:
       sprites: []
   - type: 4
     dialoguePatient: "\r"
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 3e6df676f52d55447b4dc5b83d6ffa08, type: 3}
     diagnosticPhase:
     - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."

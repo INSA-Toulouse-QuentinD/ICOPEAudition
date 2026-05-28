@@ -15,7 +15,7 @@ MonoBehaviour:
   characterSprites:
   - {fileID: 2388940582529952283, guid: 222169cef653a4741a9a0e05a7267da0, type: 3}
   - {fileID: -759232035500662259, guid: 222169cef653a4741a9a0e05a7267da0, type: 3}
-  lastName: 
+  lastName: Martin
   firstName: Elisabeth
   age: 67
   familySituation: Ancienne professeure de lettre.
@@ -33,7 +33,7 @@ MonoBehaviour:
   steps:
   - type: 0
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Je convoque la patiente pour r\xE9aliser l\u2019otoscopie et l\u2019audiom\xE9trie."

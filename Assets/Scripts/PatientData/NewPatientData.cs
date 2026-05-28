@@ -1,7 +1,6 @@
 using PatientData.AlgoData;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace PatientData
 {
@@ -36,7 +35,7 @@ namespace PatientData
         
         [TextArea, Header("Description level")] public string descriptionLevel;
 
-        [Header("Algoritm steps")]
+        [Header("Algorithm steps")]
         public List<AlgoStep> steps;
     }
 }

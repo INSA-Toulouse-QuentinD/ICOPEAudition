@@ -33,7 +33,7 @@ namespace PatientData.AlgoData.Editor{
 
             SerializedProperty typeProp = property.FindPropertyRelative("type");
             SerializedProperty dialoguePatientProp = property.FindPropertyRelative("dialoguePatient");
-            SerializedProperty predefinedProp = property.FindPropertyRelative("predefinedAnwser");
+            SerializedProperty predefinedProp = property.FindPropertyRelative("predefinedAnswer");
             SerializedProperty spriteEarExamsProp = property.FindPropertyRelative("spriteEarExams");
             SerializedProperty diagnosticPhaseProp = property.FindPropertyRelative("diagnosticPhase");
             SerializedProperty actionPhaseProp = property.FindPropertyRelative("actionPhase");
@@ -83,20 +83,20 @@ namespace PatientData.AlgoData.Editor{
 
             SerializedProperty typeProp = property.FindPropertyRelative("type");
             SerializedProperty dialoguePatientProp = property.FindPropertyRelative("dialoguePatient");
-            SerializedProperty predefinedProp = property.FindPropertyRelative("predefinedAnwser");
+            SerializedProperty predefinedProp = property.FindPropertyRelative("predefinedAnswer");
             SerializedProperty spriteEarExamsProp = property.FindPropertyRelative("spriteEarExams");
             SerializedProperty diagnosticPhaseProp = property.FindPropertyRelative("diagnosticPhase");
             SerializedProperty actionPhaseProp = property.FindPropertyRelative("actionPhase");
 
             Step stepType = (Step)typeProp.enumValueIndex;
 
-            if (stepType == Step.WisperTest || stepType == Step.WeberTest)
+            if (stepType is Step.WisperTest or Step.WeberTest)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(dialoguePatientProp, true);
 
             if (stepType == Step.Questionnary)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(predefinedProp, true);
 
-            if (stepType == Step.Otoscopy || stepType == Step.HhiesTest || stepType == Step.Audiometry)
+            if (stepType is Step.Otoscopy or Step.HhiesTest or Step.Audiometry)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(spriteEarExamsProp, true);
 
             h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(diagnosticPhaseProp, true);

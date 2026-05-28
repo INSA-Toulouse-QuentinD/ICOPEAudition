@@ -31,7 +31,7 @@ MonoBehaviour:
   steps:
   - type: 0
     dialoguePatient: "\r"
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase: []
     actionPhase:
@@ -70,7 +70,7 @@ MonoBehaviour:
       sprites: []
   - type: 1
     dialoguePatient: "J'ai entendu 2 mots \xE0 gauche et 3 \xE0 droite.\r"
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 2 mots
@@ -148,7 +148,7 @@ MonoBehaviour:
       sprites: []
   - type: 2
     dialoguePatient: "\r"
-    predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
+    predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
@@ -216,7 +216,7 @@ MonoBehaviour:
       sprites: []
   - type: 4
     dialoguePatient: "\r"
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 26192f65446b2384f8cd0a47836d5538, type: 3}
     diagnosticPhase:
     - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
@@ -275,7 +275,7 @@ MonoBehaviour:
       sprites: []
   - type: 4
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
     diagnosticPhase: []
     actionPhase:
@@ -305,7 +305,7 @@ MonoBehaviour:
   - type: 1
     dialoguePatient: "Cette fois j'ai entendu 4 mots \xE0 gauche, et toujours 3 \xE0
       droite."
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: Je poursuis avec HHIE-S.

@@ -15,7 +15,7 @@ MonoBehaviour:
   characterSprites:
   - {fileID: 7432370467228855199, guid: 1aba4c21790e76c4d8d1545a687f3cd3, type: 3}
   - {fileID: 7014893959246603455, guid: 1aba4c21790e76c4d8d1545a687f3cd3, type: 3}
-  lastName: 
+  lastName: Roux
   firstName: Denise
   age: 76
   familySituation: "Ancien chef cuisini\xE8re."
@@ -30,7 +30,7 @@ MonoBehaviour:
   steps:
   - type: 0
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase: []
     actionPhase:
@@ -73,7 +73,7 @@ MonoBehaviour:
   - type: 1
     dialoguePatient: "Je n'ai entendu aucun mot \xE0 droite. J'ai entendu 2 mots
       \xE0 gauche."
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Il y a une anomalie car elle n\u2019a pas su restituer les 2 mots
@@ -158,7 +158,7 @@ MonoBehaviour:
       sprites: []
   - type: 2
     dialoguePatient: 
-    predefinedAnwser: 00000000000000000000000000000000000000000000000000000000
+    predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
@@ -226,7 +226,7 @@ MonoBehaviour:
       sprites: []
   - type: 4
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 3baedf2dff3bdcd4194820c202086473, type: 3}
     diagnosticPhase:
     - answerText: "Il existe une otomycose, je mets en place un traitement par gouttes
@@ -262,7 +262,7 @@ MonoBehaviour:
     actionPhase: []
   - type: 4
     dialoguePatient: 
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
     diagnosticPhase: []
     actionPhase:
@@ -292,7 +292,7 @@ MonoBehaviour:
   - type: 1
     dialoguePatient: "J'ai entendu 3 mots \xE0 droite et \xE0 gauche, mais \xE0 gauche,
       pour le 4\xE8me mot, j\u2019ai confondu \xAB\_Ballon\_\xBB et \xAB\_B\xE2ton\_\xBB."
-    predefinedAnwser: 
+    predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
     - answerText: "Le test est normal, je la rassure et lui propose un nouveau d\xE9pistage
