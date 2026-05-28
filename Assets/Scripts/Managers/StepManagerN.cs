@@ -87,7 +87,6 @@ namespace Managers{
         private bool _isDiagnosticValid;
         private bool _isActionValid;
         private Step _step;
-        private bool _haveSkipDiagnostic;
 
         private Dictionary<Step, int> _mappingDisplays;
 
@@ -137,7 +136,6 @@ namespace Managers{
             // Set bool to false each step
             _isDiagnosticValid = false;
             _isActionValid = false;
-            _haveSkipDiagnostic = false;
             ResetTriedState();
             _currentDisplay = _mappingDisplays[currentStep];
 
@@ -386,9 +384,6 @@ namespace Managers{
                     GameManager.Instance.GameStateManager.NextStep(_patientData.steps[_indexStep]);
                 }
             } else {
-                if (GameManager.Instance.alwaysRight && _interactionState == InteractionState.ISCORRECTION)
-                    _haveSkipDiagnostic = true;
-
                 _interactionState = InteractionState.ISANSWERING;
                 ClearAllDisplay();
                 questionsDisplay.SetActive(true);
