@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 namespace UI.Boutique{
     [RequireComponent(typeof(Button))]
-    public class Item : MonoBehaviour
-    {
-        [SerializeField] private int _price;
-        [SerializeField] private TextMeshProUGUI _priceText;
-        [SerializeField] private GameObject _objectToDisplay;
+    public class Item : MonoBehaviour{
+        [SerializeField] private int price;
+        [SerializeField] private TextMeshProUGUI priceText;
+        [SerializeField] private GameObject objectToDisplay;
 
         private Button _button;
 
@@ -18,9 +17,8 @@ namespace UI.Boutique{
         /// retrieving the Button component attached to the game object,
         /// and adding the Buy method as a click event listener for the button.
         /// </summary>
-        void Start()
-        {
-            _priceText.text = _price.ToString();
+        void Start(){
+            priceText.text = price.ToString();
             _button = gameObject.GetComponent<Button>();
             _button.onClick.AddListener(Buy);
         }
@@ -30,13 +28,11 @@ namespace UI.Boutique{
         /// Deducts the item's price from the player's money, activates the item,
         /// records the purchase, disables the purchase button, and plays a sound effect.
         /// </summary>
-        public void Buy()
-        {
-            if (GameManager.Instance.Money >= _price)
-            {
-                GameManager.Instance.Money -= _price;
-                _objectToDisplay.SetActive(true);
-                GameManager.AddBoughtItem(_objectToDisplay.name);
+        private void Buy(){
+            if (GameManager.Instance.Money >= price) {
+                GameManager.Instance.Money -= price;
+                objectToDisplay.SetActive(true);
+                GameManager.AddBoughtItem(objectToDisplay.name);
                 GameManager.AddBoughtItem(gameObject.name);
                 _button.interactable = false;
                 GameManager.Instance.AudioManager.PlaySFX("money_down");

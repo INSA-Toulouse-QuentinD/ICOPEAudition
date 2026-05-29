@@ -1,21 +1,21 @@
 using Managers;
 using PatientData.AlgoData;
 using System.Collections.Generic;
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI.ScoreContents
-{
+namespace UI.ScoreContents{
     [System.Serializable]
-    public enum FieldsName { 
-        PatientName, 
-        StepSuccess, 
-        StepFailed, 
-        DiagnoticsSuccess, 
-        DiagnosticsFailed, 
-        ActionSuccess, 
-        ActionFailed, 
+    public enum FieldsName{
+        PatientName,
+        StepSuccess,
+        StepFailed,
+        DiagnoticsSuccess,
+        DiagnosticsFailed,
+        ActionSuccess,
+        ActionFailed,
         Scores,
         SuccessRate,
         StepName,
@@ -23,50 +23,33 @@ namespace UI.ScoreContents
         ActionsDetails
     }
 
-    
+
     [System.Serializable]
-    public class FieldsTable
-    {
+    public class FieldsTable{
         public FieldsName fieldsName;
         public TextMeshProUGUI fields;
     }
 
     [System.Serializable]
-    public class DetailsFields
-    {
+    public class DetailsFields{
         public FieldsName fieldsName;
         public TextMeshProUGUI fields;
         public Image image;
     }
 
+    public class PlayerScoreDisplayManager : MonoBehaviour{
+        [Header("Section synthese patient")] [SerializeField]
+        private List<FieldsTable> fieldsList;
 
-    public class PlayerScoreDisplayManager : MonoBehaviour
-    {
-        [Header("Section synthese patient")]
-        [SerializeField] private List<FieldsTable> fieldsList;
+        [Header("Script Open folder")] [SerializeField]
+        private OpenFolder openFolder;
 
-        [Header("Score calcul")]
-        private static int _stepMulticateur = 10;
-        private static int _diagActionMulticateur = 5;
+        private List<Step> _stepsList;
 
-        [Header("Script Open folder")]
-        [SerializeField] private OpenFolder openFolder;
-
-        // ---- PRIVATES VARIABLES ----
-        private string _currentPatientName;
-        private List<Step> stepsList;
-
-        private static int CalculateTotalScore(int nbStepSucc, int nbStepFailed, int nbDiagSucc, int nbDiagFailed, int nbActionSucc, int nbActionFailed) 
-        {  
-            return nbStepSucc * _stepMulticateur - nbStepFailed * _stepMulticateur + nbDiagSucc * _diagActionMulticateur - nbDiagFailed * _diagActionMulticateur + nbActionSucc * _diagActionMulticateur + nbActionFailed * _diagActionMulticateur;
-        }
-
-        private void SetSyntheseScore(string patientName, int nbStepSucc, int nbStepFailed, int nbDiagSucc, int nbDiagFailed, int nbActionSucc, int nbActionFailed, float succesRate)
-        {
-            foreach (FieldsTable fieldsTable in fieldsList)
-            {
-                switch (fieldsTable.fieldsName)
-                {
+        private void SetSyntheseScore(string patientName, int nbStepSucc, int nbStepFailed, int nbDiagSucc,
+            int nbDiagFailed, int nbActionSucc, int nbActionFailed, float succesRate){
+            foreach (FieldsTable fieldsTable in fieldsList) {
+                switch (fieldsTable.fieldsName) {
                     case FieldsName.PatientName:
                         fieldsTable.fields.text = patientName;
                         break;
@@ -75,43 +58,40 @@ namespace UI.ScoreContents
                         break;
                     case FieldsName.StepFailed:
                         fieldsTable.fields.text = nbStepFailed.ToString();
-                        break; 
+                        break;
                     case FieldsName.DiagnoticsSuccess:
                         fieldsTable.fields.text = nbDiagSucc.ToString();
                         break;
                     case FieldsName.DiagnosticsFailed:
                         fieldsTable.fields.text = nbDiagFailed.ToString();
                         break;
-                    case FieldsName.ActionSuccess: 
+                    case FieldsName.ActionSuccess:
                         fieldsTable.fields.text = nbActionSucc.ToString();
                         break;
-                    case FieldsName.ActionFailed: 
+                    case FieldsName.ActionFailed:
                         fieldsTable.fields.text = nbActionFailed.ToString();
                         break;
                     case FieldsName.Scores:
-                        fieldsTable.fields.text = CalculateTotalScore(nbStepSucc, nbStepFailed, nbDiagSucc, nbDiagFailed, nbActionSucc, nbActionFailed).ToString();
+                        fieldsTable.fields.text =
+                            ((nbStepSucc - nbStepFailed) * 10 +
+                             (nbDiagSucc - nbDiagFailed + nbActionSucc + nbActionFailed) * 5).ToString();
                         break;
                     case FieldsName.SuccessRate:
-                        fieldsTable.fields.text = succesRate.ToString();
+                        fieldsTable.fields.text = Mathf.RoundToInt(succesRate) + "%";
+                        GameManager.Instance.Money += Mathf.RoundToInt(succesRate / 5f);
                         break;
                 }
             }
         }
 
-        public void GetSetDisplayScore(string patientName)
-        {
+        public void GetSetDisplayScore(string patientName){
             // Get Patient data form patient score
             var pRecords = GameManager.Instance.GameData.GetPatientCaseRecords(patientName);
-            _currentPatientName = patientName;
 
-            SetSyntheseScore(patientName, pRecords.NumberStepSucceed, pRecords.NumberStepFailed, pRecords.NumberDiagCorrect, pRecords.NumberDiagIncorrect, pRecords.NumberActionCorrect, pRecords.NumberActionIncorrect, pRecords.SuccessRate);           
+            SetSyntheseScore(patientName, pRecords.NumberStepSucceed, pRecords.NumberStepFailed,
+                pRecords.NumberDiagCorrect, pRecords.NumberDiagIncorrect, pRecords.NumberActionCorrect,
+                pRecords.NumberActionIncorrect, pRecords.SuccessRate);
             openFolder.SetStepsRecords(pRecords.StepRecordsLevel);
-        }
-
-        //CALL BY 'RETURN TO WAITING ROOM' BUTTON FROM SCORE CONTENT
-        public static void GoToMenu()
-        {
-            GameManager.Instance.GameStateManager.NextPatientCase();
         }
     }
 }

@@ -5074,10 +5074,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 758345816432596746, guid: b51e87c9a5fd22b4fac438fd6f52e57f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 758345816432596746, guid: b51e87c9a5fd22b4fac438fd6f52e57f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2022124782820224094}
@@ -5089,14 +5085,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 3544874494594731581}
-    - target: {fileID: 758345816432596746, guid: b51e87c9a5fd22b4fac438fd6f52e57f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ChangeMainState
-      objectReference: {fileID: 0}
-    - target: {fileID: 758345816432596746, guid: b51e87c9a5fd22b4fac438fd6f52e57f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Managers.GameStateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 829767756106792633, guid: b51e87c9a5fd22b4fac438fd6f52e57f, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
@@ -6789,10 +6777,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score Panel
       objectReference: {fileID: 0}
-    - target: {fileID: 1149916104884820911, guid: 06e0c9cb3f110f9449615cda688f7213, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1159551046690657021, guid: 06e0c9cb3f110f9449615cda688f7213, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 38.26001
@@ -7845,6 +7829,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 81.51999
       objectReference: {fileID: 0}
+    - target: {fileID: 4185401801503311425, guid: 06e0c9cb3f110f9449615cda688f7213, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4869231743824726053}
     - target: {fileID: 4294309836588296884, guid: 06e0c9cb3f110f9449615cda688f7213, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

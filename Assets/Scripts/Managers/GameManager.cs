@@ -64,7 +64,7 @@ namespace Managers{
 
         private readonly string _pathXmlFile = "Assets/Resources/Data/Tutorial.xml";
         private readonly string _pathXsdFile = "Assets/Resources/Data/TutorialSchema.xsd";
-        [Header("Money")] [SerializeField] private int money = 20;
+        [Header("Money")] [SerializeField] private int money;
 
         [Header("Menus")] [SerializeField] private GameObject mainMenu;
         [SerializeField] private GameObject gameMenu;
@@ -257,8 +257,9 @@ namespace Managers{
             XmlManager.ValidateXML(_pathXmlFile, _pathXsdFile);
 
             LoadListItems();
-
-            money = PlayerPrefs.GetInt("money", 20);
+            
+            //DEBUG!!! Money = PlayerPrefs.GetInt("money", 0);
+            Money = 0;
             isTutorialEnable = PlayerPrefs.GetInt("enableTutorial") == 1;
             AudioManager.PlayBGM("skyline");
 
@@ -272,7 +273,8 @@ namespace Managers{
             // TOO CHANGE - LATER
             Transform items = gameMenu.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(1);
 
-            string[] savedItems = PlayerPrefs.GetString("items", "").Split(";");
+            //DEBUG!!! string[] savedItems = PlayerPrefs.GetString("items", "").Split(";");
+            string[] savedItems = { };
             for (int i = 0; i < items.childCount; i++) {
                 foreach (string item in savedItems) {
                     Transform loadedItem = items.GetChild(i);
