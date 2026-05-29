@@ -17,9 +17,7 @@ namespace Managers{
 
         // GameObject
         [Header("Steps gameObject")] [SerializeField]
-        private GameObject patientDisplay;
-
-        [SerializeField] private List<GameObject> displayList;
+        private List<GameObject> displayList;
 
         [Header("Question gameObject")] [SerializeField]
         private GameObject questionsDisplay;

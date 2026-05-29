@@ -4,13 +4,13 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 7980856816745209919
-    second: gDoctorSprite_0
+    second: DoctorSprite_0
   - first:
       213: -8603473853748788035
-    second: gDoctorSprite_1
+    second: DoctorSprite_1
   - first:
       213: 4467637358421277366
-    second: gDoctorSprite_2
+    second: DoctorSprite_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -145,7 +145,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gDoctorSprite_0
+      name: DoctorSprite_0
       rect:
         serializedVersion: 2
         x: 26
@@ -167,7 +167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gDoctorSprite_1
+      name: DoctorSprite_1
       rect:
         serializedVersion: 2
         x: 434
@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gDoctorSprite_2
+      name: DoctorSprite_2
       rect:
         serializedVersion: 2
         x: 869
@@ -224,9 +224,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gDoctorSprite_0: 7980856816745209919
-      gDoctorSprite_1: -8603473853748788035
-      gDoctorSprite_2: 4467637358421277366
+      DoctorSprite_0: 7980856816745209919
+      DoctorSprite_1: -8603473853748788035
+      DoctorSprite_2: 4467637358421277366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
