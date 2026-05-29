@@ -19,12 +19,10 @@ public class PatientAnimation : MonoBehaviour{
     [SerializeField] private RectTransform imageCharacterPhone;
     public GameObject imageRingtone;
 
-    private Vector2 _targetPosition;
-
     [Header("Animation patient area")] [SerializeField]
     public RectTransform spawnPatientArea;
 
-    private readonly float _imageRatio = 1.25f;
+    private readonly float _imageRatio = 1.375f;
 
     [Header("Doors")] [SerializeField] private RectTransform leftDoor;
     [SerializeField] private RectTransform rightDoor;
@@ -56,18 +54,14 @@ public class PatientAnimation : MonoBehaviour{
         }
 
         // Move the sprite around the area
-        float panelWidth = targetArea.GetComponent<RectTransform>().rect.width;
-        float panelHeight = targetArea.GetComponent<RectTransform>().rect.height;
-
+        float panelWidth = targetArea.rect.width;
+        float panelHeight = targetArea.rect.height;
         float imageWidth = imageCharacter.rect.width;
-        float imageHeight = imageCharacter.rect.height;
 
         float randomX = Random.Range(-panelWidth / 2 + imageWidth / 2, panelWidth / 2 - imageWidth / 2);
-        float randomY = Random.Range(-panelHeight / 2 + imageHeight / 2, panelHeight / 2 - imageHeight / 2);
+        float randomY = Random.Range(0, panelHeight);
 
-        _targetPosition = new Vector2(randomX, randomY);
-
-        imageCharacter.anchoredPosition = _targetPosition;
+        imageCharacter.anchoredPosition = new Vector2(randomX, randomY);
     }
 
     /// <summary>
@@ -77,7 +71,7 @@ public class PatientAnimation : MonoBehaviour{
     /// <param name="characterSprite">The sprite to display for the character.</param>
     private void SetSprite(Sprite characterSprite){
         imageCharacter.GetComponent<Image>().sprite = characterSprite;
-        imageCharacter.sizeDelta = new Vector2(characterSprite.rect.width, characterSprite.rect.height) / 1.3f;
+        imageCharacter.sizeDelta = new Vector2(characterSprite.rect.width, characterSprite.rect.height) / 1.4f;
     }
 
     /// <summary>

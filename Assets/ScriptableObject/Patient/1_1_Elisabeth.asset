@@ -41,17 +41,20 @@ MonoBehaviour:
       isCorrect: 0
       correctionText: "Non, on r\xE9alise d\u2019abord le questionnaire Go-No-Go
         pour rechercher des signes de surdit\xE9 complexe."
+      rappelTip: 0
       sprites: []
     - answerText: "Je convoque la patiente pour r\xE9aliser un test de chuchotement."
       isCorrect: 0
       correctionText: "Non, il n\u2019est pas n\xE9cessaire de r\xE9p\xE9ter le test
         apr\xE8s avoir r\xE9alis\xE9 le test H\xF6ra."
+      rappelTip: 0
       sprites: []
     - answerText: "Je convoque la patiente pour r\xE9aliser le questionnaire Go-No-Go."
       isCorrect: 0
       correctionText: "On recherche d\u2019abord des signes \xE9vocateurs d\u2019une
         surdit\xE9 complexe par t\xE9l\xE9phone afin d\u2019\xE9viter de convoquer
         le patient pour finalement devoir l\u2019adresser vers l\u2019ORL."
+      rappelTip: 0
       sprites: []
     - answerText: "J\u2019interroge la patiente par t\xE9l\xE9phone pour rep\xE9rer
         une situation No-Go et directement l\u2019adresser vers l\u2019ORL."
@@ -59,6 +62,7 @@ MonoBehaviour:
       correctionText: "Oui, cela permet d\u2019\xE9viter de convoquer des patients
         qui pr\xE9sentent un tableau qui \xE9voque une surdit\xE9 plus complexe \xE0
         prendre en charge qu\u2019une presbyacousie."
+      rappelTip: 0
       sprites: []
     actionPhase:
     - answerText: "Je la convoque pour r\xE9aliser l\u2019\xE9valuation step 2"
@@ -66,12 +70,14 @@ MonoBehaviour:
       correctionText: "Non, ici on est dans une situation No-Go, il faut l\u2019adresser
         vers un ORL. Ce tableau \xE9voque en premier lieu une maladie de M\xE9ni\xE8re
         : surdit\xE9 fluctuante avec vertiges."
+      rappelTip: 0
       sprites: []
     - answerText: "Je la convoque pour r\xE9aliser le test de chuchotement."
       isCorrect: 0
       correctionText: "Non, ici on est dans une situation NO GO, il faut l\u2019adresser
         vers un ORL. Ce tableau \xE9voque en premier lieu une maladie de M\xE9ni\xE8re
         : surdit\xE9 fluctuante avec vertiges."
+      rappelTip: 0
       sprites: []
     - answerText: "Je la convoque pour r\xE9aliser une vid\xE9o-otoscopie \xE0 la
         recherche d\u2019un bouchon de c\xE9rumen, qui peut se manifester de cette
@@ -81,6 +87,7 @@ MonoBehaviour:
         a minima. Mais depuis 2 ans, on peut quand m\xEAme esp\xE9rer qu\u2019elle
         a b\xE9n\xE9fici\xE9 d\u2019une consultation chez son m\xE9decin qui a d\xE9douan\xE9
         un Bouchon De C\xE9rumen."
+      rappelTip: 0
       sprites: []
     - answerText: "Je l\u2019adresse chez l\u2019ORL."
       isCorrect: 1
@@ -88,4 +95,5 @@ MonoBehaviour:
         Tableau tr\xE8s \xE9vocateur d\u2019une maladie de M\xE9ni\xE8re.\r\n\r\n<b>Bravo
         !!</b> Tu as bien identifi\xE9 le cas pr\xE9sent.\n\nPrise en charge r\xE9ussie.
         Tu as d\xE9bloqu\xE9 un nouveau niveau."
+      rappelTip: 0
       sprites: []

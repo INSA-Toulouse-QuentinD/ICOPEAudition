@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Managers;
 using UnityEngine;
 
 namespace PatientData.AlgoData{
@@ -24,6 +25,7 @@ namespace PatientData.AlgoData{
         public string answerText;
         public bool isCorrect;
         [TextArea(5, 5)] public string correctionText;
+        public RappelTip rappelTip;
         public List<Sprite> sprites;
     }
 

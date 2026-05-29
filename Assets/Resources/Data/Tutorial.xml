@@ -106,5 +106,14 @@ Cliquez sur "Détails" pour observer vos résultats étape par étape.
 Une fois terminé, refermez le dossier en cliquant en haut à gauche, puis cliquez sur "Retour au menu" pour passer au patient suivant.
             </Text>
         </Entry>
+        <Entry>
+            <ID>12</ID>
+            <Intitule>Bouton Rappel</Intitule>
+            <Text>À certains moments (très souvent lorsqu'un choix a été fait), un bouton apparaitra en bas à gauche de l'écran.
+Celui-ci vous permettra de voir des informations ayant pour but de vous faire comprendre vos erreurs ou bien de vous donner plus de précisions.
+Soyez attentif pour ne pas les manquer, ils sont là pour vous aider à progresser !
+Après avoir fermé ce tutoriel, clique dessus pour tester.
+            </Text>
+        </Entry>
     </Step>
 </Tutorial>

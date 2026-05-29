@@ -34,8 +34,14 @@ namespace UI.TutorialContents{
                 _indexText++;
                 SetTexts(_nameStep, _indexText);
             } else {
-                GameManager.Instance.SetTutorialUI();
-                _indexText = 0;
+                if (_nameStep == "Tutorial" && _indexText == 0) {
+                    _indexText = 12;
+                    SetTexts(_nameStep, _indexText);
+                    TipsManager.Instance.InitTips(RappelTip.Algorithme);
+                } else {
+                    GameManager.Instance.SetTutorialUI();
+                    _indexText = -1;
+                }
             }
         }
 
@@ -54,6 +60,7 @@ namespace UI.TutorialContents{
             if (!_tutorialMichelShownIndexes.Add(index)) return;
 
             _nameStep = "Tutorial";
+            _indexText = index;
             GameManager.Instance.SetTutorialUI();
             SetTexts(_nameStep, index);
         }
@@ -72,7 +79,6 @@ namespace UI.TutorialContents{
         /// <param name="nameStep">The name of the current tutorial step (used to locate data in the XML).</param>
         /// <param name="idSteps">The ID of the specific text entry to load.</param>
         private void SetTexts(string nameStep, int idSteps){
-            Debug.Log(nameStep + " " +  idSteps);
             TextAsset pathToXml = Resources.Load<TextAsset>($"Data/Tutorial");
             if (pathToXml) {
                 TutorialEntry tutoEntry = XmlManager.LoadTutorialDataByID(pathToXml, nameStep, idSteps);

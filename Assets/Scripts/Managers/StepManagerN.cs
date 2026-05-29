@@ -366,6 +366,8 @@ namespace Managers{
         /// If the step is not completed, switches the UI to the question answering display
         /// </summary>
         private void ButtonNext(){
+            TipsManager.Instance.HideButton();
+            
             // Control if diagnostic & action is completed
             AlgoStep algoStep = _patientData.steps[_indexStep];
             bool isDiagnosticCompleted = !(algoStep.diagnosticPhase.Count > 0) || _isDiagnosticValid;
@@ -397,6 +399,8 @@ namespace Managers{
         /// clearing all displays and resetting the interaction state and buttons accordingly.
         /// </summary>
         private void ButtonBack(){
+            TipsManager.Instance.HideButton();
+            
             if (_interactionState == InteractionState.ISCORRECTION) {
                 if (_answerState == AnswerState.DIAGNOSTIC) {
                     _isDiagnosticValid = false;
@@ -462,9 +466,11 @@ namespace Managers{
 
                 // Remember this incorrect attempt so that "Précédent" won't reset it.
                 if (_answerState == AnswerState.DIAGNOSTIC) {
+                    TipsManager.Instance.InitTips(_patientData.steps[_indexStep].diagnosticPhase[index].rappelTip);
                     EnsureSize(_diagIncorrectTried, answerData.Count);
                     if (index >= 0 && index < _diagIncorrectTried.Count) _diagIncorrectTried[index] = true;
                 } else {
+                    TipsManager.Instance.InitTips(_patientData.steps[_indexStep].actionPhase[index].rappelTip);
                     EnsureSize(_actionIncorrectTried, answerData.Count);
                     if (index >= 0 && index < _actionIncorrectTried.Count) _actionIncorrectTried[index] = true;
                 }

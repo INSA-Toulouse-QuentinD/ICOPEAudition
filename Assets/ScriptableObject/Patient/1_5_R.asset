@@ -48,6 +48,7 @@ MonoBehaviour:
         test de chuchotement\r\n- Le test H\xF6ra\r\n- Le questionnaire HHIE-S\r\nSi
         la suspicion n\u2019est pas confirm\xE9e, il n\u2019est pas n\xE9cessaire
         de poursuivre l\u2019\xE9valuation."
+      rappelTip: 0
       sprites: []
     - answerText: "Je v\xE9rifie ses oreilles."
       isCorrect: 0
@@ -58,6 +59,7 @@ MonoBehaviour:
         test de chuchotement\r\n- Le test H\xF6ra\r\n- Le questionnaire HHIE-S\r\nSi
         la suspicion n\u2019est pas confirm\xE9e, il n\u2019est pas n\xE9cessaire
         de poursuivre l\u2019\xE9valuation."
+      rappelTip: 0
       sprites: []
     - answerText: "Je ne peux rien faire, je renvoie la patiente vers l\u2019ORL."
       isCorrect: 0
@@ -65,12 +67,14 @@ MonoBehaviour:
         ICOPE : il a plus de 60 ans, son autonomie est pr\xE9serv\xE9e, le d\xE9pistage
         semble \xEAtre anormal.\r\nA ce stade, aucun drapeau rouge identifi\xE9,
         je poursuis son \xE9valuation."
+      rappelTip: 0
       sprites: []
     - answerText: "Je r\xE9alise le test de chuchotement."
       isCorrect: 1
       correctionText: "La patiente n'a pas encore \xE9tait soumis au test de chuchotement.
         Vous commencez par cette \xE9tape pour vous assurer qu\u2019il y a bien une
         anomalie \xE0 l\u2019\xE9tape 1."
+      rappelTip: 0
       sprites: []
   - type: 1
     dialoguePatient: "Je n'ai entendu que 2 mots \xE0 droite et \xE0 gauche.\r"
@@ -88,6 +92,7 @@ MonoBehaviour:
         <b>crit\xE8re normal</b> pour consid\xE9rer qu'il n'y a <b>pas d\u2019anomalie
         auditive</b> est la <b>r\xE9p\xE9tition correcte de l\u2019ensemble des 4
         mots</b> (ou 3 minimum par oreille)."
+      rappelTip: 0
       sprites: []
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 3 mots
         des 2 c\xF4t\xE9s."
@@ -99,6 +104,7 @@ MonoBehaviour:
         du seuil requis.\r\nCela indique une atteinte de l\u2019audition bilat\xE9rale,
         car aucun des deux c\xF4t\xE9s n\u2019atteint le crit\xE8re minimal de 3
         mots correctement restitu\xE9s sur 4.\r"
+      rappelTip: 0
       sprites: []
     - answerText: "Il n\u2019y a pas d\u2019anomalie car il a su restituer les 2
         mots du c\xF4t\xE9 gauche. "
@@ -112,6 +118,7 @@ MonoBehaviour:
         dans ce cas pr\xE9cis, le patient n\u2019a r\xE9p\xE9t\xE9 que <b>2 mots
         sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuit\xE9
         auditive</b> bilat\xE9rale et constitue une <b>anomalie du test<b>."
+      rappelTip: 0
       sprites: []
     - answerText: Le test est normal.
       isCorrect: 0
@@ -123,6 +130,7 @@ MonoBehaviour:
         pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des
         deux oreilles</b>.\r\n\r\nLe test aurait \xE9t\xE9 normal si le patient avait
         r\xE9p\xE9t\xE9 les 3 mots de chaque c\xF4t\xE9."
+      rappelTip: 0
       sprites: []
     actionPhase:
     - answerText: Je le laisse repartir chez lui.
@@ -131,18 +139,21 @@ MonoBehaviour:
         le questionnaire Go-No-Go afin de rep\xE9rer des signaux alertant sur une
         probable surdit\xE9 complexe, diff\xE9rente d'une simple prebyacousie dans
         sa pr\xE9sentation."
+      rappelTip: 0
       sprites: []
     - answerText: "Je r\xE9alise le test de Weber."
       isCorrect: 0
       correctionText: "Avant de d\xE9marer l'\xE9valuation audition, on doit interroger
         le participant afin de rep\xE9rer les signaux alertant sur des \xE9ventuels
         dignostics diff\xE9rentiels (questionnaire Go-No-Go)."
+      rappelTip: 0
       sprites: []
     - answerText: Je fais passer le questionnaire Go-No-Go.
       isCorrect: 1
       correctionText: "Le test de chuchotement \xE9tait anormal, nous poursuivons
         le d\xE9roul\xE9 de l\u2019\xE9tape 2 d\u2019ICOPE Audition, avec le questionnaire
         Go-No-Go."
+      rappelTip: 0
       sprites: []
     - answerText: "Je lui propose l\u2019application H\xD6RA pour se retester dans
         6 mois."
@@ -154,6 +165,7 @@ MonoBehaviour:
         par exemple avec H\xF6ra.\r\n\r\nIci : le test est anormal, il faut donc
         poursuivre l\u2019\xE9valuation auditive en commen\xE7ant par l\u2019interrogatoire
         (\xE0 l\u2019aide du questionnaire Go-No-Go)."
+      rappelTip: 0
       sprites: []
   - type: 2
     dialoguePatient: "\r"
@@ -169,6 +181,7 @@ MonoBehaviour:
         outil d\u2019aide \xE0 l\u2019interrogatoire, afin de ne pas oublier les
         situations fortement \xE9vocatrices d\u2019une surdit\xE9 complexe qui justifieraient
         alors d\u2019un adressage ORL."
+      rappelTip: 0
       sprites: []
     - answerText: "Il n\u2019a r\xE9pondu que des \"non\", ce qui indique une suspicion
         de cas simple."
@@ -176,6 +189,7 @@ MonoBehaviour:
       correctionText: "Si aux r\xE9ponses du questionnaire Go-No-Go, la patiente
         r\xE9ponds \"Non\" \xE0 chaque question, il s\u2019agit bien d\u2019une suspicion
         de cas simple."
+      rappelTip: 0
       sprites: []
     - answerText: "Ses r\xE9ponses ne montrent pas de probl\xE8me significatifs. "
       isCorrect: 0
@@ -185,6 +199,7 @@ MonoBehaviour:
         \xE0 l\u2019interrogatoire, afin de ne pas oublier les situations fortement
         \xE9vocatrices d\u2019une surdit\xE9 complexe qui justifieraient alors d\u2019un
         adressage ORL."
+      rappelTip: 0
       sprites: []
     - answerText: "Il n\u2019a r\xE9pondu que des \"non\", ce qui indique une urgence
         ORL. "
@@ -195,6 +210,7 @@ MonoBehaviour:
         la mise en place d\u2019un traitement rapide sont :\r\n- Les surdit\xE9s
         brusques r\xE9centes, indiquant une corticoth\xE9rapie.\r\n- Les otorrh\xE9es
         avec otalgies, \xE9vocatrices d\u2019une otite externe."
+      rappelTip: 0
       sprites: []
     actionPhase:
     - answerText: Je le laisse repartir chez lui.
@@ -203,12 +219,14 @@ MonoBehaviour:
         continuer l\u2019exploration. Le questionnaire a permis d\u2019\xE9liminer
         des signes \xE9vocateurs d\u2019une surdit\xE9 complexe, on continue avec
         l\u2019examen physique puis l\u2019\xE9valuation auditive.\r"
+      rappelTip: 0
       sprites: []
     - answerText: "Je l\u2019adresse aux urgences."
       isCorrect: 0
       correctionText: "Aucune indication !\r\nSuspicion de surdit\xE9 sans signal
         d\u2019alarme \xE0 l\u2019interrogatoire, je peux donc r\xE9aliser mon examen
         physique."
+      rappelTip: 0
       sprites: []
     - answerText: "Je continue le parcours audition et lui fais passer une vid\xE9o
         otoscopie."
@@ -216,12 +234,14 @@ MonoBehaviour:
       correctionText: "Les \xE9tapes pr\xE9c\xE9dentes ne permettent pas de confirmer
         qu\u2019il n\u2019y a pas d\u2019anomalie auditive. La vid\xE9o otoscopie
         est l\u2019examen \xE0 r\xE9aliser en suivant. \r\n"
+      rappelTip: 0
       sprites: []
     - answerText: "Je l\u2019envoie vers un ORL."
       isCorrect: 0
       correctionText: "Ici il n\u2019existe aucun drapeau rouge : il n\u2019y a donc
         pas d\u2019indication \xE0 un adressage ORL, je peux continuer mon \xE9valuation
         avec la r\xE9alisation de l\u2019examen physique (examen du pavillon et vid\xE9o-otoscopie)."
+      rappelTip: 0
       sprites: []
   - type: 4
     dialoguePatient: "\r"
@@ -235,6 +255,7 @@ MonoBehaviour:
         associ\xE9e \xE0 un \xE9panchement purulent r\xE9tro tympanique.\r\nOn constate
         souvent une disparition des rep\xE8res habituellement retrouv\xE9s \xE0 l\u2019otoscopie.
         Il existe une douleur associ\xE9e, souvent de la fi\xE8vre."
+      rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: ab0791b59991394478c7e63451d833f5, type: 3}
       - {fileID: 21300000, guid: b5ca7212c3dd1014685c70d76ca23d6e, type: 3}
@@ -242,12 +263,14 @@ MonoBehaviour:
       isCorrect: 0
       correctionText: "On peut suivre l\u2019annulus sur toute sa circonf\xE9rence,
         il n\u2019existe pas de perforation de la membrane."
+      rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: c8721d873aaf0b442a563e92ea23f282, type: 3}
       - {fileID: 21300000, guid: 6751ff46d80eb624ca7a0619b16be793, type: 3}
     - answerText: "Il s\u2019agit d\u2019un bouchon de c\xE9rumen."
       isCorrect: 0
       correctionText: "Voici l\u2019image d\u2019un bouchon de c\xE9rumen."
+      rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: f503c7a4e7193c945b6f71187b1b4708, type: 3}
       - {fileID: 21300000, guid: 074d65b9d59894e45a6ce7148c6c22f1, type: 3}
@@ -256,6 +279,7 @@ MonoBehaviour:
       correctionText: "Un tympan normal est classiquement transparent, de couleur
         grise, bien tendu autour de la circonf\xE9rence (annulus), que fait le fond
         du Conduit Auditif Externe."
+      rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
       - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
@@ -265,6 +289,7 @@ MonoBehaviour:
       correctionText: "On a un cas simple, avec un d\xE9pistage pathologique : il
         faut continuer son \xE9valuation ! la normalit\xE9 de l'examen otoscopique
         n'est en rien rassurante vis \xE0 vis du statut auditif du patient."
+      rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
       - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
@@ -274,11 +299,13 @@ MonoBehaviour:
       correctionText: "Les \xE9tapes pr\xE9c\xE9dentes ne permettent pas de confirmer
         qu\u2019il n\u2019y a pas d\u2019anomalie auditive. Le test de Weber est
         l\u2019examen \xE0 r\xE9aliser en suivant."
+      rappelTip: 0
       sprites: []
     - answerText: "Je l\u2019envoi aux urgences."
       isCorrect: 0
       correctionText: "L\u2019examen du tympan est normal, on peut poursuivre l\u2019exploration
         auditive par un Test acoum\xE9trique de Weber."
+      rappelTip: 0
       sprites: []
     - answerText: "Je prescris une proth\xE8se auditive."
       isCorrect: 0
@@ -287,6 +314,7 @@ MonoBehaviour:
         ET avec une surdit\xE9 dans les crit\xE8res d\u2019appareillage audioproth\xE9tique.\r\nOn
         ne fait JAMAIS de prescription d\u2019appareillage sans avoir au pr\xE9alable
         r\xE9aliser un examen audiom\xE9trique complet."
+      rappelTip: 0
       sprites: []
   - type: 6
     dialoguePatient: 
@@ -299,12 +327,14 @@ MonoBehaviour:
         (probabilit\xE9 11% pour un score entre 0 et 8) et le score > 16/40 permettait
         de d\xE9tecter une surdit\xE9 avec une efficacit\xE9 maximale (88,4\_%) dans
         le travail de Duchene et al. 2022."
+      rappelTip: 0
       sprites: []
     - answerText: "Le score indique une absence totale de g\xEAne auditive."
       isCorrect: 0
       correctionText: "Non, le score \xE0 14/40 est en faveur d\u2019une surdit\xE9
         mod\xE9r\xE9e.\r\n<color=red>On ne peut donc pas conclure \xE0 l\u2019absence
         de g\xE8ne auditive.</color>"
+      rappelTip: 0
       sprites: []
     - answerText: "Le test montre des difficult\xE9s auditives s\xE9v\xE8res."
       isCorrect: 0
@@ -312,6 +342,7 @@ MonoBehaviour:
         s\u2019attendre \xE0 retrouver un score > 24. Il s\u2019agit donc d\u2019une
         surdit\xE9 mod\xE9r\xE9e.\r\nLa probabilit\xE9 d\u2019\xEAtre porteur d\u2019une
         d\xE9ficience auditive augmentant avec le score."
+      rappelTip: 0
       sprites: []
     - answerText: "Le r\xE9sultat sugg\xE8re que les troubles auditifs sont uniquement
         li\xE9s \xE0 une fatigue passag\xE8re."
@@ -319,6 +350,7 @@ MonoBehaviour:
       correctionText: "Le score permet d\u2019obtenir la probabilit\xE9 d\u2019\xEAtre
         atteint d\u2019une d\xE9ficience auditive, \xE9ligible \xE0 un appareillage
         selon les crit\xE8res actuellement admis en France."
+      rappelTip: 0
       sprites: []
     actionPhase:
     - answerText: "Je l\u2019oriente vers un ORL."
@@ -326,18 +358,21 @@ MonoBehaviour:
       correctionText: "Non, son questionnaire HHIES est alt\xE9r\xE9, ce qui sugg\xE8re
         la pr\xE9sence d'une surdit\xE9. Pour le confirmer, il faut r\xE9aliser l'examen
         audiom\xE9trique."
+      rappelTip: 0
       sprites: []
     - answerText: "Je l'oriente vers son m\xE9decin traitant."
       isCorrect: 0
       correctionText: "Non, son questionnaire HHIES est alt\xE9r\xE9, ce qui sugg\xE8re
         la pr\xE9sence d\u2019une surdit\xE9. Pour le confirmer, il faut r\xE9aliser
         l\u2019examen audiom\xE9trique."
+      rappelTip: 0
       sprites: []
     - answerText: Je lui propose un prochain rendez-vous de suivi.
       isCorrect: 0
       correctionText: "Non, son questionnaire HHIES est alt\xE9r\xE9, ce qui sugg\xE8re
         la pr\xE9sence d\u2019une surdit\xE9. Pour le confirmer, il faut r\xE9aliser
         l\u2019examen audiom\xE9trique."
+      rappelTip: 0
       sprites: []
     - answerText: "Il est pertinent de r\xE9aliser l\u2019audiom\xE9trie."
       isCorrect: 1
@@ -347,6 +382,7 @@ MonoBehaviour:
         sur les fr\xE9quences aigu\xEBs.\r\nIl va \xE9galement renseigner sur la
         s\xE9v\xE9rit\xE9 de la surdit\xE9, et l\u2019indication ou non d\u2019un
         appareillage audioproth\xE9tique."
+      rappelTip: 0
       sprites: []
   - type: 5
     dialoguePatient: "Je n'arrive pas \xE0 savoir, j'ai entendu la m\xEAme chose
@@ -364,11 +400,13 @@ MonoBehaviour:
         ce cas, il est Positif : on \xE9voque une audition normale ou une surdit\xE9
         neurosensorielle) ou non (dans ce cas, il est n\xE9gatif : on \xE9voque une
         surdit\xE9 de perception)."
+      rappelTip: 0
       sprites: []
     - answerText: "Ses r\xE9ponses ne r\xE9v\xE8lent pas d\u2019anomalie."
       isCorrect: 1
       correctionText: "Un son per\xE7u de la m\xEAme fa\xE7on aux 2 oreilles est
         un bon signe."
+      rappelTip: 0
       sprites: []
     - answerText: "Ses r\xE9ponses r\xE9v\xE8lent une surdit\xE9 de transmission."
       isCorrect: 0
@@ -377,6 +415,7 @@ MonoBehaviour:
         quand la patiente d\xE9crit une asym\xE9trie auditive, on peut \xE9voquer
         une surdit\xE9 de transmission quand il lat\xE9ralise le Weber du c\xF4t\xE9
         de l\u2019oreille la plus sourde."
+      rappelTip: 0
       sprites: []
     - answerText: "Ses r\xE9ponses r\xE9v\xE8lent un bouchon de c\xE9rumen."
       isCorrect: 0
@@ -386,6 +425,7 @@ MonoBehaviour:
         est obstructif (et \xE0 condition qu\u2019il n\u2019existe pas d\u2019autre
         cause sous jacente d\u2019asym\xE9trie auditive). Mais le diagnostic du BDC
         resterait \u2026 clinique !"
+      rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: f503c7a4e7193c945b6f71187b1b4708, type: 3}
     actionPhase:
@@ -395,12 +435,14 @@ MonoBehaviour:
         audiom\xE9trique. On peut retrouver une surdit\xE9 s\xE9v\xE8re avec un test
         de Weber centr\xE9, \xE0 condition que l\u2019audition soit sym\xE9trique.\r\n\r\n<color=red>Il
         n\u2019a aucun caract\xE8re rassurant concernant la normalit\xE9 de l\u2019audition.</color>"
+      rappelTip: 0
       sprites: []
     - answerText: Je continue le parcours audition et lui fait passer le test HHIE-S.
       isCorrect: 1
       correctionText: "Les \xE9tapes pr\xE9c\xE9dentes ne permettent pas de confirmer
         qu\u2019il n\u2019y a pas d\u2019anomalie auditive. Le test HHIE-S est l\u2019examen
         \xE0 r\xE9aliser en suivant."
+      rappelTip: 0
       sprites: []
     - answerText: Je le laisse repartir et lui propose de refaire ICOPE dans 6 mois.
       isCorrect: 0
@@ -408,6 +450,7 @@ MonoBehaviour:
         audiom\xE9trique. On peut retrouver une surdit\xE9 s\xE9v\xE8re avec un test
         de Weber centr\xE9, \xE0 condition que l\u2019audition soit sym\xE9trique.\r\n\r\n<color=red>Il
         n\u2019a aucun caract\xE8re rassurant concernant la normalit\xE9 de l\u2019audition.</color>"
+      rappelTip: 0
       sprites: []
     - answerText: "J\u2019enl\xE8ve le bouchon de c\xE9rumen."
       isCorrect: 0
@@ -417,6 +460,7 @@ MonoBehaviour:
         le retirer (si pas de contre indication) AVANT de r\xE9aliser l\u2019acoum\xE9trie
         au diapason, autrement les r\xE9ponses seront en lien avec la surdit\xE9
         occasionn\xE9e par ce BDC."
+      rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: f503c7a4e7193c945b6f71187b1b4708, type: 3}
   - type: 7
@@ -427,18 +471,22 @@ MonoBehaviour:
     - answerText: ???
       isCorrect: 1
       correctionText: ???
+      rappelTip: 0
       sprites: []
     - answerText: ???
       isCorrect: 0
       correctionText: ???
+      rappelTip: 0
       sprites: []
     - answerText: ???
       isCorrect: 0
       correctionText: ???
+      rappelTip: 0
       sprites: []
     - answerText: ???
       isCorrect: 0
       correctionText: ???
+      rappelTip: 0
       sprites: []
     actionPhase:
     - answerText: "En accord avec votre m\xE9decin r\xE9f\xE9rent, une prescription
@@ -446,18 +494,22 @@ MonoBehaviour:
       isCorrect: 1
       correctionText: "Bravo !! Tu as bien identifi\xE9 le cas pr\xE9sent. \r\n\r\nPrise
         en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
+      rappelTip: 0
       sprites: []
     - answerText: ???
       isCorrect: 0
       correctionText: ???
+      rappelTip: 0
       sprites: []
     - answerText: "Je recommande un traitement antibiotique pour am\xE9liorer l\u2019audition
         de Monsieur Dupont."
       isCorrect: 0
       correctionText: "Les antibiotiques n\u2019ont aucun effet sur une surdit\xE9
         de perception comme la presbyacousie."
+      rappelTip: 0
       sprites: []
     - answerText: ???
       isCorrect: 0
       correctionText: ???
+      rappelTip: 0
       sprites: []
