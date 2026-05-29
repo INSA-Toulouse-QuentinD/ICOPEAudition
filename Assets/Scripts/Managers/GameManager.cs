@@ -56,6 +56,7 @@ namespace Managers{
         public bool instanteAnimation;
         public bool skipAssistante;
         public bool alwaysRight;
+        public bool forcePositionChoice;
 
         [Header("Levels")] [SerializeField] public LevelsData levelsData;
 

@@ -2,11 +2,13 @@ using PatientData;
 using PatientData.AlgoData;
 using PatientData.Steps;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UI.Buttons;
 using UI.TutorialContents;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = System.Random;
 
 namespace Managers{
     public class StepManagerN : MonoBehaviour{
@@ -90,10 +92,20 @@ namespace Managers{
 
         private Dictionary<Step, int> _mappingDisplays;
 
-        // UI state (simple): keep which answers have already been tried and were incorrect
-        // so that "Précédent" (correction -> questions) does not reset buttons.
-        private readonly List<bool> _diagIncorrectTried = new();
-        private readonly List<bool> _actionIncorrectTried = new();
+        private sealed class AnswerDisplayState{
+            public List<int> ShuffledOrder = new();
+            public readonly List<bool> IncorrectTried = new();
+
+            public void Reset(){
+                ShuffledOrder.Clear();
+                IncorrectTried.Clear();
+            }
+        }
+
+        // UI state: keep both the shuffled display order and the incorrect attempts
+        // so that "Précédent" (correction -> questions) restores the exact same layout.
+        private readonly AnswerDisplayState _diagAnswerState = new();
+        private readonly AnswerDisplayState _actionAnswerState = new();
 
         /// <summary>
         /// Initializes the patient data and resets the step index and display index
@@ -109,15 +121,8 @@ namespace Managers{
         }
 
         private void ResetTriedState(){
-            _diagIncorrectTried.Clear();
-            _actionIncorrectTried.Clear();
-        }
-
-        private static void EnsureSize(List<bool> list, int size){
-            if (size < 0) size = 0;
-
-            while (list.Count < size) list.Add(false);
-            if (list.Count > size) list.RemoveRange(size, list.Count - size);
+            _diagAnswerState.Reset();
+            _actionAnswerState.Reset();
         }
 
         /// <summary>
@@ -241,10 +246,12 @@ namespace Managers{
         /// </summary>
         private void SetTextButtonsNavigation(){
             TextMeshProUGUI confirmeNextText = confirmNextButton.GetComponentInChildren<TextMeshProUGUI>();
+            TextMeshProUGUI retourText = returnButton.GetComponentInChildren<TextMeshProUGUI>();
 
             if (_interactionState == InteractionState.ISREADING) {
                 // update buttons and text
                 returnButton.interactable = false;
+                retourText.text = "Précédent";
                 confirmNextButton.interactable = true;
                 confirmeNextText.text = "Répondre";
             }
@@ -252,7 +259,7 @@ namespace Managers{
             if (_interactionState == InteractionState.ISANSWERING) {
                 // Update button and text
                 returnButton.interactable = true;
-
+                retourText.text = "Précédent";
                 confirmNextButton.interactable = false;
                 confirmeNextText.text = "Suivant";
             }
@@ -276,6 +283,7 @@ namespace Managers{
                 } else {
                     confirmNextButton.interactable = false;
                     returnButton.interactable = true;
+                    retourText.text = "Compris";
                 }
             }
         }
@@ -301,18 +309,16 @@ namespace Managers{
             if (diagCount > 0 && !_isDiagnosticValid) {
                 questionText.text = "Quel est votre diagnostic ?";
                 _answerState = AnswerState.DIAGNOSTIC;
-                EnsureSize(_diagIncorrectTried, diagCount);
                 CreateAnswerButtons(algoStep.diagnosticPhase);
-                ApplyTriedStateToButtons(_diagIncorrectTried);
+                ApplyTriedStateToButtons(_diagAnswerState);
                 return;
             }
 
             if (actionCount > 0 && _isDiagnosticValid) {
                 questionText.text = "Que faites-vous ?";
                 _answerState = AnswerState.ACTION;
-                EnsureSize(_actionIncorrectTried, actionCount);
                 CreateAnswerButtons(algoStep.actionPhase);
-                ApplyTriedStateToButtons(_actionIncorrectTried);
+                ApplyTriedStateToButtons(_actionAnswerState);
 
                 if (_step == Step.WisperTest) {
                     UITutorialControler.Instance.TutorialMichel(5);
@@ -322,11 +328,11 @@ namespace Managers{
             UITutorialControler.Instance.TutorialMichel(1);
         }
 
-        private void ApplyTriedStateToButtons(List<bool> triedIncorrect){
-            int max = Mathf.Min(choiceButtons.Length, triedIncorrect.Count);
+        private void ApplyTriedStateToButtons(AnswerDisplayState state){
+            int max = Mathf.Min(choiceButtons.Length, state.IncorrectTried.Count);
             for (int i = 0; i < max; i++) {
                 if (!choiceButtons[i].gameObject.activeSelf) continue;
-                if (!triedIncorrect[i]) continue;
+                if (!state.IncorrectTried[i]) continue;
 
                 choiceButtons[i].GetComponent<AnswerButton>().SetIncorrect();
                 choiceButtons[i].interactable = false;
@@ -346,14 +352,17 @@ namespace Managers{
             ClearQuestion();
 
             int max = Mathf.Min(answerData.Count, choiceButtons.Length);
+            AnswerDisplayState state = GetCurrentAnswerDisplayState();
+            EnsureAnswerOrder(state, max, GameManager.Instance.forcePositionChoice);
 
             for (int i = 0; i < max; i++) {
-                int index = i;
+                int buttonIndex = i;
+                int sourceIndex = state.ShuffledOrder[buttonIndex];
                 TextMeshProUGUI text = choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-                text.text = answerData[i].answerText;
+                text.text = answerData[sourceIndex].answerText;
                 choiceButtons[i].onClick.RemoveAllListeners();
                 choiceButtons[i].GetComponent<AnswerButton>().Reset();
-                choiceButtons[i].onClick.AddListener(() => OnAnswerCorrect(answerData, index));
+                choiceButtons[i].onClick.AddListener(() => OnAnswerCorrect(answerData, buttonIndex));
                 choiceButtons[i].interactable = true;
                 choiceButtons[i].enabled = true;
                 choiceButtons[i].gameObject.SetActive(true);
@@ -367,7 +376,7 @@ namespace Managers{
         /// </summary>
         private void ButtonNext(){
             TipsManager.Instance.HideButton();
-            
+
             // Control if diagnostic & action is completed
             AlgoStep algoStep = _patientData.steps[_indexStep];
             bool isDiagnosticCompleted = !(algoStep.diagnosticPhase.Count > 0) || _isDiagnosticValid;
@@ -400,14 +409,14 @@ namespace Managers{
         /// </summary>
         private void ButtonBack(){
             TipsManager.Instance.HideButton();
-            
+
             if (_interactionState == InteractionState.ISCORRECTION) {
                 if (_answerState == AnswerState.DIAGNOSTIC) {
                     _isDiagnosticValid = false;
                 } else {
                     _isActionValid = false;
                 }
-                
+
                 ClearAllDisplay();
 
                 _interactionState = InteractionState.ISANSWERING;
@@ -457,8 +466,10 @@ namespace Managers{
         /// <param name="answerData">List of possible answers for the current phase.</param>
         /// <param name="index">The index of the selected answer button.</param>
         private void OnAnswerCorrect(List<AnswerData> answerData, int index){
+            AnswerDisplayState state = GetCurrentAnswerDisplayState();
+            int sourceIndex = GetSourceAnswerIndex(state, index);
             bool isDiagnosticAnswer = false;
-            bool isCorrectAnswer = IsAnswerCorrect(answerData, index);
+            bool isCorrectAnswer = IsAnswerCorrect(answerData, sourceIndex);
             string feedBackText = isCorrectAnswer ? "Bonne réponse !" : "Mauvaise réponse !";
 
             if (!isCorrectAnswer) {
@@ -466,13 +477,14 @@ namespace Managers{
 
                 // Remember this incorrect attempt so that "Précédent" won't reset it.
                 if (_answerState == AnswerState.DIAGNOSTIC) {
-                    TipsManager.Instance.InitTips(_patientData.steps[_indexStep].diagnosticPhase[index].rappelTip);
-                    EnsureSize(_diagIncorrectTried, answerData.Count);
-                    if (index >= 0 && index < _diagIncorrectTried.Count) _diagIncorrectTried[index] = true;
+                    TipsManager.Instance.InitTips(_patientData.steps[_indexStep].diagnosticPhase[sourceIndex]
+                        .rappelTip);
+                    if (index >= 0 && index < _diagAnswerState.IncorrectTried.Count)
+                        _diagAnswerState.IncorrectTried[index] = true;
                 } else {
-                    TipsManager.Instance.InitTips(_patientData.steps[_indexStep].actionPhase[index].rappelTip);
-                    EnsureSize(_actionIncorrectTried, answerData.Count);
-                    if (index >= 0 && index < _actionIncorrectTried.Count) _actionIncorrectTried[index] = true;
+                    TipsManager.Instance.InitTips(_patientData.steps[_indexStep].actionPhase[sourceIndex].rappelTip);
+                    if (index >= 0 && index < _actionAnswerState.IncorrectTried.Count)
+                        _actionAnswerState.IncorrectTried[index] = true;
                 }
 
                 choiceButtons[index].interactable = false;
@@ -492,7 +504,7 @@ namespace Managers{
 
             GameManager.Instance.GameData.RecordsSteps(_step, isDiagnosticAnswer,
                 choiceButtons[index].GetComponentInChildren<TextMeshProUGUI>().text);
-            ShowAnswerDetail(answerData[index], feedBackText, isCorrectAnswer);
+            ShowAnswerDetail(answerData[sourceIndex], feedBackText, isCorrectAnswer);
 
             UITutorialControler.Instance.TutorialMichel(isCorrectAnswer ? 3 : 2);
         }
@@ -510,6 +522,34 @@ namespace Managers{
             }
 
             return answerData[index].isCorrect;
+        }
+
+        private AnswerDisplayState GetCurrentAnswerDisplayState(){
+            return _answerState == AnswerState.DIAGNOSTIC ? _diagAnswerState : _actionAnswerState;
+        }
+
+        private static void EnsureAnswerOrder(AnswerDisplayState state, int size, bool forcePositionChoice){
+            if (size < 0) size = 0;
+            if (state.ShuffledOrder.Count == size && state.IncorrectTried.Count == size) return;
+
+            state.ShuffledOrder.Clear();
+            state.IncorrectTried.Clear();
+
+            for (int i = 0; i < size; i++) {
+                state.ShuffledOrder.Add(i);
+                state.IncorrectTried.Add(false);
+            }
+
+            if (!forcePositionChoice) {
+                Random random = new Random();
+                state.ShuffledOrder = state.ShuffledOrder.OrderBy(x => random.Next()).ToList();
+            }
+        }
+
+        private static int GetSourceAnswerIndex(AnswerDisplayState state, int displayedIndex){
+            if (displayedIndex < 0 || displayedIndex >= state.ShuffledOrder.Count) return displayedIndex;
+
+            return state.ShuffledOrder[displayedIndex];
         }
 
         /// <summary>
