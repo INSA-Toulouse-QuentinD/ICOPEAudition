@@ -6,6 +6,7 @@ using System.Linq;
 using TMPro;
 using UI.Buttons;
 using UI.TutorialContents;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
@@ -305,7 +306,9 @@ namespace Managers{
             }
 
             if (diagCount > 0 && !_isDiagnosticValid) {
-                questionText.text = "Quel est votre diagnostic ?";
+                questionText.text = string.IsNullOrEmpty(algoStep.overrideDiagnosticQuestion)
+                    ? "Quel est votre diagnostic ?"
+                    : algoStep.overrideDiagnosticQuestion;
                 _answerState = AnswerState.DIAGNOSTIC;
                 CreateAnswerButtons(algoStep.diagnosticPhase);
                 ApplyTriedStateToButtons(_diagAnswerState);

@@ -37,6 +37,7 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase: []
     actionPhase:
     - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
@@ -80,18 +81,15 @@ MonoBehaviour:
     dialoguePatient: "Je n'ai entendu que 2 mots \xE0 droite et \xE0 gauche.\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
-    - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 2 mots
-        du c\xF4t\xE9 droit. ???"
+    - answerText: "Le test est normal car le patient a r\xE9ussi \xE0 entendre au
+        moins un mot de chaque c\xF4t\xE9."
       isCorrect: 0
-      correctionText: "Le test est bien pathologique mais lors du <b>test de chuchotement</b>,
-        l'\xE9valuation de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter
-        <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette
-        affirmation.\r\n\r\nDe plus, le patient \xE0 bien \xE9voqu\xE9 qu\u2019il
-        n\u2019avait entendu aucun mot du c\xF4t\xE9 de l\u2019oreille droite. \r\n\r\nLe
-        <b>crit\xE8re normal</b> pour consid\xE9rer qu'il n'y a <b>pas d\u2019anomalie
-        auditive</b> est la <b>r\xE9p\xE9tition correcte de l\u2019ensemble des 4
-        mots</b> (ou 3 minimum par oreille)."
+      correctionText: "Non, le test est bien pathologique. Le <b>crit\xE8re normal</b>
+        pour consid\xE9rer qu'il n'y a <b>pas d\u2019anomalie auditive</b> est la
+        <b>r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots</b> (ou 3 minimum
+        par oreille)."
       rappelTip: 0
       sprites: []
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 3 mots
@@ -171,6 +169,7 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
         avanc\xE9. "
@@ -246,7 +245,8 @@ MonoBehaviour:
   - type: 4
     dialoguePatient: "\r"
     predefinedAnswer: 
-    spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
+    spriteEarExams: {fileID: 21300000, guid: 3ab9b8e5836701e488cb3e15b161cd2f, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
       isCorrect: 0
@@ -320,8 +320,9 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
-    - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es."
+    - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es. [DEBUG!!!]"
       isCorrect: 1
       correctionText: "Le score > 8/40 permet de d\xE9pister une d\xE9ficience auditive
         (probabilit\xE9 11% pour un score entre 0 et 8) et le score > 16/40 permettait
@@ -386,9 +387,10 @@ MonoBehaviour:
       sprites: []
   - type: 5
     dialoguePatient: "Je n'arrive pas \xE0 savoir, j'ai entendu la m\xEAme chose
-      des deux c\xF4t\xE9s."
+      des deux c\xF4t\xE9s. [DEBUG!!!]"
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses r\xE9v\xE8lent une surdit\xE9 de perception."
       isCorrect: 0
@@ -467,8 +469,37 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: fc7d0d00f382e004d92c33d39f462ec6, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
-    - answerText: ???
+    - answerText: "Surdit\xE9 de transmission moyenne et sym\xE9trique."
+      isCorrect: 0
+      correctionText: ???
+      rappelTip: 0
+      sprites: []
+    - answerText: "Surdit\xE9 de transmission l\xE9g\xE8re et sym\xE9trique."
+      isCorrect: 0
+      correctionText: ???
+      rappelTip: 0
+      sprites: []
+    - answerText: "Surdit\xE9 neurosensorielle moyenne et sym\xE9trique"
+      isCorrect: 0
+      correctionText: ???
+      rappelTip: 0
+      sprites: []
+    - answerText: "Surdit\xE9 neurosensorielle l\xE9g\xE8re et sym\xE9trique."
+      isCorrect: 0
+      correctionText: ???
+      rappelTip: 0
+      sprites: []
+    actionPhase: []
+  - type: 7
+    dialoguePatient: 
+    predefinedAnswer: 
+    spriteEarExams: {fileID: 21300000, guid: fc7d0d00f382e004d92c33d39f462ec6, type: 3}
+    overrideDiagnosticQuestion: "Quelle est la cause la plus probable de ses acouph\xE8nes
+      ?"
+    diagnosticPhase:
+    - answerText: Presbyacousie
       isCorrect: 1
       correctionText: ???
       rappelTip: 0
@@ -496,7 +527,8 @@ MonoBehaviour:
         en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
       rappelTip: 0
       sprites: []
-    - answerText: ???
+    - answerText: 'Je lui propose un prochain rendez-vous de suivi ICOPE. [DEBUG!!!
+        Surveillance]'
       isCorrect: 0
       correctionText: ???
       rappelTip: 0
@@ -508,7 +540,7 @@ MonoBehaviour:
         de perception comme la presbyacousie."
       rappelTip: 0
       sprites: []
-    - answerText: ???
+    - answerText: "Je lui fait passer un scanner c\xE9r\xE9bral"
       isCorrect: 0
       correctionText: ???
       rappelTip: 0

@@ -78,17 +78,13 @@ MonoBehaviour:
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     diagnosticPhase:
-    - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 2 mots
-        du c\xF4t\xE9 droit. ???"
+    - answerText: "Le test est normal car le patient a r\xE9ussi \xE0 entendre au
+        moins un mot de chaque c\xF4t\xE9."
       isCorrect: 0
-      correctionText: "Le test est bien pathologique mais lors du <b>test de chuchotement</b>,
-        l'\xE9valuation de l'audition consiste g\xE9n\xE9ralement \xE0 faire r\xE9p\xE9ter
-        <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette
-        affirmation.\r\n\r\nDe plus, le patient \xE0 bien \xE9voqu\xE9 qu\u2019il
-        n\u2019avait entendu aucun mot du c\xF4t\xE9 de l\u2019oreille droite. \r\n\r\nLe
-        <b>crit\xE8re normal</b> pour consid\xE9rer qu'il n'y a <b>pas d\u2019anomalie
-        auditive</b> est la <b>r\xE9p\xE9tition correcte de l\u2019ensemble des 4
-        mots</b> (ou 3 minimum par oreille)."
+      correctionText: "Non, le test est bien pathologique. Le <b>crit\xE8re normal</b>
+        pour consid\xE9rer qu'il n'y a <b>pas d\u2019anomalie auditive</b> est la
+        <b>r\xE9p\xE9tition correcte de l\u2019ensemble des 4 mots</b> (ou 3 minimum
+        par oreille)."
       rappelTip: 0
       sprites: []
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 3 mots
@@ -260,11 +256,10 @@ MonoBehaviour:
       - {fileID: 21300000, guid: 6751ff46d80eb624ca7a0619b16be793, type: 3}
     - answerText: "Il s\u2019agit d\u2019un bouchon de c\xE9rumen."
       isCorrect: 1
-      correctionText: "Oui, selon la formation et la forme du bouchon de c\xE9rumen,
-        on peut aussi proc\xE9der \xE0 une aspiration (bouchons \xE0 la sortie du
-        Conduit Auditif Externe, plut\xF4t mous ; ou encore les m\xE9thodes avec
-        curette si le bouchon est lat\xE9ral et qu\u2019il est possible de glisser
-        la curette entre le bouchon et la paroi du conduit auditif externe."
+      correctionText: "Lors de l\u2019examen, on observe une masse brun\xE2tre, homog\xE8ne
+        et mate, obstruant le conduit auditif externe, sans visualisation du tympan
+        ni des rep\xE8res anatomiques habituels. Ces \xE9l\xE9ments sont caract\xE9ristiques
+        d\u2019un bouchon de c\xE9rumen."
       rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: f503c7a4e7193c945b6f71187b1b4708, type: 3}
@@ -282,24 +277,35 @@ MonoBehaviour:
     - answerText: "Je tente une ablation du BDC par la m\xE9thode de l\u2019irrigation,
         apr\xE8s v\xE9rification de l\u2019absence de CI"
       isCorrect: 1
-      correctionText: ???
+      correctionText: "Oui, selon la formation et la forme du bouchon de c\xE9rumen,
+        on peut aussi proc\xE9der \xE0 une aspiration (bouchons \xE0 la sortie du
+        Conduit Auditif Externe, plut\xF4t mous ; ou encore les m\xE9thodes avec
+        curette si le bouchon est lat\xE9ral et qu\u2019il est possible de glisser
+        la curette entre le bouchon et la paroi du conduit auditif externe."
       rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
       - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
     - answerText: "Je prescris des gouttes et j\u2019attends 8 jours."
       isCorrect: 0
-      correctionText: ???
+      correctionText: "Non\_car c\u2019est un BDC. Il faut r\xE9aliser un diagnostic
+        clinique, si le BDC est non obstructif ou asymptomatique et ne g\xEAnant
+        pas l\u2019examen\_: on ne le retire pas, dans les autres cas on le retire.
+        [DEBUG!!!]"
       rappelTip: 0
       sprites: []
     - answerText: "Je passe \xE0 l\u2019audiom\xE9trie."
       isCorrect: 0
-      correctionText: ???
+      correctionText: "Non\_car c\u2019est un BDC. Il faut r\xE9aliser un diagnostic
+        clinique, si le BDC est non obstructif ou asymptomatique et ne g\xEAnant
+        pas l\u2019examen\_: on ne le retire pas, dans les autres cas on le retire."
       rappelTip: 0
       sprites: []
     - answerText: "Je r\xE9alise une acoum\xE9trie"
       isCorrect: 0
-      correctionText: ???
+      correctionText: "Non\_car c\u2019est un BDC. Il faut r\xE9aliser un diagnostic
+        clinique, si le BDC est non obstructif ou asymptomatique et ne g\xEAnant
+        pas l\u2019examen\_: on ne le retire pas, dans les autres cas on le retire."
       rappelTip: 0
       sprites: []
   - type: 4

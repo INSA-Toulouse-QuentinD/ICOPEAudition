@@ -10,7 +10,7 @@ namespace PatientData.AlgoData.Editor{
             SerializedProperty isCorrectProp = property.FindPropertyRelative("isCorrect");
             SerializedProperty answerTextProp = property.FindPropertyRelative("answerText");
 
-            bool isCorrect = isCorrectProp != null && isCorrectProp.boolValue;
+            bool isCorrect = isCorrectProp is{ boolValue: true };
             string title = answerTextProp != null && !string.IsNullOrWhiteSpace(answerTextProp.stringValue)
                 ? answerTextProp.stringValue
                 : label.text;
@@ -26,10 +26,23 @@ namespace PatientData.AlgoData.Editor{
 
             if (property.isExpanded) {
                 EditorGUI.indentLevel++;
-                Rect contentRect = new Rect(position.x, foldRect.yMax + EditorGUIUtility.standardVerticalSpacing,
-                    position.width,
-                    position.height - EditorGUIUtility.singleLineHeight - EditorGUIUtility.standardVerticalSpacing);
-                EditorGUI.PropertyField(contentRect, property, GUIContent.none, true);
+
+                float y = foldRect.yMax + EditorGUIUtility.standardVerticalSpacing;
+                SerializedProperty child = property.Copy();
+                SerializedProperty endProperty = child.GetEndProperty();
+
+                if (child.NextVisible(true)) {
+                    do {
+                        if (SerializedProperty.EqualContents(child, endProperty))
+                            break;
+
+                        float childHeight = EditorGUI.GetPropertyHeight(child, true);
+                        Rect childRect = new Rect(position.x, y, position.width, childHeight);
+                        EditorGUI.PropertyField(childRect, child, true);
+                        y += childHeight + EditorGUIUtility.standardVerticalSpacing;
+                    } while (child.NextVisible(false));
+                }
+
                 EditorGUI.indentLevel--;
             }
 
@@ -41,8 +54,21 @@ namespace PatientData.AlgoData.Editor{
             if (!property.isExpanded)
                 return h;
 
-            // Draw children without the root foldout label
-            return h + EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(property, true);
+            float childrenHeight = 0f;
+            SerializedProperty child = property.Copy();
+            SerializedProperty endProperty = child.GetEndProperty();
+
+            if (child.NextVisible(true)) {
+                do {
+                    if (SerializedProperty.EqualContents(child, endProperty))
+                        break;
+
+                    childrenHeight += EditorGUI.GetPropertyHeight(child, true) +
+                                      EditorGUIUtility.standardVerticalSpacing;
+                } while (child.NextVisible(false));
+            }
+
+            return h + EditorGUIUtility.standardVerticalSpacing + childrenHeight;
         }
     }
 }
