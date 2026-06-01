@@ -288,12 +288,10 @@ namespace Managers{
             
             foreach (string item in savedItems) {
                 Transform loadedItem = items.Find(item);
-                if (loadedItem) {
-                    loadedItem.gameObject.SetActive(true);
-                } else {
-                    loadedItem = itemButtons.Find(item);
-                    if (loadedItem) loadedItem.gameObject.GetComponent<Button>().interactable = false;
-                }
+                if (loadedItem) loadedItem.gameObject.SetActive(true);
+
+                loadedItem = itemButtons.Find(item);
+                if (loadedItem) loadedItem.gameObject.GetComponent<Button>().interactable = false;
             }
         }
     }

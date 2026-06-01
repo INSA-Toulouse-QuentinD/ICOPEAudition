@@ -33,7 +33,6 @@ namespace UI.Boutique{
                 GameManager.Instance.Money -= price;
                 objectToDisplay.SetActive(true);
                 GameManager.AddBoughtItem(objectToDisplay.name);
-                GameManager.AddBoughtItem(gameObject.name);
                 _button.interactable = false;
                 GameManager.Instance.AudioManager.PlaySFX("money_down");
             }
