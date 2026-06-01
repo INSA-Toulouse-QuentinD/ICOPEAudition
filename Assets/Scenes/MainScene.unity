@@ -127,21 +127,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 39837559230900285, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Poster
-      objectReference: {fileID: 0}
     - target: {fileID: 444901210283422795, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.94397914
       objectReference: {fileID: 0}
     - target: {fileID: 444901210283422795, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 606099573626578008, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Phone
+    - target: {fileID: 534370942245309120, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 534370942245309120, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1030194345309459712, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_Name
@@ -159,17 +159,13 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1236668797130986251, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Value
-      value: 0.50000006
-      objectReference: {fileID: 0}
     - target: {fileID: 2069660189076532495, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2069660189076532495, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2417210929688175964, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.x
@@ -182,14 +178,6 @@ PrefabInstance:
     - target: {fileID: 2417210929688175964, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2618844574669281042, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Carapuce
-      objectReference: {fileID: 0}
-    - target: {fileID: 2672392250037548009, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Aloe
       objectReference: {fileID: 0}
     - target: {fileID: 3024259969491515581, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -231,33 +219,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3060461333282787231, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Table
-      objectReference: {fileID: 0}
-    - target: {fileID: 3274592244384051010, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Motisma
-      objectReference: {fileID: 0}
-    - target: {fileID: 3472440856504351476, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Bulbizarre
-      objectReference: {fileID: 0}
     - target: {fileID: 4039347602986064336, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4546987258943868143, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5317474963261391478, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Size
-      value: 0.94397914
-      objectReference: {fileID: 0}
-    - target: {fileID: 5317474963261391478, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Value
-      value: -0.0000005704227
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5509480966290675915, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.x
@@ -271,17 +239,13 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5532531183537310619, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Roselia
+    - target: {fileID: 6090514175159144927, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7315425617133445701, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Artikodin
-      objectReference: {fileID: 0}
-    - target: {fileID: 9201990945539624373, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
-      propertyPath: m_Name
-      value: Neko
+    - target: {fileID: 6090514175159144927, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

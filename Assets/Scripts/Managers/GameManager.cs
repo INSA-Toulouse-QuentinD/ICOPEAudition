@@ -287,11 +287,13 @@ namespace Managers{
             string[] savedItems = PlayerPrefs.GetString("items", "").Split(";");
             
             foreach (string item in savedItems) {
+                if (string.IsNullOrEmpty(item)) continue;
+                
                 Transform loadedItem = items.Find(item);
-                if (loadedItem) loadedItem.gameObject.SetActive(true);
+                if (loadedItem != null) loadedItem.gameObject.SetActive(true);
 
                 loadedItem = itemButtons.Find(item);
-                if (loadedItem) loadedItem.gameObject.GetComponent<Button>().interactable = false;
+                if (loadedItem != null) loadedItem.gameObject.GetComponent<Button>().interactable = false;
             }
         }
     }
