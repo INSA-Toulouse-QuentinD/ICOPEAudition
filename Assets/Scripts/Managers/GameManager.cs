@@ -271,7 +271,7 @@ namespace Managers{
             LoadListItems();
 
             //DEBUG!!! Money = PlayerPrefs.GetInt("money", 0);
-            Money = 0;
+            Money = 1000;
             isTutorialEnable = PlayerPrefs.GetInt("enableTutorial") == 1;
             AudioManager.PlayBGM("skyline");
 
@@ -282,23 +282,17 @@ namespace Managers{
 
         // ON START LOAD ITEM BOUGHT DURING THE LAST SESSION
         private void LoadListItems(){
-            // TOO CHANGE - LATER
-            Transform items = gameMenu.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(1);
-
-            //DEBUG!!! string[] savedItems = PlayerPrefs.GetString("items", "").Split(";");
-            string[] savedItems = { };
-            for (int i = 0; i < items.childCount; i++) {
-                foreach (string item in savedItems) {
-                    Transform loadedItem = items.GetChild(i);
-                    if (item.Equals(loadedItem.name)) loadedItem.gameObject.SetActive(true);
-                }
-            }
-
+            Transform items = gameMenu.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(2);
             Transform itemButtons = shopPanel.transform.GetChild(0).GetChild(0).GetChild(1);
-            for (int i = 0; i < itemButtons.childCount; i++) {
-                foreach (string item in savedItems) {
-                    Transform loadedItem = itemButtons.GetChild(i);
-                    if (item.Equals(loadedItem.name)) loadedItem.gameObject.GetComponent<Button>().interactable = false;
+            string[] savedItems = PlayerPrefs.GetString("items", "").Split(";");
+            
+            foreach (string item in savedItems) {
+                Transform loadedItem = items.Find(item);
+                if (loadedItem) {
+                    loadedItem.gameObject.SetActive(true);
+                } else {
+                    loadedItem = itemButtons.Find(item);
+                    if (loadedItem) loadedItem.gameObject.GetComponent<Button>().interactable = false;
                 }
             }
         }

@@ -358,8 +358,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -125, y: -311}
-  m_SizeDelta: {x: 16.9, y: 21.836718}
+  m_AnchoredPosition: {x: -823, y: -311}
+  m_SizeDelta: {x: 17, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &8500920633691505405
 SpriteRenderer:
@@ -1625,14 +1625,14 @@ RectTransform:
   m_GameObject: {fileID: 3247505282427767834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 250.00002, y: 250.00002, z: 250.00002}
+  m_LocalScale: {x: 225, y: 225, z: 225}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3099830836713390576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1344, y: -95}
+  m_AnchoredPosition: {x: 1362.7, y: -129.6}
   m_SizeDelta: {x: 0.46, y: 1.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4337220745891201993
@@ -1707,7 +1707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1335, y: -287}
+  m_AnchoredPosition: {x: -1264, y: -287}
   m_SizeDelta: {x: 1522, y: 1920}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &626302703642969963
@@ -3118,7 +3118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -123, y: -396}
+  m_AnchoredPosition: {x: -823, y: -396}
   m_SizeDelta: {x: 4.99, y: 4.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7011460177483008901
@@ -3539,7 +3539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1502, y: -58}
+  m_AnchoredPosition: {x: 1502, y: -68.1}
   m_SizeDelta: {x: 0.66, y: 2.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8799381103831261968
@@ -3690,7 +3690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -728, y: 33}
+  m_AnchoredPosition: {x: -841, y: 33}
   m_SizeDelta: {x: 1667, y: 1667}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &43273050805250644
@@ -3893,12 +3893,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1070154716554418982}
   - {fileID: 2137025383970060807}
   - {fileID: 7012343398961114984}
   - {fileID: 8217990232946791981}
   - {fileID: 3848006728055860559}
   - {fileID: 3106134759516806019}
-  - {fileID: 1070154716554418982}
   - {fileID: 71139528991369231}
   - {fileID: 3934157386455793522}
   - {fileID: 1966838796143277028}
@@ -4531,7 +4531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8638484976359839155, guid: 3570255c8a3bc4242a3fa3f8acdab31c, type: 3}
       propertyPath: m_fontSize
-      value: 4.2
+      value: 36.5
       objectReference: {fileID: 0}
     - target: {fileID: 8638484976359839155, guid: 3570255c8a3bc4242a3fa3f8acdab31c, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
