@@ -175,7 +175,7 @@ namespace Managers{
 
                     UITutorialControler.Instance.TutorialMichel(4);
                     break;
-                case Step.Questionnary:
+                case Step.GoNoGo:
                     // Load questionary & answer
                     List<QuestionData> questions = questionnaireData.questions;
                     List<YesNo> answers = _patientData.steps[_indexStep].predefinedAnswer;
@@ -209,7 +209,7 @@ namespace Managers{
 
                     UITutorialControler.Instance.TutorialMichel(8);
                     break;
-                case Step.HhiesTest:
+                case Step.Hhies:
                     // Load patient ear image
                     _step7HhiesTest.SetImages(_patientData.steps[_indexStep].spriteEarExams,
                         _patientData.characterSprites[0]);
@@ -636,10 +636,10 @@ namespace Managers{
             _mappingDisplays = new Dictionary<Step, int>(){
                 { Step.CasePresentation, 0 },
                 { Step.WisperTest, 1 },
-                { Step.Questionnary, 2 },
+                { Step.GoNoGo, 2 },
                 { Step.Otoscopy, 3 },
                 { Step.WeberTest, 4 },
-                { Step.HhiesTest, 5 },
+                { Step.Hhies, 5 },
                 { Step.Audiometry, 6 },
             };
         }

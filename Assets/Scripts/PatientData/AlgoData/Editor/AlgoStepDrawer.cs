@@ -55,13 +55,13 @@ namespace PatientData.AlgoData.Editor{
                 y = Next(line);
             }
 
-            if (stepType == Step.Questionnary) {
+            if (stepType == Step.GoNoGo) {
                 line = new Rect(position.x, y, position.width, EditorGUI.GetPropertyHeight(predefinedProp, true));
                 EditorGUI.PropertyField(line, predefinedProp, true);
                 y = Next(line);
             }
 
-            if (stepType is Step.Otoscopy or Step.HhiesTest or Step.Audiometry) {
+            if (stepType is Step.Otoscopy or Step.Hhies or Step.Audiometry) {
                 line = new Rect(position.x, y, position.width, EditorGUI.GetPropertyHeight(spriteEarExamsProp, true));
                 EditorGUI.PropertyField(line, spriteEarExamsProp, true);
                 y = Next(line);
@@ -134,10 +134,10 @@ namespace PatientData.AlgoData.Editor{
             if (stepType is Step.WisperTest or Step.WeberTest)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(dialoguePatientProp, true);
 
-            if (stepType == Step.Questionnary)
+            if (stepType == Step.GoNoGo)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(predefinedProp, true);
 
-            if (stepType is Step.Otoscopy or Step.HhiesTest or Step.Audiometry)
+            if (stepType is Step.Otoscopy or Step.Hhies or Step.Audiometry)
                 h += EditorGUIUtility.standardVerticalSpacing + EditorGUI.GetPropertyHeight(spriteEarExamsProp, true);
 
             h += EditorGUIUtility.standardVerticalSpacing + EditorGUIUtility.singleLineHeight; // diagnostic phase foldout

@@ -56,7 +56,7 @@ namespace UI.ScoreContents{
                 case Step.WisperTest:
                     realName = $"Etape {stepNumber}: Test de chuchotement";
                     break;
-                case Step.Questionnary:
+                case Step.GoNoGo:
                     realName = $"Etape {stepNumber}: Questionnaire Go-No-Go";
                     break;
                 case Step.Otoscopy:
@@ -65,7 +65,7 @@ namespace UI.ScoreContents{
                 case Step.WeberTest:
                     realName = $"Etape {stepNumber}: Test Weber";
                     break;
-                case Step.HhiesTest:
+                case Step.Hhies:
                     realName = $"Etape {stepNumber}: Test HHIE-S";
                     break;
                 case Step.Audiometry:

@@ -9,11 +9,11 @@ namespace PatientData.AlgoData{
     public enum Step{
         CasePresentation,
         WisperTest,
-        Questionnary,
+        GoNoGo,
         AdditionalQuestionnaire,
         Otoscopy,
         WeberTest,
-        HhiesTest,
+        Hhies,
         Audiometry,
     }
 
