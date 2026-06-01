@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Audio;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,7 +25,6 @@ namespace Managers{
         public AudioManager AudioManager{ get; private set; }
         private PatientAnimation PatientAnimation{ get; set; }
         private StepManagerN StepManagerN{ get; set; }
-
 
         #region Structures
 
@@ -80,6 +80,12 @@ namespace Managers{
         [SerializeField] public GameObject tutorialPanel;
 
         [Header("Scripts")] [SerializeField] private PlayerScoreDisplayManager folderDivider;
+
+        [Header("Background")] [SerializeField]
+        private List<Sprite> listBackground;
+
+        [SerializeField] private Image stepBackground;
+        [SerializeField] private Image scoreBackground;
 
         #endregion
 
@@ -201,9 +207,15 @@ namespace Managers{
             var currentLevel = GameStateManager.GetCurrentLevel();
             var currentPatient = GameStateManager.GetCurrentPatientCase();
 
+            if (listBackground.Count > 0) {
+                Sprite sprite = listBackground[Random.Range(0, listBackground.Count)];
+                stepBackground.sprite = sprite;
+                scoreBackground.sprite = sprite;
+            }
+
             // SET ALGO STEP BY DEFAULT LOAD STEP 0 (RESTART THE PARCOURS EVEN IF PLAYER STOP DURING)
-            GameStateManager.SetStep(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient].steps[0]
-                .type);
+            GameStateManager.SetStep(
+                levelsData.patientByLevel[currentLevel].patientsCase[currentPatient].steps[0].type);
         }
 
         // PLAY AUDIO
@@ -257,7 +269,7 @@ namespace Managers{
             XmlManager.ValidateXML(_pathXmlFile, _pathXsdFile);
 
             LoadListItems();
-            
+
             //DEBUG!!! Money = PlayerPrefs.GetInt("money", 0);
             Money = 0;
             isTutorialEnable = PlayerPrefs.GetInt("enableTutorial") == 1;
