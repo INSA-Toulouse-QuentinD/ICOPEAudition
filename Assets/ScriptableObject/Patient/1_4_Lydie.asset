@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0049b67a3b555774f9c393f9988504b7, type: 3}
-  m_Name: 1_4_L
+  m_Name: 1_4_Lydie
   m_EditorClassIdentifier: 
   characterSprites:
   - {fileID: 2388940582529952283, guid: 222169cef653a4741a9a0e05a7267da0, type: 3}
   - {fileID: -759232035500662259, guid: 222169cef653a4741a9a0e05a7267da0, type: 3}
   isOnPhone: 0
-  lastName: Doe
-  firstName: L
+  lastName: Cibel
+  firstName: Lydie
   age: 84
   familySituation: 
   occupationalActivities: 
@@ -25,15 +25,14 @@ MonoBehaviour:
     Elle se plaint d\u2019une baisse auditive \xE0 gauche depuis quelques semaines,
     qui l\u2019inqui\xE8te un petit peu car elle n\u2019arrive pas \xE0 prendre RDV
     chez un ORL."
-  ADL: 6
-  IADL: 8
-  medicalHistory: "Aucun ant\xE9c\xE9dent ORL connu."
+  medicalHistory: 
   descriptionLevel: 
   steps:
   - type: 0
     dialoguePatient: "\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase: []
     actionPhase:
     - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
@@ -77,6 +76,7 @@ MonoBehaviour:
     dialoguePatient: "J'ai entendu 2 mots \xE0 gauche et 3 \xE0 droite.\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Le test est normal car le patient a r\xE9ussi \xE0 entendre au
         moins un mot de chaque c\xF4t\xE9."
@@ -159,6 +159,7 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
         avanc\xE9. "
@@ -235,6 +236,7 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 26192f65446b2384f8cd0a47836d5538, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
       isCorrect: 0
@@ -312,6 +314,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase: []
     actionPhase:
     - answerText: "Son otoscopie est normale, je r\xE9p\xE8te le test de chuchotement."
@@ -346,6 +349,7 @@ MonoBehaviour:
       droite."
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: Je poursuis avec HHIE-S.
       isCorrect: 0

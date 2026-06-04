@@ -24,11 +24,6 @@ namespace PatientData.Steps
         [Header("Context field")]
         [SerializeField] private TextMeshProUGUI contextField;
 
-        // MEDICAL AUTONOMIE DATA
-        [Header("Medical fields")]
-        [SerializeField] private TextMeshProUGUI adlField;
-        [SerializeField] private TextMeshProUGUI iadlField;
-
         // MEDICAL HISTORY DATA
         [Header("Medical history field")]
         [SerializeField] private TextMeshProUGUI historyField;
@@ -48,10 +43,6 @@ namespace PatientData.Steps
 
             // Set contexte data
             contextField.text = patientData.context;
-
-            // Set autonomie data
-            adlField.text = patientData.ADL;
-            iadlField.text = patientData.IADL;
 
             // Set medical history data
             historyField.text = patientData.medicalHistory;

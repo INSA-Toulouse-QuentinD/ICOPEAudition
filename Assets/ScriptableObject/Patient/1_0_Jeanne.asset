@@ -24,9 +24,7 @@ MonoBehaviour:
   context: "Adress\xE9e par son m\xE9decin g\xE9n\xE9raliste qui a fait le step1
     (test de chuchotement) qui est pathologique. Pas de mots restitu\xE9s \xE0 l\u2019oreille
     droite 1 seul mot restitu\xE9s \xE0 l\u2019autre oreille gauche."
-  ADL: 6
-  IADL: 8
-  medicalHistory: "N\xE9oplasie mammaire en r\xE9mission\_; a\xE9rateurs transtympaniques
+  medicalHistory: "N\xE9oplasie mammaire en r\xE9mission; a\xE9rateurs transtympaniques
     dans l\u2019enfance."
   descriptionLevel: "Jeanne Durand est votre premi\xE8re patiente. Vous devrez analyser
     ses sympt\xF4mes et ses r\xE9ponses en parcourant l'algorithme vu dans le cas
@@ -36,6 +34,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase: []
     actionPhase:
     - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
@@ -80,6 +79,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Ses r\xE9ponse montrent des signes d'un trouble neurologique avanc\xE9."
       isCorrect: 0
@@ -155,6 +155,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 074d65b9d59894e45a6ce7148c6c22f1, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
       isCorrect: 0
@@ -223,6 +224,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: c4249b8004b2a0746ae11898619a721d, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Cette otoscopie peut \xEAtre consid\xE9r\xE9e comme normale, en
         tous cas, cet aspect n\u2019est g\xE9n\xE9ralement pas associ\xE9 \xE0 une
@@ -314,6 +316,7 @@ MonoBehaviour:
     dialoguePatient: "J'ai entendu 2 mots \xE0 gauche et 2 mots \xE0 droite."
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: Le test est normal.
       isCorrect: 0
@@ -391,6 +394,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es."
       isCorrect: 1
@@ -461,6 +465,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: bf736be000460ec48b32643e9fc2c3e4, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Le score montre une surdit\xE9 de transmission bilat\xE9rale."
       isCorrect: 0

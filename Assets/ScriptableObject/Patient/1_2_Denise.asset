@@ -23,8 +23,6 @@ MonoBehaviour:
   occupationalActivities: Elle donne des cours de cuisine aux jeunes du quartier.
   context: "Adress\xE9e par un audioproth\xE9siste form\xE9 au rep\xE9rage ICOPE
     step 1, qui met en \xE9vidence un score pathologique."
-  ADL: 6
-  IADL: 8
   medicalHistory: "N\xE9oplasie mammaire en r\xE9mission; Allergie aux crustac\xE9s."
   descriptionLevel: "Denise Roux, ancienne cheffe cuisini\xE8re, vient vous voir
     apr\xE8s avoir \xE9t\xE9 adress\xE9e par son audioproth\xE9siste."
@@ -33,6 +31,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase: []
     actionPhase:
     - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
@@ -80,6 +79,7 @@ MonoBehaviour:
       \xE0 gauche."
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Il y a une anomalie car elle n\u2019a pas su restituer les 2 mots
         du c\xF4t\xE9 droit."
@@ -173,6 +173,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
         avanc\xE9."
@@ -249,6 +250,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 3baedf2dff3bdcd4194820c202086473, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Il existe une otomycose, je mets en place un traitement par gouttes
         auriculaire et lui conseille de respecter une \xE9viction aquatique pendant
@@ -288,6 +290,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase: []
     actionPhase:
     - answerText: "Son otoscopie est normale, je r\xE9p\xE8te le test de chuchotement."
@@ -322,6 +325,7 @@ MonoBehaviour:
       pour le 4\xE8me mot, j\u2019ai confondu \xAB\_Ballon\_\xBB et \xAB\_B\xE2ton\_\xBB."
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Le test est normal, je la rassure et lui propose un nouveau d\xE9pistage
         dans 6 mois."

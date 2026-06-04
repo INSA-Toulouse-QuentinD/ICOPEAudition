@@ -25,8 +25,6 @@ MonoBehaviour:
     de sa mutuelle, qui v\xE9hicule les informations concernant ICOPE. Il se plaint
     de ne pas toujours comprendre ses interlocuteurs, surtout dans un environnement
     bruyant. Il n\u2019a pas d\u2019ant\xE9c\xE9dent ORL connu."
-  ADL: 6
-  IADL: 8
   medicalHistory: 
   descriptionLevel: "G\xE9rard Fontaine, ancien agriculteur, vient vous voir car
     il ne comprend pas toujours ses interlocuteurs. "
@@ -35,6 +33,7 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase: []
     actionPhase:
     - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
@@ -77,6 +76,7 @@ MonoBehaviour:
     dialoguePatient: "J'ai entendu 2 mots \xE0 droite. J'ai entendu 2 mots \xE0 gauche.\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Le test est normal car le patient a r\xE9ussi \xE0 entendre au
         moins un mot de chaque c\xF4t\xE9."
@@ -153,6 +153,7 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
         avanc\xE9. "
@@ -229,6 +230,7 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 3e6df676f52d55447b4dc5b83d6ffa08, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
       isCorrect: 0
@@ -265,19 +267,11 @@ MonoBehaviour:
       - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
       - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
     actionPhase:
-    - answerText: Je lui propose un prochain rendez-vous de suivi ICOPE.
-      isCorrect: 0
-      correctionText: "<b>Il s\u2019agit d\u2019un cas complexe avec une indication
-        de prise en charge ORL.</b>"
-      rappelTip: 0
-      sprites:
-      - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
-      - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
     - answerText: "Je prescris une proth\xE8se auditive."
       isCorrect: 0
       correctionText: "<b>Il s\u2019agit d\u2019un cas complexe avec une indication
         de prise en charge ORL.</b>"
-      rappelTip: 0
+      rappelTip: 6
       sprites: []
     - answerText: "Je ne peux rien faire, je renvoie le patient vers l\u2019ORL"
       isCorrect: 1
@@ -286,3 +280,11 @@ MonoBehaviour:
         un nouveau niveau."
       rappelTip: 0
       sprites: []
+    - answerText: J'essaie d'irriguer
+      isCorrect: 0
+      correctionText: "<b>Il s\u2019agit d\u2019un cas complexe avec une indication
+        de prise en charge ORL.</b>"
+      rappelTip: 0
+      sprites:
+      - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
+      - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0049b67a3b555774f9c393f9988504b7, type: 3}
-  m_Name: 1_5_R
+  m_Name: 1_5_Rachel
   m_EditorClassIdentifier: 
   characterSprites:
   - {fileID: 5226648599251546133, guid: e52ebc8284505b649b87988cf62adcf2, type: 3}
   - {fileID: 5805579910426997946, guid: e52ebc8284505b649b87988cf62adcf2, type: 3}
   - {fileID: 8421416387262884326, guid: e52ebc8284505b649b87988cf62adcf2, type: 3}
   isOnPhone: 0
-  lastName: Doe
-  firstName: R
+  lastName: Bernier
+  firstName: Rachel
   age: 81
   familySituation: "Elle vit seule \xE0 domicile, en bonne autonomie."
   occupationalActivities: 
@@ -28,9 +28,7 @@ MonoBehaviour:
     ann\xE9es, mais non invalidant. Elle trouve juste cela fatigant quand elle est
     d\xE9j\xE0 fatigu\xE9e. Cela lui rappelle sa jeunesse, quand elle travaillait
     encore \xE0 l\u2019usine."
-  ADL: 6
-  IADL: 8
-  medicalHistory: 
+  medicalHistory: "Aucun ant\xE9c\xE9dent ORL connu."
   descriptionLevel: 
   steps:
   - type: 0

@@ -29,8 +29,6 @@ MonoBehaviour:
     de l\u2019alerte r\xE9alis\xE9e par un professionnel de sant\xE9 ICOPE, confirme
     cette suspicion de d\xE9clin et vous l\u2019adresse pour une \xE9valuation auditive.
     Vous le rencontrez pour la premi\xE8re fois."
-  ADL: 6
-  IADL: 8
   medicalHistory: "Dans ses ant\xE9c\xE9dents on retrouve une Hypertension art\xE9rielle
     trait\xE9e par Ramipril 5mg.\r"
   descriptionLevel: Ce tutoriel vous guide dans la prise en main du jeu et de l'algorithme.
@@ -39,6 +37,7 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase: []
     actionPhase:
     - answerText: "Je r\xE9alise une vid\xE9o-otoscopie."
@@ -84,6 +83,7 @@ MonoBehaviour:
       \xE0 gauche.\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Il y a une anomalie car il n\u2019a pas su restituer les 2 mots
         du c\xF4t\xE9 droit."
@@ -177,6 +177,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 00000000000000000000000000000000000000000000000000000000
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses montrent des signes d\u2019un trouble neurologique
         avanc\xE9. "
@@ -253,6 +254,7 @@ MonoBehaviour:
     dialoguePatient: "\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Il s\u2019agit d\u2019une otite moyenne aigu\xEB."
       isCorrect: 0
@@ -325,6 +327,7 @@ MonoBehaviour:
       des deux c\xF4t\xE9s."
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Ses r\xE9ponses r\xE9v\xE8lent une surdit\xE9 de perception."
       isCorrect: 0
@@ -403,6 +406,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es."
       isCorrect: 1
@@ -471,6 +475,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 5b62bf5af497b444fbc1267b2524724b, type: 3}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Le score montre une surdit\xE9 de transmission."
       isCorrect: 0

@@ -27,9 +27,6 @@ namespace PatientData
         [TextArea]
         public string context;
 
-        public string ADL = "6";
-        public string IADL = "8";
-
         [Header("Medical History")]
         [TextArea]
         public string medicalHistory;
