@@ -1259,7 +1259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -124.368286, y: 41.51111}
+  m_AnchoredPosition: {x: -124.368286, y: 41.5}
   m_SizeDelta: {x: 411.9648, y: 661.6921}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1903308240226204043
@@ -1959,15 +1959,15 @@ RectTransform:
   m_GameObject: {fileID: 4248174629091120444}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.008, y: 0.008, z: 0.008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1966838796143277028}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00099999, y: -1.4896117}
-  m_SizeDelta: {x: 82.25, y: 100.902954}
+  m_AnchoredPosition: {x: 0, y: -2.17}
+  m_SizeDelta: {x: 0.66, y: 2.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2278883421341498072
 CanvasRenderer:
@@ -2368,9 +2368,9 @@ RectTransform:
   m_Father: {fileID: 1091134798497282742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 3}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &2890209676706006602
 CanvasRenderer:
@@ -2567,7 +2567,7 @@ RectTransform:
   m_Father: {fileID: 7092182199360656730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.94370997, y: 0}
+  m_AnchorMax: {x: 0.94397914, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3226,9 +3226,9 @@ RectTransform:
   m_Father: {fileID: 1091134798497282742}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 3, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &4431436667637823794
 CanvasRenderer:
@@ -3311,8 +3311,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2325338605320134906}
   m_HandleRect: {fileID: 2548851965358997807}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.94370997
+  m_Value: -0.0000005704227
+  m_Size: 0.94397914
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3401,7 +3401,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7484898037488091549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
   m_Name: 
@@ -3645,7 +3645,7 @@ RectTransform:
   m_Father: {fileID: 8454164846415404000}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4032,7 +4032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton (7)
+      value: Phone
       objectReference: {fileID: 0}
     - target: {fileID: 5829768752779487281, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Sprite
@@ -4174,7 +4174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton (5)
+      value: Poster
       objectReference: {fileID: 0}
     - target: {fileID: 5829768752779487281, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Sprite
@@ -4677,7 +4677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton
+      value: Table
       objectReference: {fileID: 0}
     - target: {fileID: 6111666096862580162, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: price
@@ -4795,7 +4795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton (2)
+      value: Motisma
       objectReference: {fileID: 0}
     - target: {fileID: 5829768752779487281, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Sprite
@@ -4937,7 +4937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton (8)
+      value: Carapuce
       objectReference: {fileID: 0}
     - target: {fileID: 5829768752779487281, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Sprite
@@ -5079,7 +5079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton (4)
+      value: Aloe
       objectReference: {fileID: 0}
     - target: {fileID: 5829768752779487281, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Sprite
@@ -5221,7 +5221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton (1)
+      value: Bulbizarre
       objectReference: {fileID: 0}
     - target: {fileID: 5829768752779487281, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Sprite
@@ -5363,7 +5363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton (6)
+      value: Roselia
       objectReference: {fileID: 0}
     - target: {fileID: 5829768752779487281, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Sprite
@@ -6005,7 +6005,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SelectLevelsButton
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 559579122613452816, guid: 2dbb325d65baf7b4a89eb6d48d1a5109, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6184,7 +6185,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopButton
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 559579122613452816, guid: 2dbb325d65baf7b4a89eb6d48d1a5109, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5493581818405242784, guid: 2dbb325d65baf7b4a89eb6d48d1a5109, type: 3}
@@ -6292,7 +6294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton (9)
+      value: Artikodin
       objectReference: {fileID: 0}
     - target: {fileID: 5829768752779487281, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Sprite
@@ -6434,7 +6436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3437520032862141994, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Name
-      value: ItemButton (3)
+      value: Neko
       objectReference: {fileID: 0}
     - target: {fileID: 5829768752779487281, guid: 630bf45a77fcbad4ebbe6403067c2d6a, type: 3}
       propertyPath: m_Sprite
