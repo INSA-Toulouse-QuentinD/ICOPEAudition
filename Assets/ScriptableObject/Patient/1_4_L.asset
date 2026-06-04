@@ -231,7 +231,7 @@ MonoBehaviour:
         avec la r\xE9alisation de l\u2019examen physique (examen du pavillon et vid\xE9o-otoscopie)."
       rappelTip: 0
       sprites: []
-  - type: 4
+  - type: 3
     dialoguePatient: "\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 26192f65446b2384f8cd0a47836d5538, type: 3}
@@ -308,7 +308,7 @@ MonoBehaviour:
         pas l\u2019examen\_: on ne le retire pas, dans les autres cas on le retire."
       rappelTip: 0
       sprites: []
-  - type: 4
+  - type: 3
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}

@@ -10,7 +10,6 @@ namespace PatientData.AlgoData{
         CasePresentation,
         WisperTest,
         GoNoGo,
-        AdditionalQuestionnaire,
         Otoscopy,
         WeberTest,
         Hhies,

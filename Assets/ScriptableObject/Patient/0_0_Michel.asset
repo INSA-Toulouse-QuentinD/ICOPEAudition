@@ -249,7 +249,7 @@ MonoBehaviour:
         avec la r\xE9alisation de l\u2019examen physique (examen du pavillon et vid\xE9o-otoscopie)."
       rappelTip: 2
       sprites: []
-  - type: 4
+  - type: 3
     dialoguePatient: "\r"
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
@@ -320,7 +320,7 @@ MonoBehaviour:
         r\xE9aliser un examen audiom\xE9trique complet."
       rappelTip: 6
       sprites: []
-  - type: 5
+  - type: 4
     dialoguePatient: "Je n'arrive pas \xE0 savoir, j'ai entendu la m\xEAme chose
       des deux c\xF4t\xE9s."
     predefinedAnswer: 
@@ -399,7 +399,7 @@ MonoBehaviour:
       rappelTip: 0
       sprites:
       - {fileID: 21300000, guid: f503c7a4e7193c945b6f71187b1b4708, type: 3}
-  - type: 6
+  - type: 5
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
@@ -467,7 +467,7 @@ MonoBehaviour:
         appareillage audioproth\xE9tique."
       rappelTip: 0
       sprites: []
-  - type: 7
+  - type: 6
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 5b62bf5af497b444fbc1267b2524724b, type: 3}

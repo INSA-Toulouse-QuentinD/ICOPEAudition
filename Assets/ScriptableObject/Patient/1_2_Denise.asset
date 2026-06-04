@@ -245,7 +245,7 @@ MonoBehaviour:
         avec la r\xE9alisation de l\u2019examen physique (examen du pavillon et vid\xE9o-otoscopie)."
       rappelTip: 2
       sprites: []
-  - type: 4
+  - type: 3
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 3baedf2dff3bdcd4194820c202086473, type: 3}
@@ -284,7 +284,7 @@ MonoBehaviour:
       - {fileID: 21300000, guid: 90c37bdd3e40c8042a90077a4e4e2fed, type: 3}
       - {fileID: 21300000, guid: 9fa2f4e419dd64246badffa6beea228f, type: 3}
     actionPhase: []
-  - type: 4
+  - type: 3
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}

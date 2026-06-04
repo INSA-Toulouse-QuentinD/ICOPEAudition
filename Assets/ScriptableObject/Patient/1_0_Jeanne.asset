@@ -151,7 +151,7 @@ MonoBehaviour:
         avec la r\xE9alisation de l\u2019examen physique (examen du pavillon et vid\xE9o-otoscopie)."
       rappelTip: 0
       sprites: []
-  - type: 4
+  - type: 3
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: 074d65b9d59894e45a6ce7148c6c22f1, type: 3}
@@ -219,7 +219,7 @@ MonoBehaviour:
         on peut aussi proc\xE9der \xE0 une aspiration."
       rappelTip: 0
       sprites: []
-  - type: 4
+  - type: 3
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: c4249b8004b2a0746ae11898619a721d, type: 3}
@@ -387,7 +387,7 @@ MonoBehaviour:
         si n\xE9cessaire."
       rappelTip: 0
       sprites: []
-  - type: 6
+  - type: 5
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: a50fa5d32fa79a642b558b1fdc55654f, type: 3}
@@ -457,7 +457,7 @@ MonoBehaviour:
         de la surdit\xE9,\_et l\u2019indication ou non d\u2019un appareillage audioproth\xE9tique."
       rappelTip: 0
       sprites: []
-  - type: 7
+  - type: 6
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 21300000, guid: bf736be000460ec48b32643e9fc2c3e4, type: 3}
