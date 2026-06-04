@@ -2,13 +2,11 @@ using DG.Tweening;
 using Managers;
 using PatientData;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class PatientAnimation : MonoBehaviour{
     // Animation size variable
-    [SerializeField] private float scaleFactor = 1.15f;
-    [SerializeField] private float animationDuration = 2f;
-
     private Vector2 _defaultImageSize;
 
     // Interaction Area Variable
@@ -35,6 +33,51 @@ public class PatientAnimation : MonoBehaviour{
     public CanvasGroup fadePanel;
 
     private NewPatientData _newPatientData;
+
+    // Outline references
+    private Outline _outlineImageCharacter;
+    private Outline _outlineImageCharacterPhone;
+
+    private void Start(){
+        // Get Outline components
+        _outlineImageCharacter = imageCharacter.GetComponent<Outline>();
+        _outlineImageCharacterPhone = imageCharacterPhone.GetComponent<Outline>();
+        
+        // Disable outlines at start
+        if (_outlineImageCharacter != null) _outlineImageCharacter.enabled = false;
+        if (_outlineImageCharacterPhone != null) _outlineImageCharacterPhone.enabled = false;
+        
+        // Setup event triggers for hover
+        SetupHoverEvents(imageCharacter, _outlineImageCharacter);
+        SetupHoverEvents(imageCharacterPhone, _outlineImageCharacterPhone);
+    }
+
+    private void SetupHoverEvents(RectTransform imageRect, Outline outline){
+        if (outline == null) return;
+        
+        EventTrigger trigger = imageRect.GetComponent<EventTrigger>();
+        if (trigger == null) {
+            trigger = imageRect.gameObject.AddComponent<EventTrigger>();
+        }
+
+        // On Pointer Enter
+        EventTrigger.Entry entryEnter = new EventTrigger.Entry();
+        entryEnter.eventID = EventTriggerType.PointerEnter;
+        entryEnter.callback.AddListener((data) => {
+            if (imageRect.GetComponent<Button>().enabled) {
+                outline.enabled = true;
+            }
+        });
+        trigger.triggers.Add(entryEnter);
+
+        // On Pointer Exit
+        EventTrigger.Entry entryExit = new EventTrigger.Entry();
+        entryExit.eventID = EventTriggerType.PointerExit;
+        entryExit.callback.AddListener((data) => {
+            outline.enabled = false;
+        });
+        trigger.triggers.Add(entryExit);
+    }
 
     /// <summary>
     /// Set a new target position to the sprite to stimule life in the UI.
@@ -79,7 +122,7 @@ public class PatientAnimation : MonoBehaviour{
     /// </summary>
     private void AnimationSizeImage(bool isPhone){
         RectTransform rectTransform = isPhone ? imageCharacterPhone : imageCharacter;
-        rectTransform.DOSizeDelta(rectTransform.sizeDelta * scaleFactor, animationDuration / 2)
+        rectTransform.DOSizeDelta(rectTransform.sizeDelta * 1.02f, 1.75f)
             .SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine).SetId("sizeAnim");
     }
 

@@ -3463,8 +3463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79275e2296a2c754eadbba62d1b68cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleFactor: 1.05
-  animationDuration: 2
   interactionArea: {fileID: 5560224658569856509}
   imageCharacter: {fileID: 6118533601122355868}
   imageCharacterPhone: {fileID: 6834176929694495188}

@@ -718,6 +718,7 @@ GameObject:
   - component: {fileID: 3481586746774542791}
   - component: {fileID: 1460717950487458611}
   - component: {fileID: 2565671310788364195}
+  - component: {fileID: 6750543642994026131}
   m_Layer: 0
   m_Name: TutoCharaImage
   m_TagString: Untagged
@@ -850,6 +851,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6750543642994026131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726207324281613904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &890763662948282346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +2748,7 @@ GameObject:
   - component: {fileID: 5534211896775756850}
   - component: {fileID: 5795376040756849396}
   - component: {fileID: 7941664707892075217}
+  - component: {fileID: 7783134468760994701}
   m_Layer: 0
   m_Name: PhoneImage
   m_TagString: Untagged
@@ -2864,6 +2881,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7783134468760994701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458028998537908341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &6743418121603163929
 GameObject:
   m_ObjectHideFlags: 0
