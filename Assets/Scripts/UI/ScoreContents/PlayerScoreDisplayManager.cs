@@ -1,7 +1,6 @@
 using Managers;
 using PatientData.AlgoData;
 using System.Collections.Generic;
-using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +15,7 @@ namespace UI.ScoreContents{
         DiagnosticsFailed,
         ActionSuccess,
         ActionFailed,
-        Scores,
+        Scores, // même si plus utilisé, ne pas enlever ! Cela va tout décaler dans l'editor !!!
         SuccessRate,
         StepName,
         DiagnosticsDetails,
@@ -71,14 +70,9 @@ namespace UI.ScoreContents{
                     case FieldsName.ActionFailed:
                         fieldsTable.fields.text = nbActionFailed.ToString();
                         break;
-                    case FieldsName.Scores:
-                        fieldsTable.fields.text =
-                            ((nbStepSucc - nbStepFailed) * 10 +
-                             (nbDiagSucc - nbDiagFailed + nbActionSucc + nbActionFailed) * 5).ToString();
-                        break;
                     case FieldsName.SuccessRate:
                         fieldsTable.fields.text = Mathf.RoundToInt(succesRate) + "%";
-                        GameManager.Instance.Money += Mathf.RoundToInt(succesRate / 5f);
+                        GameManager.Instance.Money += Mathf.RoundToInt(succesRate / 4f);
                         break;
                 }
             }

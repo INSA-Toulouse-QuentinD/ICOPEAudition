@@ -9,13 +9,10 @@ namespace UI.ScoreContents{
         [SerializeField] private ButtonPressDetector openDetailsButton;
         [SerializeField] private RectTransform folderDivider, folderInside, folderCover;
         [SerializeField] private GameObject[] folderHideElements;
-        [SerializeField] private RectTransform[] pages;
         [SerializeField] private Button[] pagesNavigationButs;
-
 
         [SerializeField] private GameObject prefab;
         [SerializeField] private Transform parentTransform;
-
 
         private bool _folderOpen;
         private int _pageId;
@@ -44,12 +41,13 @@ namespace UI.ScoreContents{
             foreach (var page in _pagesSteps) {
                 if (page != null) Destroy(page.gameObject);
             }
+
             _pagesSteps.Clear();
 
             if (_records == null || _records.Count == 0) {
                 return;
             }
-            
+
             var ordered = new List<KeyValuePair<string, GameData.StepRecords>>(_records);
 
             int stepNumber = 1;

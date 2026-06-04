@@ -270,8 +270,7 @@ namespace Managers{
 
             LoadListItems();
 
-            //DEBUG!!! Money = PlayerPrefs.GetInt("money", 0);
-            Money = 1000;
+            Money = PlayerPrefs.GetInt("money", 0);
             isTutorialEnable = PlayerPrefs.GetInt("enableTutorial") == 1;
             AudioManager.PlayBGM("skyline");
 
