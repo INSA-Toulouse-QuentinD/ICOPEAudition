@@ -148,12 +148,12 @@ TextureImporter:
       name: DoctorSprite_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 258
-        width: 378
-        height: 1153
+        x: 27
+        y: 259
+        width: 376
+        height: 1151
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: DoctorSprite_1
       rect:
         serializedVersion: 2
-        x: 434
-        y: 259
-        width: 378
-        height: 1150
+        x: 435
+        y: 260
+        width: 376
+        height: 1148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: DoctorSprite_2
       rect:
         serializedVersion: 2
-        x: 869
-        y: 260
-        width: 443
-        height: 1149
+        x: 870
+        y: 261
+        width: 441
+        height: 1147
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,11 +210,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: DoctorSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 297
+        width: 490
+        height: 1013
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f60ab25b39a1a4fba011fc5531b0ae
+      internalID: -551014991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0413954619836f34995bf2a5ae7675cd
     internalID: 0
     vertices: []
     indices: 
@@ -222,11 +244,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       DoctorSprite_0: 7980856816745209919
       DoctorSprite_1: -8603473853748788035
       DoctorSprite_2: 4467637358421277366
+      DoctorSprite_3: -551014991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
