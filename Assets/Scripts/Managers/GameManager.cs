@@ -21,7 +21,7 @@ namespace Managers{
 
         public static GameManager Instance;
         public GameStateManager GameStateManager{ get; private set; }
-        public GameData GameData{ get; set; }
+        public GameData GameData{ get; private set; }
         public AudioManager AudioManager{ get; private set; }
         private PatientAnimation PatientAnimation{ get; set; }
         private StepManagerN StepManagerN{ get; set; }
@@ -263,10 +263,18 @@ namespace Managers{
             AudioManager.LoopSfx(true, "AMBIANT");
         }
 
-
         void Start(){
             // Check validity of tutorial XML
             XmlManager.ValidateXML(_pathXmlFile, _pathXsdFile);
+
+            StartCoroutine(PatientDataJsonLoader.LoadLevelData(levels => {
+                foreach (PatientCaseLevel level in levels.patientByLevel) {
+                    Debug.Log($"_____{level.name}_____");
+                    foreach (PatientData.PatientData cas in level.patientsCase) {
+                        Debug.Log($"{cas.firstName}");
+                    }
+                }
+            }));
 
             LoadListItems();
 
@@ -284,10 +292,10 @@ namespace Managers{
             Transform items = gameMenu.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(2);
             Transform itemButtons = shopPanel.transform.GetChild(0).GetChild(0).GetChild(1);
             string[] savedItems = PlayerPrefs.GetString("items", "").Split(";");
-            
+
             foreach (string item in savedItems) {
                 if (string.IsNullOrEmpty(item)) continue;
-                
+
                 Transform loadedItem = items.Find(item);
                 if (loadedItem != null) loadedItem.gameObject.SetActive(true);
 

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0049b67a3b555774f9c393f9988504b7, type: 3}
+  m_Script: {fileID: 11500000, guid: d59f2787b58e460a9163cc253a56b9f0, type: 3}
   m_Name: 1_1_Elisabeth
   m_EditorClassIdentifier: 
   characterSprites:
@@ -22,8 +22,6 @@ MonoBehaviour:
   familySituation: Ancienne professeure de lettre.
   occupationalActivities: Elle organise un club de lecture.
   context: "Etape 1 en autodiagnostic avec H\xF6ra : patho, gestion de l\u2019alerte."
-  ADL: 6
-  IADL: 8
   medicalHistory: "A l\u2019interrogatoire lors de votre gestion d\u2019alerte, vous
     apprenez qu\u2019elle pr\xE9sente une surdit\xE9 depuis environ 2 ans, qui semble
     s\u2019aggraver quand elle a des vertiges. Elle a pris un RDV chez l\u2019ORL,
@@ -36,6 +34,7 @@ MonoBehaviour:
     dialoguePatient: 
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
+    overrideDiagnosticQuestion: 
     diagnosticPhase:
     - answerText: "Je convoque la patiente pour r\xE9aliser l\u2019otoscopie et l\u2019audiom\xE9trie."
       isCorrect: 0
@@ -92,7 +91,7 @@ MonoBehaviour:
     - answerText: "Je l\u2019adresse chez l\u2019ORL."
       isCorrect: 1
       correctionText: "Oui, surdit\xE9 fluctuante et vertige : 2 raisons de l\u2019adresser.
-        Tableau tr\xE8s \xE9vocateur d\u2019une maladie de M\xE9ni\xE8re.\r\n\r\n<b>Bravo
+        Tableau tr\xE8s \xE9vocateur d\u2019une maladie de M\xE9ni\xE8re.\n\n<b>Bravo
         !!</b> Tu as bien identifi\xE9 le cas pr\xE9sent.\n\nPrise en charge r\xE9ussie.
         Tu as d\xE9bloqu\xE9 un nouveau niveau."
       rappelTip: 0

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0049b67a3b555774f9c393f9988504b7, type: 3}
+  m_Script: {fileID: 11500000, guid: d59f2787b58e460a9163cc253a56b9f0, type: 3}
   m_Name: 0_0_Michel
   m_EditorClassIdentifier: 
   characterSprites:
@@ -212,9 +212,9 @@ MonoBehaviour:
         ORL. "
       isCorrect: 0
       correctionText: "Les urgences ORL et autres situations n\xE9cessitant un avis
-        ORL, sont plut\xF4t \xE9voqu\xE9es lorsque le candidat r\xE9pond \xAB\_OUI\_\xBB
-        \xE0 une ou plusieurs questions.\r\n\r\nLes urgences vraies, justifiant de
-        la mise en place d\u2019un traitement rapide sont :\r\n- Les surdit\xE9s
+        ORL, sont plut\xF4t \xE9voqu\xE9es lorsque le candidat r\xE9pond \xAB OUI
+        \xBB \xE0 une ou plusieurs questions.\r\n\r\nLes urgences vraies, justifiant
+        de la mise en place d\u2019un traitement rapide sont :\r\n- Les surdit\xE9s
         brusques r\xE9centes, indiquant une corticoth\xE9rapie.\r\n- Les otorrh\xE9es
         avec otalgies, \xE9vocatrices d\u2019une otite externe."
       rappelTip: 0

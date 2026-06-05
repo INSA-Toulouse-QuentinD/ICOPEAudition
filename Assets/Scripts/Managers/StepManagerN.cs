@@ -1,4 +1,3 @@
-using PatientData;
 using PatientData.AlgoData;
 using PatientData.Steps;
 using System.Collections.Generic;
@@ -6,7 +5,6 @@ using System.Linq;
 using TMPro;
 using UI.Buttons;
 using UI.TutorialContents;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
@@ -65,22 +63,22 @@ namespace Managers{
 
         // Enums
         private enum InteractionState{
-            ISREADING,
-            ISANSWERING,
-            ISCORRECTION
+            Isreading,
+            Isanswering,
+            Iscorrection
         };
 
         private InteractionState _interactionState;
 
         private enum AnswerState{
-            DIAGNOSTIC,
-            ACTION
+            Diagnostic,
+            Action
         }
 
         private AnswerState _answerState;
 
         // Private class 
-        private NewPatientData _patientData;
+        private PatientData.PatientData _patientData;
 
         // Private variables
         private int _indexStep;
@@ -110,11 +108,11 @@ namespace Managers{
         /// Initializes the patient data and resets the step index and display index
         /// to start fresh for a new patient case.
         /// </summary>
-        /// <param name="newPatient">The new patient data to initialize.</param>
-        public void Initialize(NewPatientData newPatient){
+        /// <param name="patient">The new patient data to initialize.</param>
+        public void Initialize(PatientData.PatientData patient){
             _indexStep = 0; // reset current step to 0
             _currentDisplay = 0;
-            _patientData = newPatient;
+            _patientData = patient;
 
             ResetTriedState();
         }
@@ -135,7 +133,7 @@ namespace Managers{
 
             _step = currentStep;
 
-            _interactionState = InteractionState.ISREADING;
+            _interactionState = InteractionState.Isreading;
 
             // Set bool to false each step
             _isDiagnosticValid = false;
@@ -247,7 +245,7 @@ namespace Managers{
             TextMeshProUGUI confirmeNextText = confirmNextButton.GetComponentInChildren<TextMeshProUGUI>();
             TextMeshProUGUI retourText = returnButton.GetComponentInChildren<TextMeshProUGUI>();
 
-            if (_interactionState == InteractionState.ISREADING) {
+            if (_interactionState == InteractionState.Isreading) {
                 // update buttons and text
                 returnButton.interactable = false;
                 retourText.text = "Précédent";
@@ -255,7 +253,7 @@ namespace Managers{
                 confirmeNextText.text = "Répondre";
             }
 
-            if (_interactionState == InteractionState.ISANSWERING) {
+            if (_interactionState == InteractionState.Isanswering) {
                 // Update button and text
                 returnButton.interactable = true;
                 retourText.text = "Précédent";
@@ -263,13 +261,13 @@ namespace Managers{
                 confirmeNextText.text = "Suivant";
             }
 
-            if (_interactionState == InteractionState.ISCORRECTION) {
+            if (_interactionState == InteractionState.Iscorrection) {
                 bool isValid = false;
                 switch (_answerState) {
-                    case AnswerState.DIAGNOSTIC:
+                    case AnswerState.Diagnostic:
                         isValid = _isDiagnosticValid;
                         break;
-                    case AnswerState.ACTION:
+                    case AnswerState.Action:
                         isValid = _isActionValid;
                         break;
                 }
@@ -309,7 +307,7 @@ namespace Managers{
                 questionText.text = string.IsNullOrEmpty(algoStep.overrideDiagnosticQuestion)
                     ? "Quel est votre diagnostic ?"
                     : algoStep.overrideDiagnosticQuestion;
-                _answerState = AnswerState.DIAGNOSTIC;
+                _answerState = AnswerState.Diagnostic;
                 CreateAnswerButtons(algoStep.diagnosticPhase);
                 ApplyTriedStateToButtons(_diagAnswerState);
                 return;
@@ -317,7 +315,7 @@ namespace Managers{
 
             if (actionCount > 0 && _isDiagnosticValid) {
                 questionText.text = "Que faites-vous ?";
-                _answerState = AnswerState.ACTION;
+                _answerState = AnswerState.Action;
                 CreateAnswerButtons(algoStep.actionPhase);
                 ApplyTriedStateToButtons(_actionAnswerState);
 
@@ -396,7 +394,7 @@ namespace Managers{
                     GameManager.Instance.GameStateManager.NextStep(_patientData.steps[_indexStep]);
                 }
             } else {
-                _interactionState = InteractionState.ISANSWERING;
+                _interactionState = InteractionState.Isanswering;
                 ClearAllDisplay();
                 questionsDisplay.SetActive(true);
                 SetResponses();
@@ -411,8 +409,8 @@ namespace Managers{
         private void ButtonBack(){
             TipsManager.Instance.HideButton();
 
-            if (_interactionState == InteractionState.ISCORRECTION) {
-                if (_answerState == AnswerState.DIAGNOSTIC) {
+            if (_interactionState == InteractionState.Iscorrection) {
+                if (_answerState == AnswerState.Diagnostic) {
                     _isDiagnosticValid = false;
                 } else {
                     _isActionValid = false;
@@ -420,15 +418,15 @@ namespace Managers{
 
                 ClearAllDisplay();
 
-                _interactionState = InteractionState.ISANSWERING;
+                _interactionState = InteractionState.Isanswering;
                 questionsDisplay.SetActive(true);
                 // Recreate buttons and re-apply previous incorrect choices for this step/phase.
                 SetResponses();
                 SetTextButtonsNavigation();
-            } else if (_interactionState == InteractionState.ISANSWERING) {
+            } else if (_interactionState == InteractionState.Isanswering) {
                 ClearAllDisplay();
 
-                _interactionState = InteractionState.ISREADING;
+                _interactionState = InteractionState.Isreading;
                 displayList[_currentDisplay].SetActive(true);
                 SetTextButtonsNavigation();
             }
@@ -477,7 +475,7 @@ namespace Managers{
                 choiceButtons[index].GetComponent<AnswerButton>().SetIncorrect();
 
                 // Remember this incorrect attempt so that "Précédent" won't reset it.
-                if (_answerState == AnswerState.DIAGNOSTIC) {
+                if (_answerState == AnswerState.Diagnostic) {
                     TipsManager.Instance.InitTips(_patientData.steps[_indexStep].diagnosticPhase[sourceIndex]
                         .rappelTip);
                     if (index >= 0 && index < _diagAnswerState.IncorrectTried.Count)
@@ -492,11 +490,11 @@ namespace Managers{
             }
 
             switch (_answerState) {
-                case AnswerState.DIAGNOSTIC:
+                case AnswerState.Diagnostic:
                     _isDiagnosticValid = isCorrectAnswer || GameManager.Instance.alwaysRight;
                     isDiagnosticAnswer = true;
                     break;
-                case AnswerState.ACTION:
+                case AnswerState.Action:
                     _isActionValid = isCorrectAnswer || GameManager.Instance.alwaysRight;
                     break;
             }
@@ -526,7 +524,7 @@ namespace Managers{
         }
 
         private AnswerDisplayState GetCurrentAnswerDisplayState(){
-            return _answerState == AnswerState.DIAGNOSTIC ? _diagAnswerState : _actionAnswerState;
+            return _answerState == AnswerState.Diagnostic ? _diagAnswerState : _actionAnswerState;
         }
 
         private static void EnsureAnswerOrder(AnswerDisplayState state, int size, bool forcePositionChoice){
@@ -562,7 +560,7 @@ namespace Managers{
         /// <param name="feedBackText">Feedback message to display ("Correct!" or "Incorrect!").</param>
         /// <param name="answerCorrect">Indicates if the selected answer was correct.</param>
         private void ShowAnswerDetail(AnswerData answer, string feedBackText, bool answerCorrect){
-            _interactionState = InteractionState.ISCORRECTION;
+            _interactionState = InteractionState.Iscorrection;
 
             // Clear images
             foreach (GameObject go in answerGameObjectSprites) {

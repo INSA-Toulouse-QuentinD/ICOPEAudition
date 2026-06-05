@@ -1,0 +1,26 @@
+﻿{
+  "levels": [
+    {
+      "name": "0_Tutoriel",
+      "patients": [
+        "0_1_Michel"
+      ]
+    },
+    {
+      "name": "1_Facile",
+      "patients": [
+        "1_1_Jeanne",
+        "1_2_Elisabeth",
+        "1_3_Denise",
+        "1_4_Gerard",
+        "1_5_Lydie"
+      ]
+    },
+    {
+      "name": "2_Moyen",
+      "patients": [
+        "2_1_Rachel"
+      ]
+    }
+  ]
+}

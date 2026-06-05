@@ -32,7 +32,7 @@ namespace PatientData.Steps
         /// Populates UI text fields with patient data.
         /// </summary>
         /// <param name="patientData">Data about the patient to display.</param>
-        public void SetPresentationTexts(NewPatientData patientData)
+        public void SetPresentationTexts(PatientData patientData)
         {
             // Set profil data
             nameFields.text = patientData.lastName;

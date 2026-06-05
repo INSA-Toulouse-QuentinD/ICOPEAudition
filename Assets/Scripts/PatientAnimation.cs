@@ -32,7 +32,7 @@ public class PatientAnimation : MonoBehaviour{
     [Header("FadeAnimation")] [SerializeField]
     public CanvasGroup fadePanel;
 
-    private NewPatientData _newPatientData;
+    private PatientData.PatientData _patientData;
 
     // Outline references
     private Outline _outlineImageCharacter;
@@ -147,9 +147,9 @@ public class PatientAnimation : MonoBehaviour{
     /// <summary>
     /// Play a sort of animations like open the doors and spawn the 'patient' in the doors area then fade out the screen by invoking 'FadeOut' function after a delai.
     /// </summary>
-    public void SetCharacterInArea(NewPatientData newPatientData){
-        _newPatientData = newPatientData;
-        if (newPatientData.isOnPhone) {
+    public void SetCharacterInArea(PatientData.PatientData patientData){
+        _patientData = patientData;
+        if (patientData.isOnPhone) {
             imageRingtone.SetActive(true);
             imageCharacter.gameObject.SetActive(false);
             imageCharacterPhone.GetComponent<Button>().enabled = false;
@@ -159,7 +159,7 @@ public class PatientAnimation : MonoBehaviour{
             imageCharacter.GetComponent<Button>().enabled = false;
             imageCharacterPhone.GetComponent<Button>().enabled = false;
             ToggleDoor();
-            SetSprite(newPatientData.characterSprites[0]);
+            SetSprite(patientData.characterSprites[0]);
             SetNewTargetPosition(spawnPatientArea);
         }
 
@@ -189,12 +189,12 @@ public class PatientAnimation : MonoBehaviour{
     /// Play the last animations like close door and set new patient in the interaction area then invoking 'FadeIn' function after a delai.
     /// </summary>
     private void ContinueSetNewCharacter(){
-        if (!_newPatientData.isOnPhone) {
+        if (!_patientData.isOnPhone) {
             ToggleDoor();
             SetNewTargetPosition(interactionArea);
         }
 
-        AnimationSizeImage(_newPatientData.isOnPhone);
+        AnimationSizeImage(_patientData.isOnPhone);
         if (GameManager.Instance.instanteAnimation) {
             FadeIn();
         } else {
@@ -209,7 +209,7 @@ public class PatientAnimation : MonoBehaviour{
     private void FadeIn(){
         fadePanel.DOFade(1f, 1f).SetEase(Ease.Linear);
 
-        if (_newPatientData.isOnPhone) {
+        if (_patientData.isOnPhone) {
             imageCharacterPhone.GetComponent<Button>().enabled = true;
         } else {
             imageCharacter.GetComponent<Button>().enabled = true;

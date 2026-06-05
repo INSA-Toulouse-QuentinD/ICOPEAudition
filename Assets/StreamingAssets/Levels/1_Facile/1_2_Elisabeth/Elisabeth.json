@@ -1,0 +1,92 @@
+{
+  "spriteUp": "",
+  "spriteSit": "",
+  "spriteWeber": "",
+  "isOnPhone": true,
+  "lastName": "Martin",
+  "firstName": "Elisabeth",
+  "age": 67,
+  "familySituation": "Ancienne professeure de lettre.",
+  "occupationalActivities": "Elle organise un club de lecture.",
+  "context": "Étape 1 en autodiagnostic avec Höra : patho, gestion de l’alerte.",
+  "medicalHistory": "A l’interrogatoire lors de votre gestion d’alerte, vous apprenez qu’elle présente une surdité depuis environ 2 ans, qui semble s’aggraver quand elle a des vertiges. Elle a pris un RDV chez l’ORL, mais n’a pas pu s’y rendre et est en attente d’un nouveau RDV. Elle n’a pas d’autre antécédent particulier. ",
+  "descriptionLevel": "Élisabeth Martin est votre deuxième patiente de ce niveau 'Facile'. Analysez ses symptômes et ses réponses en parcourant l'algorithme.",
+  "level": 1,
+  "steps": [
+    {
+      "type": "CasePresentation",
+      "dialoguePatient": "",
+      "predefinedAnswer": [],
+      "spriteEarExams": "",
+      "overrideDiagnosticQuestion": "",
+      "diagnosticPhase": [
+        {
+          "answerText": "Je convoque la patiente pour réaliser l’otoscopie et l’audiométrie.",
+          "isCorrect": false,
+          "correctionText": "Non, on réalise d’abord le questionnaire Go-No-Go pour rechercher des signes de surdité complexe.",
+          "rappelTip": "None",
+          "spriteJustification1": "",
+          "spriteJustification2": ""
+        },
+        {
+          "answerText": "Je convoque la patiente pour réaliser un test de chuchotement.",
+          "isCorrect": false,
+          "correctionText": "Non, il n’est pas nécessaire de répéter le test après avoir réalisé le test Höra.",
+          "rappelTip": "None",
+          "spriteJustification1": "",
+          "spriteJustification2": ""
+        },
+        {
+          "answerText": "Je convoque la patiente pour réaliser le questionnaire Go-No-Go.",
+          "isCorrect": false,
+          "correctionText": "On recherche d’abord des signes évocateurs d’une surdité complexe par téléphone afin d’éviter de convoquer le patient pour finalement devoir l’adresser vers l’ORL.",
+          "rappelTip": "None",
+          "spriteJustification1": "",
+          "spriteJustification2": ""
+        },
+        {
+          "answerText": "J’interroge la patiente par téléphone pour repérer une situation No-Go et directement l’adresser vers l’ORL.",
+          "isCorrect": true,
+          "correctionText": "Oui, cela permet d’éviter de convoquer des patients qui présentent un tableau qui évoque une surdité plus complexe à prendre en charge qu’une presbyacousie.",
+          "rappelTip": "None",
+          "spriteJustification1": "",
+          "spriteJustification2": ""
+        }
+      ],
+      "actionPhase": [
+        {
+          "answerText": "Je la convoque pour réaliser l’évaluation step 2",
+          "isCorrect": false,
+          "correctionText": "Non, ici on est dans une situation No-Go, il faut l’adresser vers un ORL. Ce tableau évoque en premier lieu une maladie de Ménière : surdité fluctuante avec vertiges.",
+          "rappelTip": "None",
+          "spriteJustification1": "",
+          "spriteJustification2": ""
+        },
+        {
+          "answerText": "Je la convoque pour réaliser le test de chuchotement.",
+          "isCorrect": false,
+          "correctionText": "Non, ici on est dans une situation NO GO, il faut l’adresser vers un ORL. Ce tableau évoque en premier lieu une maladie de Ménière : surdité fluctuante avec vertiges.",
+          "rappelTip": "None",
+          "spriteJustification1": "",
+          "spriteJustification2": ""
+        },
+        {
+          "answerText": "Je la convoque pour réaliser une vidéo-otoscopie à la recherche d’un bouchon de cérumen, qui peut se manifester de cette manière quand il est obstructif.",
+          "isCorrect": false,
+          "correctionText": "Non, certains bouchons peuvent provoquer ce genre de symptômes, a minima. Mais depuis 2 ans, on peut quand même espérer qu’elle a bénéficié d’une consultation chez son médecin qui a dédouané un Bouchon De Cérumen.",
+          "rappelTip": "None",
+          "spriteJustification1": "",
+          "spriteJustification2": ""
+        },
+        {
+          "answerText": "Je l’adresse chez l’ORL.",
+          "isCorrect": true,
+          "correctionText": "Oui, surdité fluctuante et vertige : 2 raisons de l’adresser. Tableau très évocateur d’une maladie de Ménière.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "rappelTip": "None",
+          "spriteJustification1": "",
+          "spriteJustification2": ""
+        }
+      ]
+    }
+  ]
+}

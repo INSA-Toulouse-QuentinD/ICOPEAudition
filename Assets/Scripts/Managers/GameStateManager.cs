@@ -23,8 +23,8 @@ namespace Managers
         private Step currentStep;
 
         private LevelsData LevelsData;
-        private PatientCaseData patientCaseData;
-        private NewPatientData patientData;
+        private PatientCaseLevel _patientCaseLevel;
+        private PatientData.PatientData patientData;
 
         // MAIN MENU / GAME MENU TRANSITIONS
         /// <summary>
@@ -44,7 +44,7 @@ namespace Managers
                 // Set level 
                 SetLevel(currentLevel);
                 // Set Patient Case
-                SetPatientCase(currentPatientCase, patientCaseData.patientsCase[(int)currentPatientCase]);
+                SetPatientCase(currentPatientCase, _patientCaseLevel.patientsCase[(int)currentPatientCase]);
             }
             else
             {
@@ -76,7 +76,7 @@ namespace Managers
         public void SetLevel(LevelState levelState)
         {
             currentLevel = levelState;
-            patientCaseData = LevelsData.patientByLevel[(int)levelState];
+            _patientCaseLevel = LevelsData.patientByLevel[(int)levelState];
 
             GameManager.Instance.GameData.SetLevelRecords(currentLevel);
 
@@ -93,11 +93,11 @@ namespace Managers
         /// Updates the game data with the current patient's record.
         /// </summary>
         /// <param name="patientCase">The patient case to set as current.</param>
-        /// <param name="newPatient">The patient data associated with the current patient case.</param>
-        public void SetPatientCase(PatientCase patientCase, NewPatientData newPatient)
+        /// <param name="patient">The patient data associated with the current patient case.</param>
+        public void SetPatientCase(PatientCase patientCase, PatientData.PatientData patient)
         {
             currentPatientCase = patientCase;
-            patientData = newPatient;
+            patientData = patient;
             
             if (!maxPatientCase.TryAdd(currentLevel, currentPatientCase)) {
                 if (maxPatientCase[currentLevel] < currentPatientCase) {
@@ -153,7 +153,7 @@ namespace Managers
             if ((int)currentLevel < LevelsData.patientByLevel.Count)
             {
                 SetLevel(currentLevel);
-                SetPatientCase(currentPatientCase, patientCaseData.patientsCase[(int)currentPatientCase]);
+                SetPatientCase(currentPatientCase, _patientCaseLevel.patientsCase[(int)currentPatientCase]);
                 //Return to game menu
                 ReturnToGameMenu();
             }
@@ -179,8 +179,8 @@ namespace Managers
         {
             currentPatientCase++;
             maxPatientCase[currentLevel] = currentPatientCase;
-            if ((int)currentPatientCase < patientCaseData.patientsCase.Count) {
-                SetPatientCase(currentPatientCase, patientCaseData.patientsCase[(int)currentPatientCase]);
+            if ((int)currentPatientCase < _patientCaseLevel.patientsCase.Count) {
+                SetPatientCase(currentPatientCase, _patientCaseLevel.patientsCase[(int)currentPatientCase]);
                 ReturnToGameMenu();
             }
             else
