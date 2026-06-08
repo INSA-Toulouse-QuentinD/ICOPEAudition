@@ -7,10 +7,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace UI.ScoreContents{
-    public class ButtonPressDetector : Graphic, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
-    {
-        public enum ButtonState
-        {
+    public sealed class ButtonPressDetector : Graphic, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler,
+        IPointerExitHandler{
+        public enum ButtonState{
             None,
             Hovered,
             Pressed,
@@ -20,35 +19,32 @@ namespace UI.ScoreContents{
         }
 
         [System.Serializable]
-        private class IconColor
-        {
+        private class IconColor{
             public Graphic targetGraphic;
             public ColorBlock colorBlock;
         }
-        public int groupId = 0;
-        [SerializeField] private List<IconColor> iconColors;
-        [SerializeField] private bool isFocus = false, isDisable = false, stayFocusOnPressed = true;
 
-        public UnityEvent OnPress, OnPressExit, OnHover, OnHoverExit;
+        public int groupId;
+        [SerializeField] private List<IconColor> iconColors;
+        [SerializeField] private bool isFocus, isDisable, stayFocusOnPressed = true;
+
+        [HideInInspector] public UnityEvent onPress, onPressExit, onHover, onHoverExit;
 
         public ButtonState currentButtonState = ButtonState.None;
 
-        protected override void Awake()
-        {
+        protected override void Awake(){
             ButtonsManager.Connectbutton(this);
             if (isFocus) ButtonsManager.SetButtonFocused(this);
             if (isDisable) AssignState(ButtonState.Disable);
             if (GameManager.Instance.canAccessAllLevel) AssignState(ButtonState.None);
         }
 
-        protected override void OnEnable()
-        {
+        protected override void OnEnable(){
             base.OnEnable();
             AssignColor();
         }
 
-        public void AssignState(ButtonState state, bool overrideDisable = false)
-        {
+        public void AssignState(ButtonState state, bool overrideDisable = false){
             if ((GameManager.Instance.canAccessAllLevel && currentButtonState == ButtonState.Disable) ||
                 (currentButtonState != ButtonState.Disable || overrideDisable)) {
                 currentButtonState = state;
@@ -56,57 +52,57 @@ namespace UI.ScoreContents{
             }
         }
 
-        public virtual void OnPointerDown(PointerEventData eventData)
-        {
-            if (currentButtonState != ButtonState.Disable)
-            {
+        public void OnPointerDown(PointerEventData eventData){
+            if (currentButtonState != ButtonState.Disable) {
                 ButtonsManager.SetButtonFocused(this);
-                OnPress.Invoke();
+                onPress.Invoke();
             }
         }
 
-        public virtual void OnPointerUp(PointerEventData eventData)
-        {
-            if (currentButtonState != ButtonState.Disable)
-            {
-                if (!stayFocusOnPressed || currentButtonState != ButtonState.Pressed)
-                {
+        public void OnPointerUp(PointerEventData eventData){
+            if (currentButtonState != ButtonState.Disable) {
+                if (!stayFocusOnPressed || currentButtonState != ButtonState.Pressed) {
                     currentButtonState = ButtonState.Released;
                     AssignColor();
                 }
-                OnPressExit.Invoke();
+
+                onPressExit.Invoke();
             }
         }
 
-        public virtual void OnPointerEnter(PointerEventData eventData)
-        {
-            if (currentButtonState != ButtonState.Disable)
-            {
-                currentButtonState = currentButtonState == ButtonState.Pressed ? ButtonState.HoveredPressed : ButtonState.Hovered;
+        public void OnPointerEnter(PointerEventData eventData){
+            if (currentButtonState != ButtonState.Disable) {
+                currentButtonState = currentButtonState == ButtonState.Pressed
+                    ? ButtonState.HoveredPressed
+                    : ButtonState.Hovered;
                 AssignColor();
-                OnHover.Invoke();
+                onHover.Invoke();
             }
         }
 
-        public virtual void OnPointerExit(PointerEventData eventData)
-        {
-            if (currentButtonState != ButtonState.Disable)
-            {
-                if (!stayFocusOnPressed || currentButtonState != ButtonState.Pressed)
-                {
-                    currentButtonState = currentButtonState == ButtonState.HoveredPressed ? ButtonState.Pressed : ButtonState.None;
+        public void OnPointerExit(PointerEventData eventData){
+            if (currentButtonState != ButtonState.Disable) {
+                if (!stayFocusOnPressed || currentButtonState != ButtonState.Pressed) {
+                    currentButtonState = currentButtonState == ButtonState.HoveredPressed
+                        ? ButtonState.Pressed
+                        : ButtonState.None;
                     AssignColor();
                 }
-                OnHoverExit.Invoke();
+
+                onHoverExit.Invoke();
             }
         }
 
-        private void AssignColor()
-        {
+        private void AssignColor(){
             int index = (int)currentButtonState;
-            foreach (IconColor col in iconColors)
-            {
-                col.targetGraphic.color = index == 0 ? col.colorBlock.normalColor : index == 1 || index == 3 ? col.colorBlock.highlightedColor : index == 2 ? col.colorBlock.pressedColor : index == 4 ? col.colorBlock.selectedColor : col.colorBlock.disabledColor;
+            foreach (IconColor col in iconColors) {
+                col.targetGraphic.color = index switch{
+                    0 => col.colorBlock.normalColor,
+                    1 or 3 => col.colorBlock.highlightedColor,
+                    2 => col.colorBlock.pressedColor,
+                    4 => col.colorBlock.selectedColor,
+                    _ => col.colorBlock.disabledColor
+                };
             }
         }
     }

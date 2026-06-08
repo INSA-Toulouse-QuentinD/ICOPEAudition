@@ -68,6 +68,7 @@ namespace Managers{
         [Header("Money")] [SerializeField] private int money;
 
         [Header("Menus")] [SerializeField] private GameObject mainMenu;
+        [SerializeField] private Button playButton;
         [SerializeField] private GameObject gameMenu;
         [SerializeField] private GameObject stepMenu;
         [SerializeField] private GameObject isTutorialActive;
@@ -270,6 +271,7 @@ namespace Managers{
 
             StartCoroutine(PatientDataJsonLoader.LoadLevelData(levels => {
                 levelsData = levels;
+                playButton.interactable = true;
                 foreach (PatientCaseLevel level in levels.patientByLevel) {
                     string text = $"___{level.name}___: ";
                     foreach (PatientData.PatientData cas in level.patientsCase) {

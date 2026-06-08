@@ -2,42 +2,37 @@ using PatientData;
 using PatientData.AlgoData;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Managers{
     public class GameStateManager : MonoBehaviour{
-        // ENUM
+        // Enums for Main_menu and waiting_room
         private enum GameState{
-            MAIN_MENU,
-            GAME_MENU
-        } // Enums for Main_menu and waiting_room
-
-        public enum LevelState{
-            LEVEL_0,
-            LEVEL_1,
-            LEVEL_2,
-            LEVEL_3,
-            LEVEL_4,
-            LEVEL_5
-        }
-
-        public enum PatientCase{
-            PATIENT_0,
-            PATIENT_1,
-            PATIENT_2
-        }
-
-
+            MainMenu,
+            GameMenu
+        } 
+        
         // VARIABLES
         private GameState _gameState;
-        private LevelState _currentLevel;
-        private PatientCase _currentPatientCase;
-        private Dictionary<LevelState, PatientCase> _maxPatientCase;
+        private int _currentLevel;
+        private int _currentPatientCase;
+        private Dictionary<int, int> _maxPatientCase;
         private Step _currentStep;
 
         [HideInInspector] public LevelsData levelsData;
         private PatientCaseLevel _patientCaseLevel;
         private PatientData.PatientData _patientData;
+        
+        /// <summary>
+        /// Initializes the LevelsData reference from the GameManager and sets
+        /// the default current level and patient case. These defaults can be
+        /// overridden later if a saved game is loaded.
+        /// </summary>
+        private void Start(){
+            // Set by default current level and current patient case (change later if player has a save)
+            _currentLevel = 0;
+            _currentPatientCase = 0;
+            _maxPatientCase = new Dictionary<int, int>();
+        }
 
         // MAIN MENU / GAME MENU TRANSITIONS
         /// <summary>
@@ -50,7 +45,7 @@ namespace Managers{
             _gameState = newState;
             Debug.Log($"Main State: {_gameState}");
             // LOAD SCENE
-            if (_gameState == GameState.GAME_MENU) {
+            if (_gameState == GameState.GameMenu) {
                 currInstance.LoadGameMenu();
                 // Set level 
                 SetLevel(_currentLevel);
@@ -66,7 +61,7 @@ namespace Managers{
         /// Its call by buttons "Play" & "return menu"
         /// </summary>
         public void ChangeMainState(){
-            SetMainState(_gameState == GameState.MAIN_MENU ? GameState.GAME_MENU : GameState.MAIN_MENU);
+            SetMainState(_gameState == GameState.MainMenu ? GameState.GameMenu : GameState.MainMenu);
         }
 
         /// <summary>
@@ -74,10 +69,10 @@ namespace Managers{
         /// loads the corresponding patient case data,
         /// and updates the game data with the current level records.
         /// </summary>
-        public void SetLevel(LevelState levelState){
+        public void SetLevel(int levelState){
             _currentLevel = levelState;
             levelsData = GameManager.Instance.levelsData;
-            _patientCaseLevel = levelsData.patientByLevel[(int)levelState];
+            _patientCaseLevel = levelsData.patientByLevel[levelState];
 
             GameManager.Instance.GameData.SetLevelRecords(_currentLevel);
 
@@ -88,7 +83,7 @@ namespace Managers{
         /// Returns the current level as an integer.
         /// </summary>
         public int GetCurrentLevel(){
-            return (int)_currentLevel;
+            return _currentLevel;
         }
 
         /// <summary>
@@ -97,7 +92,7 @@ namespace Managers{
         /// </summary>
         /// <param name="patientCase">The patient case to set as current.</param>
         /// <param name="patient">The patient data associated with the current patient case.</param>
-        public void SetPatientCase(PatientCase patientCase, PatientData.PatientData patient){
+        public void SetPatientCase(int patientCase, PatientData.PatientData patient){
             _currentPatientCase = patientCase;
             _patientData = patient;
 
@@ -126,7 +121,7 @@ namespace Managers{
         /// <param name="level">Index of the selected level.</param>
         /// <returns>Integer representation of the current patient case.</returns>
         public int GetMaxPatientCase(int level){
-            return (int)_maxPatientCase.GetValueOrDefault((LevelState)level, PatientCase.PATIENT_0);
+            return _maxPatientCase.GetValueOrDefault(level, -1);
         }
 
         /// <summary>
@@ -152,16 +147,16 @@ namespace Managers{
         /// and returns to the game menu (temporary fix).
         /// </summary>
         public void NextLevel(){
-            if ((int)_currentLevel < levelsData.patientByLevel.Count) {
+            if (_currentLevel < levelsData.patientByLevel.Count) {
                 SetLevel(_currentLevel);
-                SetPatientCase(_currentPatientCase, _patientCaseLevel.patientsCase[(int)_currentPatientCase]);
+                SetPatientCase(_currentPatientCase, _patientCaseLevel.patientsCase[_currentPatientCase]);
                 //Return to game menu
                 ReturnToGameMenu();
             } else {
                 Debug.Log("Tout les niveau sont terminer ! Restart du jeu!");
                 // TAMPORARY FIX - Restart the game
-                _currentLevel = LevelState.LEVEL_0;
-                _currentPatientCase = PatientCase.PATIENT_0;
+                _currentLevel = 0;
+                _currentPatientCase = 0;
                 //SET RANDOM MOD (load patient in random make list of all patient)
                 //Return to game menu
                 ReturnToGameMenu();
@@ -177,14 +172,14 @@ namespace Managers{
         public void NextPatientCase(){
             _currentPatientCase++;
             _maxPatientCase[_currentLevel] = _currentPatientCase;
-            if ((int)_currentPatientCase < _patientCaseLevel.patientsCase.Count) {
+            if (_currentPatientCase < _patientCaseLevel.patientsCase.Count) {
                 SetPatientCase(_currentPatientCase, _patientCaseLevel.patientsCase[(int)_currentPatientCase]);
                 ReturnToGameMenu();
             } else {
                 Debug.Log("Tous les cas patient sont terminer! Next Level !");
-                _currentPatientCase = PatientCase.PATIENT_0; // Reset patient case
+                _currentPatientCase = 0; // Reset patient case
                 _currentLevel++;
-                _maxPatientCase[_currentLevel] = PatientCase.PATIENT_0;
+                _maxPatientCase[_currentLevel] = 0;
                 // Clear patient case records                 
                 NextLevel();
             }
@@ -241,13 +236,13 @@ namespace Managers{
         /// </summary>
         /// <param name="savedLevelState">The saved level state to load.</param>
         /// <param name="savedPatientCase">The saved patient case to load.</param>
-        public void LoadPlayerSaveStates(LevelState savedLevelState, PatientCase savedPatientCase){
-            if ((int)savedLevelState <= GameManager.Instance.levelsData.patientByLevel.Count) {
+        public void LoadPlayerSaveStates(int savedLevelState, int savedPatientCase){
+            if (savedLevelState <= GameManager.Instance.levelsData.patientByLevel.Count) {
                 _currentLevel = savedLevelState;
 
                 // WARNING : if cond not good
-                if ((int)savedPatientCase <
-                    GameManager.Instance.levelsData.patientByLevel[(int)_currentLevel].patientsCase.Count - 1) {
+                if (savedPatientCase <
+                    GameManager.Instance.levelsData.patientByLevel[_currentLevel].patientsCase.Count - 1) {
                     _currentPatientCase = savedPatientCase + 1;
                 } else {
                     // TO CHANGE : Load next level & patientCase = 0
@@ -257,18 +252,6 @@ namespace Managers{
             }
 
             Debug.Log($"Next level played : {_currentLevel}, Next patient played: {_currentPatientCase}");
-        }
-
-        /// <summary>
-        /// Initializes the LevelsData reference from the GameManager and sets
-        /// the default current level and patient case. These defaults can be
-        /// overridden later if a saved game is loaded.
-        /// </summary>
-        private void Start(){
-            // Set by default current level and current patient case (change later if player has a save)
-            _currentLevel = LevelState.LEVEL_0;
-            _currentPatientCase = PatientCase.PATIENT_0;
-            _maxPatientCase = new Dictionary<LevelState, PatientCase>();
         }
     }
 }

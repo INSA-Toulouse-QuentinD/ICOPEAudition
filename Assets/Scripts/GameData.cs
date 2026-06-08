@@ -101,10 +101,10 @@ public class GameData : MonoBehaviour{
         public int NbGameSession;
         public Queue<float> SessionTimeQueue;
 
-        public Dictionary<LevelState, LevelRecords> LevelRecordsData; // {levelName, levelRecords}
+        public Dictionary<int, LevelRecords> LevelRecordsData; // {levelName, levelRecords}
 
         public MainData(int nbGames, int nbGameSession, float gameTime, Queue<float> sessionTimeQueue,
-            Dictionary<LevelState, LevelRecords> levelRecordsData){
+            Dictionary<int, LevelRecords> levelRecordsData){
             TotGames = nbGames;
             GameTime = gameTime;
             NbGameSession = nbGameSession;
@@ -130,7 +130,7 @@ public class GameData : MonoBehaviour{
     // RECORDS VARIABLES
     private Dictionary<string, StepRecords> _stepRecords;
     private Dictionary<string, PatientCaseRecords> _patientCaseRecords;
-    private Dictionary<LevelState, LevelRecords> _levelRecords;
+    private Dictionary<int, LevelRecords> _levelRecords;
     private MainData _mainData;
     private string _currentKey;
 
@@ -146,7 +146,7 @@ public class GameData : MonoBehaviour{
     /// records collection is null, it will be initialized. Patient case and step records collections are always
     /// reinitialized.</remarks>
     public void InitializeRecords(){
-        _levelRecords ??= new Dictionary<LevelState, LevelRecords>();
+        _levelRecords ??= new Dictionary<int, LevelRecords>();
 
         _patientCaseRecords = new Dictionary<string, PatientCaseRecords>();
         _stepRecords = new Dictionary<string, StepRecords>();
@@ -319,7 +319,7 @@ public class GameData : MonoBehaviour{
     /// <remarks>If the specified <paramref name="levelState"/> does not already exist in the level
     /// records, a new entry is created with default values.</remarks>
     /// <param name="levelState">The state of the level for which records should be updated.</param>
-    public void SetLevelRecords(LevelState levelState){
+    public void SetLevelRecords(int levelState){
         _levelTimer = new TimerData(Time.time);
         _patientCaseRecords = new Dictionary<string, PatientCaseRecords>();
         if (!_levelRecords.ContainsKey(levelState))
@@ -334,7 +334,7 @@ public class GameData : MonoBehaviour{
     /// <remarks>If the specified <paramref name="levelState"/> does not exist in the level records
     /// dictionary,  the method performs no action.</remarks>
     /// <param name="levelState">The state of the level to update. Must be a valid key in the level records' dictionary.</param>
-    public void RecordsLevel(LevelState levelState){
+    public void RecordsLevel(int levelState){
         if (!_levelRecords.TryGetValue(levelState, out var levelRecords)) return;
 
         levelRecords.LevelNbAttempt++;

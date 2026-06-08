@@ -21,7 +21,7 @@ namespace UI.ScoreContents{
         private List<RectTransform> _pagesSteps;
 
         void OnEnable(){
-            openDetailsButton.OnPress.AddListener(OpenFolderVoid);
+            openDetailsButton.onPress.AddListener(OpenFolderVoid);
             pagesNavigationButs[0].onClick.AddListener(delegate{ SwitchPages(true); });
             pagesNavigationButs[1].onClick.AddListener(delegate{ SwitchPages(false); });
             InstanciatePages();
@@ -29,7 +29,7 @@ namespace UI.ScoreContents{
         }
 
         void OnDisable(){
-            openDetailsButton.OnPress.RemoveListener(OpenFolderVoid);
+            openDetailsButton.onPress.RemoveListener(OpenFolderVoid);
             pagesNavigationButs[0].onClick.RemoveAllListeners();
             pagesNavigationButs[1].onClick.RemoveAllListeners();
         }
