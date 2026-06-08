@@ -285,9 +285,7 @@ MonoBehaviour:
         curette si le bouchon est lat\xE9ral et qu\u2019il est possible de glisser
         la curette entre le bouchon et la paroi du conduit auditif externe."
       rappelTip: 0
-      sprites:
-      - {fileID: 21300000, guid: 66ab745270a49f948bba06cb857acfbb, type: 3}
-      - {fileID: 21300000, guid: c61eaa268f3e45b4ebccd891cd90b737, type: 3}
+      sprites: []
     - answerText: "Je prescris des gouttes et j\u2019attends 8 jours."
       isCorrect: 0
       correctionText: "Non\_car c\u2019est un BDC. Il faut r\xE9aliser un diagnostic

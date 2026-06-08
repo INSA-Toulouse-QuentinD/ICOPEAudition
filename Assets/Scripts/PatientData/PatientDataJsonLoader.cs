@@ -16,9 +16,6 @@ namespace PatientData{
     public static class PatientDataJsonLoader{
         [Serializable]
         public class PatientDto{
-            public string spriteUp;
-            public string spriteSit;
-            public string spriteWeber;
             public bool isOnPhone;
             public string lastName;
             public string firstName;
@@ -68,6 +65,7 @@ namespace PatientData{
                 yield break;
             }
 
+            manifestJson = manifestJson.TrimStart('\uFEFF');
             Manifest manifest = JsonUtility.FromJson<Manifest>(manifestJson);
 
             foreach (LevelManifest levelManifest in manifest.levels) {
@@ -78,14 +76,14 @@ namespace PatientData{
                 List<string> sortedPatients = SortByIndex(levelManifest.patients);
 
                 foreach (string patientName in sortedPatients) {
-                    string relativePath = $"Levels/{levelManifest.name}/{patientName}/{ExtractName(patientName)}.json";
+                    string relativePath = $"Levels/{levelManifest.name}/{patientName}/{ExtractName(patientName)}";
 
                     string patientJson = null;
-                    yield return LoadJson(relativePath, json => { patientJson = json; });
+                    yield return LoadJson(relativePath + ".json", json => { patientJson = json; });
                     if (patientJson == null) continue;
 
                     PatientData data = null;
-                    yield return ConvertToPatientData(patientJson, patientData => data = patientData);
+                    yield return ConvertToPatientData(patientJson, relativePath, patientData => data = patientData);
                     level.patientsCase.Add(data);
                 }
 
@@ -95,22 +93,9 @@ namespace PatientData{
             onDone?.Invoke(result);
         }
 
-        private static IEnumerator ConvertToPatientData(string json, Action<PatientData> onDone){
+        private static IEnumerator ConvertToPatientData(string json, string path, Action<PatientData> onDone){
             PatientDto dto = JsonUtility.FromJson<PatientDto>(json);
             PatientData data = ScriptableObject.CreateInstance<PatientData>();
-
-            Sprite up = null; //DEBUG!!! Devinez le chemin plutôt que mettre 3 variables (toujour nommé {ExtractName(patientName)}_up /_sit /_weber)
-            Sprite sit = null;
-            Sprite weber = null;
-            yield return LoadSprite(dto.spriteUp, s => up = s);
-            yield return LoadSprite(dto.spriteSit, s => sit = s);
-            yield return LoadSprite(dto.spriteWeber, s => weber = s);
-
-            List<Sprite> sprites = new();
-            if (up) sprites.Add(up); //DEBUG!!! obligatoire !!! (si !isOnPhone)
-            if (sit) sprites.Add(sit); //DEBUG!!! obligatoire !!! (si !isOnPhone)
-            if (weber) sprites.Add(weber); //DEBUG!!! obligatoire si Weber !!!
-            data.characterSprites = sprites.ToArray();
 
             data.isOnPhone = dto.isOnPhone;
             data.lastName = dto.lastName;
@@ -127,6 +112,28 @@ namespace PatientData{
             List<AlgoStep> steps = null;
             yield return ConvertSteps(dto.steps, result => steps = result);
             data.steps = steps;
+
+            bool hasWeberTest = false;
+            foreach (AlgoStep step in steps) {
+                if (step.type == Step.WeberTest) {
+                    hasWeberTest = true;
+                    break;
+                }
+            }
+            
+            Sprite up = null;
+            Sprite sit = null;
+            Sprite weber = null;
+            
+            yield return LoadSprite(path + "_up.png", s => up = s, dto.isOnPhone); //DEBUG!!! et si pas png ?
+            yield return LoadSprite(path + "_sit.png", s => sit = s, dto.isOnPhone);
+            yield return LoadSprite(path + "_weber.png", s => weber = s, !hasWeberTest);
+
+            List<Sprite> sprites = new();
+            if (up) sprites.Add(up);
+            if (sit) sprites.Add(sit);
+            if (weber) sprites.Add(weber);
+            data.characterSprites = sprites.ToArray();
 
             onDone?.Invoke(data);
         }
@@ -202,13 +209,14 @@ namespace PatientData{
                     answerText = dto.answerText,
                     isCorrect = dto.isCorrect,
                     correctionText = dto.correctionText,
-                    rappelTip = tip
+                    rappelTip = tip,
+                    sprites = new List<Sprite>()
                 };
 
                 if (!string.IsNullOrEmpty(dto.spriteJustification1)) {
                     Sprite s1 = null;
                     yield return LoadSprite(dto.spriteJustification1, x => s1 = x);
-
+                    
                     if (s1) a.sprites.Add(s1);
                 }
 
@@ -257,6 +265,8 @@ namespace PatientData{
         #region Files Loader
 
         public static IEnumerator LoadJson(string relativePath, Action<string> callback){
+            if (string.IsNullOrEmpty(relativePath)) yield break;
+            
             string path = Path.Combine(Application.streamingAssetsPath, relativePath);
 
 #if UNITY_WEBGL && !UNITY_EDITOR
@@ -276,8 +286,10 @@ namespace PatientData{
             callback?.Invoke(request.downloadHandler.text);
         }
 
-        public static IEnumerator LoadSprite(string relativePath, Action<Sprite> callback){
-            string path = Path.Combine(Application.streamingAssetsPath, relativePath, "Images");
+        public static IEnumerator LoadSprite(string relativePath, Action<Sprite> callback, bool canBeFailed = false){
+            if (string.IsNullOrEmpty(relativePath)) yield break;
+            
+            string path = Path.Combine(Application.streamingAssetsPath, relativePath);
 
 #if UNITY_WEBGL && !UNITY_EDITOR
             UnityWebRequest request = UnityWebRequestTexture.GetTexture(path);
@@ -288,7 +300,7 @@ namespace PatientData{
             yield return request.SendWebRequest();
 
             if (request.result != UnityWebRequest.Result.Success) {
-                Debug.LogError(request.error);
+                if (!canBeFailed) Debug.LogError(request.error);
                 callback?.Invoke(null);
                 yield break;
             }

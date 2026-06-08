@@ -2941,7 +2941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canAccessAllLevel: 1
   instanteAnimation: 1
-  skipAssistante: 0
+  skipAssistante: 1
   alwaysRight: 1
   forcePositionChoice: 1
   levelsData: {fileID: 11400000, guid: 04ecbfde3fc4bce4280ff6e119104014, type: 2}
@@ -3042,6 +3042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694ebd77f389da641a1fa14f39828272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelsData: {fileID: 0}
 --- !u!114 &4659142705240499325
 MonoBehaviour:
   m_ObjectHideFlags: 0

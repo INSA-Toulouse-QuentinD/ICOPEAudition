@@ -18,9 +18,11 @@ namespace UI.Boutique{
         /// and adding the Buy method as a click event listener for the button.
         /// </summary>
         void Start(){
-            priceText.text = price.ToString();
-            _button = gameObject.GetComponent<Button>();
-            _button.onClick.AddListener(Buy);
+            if (priceText) {
+                priceText.text = price.ToString();
+                _button = gameObject.GetComponent<Button>();
+                _button.onClick.AddListener(Buy);
+            }
         }
 
         /// <summary>

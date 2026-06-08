@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using PatientData.AlgoData;
 using UI.ScoreContents;
 using PatientData;
+using UI.LevelSelector;
 
 namespace Managers{
     [RequireComponent(typeof(GameStateManager))]
@@ -58,7 +59,7 @@ namespace Managers{
         public bool alwaysRight;
         public bool forcePositionChoice;
 
-        [Header("Levels")] [SerializeField] public LevelsData levelsData;
+        [HideInInspector, Header("Levels")] [SerializeField] public LevelsData levelsData;
 
         [Header("Tutoriel")] [SerializeField] private bool isTutorialEnable;
 
@@ -268,11 +269,13 @@ namespace Managers{
             XmlManager.ValidateXML(_pathXmlFile, _pathXsdFile);
 
             StartCoroutine(PatientDataJsonLoader.LoadLevelData(levels => {
+                levelsData = levels;
                 foreach (PatientCaseLevel level in levels.patientByLevel) {
-                    Debug.Log($"_____{level.name}_____");
+                    string text = $"___{level.name}___: ";
                     foreach (PatientData.PatientData cas in level.patientsCase) {
-                        Debug.Log($"{cas.firstName}");
+                        text += $"{cas.firstName} / ";
                     }
+                    Debug.Log(text.Substring(0, text.Length - 3));
                 }
             }));
 
