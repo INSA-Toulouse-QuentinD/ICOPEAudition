@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using PatientData.AlgoData;
 using UI.ScoreContents;
 using PatientData;
-using UI.LevelSelector;
+using TMPro;
 
 namespace Managers{
     [RequireComponent(typeof(GameStateManager))]
@@ -60,6 +60,10 @@ namespace Managers{
         public bool forcePositionChoice;
 
         [HideInInspector, Header("Levels")] [SerializeField] public LevelsData levelsData;
+        [SerializeField] private GameObject jsonButton;
+        [SerializeField] private GameObject jsonInfo;
+        [SerializeField] private Transform jsonInfoContent;
+        [SerializeField] private GameObject logPrefab;
 
         [Header("Tutoriel")] [SerializeField] private bool isTutorialEnable;
 
@@ -256,6 +260,11 @@ namespace Managers{
             AudioManager = GetComponent<AudioManager>();
             PatientAnimation = GetComponent<PatientAnimation>();
 
+            jsonButton.SetActive(false);
+            jsonInfo.SetActive(false);
+            foreach (Transform child in jsonInfoContent) {
+                Destroy(child.gameObject);
+            }
             mainMenu.SetActive(true);
             gameMenu.SetActive(false);
             stepMenu.SetActive(false);
@@ -272,6 +281,7 @@ namespace Managers{
             StartCoroutine(PatientDataJsonLoader.LoadLevelData(levels => {
                 levelsData = levels;
                 playButton.interactable = true;
+
                 foreach (PatientCaseLevel level in levels.patientByLevel) {
                     string text = $"___{level.name}___: ";
                     foreach (PatientData.PatientData cas in level.patientsCase) {
@@ -307,6 +317,12 @@ namespace Managers{
                 loadedItem = itemButtons.Find(item);
                 if (loadedItem != null) loadedItem.gameObject.GetComponent<Button>().interactable = false;
             }
+        }
+
+        public void JsonErrorAdd(string error){
+            Debug.LogError(error);
+            jsonButton.SetActive(true);
+            Instantiate(logPrefab, jsonInfoContent).GetComponent<TextMeshProUGUI>().text = error;
         }
     }
 }

@@ -1,4 +1,7 @@
 {
+  "spriteUp": "Levels\\1_Facile\\1_1_Jeanne\\Jeanne_up.png",
+  "spriteSit": "Levels\\1_Facile\\1_1_Jeanne\\Jeanne_sit.png",
+  "spriteWeber": "",
   "isOnPhone": false,
   "lastName": "Durand",
   "firstName": "Jeanne",
@@ -8,7 +11,6 @@
   "context": "Adressée par son médecin généraliste qui a fait le step1 (test de chuchotement) qui est pathologique. Pas de mots restitués à l'oreille droite 1 seul mot restitués à l'autre oreille gauche.",
   "medicalHistory": "Néoplasie mammaire en rémission; aérateurs transtympaniques dans l'enfance.",
   "descriptionLevel": "Jeanne Durand est votre première patiente. Vous devrez analyser ses symptômes et ses réponses en parcourant l'algorithme vu dans le cas 'Tutoriel'.",
-  "level": 1,
   "steps": [
     {
       "type": "CasePresentation",

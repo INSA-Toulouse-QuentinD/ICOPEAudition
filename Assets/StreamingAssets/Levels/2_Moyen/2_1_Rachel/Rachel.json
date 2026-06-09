@@ -1,4 +1,7 @@
 {
+  "spriteUp": "Levels\\2_Moyen\\2_1_Rachel\\Rachel_up.png",
+  "spriteSit": "Levels\\2_Moyen\\2_1_Rachel\\Rachel_sit.png",
+  "spriteWeber": "Levels\\2_Moyen\\2_1_Rachel\\Rachel_weber.png",
   "isOnPhone": false,
   "lastName": "Bernier",
   "firstName": "Rachel",
@@ -8,7 +11,6 @@
   "context": "Elle a entendu parler d'ICOPE via une campagne à la médiathèque de son quartier. Elle se plaint d'une gêne auditive modérée et d'un « sifflement dans les deux oreilles », présent depuis plusieurs années, mais non invalidant. Elle trouve juste cela fatigant quand elle est déjà fatiguée. Cela lui rappelle sa jeunesse, quand elle travaillait encore à l'usine.",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "descriptionLevel": "",
-  "level": 1,
   "steps": [
     {
       "type": "CasePresentation",
@@ -444,7 +446,7 @@
       "diagnosticPhase": [
         {
           "answerText": "Surdité de transmission moyenne et symétrique.",
-          "isCorrect": false,
+          "isCorrect": true,
           "correctionText": "???",
           "rappelTip": "None",
           "spriteJustification1": "",

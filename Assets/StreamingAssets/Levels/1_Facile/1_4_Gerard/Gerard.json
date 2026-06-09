@@ -1,4 +1,7 @@
 {
+  "spriteUp": "Levels\\1_Facile\\1_4_Gerard\\Gerard_up.png",
+  "spriteSit": "Levels\\1_Facile\\1_4_Gerard\\Gerard_sit.png",
+  "spriteWeber": "",
   "isOnPhone": false,
   "lastName": "Fontaine",
   "firstName": "Gérard",
@@ -8,7 +11,6 @@
   "context": "Il a été repéré par une IDE lors d'un atelier prévention de sa mutuelle, qui véhicule les informations concernant ICOPE. Il se plaint de ne pas toujours comprendre ses interlocuteurs, surtout dans un environnement bruyant. Il n'a pas d'antécédent ORL connu.",
   "medicalHistory": "",
   "descriptionLevel": "Gérard Fontaine, ancien agriculteur, vient vous voir car il ne comprend pas toujours ses interlocuteurs. ",
-  "level": 1,
   "steps": [
     {
       "type": "CasePresentation",

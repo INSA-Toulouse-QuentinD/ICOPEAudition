@@ -1,4 +1,7 @@
 {
+  "spriteUp": "Levels\\1_Facile\\1_5_Lydie\\Lydie_up.png",
+  "spriteSit": "Levels\\1_Facile\\1_5_Lydie\\Lydie_sit.png",
+  "spriteWeber": "",
   "isOnPhone": false,
   "lastName": "Cibel",
   "firstName": "Lydie",
@@ -8,7 +11,6 @@
   "context": "Elle a entendu parler du programme ICOPE par le biais d'une amie. Elle se plaint d'une baisse auditive à gauche depuis quelques semaines, qui l'inquiète un petit peu car elle n'arrive pas à prendre RDV chez un ORL.",
   "medicalHistory": "",
   "descriptionLevel": "",
-  "level": 1,
   "steps": [
     {
       "type": "CasePresentation",

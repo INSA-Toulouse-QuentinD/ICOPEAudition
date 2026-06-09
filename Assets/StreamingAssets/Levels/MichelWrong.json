@@ -1,6 +1,6 @@
 {
   "spriteUp": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_up.png",
-  "spriteSit": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_sit.png",
+  "spriteSidt": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_sit.png",
   "spriteWeber": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_weber.png",
   "isOnPhone": false,
   "lastName": "Dupont",
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "type": "GoNoGo",
+      "type": "GoNo",
       "dialoguePatient": "",
       "predefinedAnswer": [
         "No",
@@ -224,7 +224,7 @@
           "isCorrect": false,
           "correctionText": "Une OMA est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée, souvent de la fièvre.",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
+          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.pn",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
         },
         {
@@ -245,7 +245,7 @@
         },
         {
           "answerText": "Il s'agit d'un tympan normal.",
-          "isCorrect": true,
+          "isCorrect": false,
           "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), que fait le fond du Conduit Auditif Externe.",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
@@ -296,7 +296,7 @@
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses révèlent une surdité de perception.",
-          "isCorrect": false,
+          "isCorrect": true,
           "correctionText": "Ici, c'est un test de Weber qui est réalisé (pied du diapason au centre) : on recherche une asymétrie de l'audition qui se manifesterait par une latéralisation du Weber («j'entends à droite»).\n\nLe test acoumétrique de Rinne quant à lui de déterminer si le système tympano-ossiculaire est fonctionnel (dans ce cas, il est Positif : on évoque une audition normale ou une surdité neurosensorielle) ou non (dans ce cas, il est négatif : on évoque une surdité de perception).",
           "rappelTip": "Rinne",
           "spriteJustification1": "",
@@ -381,7 +381,7 @@
           "answerText": "Le score indique une absence totale de gêne auditive.",
           "isCorrect": false,
           "correctionText": "Non, le score à <b>14/40</b> est en faveur d'une surdité modérée.\n<color=red>On ne peut donc pas conclure à l'absence de gène auditive.</color>",
-          "rappelTip": "Hhies",
+          "rappelTip": "Hhiess",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
@@ -440,12 +440,12 @@
     {
       "type": "Audiometry",
       "dialoguePatient": "",
-      "predefinedAnswer": [],
+      "predefinedAnswer": ["YES"],
       "spriteEarExams": "Images\\Steps\\Audiometry\\0_1_Audiometrie.png",
-      "overrideDiagnosticQuestion": "",
+      "overrideDiagnostcQuestion": "",
       "diagnosticPhase": [
         {
-          "answerText": "Le score montre une surdité de transmission.",
+          "answerext": "Le score montre une surdité de transmission.",
           "isCorrect": false,
           "correctionText": "Ce n'est <b>pas une surdité de transmission</b> car l'audiogramme montre une atteinte au niveau de l'<b>oreille interne</b> (ou plus précisément, une atteinte cochléaire), ce qui caractérise une <b>surdité de perception</b>.",
           "rappelTip": "None",
