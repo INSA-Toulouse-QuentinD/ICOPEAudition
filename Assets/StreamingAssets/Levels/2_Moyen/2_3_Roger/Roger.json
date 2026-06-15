@@ -1,0 +1,71 @@
+{
+  "spriteUp": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_up.png",
+  "spriteSit": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_sit.png",
+  "spriteWeber": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_weber.png",
+  "isOnPhone": false,
+  "lastName": "Bonnet",
+  "firstName": "Roger",
+  "age": 72,
+  "familySituation": "",
+  "occupationalActivities": "",
+  "context": "se plaint d’une gêne auditive droite avec douleurs et écoulements intermittents.\nIl a été repéré anormal sur un test auditif de dépistage réalisé par l’audioprothésiste qui suit son épouse.\nAdressage pour une évaluation étape 2 de l’audition.",
+  "medicalHistory": "Diabétique de type 2 mal équilibré.",
+  "descriptionLevel": "",
+  "steps": [
+    {
+      "type": "CasePresentation",
+      "actionPhase": [
+        {
+          "answerText": "Je réalise une vidéo-otoscopie.",
+          "correctionText": "Il est important de bien respecter l’algorithme décisionnel. La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l’audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+        },
+        {
+          "answerText": "Je lui fait passer le questionnaire Go-No-Go.",
+          "isCorrect": true,
+          "correctionText": "La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l’audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+        },
+        {
+          "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL.",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge identifié, je poursuis son évaluation.",
+          "rappelTip": "RedFlag"
+        },
+        {
+          "answerText": "Je réalise le test de chuchotement.",
+          "correctionText": "Il est important de bien respecter l’algorithme décisionnel. La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l’audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+        }
+      ]
+    },
+    {
+      "type": "GoNoGo",
+      "predefinedAnswer": [
+        "No",
+        "No",
+        "No",
+        "No",
+        "No",
+        "No",
+        "Yes"
+      ],
+      "actionPhase": [
+        {
+          "answerText": "Je poursuis avec l'otoscopie.",
+          "correctionText": "Il s’agit d’un No Go, il est impératif d’adresser le patient chez l’ORL ou le médecin généraliste, le parcours ICOPE Audition s’arrête."
+        },
+        {
+          "answerText": "Je prescris des gouttes antibiotiques.",
+          "correctionText": "Il s’agit d’un No Go, il est impératif d’adresser le patient chez l’ORL ou le médecin généraliste, le parcours ICOPE Audition s’arrête."
+        },
+        {
+          "answerText": "Je fais lui fait passer le questionnaire HHIE-S.",
+          "correctionText": "Il s’agit d’un No Go, il est impératif d’adresser le patient chez l’ORL ou le médecin généraliste, le parcours ICOPE Audition s’arrête."
+        },
+        {
+          "answerText": "Je l'envoie vers un ORL.",
+          "isCorrect": true,
+          "correctionText": "Il s’agit d’un No Go, il est impératif d’adresser le patient chez l’ORL ou le médecin généraliste, le parcours ICOPE Audition s’arrête.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "rappelTip": "DiabetiqueOtite"
+        }
+      ]
+    }
+  ]
+}

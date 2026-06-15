@@ -37,7 +37,6 @@ namespace UI.TutorialContents{
                 if (_nameStep == "Tutorial" && _indexText == 0) {
                     _indexText = 12;
                     SetTexts(_nameStep, _indexText);
-                    TipsManager.Instance.InitTips(RappelTip.Algorithme);
                 } else {
                     GameManager.Instance.SetTutorialUI();
                     _indexText = -1;

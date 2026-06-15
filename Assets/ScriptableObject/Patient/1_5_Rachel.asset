@@ -318,7 +318,7 @@ MonoBehaviour:
     spriteEarExams: {fileID: 21300000, guid: 5174bc97a754d704f97111058b995762, type: 3}
     overrideDiagnosticQuestion: 
     diagnosticPhase:
-    - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es. [DEBUG!!!]"
+    - answerText: "Le score est en faveur de difficult\xE9s mod\xE9r\xE9es."
       isCorrect: 1
       correctionText: "Le score > 8/40 permet de d\xE9pister une d\xE9ficience auditive
         (probabilit\xE9 11% pour un score entre 0 et 8) et le score > 16/40 permettait
@@ -383,7 +383,7 @@ MonoBehaviour:
       sprites: []
   - type: 4
     dialoguePatient: "Je n'arrive pas \xE0 savoir, j'ai entendu la m\xEAme chose
-      des deux c\xF4t\xE9s. [DEBUG!!!]"
+      des deux c\xF4t\xE9s."
     predefinedAnswer: 
     spriteEarExams: {fileID: 0}
     overrideDiagnosticQuestion: 
@@ -523,8 +523,7 @@ MonoBehaviour:
         en charge r\xE9ussie. Tu as d\xE9bloqu\xE9 un nouveau niveau."
       rappelTip: 0
       sprites: []
-    - answerText: 'Je lui propose un prochain rendez-vous de suivi ICOPE. [DEBUG!!!
-        Surveillance]'
+    - answerText: 'Je lui propose un prochain rendez-vous de suivi ICOPE.'
       isCorrect: 0
       correctionText: ???
       rappelTip: 0

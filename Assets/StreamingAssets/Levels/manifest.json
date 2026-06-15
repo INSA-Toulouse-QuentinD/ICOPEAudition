@@ -19,7 +19,11 @@
     {
       "name": "2_Moyen",
       "patients": [
-        "2_1_Rachel"
+        "2_1_Rachel",
+        "2_2_Alain",
+        "2_3_Roger",
+        "2_4_Marie",
+        "2_5_Helene"
       ]
     }
   ]

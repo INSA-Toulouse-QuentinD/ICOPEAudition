@@ -25,7 +25,7 @@ namespace Managers{
         public GameData GameData{ get; private set; }
         public AudioManager AudioManager{ get; private set; }
         private PatientAnimation PatientAnimation{ get; set; }
-        private StepManagerN StepManagerN{ get; set; }
+        private StepManager StepManager{ get; set; }
 
         #region Structures
 
@@ -114,10 +114,10 @@ namespace Managers{
                 AudioManager.StopCurrentSfx();
                 ClearScreen();
                 stepMenu.SetActive(true);
-                StepManagerN.Initialize(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient]);
+                StepManager.Initialize(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient]);
             }
 
-            StepManagerN.LoadStep(stepIndex);
+            StepManager.LoadStep(stepIndex);
         }
 
         internal void LoadScore(string patientName){
@@ -255,7 +255,7 @@ namespace Managers{
 
             GameStateManager = GetComponent<GameStateManager>();
             GameData = GetComponent<GameData>();
-            StepManagerN = GetComponent<StepManagerN>();
+            StepManager = GetComponent<StepManager>();
 
             AudioManager = GetComponent<AudioManager>();
             PatientAnimation = GetComponent<PatientAnimation>();

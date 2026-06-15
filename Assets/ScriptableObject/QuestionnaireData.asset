@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: QuestionnaireData
   m_EditorClassIdentifier: 
   questions:
-  - questionText: "Etes-vous devenu sourd brutalement ou avez-vous une surdit\xE9
+  - questionText: "- Etes-vous devenu sourd brutalement ou avez-vous une surdit\xE9
       qui varie dans le temps ?"
   - questionText: "Avez-vous une perte d\u2019audition (g\xE8ne auditive) qui touche
       une seule oreille ou une perte d\u2019audition qui pr\xE9domine d\u2019un c\xF4t\xE9
-      ? "
+      ?"
   - questionText: "Avez-vous des acouph\xE8nes (les \xAB oreilles qui sifflent \xBB
       ou qui \xAB bourdonnent \xBB ou entendez-vous des grincements\u2026) d\u2019un
-      seul c\xF4t\xE9 "
+      seul c\xF4t\xE9 ?"
   - questionText: "Avez-vous l\u2019impression que les sons que vous entendez suivent
       le rythme de votre c\u0153ur (acouph\xE8nes pulsatiles) ou sont \xE9volutifs
       ? "

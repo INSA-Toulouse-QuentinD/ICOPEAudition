@@ -97,6 +97,11 @@ namespace Managers{
         Rinne,
         Acoumetry,
         Hhies,
-        Hygiene
+        Hygiene,
+        Acouphene,
+        Bdc,
+        Appareil,
+        AppareilAcouphene,
+        DiabetiqueOtite
     }
 }

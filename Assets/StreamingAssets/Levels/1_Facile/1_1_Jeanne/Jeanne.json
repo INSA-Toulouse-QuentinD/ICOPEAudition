@@ -23,7 +23,7 @@
         {
           "answerText": "Je réalise une vidéo-otoscopie.",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, le médecin à déjà réalisé le test de chuchotement. A ce stade, si la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation. Dans ce cas là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE avec le test Go-No-Go. ",
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, le médecin à déjà réalisé le test de chuchotement. A ce stade, si la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation. Dans ce cas là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE avec le test Go-No-Go.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -94,9 +94,9 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Elle n'a répondu que des \"non\", ce qui indique une urgence ORL. ",
+          "answerText": "Elle n'a répondu que des \"non\", ce qui indique une urgence ORL.",
           "isCorrect": false,
-          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond «OUI» à une ou plusieurs questions.\n\nLes urgences vraies, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie\n- Les otorrhées avec otalgies, évocatrices d'une otite externe",
+          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond «OUI» à une ou plusieurs questions.\n\nLes urgences vraies, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -297,7 +297,7 @@
         {
           "answerText": "Il y a une anomalie car elle n'a pas su restituer les 3 mots minimum de chaque côté.",
           "isCorrect": true,
-          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si le patient est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, la patiente n'a su répéter que <b>2 mots sur 4</b> pour chaque oreille, ce qui est <b>en dessous du seuil requis</b>.\nCela indique une <b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.\n",
+          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si le patient est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, la patiente n'a su répéter que <b>2 mots sur 4</b> pour chaque oreille, ce qui est <b>en dessous du seuil requis</b>.\nCela indique une <b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -305,7 +305,7 @@
         {
           "answerText": "Il n'y a pas d'anomalie car elle a su restituer les 2 mots de chaque côté.",
           "isCorrect": false,
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste généralement à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation. \n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
+          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste généralement à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -445,7 +445,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Le score montre une surdité de perception. ",
+          "answerText": "Le score montre une surdité de perception.",
           "isCorrect": false,
           "correctionText": "Non, il s'agit d'une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie.",
           "rappelTip": "None",
@@ -455,7 +455,7 @@
         {
           "answerText": "Le score montre une audition normale.",
           "isCorrect": false,
-          "correctionText": "Ce <b>n'est pas une audition normale</b>, car les seuils d'audition mesurés sont <b>supérieurs à 20 dB HL</b> sur plusieurs fréquences pour les deux oreilles. \n\nOn considère qu'une <b>audition est normale</b> lorsque les seuils sont compris entre <b>-10 et 20 dB HL</<b>b> sur toutes les fréquences testées (500 Hz à 6000 Hz).\n\nil s'agit d'une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie.",
+          "correctionText": "Ce <b>n'est pas une audition normale</b>, car les seuils d'audition mesurés sont <b>supérieurs à 20 dB HL</b> sur plusieurs fréquences pour les deux oreilles.\n\nOn considère qu'une <b>audition est normale</b> lorsque les seuils sont compris entre <b>-10 et 20 dB HL</<b>b> sur toutes les fréquences testées (500 Hz à 6000 Hz).\n\nil s'agit d'une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -479,9 +479,9 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je prescris à la patiente une appareillage audioprothétique bilatéral.",
+          "answerText": "Je prescris à la patiente un appareillage audioprothétique bilatéral.",
           "isCorrect": true,
-          "correctionText": "OUI, ici on reste dans le cadre du parcours ICOPE audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. Je peux lui prescrire un appareillage audioprothétique sans avoir besoin de l'adresser vers l'ORL\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent. \n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "correctionText": "OUI, ici on reste dans le cadre du parcours ICOPE audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. Je peux lui prescrire un appareillage audioprothétique sans avoir besoin de l'adresser vers l'ORL\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

@@ -11,8 +11,8 @@ namespace PatientData.AlgoData{
         WisperTest,
         GoNoGo,
         Otoscopy,
-        WeberTest,
         Hhies,
+        WeberTest,
         Audiometry,
     }
 

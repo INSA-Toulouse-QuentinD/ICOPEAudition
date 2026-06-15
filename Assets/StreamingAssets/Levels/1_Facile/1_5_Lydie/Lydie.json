@@ -23,7 +23,7 @@
         {
           "answerText": "Je réalise une vidéo-otoscopie.",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. \nLe repérage a été fait en autodépistage. <color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -31,7 +31,7 @@
         {
           "answerText": "Je vérifie ses oreilles.",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. \nLe repérage a été fait en autodépistage. <color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -56,7 +56,7 @@
     },
     {
       "type": "WisperTest",
-      "dialoguePatient": "J'ai entendu 2 mots à gauche et 3 à droite.\n",
+      "dialoguePatient": "J'ai entendu 2 mots à gauche et 3 à droite.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
       "overrideDiagnosticQuestion": "",
@@ -72,15 +72,15 @@
         {
           "answerText": "Il y a une anomalie car il n'a pas su restituer les 3 mots des 2 côtés.",
           "isCorrect": true,
-          "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente n'a su répéter que 2 mots sur 4 pour chaque côté, ce qui est en dessous du seuil requis.\nCela indique une atteinte de l'audition bilatérale, car aucun des deux côtés n'atteint le critère minimal de 3 mots correctement restitués sur 4.\n",
+          "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente n'a su répéter que 2 mots sur 4 pour chaque côté, ce qui est en dessous du seuil requis.\nCela indique une atteinte de l'audition bilatérale, car aucun des deux côtés n'atteint le critère minimal de 3 mots correctement restitués sur 4.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'y a pas d'anomalie car il a su restituer les 2 mots du côté gauche. ",
+          "answerText": "Il n'y a pas d'anomalie car il a su restituer les 2 mots du côté gauche.",
           "isCorrect": false,
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste généralement à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation. \n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\nOr, dans ce cas précis, le patient n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
+          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste généralement à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\nOr, dans ce cas précis, le patient n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -88,7 +88,7 @@
         {
           "answerText": "Le test est normal.",
           "isCorrect": false,
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, le patient doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLe patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'il <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si le patient avait répété les 3 mots de chaque côté.",
+          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, le patient doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLe patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>3 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'il <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si le patient avait répété les 3 mots de chaque côté.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -96,15 +96,15 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je continue le parcours audition et lui fais passer une vidéo otoscopie.",
+          "answerText": "Je lui fais passer le questionnaire Go-No-Go.",
           "isCorrect": true,
-          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go-No-Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
+          "correctionText": "Le test de chuchotement était anormal, nous poursuivons le déroulé de l'étape 2 d'ICOPE Audition, avec le questionnaire Go-No-Go.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je lui fais passer le test HHIES.",
+          "answerText": "Je continue le parcours audition et lui fais passer une vidéo otoscopie.",
           "isCorrect": false,
           "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go-No-Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
           "rappelTip": "None",
@@ -145,7 +145,7 @@
       "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
-          "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé. ",
+          "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé.",
           "isCorrect": false,
           "correctionText": "Non, le questionnaire ne révèle simplement aucun signal d'alerte quant à un cas complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors d'un adressage ORL.",
           "rappelTip": "None",
@@ -161,7 +161,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Ses réponses ne montrent pas de problème significatifs. ",
+          "answerText": "Ses réponses ne montrent pas de problème significatifs.",
           "isCorrect": false,
           "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors d'un adressage ORL.",
           "rappelTip": "None",
@@ -169,7 +169,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL. ",
+          "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL.",
           "isCorrect": false,
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond «OUI» à une ou plusieurs questions.\n\nLes urgences vraies, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.",
           "rappelTip": "None",
@@ -181,7 +181,7 @@
         {
           "answerText": "Je le laisse repartir chez lui.",
           "isCorrect": false,
-          "correctionText": "Non, son test de chuchotement est pathologique, il faut donc continuer l'exploration. Le questionnaire a permis d'éliminer des signes évocateurs d'une surdité complexe, on continue avec l'examen physique puis l'évaluation auditive.\n",
+          "correctionText": "Non, son test de chuchotement est pathologique, il faut donc continuer l'exploration. Le questionnaire a permis d'éliminer des signes évocateurs d'une surdité complexe, on continue avec l'examen physique puis l'évaluation auditive.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -197,7 +197,7 @@
         {
           "answerText": "Je continue le parcours audition et lui fais passer une vidéo otoscopie.",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. La vidéo otoscopie est l'examen à réaliser en suivant. \n",
+          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. La vidéo otoscopie est l'examen à réaliser en suivant.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -264,7 +264,7 @@
         {
           "answerText": "Je prescris des gouttes et j'attends 8 jours.",
           "isCorrect": false,
-          "correctionText": "Non car c'est un BDC. Il faut réaliser un diagnostic clinique, si le BDC est non obstructif ou asymptomatique et ne gênant pas l'examen: on ne le retire pas, dans les autres cas on le retire. [DEBUG!!!]",
+          "correctionText": "Non car c'est un BDC. Il faut réaliser un diagnostic clinique, si le BDC est non obstructif ou asymptomatique et ne gênant pas l'examen: on ne le retire pas, dans les autres cas on le retire.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -339,7 +339,7 @@
         {
           "answerText": "Je poursuis avec HHIE-S.",
           "isCorrect": false,
-          "correctionText": "???",
+          "correctionText": "Le test étant normal je n’ai pas besoin de réaliser le test HHIE-S.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -347,7 +347,7 @@
         {
           "answerText": "Je rassure et je conseille un nouveau dépistage par l'application HORA dans 6 mois.",
           "isCorrect": true,
-          "correctionText": "OUI\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent. \n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "correctionText": "OUI\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -355,7 +355,7 @@
         {
           "answerText": "Je fais l'audiométrie.",
           "isCorrect": false,
-          "correctionText": "???",
+          "correctionText": "Le test étant normal je n’ai pas besoin de réaliser l'audiométrie.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -363,7 +363,7 @@
         {
           "answerText": "Je passe au Go-No-Go.",
           "isCorrect": false,
-          "correctionText": "???",
+          "correctionText": "Le test étant normal je n’ai pas besoin de réaliser le test Go-No-GO.\n\nDe plus, il a déjà été réalisé au début !",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

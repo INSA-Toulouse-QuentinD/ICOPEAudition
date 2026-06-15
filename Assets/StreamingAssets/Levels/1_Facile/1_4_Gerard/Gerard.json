@@ -10,7 +10,7 @@
   "occupationalActivities": "Il adore jouer aux jeux de société avec ses colocataires.",
   "context": "Il a été repéré par une IDE lors d'un atelier prévention de sa mutuelle, qui véhicule les informations concernant ICOPE. Il se plaint de ne pas toujours comprendre ses interlocuteurs, surtout dans un environnement bruyant. Il n'a pas d'antécédent ORL connu.",
   "medicalHistory": "",
-  "descriptionLevel": "Gérard Fontaine, ancien agriculteur, vient vous voir car il ne comprend pas toujours ses interlocuteurs. ",
+  "descriptionLevel": "Gérard Fontaine, ancien agriculteur, vient vous voir car il ne comprend pas toujours ses interlocuteurs.",
   "steps": [
     {
       "type": "CasePresentation",
@@ -23,7 +23,7 @@
         {
           "answerText": "Je réalise une vidéo-otoscopie.",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. \nLe repérage a été fait en autodépistage. <color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\nLe repérage a été fait en autodépistage. <color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -31,7 +31,7 @@
         {
           "answerText": "Je vérifie ses oreilles.",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. \nLe repérage a été fait en autodépistage. <color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\nLe repérage a été fait en autodépistage. <color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -56,7 +56,7 @@
     },
     {
       "type": "WisperTest",
-      "dialoguePatient": "J'ai entendu 2 mots à droite. J'ai entendu 2 mots à gauche.\n",
+      "dialoguePatient": "J'ai entendu 2 mots à droite. J'ai entendu 2 mots à gauche.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
       "overrideDiagnosticQuestion": "",
@@ -80,7 +80,7 @@
         {
           "answerText": "Le test est anormal car le patient n'a pas su répéter au moins 3 mots sur 4 de chaque côté.",
           "isCorrect": true,
-          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si le patient est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, le patient n'a su répéter que <b>2 mots sur 4</b> pour <b>chaque côté</b>, ce qui est <b>en dessous du seuil requis</b>.\nCela indique une <b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.\n",
+          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si le patient est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, le patient n'a su répéter que <b>2 mots sur 4</b> pour <b>chaque côté</b>, ce qui est <b>en dessous du seuil requis</b>.\nCela indique une <b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -145,7 +145,7 @@
       "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
-          "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé. ",
+          "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé.",
           "isCorrect": false,
           "correctionText": "Non, le questionnaire ne révèle simplement aucun signal d'alerte quant à un cas complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors d'un adressage ORL.",
           "rappelTip": "None",
@@ -161,7 +161,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Ses réponses ne montrent pas de problème significatifs. ",
+          "answerText": "Ses réponses ne montrent pas de problème significatifs.",
           "isCorrect": false,
           "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors d'un adressage ORL.",
           "rappelTip": "None",
@@ -169,7 +169,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL. ",
+          "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL.",
           "isCorrect": false,
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond «OUI» à une ou plusieurs questions.\n\nLes urgences vraies, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.",
           "rappelTip": "None",
@@ -181,7 +181,7 @@
         {
           "answerText": "Je le laisse repartir chez lui.",
           "isCorrect": false,
-          "correctionText": "Non, son test de chuchotement est pathologique, il faut donc continuer l'exploration. Le questionnaire a permis d'éliminer des signes évocateurs d'une surdité complexe, on continue avec l'examen physique puis l'évaluation auditive.\n",
+          "correctionText": "Non, son test de chuchotement est pathologique, il faut donc continuer l'exploration. Le questionnaire a permis d'éliminer des signes évocateurs d'une surdité complexe, on continue avec l'examen physique puis l'évaluation auditive.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -197,7 +197,7 @@
         {
           "answerText": "Je continue le parcours audition et lui fais passer une vidéo otoscopie.",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. La vidéo otoscopie est l'examen à réaliser en suivant. \n",
+          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. La vidéo otoscopie est l'examen à réaliser en suivant.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
