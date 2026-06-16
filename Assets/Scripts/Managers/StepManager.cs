@@ -152,8 +152,7 @@ namespace Managers{
                     // Display current step
 
                     displayList[_currentDisplay].SetActive(true);
-
-                    TipsManager.Instance.InitTips(RappelTip.Algorithme); //DEBUG!!! Mettre le rappel à tous ???
+                    
                     UITutorialControler.Instance.TutorialMichel(0);
                     break;
                 case Step.WisperTest:
@@ -473,17 +472,22 @@ namespace Managers{
             bool isCorrectAnswer = IsAnswerCorrect(answerData, sourceIndex);
             string feedBackText = isCorrectAnswer ? "Bonne réponse !" : "Mauvaise réponse !";
 
+            if (_step == Step.CasePresentation && !isCorrectAnswer) {
+                TipsManager.Instance.InitTips(RappelTip.Algorithme);
+            }
+
+            TipsManager.Instance.InitTips(_answerState == AnswerState.Diagnostic
+                ? _patientData.steps[_indexStep].diagnosticPhase[sourceIndex].rappelTip
+                : _patientData.steps[_indexStep].actionPhase[sourceIndex].rappelTip);
+
             if (!isCorrectAnswer) {
                 choiceButtons[index].GetComponent<AnswerButton>().SetIncorrect();
 
                 // Remember this incorrect attempt so that "Précédent" won't reset it.
                 if (_answerState == AnswerState.Diagnostic) {
-                    TipsManager.Instance.InitTips(_patientData.steps[_indexStep].diagnosticPhase[sourceIndex]
-                        .rappelTip);
                     if (index >= 0 && index < _diagAnswerState.IncorrectTried.Count)
                         _diagAnswerState.IncorrectTried[index] = true;
                 } else {
-                    TipsManager.Instance.InitTips(_patientData.steps[_indexStep].actionPhase[sourceIndex].rappelTip);
                     if (index >= 0 && index < _actionAnswerState.IncorrectTried.Count)
                         _actionAnswerState.IncorrectTried[index] = true;
                 }
