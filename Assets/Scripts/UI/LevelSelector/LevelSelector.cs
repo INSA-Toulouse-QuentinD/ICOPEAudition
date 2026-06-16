@@ -45,29 +45,37 @@ namespace UI.LevelSelector{
         private void OnEnable(){
             if (_init) return;
             _init = true;
-            
+
             // add listerner to stats button
             startGameButton.onClick.AddListener(LoadPatientCase);
-            
-            levelsData = GameManager.Instance.levelsData;
-            _levelCompos = new List<ButtonPressDetector>();
-            foreach (PatientCaseLevel pcl in levelsData.patientByLevel) {
-                ButtonPressDetector bpd = Instantiate(buttonPref, levelContainer.transform)
-                    .GetComponent<ButtonPressDetector>();
-                bpd.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = pcl.name;
-                _levelCompos.Add(bpd);
-            }
-            
+
+            ActualizeLevelList();
+
             // Le tutoriel et selectionner de base.
             ButtonsManager.SetButtonFocused(_levelCompos[0]);
             ActivePatientUiElements(false);
             ChangeDescription(0);
-            for (int i = 0; i < _levelCompos.Count; i++) {
-                int index = i;
-                _levelCompos[i].onPress.AddListener(delegate{ ChangeLevel(index); });
-            }
 
             ChangeLevel(0);
+        }
+
+        public void ActualizeLevelList(){
+            foreach (Transform child in levelContainer.transform) {
+                Destroy(child.gameObject);
+            }
+
+            levelsData = GameManager.Instance.levelsData;
+            _levelCompos = new List<ButtonPressDetector>();
+            int index = 0;
+            foreach (PatientCaseLevel pcl in levelsData.patientByLevel) {
+                ButtonPressDetector bpd = Instantiate(buttonPref, levelContainer.transform)
+                    .GetComponent<ButtonPressDetector>();
+                bpd.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = pcl.name;
+                int i = index;
+                bpd.onPress.AddListener(delegate{ ChangeLevel(i); });
+                index++;
+                _levelCompos.Add(bpd);
+            }
         }
 
         /// <summary>

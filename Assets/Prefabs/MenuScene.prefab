@@ -2939,6 +2939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49563c7d23b90214195f64ee0793e4cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelSelector: {fileID: 1313396014788797188}
   canAccessAllLevel: 1
   instanteAnimation: 1
   skipAssistante: 1
@@ -5105,6 +5106,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3064741432946674067, guid: 25ba68ebdcfe11a469eb14b3125dc830, type: 3}
   m_PrefabInstance: {fileID: 2698724973154022756}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1313396014788797188 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3983946964209522272, guid: 25ba68ebdcfe11a469eb14b3125dc830, type: 3}
+  m_PrefabInstance: {fileID: 2698724973154022756}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6317174063847773527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e560fe2de8f168449cf3358dbaf8b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3544874494594731581 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1459764974975679321, guid: 25ba68ebdcfe11a469eb14b3125dc830, type: 3}

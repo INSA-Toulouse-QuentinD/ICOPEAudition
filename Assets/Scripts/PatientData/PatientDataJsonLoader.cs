@@ -57,7 +57,7 @@ namespace PatientData{
             public string spriteJustification2;
         }
 
-        public static IEnumerator LoadLevelData(Action<LevelsData> onDone){
+        public static IEnumerator LoadLevelData(Action<LevelsData> onOneDone, Action<LevelsData> onDone){
             LevelsData result = ScriptableObject.CreateInstance<LevelsData>();
 
             string manifestJson = null;
@@ -92,6 +92,7 @@ namespace PatientData{
                 }
 
                 result.patientByLevel.Add(level);
+                onOneDone?.Invoke(result);
             }
 
             onDone?.Invoke(result);

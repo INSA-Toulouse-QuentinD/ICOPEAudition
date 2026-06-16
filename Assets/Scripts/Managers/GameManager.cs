@@ -7,6 +7,7 @@ using PatientData.AlgoData;
 using UI.ScoreContents;
 using PatientData;
 using TMPro;
+using UI.LevelSelector;
 
 namespace Managers{
     [RequireComponent(typeof(GameStateManager))]
@@ -26,6 +27,7 @@ namespace Managers{
         public AudioManager AudioManager{ get; private set; }
         private PatientAnimation PatientAnimation{ get; set; }
         private StepManager StepManager{ get; set; }
+        public LevelSelector levelSelector;
 
         #region Structures
 
@@ -59,7 +61,9 @@ namespace Managers{
         public bool alwaysRight;
         public bool forcePositionChoice;
 
-        [HideInInspector, Header("Levels")] [SerializeField] public LevelsData levelsData;
+        [HideInInspector, Header("Levels")] [SerializeField]
+        public LevelsData levelsData;
+
         [SerializeField] private GameObject jsonButton;
         [SerializeField] private GameObject jsonInfo;
         [SerializeField] private Transform jsonInfoContent;
@@ -265,6 +269,7 @@ namespace Managers{
             foreach (Transform child in jsonInfoContent) {
                 Destroy(child.gameObject);
             }
+
             mainMenu.SetActive(true);
             gameMenu.SetActive(false);
             stepMenu.SetActive(false);
@@ -278,18 +283,25 @@ namespace Managers{
             // Check validity of tutorial XML
             XmlManager.ValidateXML(_pathXmlFile, _pathXsdFile);
 
-            StartCoroutine(PatientDataJsonLoader.LoadLevelData(levels => {
-                levelsData = levels;
-                playButton.interactable = true;
+            StartCoroutine(PatientDataJsonLoader.LoadLevelData(
+                levels => {
+                    levelsData = levels;
+                    playButton.interactable = true;
+                    levelSelector.ActualizeLevelList();
+                    Debug.Log($"Le niveau \"{levels.patientByLevel[^1].name}\" est prêt !");
+                },
+                levels => {
+                    Debug.Log("Liste des niveaux:");
+                    foreach (PatientCaseLevel level in levels.patientByLevel) {
+                        string text = $"___{level.name}___: ";
+                        foreach (PatientData.PatientData cas in level.patientsCase) {
+                            text += $"{cas.firstName} / ";
+                        }
 
-                foreach (PatientCaseLevel level in levels.patientByLevel) {
-                    string text = $"___{level.name}___: ";
-                    foreach (PatientData.PatientData cas in level.patientsCase) {
-                        text += $"{cas.firstName} / ";
+                        Debug.Log(text.Substring(0, text.Length - 3));
                     }
-                    Debug.Log(text.Substring(0, text.Length - 3));
                 }
-            }));
+            ));
 
             LoadListItems();
 
