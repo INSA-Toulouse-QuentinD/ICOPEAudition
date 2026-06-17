@@ -1,7 +1,6 @@
 {
-  "spriteUp": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_up.png",
-  "spriteSit": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_sit.png",
-  "spriteWeber": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_weber.png",
+  "spriteUp": "Levels\\2_Moyen\\2_5_Helene\\Helene_up.png",
+  "spriteSit": "Levels\\2_Moyen\\2_5_Helene\\Helene_sit.png",
   "isOnPhone": false,
   "lastName": "Lambert",
   "firstName": "Hélène",
