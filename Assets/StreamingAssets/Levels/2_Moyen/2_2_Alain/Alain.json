@@ -1,6 +1,6 @@
 {
   "spriteUp": "Levels\\2_Moyen\\2_2_Alain\\Alain_up.png",
-  "spriteSit": "Levels\\2_Moyen\\2_2_Alain\\Michel_sit.png",
+  "spriteSit": "Levels\\2_Moyen\\2_2_Alain\\Alain_sit.png",
   "isOnPhone": false,
   "lastName": "Thomas",
   "firstName": "Alain",
@@ -17,34 +17,19 @@
         {
           "answerText": "Je réalise le test Go-No-Go..",
           "isCorrect": true,
-          "correctionText": "Oui, la première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l’IDE a déjà réalisé le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
+          "correctionText": "Oui, la première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l’IDE a déjà réalisé le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go."
         },
         {
           "answerText": "Je réalise une vidéo-otoscopie.",
-          "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l’otoscopie.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l’otoscopie."
         },
         {
           "answerText": "Je réalise l'audiométrie.",
-          "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l’audiométrie.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l’audiométrie."
         },
         {
           "answerText": "Je réalise le questionnaire HHIE-S.",
-          "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non le questionnaire HHIE-S.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non le questionnaire HHIE-S."
         }
       ]
     },
@@ -59,56 +44,16 @@
         "No",
         "No"
       ],
-      "diagnosticPhase": [
-        {
-          "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé.",
-          "isCorrect": false,
-          "correctionText": "Non, le questionnaire ne révèle simplement aucun signal d'alerte quant à un cas complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors d'un adressage ORL.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
-        },
-        {
-          "answerText": "Il n'a répondu que des \"non\", ce qui indique une suspicion de cas simple.",
-          "isCorrect": true,
-          "correctionText": "Si aux réponses du questionnaire Go-No-Go, le patient réponds \"Non\" à chaque question, il s'agit bien d'une suspicion de cas simple.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
-        },
-        {
-          "answerText": "Ses réponses ne montrent pas de problème significatifs.",
-          "isCorrect": false,
-          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors d'un adressage ORL.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
-        },
-        {
-          "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL.",
-          "isCorrect": false,
-          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond «OUI» à une ou plusieurs questions.\n\nLes urgences vraies, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
-        }
-      ],
       "actionPhase": [
         {
           "answerText": "Je continue le parcours audition et lui fais passer une vidéo otoscopie.",
           "isCorrect": true,
-          "correctionText": "Le questionnaire Go – No Go est un Go permettant la poursuite du parcours ICOPE AUDITION.\nDans l’algorithme décisionnel l’otoscopie est la prochaine étape du parcours.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
+          "correctionText": "Le questionnaire Go – No Go est un Go permettant la poursuite du parcours ICOPE AUDITION.\nDans l’algorithme décisionnel l’otoscopie est la prochaine étape du parcours."
         },
         {
           "answerText": "Je l'envoie vers un ORL.",
-          "isCorrect": false,
           "correctionText": "Ici il n'existe aucun drapeau rouge : il n'y a donc pas d'indication à un adressage ORL, je peux continuer mon évaluation avec la réalisation de l'examen physique (examen du pavillon et vidéo-otoscopie).",
-          "rappelTip": "RedFlag",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
+          "rappelTip": "RedFlag"
         },
         {
           "answerText": "Je répète le test de chuchotement.",
@@ -124,40 +69,6 @@
       "type": "Otoscopy",
       "dialoguePatient": "J'ai oublié de dire, j'ai été opéré d’une tympanoplastie il y a environ 10 ans.",
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\2_2_cerumen.png",
-      "diagnosticPhase": [
-        {
-          "answerText": "Il s'agit d'une otite moyenne aiguë.",
-          "isCorrect": false,
-          "correctionText": "Une OMA est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée, souvent de la fièvre.",
-          "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
-        },
-        {
-          "answerText": "Il s'agit d'une perforation tympanique.",
-          "isCorrect": false,
-          "correctionText": "Faux, Il n'existe pas de perforation de la membrane.",
-          "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
-        },
-        {
-          "answerText": "Il s'agit d'un bouchon de cérumen.",
-          "isCorrect": true,
-          "correctionText": "Lors de l'examen, on observe une masse brunâtre, homogène et mate, obstruant le conduit auditif externe, sans visualisation du tympan ni des repères anatomiques habituels. Ces éléments sont caractéristiques d'un bouchon de cérumen.",
-          "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
-        },
-        {
-          "answerText": "Il s'agit d'un tympan normal.",
-          "isCorrect": false,
-          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), que fait le fond du Conduit Auditif Externe.",
-          "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_2.png"
-        }
-      ],
       "actionPhase": [
         {
           "answerText": "J’utilise l’irrigation pour retirer le bouchon.",

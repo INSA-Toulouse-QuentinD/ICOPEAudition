@@ -37,25 +37,6 @@
     {
       "type": "WisperTest",
       "dialoguePatient": "J'ai entendu 2 mots de chaque côté.",
-      "diagnosticPhase": [
-        {
-          "answerText": "Le test est normal car le patient a réussi à entendre au moins un mot de chaque côté.",
-          "correctionText": "Non, le test est bien pathologique. Le <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 minimum par oreille)."
-        },
-        {
-          "answerText": "Il y a une anomalie car elle n'a pas su restituer les 3 mots des 2 côtés.",
-          "isCorrect": true,
-          "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente n'a su répéter que 2 mots sur 4 pour chaque côté, ce qui est en dessous du seuil requis.\nCela indique une atteinte de l'audition bilatérale, car aucun des deux côtés n'atteint le critère minimal de 3 mots correctement restitués sur 4."
-        },
-        {
-          "answerText": "Il n'y a pas d'anomalie car elle a su restituer les 2 mots du côté gauche.",
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste généralement à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\nOr, dans ce cas précis, le patient n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>."
-        },
-        {
-          "answerText": "Le test est normal.",
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, le patient doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLe patient a répété <b>seulement 2 mots sur 4</b> de chaque côté,\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si le patient avait répété les 3 mots de chaque côté."
-        }
-      ],
       "actionPhase": [
         {
           "answerText": "Je lui fais passer le questionnaire Go-No-Go.",
