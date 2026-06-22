@@ -127,10 +127,13 @@ namespace PatientData{
             }
 
             bool hasWeberTest = false;
+            bool needSit = false;
             foreach (AlgoStep step in steps) {
+                if (step is {type: Step.WisperTest or Step.Otoscopy}) {
+                    needSit = true;
+                }
                 if (step.type == Step.WeberTest) {
                     hasWeberTest = true;
-                    break;
                 }
             }
 
@@ -139,7 +142,7 @@ namespace PatientData{
             Sprite weber = null;
 
             yield return LoadSprite(dto.spriteUp, s => up = s, dto.isOnPhone);
-            yield return LoadSprite(dto.spriteSit, s => sit = s, dto.isOnPhone);
+            yield return LoadSprite(dto.spriteSit, s => sit = s, !needSit);
             yield return LoadSprite(dto.spriteWeber, s => weber = s, !hasWeberTest);
 
             List<Sprite> sprites = new();
@@ -151,7 +154,7 @@ namespace PatientData{
 
             if (sit) {
                 sprites.Add(sit);
-            } else if (!dto.isOnPhone) {
+            } else if (needSit) {
                 GameManager.Instance.JsonErrorAdd($"Le patient {path} a besoin d'une image assis ! (spriteSit)");
             }
 

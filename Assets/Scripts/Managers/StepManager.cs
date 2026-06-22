@@ -130,6 +130,7 @@ namespace Managers{
         /// <param name="currentStep">The step to load and display.</param>
         public void LoadStep(Step currentStep){
             ClearAllDisplay();
+            TipsManager.Instance.HideButton();
 
             _step = currentStep;
 
@@ -472,6 +473,7 @@ namespace Managers{
             bool isCorrectAnswer = IsAnswerCorrect(answerData, sourceIndex);
             string feedBackText = isCorrectAnswer ? "Bonne réponse !" : "Mauvaise réponse !";
 
+            TipsManager.Instance.HideButton();
             if (_step == Step.CasePresentation && !isCorrectAnswer) {
                 TipsManager.Instance.InitTips(RappelTip.Algorithme);
             }
