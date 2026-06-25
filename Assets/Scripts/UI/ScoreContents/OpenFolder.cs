@@ -9,6 +9,7 @@ namespace UI.ScoreContents{
         [SerializeField] private ButtonPressDetector openDetailsButton;
         [SerializeField] private RectTransform folderDivider, folderInside, folderCover;
         [SerializeField] private GameObject[] folderHideElements;
+        [SerializeField] private GameObject[] folderShowElements;
         [SerializeField] private Button[] pagesNavigationButs;
 
         [SerializeField] private GameObject prefab;
@@ -24,8 +25,9 @@ namespace UI.ScoreContents{
             openDetailsButton.onPress.AddListener(OpenFolderVoid);
             pagesNavigationButs[0].onClick.AddListener(delegate{ SwitchPages(true); });
             pagesNavigationButs[1].onClick.AddListener(delegate{ SwitchPages(false); });
-            InstanciatePages();
+            InstantiatePages();
             HideButtons();
+            HideElements(false);
         }
 
         void OnDisable(){
@@ -34,7 +36,7 @@ namespace UI.ScoreContents{
             pagesNavigationButs[1].onClick.RemoveAllListeners();
         }
 
-        private void InstanciatePages(){
+        private void InstantiatePages(){
             _pageId = 0;
             _pagesSteps ??= new List<RectTransform>();
 
@@ -212,6 +214,10 @@ namespace UI.ScoreContents{
         private void HideElements(bool hide){
             foreach (GameObject elements in folderHideElements) {
                 elements.SetActive(!hide);
+            }
+            
+            foreach (GameObject elements in folderShowElements) {
+                elements.SetActive(hide);
             }
         }
 

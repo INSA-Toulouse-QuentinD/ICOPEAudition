@@ -33,9 +33,12 @@ namespace UI.ScoreContents{
         public ButtonState currentButtonState = ButtonState.None;
 
         protected override void Awake(){
-            ButtonsManager.Connectbutton(this);
+            ButtonsManager.ConnectButton(this);
             if (isFocus) ButtonsManager.SetButtonFocused(this);
             if (isDisable) AssignState(ButtonState.Disable);
+        }
+
+        protected override void Start(){
             if (GameManager.Instance.canAccessAllLevel) AssignState(ButtonState.None);
         }
 

@@ -2,18 +2,19 @@ using Managers;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace UI.TutorialContents{
     /// <summary>
     /// Controler that manage text placement for the Tutorial.
     /// </summary>
     public class UITutorialControler : MonoBehaviour{
-        public static UITutorialControler Instance { get; private set; }
-        
+        public static UITutorialControler Instance{ get; private set; }
+
+        [SerializeField] private RectTransform textArea;
         [SerializeField] private TMP_Text intituleText;
         [SerializeField] private TMP_Text text;
-        
-        #region Local variable
+        [SerializeField] private List<ArrowAnimation> arrowsAnimation;
 
         private int _indexText;
         private string _nameStep;
@@ -22,7 +23,16 @@ namespace UI.TutorialContents{
         // Doit être réinitialisé quand le joueur recommence le tutoriel depuis le début.
         private readonly HashSet<int> _tutorialMichelShownIndexes = new();
 
-        #endregion
+        /// <summary>
+        /// Called the first time the object becomes enabled and active.
+        /// Initializes the tutorial step name and sets related texts.
+        /// </summary>
+        private void Awake(){
+            Instance = this;
+
+            _nameStep = "Waiting_room";
+            SetTexts(_nameStep, _indexText);
+        }
 
         #region Public methods
 
@@ -30,12 +40,16 @@ namespace UI.TutorialContents{
         /// Advances to the next tutorial text by incrementing the index and loading the corresponding text.
         /// </summary>
         public void NextTextButton(){
-            if (_nameStep == "Waiting_room" && _indexText < 3) {
+            foreach (ArrowAnimation arrowAnimation in arrowsAnimation) {
+                arrowAnimation.Hide();
+            }
+            
+            if (_nameStep == "Waiting_room" && _indexText < 5) {
                 _indexText++;
                 SetTexts(_nameStep, _indexText);
             } else {
                 if (_nameStep == "Tutorial" && _indexText == 0) {
-                    _indexText = 12;
+                    _indexText = 1;
                     SetTexts(_nameStep, _indexText);
                 } else {
                     GameManager.Instance.SetTutorialUI();
@@ -46,7 +60,7 @@ namespace UI.TutorialContents{
 
         public void TutorialMichel(int index){
             if (GameManager.Instance.skipAssistante) return;
-            
+
             // Uniquement si le joueur est dans le tutoriel (niveau 0).
             if (GameManager.Instance.GameStateManager.GetCurrentLevel() != 0) return;
 
@@ -78,6 +92,7 @@ namespace UI.TutorialContents{
         /// <param name="nameStep">The name of the current tutorial step (used to locate data in the XML).</param>
         /// <param name="idSteps">The ID of the specific text entry to load.</param>
         private void SetTexts(string nameStep, int idSteps){
+            ShowArrow(nameStep, idSteps);
             TextAsset pathToXml = Resources.Load<TextAsset>($"Data/Tutorial");
             if (pathToXml) {
                 TutorialEntry tutoEntry = XmlManager.LoadTutorialDataByID(pathToXml, nameStep, idSteps);
@@ -87,17 +102,54 @@ namespace UI.TutorialContents{
                 }
             }
         }
-        #endregion
-        
-        /// <summary>
-        /// Called the first time the object becomes enabled and active.
-        /// Initializes the tutorial step name and sets related texts.
-        /// </summary>
-        private void Awake(){
-            Instance = this;
-            
-            _nameStep = "Waiting_room";
-            SetTexts(_nameStep, _indexText);
+
+        private void ShowArrow(string nameStep, int idSteps){
+            textArea.localPosition = Vector3.zero;
+            switch (nameStep) {
+                case "Waiting_room":
+                    switch (idSteps) {
+                        case 1:
+                            arrowsAnimation[0].Show();
+                            break;
+                        case 2:
+                            arrowsAnimation[1].Show();
+                            break;
+                        case 3:
+                            arrowsAnimation[2].Show();
+                            arrowsAnimation[3].Show();
+                            break;
+                        case 4:
+                            arrowsAnimation[4].Show();
+                            break;
+                        case 5:
+                            arrowsAnimation[2].Show();
+                            break;
+                    }
+                    break;
+                case "Tutorial":
+                    switch (idSteps) {
+                        case 1:
+                            arrowsAnimation[5].Show();
+                            textArea.localPosition = new Vector3(0, 120, 0);
+                            break;
+                        case 2:
+                            arrowsAnimation[6].Show();
+                            textArea.localPosition = new Vector3(0, 120, 0);
+                            break;
+                        case 3:
+                            arrowsAnimation[6].Show();
+                            textArea.localPosition = new Vector3(0, 120, 0);
+                            break;
+                        case 11:
+                            arrowsAnimation[7].Show();
+                            arrowsAnimation[8].Show();
+                            textArea.localPosition = new Vector3(0, 120, 0);
+                            break;
+                    }
+                    break;
+            }
         }
+
+        #endregion
     }
 }

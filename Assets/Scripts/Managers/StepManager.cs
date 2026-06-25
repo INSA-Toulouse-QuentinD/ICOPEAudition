@@ -172,7 +172,7 @@ namespace Managers{
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
 
-                    UITutorialControler.Instance.TutorialMichel(4);
+                    UITutorialControler.Instance.TutorialMichel(5);
                     break;
                 case Step.GoNoGo:
                     // Load questionary & answer
@@ -200,19 +200,19 @@ namespace Managers{
 
                     UITutorialControler.Instance.TutorialMichel(7);
                     break;
-                case Step.WeberTest:
-                    // Load texts dialogue & sprite
-                    _step7WeberTest.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
-                    _step7WeberTest.SetImage(_patientData.characterSprites[^1]);
+                case Step.Hhies:
+                    // Load patient ear image
+                    _step6HhiesTest.SetImages(_patientData.steps[_indexStep].spriteEarExams,
+                        _patientData.characterSprites[0]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
 
                     UITutorialControler.Instance.TutorialMichel(8);
                     break;
-                case Step.Hhies:
-                    // Load patient ear image
-                    _step6HhiesTest.SetImages(_patientData.steps[_indexStep].spriteEarExams,
-                        _patientData.characterSprites[0]);
+                case Step.WeberTest:
+                    // Load texts dialogue & sprite
+                    _step7WeberTest.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
+                    _step7WeberTest.SetImage(_patientData.characterSprites[^1]);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
 
@@ -244,7 +244,6 @@ namespace Managers{
         ///     - If not valid, disables confirm/next button and enables return button.
         /// </summary>
         private void SetTextButtonsNavigation(){
-            TextMeshProUGUI confirmeNextText = confirmNextButton.GetComponentInChildren<TextMeshProUGUI>();
             TextMeshProUGUI retourText = returnButton.GetComponentInChildren<TextMeshProUGUI>();
 
             if (_interactionState == InteractionState.Isreading) {
@@ -252,7 +251,6 @@ namespace Managers{
                 returnButton.interactable = false;
                 retourText.text = "Précédent";
                 confirmNextButton.interactable = true;
-                confirmeNextText.text = "Répondre";
             }
 
             if (_interactionState == InteractionState.Isanswering) {
@@ -260,7 +258,6 @@ namespace Managers{
                 returnButton.interactable = true;
                 retourText.text = "Précédent";
                 confirmNextButton.interactable = false;
-                confirmeNextText.text = "Suivant";
             }
 
             if (_interactionState == InteractionState.Iscorrection) {
@@ -275,7 +272,6 @@ namespace Managers{
                 }
 
                 if (isValid || GameManager.Instance.alwaysRight) {
-                    confirmeNextText.text = "Suivant";
                     returnButton.interactable = GameManager.Instance.alwaysRight;
                     confirmNextButton.interactable = true;
                     confirmNextButton.gameObject.SetActive(true);
@@ -320,13 +316,9 @@ namespace Managers{
                 _answerState = AnswerState.Action;
                 CreateAnswerButtons(algoStep.actionPhase);
                 ApplyTriedStateToButtons(_actionAnswerState);
-
-                if (_step == Step.WisperTest) {
-                    UITutorialControler.Instance.TutorialMichel(5);
-                }
             }
 
-            UITutorialControler.Instance.TutorialMichel(1);
+            UITutorialControler.Instance.TutorialMichel(2);
         }
 
         private void ApplyTriedStateToButtons(AnswerDisplayState state){
@@ -513,7 +505,7 @@ namespace Managers{
                 choiceButtons[index].GetComponentInChildren<TextMeshProUGUI>().text);
             ShowAnswerDetail(answerData[sourceIndex], feedBackText, isCorrectAnswer);
 
-            UITutorialControler.Instance.TutorialMichel(isCorrectAnswer ? 3 : 2);
+            UITutorialControler.Instance.TutorialMichel(isCorrectAnswer ? 4 : 3);
         }
 
         /// <summary>
