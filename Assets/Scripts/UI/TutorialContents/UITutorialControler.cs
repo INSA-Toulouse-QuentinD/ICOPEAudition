@@ -74,8 +74,9 @@ namespace UI.TutorialContents{
 
             _nameStep = "Tutorial";
             _indexText = index;
-            GameManager.Instance.SetTutorialUI();
-            SetTexts(_nameStep, index);
+            if (GameManager.Instance.SetTutorialUI()) {
+                SetTexts(_nameStep, index);
+            }
         }
 
         #endregion

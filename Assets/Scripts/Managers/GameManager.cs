@@ -238,11 +238,13 @@ namespace Managers{
         }
 
         // ACTIVATE UI TUTORIAL 
-        public void SetTutorialUI(){
+        public bool SetTutorialUI(){
             _isTutorialUIEnable = !_isTutorialUIEnable;
             if (IsTutorialEnable) {
                 tutorialPanel.SetActive(_isTutorialUIEnable);
             }
+
+            return IsTutorialEnable;
         }
 
         #endregion
