@@ -21,31 +21,31 @@
       "diagnosticPhase": [],
       "actionPhase": [
         {
-          "answerText": "Je réalise une vidéo-otoscopie.",
+          "answerText": "Je réalise une vidéo-otoscopie",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été fait en auto-évaluation. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je vérifie ses oreilles.",
+          "answerText": "Je vérifie ses oreilles",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le questionnaire HHIE-S\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL.",
+          "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "La patiente est un bon candidat pour l'évaluation ICOPE : elle a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge identifié, je poursuis son évaluation.",
+          "correctionText": "La patiente est un bon candidat pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge identifié, je poursuis son évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je réalise le test de chuchotement.",
+          "answerText": "Je réalise le test de chuchotement",
           "isCorrect": true,
           "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Vous commencez par cette étape pour vous assurer qu'il y a bien une anomalie à l'étape 1.",
           "rappelTip": "None",
@@ -62,15 +62,15 @@
       "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
-          "answerText": "Le test est normal car le patient a réussi à entendre au moins un mot de chaque côté.",
+          "answerText": "Le test est normal car la patiente a réussi à entendre au moins un mot de chaque côté",
           "isCorrect": false,
-          "correctionText": "Non, le test est bien pathologique. Le <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 minimum par oreille).",
+          "correctionText": "Non, le test est bien pathologique. Le test est considéré comme normal lorsque la patiente répète correctement 3 ou 4 mots par oreille.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il y a une anomalie car il n'a pas su restituer les 3 mots des 2 côtés.",
+          "answerText": "Il y a une anomalie car il n'a pas su restituer les 3 mots des 2 côtés",
           "isCorrect": true,
           "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente n'a su répéter que 2 mots sur 4 pour chaque côté, ce qui est en dessous du seuil requis.\nCela indique une atteinte de l'audition bilatérale, car aucun des deux côtés n'atteint le critère minimal de 3 mots correctement restitués sur 4.",
           "rappelTip": "None",
@@ -78,17 +78,17 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'y a pas d'anomalie car il a su restituer les 2 mots du côté gauche.",
+          "answerText": "Il n'y a pas d'anomalie car il a su restituer les 2 mots du côté gauche",
           "isCorrect": false,
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste généralement à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\nOr, dans ce cas précis, le patient n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
+          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Le test est normal.",
+          "answerText": "Le test est normal",
           "isCorrect": false,
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, le patient doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLe patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>3 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'il <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si le patient avait répété les 3 mots de chaque côté.",
+          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>3 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'il <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété les 3 mots de chaque côté.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -96,33 +96,33 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je lui fais passer le questionnaire Go-No-Go.",
+          "answerText": "Je lui fais passer le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "Le test de chuchotement était anormal, nous poursuivons le déroulé de l'étape 2 d'ICOPE Audition, avec le questionnaire Go-No-Go.",
+          "correctionText": "Le test de chuchotement étant anormal, nous poursuivons le déroulé de l'étape 2 d'ICOPE Audition, avec le questionnaire Go - No Go.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je continue le parcours audition et lui fais passer une vidéo otoscopie.",
+          "answerText": "Je continue le parcours audition et je réalise une vidéo otoscopie",
           "isCorrect": false,
-          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go-No-Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
+          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go - No Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je passe à l'examen audiométrique.",
+          "answerText": "Je passe à l'examen audiométrique",
           "isCorrect": false,
-          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go-No-Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
+          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go - No Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je lui fais passer le test HHIES.",
+          "answerText": "Je lui fais passer le test HHIE-S",
           "isCorrect": false,
-          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go-No-Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
+          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go - No Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -145,9 +145,9 @@
       "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
-          "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé.",
+          "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé",
           "isCorrect": false,
-          "correctionText": "Non, le questionnaire ne révèle simplement aucun signal d'alerte quant à un cas complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors d'un adressage ORL.",
+          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -155,15 +155,15 @@
         {
           "answerText": "Il n'a répondu que des \"non\", ce qui indique une suspicion de cas simple.",
           "isCorrect": true,
-          "correctionText": "Si aux réponses du questionnaire Go-No-Go, la patiente réponds \"Non\" à chaque question, il s'agit bien d'une suspicion de cas simple.",
+          "correctionText": "Si aux réponses du questionnaire Go - No Go, la patiente réponds \"Non\" à chaque question, il s'agit bien d'une suspicion de cas simple.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Ses réponses ne montrent pas de problème significatifs.",
+          "answerText": "Ses réponses ne montrent pas de problèmes significatifs",
           "isCorrect": false,
-          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors d'un adressage ORL.",
+          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -171,7 +171,7 @@
         {
           "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL.",
           "isCorrect": false,
-          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond «OUI» à une ou plusieurs questions.\n\nLes urgences vraies, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.",
+          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes urgences vraies, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -179,31 +179,31 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je le laisse repartir chez lui.",
+          "answerText": "Je laisse la patiente repartir chez lui",
           "isCorrect": false,
-          "correctionText": "Non, son test de chuchotement est pathologique, il faut donc continuer l'exploration. Le questionnaire a permis d'éliminer des signes évocateurs d'une surdité complexe, on continue avec l'examen physique puis l'évaluation auditive.",
+          "correctionText": "Non, son test de chuchotement est pathologique, il faut donc continuer l'exploration. Le questionnaire a permis d'éliminer des signes évocateurs d'une surdité complexe, on continue avec l'examen physique (examen du pavillon et vidéo-otoscopie).",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je l'adresse aux urgences.",
+          "answerText": "J'adresse la patiente vers les urgences",
           "isCorrect": false,
-          "correctionText": "Aucune indication !\nSuspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique.",
+          "correctionText": "Aucune indication !\nSuspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique (examen du pavillon et vidéo-otoscopie).",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je continue le parcours audition et lui fais passer une vidéo otoscopie.",
+          "answerText": "Je continue le parcours audition et je réalise une vidéo otoscopie",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. La vidéo otoscopie est l'examen à réaliser en suivant.",
+          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. La vidéo otoscopie est l'examen à réaliser en suivant.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je l'envoie vers un ORL.",
+          "answerText": "Je renvoie la patiente vers un ORL",
           "isCorrect": false,
           "correctionText": "Ici il n'existe aucun drapeau rouge : il n'y a donc pas d'indication à un adressage ORL, je peux continuer mon évaluation avec la réalisation de l'examen physique (examen du pavillon et vidéo-otoscopie).",
           "rappelTip": "None",
@@ -220,15 +220,15 @@
       "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
-          "answerText": "Il s'agit d'une otite moyenne aiguë.",
+          "answerText": "Il s'agit d'une otite moyenne aiguë",
           "isCorrect": false,
-          "correctionText": "Une OMA est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée, souvent de la fièvre.",
+          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire.",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
         },
         {
-          "answerText": "Il s'agit d'une perforation tympanique.",
+          "answerText": "Il s'agit d'une perforation tympanique",
           "isCorrect": false,
           "correctionText": "Faux, Il n'existe pas de perforation de la membrane.",
           "rappelTip": "None",
@@ -236,7 +236,7 @@
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
         },
         {
-          "answerText": "Il s'agit d'un bouchon de cérumen.",
+          "answerText": "Il s'agit d'un bouchon de cérumen",
           "isCorrect": true,
           "correctionText": "Lors de l'examen, on observe une masse brunâtre, homogène et mate, obstruant le conduit auditif externe, sans visualisation du tympan ni des repères anatomiques habituels. Ces éléments sont caractéristiques d'un bouchon de cérumen.",
           "rappelTip": "None",
@@ -244,9 +244,9 @@
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
         },
         {
-          "answerText": "Il s'agit d'un tympan normal.",
+          "answerText": "Il s'agit d'un tympan normal",
           "isCorrect": false,
-          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), que fait le fond du Conduit Auditif Externe.",
+          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_2.png"
@@ -262,7 +262,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je prescris des gouttes et j'attends 8 jours.",
+          "answerText": "Je prescris des gouttes et j'attends 8 jours",
           "isCorrect": false,
           "correctionText": "Non car c'est un BDC. Il faut réaliser un diagnostic clinique, si le BDC est non obstructif ou asymptomatique et ne gênant pas l'examen: on ne le retire pas, dans les autres cas on le retire.",
           "rappelTip": "None",
@@ -270,7 +270,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je passe à l'audiométrie.",
+          "answerText": "Je passe à l'audiométrie",
           "isCorrect": false,
           "correctionText": "Non car c'est un BDC. Il faut réaliser un diagnostic clinique, si le BDC est non obstructif ou asymptomatique et ne gênant pas l'examen: on ne le retire pas, dans les autres cas on le retire.",
           "rappelTip": "None",
@@ -296,15 +296,15 @@
       "diagnosticPhase": [],
       "actionPhase": [
         {
-          "answerText": "Son otoscopie est normale, je répète le test de chuchotement.",
+          "answerText": "Son otoscopie est normale, je répète le test de chuchotement",
           "isCorrect": true,
-          "correctionText": "Oui, en premier, on vérifie que la gène persiste.",
+          "correctionText": "Oui, en premier, on vérifie que la gêne persiste.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Son otoscopie est normale, je peux lui faire passer le questionnaire HHIE-S.",
+          "answerText": "Son otoscopie est normale, je peux lui faire passer le questionnaire HHIE-S",
           "isCorrect": false,
           "correctionText": "Non, d'abord on répète le dépistage, par exemple avec le test de chuchotement.",
           "rappelTip": "None",
@@ -312,7 +312,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Son otoscopie est normale, je peux réaliser l'audiométrie.",
+          "answerText": "Son otoscopie est normale, je peux réaliser l'audiométrie",
           "isCorrect": false,
           "correctionText": "Non, il faut d'abord répéter le test de chuchotement : s'il est normal > 3/4 : alors je n'ai pas besoin de poursuivre l'évaluation, je le rassure et lui rappelle les consignes de bonne hygiène auriculaire.",
           "rappelTip": "None",
@@ -320,7 +320,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je reconvoque la patiente pour réaliser une nouvelle évaluation à distance de l'extraction du bouchon de cérumen.",
+          "answerText": "Je reconvoque la patiente pour réaliser une nouvelle évaluation à distance de l'extraction du bouchon de cérumen",
           "isCorrect": false,
           "correctionText": "Non, aucune raison : si la procédure se déroule bien, qu'on parvient à retirer le bouchon de cérumen, alors on répète le dépistage puis on suit l'algorithme.",
           "rappelTip": "None",
@@ -337,15 +337,15 @@
       "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
-          "answerText": "Je poursuis avec HHIE-S.",
+          "answerText": "Je poursuis avec HHIE-S",
           "isCorrect": false,
-          "correctionText": "Le test étant normal je n’ai pas besoin de réaliser le test HHIE-S.",
+          "correctionText": "Le test étant normal je n'ai pas besoin de réaliser le test HHIE-S.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je rassure et je conseille un nouveau dépistage par l'application HORA dans 6 mois.",
+          "answerText": "Je rassure et je conseille un nouveau dépistage par l'application HORA dans 6 mois",
           "isCorrect": true,
           "correctionText": "OUI\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
           "rappelTip": "None",
@@ -353,17 +353,17 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je fais l'audiométrie.",
+          "answerText": "Je fais l'audiométrie",
           "isCorrect": false,
-          "correctionText": "Le test étant normal je n’ai pas besoin de réaliser l'audiométrie.",
+          "correctionText": "Le test étant normal je n'ai pas besoin de réaliser l'audiométrie.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je passe au Go-No-Go.",
+          "answerText": "Je passe au Go - No Go",
           "isCorrect": false,
-          "correctionText": "Le test étant normal je n’ai pas besoin de réaliser le test Go-No-GO.\n\nDe plus, il a déjà été réalisé au début !",
+          "correctionText": "Le test étant normal je n'ai pas besoin de réaliser le test Go - No Go.\n\nDe plus, il a déjà été réalisé au début !",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

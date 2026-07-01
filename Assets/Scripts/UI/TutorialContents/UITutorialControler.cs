@@ -2,7 +2,6 @@ using Managers;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace UI.TutorialContents{
     /// <summary>
@@ -32,6 +31,10 @@ namespace UI.TutorialContents{
 
             _nameStep = "Waiting_room";
             SetTexts(_nameStep, _indexText);
+
+            foreach (Transform child in transform) {
+                child.gameObject.SetActive(true);
+            }
         }
 
         #region Public methods
@@ -43,22 +46,32 @@ namespace UI.TutorialContents{
             foreach (ArrowAnimation arrowAnimation in arrowsAnimation) {
                 arrowAnimation.Hide();
             }
-            
+
             if (_nameStep == "Waiting_room" && _indexText < 5) {
                 _indexText++;
                 SetTexts(_nameStep, _indexText);
-            } else {
-                if (_nameStep == "Tutorial" && _indexText == 0) {
+            } else if (_nameStep == "Tutorial") {
+                if (_indexText == 0) {
                     _indexText = 1;
+                    SetTexts(_nameStep, _indexText);
+                } else if (_indexText == 3) {
+                    _indexText = 12;
+                    SetTexts(_nameStep, _indexText);
+                } else if (_indexText == 7) {
+                    _indexText = 13;
                     SetTexts(_nameStep, _indexText);
                 } else {
                     GameManager.Instance.SetTutorialUI();
                     _indexText = -1;
                 }
+            } else {
+                GameManager.Instance.SetTutorialUI();
+                _indexText = -1;
             }
         }
 
         public void TutorialMichel(int index){
+            Debug.Log($"TEST {index}");
             if (GameManager.Instance.skipAssistante) return;
 
             // Uniquement si le joueur est dans le tutoriel (niveau 0).
@@ -74,7 +87,9 @@ namespace UI.TutorialContents{
 
             _nameStep = "Tutorial";
             _indexText = index;
+            Debug.Log($"pass ?");
             if (GameManager.Instance.SetTutorialUI()) {
+                Debug.Log($"YES");
                 SetTexts(_nameStep, index);
             }
         }
@@ -126,6 +141,7 @@ namespace UI.TutorialContents{
                             arrowsAnimation[2].Show();
                             break;
                     }
+
                     break;
                 case "Tutorial":
                     switch (idSteps) {
@@ -146,7 +162,11 @@ namespace UI.TutorialContents{
                             arrowsAnimation[8].Show();
                             textArea.localPosition = new Vector3(0, 120, 0);
                             break;
+                        case 12:
+                            arrowsAnimation[9].Show();
+                            break;
                     }
+
                     break;
             }
         }

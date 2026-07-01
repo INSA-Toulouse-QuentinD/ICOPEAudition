@@ -7,7 +7,7 @@
   "age": 81,
   "familySituation": "Elle vit seule à domicile avec ses 2 petits chiens\nElle avoue avoir évité plusieurs repas de famille récemment et se sent de plus en plus isolée.",
   "occupationalActivities": "Elle est autonome.",
-  "context": "Elle a entendu parler du programme ICOPE via une campagne de prévention dans son village. Elle se plaint d’une gêne auditive bilatérale apparue depuis quelques mois, accompagnée d’un sifflement permanent dans les deux oreilles. Elle décrit ses acouphènes comme des bruits aigus, \"incomparables à des oiseaux\", comme lui dit une amie à elle qui en souffre également.",
+  "context": "Elle a entendu parler du programme ICOPE via une campagne de prévention dans son village. Elle se plaint d'une gêne auditive bilatérale apparue depuis quelques mois, accompagnée d'un sifflement permanent dans les deux oreilles. Elle décrit ses acouphènes comme des bruits aigus, \"incomparables à des oiseaux\", comme lui dit une amie à elle qui en souffre également.",
   "medicalHistory": "",
   "descriptionLevel": "",
   "steps": [
@@ -15,21 +15,21 @@
       "type": "CasePresentation",
       "actionPhase": [
         {
-          "answerText": "Je lui fait passer le questionnaire Go-No-Go.",
+          "answerText": "Je lui fait passer le questionnaire Go - No Go",
           "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Il faut commencer par cette étape pour vous assurer qu'il y a bien une anomalie à l'étape 1."
         },
         {
-          "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL.",
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge identifié, je poursuis son évaluation.",
+          "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
+          "correctionText": "La patiente est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge identifié, je poursuis son évaluation.",
           "rappelTip": "RedFlag"
         },
         {
-          "answerText": "Je réalise le test de chuchotement.",
+          "answerText": "Je réalise le test de chuchotement",
           "isCorrect": true,
           "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Vous commencez par cette étape pour vous assurer qu'il y a bien une anomalie à l'étape 1."
         },
         {
-          "answerText": "Je réalise une vidéo-otoscopie.",
+          "answerText": "Je réalise une vidéo-otoscopie",
           "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Il faut commencer par cette étape pour vous assurer qu'il y a bien une anomalie à l'étape 1."
         }
       ]
@@ -39,21 +39,21 @@
       "dialoguePatient": "J'ai entendu 2 mots de chaque côté.",
       "actionPhase": [
         {
-          "answerText": "Je lui fais passer le questionnaire Go-No-Go.",
+          "answerText": "Je lui fais passer le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition par le questionnaire Go – No Go."
+          "correctionText": "La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition par le questionnaire Go – No Go."
         },
         {
-          "answerText": "Je réalise une surveillance en programmant un RDV dans 6 mois.",
-          "correctionText": "Le test de chuchotement fait l’objet d’une suspicion de cas simple. En effet, il faut que le patient puisse entendre et répéter au moins 3 mots de chaque oreille pour que le test soit considéré normal. Dans notre cas, il faut continuer le parcours audition par la prochaine étape à suivre est le questionnaire Go – No Go."
+          "answerText": "Je réalise une surveillance en programmant un RDV dans 6 mois",
+          "correctionText": "Le test de chuchotement fait l'objet d'une suspicion de cas simple. En effet, il faut que la patiente puisse entendre et répéter au moins 3 mots de chaque oreille pour que le test soit considéré normal. Dans notre cas, il faut continuer le parcours audition par la prochaine étape à suivre est le questionnaire Go – No Go."
         },
         {
-          "answerText": "Je continue le parcours audition et lui fais passer le test HHIES.",
-          "correctionText": "Il est important de bien respecter l’ordre de l’algorithme décisionnel. La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant le questionnaire HHIE-S."
+          "answerText": "Je continue le parcours audition et lui fais passer le test HHIE-S",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant le questionnaire HHIE-S."
         },
         {
-          "answerText": "Je fais passer une vidéo otoscopie.",
-          "correctionText": "Il est important de bien respecter l’ordre de l’algorithme décisionnel. La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant de réaliser l’otoscopie."
+          "answerText": "Je fais passer une vidéo otoscopie",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant de réaliser l'otoscopie."
         }
       ]
     },
@@ -70,24 +70,24 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je poursuis avec l'otoscopie.",
-          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d’exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.",
+          "answerText": "Je poursuis avec l'otoscopie",
+          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.",
           "rappelTip": "Acouphene"
         },
         {
-          "answerText": "Je fais lui fait passer le questionnaire HHIE-S.",
-          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d’exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.",
+          "answerText": "Je fais lui fait passer le questionnaire HHIE-S",
+          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.",
           "rappelTip": "Acouphene"
         },
         {
-          "answerText": "Je l'envoie vers un ORL.",
+          "answerText": "Je renvoie la patiente vers un ORL",
           "isCorrect": true,
-          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d’exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
           "rappelTip": "Acouphene"
         },
         {
-          "answerText": "Je prescris des gouttes antibiotiques.",
-          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d’exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.",
+          "answerText": "Je prescris des gouttes antibiotiques",
+          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.",
           "rappelTip": "Acouphene"
         }
       ]

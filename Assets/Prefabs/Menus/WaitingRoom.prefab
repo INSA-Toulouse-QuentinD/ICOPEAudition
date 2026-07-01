@@ -1472,9 +1472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbe9878b3084016872b3ba7ab688b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.TutorialContents.ArrowAnimation
-  moveDistance: 30
-  speed: 0.3
-  scaleMultiplier: 1.03
 --- !u!1 &2666410111835581184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,9 +2474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbe9878b3084016872b3ba7ab688b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.TutorialContents.ArrowAnimation
-  moveDistance: 30
-  speed: 0.3
-  scaleMultiplier: 1.03
 --- !u!1 &5284419344397716154
 GameObject:
   m_ObjectHideFlags: 0
@@ -4575,6 +4569,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3396498444152290705, guid: 553245774f069a644ad7d9a1aba9a1ee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396498444152290705, guid: 553245774f069a644ad7d9a1aba9a1ee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396498444152290705, guid: 553245774f069a644ad7d9a1aba9a1ee, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396498444152290705, guid: 553245774f069a644ad7d9a1aba9a1ee, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -4587,19 +4593,11 @@ PrefabInstance:
       value: set_IsTutorialEnable
       objectReference: {fileID: 0}
     - target: {fileID: 3396498444152290705, guid: 553245774f069a644ad7d9a1aba9a1ee, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: SetTutorialUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 3396498444152290705, guid: 553245774f069a644ad7d9a1aba9a1ee, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: AnswerTutoriel
       objectReference: {fileID: 0}
     - target: {fileID: 3396498444152290705, guid: 553245774f069a644ad7d9a1aba9a1ee, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3396498444152290705, guid: 553245774f069a644ad7d9a1aba9a1ee, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3396498444152290705, guid: 553245774f069a644ad7d9a1aba9a1ee, type: 3}

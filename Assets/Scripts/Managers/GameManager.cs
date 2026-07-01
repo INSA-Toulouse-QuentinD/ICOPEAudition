@@ -238,6 +238,11 @@ namespace Managers{
         }
 
         // ACTIVATE UI TUTORIAL 
+        public void SetTutorialButton(){
+            // Doit retourner void pour être assigné à un bouton dans l'éditeur
+            SetTutorialUI();
+        }
+        
         public bool SetTutorialUI(){
             _isTutorialUIEnable = !_isTutorialUIEnable;
             if (IsTutorialEnable) {

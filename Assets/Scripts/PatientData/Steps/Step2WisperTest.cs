@@ -1,82 +1,93 @@
+using System.Collections.Generic;
 using PatientData.AlgoData;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PatientData.Steps
-{
+namespace PatientData.Steps{
     /// <summary>
     /// Manages the Whisper Test step UI, including doctor dialogue animations and patient sprite display.
     /// </summary>
-    public class Step2WisperTest : MonoBehaviour
-    {
+    public class Step2WisperTest : MonoBehaviour{
         // DOCTOR POSITION
-        [Header("Doctor position")]
-        [SerializeField] private GameObject doctorPos1;
+        [Header("Doctor position")] [SerializeField]
+        private GameObject doctorPos1;
+
         [SerializeField] private GameObject doctorPos2;
 
         // DOCTOR TEXT
-        [Header("Doctor texts")]
-        [SerializeField] private GameObject goDoctorText1;
+        [Header("Doctor texts")] [SerializeField]
+        private GameObject goDoctorText1;
+
         [SerializeField] private GameObject goDoctorText2;
-        [SerializeField] private TextMeshProUGUI targerDoctorText1;
-        [SerializeField] private TextMeshProUGUI targerDoctorText2;
+        [SerializeField] private TextMeshProUGUI targetDoctorText1;
+        [SerializeField] private TextMeshProUGUI targetDoctorText2;
 
         // PATIENT SPRITE
-        [Header("Patient sprite")]
-        [SerializeField] private Image patientSprite;
+        [Header("Patient sprite")] [SerializeField]
+        private Image patientSprite;
 
         // PATIENT TEXT
-        [Header("Patient text")]
-        [SerializeField] private GameObject goPatientText;
+        [Header("Patient text")] [SerializeField]
+        private GameObject goPatientText;
+
         [SerializeField] private TextMeshProUGUI targetPatientText;
 
         // Animation timing delays
-        [Header("Delay animation")]
-        [SerializeField] private float delayBetweenWords = 2f;
-        [SerializeField] private float delayBetweenText = 2f;
+        private const float DelayBetweenWords = 1f;
+        private const float DelayBetweenText = 2f;
 
 
         // Words spoken by the doctor (can be moved to ScriptableObject for configurability)
-        private readonly string[] doctorWords = { "Ami", "Bateau", "Bureau", "Chameau", "Cheval", "Hibou", "Journal", "Lama", "Lapin", "Moto", "Mouton", "Parfait", "Pompier", "Salon", "Serpent"};
-        private string patientText;
-        
+        private List<string> _availableDoctorWords;
+
+        private readonly string[] _doctorWords ={
+            "Ami", "Bateau", "Bureau", "Chameau", "Cheval", "Hibou", "Journal", "Lama", "Lapin", "Moto", "Mouton",
+            "Parfait", "Pompier", "Salon", "Serpent"
+        };
+
+        private string _patientText;
+
         // Clears all text UI fields
-        private void ClearTexts()
-        {
-            targerDoctorText1.text = "";
-            targerDoctorText2.text = "";
+        private void ClearTexts(){
+            targetDoctorText1.text = "";
+            targetDoctorText2.text = "";
             targetPatientText.text = "";
         }
 
         // Disables all dialogue boxes
-        private void ClearDialogueBox()
-        {
+        private void ClearDialogueBox(){
             goDoctorText1.SetActive(false);
             goDoctorText2.SetActive(false);
             goPatientText.SetActive(false);
         }
 
         // Hides doctor position sprites
-        private void ClearDoctorSprite()
-        {
+        private void ClearDoctorSprite(){
             doctorPos1.SetActive(false);
             doctorPos2.SetActive(false);
         }
 
         // Returns an array of 4 random words from doctorWords
-        private string[] GetRandomListWord()
-        {
-            string[] strings = new string[4];
-            
-            for (int i = 0; i < strings.Length; i++)
-            {
-                int nRandom = Random.Range(0, doctorWords.Length);
-                strings[i] = doctorWords[nRandom];
+        private void ResetDoctorWordsPool(){
+            _availableDoctorWords = new List<string>(_doctorWords);
+        }
+
+        private string[] GetRandomListWord(){
+            if (_availableDoctorWords == null || _availableDoctorWords.Count < 4) {
+                ResetDoctorWordsPool();
             }
 
-            return strings;
+            string[] result = new string[4];
+
+            for (int i = 0; i < result.Length; i++) {
+                int index = Random.Range(0, _availableDoctorWords!.Count);
+                result[i] = _availableDoctorWords[index];
+                _availableDoctorWords.RemoveAt(index);
+            }
+
+            return result;
         }
 
         /// <summary>
@@ -87,32 +98,26 @@ namespace PatientData.Steps
         /// <param name="words">Words to animate.</param>
         /// <param name="startDelay">Delay before starting animation.</param>
         /// <param name="onComplete">Callback after animation completes.</param>
-        private void AnimateText(GameObject goTargert, TextMeshProUGUI target, string[] words, float startDelay = 0f, TweenCallback onComplete = null)
-        {
+        private void AnimateText(GameObject goTarget, TextMeshProUGUI target, string[] words, float startDelay = 0f,
+            TweenCallback onComplete = null){
             target.text = "";
-            goTargert.SetActive(false);
+            goTarget.SetActive(false);
 
-            for (int i = 0; i < words.Length; i++)
-            { 
+            for (int i = 0; i < words.Length; i++) {
                 string word = words[i];
-                float delay = startDelay + i * delayBetweenWords;
+                float delay = startDelay + i * DelayBetweenWords;
 
-                DOVirtual.DelayedCall(delay, () =>
-                {
+                DOVirtual.DelayedCall(delay, () => {
                     target.text = word;
-                    goTargert.SetActive(true);
+                    goTarget.SetActive(true);
                 });
 
-                float hideDelay = delay + delayBetweenWords * 0.8f;
-                DOVirtual.DelayedCall(hideDelay, () =>
-                {
-                    goTargert.SetActive(false);
-                });
+                float hideDelay = delay + DelayBetweenWords * 0.8f;
+                DOVirtual.DelayedCall(hideDelay, () => { goTarget.SetActive(false); });
             }
 
-            if (onComplete != null)
-            {
-                float totalTime = startDelay + words.Length * delayBetweenWords;
+            if (onComplete != null) {
+                float totalTime = startDelay + words.Length;
                 DOVirtual.DelayedCall(totalTime, onComplete);
             }
         }
@@ -120,10 +125,9 @@ namespace PatientData.Steps
         /// <summary>
         /// Sets the patient sprite for display.
         /// </summary>
-        public void SetPatient(Sprite patient)
-        {
-            if (patient == null) return;
-                
+        public void SetPatient(Sprite patient){
+            if (!patient) return;
+
             patientSprite.sprite = patient;
             patientSprite.SetNativeSize();
         }
@@ -131,12 +135,13 @@ namespace PatientData.Steps
         /// <summary>
         /// Starts the first doctor text animation and queues subsequent animations.
         /// </summary>
-        public void PlayFirstText(AlgoStep step)
-        {
-            // Load in memory patient text form algoStep
-            patientText = step.dialoguePatient;
+        public void PlayFirstText(AlgoStep step){
+            ResetDoctorWordsPool();
 
-            // Clear texts & docotor sprite
+            // Load in memory patient text form algoStep
+            _patientText = step.dialoguePatient;
+
+            // Clear texts & doctor sprite
             ClearTexts();
             ClearDialogueBox();
             ClearDoctorSprite();
@@ -145,47 +150,41 @@ namespace PatientData.Steps
             doctorPos1.SetActive(true);
 
             string[] strings = GetRandomListWord();
-            AnimateText(goDoctorText1, targerDoctorText1, strings, 0f, () =>
-            {
-                DOVirtual.DelayedCall(delayBetweenText, PlaySecondText);
-            });
+            AnimateText(goDoctorText1, targetDoctorText1, strings, 0f,
+                () => { DOVirtual.DelayedCall(DelayBetweenText, PlaySecondText); });
         }
 
         /// <summary>
         /// Plays the second doctor text animation then shows patient text.
         /// </summary>
-        private void PlaySecondText()
-        {
+        private void PlaySecondText(){
             ClearTexts();
             ClearDialogueBox();
             ClearDoctorSprite();
-            
+
             doctorPos2.SetActive(true);
 
             string[] strings = GetRandomListWord();
-            AnimateText(goDoctorText2 ,targerDoctorText2, strings, 0f, () =>
-            {
-                DOVirtual.DelayedCall(delayBetweenText, ShowPatientText);
-            });
+            AnimateText(goDoctorText2, targetDoctorText2, strings, 0f,
+                () => { DOVirtual.DelayedCall(DelayBetweenText, ShowPatientText); });
         }
 
         /// <summary>
         /// Displays the patient's text in the UI.
         /// </summary>
-        private void ShowPatientText()
-        {
+        private void ShowPatientText(){
             ClearTexts();
             ClearDialogueBox();
 
             goPatientText.SetActive(true);
-            targetPatientText.text = patientText;
+            targetPatientText.text = _patientText;
         }
-        
+
         public void SkipAnimation(AlgoStep step){
             ClearTexts();
             ClearDialogueBox();
             ClearDoctorSprite();
-            
+
             doctorPos2.SetActive(true);
 
             goPatientText.SetActive(true);

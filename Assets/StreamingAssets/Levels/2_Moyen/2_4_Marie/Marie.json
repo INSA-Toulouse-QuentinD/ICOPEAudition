@@ -8,7 +8,7 @@
   "age": 78,
   "familySituation": "",
   "occupationalActivities": "",
-  "context": "Elle a bénéficié du dépistage étape 1 avec son pharmacien, qui a testé son audition avec l’appli Höra qui retrouve une baisse auditive des deux oreilles confirmer au test de chuchotement. Vous la convoquez pour une évaluation dans le cadre du parcours ICOPE Audition.",
+  "context": "Elle a bénéficié du dépistage étape 1 avec son pharmacien, qui a testé son audition avec l'appli Höra qui retrouve une baisse auditive des deux oreilles confirmer au test de chuchotement. Vous la convoquez pour une évaluation dans le cadre du parcours ICOPE Audition.",
   "medicalHistory": "",
   "descriptionLevel": "",
   "steps": [
@@ -16,33 +16,33 @@
       "type": "CasePresentation",
       "actionPhase": [
         {
-          "answerText": "Je réalise le test Go-No-Go..",
+          "answerText": "Je réalise le test Go - No Go",
           "isCorrect": true,
-          "correctionText": "Oui, la première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l’IDE a déjà réalisé le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go.",
+          "correctionText": "Oui, la première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l'IDE a déjà réalisé le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je réalise une vidéo-otoscopie.",
+          "answerText": "Je réalise une vidéo-otoscopie",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l’otoscopie.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l'otoscopie.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je réalise l'audiométrie.",
+          "answerText": "Je réalise l'audiométrie",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l’audiométrie.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l'audiométrie.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je réalise le questionnaire HHIE-S.",
+          "answerText": "Je réalise le questionnaire HHIE-S",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel.\n<color=red>La première étape du Step 2 vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non le questionnaire HHIE-S.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors du repéragerepérage par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non le questionnaire HHIE-S.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -54,21 +54,21 @@
       "dialoguePatient": "J'ai entendu 2 mots à gauche et les 4 à droite.",
       "actionPhase": [
         {
-          "answerText": "Je lui fais passer le questionnaire Go-No-Go.",
+          "answerText": "Je lui fais passer le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition par le questionnaire Go – No Go."
+          "correctionText": "La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition par le questionnaire Go – No Go."
         },
         {
-          "answerText": "Je fais passer une vidéo otoscopie.",
-          "correctionText": "Il est important de bien respecter l’ordre de l’algorithme décisionnel. La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant de réaliser l’otoscopie."
+          "answerText": "Je fais passer une vidéo otoscopie",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant de réaliser l'otoscopie."
         },
         {
-          "answerText": "Je passe à l'examen audiométrique.",
-          "correctionText": "Il est important de bien respecter l’ordre de l’algorithme décisionnel. La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant le questionnaire HHIE-S."
+          "answerText": "Je passe à l'examen audiométrique",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant le questionnaire HHIE-S."
         },
         {
-          "answerText": "Je continue le parcours audition et lui fais passer le test HHIES.",
-          "correctionText": "Il est important de bien respecter l’ordre de l’algorithme décisionnel. La première étape du Step 2 vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant le questionnaire HHIE-S."
+          "answerText": "Je continue le parcours audition et lui fais passer le test HHIE-S",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, vous avez déjà réalisé le test de chuchotement. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go avant le questionnaire HHIE-S."
         }
       ]
     },
@@ -85,21 +85,21 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je lui fais passer une vidéo otoscopie.",
+          "answerText": "Je lui fais passer une vidéo otoscopie",
           "isCorrect": true,
-          "correctionText": "Le questionnaire Go – No est un Go permettant la poursuite du parcours ICOPE AUDITION.\nDans l’algorithme décisionnel l’otoscopie est la prochaine étape du parcours."
+          "correctionText": "Le questionnaire Go – No est un Go permettant la poursuite du parcours ICOPE AUDITION.\nDans l'algorithme décisionnel l'otoscopie est la prochaine étape du parcours."
         },
         {
-          "answerText": "Je lui fais passer une audiométrie.",
-          "correctionText": "Il n'est pas indiqué de réaliser l’audiométrie à ce stade du parcours. Il est important de respecter l’ordre de l'algorithme décisionnel ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est l'otoscopie."
+          "answerText": "Je lui fais passer une audiométrie",
+          "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de respecter l'ordre de l'algorithme décisionnel ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est l'otoscopie."
         },
         {
-          "answerText": "Je lui fais passer le questionnaire HHIE-S.",
-          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de respecter l'ordre de l’algorithme décisionnel ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est l'otoscopie."
+          "answerText": "Je lui fais passer le questionnaire HHIE-S",
+          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de respecter l'ordre de l'algorithme décisionnel ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est l'otoscopie."
         },
         {
-          "answerText": "Je réalise une surveillance en programmant un RDV dans 6 mois.",
-          "correctionText": "Le test Go – No Go est rassurant mais fait toujours l’objet d’une suspicion de cas simple, il faut continuer le parcours audition pour s’assurer qu’il n’y a rien de problématique. Pour cela, la prochaine étape à suivre est l’otoscopie."
+          "answerText": "Je réalise une surveillance en programmant un RDV dans 6 mois",
+          "correctionText": "Le test Go – No Go est rassurant mais fait toujours l'objet d'une suspicion de cas simple, il faut continuer le parcours audition pour s'assurer qu'il n'y a rien de problématique. Pour cela, la prochaine étape à suivre est l'otoscopie."
         }
       ]
     },
@@ -109,26 +109,26 @@
       "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
-          "answerText": "Il s'agit d'une otite moyenne aiguë.",
-          "correctionText": "Une OMA est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée, souvent de la fièvre.",
+          "answerText": "Il s'agit d'une otite moyenne aiguë",
+          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire.",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
         },
         {
-          "answerText": "Il s'agit d'une perforation tympanique.",
-          "correctionText": "On peut suivre l'annulus sur toute sa circonférence, il n'existe pas de perforation de la membrane.",
+          "answerText": "Il s'agit d'une perforation tympanique",
+          "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. Un avis médical est nécessaire. Voici des exemples de perforations tympanique.",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
         },
         {
-          "answerText": "Il s'agit d'un bouchon de cérumen.",
-          "correctionText": "Voici l'image d'un bouchon de cérumen.",
+          "answerText": "Il s'agit d'un bouchon de cérumen",
+          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de bouchons de cérumen.",
           "rappelTip": "Tympan",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
         },
         {
-          "answerText": "Il s'agit d'un tympan normal.",
+          "answerText": "Il s'agit d'un tympan normal",
           "isCorrect": true,
           "correctionText": "Exactement, comme les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. Le test HHIE-S est l'examen à réaliser en suivant.",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
@@ -141,16 +141,16 @@
       "spriteEarExams": "Images\\Steps\\HHIE-S\\14_HHIES.png",
       "actionPhase": [
         {
-          "answerText": "Je continue le parcours audition et lui fait passer l'audiométrie.",
-          "correctionText": "Il n'est pas indiqué de réaliser l’audiométrie à ce stade du parcours. Il est important de respecter l'algorithme décisionnel ICOPE Audition. Après un test HHIE-S orientant vers un cas simple, l'étape suivante est le test de Weber acoumétrique."
+          "answerText": "Je continue le parcours audition et lui fait passer l'audiométrie",
+          "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de respecter l'algorithme décisionnel ICOPE Audition. Après un test HHIE-S orientant vers un cas simple, l'étape suivante est le test de Weber acoumétrique."
         },
         {
-          "answerText": "Je continue le parcours audition et lui fait passer le test de Weber.",
+          "answerText": "Je continue le parcours audition et je réalise test de Weber",
           "isCorrect": true,
           "correctionText": "Un score de 14/40 se situe dans la catégorie handicap auditif léger à modéré. Cela suppose que la personne ressent une gêne auditive dans sa vie quotidienne. Il s'agit d'un test de dépistage, il faut compléter l'évaluation. On poursuit donc le parcours ICOPE Audition avec le test de Weber."
         },
         {
-          "answerText": "Je lui propose un prochain rendez-vous de suivi.",
+          "answerText": "Je propose à la patiente un prochain rendez-vous de suivi",
           "correctionText": "Un score de 14/40 se situe dans la catégorie handicap auditif léger à modéré. Cela suppose que la personne ressent une gêne auditive dans sa vie quotidienne. Il s'agit d'un test de dépistage, il faut compléter l'évaluation par un bilan audiométrique (acoumétrie + audiométrie). On poursuit donc le parcours ICOPE Audition avec le test de Weber acoumétrique.",
           "rappelTip": "Hhies"
         }
@@ -161,21 +161,21 @@
       "dialoguePatient": "Ça résonne davantage du côté gauche.",
       "diagnosticPhase": [
         {
-          "answerText": "Ses réponses révèlent une surdité neurosensorielle gauche.",
-          "correctionText": "Dans le cas d’une surdité neurosensorielle gauche, le son est perçu plus fort à droite (oreille saine). Dans ce cas-là, Mme E, perçoit le son plus fort à gauche, cohérent avec le résultat du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Attention un weber latéralisé nécessite un avis ORL."
+          "answerText": "Ses réponses révèlent une surdité neurosensorielle gauche",
+          "correctionText": "Dans le cas d'une surdité neurosensorielle gauche, le son est perçu plus fort à droite (oreille saine). Dans ce cas-là, Mme E, perçoit le son plus fort à gauche, cohérent avec le résultat du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Attention un weber latéralisé nécessite un avis ORL."
         },
         {
-          "answerText": "Ses réponses révèlent une surdité de transmission gauche.",
+          "answerText": "Ses réponses révèlent une surdité de transmission gauche",
           "isCorrect": true,
-          "correctionText": "Dans le cas d’une surdité de transmission, le Weber est latéralisé du côté atteint, donc à gauche. Ce résultat est cohérent avec celui du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Attention une surdité de transmission nécessite un avis ORL."
+          "correctionText": "Dans le cas d'une surdité de transmission, le Weber est latéralisé du côté atteint, donc à gauche. Ce résultat est cohérent avec celui du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Attention une surdité de transmission nécessite un avis ORL."
         },
         {
-          "answerText": "Ses réponses révèlent un cas normal.",
+          "answerText": "Ses réponses révèlent un cas normal",
           "correctionText": "Le Weber est centralisé en cas de normalité. Attention un weber latéralisé nécessite un avis ORL."
         },
         {
-          "answerText": "Ses Réponses sont discordantes avec la plainte.",
-          "correctionText": "Le Weber latéralisé à gauche est cohérent avec la plainte lors du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Il est donc important de valider cette suspicion avec la dernière étape du parcours, l’audiométrie."
+          "answerText": "Ses Réponses sont discordantes avec la plainte",
+          "correctionText": "Le Weber latéralisé à gauche est cohérent avec la plainte lors du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Il est donc important de valider cette suspicion avec la dernière étape du parcours, l'audiométrie."
         }
       ]
     },
@@ -184,21 +184,21 @@
       "spriteEarExams": "Images\\Steps\\Audiometry\\2_4_Audiometrie.png",
       "actionPhase": [
         {
-          "answerText": "Je réalise une surveillance en programmant un RDV dans 6 mois.",
-          "correctionText": "L'audiométrie confirme une surdité de transmission. L’ORL va rechercher l'étiologie et proposer un traitement adapté."
+          "answerText": "Je réalise une surveillance en programmant un RDV dans 6 mois",
+          "correctionText": "L'audiométrie confirme une surdité de transmission. L'ORL va rechercher l'étiologie et proposer un traitement adapté."
         },
         {
-          "answerText": "Je lui fais un traitement directement.",
-          "correctionText": "La surdité de transmission est un No Go. Dans le cadre du parcours ICOPE Audition, seules les surdités de perception (surdités neurosensorielles) sont prises en charge. L’ORL va rechercher l'étiologie et proposer un traitement adapté."
+          "answerText": "Je lui fais un traitement directement",
+          "correctionText": "La surdité de transmission est un No Go. Dans le cadre du parcours ICOPE Audition, seules les surdités de perception (surdités neurosensorielles) sont prises en charge. L'ORL va rechercher l'étiologie et proposer un traitement adapté."
         },
         {
-          "answerText": "Il s'agit d'un cas complexe avec une indication de prise en charge ORL.",
+          "answerText": "Il s'agit d'un cas complexe avec une indication de prise en charge ORL",
           "isCorrect": true,
-          "correctionText": "Il s’agit d’un No Go car l’audiométrie confirme la surdité de transmission. Dans le cadre du parcours ICOPE Audition, seules les surdités de perception (surdités neurosensorielles) sont prises en charge. Dans ce cas, l’ORL va rechercher l'étiologie et proposer un traitement adapté.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau."
+          "correctionText": "Il s'agit d'un No Go car l'audiométrie confirme la surdité de transmission. Dans le cadre du parcours ICOPE Audition, seules les surdités de perception (surdités neurosensorielles) sont prises en charge. Dans ce cas, l'ORL va rechercher l'étiologie et proposer un traitement adapté.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau."
         },
         {
-          "answerText": "Je prescris à la patiente un appareillage immédiat.",
-          "correctionText": "La surdité de transmission est un No Go. Dans le cadre du parcours ICOPE Audition, seules les surdités de perception (surdités neurosensorielles) sont prises en charge. L’ORL va rechercher l'étiologie et proposer un traitement adapté.",
+          "answerText": "Je prescris à la patiente un appareillage immédiat",
+          "correctionText": "La surdité de transmission est un No Go. Dans le cadre du parcours ICOPE Audition, seules les surdités de perception (surdités neurosensorielles) sont prises en charge. L'ORL va rechercher l'étiologie et proposer un traitement adapté.",
           "rappelTip": "Appareil"
         }
       ]
