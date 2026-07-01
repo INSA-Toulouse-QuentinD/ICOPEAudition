@@ -7,34 +7,49 @@ namespace UI.TutorialContents{
         private Vector2 _startPosition;
         private Vector3 _startScale;
 
-        private Coroutine _animationCoroutine;
+        private bool _stopAnimation;
+        private bool _superAnimation;
+        private bool _oneInit;
 
         private void Awake(){
+            if (_oneInit) return;
+            _oneInit = true;
+            
             _rectTransform = GetComponent<RectTransform>();
             _startPosition = _rectTransform.anchoredPosition;
             _startScale = _rectTransform.localScale;
 
             Hide();
         }
+        
+        public void Reset(){
+            Awake();
+            SuperHide();
+        }
 
         public void Show(){
+            _stopAnimation = false;
+            _rectTransform.anchoredPosition = _startPosition;
+            _rectTransform.localScale = _startScale;
             gameObject.SetActive(true);
-
-            if (_animationCoroutine == null) {
-                _animationCoroutine = StartCoroutine(AnimationCoroutine());
-            }
+            StartCoroutine(AnimationCoroutine());
         }
 
         public void Hide(){
-            if (_animationCoroutine != null) {
-                StopCoroutine(_animationCoroutine);
-                _animationCoroutine = null;
-            }
-
-            _rectTransform.anchoredPosition = _startPosition;
-            _rectTransform.localScale = _startScale;
-
+            if (_superAnimation) return;
+            
+            _stopAnimation = true;
             gameObject.SetActive(false);
+        }
+        
+        public void SuperShow(){
+            _superAnimation = true;
+            Show();
+        }
+
+        public void SuperHide(){
+            _superAnimation = false;
+            Hide();
         }
 
         private IEnumerator AnimationCoroutine(){
@@ -45,7 +60,7 @@ namespace UI.TutorialContents{
             float angle = transform.eulerAngles.z * Mathf.Deg2Rad;
             Vector2 direction = new Vector2(-Mathf.Sin(angle), Mathf.Cos(angle));
 
-            while (true) {
+            while (!_stopAnimation) {
                 float timer = 0f;
 
                 while (timer < duration) {

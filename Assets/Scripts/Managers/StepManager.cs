@@ -63,9 +63,9 @@ namespace Managers{
 
         // Enums
         private enum InteractionState{
-            Isreading,
-            Isanswering,
-            Iscorrection
+            IsReading,
+            IsAnswering,
+            IsCorrection
         };
 
         private InteractionState _interactionState;
@@ -79,6 +79,8 @@ namespace Managers{
 
         // Private class 
         private PatientData.PatientData _patientData;
+        private bool _badTuto;
+        private bool _restart;
 
         // Private variables
         private int _indexStep;
@@ -113,6 +115,11 @@ namespace Managers{
             _indexStep = 0; // reset current step to 0
             _currentDisplay = 0;
             _patientData = patient;
+            _badTuto = patient.firstName == "Michel" && GameManager.Instance.IsTutorialEnable;
+            _restart = false;
+            for (int i = 0; i < 4; i++) {
+                choiceButtons[i].GetComponentInChildren<ArrowAnimation>(true).Reset();
+            }
 
             ResetTriedState();
         }
@@ -134,7 +141,7 @@ namespace Managers{
 
             _step = currentStep;
 
-            _interactionState = InteractionState.Isreading;
+            _interactionState = InteractionState.IsReading;
 
             // Set bool to false each step
             _isDiagnosticValid = false;
@@ -153,7 +160,7 @@ namespace Managers{
                     // Display current step
 
                     displayList[_currentDisplay].SetActive(true);
-                    
+
                     UITutorialControler.Instance.TutorialMichel(0);
                     break;
                 case Step.WisperTest:
@@ -236,9 +243,9 @@ namespace Managers{
         // SET TEXT AND INTERACTION
         /// <summary>
         /// Updates the navigation buttons' interactability and text based on the current interaction state.
-        /// - In ISREADING state: disables the return button, enables the confirm/next button with text "Répondre".
-        /// - In ISANSWERING state: enables the return button, disables the confirm/next button with text "Suivant".
-        /// - In ISCORRECTION state: 
+        /// - In IsReading state: disables the return button, enables the confirm/next button with text "Répondre".
+        /// - In IsAnswering state: enables the return button, disables the confirm/next button with text "Suivant".
+        /// - In IsCorrection state: 
         ///     - Checks if the current answer is valid (diagnostic or action).
         ///     - If valid, enables confirm/next button and disables return button, setting confirm button text to "Suivant".
         ///     - If not valid, disables confirm/next button and enables return button.
@@ -246,21 +253,21 @@ namespace Managers{
         private void SetTextButtonsNavigation(){
             TextMeshProUGUI retourText = returnButton.GetComponentInChildren<TextMeshProUGUI>();
 
-            if (_interactionState == InteractionState.Isreading) {
+            if (_interactionState == InteractionState.IsReading) {
                 // update buttons and text
                 returnButton.interactable = false;
                 retourText.text = "Précédent";
                 confirmNextButton.interactable = true;
             }
 
-            if (_interactionState == InteractionState.Isanswering) {
+            if (_interactionState == InteractionState.IsAnswering) {
                 // Update button and text
                 returnButton.interactable = true;
                 retourText.text = "Précédent";
                 confirmNextButton.interactable = false;
             }
 
-            if (_interactionState == InteractionState.Iscorrection) {
+            if (_interactionState == InteractionState.IsCorrection) {
                 bool isValid = false;
                 switch (_answerState) {
                     case AnswerState.Diagnostic:
@@ -351,14 +358,24 @@ namespace Managers{
             for (int i = 0; i < max; i++) {
                 int buttonIndex = i;
                 int sourceIndex = state.ShuffledOrder[buttonIndex];
-                TextMeshProUGUI text = choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+                TextMeshProUGUI text = choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>(true);
                 text.text = answerData[sourceIndex].answerText;
                 choiceButtons[i].onClick.RemoveAllListeners();
                 choiceButtons[i].GetComponent<AnswerButton>().Reset();
                 choiceButtons[i].onClick.AddListener(() => OnAnswerCorrect(answerData, buttonIndex));
-                choiceButtons[i].interactable = true;
+                choiceButtons[i].interactable = !_badTuto || text.text == "Je réalise une vidéo-otoscopie";
                 choiceButtons[i].enabled = true;
                 choiceButtons[i].gameObject.SetActive(true);
+
+                if (_badTuto && text.text == "Je réalise une vidéo-otoscopie") {
+                    if (_restart) {
+                        UITutorialControler.Instance.arrowAnimation.SuperShow();
+                        continue;
+                    }
+                    _restart = true;
+                    UITutorialControler.Instance.arrowAnimation =
+                        choiceButtons[i].GetComponentInChildren<ArrowAnimation>(true);
+                }
             }
         }
 
@@ -388,7 +405,7 @@ namespace Managers{
                     GameManager.Instance.GameStateManager.NextStep(_patientData.steps[_indexStep]);
                 }
             } else {
-                _interactionState = InteractionState.Isanswering;
+                _interactionState = InteractionState.IsAnswering;
                 ClearAllDisplay();
                 questionsDisplay.SetActive(true);
                 SetResponses();
@@ -403,7 +420,7 @@ namespace Managers{
         private void ButtonBack(){
             TipsManager.Instance.HideButton();
 
-            if (_interactionState == InteractionState.Iscorrection) {
+            if (_interactionState == InteractionState.IsCorrection) {
                 if (_answerState == AnswerState.Diagnostic) {
                     _isDiagnosticValid = false;
                 } else {
@@ -412,15 +429,15 @@ namespace Managers{
 
                 ClearAllDisplay();
 
-                _interactionState = InteractionState.Isanswering;
+                _interactionState = InteractionState.IsAnswering;
                 questionsDisplay.SetActive(true);
                 // Recreate buttons and re-apply previous incorrect choices for this step/phase.
                 SetResponses();
                 SetTextButtonsNavigation();
-            } else if (_interactionState == InteractionState.Isanswering) {
+            } else if (_interactionState == InteractionState.IsAnswering) {
                 ClearAllDisplay();
 
-                _interactionState = InteractionState.Isreading;
+                _interactionState = InteractionState.IsReading;
                 displayList[_currentDisplay].SetActive(true);
                 SetTextButtonsNavigation();
             }
@@ -459,6 +476,10 @@ namespace Managers{
         /// <param name="answerData">List of possible answers for the current phase.</param>
         /// <param name="index">The index of the selected answer button.</param>
         private void OnAnswerCorrect(List<AnswerData> answerData, int index){
+            for (int i = 0; i < 4; i++)
+                choiceButtons[i].GetComponentInChildren<ArrowAnimation>(true).SuperHide();
+            _badTuto = false;
+
             AnswerDisplayState state = GetCurrentAnswerDisplayState();
             int sourceIndex = GetSourceAnswerIndex(state, index);
             bool isDiagnosticAnswer = false;
@@ -560,7 +581,7 @@ namespace Managers{
         /// <param name="feedBackText">Feedback message to display ("Correct!" or "Incorrect!").</param>
         /// <param name="answerCorrect">Indicates if the selected answer was correct.</param>
         private void ShowAnswerDetail(AnswerData answer, string feedBackText, bool answerCorrect){
-            _interactionState = InteractionState.Iscorrection;
+            _interactionState = InteractionState.IsCorrection;
 
             // Clear images
             foreach (GameObject go in answerGameObjectSprites) {

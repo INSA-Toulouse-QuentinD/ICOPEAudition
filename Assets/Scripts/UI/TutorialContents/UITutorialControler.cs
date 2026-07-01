@@ -14,6 +14,7 @@ namespace UI.TutorialContents{
         [SerializeField] private TMP_Text intituleText;
         [SerializeField] private TMP_Text text;
         [SerializeField] private List<ArrowAnimation> arrowsAnimation;
+        [HideInInspector] public ArrowAnimation arrowAnimation;
 
         private int _indexText;
         private string _nameStep;
@@ -54,6 +55,9 @@ namespace UI.TutorialContents{
                 if (_indexText == 0) {
                     _indexText = 1;
                     SetTexts(_nameStep, _indexText);
+                } else if (_indexText == 2) {
+                    _indexText = 14;
+                    SetTexts(_nameStep, _indexText);
                 } else if (_indexText == 3) {
                     _indexText = 12;
                     SetTexts(_nameStep, _indexText);
@@ -71,7 +75,6 @@ namespace UI.TutorialContents{
         }
 
         public void TutorialMichel(int index){
-            Debug.Log($"TEST {index}");
             if (GameManager.Instance.skipAssistante) return;
 
             // Uniquement si le joueur est dans le tutoriel (niveau 0).
@@ -87,9 +90,7 @@ namespace UI.TutorialContents{
 
             _nameStep = "Tutorial";
             _indexText = index;
-            Debug.Log($"pass ?");
             if (GameManager.Instance.SetTutorialUI()) {
-                Debug.Log($"YES");
                 SetTexts(_nameStep, index);
             }
         }
@@ -164,6 +165,9 @@ namespace UI.TutorialContents{
                             break;
                         case 12:
                             arrowsAnimation[9].Show();
+                            break;
+                        case 14:
+                            arrowAnimation.SuperShow();
                             break;
                     }
 

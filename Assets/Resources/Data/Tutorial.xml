@@ -138,5 +138,10 @@ Cliquer sur celui-ci vous permettra de voir des informations ayant pour but de v
 Cela permet de mieux observer les détails et d’avoir une vue plus précise du contenu. Un nouveau clic permet de revenir à l’affichage initial.
             </Text>
         </Entry>
+        <Entry>
+            <ID>14</ID>
+            <Intitule>Phase de choix - Mauvaise réponse</Intitule>
+            <Text>Pour ce premier choix, il vous est demandé de cliquer sur l'option « Je réalise une vidéo-otoscopie »</Text>
+        </Entry>
     </Step>
 </Tutorial>
