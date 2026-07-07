@@ -72,7 +72,7 @@
         {
           "answerText": "Ses réponse montrent des signes d'un trouble neurologique avancé",
           "isCorrect": false,
-          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d’alerte en faveur d’une situation complexe.",
+          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -88,7 +88,7 @@
         {
           "answerText": "Ses réponses ne montrent pas de problèmes significatifs",
           "isCorrect": false,
-          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d’alerte en faveur d’une situation complexe.",
+          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -114,7 +114,7 @@
         {
           "answerText": "J'adresse la patiente vers les urgences",
           "isCorrect": false,
-          "correctionText": "Aucune indication !\nIl s’agit d’une suspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique (examen du pavillon et vidéo-otoscopie).",
+          "correctionText": "Aucune indication !\nIl s'agit d'une suspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique (examen du pavillon et vidéo-otoscopie).",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -380,7 +380,7 @@
         {
           "answerText": "Le résultat suggère que les troubles auditifs sont uniquement liés à une fatigue passagère",
           "isCorrect": false,
-          "correctionText": "Le score est > à 8/40 ce qui signifie que la patiente est probablement atteint d’une déficience auditive, il est nécessaire de poursuivre par un bilan audiométrique pour confirmer les critères éligibilités à un appareillage selon les critères actuellement admis en France.",
+          "correctionText": "Le score est > à 8/40 ce qui signifie que la patiente est probablement atteint d'une déficience auditive, il est nécessaire de poursuivre par un bilan audiométrique pour confirmer les critères éligibilités à un appareillage selon les critères actuellement admis en France.",
           "rappelTip": "Hhies",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -414,7 +414,7 @@
         {
           "answerText": "Il est pertinent de réaliser un examen audiométrique avec un test de Weber",
           "isCorrect": true,
-          "correctionText": "Le test de weber associé à l’audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité, et l'indication ou non d'un appareillage audio-prothétique.",
+          "correctionText": "Le test de weber associé à l'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité, et l'indication ou non d'un appareillage audio-prothétique.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -532,7 +532,7 @@
         {
           "answerText": "J'adresse la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "Non, ici on reste dans le cadre du parcours ICOPE Audition simple. Je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL avec le médecin généraliste formé à l’otologie médicale.",
+          "correctionText": "Non, ici on reste dans le cadre du parcours ICOPE Audition simple. Je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL avec le médecin généraliste formé à l'otologie médicale.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -540,7 +540,7 @@
         {
           "answerText": "Je propose une chirurgie de l'oreille moyenne pour corriger cette perte auditive",
           "isCorrect": false,
-          "correctionText": "Non, la chirurgie est indiquée dans certaines surdités de transmission, mais <b>pas</b> dans la presbyacousie, qui est une atteinte de l'oreille interne.\n\nDans le cas de notre patiente on reste dans le parcours ICOPE Audition simple. Je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL avec le médecin généraliste formé à l’otologie médicale.",
+          "correctionText": "Non, la chirurgie est indiquée dans certaines surdités de transmission, mais <b>pas</b> dans la presbyacousie, qui est une atteinte de l'oreille interne.\n\nDans le cas de notre patiente on reste dans le parcours ICOPE Audition simple. Je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL avec le médecin généraliste formé à l'otologie médicale.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -548,7 +548,7 @@
         {
           "answerText": "Je prescris à la patiente un appareillage audio-prothétique bilatéral",
           "isCorrect": true,
-          "correctionText": "Oui, ici on reste dans le cadre du parcours ICOPE Audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. En tant que médecin généraliste formé à l’otologie médicale, je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "correctionText": "Oui, ici on reste dans le cadre du parcours ICOPE Audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. En tant que médecin généraliste formé à l'otologie médicale, je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

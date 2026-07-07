@@ -147,7 +147,7 @@
         {
           "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé",
           "isCorrect": false,
-          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d’alerte en faveur d’une situation complexe.",
+          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -163,7 +163,7 @@
         {
           "answerText": "Ses réponses ne montrent pas de problèmes significatifs",
           "isCorrect": false,
-          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d’alerte en faveur d’une situation complexe.",
+          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -189,7 +189,7 @@
         {
           "answerText": "J'adresse la patiente vers les urgences",
           "isCorrect": false,
-          "correctionText": "Aucune indication !\nIl s’agit d’une suspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique (examen du pavillon et vidéo-otoscopie).",
+          "correctionText": "Aucune indication !\nIl s'agit d'une suspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique (examen du pavillon et vidéo-otoscopie).",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
