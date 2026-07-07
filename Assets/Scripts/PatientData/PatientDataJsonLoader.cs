@@ -141,14 +141,14 @@ namespace PatientData{
             Sprite sit = null;
             Sprite weber = null;
 
-            yield return LoadSprite(dto.spriteUp, s => up = s, dto.isOnPhone);
+            yield return LoadSprite(dto.spriteUp, s => up = s);
             yield return LoadSprite(dto.spriteSit, s => sit = s, !needSit);
             yield return LoadSprite(dto.spriteWeber, s => weber = s, !hasWeberTest);
 
             List<Sprite> sprites = new();
             if (up) {
                 sprites.Add(up);
-            } else if (!dto.isOnPhone) {
+            } else {
                 GameManager.Instance.JsonErrorAdd($"Le patient {path} a besoin d'une image debout ! (spriteUp)");
             }
 

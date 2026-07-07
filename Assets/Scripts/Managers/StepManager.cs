@@ -155,7 +155,7 @@ namespace Managers{
                 case Step.CasePresentation:
                     // Load patient sprite & patient text
                     _step1PresentationPatient.SetSprites(
-                        _patientData.isOnPhone ? phoneCaseSprite : _patientData.characterSprites[0]);
+                        _patientData.characterSprites[0], _patientData.isOnPhone, phoneCaseSprite);
                     _step1PresentationPatient.SetPresentationTexts(_patientData);
                     // Display current step
 
@@ -372,6 +372,7 @@ namespace Managers{
                         UITutorialControler.Instance.arrowAnimation.SuperShow();
                         continue;
                     }
+
                     _restart = true;
                     UITutorialControler.Instance.arrowAnimation =
                         choiceButtons[i].GetComponentInChildren<ArrowAnimation>(true);

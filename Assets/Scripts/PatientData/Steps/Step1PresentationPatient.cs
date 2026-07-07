@@ -8,6 +8,8 @@ namespace PatientData.Steps{
     /// </summary>
     public class Step1PresentationPatient : MonoBehaviour{
         [Header("Sprites")] [SerializeField] private Image patientSprite;
+        [SerializeField] private Image patientSpritePhone;
+        [SerializeField] private GameObject bulle;
 
         // PROFILE DATA
         [Header("Profile fields")] [SerializeField]
@@ -49,9 +51,14 @@ namespace PatientData.Steps{
         /// Sets and adjusts the patient's sprite image.
         /// </summary>
         /// <param name="patient">The sprite representing the patient.</param>
-        public void SetSprites(Sprite patient){
-            patientSprite.sprite = patient;
+        /// <param name="isPhone">If the patient is on phone.</param>
+        /// <param name="phone">The sprite of the phone.</param>
+        public void SetSprites(Sprite patient, bool isPhone, Sprite phone){
+            patientSprite.sprite = isPhone ? phone : patient;
             patientSprite.SetNativeSize();
+            
+            patientSpritePhone.sprite = patient;
+            bulle.SetActive(isPhone);
         }
     }
 }
