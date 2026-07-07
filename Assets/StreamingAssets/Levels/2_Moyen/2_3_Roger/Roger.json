@@ -15,21 +15,21 @@
       "actionPhase": [
         {
           "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
         },
         {
           "answerText": "Je lui fait passer le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+          "correctionText": "La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge identifié, je poursuis son évaluation.",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
           "rappelTip": "RedFlag"
         },
         {
           "answerText": "Je réalise le test de chuchotement",
-          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors du repérage. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+          "correctionText": "Il est important de bien respecter l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
         }
       ]
     },

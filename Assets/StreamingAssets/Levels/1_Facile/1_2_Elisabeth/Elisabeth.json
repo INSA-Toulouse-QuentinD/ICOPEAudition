@@ -1,5 +1,5 @@
 {
-  "spriteUp": "",
+  "spriteUp": "Levels\\1_Facile\\1_2_Elisabeth\\Elisabeth_up.png",
   "spriteSit": "",
   "spriteWeber": "",
   "isOnPhone": true,
@@ -72,13 +72,13 @@
         {
           "answerText": "Je la convoque pour réaliser une vidéo-otoscopie à la recherche d'un bouchon de cérumen, qui peut se manifester de cette manière quand il est obstructif",
           "isCorrect": false,
-          "correctionText": "Non, certains bouchons peuvent provoquer ce genre de symptômes, a minima. Mais depuis 2 ans, on peut quand même espérer qu'elle a bénéficié d'une consultation chez son médecin qui a dédouané un Bouchon De Cérumen.",
+          "correctionText": "Non, certains bouchons peuvent provoquer ce genre de symptômes, a minima. Mais depuis 2 ans, on peut quand même espérer qu'elle a bénéficié d'une consultation chez son médecin qui a dédouané un bouchon de cérumen.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je l'adresse chez l'ORL",
+          "answerText": "J'adresse la patiente chez l'ORL",
           "isCorrect": true,
           "correctionText": "Oui, surdité fluctuante et vertige : 2 raisons de l'adresser. Tableau très évocateur d'une maladie de Ménière.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
           "rappelTip": "None",

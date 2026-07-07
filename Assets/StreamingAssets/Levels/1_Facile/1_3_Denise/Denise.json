@@ -31,7 +31,7 @@
         {
           "answerText": "Je vérifie ses oreilles",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLa patiente ayant procédé à un dépistage avec un audioprothésiste, le test de chuchotement n'a pas été réalisé. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors du repérage. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLa patiente ayant procédé à un dépistage avec un audioprothésiste, le test de chuchotement n'a pas été réalisé. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -39,7 +39,7 @@
         {
           "answerText": "Je ne peux rien faire, je renvois la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "La patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge identifié, je poursuis son évaluation.",
+          "correctionText": "La patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -88,7 +88,7 @@
         {
           "answerText": "Le test est normal",
           "isCorrect": false,
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété les 3 mots de chaque côté.",
+          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété les 3 minimum mots de chaque côté.",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -147,7 +147,7 @@
         {
           "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé",
           "isCorrect": false,
-          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL.",
+          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d’alerte en faveur d’une situation complexe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -155,7 +155,7 @@
         {
           "answerText": "Elle n'a répondu que des \"non\", ce qui indique une suspicion de cas simple.",
           "isCorrect": true,
-          "correctionText": "Si la patiente répond « non » à chaque question du questionnaire Go - No Go, il s'agit bien d'une suspicion de cas simple.",
+          "correctionText": "Si aux réponses du questionnaire Go - No Go, la patiente répond « non » à chaque question du questionnaire Go - No Go, il s'agit bien d'une suspicion de cas simple.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -163,7 +163,7 @@
         {
           "answerText": "Ses réponses ne montrent pas de problèmes significatifs",
           "isCorrect": false,
-          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL.",
+          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d’alerte en faveur d’une situation complexe. Ici le questionnaire ne met pas en évidence de signal d’alerte en faveur d’une situation complexe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -171,7 +171,7 @@
         {
           "answerText": "Elle n'a répondu que des \"non\", ce qui indique une urgence ORL.",
           "isCorrect": false,
-          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond « OUI » à une ou plusieurs questions.\n\nLes urgences vraies, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
+          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond « oui » à une ou plusieurs questions.\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -189,15 +189,15 @@
         {
           "answerText": "J'adresse la patiente vers les urgences",
           "isCorrect": false,
-          "correctionText": "Aucune indication !\nSuspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique (examen du pavillon et vidéo-otoscopie).",
+          "correctionText": "Aucune indication !\nIl s’agit d’une suspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique (examen du pavillon et vidéo-otoscopie).",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise une vidéo otoscopie",
+          "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. La vidéo otoscopie est l'examen à réaliser en suivant.",
+          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. La vidéo-otoscopie est l'examen à réaliser en suivant.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -222,7 +222,7 @@
         {
           "answerText": "Il existe une otomycose, je mets en place un traitement par gouttes auriculaire et lui conseille de respecter une éviction aquatique pendant toute la durée du traitement",
           "isCorrect": false,
-          "correctionText": "Non, ici il s'agit d'un Bouchon de cérumen. Si on est face à cette otoscopie, oui on peut prescrire un traitement antifongique local et conseiller à la patiente un contrôle chez son médecin traitant à la fin du traitement. Il sera reconvoqué pour une nouvelle évaluation à distance.",
+          "correctionText": "Non, ici il s'agit d'un bouchon de cérumen. Si on est face à cette otoscopie, oui on peut prescrire un traitement antifongique local et conseiller à la patiente un contrôle chez son médecin traitant à la fin du traitement. Il sera reconvoqué pour une nouvelle évaluation à distance.",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_2.png"
@@ -230,15 +230,15 @@
         {
           "answerText": "Il s'agit d'un bouchon de cérumen, Je propose de procéder à l'ablation du Bouchon en utilisation la méthode de l'irrigation",
           "isCorrect": true,
-          "correctionText": "Oui, selon la formation et la forme du bouchon de cérumen, on peut aussi procéder à une aspiration (bouchons à la sortie du Conduit Auditif Externe, plutôt mous ; ou encore les méthodes avec curette si le bouchon est latéral et qu'il est possible de glisser la curette entre le bouchon et la paroi du conduit auditif externe.",
+          "correctionText": "Oui, selon la formation et la forme du bouchon de cérumen, on peut aussi procéder à une aspiration (bouchons à la sortie du conduit auditif externe, plutôt mous ; ou encore les méthodes avec curette si le bouchon est latéral et qu'il est possible de glisser la curette entre le bouchon et la paroi du conduit auditif externe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il existe une lésion bourgeonnante du Conduit Auditif Externe, je peux suspecter un carcinome, ou une ostéite de la base du crâne",
+          "answerText": "Il existe une lésion bourgeonnante du conduit auditif externe, je peux suspecter un carcinome, ou une ostéite de la base du crâne",
           "isCorrect": false,
-          "correctionText": "Non, ici il s'agit d'un Bouchon de cérumen.\nostéïte image de droite et cholestéatomes image de gauche",
+          "correctionText": "Non, ici il s'agit d'un bouchon de cérumen.\nostéïte image de droite et cholestéatomes image de gauche",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Osteite.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cholesteatomes.png"
@@ -298,7 +298,7 @@
         {
           "answerText": "Le test est normal, je la rassure et lui propose un nouveau dépistage dans 6 mois",
           "isCorrect": true,
-          "correctionText": "OUI\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "correctionText": "Oui\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -306,7 +306,7 @@
         {
           "answerText": "Le test est normal, je lui rappelle l'importance d'un soin quotidien avec le coton tige pour éviter une récidive de son bouchon",
           "isCorrect": false,
-          "correctionText": "Non, au contraire, quand on a tendance à faire beaucoup de cérumen, le coton tige empêche l'évacuation naturelle du cérumen par le Conduit Auditif Externe, et le plaque contre la paroi du Conduit Auditif Externe. Il vaut mieux privilégier un savonnage et rinçage à l'eau lors de la toilette.",
+          "correctionText": "Non, au contraire, quand on a tendance à faire beaucoup de cérumen, le coton tige empêche l'évacuation naturelle du cérumen par le conduit auditif externe, et le plaque contre la paroi du conduit auditif externe. Il vaut mieux privilégier un savonnage et rinçage à l'eau lors de la toilette.",
           "rappelTip": "Hygiene",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -314,7 +314,7 @@
         {
           "answerText": "Le test est anormal, je peux maintenant réaliser le questionnaire HHIE-S",
           "isCorrect": false,
-          "correctionText": "Le test étant normal je n'ai pas besoin de réaliser le test HHIE-S.",
+          "correctionText": "Le test étant normal je n'ai pas besoin de réaliser le questionnaire HHIE-S.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
