@@ -9,7 +9,7 @@
   "familySituation": "Vit seule, cette ancienne couturière aime toujours coudre et jardiner.",
   "occupationalActivities": "",
   "context": "Madame Cibel a entendu parler du programme ICOPE par le biais d'une amie. Elle se plaint d'une baisse auditive à gauche depuis quelques semaines, qui l'inquiète un petit peu car elle n'arrive pas à prendre rendez-vous chez un ORL.",
-  "medicalHistory": "Pas d’antécédents.",
+  "medicalHistory": "Pas d'antécédents.",
   "descriptionLevel": "",
   "steps": [
     {
@@ -230,7 +230,7 @@
         {
           "answerText": "Il s'agit d'une perforation tympanique",
           "isCorrect": false,
-          "correctionText": "Dans cette situation, l'annulus n’est pas visible sur toute sa circonférence. Il n’est donc pas possible de confirmer l’absence de perforation de la membrane tympanique. En cas de suspicion de perforation, un avis médical est nécessaire.\nVoici quelques exemples de perforations tympaniques.",
+          "correctionText": "Dans cette situation, l'annulus n'est pas visible sur toute sa circonférence. Il n'est donc pas possible de confirmer l'absence de perforation de la membrane tympanique. En cas de suspicion de perforation, un avis médical est nécessaire.\nVoici quelques exemples de perforations tympaniques.",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
@@ -272,7 +272,7 @@
         {
           "answerText": "Je passe à l'audiométrie",
           "isCorrect": false,
-          "correctionText": "Non car c'est un bouchon de cérumen. Il faut réaliser un diagnostic clinique, si le bouchon de cérumen est non obstructif ou asymptomatique et ne gênant pas l'examen: on ne le retire pas, dans les autres cas on le retire. Il n’est pas recommandé de faire un bilan audiométrique en présence d'un bouchon de cérumen obstructif qui fausserait les résultats.",
+          "correctionText": "Non car c'est un bouchon de cérumen. Il faut réaliser un diagnostic clinique, si le bouchon de cérumen est non obstructif ou asymptomatique et ne gênant pas l'examen: on ne le retire pas, dans les autres cas on le retire. Il n'est pas recommandé de faire un bilan audiométrique en présence d'un bouchon de cérumen obstructif qui fausserait les résultats.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
