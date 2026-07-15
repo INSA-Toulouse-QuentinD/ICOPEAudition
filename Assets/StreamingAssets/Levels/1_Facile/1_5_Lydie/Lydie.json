@@ -8,7 +8,7 @@
   "age": 84,
   "familySituation": "",
   "occupationalActivities": "",
-  "context": "Elle a entendu parler du programme ICOPE par le biais d'une amie. Elle se plaint d'une baisse auditive à gauche depuis quelques semaines, qui l'inquiète un petit peu car elle n'arrive pas à prendre RDV chez un ORL.",
+  "context": "Elle a entendu parler du programme ICOPE par le biais d'une amie. Elle se plaint d'une baisse auditive à gauche depuis quelques semaines, qui l'inquiète un petit peu car elle n'arrive pas à prendre rendez-vous chez un ORL.",
   "medicalHistory": "",
   "descriptionLevel": "",
   "steps": [
@@ -153,9 +153,9 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'a répondu que des \"non\", ce qui indique une suspicion de cas simple.",
+          "answerText": "Il n'a répondu que des « non », ce qui indique une suspicion de cas simple.",
           "isCorrect": true,
-          "correctionText": "Si aux réponses du questionnaire Go - No Go, la patiente réponds \"Non\" à chaque question, il s'agit bien d'une suspicion de cas simple.",
+          "correctionText": "Si aux réponses du questionnaire Go - No Go, la patiente répond « non » à chaque question, il s'agit bien d'une suspicion de cas simple, nous poursuivons le parcours ICOPE Audition.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -169,7 +169,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL.",
+          "answerText": "Il n'a répondu que des « non », ce qui indique une urgence ORL.",
           "isCorrect": false,
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque la patiente répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",

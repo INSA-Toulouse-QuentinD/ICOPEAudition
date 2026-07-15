@@ -98,7 +98,7 @@
           "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de respecter l'ordre de l'algorithme décisionnel ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est l'otoscopie."
         },
         {
-          "answerText": "Je réalise une surveillance en programmant un RDV dans 6 mois",
+          "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
           "correctionText": "Le test Go – No Go est rassurant mais fait toujours l'objet d'une suspicion de cas simple, il faut continuer le parcours audition pour s'assurer qu'il n'y a rien de problématique. Pour cela, la prochaine étape à suivre est l'otoscopie."
         }
       ]
@@ -184,7 +184,7 @@
       "spriteEarExams": "Images\\Steps\\Audiometry\\2_4_Audiometrie.png",
       "actionPhase": [
         {
-          "answerText": "Je réalise une surveillance en programmant un RDV dans 6 mois",
+          "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
           "correctionText": "L'audiométrie confirme une surdité de transmission. L'ORL va rechercher l'étiologie et proposer un traitement adapté."
         },
         {

@@ -97,16 +97,16 @@
           "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL."
         },
         {
-          "answerText": "Il n'a répondu que des \"non\", ce qui indique une suspicion de cas simple.",
+          "answerText": "Il n'a répondu que des « non », ce qui indique une suspicion de cas simple.",
           "isCorrect": true,
-          "correctionText": "Si aux réponses du questionnaire Go - No Go, le patient réponds \"Non\" à chaque question, il s'agit bien d'une suspicion de cas simple."
+          "correctionText": "Si aux réponses du questionnaire Go - No Go, le patient répond « non » à chaque question, il s'agit bien d'une suspicion de cas simple, nous poursuivons le parcours ICOPE Audition."
         },
         {
           "answerText": "Ses réponses ne montrent pas de problèmes significatifs",
           "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL."
         },
         {
-          "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL.",
+          "answerText": "Il n'a répondu que des « non », ce qui indique une urgence ORL.",
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le patient répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe."
         }
       ],

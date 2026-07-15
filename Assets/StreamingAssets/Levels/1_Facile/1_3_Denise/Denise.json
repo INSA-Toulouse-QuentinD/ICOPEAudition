@@ -153,7 +153,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Elle n'a répondu que des \"non\", ce qui indique une suspicion de cas simple.",
+          "answerText": "Elle n'a répondu que des « non », ce qui indique une suspicion de cas simple.",
           "isCorrect": true,
           "correctionText": "Si aux réponses du questionnaire Go - No Go, la patiente répond « non » à chaque question, il s'agit bien d'une suspicion de cas simple, nous poursuivons le parcours ICOPE Audition.",
           "rappelTip": "None",
@@ -169,7 +169,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Elle n'a répondu que des \"non\", ce qui indique une urgence ORL.",
+          "answerText": "Elle n'a répondu que des « non », ce qui indique une urgence ORL.",
           "isCorrect": false,
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque la patiente répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",
