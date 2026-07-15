@@ -39,7 +39,7 @@
         {
           "answerText": "Je ne peux rien faire, je renvois la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "La patiente est une bonne candidate pour l'évaluation approfondie dans le cadre du parcours ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation approfondie dans le cadre du parcours ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -80,7 +80,7 @@
         {
           "answerText": "Il n'y a pas d'anomalie car elle a su restituer les 2 mots du côté gauche",
           "isCorrect": false,
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.\nOr, dans ce cas précis, la patiente n'a répété <b>0 mots sur 4</b> pour l'oreille droite et <b>2 mots sur 4</b> pour l'oreille gauche. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
+          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe test est considéré comme normal lorsque la patiente répète correctement 3 ou 4 mots par oreille.\nOr, dans ce cas précis, la patiente n'a répété <b>0 mots sur 4</b> pour l'oreille droite et <b>2 mots sur 4</b> pour l'oreille gauche. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -257,7 +257,7 @@
         {
           "answerText": "Son otoscopie est normale, je répète le test de chuchotement",
           "isCorrect": true,
-          "correctionText": "Oui, en premier, on vérifie que la gêne persiste.",
+          "correctionText": "Oui, en premier on vérifie que la gêne persiste.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

@@ -39,7 +39,7 @@
         {
           "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "La patiente est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -80,7 +80,7 @@
         {
           "answerText": "Il n'y a pas d'anomalie car elle a su restituer les 2 mots du côté gauche",
           "isCorrect": false,
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
+          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe test est considéré comme normal lorsque la patiente répète correctement 3 ou 4 mots par oreille.\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -88,7 +88,7 @@
         {
           "answerText": "Le test est normal",
           "isCorrect": false,
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'il <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété les 3 minimum mots de chaque côté.",
+          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété les 3 minimum mots de chaque côté.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -96,7 +96,7 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je laisse la patiente repartir chez lui",
+          "answerText": "Je laisse la patiente repartir chez elle",
           "isCorrect": false,
           "correctionText": "Non, le test de chuchotement est anormal, il faut réaliser le questionnaire Go - No Go afin de repérer des signaux alertant sur une probable surdité complexe.",
           "rappelTip": "None",
@@ -153,7 +153,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'a répondu que des « non », ce qui indique une suspicion de cas simple.",
+          "answerText": "Elle n'a répondu que des « non », ce qui indique une suspicion de cas simple.",
           "isCorrect": true,
           "correctionText": "Si aux réponses du questionnaire Go - No Go, la patiente répond « non » à chaque question, il s'agit bien d'une suspicion de cas simple, nous poursuivons le parcours ICOPE Audition.",
           "rappelTip": "None",
@@ -169,7 +169,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'a répondu que des « non », ce qui indique une urgence ORL.",
+          "answerText": "Elle n'a répondu que des « non », ce qui indique une urgence ORL.",
           "isCorrect": false,
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque la patiente répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",
@@ -179,7 +179,7 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je laisse la patiente repartir chez lui",
+          "answerText": "Je laisse la patiente repartir chez elle",
           "isCorrect": false,
           "correctionText": "Non, son test de chuchotement est pathologique, il faut donc continuer l'exploration. Le questionnaire a permis d'éliminer des signes évocateurs d'une surdité complexe, on continue avec l'examen physique (examen du pavillon et vidéo-otoscopie).",
           "rappelTip": "None",
@@ -254,7 +254,7 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je laisse la patiente repartir chez lui",
+          "answerText": "Je laisse la patiente repartir chez elle",
           "isCorrect": false,
           "correctionText": "Il s'agit d'une suspicion de cas simple, avec un dépistage pathologique : il faut continuer son évaluation ! la normalité de l'examen otoscopique n'est en rien rassurante vis à vis du statut auditif de la patiente.",
           "rappelTip": "None",
@@ -404,9 +404,9 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je laisse la patiente repartir chez lui",
+          "answerText": "Je laisse la patiente repartir chez elle",
           "isCorrect": false,
-          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, à condition que l'audition soit symétrique.\n\n<color=red>Il n'a aucun caractère rassurant concernant la normalité de l'audition.</color>",
+          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, à condition que l'audition soit symétrique.\n\n<color=red>Elle n'a aucun caractère rassurant concernant la normalité de l'audition.</color>",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -422,7 +422,7 @@
         {
           "answerText": "Je laisse la patiente repartir et lui propose de faire le suivi ICOPE dans 6 mois",
           "isCorrect": false,
-          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, à condition que l'audition soit symétrique.\n\n<color=red>Il n'a aucun caractère rassurant concernant la normalité de l'audition.</color>",
+          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, à condition que l'audition soit symétrique.\n\n<color=red>Elle n'a aucun caractère rassurant concernant la normalité de l'audition.</color>",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

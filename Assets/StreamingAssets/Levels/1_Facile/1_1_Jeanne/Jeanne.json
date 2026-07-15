@@ -39,7 +39,7 @@
         {
           "answerText": "Je ne peux rien faire, je renvois la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "La patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le test de chuchotement est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.\nOn poursuit donc le parcours ICOPE Audition avec le questionnaire Go - No Go.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le test de chuchotement est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.\nOn poursuit donc le parcours ICOPE Audition avec le questionnaire Go - No Go.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -305,7 +305,7 @@
         {
           "answerText": "Il n'y a pas d'anomalie car elle a su restituer les 2 mots de chaque côté",
           "isCorrect": false,
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
+          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe test est considéré comme normal lorsque la patiente répète correctement 3 ou 4 mots par oreille.\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -455,7 +455,7 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je laisse la patiente repartir chez lui",
+          "answerText": "Je laisse la patiente repartir chez elle",
           "isCorrect": false,
           "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<color=red>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</color>",
           "rappelTip": "Acoumetry",

@@ -20,7 +20,7 @@
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
-          "correctionText": "La patiente est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag"
         },
         {
