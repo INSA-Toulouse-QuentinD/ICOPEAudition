@@ -39,7 +39,7 @@
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
           "isCorrect": false,
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -47,7 +47,7 @@
         {
           "answerText": "Je réalise le test de chuchotement",
           "isCorrect": true,
-          "correctionText": "Le patient ayant procédé à un auto-dépistage ICOPE, le test de chuchotement n'a pas été réalisé. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'étape 1.",
+          "correctionText": "Le patient ayant procédé à une auto-évaluation ICOPE, le test de chuchotement n'a pas été réalisé. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -64,15 +64,15 @@
         {
           "answerText": "Il y a une anomalie car il n'a pas su restituer les 2 mots du côté droit",
           "isCorrect": false,
-          "correctionText": "Le test est bien pathologique mais lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nDe plus, le patient à bien évoqué qu'il n'avait entendu aucun mot du côté de l'oreille droite.\n\n\n\nLe test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.",
+          "correctionText": "Le test est bien pathologique mais lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nDe plus, le patient a bien évoqué qu'il n'avait entendu aucun mot du côté de l'oreille droite.\n\n\n\nLe test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il y a une anomalie car il n'a pas su restituer les 3 mots des 2 côtés",
+          "answerText": "Il y a une anomalie car il n'a pas su restituer au moins 3 mots des 2 côtés",
           "isCorrect": true,
-          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si le patient est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, le patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>, ce qui est <b>en dessous du seuil requis</b>.\nCela indique une <b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
+          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si le patient est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, le patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>, ce qui est <b>en dessous du seuil requis</b>.\nCela indique un risque d'<b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -80,7 +80,7 @@
         {
           "answerText": "Il n'y a pas d'anomalie car il a su restituer les 2 mots du côté gauche",
           "isCorrect": false,
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\nOr, dans ce cas précis, le patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
+          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> au patient pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.\nOr, dans ce cas précis, le patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -106,7 +106,7 @@
         {
           "answerText": "Je réalise le test de Weber",
           "isCorrect": false,
-          "correctionText": "Avant de réaliser le test de Weber, on doit interroger le participant afin de repérer les signaux alertant sur des éventuels dignostics différentiels (questionnaire Go - No Go).",
+          "correctionText": "Avant de réaliser le test de Weber, on doit interroger le patient afin de repérer les signaux alertant sur des éventuels diagnostics différentiels (questionnaire Go - No Go).",
           "rappelTip": "Weber",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -114,7 +114,7 @@
         {
           "answerText": "Je fais passer le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "Le test de chuchotement étant anormal, nous poursuivons le déroulé de l'étape 2 d'ICOPE Audition, avec le questionnaire Go - No Go.",
+          "correctionText": "Le test de chuchotement étant anormal, nous poursuivons le parcours ICOPE Audition, avec le questionnaire Go - No Go.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -122,7 +122,7 @@
         {
           "answerText": "Je lui propose l'application Höra pour se retester dans 6 mois",
           "isCorrect": false,
-          "correctionText": "Si le test de chuchotement avait été normal, on aurait pu conclure a un faux positif du dépistage. On aurait alors rassuré le participant, en lui rappelant les consignes de prévention et de bonne hygiène auriculaire. Un nouveau dépistage aurait alors été proposé, par exemple avec Höra.\n\n<b>Ici, le test est anormal. Il faut donc poursuivre l'évaluation auditive</b> en commençant par l'interrogatoire (à l'aide du questionnaire Go - No Go).",
+          "correctionText": "Si le test de chuchotement avait été normal, on aurait pu conclure à un faux positif de l'évaluation initiale. On aurait alors rassuré le patient, en lui rappelant les consignes de prévention et de bonne hygiène auriculaire. Un nouveau dépistage aurait alors été proposé, par exemple avec Höra.\n\n<b>Ici, le test est anormal. Il faut donc poursuivre l'évaluation auditive</b> en commençant par l'interrogatoire (à l'aide du questionnaire Go - No Go).",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -171,7 +171,7 @@
         {
           "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL",
           "isCorrect": false,
-          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
+          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le patient répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

@@ -16,21 +16,21 @@
       "actionPhase": [
         {
           "answerText": "Je lui fait passer le questionnaire Go - No Go",
-          "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Il faut commencer par cette étape pour vous assurer qu'il y a bien une anomalie à l'étape 1."
+          "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Il faut commencer par cette étape pour vous assurer qu'il y a bien une anomalie à l'évaluation initiale."
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
-          "correctionText": "La patiente est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
+          "correctionText": "La patiente est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
           "rappelTip": "RedFlag"
         },
         {
           "answerText": "Je réalise le test de chuchotement",
           "isCorrect": true,
-          "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Vous commencez par cette étape pour vous assurer qu'il y a bien une anomalie à l'étape 1."
+          "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Vous commencez par cette étape pour vous assurer qu'il y a bien une anomalie à l'évaluation initiale."
         },
         {
           "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Il faut commencer par cette étape pour vous assurer qu'il y a bien une anomalie à l'étape 1."
+          "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Il faut commencer par cette étape pour vous assurer qu'il y a bien une anomalie à l'évaluation initiale."
         }
       ]
     },

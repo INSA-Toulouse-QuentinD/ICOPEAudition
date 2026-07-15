@@ -39,7 +39,7 @@
         {
           "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "La patiente est un bon candidat pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
+          "correctionText": "La patiente est un bon candidat pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -47,7 +47,7 @@
         {
           "answerText": "Je réalise le test de chuchotement",
           "isCorrect": true,
-          "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Vous commencez par cette étape pour vous assurer qu'il y a bien une anomalie à l'étape 1.",
+          "correctionText": "La patiente n'a pas encore était soumis au test de chuchotement. Vous commencez par cette étape pour vous assurer qu'il y a bien une anomalie à l'évaluation initiale.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -70,17 +70,17 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il y a une anomalie car il n'a pas su restituer les 3 mots des 2 côtés",
+          "answerText": "Il y a une anomalie car elle n'a pas su restituer au moins 3 mots des 2 côtés",
           "isCorrect": true,
-          "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente n'a su répéter que 2 mots sur 4 pour chaque côté, ce qui est en dessous du seuil requis.\nCela indique une atteinte de l'audition bilatérale, car aucun des deux côtés n'atteint le critère minimal de 3 mots correctement restitués sur 4.",
+          "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente n'a su répéter que 2 mots sur 4 pour chaque côté, ce qui est en dessous du seuil requis.\nCela indique un risque d'<b>atteinte de l'audition bilatérale</b>, car aucun des deux côtés n'atteint le critère minimal de 3 mots correctement restitués sur 4.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'y a pas d'anomalie car il a su restituer les 2 mots du côté gauche",
+          "answerText": "Il n'y a pas d'anomalie car elle a su restituer les 2 mots du côté gauche",
           "isCorrect": false,
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
+          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -98,7 +98,7 @@
         {
           "answerText": "Je lui fais passer le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "Le test de chuchotement étant anormal, nous poursuivons le déroulé de l'étape 2 d'ICOPE Audition, avec le questionnaire Go - No Go.",
+          "correctionText": "Le test de chuchotement étant anormal, nous poursuivons le parcours ICOPE Audition, avec le questionnaire Go - No Go.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -163,7 +163,7 @@
         {
           "answerText": "Ses réponses ne montrent pas de problèmes significatifs",
           "isCorrect": false,
-          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
+          "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive de la patiente. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -171,7 +171,7 @@
         {
           "answerText": "Il n'a répondu que des \"non\", ce qui indique une urgence ORL.",
           "isCorrect": false,
-          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le candidat répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
+          "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque la patiente répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -256,7 +256,7 @@
         {
           "answerText": "Je tente une ablation du bouchon de cérumen par la méthode de l'irrigation, après vérification de l'absence de CI",
           "isCorrect": true,
-          "correctionText": "Oui, selon la formation et la forme du bouchon de cérumen, on peut aussi procéder à une aspiration (bouchons à la sortie du conduit auditif externe, plutôt mous ; ou encore les méthodes avec curette si le bouchon est latéral et qu'il est possible de glisser la curette entre le bouchon et la paroi du conduit auditif externe.",
+          "correctionText": "Oui, selon la formation et la forme du bouchon de cérumen, on peut aussi procéder à une aspiration (bouchons à la sortie du conduit auditif externe, plutôt mous) ou encore les méthodes avec curette si le bouchon est latéral et qu'il est possible de glisser la curette entre le bouchon et la paroi du conduit auditif externe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -314,7 +314,7 @@
         {
           "answerText": "Son otoscopie est normale, je peux réaliser l'audiométrie",
           "isCorrect": false,
-          "correctionText": "Non, il faut d'abord répéter le test de chuchotement : s'il est normal > 3/4 : alors je n'ai pas besoin de poursuivre l'évaluation, je le rassure et lui rappelle les consignes de bonne hygiène auriculaire.",
+          "correctionText": "Non, il faut d'abord répéter le test de chuchotement : s'il est normal > 3/4 : alors je n'ai pas besoin de poursuivre l'évaluation, je la rassure et lui rappelle les consignes de bonne hygiène auriculaire.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
