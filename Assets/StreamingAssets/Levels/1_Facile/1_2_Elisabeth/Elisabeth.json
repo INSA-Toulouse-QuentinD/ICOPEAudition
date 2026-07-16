@@ -3,7 +3,7 @@
   "spriteSit": "",
   "spriteWeber": "",
   "isOnPhone": true,
-  "lastName": "Martin",
+  "lastName": "MARTIN",
   "firstName": "Elisabeth",
   "age": 67,
   "familySituation": "Ancienne professeure de lettre.",
@@ -17,7 +17,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Je convoque la patiente pour réaliser l'otoscopie et l'audiométrie",

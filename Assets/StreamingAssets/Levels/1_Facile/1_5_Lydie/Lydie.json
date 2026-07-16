@@ -3,7 +3,7 @@
   "spriteSit": "Levels\\1_Facile\\1_5_Lydie\\Lydie_sit.png",
   "spriteWeber": "",
   "isOnPhone": false,
-  "lastName": "Cibel",
+  "lastName": "CIBEL",
   "firstName": "Lydie",
   "age": 84,
   "familySituation": "Vit seule, cette ancienne couturière aime toujours coudre et jardiner.",
@@ -17,7 +17,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [],
       "actionPhase": [
         {
@@ -59,7 +58,6 @@
       "dialoguePatient": "J'ai entendu 2 mots à gauche et 3 à droite.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Le test est normal car la patiente a réussi à entendre au moins un mot de chaque côté",
@@ -142,7 +140,6 @@
         "No"
       ],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé",
@@ -217,7 +214,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\1_5_cerumen.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
@@ -292,7 +288,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [],
       "actionPhase": [
         {
@@ -334,7 +329,6 @@
       "dialoguePatient": "Cette fois j'ai entendu 4 mots à gauche, et toujours 3 à droite.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Le test est normal, je peux maintenant réaliser le questionnaire HHIE-S",

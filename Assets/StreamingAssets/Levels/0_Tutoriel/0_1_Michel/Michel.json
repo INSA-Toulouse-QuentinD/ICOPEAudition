@@ -3,7 +3,7 @@
   "spriteSit": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_sit.png",
   "spriteWeber": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_weber.png",
   "isOnPhone": false,
-  "lastName": "Dupont",
+  "lastName": "DUPONT",
   "firstName": "Michel",
   "age": 68,
   "familySituation": "Marié avec 3 enfants et retraité de la SNCF.",
@@ -17,7 +17,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [],
       "actionPhase": [
         {
@@ -59,7 +58,6 @@
       "dialoguePatient": "Je n'ai entendu aucun mot à droite. J'ai entendu 2 mots à gauche",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "Quelle est votre analyse ?",
       "diagnosticPhase": [
         {
           "answerText": "Il y a une anomalie car il n'a pas su restituer les 2 mots du côté droit",
@@ -142,7 +140,6 @@
         "No"
       ],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "Quelle est votre analyse ?",
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé",
@@ -217,7 +214,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
@@ -292,7 +288,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\HHIE-S\\14_HHIES.png",
-      "overrideDiagnosticQuestion": "Quelle est votre analyse ?",
       "diagnosticPhase": [
         {
           "answerText": "Le score est en faveur de difficultés modérées",
@@ -367,7 +362,6 @@
       "dialoguePatient": "Je n'arrive pas à savoir, j'ai entendu la même chose des deux côtés.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "Quelle est votre analyse ?",
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses révèlent une surdité de perception",
@@ -434,7 +428,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\Audiometry\\0_1_Audiometrie.png",
-      "overrideDiagnosticQuestion": "Quelle est votre analyse ?",
       "diagnosticPhase": [
         {
           "answerText": "L'audiogramme montre une surdité de transmission",

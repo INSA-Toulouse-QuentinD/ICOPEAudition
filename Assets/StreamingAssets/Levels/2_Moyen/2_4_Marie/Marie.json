@@ -3,7 +3,7 @@
   "spriteSit": "Levels\\2_Moyen\\2_4_Marie\\Marie_sit.png",
   "spriteWeber": "Levels\\2_Moyen\\2_4_Marie\\Marie_weber.png",
   "isOnPhone": false,
-  "lastName": "Lefèvre",
+  "lastName": "LEFÈVRE",
   "firstName": "Marie",
   "age": 78,
   "familySituation": "",
@@ -106,7 +106,6 @@
     {
       "type": "Otoscopy",
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\2_4_normal.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",

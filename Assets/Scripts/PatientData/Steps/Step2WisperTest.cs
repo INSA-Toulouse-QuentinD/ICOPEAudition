@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using PatientData.AlgoData;
 using DG.Tweening;
@@ -18,9 +19,11 @@ namespace PatientData.Steps{
 
         // DOCTOR TEXT
         [Header("Doctor texts")] [SerializeField]
-        private GameObject goDoctorText1;
+        private GameObject goDoctorText;
+        [SerializeField] private GameObject goDoctorText1;
 
         [SerializeField] private GameObject goDoctorText2;
+        [SerializeField] private TextMeshProUGUI targetDoctorText;
         [SerializeField] private TextMeshProUGUI targetDoctorText1;
         [SerializeField] private TextMeshProUGUI targetDoctorText2;
 
@@ -53,6 +56,7 @@ namespace PatientData.Steps{
         private void ClearTexts(){
             targetDoctorText1.text = "";
             targetDoctorText2.text = "";
+            targetDoctorText.text = "";
             targetPatientText.text = "";
         }
 
@@ -60,6 +64,7 @@ namespace PatientData.Steps{
         private void ClearDialogueBox(){
             goDoctorText1.SetActive(false);
             goDoctorText2.SetActive(false);
+            goDoctorText.SetActive(false);
             goPatientText.SetActive(false);
         }
 
@@ -135,7 +140,7 @@ namespace PatientData.Steps{
         /// <summary>
         /// Starts the first doctor text animation and queues subsequent animations.
         /// </summary>
-        public void PlayFirstText(AlgoStep step){
+        public IEnumerator PlayFirstText(AlgoStep step){
             ResetDoctorWordsPool();
 
             // Load in memory patient text form algoStep
@@ -148,6 +153,13 @@ namespace PatientData.Steps{
 
             // Activate doctor sprite position 1
             doctorPos1.SetActive(true);
+            
+            if (!string.IsNullOrEmpty(step.dialogueDoctor)) {
+                targetDoctorText.text = step.dialogueDoctor;
+                goDoctorText.SetActive(true);
+                yield return new WaitForSeconds(6f);
+                goDoctorText.SetActive(false);
+            }
 
             string[] strings = GetRandomListWord();
             AnimateText(goDoctorText1, targetDoctorText1, strings, 0f,

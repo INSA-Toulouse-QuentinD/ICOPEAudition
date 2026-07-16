@@ -173,7 +173,7 @@ namespace Managers{
                     if (GameManager.Instance.instanteAnimation) {
                         _step2WisperTest.SkipAnimation(_patientData.steps[_indexStep]);
                     } else {
-                        _step2WisperTest.PlayFirstText(_patientData.steps[_indexStep]);
+                        StartCoroutine(_step2WisperTest.PlayFirstText(_patientData.steps[_indexStep]));
                     }
 
                     // Display current step
@@ -309,9 +309,7 @@ namespace Managers{
             }
 
             if (diagCount > 0 && !_isDiagnosticValid) {
-                questionText.text = string.IsNullOrEmpty(algoStep.overrideDiagnosticQuestion)
-                    ? "Quel est votre diagnostic ?"
-                    : algoStep.overrideDiagnosticQuestion;
+                questionText.text = "Quelle est votre analyse ?";
                 _answerState = AnswerState.Diagnostic;
                 CreateAnswerButtons(algoStep.diagnosticPhase);
                 ApplyTriedStateToButtons(_diagAnswerState);

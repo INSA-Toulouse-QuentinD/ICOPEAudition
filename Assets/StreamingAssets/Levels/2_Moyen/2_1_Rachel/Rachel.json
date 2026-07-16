@@ -3,7 +3,7 @@
   "spriteSit": "Levels\\2_Moyen\\2_1_Rachel\\Rachel_sit.png",
   "spriteWeber": "Levels\\2_Moyen\\2_1_Rachel\\Rachel_weber.png",
   "isOnPhone": false,
-  "lastName": "Bernier",
+  "lastName": "BERNIER",
   "firstName": "Rachel",
   "age": 81,
   "familySituation": "Elle vit seule à domicile, en bonne autonomie.",
@@ -17,7 +17,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [],
       "actionPhase": [
         {
@@ -59,7 +58,6 @@
       "dialoguePatient": "Je n'ai entendu que 2 mots à droite et à gauche.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Le test est normal car la patiente a réussi à entendre au moins un mot de chaque côté",
@@ -142,7 +140,6 @@
         "No"
       ],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé",
@@ -217,7 +214,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\2_1_normal.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
@@ -292,7 +288,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\HHIE-S\\10_HHIES.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Le score est en faveur de difficultés modérées",
@@ -367,7 +362,6 @@
       "dialoguePatient": "Je n'arrive pas à savoir, j'ai entendu la même chose des deux côtés.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses révèlent une surdité de perception",
@@ -442,7 +436,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\Audiometry\\2_1_Audiometrie.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Surdité de transmission moyenne et symétrique",
@@ -482,7 +475,7 @@
           "answerText": "En accord avec votre médecin référent, une prescription de prothèse auditive est délivrée à Mme. Bernier",
           "isCorrect": true,
           "correctionText": "La patiente décrit une gêne auditive au quotidien et l'audiométrie confirme une surdité neurosensorielle légère bilatérale compatible avec les critères d'appareillage.\n\nBravo !! Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
-          "rappelTip": "AppareilAcouphene",
+          "rappelTip": "Appareil",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },

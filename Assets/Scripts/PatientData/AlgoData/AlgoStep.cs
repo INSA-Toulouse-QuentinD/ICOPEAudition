@@ -36,6 +36,7 @@ namespace PatientData.AlgoData{
     public class AlgoStep{
         public Step type; // The step type enum
 
+        [TextArea] public string dialogueDoctor;
         [TextArea] public string dialoguePatient;
 
         public List<YesNo> predefinedAnswer = new(){
@@ -43,8 +44,7 @@ namespace PatientData.AlgoData{
         }; // Predefined answers for patient
 
         public Sprite spriteEarExams; // Image representing ear exams, HHIES exam or audiometry
-
-        public string overrideDiagnosticQuestion;
+        
         public List<AnswerData> diagnosticPhase; // Diagnostic phase data
 
         public List<AnswerData> actionPhase; // Action phase data

@@ -3,7 +3,7 @@
   "spriteSit": "Levels\\1_Facile\\1_4_Gerard\\Gerard_sit.png",
   "spriteWeber": "",
   "isOnPhone": false,
-  "lastName": "Fontaine",
+  "lastName": "FONTAINE",
   "firstName": "Gérard",
   "age": 70,
   "familySituation": "Ancien agriculteur. Vit en résidence autonomie.",
@@ -17,7 +17,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [],
       "actionPhase": [
         {
@@ -59,7 +58,6 @@
       "dialoguePatient": "J'ai entendu 2 mots à droite. J'ai entendu 2 mots à gauche.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Le test est normal car le patient a réussi à entendre au moins un mot de chaque côté",
@@ -142,7 +140,6 @@
         "No"
       ],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé",
@@ -217,7 +214,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\1_4_perforation_tympan.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",

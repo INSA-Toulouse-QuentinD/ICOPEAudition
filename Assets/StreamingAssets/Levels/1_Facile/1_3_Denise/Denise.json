@@ -3,7 +3,7 @@
   "spriteSit": "Levels\\1_Facile\\1_3_Denise\\Denise_sit.png",
   "spriteWeber": "",
   "isOnPhone": false,
-  "lastName": "Roux",
+  "lastName": "ROUX",
   "firstName": "Denise",
   "age": 76,
   "familySituation": "Mariée et ancienne chef cuisinière.",
@@ -17,13 +17,12 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [],
       "actionPhase": [
         {
           "answerText": "Je réalise une vidéo-otoscopie",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage ayant été réalisé par un audioprothésiste. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été réalisé par un audioprothésiste. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -31,7 +30,7 @@
         {
           "answerText": "Je vérifie ses oreilles",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage ayant été réalisé par un audioprothésiste. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été réalisé par un audioprothésiste. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -45,9 +44,9 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Le test de dépistage gratuit à 35 dB par un audioprothésiste est suffisant",
+          "answerText": "Le test de dépistage gratuit à 35 dB par un audioprothésiste est suffisant, je lui propose ICOPE Audition",
           "isCorrect": true,
-          "correctionText": "La patiente ayant procédé à une évaluation initiale avec un audioprothésiste, est équivalente au test de chuchotement ou au test Höra. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale initiale en cas de doute vous pouvez refaire le test de chuchotement.",
+          "correctionText": "La patiente ayant procédé à une évaluation initiale avec un audioprothésiste, ce qui est équivalent au test de chuchotement ou au test Höra. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale initiale, en cas de doute vous pouvez refaire le test de chuchotement.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -56,10 +55,10 @@
     },
     {
       "type": "WisperTest",
+      "dialogueDoctor": "Le test de dépistage gratuit étant à la limite de la normale, je vais réaliser le test de chuchotement.",
       "dialoguePatient": "Je n'ai entendu aucun mot à droite. J'ai entendu 2 mots à gauche.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Il y a une anomalie car elle n'a pas su restituer les 2 mots du côté droit",
@@ -142,7 +141,6 @@
         "No"
       ],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé",
@@ -217,7 +215,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\1_3_cerumen.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Il existe une otomycose, je mets en place un traitement par gouttes auriculaire et lui conseille de respecter une éviction aquatique pendant toute la durée du traitement",
@@ -251,7 +248,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [],
       "actionPhase": [
         {
@@ -293,7 +289,6 @@
       "dialoguePatient": "J'ai entendu 3 mots à droite et à gauche, mais à gauche, pour le 4ème mot, j'ai confondu «Ballon» et «Bâton».",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Le test est normal, je la rassure et lui propose un nouveau dépistage dans 6 mois",

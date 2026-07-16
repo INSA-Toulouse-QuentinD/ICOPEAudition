@@ -2,7 +2,7 @@
   "spriteUp": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_up.png",
   "spriteSit": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_sit.png",
   "spriteWeber": "Levels\\0_Tutoriel\\0_1_Michel\\Michel_weber.png",
-  "lastName": "Dupont",
+  "lastName": "DUPONT",
   "firstName": "Michel",
   "age": 68,
   "familySituation": "Marié avec 3 enfants et retraité de la SNCF.",
@@ -185,6 +185,51 @@
       ]
     },
     {
+      "type": "Hhies",
+      "spriteEarExams": "Images\\Steps\\HHIE-S\\14_HHIES.png",
+      "diagnosticPhase": [
+        {
+          "answerText": "Le score est en faveur de difficultés modérées",
+          "isCorrect": true,
+          "correctionText": "Le score > 8/40 permet de dépister une déficience auditive (probabilité 11% pour un score entre 0 et 8). Un score > 16/40 permet de détecter une surdité avec une efficacité maximale (88,4%) dans le travail de Duchene et al. 2022."
+        },
+        {
+          "answerText": "Le score indique une absence totale de gêne auditive",
+          "correctionText": "Non, le score à <b>14/40</b> est en faveur d'une surdité modérée.\n<color=red>On ne peut donc pas conclure à l'absence de gêne auditive.</color>",
+          "rappelTip": "Hhies"
+        },
+        {
+          "answerText": "Le score indique des difficultés auditives sévères",
+          "correctionText": "Non, en cas de difficulté auditive sévère on peut s'attendre à retrouver un score > 24. Il s'agit donc d'une surdité modérée.\n<b>La probabilité d'être porteur d'une déficience auditive augmentant avec le score.</b>",
+          "rappelTip": "Hhies"
+        },
+        {
+          "answerText": "Le résultat suggère que les troubles auditifs sont uniquement liés à une fatigue passagère",
+          "correctionText": "Le score est > à 8/40 ce qui signifie que le patient est probablement atteint d'une déficience auditive, éligible à un appareillage selon les critères actuellement admis en France.",
+          "rappelTip": "Hhies"
+        }
+      ],
+      "actionPhase": [
+        {
+          "answerText": "J'adresse le patient vers l'ORL",
+          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
+        },
+        {
+          "answerText": "J'oriente le patient vers son médecin traitant",
+          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
+        },
+        {
+          "answerText": "Je propose au patient un prochain rendez-vous de suivi",
+          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
+        },
+        {
+          "answerText": "Il est pertinent de réaliser l'audiométrie",
+          "isCorrect": true,
+          "correctionText": "L'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nIl va également renseigner sur la sévérité de la surdité, et l'indication ou non d'un appareillage audio-prothétique."
+        }
+      ]
+    },
+    {
       "type": "WeberTest",
       "dialoguePatient": "Je n'arrive pas à savoir, j'ai entendu la même chose des deux côtés.",
       "diagnosticPhase": [
@@ -227,51 +272,6 @@
           "correctionText": "Ici l'examen otoscopique est normal, le Weber est en plus centré : il n'y aucun argument évoquant la présence d'un bouchon de cérumen.\n\nEn revanche, si à l'examen on retrouve un bouchon de cérumen, il faut le retirer (si pas de contre-indication) AVANT de réaliser le test de Weber, autrement les réponses seront en lien avec la surdité occasionnée par ce bouchon de cérumen.",
           "rappelTip": "Bdc",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png"
-        }
-      ]
-    },
-    {
-      "type": "Hhies",
-      "spriteEarExams": "Images\\Steps\\HHIE-S\\14_HHIES.png",
-      "diagnosticPhase": [
-        {
-          "answerText": "Le score est en faveur de difficultés modérées",
-          "isCorrect": true,
-          "correctionText": "Le score > 8/40 permet de dépister une déficience auditive (probabilité 11% pour un score entre 0 et 8). Un score > 16/40 permet de détecter une surdité avec une efficacité maximale (88,4%) dans le travail de Duchene et al. 2022."
-        },
-        {
-          "answerText": "Le score indique une absence totale de gêne auditive",
-          "correctionText": "Non, le score à <b>14/40</b> est en faveur d'une surdité modérée.\n<color=red>On ne peut donc pas conclure à l'absence de gêne auditive.</color>",
-          "rappelTip": "Hhies"
-        },
-        {
-          "answerText": "Le score indique des difficultés auditives sévères",
-          "correctionText": "Non, en cas de difficulté auditive sévère on peut s'attendre à retrouver un score > 24. Il s'agit donc d'une surdité modérée.\n<b>La probabilité d'être porteur d'une déficience auditive augmentant avec le score.</b>",
-          "rappelTip": "Hhies"
-        },
-        {
-          "answerText": "Le résultat suggère que les troubles auditifs sont uniquement liés à une fatigue passagère",
-          "correctionText": "Le score est > à 8/40 ce qui signifie que le patient est probablement atteint d'une déficience auditive, éligible à un appareillage selon les critères actuellement admis en France.",
-          "rappelTip": "Hhies"
-        }
-      ],
-      "actionPhase": [
-        {
-          "answerText": "J'adresse le patient vers l'ORL",
-          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
-        },
-        {
-          "answerText": "J'oriente le patient vers son médecin traitant",
-          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
-        },
-        {
-          "answerText": "Je propose au patient un prochain rendez-vous de suivi",
-          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
-        },
-        {
-          "answerText": "Il est pertinent de réaliser l'audiométrie",
-          "isCorrect": true,
-          "correctionText": "L'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nIl va également renseigner sur la sévérité de la surdité, et l'indication ou non d'un appareillage audio-prothétique."
         }
       ]
     },

@@ -1,9 +1,9 @@
 {
   "spriteUp": "Levels\\1_Facile\\1_1_Jeanne\\Jeanne_up.png",
   "spriteSit": "Levels\\1_Facile\\1_1_Jeanne\\Jeanne_sit.png",
-  "spriteWeber": "",
+  "spriteWeber": "Levels\\1_Facile\\1_1_Jeanne\\Jeanne_weber.png",
   "isOnPhone": false,
-  "lastName": "Durand",
+  "lastName": "DURAND",
   "firstName": "Jeanne",
   "age": 72,
   "familySituation": "Veuve et ancienne professeure de tango à la retraite.",
@@ -17,7 +17,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [],
       "actionPhase": [
         {
@@ -67,7 +66,6 @@
         "No"
       ],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Ses réponse montrent des signes d'un trouble neurologique avancé",
@@ -142,7 +140,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
@@ -209,7 +206,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\1_1_normal.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Cette otoscopie peut être considérée comme normale, en tous cas, cet aspect n'est généralement pas associé à une surdité",
@@ -284,7 +280,6 @@
       "dialoguePatient": "J'ai entendu 2 mots à gauche et 2 mots à droite.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Le test est normal",
@@ -351,7 +346,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\HHIE-S\\14_HHIES.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Le score est en faveur de difficultés modérées",
@@ -426,7 +420,6 @@
       "dialoguePatient": "Je n'arrive pas à savoir, j'ai entendu la même chose des deux côtés.",
       "predefinedAnswer": [],
       "spriteEarExams": "",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses révèlent un bouchon de cérumen",
@@ -493,7 +486,6 @@
       "dialoguePatient": "",
       "predefinedAnswer": [],
       "spriteEarExams": "Images\\Steps\\Audiometry\\1_1_Audiometrie.png",
-      "overrideDiagnosticQuestion": "",
       "diagnosticPhase": [
         {
           "answerText": "L'audiogramme montre une surdité de transmission bilatérale",

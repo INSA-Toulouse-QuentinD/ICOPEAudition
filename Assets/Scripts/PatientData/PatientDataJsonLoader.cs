@@ -37,9 +37,9 @@ namespace PatientData{
         [Serializable]
         public class AlgoStepDto{
             public string type;
+            public string dialogueDoctor;
             public string dialoguePatient;
             public string spriteEarExams;
-            public string overrideDiagnosticQuestion;
 
             public List<AnswerDto> diagnosticPhase;
             public List<AnswerDto> actionPhase;
@@ -190,13 +190,13 @@ namespace PatientData{
                         $"{errorText} n'existe pas !{(closestEnum != null ? $" Peut-être vouliez-vous dire {closestEnum} ?" : "")}");
                 } else {
                     step.type = stepType;
+                    
+                    step.dialogueDoctor =  dto.dialogueDoctor;
 
                     step.dialoguePatient = dto.dialoguePatient;
                     if (string.IsNullOrEmpty(step.dialoguePatient) && step.type is Step.WisperTest or Step.WeberTest) {
                         GameManager.Instance.JsonErrorAdd($"{errorText} doit avoir un dialoguePatient !");
                     }
-
-                    step.overrideDiagnosticQuestion = dto.overrideDiagnosticQuestion;
 
                     // spriteEarExams (LOAD)
                     if (!string.IsNullOrEmpty(dto.spriteEarExams)) {
