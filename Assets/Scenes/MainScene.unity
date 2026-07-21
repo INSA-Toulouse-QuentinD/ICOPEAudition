@@ -569,11 +569,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: alwaysRight
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: skipAssistante
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: canAccessAllLevel
@@ -585,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: forcePositionChoice
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2417210929688175964, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1282,6 +1282,10 @@ PrefabInstance:
     - target: {fileID: 6860551974099321176, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926842794358182778, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 6969947694324320972, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_AnchorMax.y

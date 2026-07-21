@@ -1,0 +1,205 @@
+{
+  "spriteUp": "Levels\\3_Difficile\\3_3_Vincent\\Vincent_up.png",
+  "spriteSit": "Levels\\3_Difficile\\3_3_Vincent\\Vincent_sit.png",
+  "spriteWeber": "Levels\\3_Difficile\\3_3_Vincent\\Vincent_weber.png",
+  "isOnPhone": false,
+  "lastName": "MILANE",
+  "firstName": "Vincent",
+  "age": 83,
+  "familySituation": "Vit en résidence senior autonome",
+  "occupationalActivities": "",
+  "context": "Il se plaint de ne plus entendre la télévision, même volume au maximum. Une IDE ICOPE lui a proposé de faire l'évaluation étape 1, dont le test auditif.",
+  "medicalHistory": "Aucun antécédent ORL connu.$",
+  "descriptionLevel": "",
+  "steps": [
+    {
+      "type": "CasePresentation",
+      "actionPhase": [
+        {
+          "answerText": "Je réalise une vidéo-otoscopie",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
+        },
+        {
+          "answerText": "Je vérifie ses oreilles",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
+        },
+        {
+          "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "rappelTip": "RedFlag"
+        },
+        {
+          "answerText": "Je réalise le test de chuchotement",
+          "isCorrect": true,
+          "correctionText": "Le patient ayant procédé à une auto-évaluation ICOPE, le test de chuchotement n'a pas été réalisé. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale."
+        }
+      ]
+    },
+    {
+      "type": "WisperTest",
+      "dialoguePatient": "Je n'ai entendu aucun mot pour les deux oreilles.",
+      "actionPhase": [
+        {
+          "answerText": "J'adresse immédiatement le patient vers l'ORL",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Il n'y a pas d'argument pour une situation complexe, nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go.",
+          "rappelTip": "Weber"
+        },
+        {
+          "answerText": "Je fais passer le questionnaire Go - No Go",
+          "isCorrect": true,
+          "correctionText": "A ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+        },
+        {
+          "answerText": "Je réalise le questionnaire HHIE-S",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+        },
+        {
+          "answerText": "Je réalise une vidéo-otoscopie",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go, avant de poursuivre par la vidéo-otoscopie."
+        }
+      ]
+    },
+    {
+      "type": "GoNoGo",
+      "predefinedAnswer": [
+        "No",
+        "No",
+        "No",
+        "No",
+        "No",
+        "No",
+        "No"
+      ],
+      "actionPhase": [
+        {
+          "answerText": "Il est pertinent de réaliser l'audiométrie",
+          "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
+        },
+        {
+          "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
+          "isCorrect": true,
+          "correctionText": "Après un test Go – No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
+        },
+        {
+          "answerText": "Je lui fais fait passer le questionnaire HHIE-S",
+          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
+        },
+        {
+          "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
+          "correctionText": "Le test Go – No Go est faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE audition, la prochaine étape à suivre est la vidéo-otoscopie."
+        }
+      ]
+    },
+    {
+      "type": "Otoscopy",
+      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\3_3_tympanosclérose.png",
+      "diagnosticPhase": [
+        {
+          "answerText": "Il s'agit d'un bouchon de cérumen",
+          "correctionText": "Lors de l'examen, on observe une masse brunâtre, homogène et mate, obstruant le conduit auditif externe, sans visualisation de tympan ni des repères anatomiques habituels. Ces éléments sont caractéristiques d'un bouchon de cérumen."
+        },
+        {
+          "answerText": "Il s'agit d'une otite moyenne aiguë",
+          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire."
+        },
+        {
+          "answerText": "Il s'agit d'une perforation tympanique ",
+          "correctionText": "Dans cette situation, l'annulus n'est pas visible sur toute sa circonférence. Il n'est donc pas possible de confirmer l'absence de perforation de la membrane tympanique. En cas de suspicion de perforation, un avis médical est nécessaire. Voici quelques exemples de perforations tympaniques."
+        },
+        {
+          "answerText": "Il s'agit d'une tympanosclérose / myringosclérose",
+          "isCorrect": true,
+          "correctionText": "C'est une affection caractérisée par des plaques blanchâtres, épaisses et calcifiées qui se forment sur le tympan."
+        }
+      ]
+    },
+    {
+      "type": "Hhies",
+      "spriteEarExams": "Images\\Steps\\HHIE-S\\30_HHIES.png",
+      "actionPhase": [
+        {
+          "answerText": "J'adresse le patient vers l'ORL",
+          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
+        },
+        {
+          "answerText": "J'oriente le patient vers son médecin traitant",
+          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
+        },
+        {
+          "answerText": "Je propose au patient un prochain rendez-vous de suivi",
+          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
+        },
+        {
+          "answerText": "Je continue le parcours audition et je réalise test de Weber",
+          "isCorrect": true,
+          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. Le test de Weber est l'examen à réaliser en suivant."
+        }
+      ]
+    },
+    {
+      "type": "WeberTest",
+      "dialoguePatient": "Je n'arrive pas à savoir, j'ai entendu la même chose des deux côtés.",
+      "actionPhase": [
+        {
+          "answerText": "Je fais un bilan cognitif",
+          "correctionText": "Le questionnaire HHIE-S n'est pas un test de dépistage cognitif. Un résultat a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. Il faut réaliser le bilan audiométrique."
+        },
+        {
+          "answerText": "J'adresse le patient vers l'ORL",
+          "correctionText": "Il n'y a pas d'argument en faveur d'une situation complexe. Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. Il faut réaliser le bilan audiométrique."
+        },
+        {
+          "answerText": "Je fais une audiométrie",
+          "isCorrect": true,
+          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. L'étape suivante est le bilan audiométrique."
+        },
+        {
+          "answerText": "Je prescris une prothèse auditive",
+          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. Il faut réaliser le bilan audiométrique pour vérifier l'indication avant de prescrire."
+        }
+      ]
+    },
+    {
+      "type": "Audiometry",
+      "spriteEarExams": "Images\\Steps\\Audiometry\\3_3_Audiometrie.png",
+      "diagnosticPhase": [
+        {
+          "answerText": "Surdité neurosensorielle sévère bilatérale symétrique ou surdité de perception sévère bilatérale symétrique",
+          "isCorrect": true,
+          "correctionText": "DEBUG!!!"
+        },
+        {
+          "answerText": "Surdité neurosensorielle légère bilatérale symétrique ou surdité de perception légère bilatérale symétrique",
+          "correctionText": "DEBUG!!!"
+        },
+        {
+          "answerText": "Surdité neurosensorielle modérée bilatérale symétrique ou surdité de perception modérée bilatérale symétrique",
+          "correctionText": "DEBUG!!!"
+        },
+        {
+          "answerText": "Surdité de transmission modérée bilatérale symétrique",
+          "correctionText": "DEBUG!!!"
+        }
+      ],
+      "actionPhase": [
+        {
+          "answerText": "Je prescris une prothèse auditive",
+          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire."
+        },
+        {
+          "answerText": "J'adresse le patient vers l'ORL",
+          "isCorrect": true,
+          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\nPrise en charge réussie. Tu as débloqué un nouveau niveau."
+        },
+        {
+          "answerText": "Je prescris un implant cochléaire",
+          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire."
+        },
+        {
+          "answerText": "Je propose une surveillance avec un contrôle dans 6 mois",
+          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire."
+        }
+      ]
+    }
+  ]
+}

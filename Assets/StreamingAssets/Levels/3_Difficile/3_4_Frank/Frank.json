@@ -1,0 +1,115 @@
+{
+  "spriteUp": "Levels\\3_Difficile\\3_4_Frank\\Frank_up.png",
+  "spriteSit": "Levels\\3_Difficile\\3_4_Frank\\Frank_sit.png",
+  "isOnPhone": false,
+  "lastName": "LEVEAU",
+  "firstName": "Frank",
+  "age": 70,
+  "familySituation": "Vit chez lui et est suivi par une infirmière ASALEE.",
+  "occupationalActivities": "",
+  "context": ". Il se plaint de moments où il « entend comme dans une bulle ». Il a fait le test Höra à domicile, résultat pathologique. Adressage pour une évaluation étape 2 de l'audition",
+  "medicalHistory": "Aucun antécédent ORL connu.",
+  "descriptionLevel": "",
+  "steps": [
+    {
+      "type": "CasePresentation",
+      "actionPhase": [
+        {
+          "answerText": "Je réalise une vidéo-otoscopie",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
+        },
+        {
+          "answerText": "Je vérifie ses oreilles",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
+        },
+        {
+          "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "rappelTip": "RedFlag"
+        },
+        {
+          "answerText": "Je réalise le test de chuchotement",
+          "isCorrect": true,
+          "correctionText": "Le patient ayant procédé à une auto-évaluation ICOPE, le test de chuchotement n'a pas été réalisé. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale."
+        }
+      ]
+    },
+    {
+      "type": "WisperTest",
+      "dialoguePatient": "J'ai entendu 3 mots à droite et seulement 2 à gauche.",
+      "actionPhase": [
+        {
+          "answerText": "J'adresse immédiatement le patient vers l'ORL",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Il n'y a pas d'argument pour une situation complexe, nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go.",
+          "rappelTip": "RedFlag"
+        },
+        {
+          "answerText": "Je réalise le questionnaire HHIE-S",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+        },
+        {
+          "answerText": "Je réalise une vidéo-otoscopie",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go, avant de poursuivre par la vidéo-otoscopie<."
+        },
+        {
+          "answerText": "Je fais passer le questionnaire Go - No Go",
+          "isCorrect": true,
+          "correctionText": "A ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+        }
+      ]
+    },
+    {
+      "type": "GoNoGo",
+      "dialoguePatient": "J'entend souvent comme dans une bulle, et parfois c'est accompagnés de vertiges discrets.",
+      "predefinedAnswer": [
+        "Yes",
+        "No",
+        "No",
+        "No",
+        "No",
+        "Yes",
+        "No"
+      ],
+      "overrideDiagnostic": "Que faites-vous ?",
+      "diagnosticPhase": [
+        {
+          "answerText": "Il est pertinent de réaliser l'audiométrie",
+          "correctionText": "Après un questionnaire Go – No Go orientant vers un cas complexe, il faut adresser le patient à l'ORL."
+        },
+        {
+          "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
+          "correctionText": "Après un questionnaire Go – No Go orientant vers un cas complexe, il faut adresser le patient à l'ORL."
+        },
+        {
+          "answerText": "J'adresse le patient vers l'ORL",
+          "isCorrect": true,
+          "correctionText": "Après un questionnaire Go – No Go orientant vers un cas complexe, il faut adresser le patient à l'ORL."
+        },
+        {
+          "answerText": "Je lui fais fait passer le questionnaire HHIE-S",
+          "correctionText": "Après un questionnaire Go – No Go orientant vers un cas complexe, il faut adresser le patient à l'ORL."
+        }
+      ],
+      "overrideAction": "Quelle pathologie pouvez-vous suspecter ?",
+      "actionPhase": [
+        {
+          "answerText": "Une Maladie de Ménière",
+          "isCorrect": true,
+          "correctionText": "La présence de sensation de bulle accompagnés de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\nPrise en charge réussie. Tu as débloqué un nouveau niveau."
+        },
+        {
+          "answerText": "Un Schwanomme",
+          "correctionText": "La présence de sensation de bulle accompagnés de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+        },
+        {
+          "answerText": "Une Presbyacousie légère",
+          "correctionText": "La présence de sensation de bulle accompagnés de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+        },
+        {
+          "answerText": "Des Acouphènes",
+          "correctionText": "La présence de sensation de bulle accompagnés de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+        }
+      ]
+    }
+  ]
+}

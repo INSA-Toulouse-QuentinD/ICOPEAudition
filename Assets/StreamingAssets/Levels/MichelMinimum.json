@@ -166,16 +166,16 @@
       "actionPhase": [
         {
           "answerText": "Je laisse le patient repartir chez lui",
-          "correctionText": "On a un cas simple, avec un dépistage pathologique : il faut continuer son évaluation ! la normalité de l'examen otoscopique n'est en rien rassurante vis à vis du statut auditif du patient."
+          "correctionText": "Il s'agit d'une suspicion de cas simple, avec un dépistage pathologique : il faut continuer son évaluation ! la normalité de l'examen otoscopique n'est en rien rassurante vis à vis du statut auditif du patient."
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise test de Weber",
+          "answerText": "Je continue le parcours audition et lui fais passer le questionnaire HHIE-S",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. Le test de Weber est l'examen à réaliser en suivant."
+          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. Le questionnaire HHIE-S est l'examen à réaliser en suivant."
         },
         {
           "answerText": "J'adresse le patient aux urgences",
-          "correctionText": "L'examen du tympan est normal, on peut poursuivre l'exploration auditive par un Test acoumétrique de Weber."
+          "correctionText": "Aucune indication ! L'examen du tympan est normal, on peut poursuivre l'exploration auditive par le questionnaire HHIE-S."
         },
         {
           "answerText": "Je prescris une prothèse auditive",
@@ -191,7 +191,7 @@
         {
           "answerText": "Le score est en faveur de difficultés modérées",
           "isCorrect": true,
-          "correctionText": "Le score > 8/40 permet de dépister une déficience auditive (probabilité 11% pour un score entre 0 et 8). Un score > 16/40 permet de détecter une surdité avec une efficacité maximale (88,4%) dans le travail de Duchene et al. 2022."
+          "correctionText": "Un score > 8/40 permet de dépister une déficience auditive (probabilité 11% pour un score entre 0 et 8). Un score > 16/40 permet de détecter une surdité avec une efficacité maximale (88,4%) dans le travail de Duchene et al. 2022."
         },
         {
           "answerText": "Le score indique une absence totale de gêne auditive",
@@ -223,9 +223,9 @@
           "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
         },
         {
-          "answerText": "Il est pertinent de réaliser l'audiométrie",
+          "answerText": "Je continue le parcours audition et je réalise test de Weber",
           "isCorrect": true,
-          "correctionText": "L'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nIl va également renseigner sur la sévérité de la surdité, et l'indication ou non d'un appareillage audio-prothétique."
+          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. Le test de Weber est l'examen à réaliser en suivant."
         }
       ]
     },
@@ -257,9 +257,9 @@
           "rappelTip": "Acoumetry"
         },
         {
-          "answerText": "Je continue le parcours audition et lui fais passer le questionnaire HHIE-S",
+          "answerText": "Il est pertinent de réaliser l'audiométrie",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. Le questionnaire HHIE-S est l'examen à réaliser en suivant.",
+          "correctionText": "L'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité, et l'indication ou non d'un appareillage audio-prothétique.",
           "rappelTip": "Hhies"
         },
         {

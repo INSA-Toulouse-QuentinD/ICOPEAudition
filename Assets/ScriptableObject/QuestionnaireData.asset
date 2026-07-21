@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: QuestionnaireData
   m_EditorClassIdentifier: 
   questions:
-  - questionText: "- Etes-vous devenu sourd brutalement ou avez-vous une surdit\xE9
+  - questionText: "Etes-vous devenu sourd brutalement ou avez-vous une surdit\xE9
       qui varie dans le temps ?"
   - questionText: "Avez-vous une perte d\u2019audition (g\xE8ne auditive) qui touche
       une seule oreille ou une perte d\u2019audition qui pr\xE9domine d\u2019un c\xF4t\xE9

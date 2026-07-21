@@ -25,6 +25,15 @@
         "2_4_Marie",
         "2_5_Helene"
       ]
+    },
+    {
+      "name": "3_Difficile",
+      "patients": [
+        "3_1_Philippe",
+        "3_2_Damien",
+        "3_3_Vincent",
+        "3_4_Frank"
+      ]
     }
   ]
 }
