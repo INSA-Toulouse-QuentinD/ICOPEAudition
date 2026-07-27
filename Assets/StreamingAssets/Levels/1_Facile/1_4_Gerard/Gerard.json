@@ -186,7 +186,7 @@
           "answerText": "J'adresse le patient vers les urgences",
           "isCorrect": false,
           "correctionText": "Aucune indication !\nIl s'agit d'une suspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique (examen du pavillon et vidéo-otoscopie).",
-          "rappelTip": "None",
+          "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },

@@ -219,7 +219,7 @@
           "answerText": "Il s'agit d'une otite moyenne aiguë",
           "isCorrect": false,
           "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
-          "rappelTip": "None",
+          "rappelTip": "Tympan",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
         },
@@ -227,7 +227,7 @@
           "answerText": "Il s'agit d'une perforation tympanique",
           "isCorrect": false,
           "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. Dans le cas d'une perforation tympanique, un avis médical est nécessaire. Voici des exemples de perforations tympanique :",
-          "rappelTip": "None",
+          "rappelTip": "Tympan",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
         },
@@ -267,7 +267,7 @@
           "answerText": "J'adresse le patient aux urgences",
           "isCorrect": false,
           "correctionText": "Aucune indication ! L'examen du tympan est normal, on peut poursuivre l'exploration auditive par le questionnaire HHIE-S.",
-          "rappelTip": "None",
+          "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
@@ -399,7 +399,6 @@
           "answerText": "Il est pertinent de réaliser l'audiométrie",
           "isCorrect": true,
           "correctionText": "L'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité et l'indication ou non d'un appareillage audio-prothétique.",
-          "rappelTip": "Hhies",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
@@ -489,7 +488,7 @@
           "answerText": "En accord avec votre médecin référent, une prescription de prothèse auditive est délivrée à M. Dupont",
           "isCorrect": true,
           "correctionText": "<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
-          "rappelTip": "None",
+          "rappelTip": "Appareil",
           "spriteJustification1": "",
           "spriteJustification2": ""
         }

@@ -38,7 +38,7 @@
           "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
           "isCorrect": false,
           "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
-          "rappelTip": "None",
+          "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
@@ -186,7 +186,7 @@
           "answerText": "J'adresse la patiente vers les urgences",
           "isCorrect": false,
           "correctionText": "Aucune indication !\nIl s'agit d'une suspicion de surdité sans signal d'alarme à l'interrogatoire, je peux donc réaliser mon examen physique (examen du pavillon et vidéo-otoscopie).",
-          "rappelTip": "None",
+          "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
@@ -202,7 +202,7 @@
           "answerText": "Je renvoie la patiente vers un ORL",
           "isCorrect": false,
           "correctionText": "Ici il n'existe aucun drapeau rouge : il n'y a donc pas d'indication à un adressage ORL, je peux continuer mon évaluation avec la réalisation de l'examen physique (examen du pavillon et vidéo-otoscopie).",
-          "rappelTip": "None",
+          "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         }
@@ -268,7 +268,7 @@
           "answerText": "J'adresse la patiente aux urgences",
           "isCorrect": false,
           "correctionText": "Aucune indication ! L'examen du tympan est normal, on peut poursuivre l'exploration auditive par le questionnaire HHIE-S.",
-          "rappelTip": "None",
+          "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
@@ -276,7 +276,7 @@
           "answerText": "Je prescris une prothèse auditive",
           "isCorrect": false,
           "correctionText": "Non, on doit poursuivre l'évaluation auditive, pour confirmer qu'on est bien face à un tableau de presbyacousie simple ET avec une surdité dans les critères d'appareillage audio-prothétique.\nOn ne fait JAMAIS de prescription d'appareillage sans avoir au préalable réaliser un examen audiométrique complet.",
-          "rappelTip": "None",
+          "rappelTip": "Prescription",
           "spriteJustification1": "",
           "spriteJustification2": ""
         }

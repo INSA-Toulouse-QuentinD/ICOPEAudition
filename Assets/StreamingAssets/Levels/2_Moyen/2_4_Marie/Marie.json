@@ -90,14 +90,17 @@
         },
         {
           "answerText": "Je lui fais passer une audiométrie",
+          "rappelTip": "Algorithme",
           "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de respecter l'ordre de l'algorithme décisionnel ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est l'otoscopie."
         },
         {
           "answerText": "Je lui fais passer le questionnaire HHIE-S",
+          "rappelTip": "Algorithme",
           "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de respecter l'ordre de l'algorithme décisionnel ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est l'otoscopie."
         },
         {
           "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
+          "rappelTip": "Algorithme",
           "correctionText": "Le test Go – No Go est rassurant mais fait toujours l'objet d'une suspicion de cas simple, il faut continuer le parcours audition pour s'assurer qu'il n'y a rien de problématique. Pour cela, la prochaine étape à suivre est l'otoscopie."
         }
       ]
@@ -121,7 +124,6 @@
         {
           "answerText": "Il s'agit d'un bouchon de cérumen",
           "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de bouchons de cérumen :",
-          "rappelTip": "Tympan",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
         },

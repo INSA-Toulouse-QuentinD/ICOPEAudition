@@ -128,7 +128,7 @@
           "answerText": "Je renvoie la patiente vers un ORL",
           "isCorrect": false,
           "correctionText": "Ici il n'existe aucun drapeau rouge : il n'y a donc pas d'indication à un adressage ORL, je peux continuer mon évaluation avec la réalisation de l'examen physique (examen du pavillon et vidéo-otoscopie).",
-          "rappelTip": "None",
+          "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         }
@@ -216,7 +216,7 @@
           "answerText": "Cette otoscopie peut être considérée comme normale, bien que fréquemment associée à une surdité",
           "isCorrect": false,
           "correctionText": "Non, la myringosclérose n'occasionne pas de surdité. Par contre, elle s'intègre parfois dans le cadre d'un phénomène sclérotique dans l'oreille moyenne, avec de la tympanosclérose aux dépens des osselets. A ce moment-là, on peut retrouver une surdité de transmission associée, le diagnostic est alors scanographique.",
-          "rappelTip": "None",
+          "rappelTip": "Tympan",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
@@ -224,7 +224,7 @@
           "answerText": "Ces lésions blanchâtres de la membrane tympanique évoquent une otomycose",
           "isCorrect": false,
           "correctionText": "Non, dans l'otomycose on retrouve des dépôts blanchâtres, ou des tiges aspergillaires, ou encore des écoulements dans le conduit auditif externe. Elles sont fréquemment associées à des facteurs de risques tel qu'un diabète mal équilibré, une macération du conduit auditif externe (baignades fréquentes, appareils auditifs, perforation tympanique suintante, lésions chroniques du conduit auditif externe comme l'eczéma ou des lésions par introduction répétées de corps étrangers.",
-          "rappelTip": "None",
+          "rappelTip": "Tympan",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_1.png",
           "spriteJustification2": ""
         },
@@ -232,7 +232,7 @@
           "answerText": "Ces lésions de la membrane tympaniques sont corrélées avec l'avancée en âge. On les retrouve fréquemment chez les presbyacousiques",
           "isCorrect": false,
           "correctionText": "Non, ce ne sont pas des lésions liées au vieillissement de la membrane.",
-          "rappelTip": "None",
+          "rappelTip": "Tympan",
           "spriteJustification1": "",
           "spriteJustification2": ""
         }

@@ -154,7 +154,8 @@
         },
         {
           "answerText": "Je prescris une prothèse auditive",
-          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. Il faut réaliser le bilan audiométrique pour vérifier l'indication avant de prescrire."
+          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. Il faut réaliser le bilan audiométrique pour vérifier l'indication avant de prescrire.",
+          "rappelTip": "Prescription"
         }
       ]
     },
@@ -183,7 +184,8 @@
       "actionPhase": [
         {
           "answerText": "Je prescris une prothèse auditive",
-          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire."
+          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire.",
+          "rappelTip": "Prescription"
         },
         {
           "answerText": "J'adresse le patient vers l'ORL",

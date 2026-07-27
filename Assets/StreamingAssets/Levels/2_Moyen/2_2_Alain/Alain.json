@@ -56,11 +56,13 @@
         },
         {
           "answerText": "Je répète le test de chuchotement",
-          "correctionText": "Il est inutile de réaliser à nouveau le test du chuchotement, car celui-ci a déjà été effectué lors de l'évaluation initiale et n'apportera pas d'informations supplémentaires concernant M. Thomas Il est important de respecter l'algorithme décisionnel. Après la réalisation du test Go – No Go, qui oriente vers une suspicion de cas simple, le parcours ICOPE Audition se poursuit par la réalisation d'une otoscopie."
+          "correctionText": "Il est inutile de réaliser à nouveau le test du chuchotement, car celui-ci a déjà été effectué lors de l'évaluation initiale et n'apportera pas d'informations supplémentaires concernant M. Thomas Il est important de respecter l'algorithme décisionnel. Après la réalisation du test Go – No Go, qui oriente vers une suspicion de cas simple, le parcours ICOPE Audition se poursuit par la réalisation d'une otoscopie.",
+          "rappelTip": "Algorithme"
         },
         {
           "answerText": "Je réalise le questionnaire HHIE-S",
-          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de respecter l'ordre de l'algorithme décisionnel ICOPE Audition. Après un test Go – No, un Go oriente vers une suspicion de cas simple, l'étape suivante est l'otoscopie. Le questionnaire HHIE-S intervient ensuite dans le parcours, après l'otoscopie."
+          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de respecter l'ordre de l'algorithme décisionnel ICOPE Audition. Après un test Go – No, un Go oriente vers une suspicion de cas simple, l'étape suivante est l'otoscopie. Le questionnaire HHIE-S intervient ensuite dans le parcours, après l'otoscopie.",
+          "rappelTip": "Algorithme"
         }
       ]
     },
@@ -71,21 +73,23 @@
       "actionPhase": [
         {
           "answerText": "J'utilise l'irrigation pour retirer le bouchon",
-          "correctionText": "Antécédent de tympanoplastie : contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL."
+          "correctionText": "Antécédent de tympanoplastie : contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.",
+          "rappelTip": "Bdc"
         },
         {
           "answerText": "Je prescris un cérumenolytique et je le revois dans une semaine",
-          "correctionText": "Antécédent de tympanoplastie : contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL."
+          "correctionText": "Antécédent de tympanoplastie : contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.",
+          "rappelTip": "Bdc"
         },
         {
           "answerText": "Je réalise l'ablation à la curette ou à l'aspiration",
-          "correctionText": "Antécédent de tympanoplastie : contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL."
+          "correctionText": "Antécédent de tympanoplastie : contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.",
+          "rappelTip": "Bdc"
         },
         {
           "answerText": "J'adresse le patient à l'ORL",
           "isCorrect": true,
-          "correctionText": "Un antécédent de tympanoplastie est une contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
-          "rappelTip": "Bdc"
+          "correctionText": "Un antécédent de tympanoplastie est une contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau."
         }
       ]
     }

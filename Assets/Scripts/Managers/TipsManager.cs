@@ -101,8 +101,6 @@ namespace Managers{
         Hygiene,
         Acouphene,
         Bdc,
-        Appareil,
-        AppareilAcouphene,
-        DiabetiqueOtite
+        Appareil
     }
 }

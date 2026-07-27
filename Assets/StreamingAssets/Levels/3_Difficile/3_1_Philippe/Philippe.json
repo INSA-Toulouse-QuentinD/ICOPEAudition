@@ -103,7 +103,8 @@
         },
         {
           "answerText": "J'adresse le patient aux urgences",
-          "correctionText": "Aucune indication ! L'examen du tympan est normal, on peut poursuivre l'exploration auditive par le questionnaire HHIE-S."
+          "correctionText": "Aucune indication ! L'examen du tympan est normal, on peut poursuivre l'exploration auditive par le questionnaire HHIE-S.",
+          "rappelTip": "RedFlag"
         },
         {
           "answerText": "Je prescris une prothèse auditive",
