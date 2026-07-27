@@ -53,13 +53,14 @@ namespace Managers{
         private QuestionnaireData questionnaireData;
 
         // Script of each step display
-        private Step1PresentationPatient _step1PresentationPatient;
-        private Step2WisperTest _step2WisperTest;
-        private Step3And4Questionnary _step4And5Questionnary;
-        private Step5Otoscopie _step5Otoscopie;
-        private Step7WeberTest _step7WeberTest;
-        private Step6HhiesTest _step6HhiesTest;
-        private Step8Audiometrie _step8Audiometrie;
+        private StepPresentationPatient _stepPresentationPatient;
+        private StepWisperTest _stepWisperTest;
+        private StepQuestionnary _stepQuestionnary;
+        private StepOtoscopie _stepOtoscopie;
+        private StepWeberTest _stepWeberTest;
+        private StepHhiesTest _stepHhiesTest;
+        private StepAudiometrie _stepAudiometrie;
+        private StepTelephone _stepTelephone;
 
         // Enums
         private enum InteractionState{
@@ -154,12 +155,9 @@ namespace Managers{
             switch (currentStep) {
                 case Step.CasePresentation:
                     // Load patient sprite & patient text
-                    _step1PresentationPatient.SetSprites(
+                    _stepPresentationPatient.SetSprites(
                         _patientData.characterSprites[0], _patientData.isOnPhone, phoneCaseSprite);
-                    _step1PresentationPatient.SetPresentationTexts(_patientData);
-                    // Display current step
-
-                    displayList[_currentDisplay].SetActive(true);
+                    _stepPresentationPatient.SetPresentationTexts(_patientData);
 
                     UITutorialControler.Instance.TutorialMichel(0);
                     break;
@@ -169,15 +167,12 @@ namespace Managers{
                         patientSprite = _patientData.characterSprites[1];
                     }
 
-                    _step2WisperTest.SetPatient(patientSprite);
+                    _stepWisperTest.SetPatient(patientSprite);
                     if (GameManager.Instance.instanteAnimation) {
-                        _step2WisperTest.SkipAnimation(_patientData.steps[_indexStep]);
+                        _stepWisperTest.SkipAnimation(_patientData.steps[_indexStep]);
                     } else {
-                        StartCoroutine(_step2WisperTest.PlayFirstText(_patientData.steps[_indexStep]));
+                        StartCoroutine(_stepWisperTest.PlayFirstText(_patientData.steps[_indexStep]));
                     }
-
-                    // Display current step
-                    displayList[_currentDisplay].SetActive(true);
 
                     UITutorialControler.Instance.TutorialMichel(5);
                     break;
@@ -186,12 +181,10 @@ namespace Managers{
                     List<QuestionData> questions = questionnaireData.questions;
                     List<YesNo> answers = _patientData.steps[_indexStep].predefinedAnswer;
                     // Set texts
-                    _step4And5Questionnary.SetQuestionayText(questions, answers);
+                    _stepQuestionnary.SetQuestionaryText(questions, answers);
                     //Set Patient Sprite
-                    _step4And5Questionnary.SetPatientSprite(_patientData.characterSprites[0]);
-                    _step4And5Questionnary.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
-                    // Display current step
-                    displayList[_currentDisplay].SetActive(true);
+                    _stepQuestionnary.SetPatientSprite(_patientData.characterSprites[0]);
+                    _stepQuestionnary.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
 
                     UITutorialControler.Instance.TutorialMichel(6);
                     break;
@@ -201,41 +194,40 @@ namespace Managers{
                         patientSprite = _patientData.characterSprites[1];
                     }
 
-                    _step5Otoscopie.SetImages(_patientData.steps[_indexStep].spriteEarExams, patientSprite);
-                    _step5Otoscopie.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
-                    // Display current step 
-                    displayList[_currentDisplay].SetActive(true);
+                    _stepOtoscopie.SetImages(_patientData.steps[_indexStep].spriteEarExams, patientSprite);
+                    _stepOtoscopie.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
 
                     UITutorialControler.Instance.TutorialMichel(7);
                     break;
                 case Step.Hhies:
                     // Load patient ear image
-                    _step6HhiesTest.SetImages(_patientData.steps[_indexStep].spriteEarExams,
+                    _stepHhiesTest.SetImages(_patientData.steps[_indexStep].spriteEarExams,
                         _patientData.characterSprites[0]);
-                    // Display current step
-                    displayList[_currentDisplay].SetActive(true);
 
                     UITutorialControler.Instance.TutorialMichel(8);
                     break;
                 case Step.WeberTest:
                     // Load texts dialogue & sprite
-                    _step7WeberTest.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
-                    _step7WeberTest.SetImage(_patientData.characterSprites[^1]);
-                    // Display current step
-                    displayList[_currentDisplay].SetActive(true);
+                    _stepWeberTest.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
+                    _stepWeberTest.SetImage(_patientData.characterSprites[^1]);
 
                     UITutorialControler.Instance.TutorialMichel(9);
                     break;
                 case Step.Audiometry:
                     // Load patient audiometrie + patient sprite
-                    _step8Audiometrie.SetSprite(_patientData.steps[_indexStep].spriteEarExams,
+                    _stepAudiometrie.SetSprite(_patientData.steps[_indexStep].spriteEarExams,
                         _patientData.characterSprites[0]);
-                    // Display current step
-                    displayList[_currentDisplay].SetActive(true);
-
+                    
                     UITutorialControler.Instance.TutorialMichel(10);
                     break;
+                case Step.Telephone:
+                    _stepTelephone.SetSprites(_patientData.characterSprites[0]);
+                    
+                    StartCoroutine(_stepTelephone.StartConv(_patientData.steps[_indexStep].discussion));
+                    break;
             }
+            // Display current step
+            displayList[_currentDisplay].SetActive(true);
 
             // set navigation button (Buttons)
             SetTextButtonsNavigation();
@@ -637,13 +629,14 @@ namespace Managers{
         private void Awake(){
             // WARNING : don't trigger error if component not found. 
             foreach (GameObject go in displayList) {
-                if (go.TryGetComponent(out Step1PresentationPatient component)) _step1PresentationPatient = component;
-                if (go.TryGetComponent(out Step2WisperTest component1)) _step2WisperTest = component1;
-                if (go.TryGetComponent(out Step3And4Questionnary component2)) _step4And5Questionnary = component2;
-                if (go.TryGetComponent(out Step5Otoscopie component3)) _step5Otoscopie = component3;
-                if (go.TryGetComponent(out Step6HhiesTest component4)) _step6HhiesTest = component4;
-                if (go.TryGetComponent(out Step7WeberTest component5)) _step7WeberTest = component5;
-                if (go.TryGetComponent(out Step8Audiometrie component6)) _step8Audiometrie = component6;
+                if (go.TryGetComponent(out StepPresentationPatient component)) _stepPresentationPatient = component;
+                if (go.TryGetComponent(out StepWisperTest component1)) _stepWisperTest = component1;
+                if (go.TryGetComponent(out StepQuestionnary component2)) _stepQuestionnary = component2;
+                if (go.TryGetComponent(out StepOtoscopie component3)) _stepOtoscopie = component3;
+                if (go.TryGetComponent(out StepHhiesTest component4)) _stepHhiesTest = component4;
+                if (go.TryGetComponent(out StepWeberTest component5)) _stepWeberTest = component5;
+                if (go.TryGetComponent(out StepAudiometrie component6)) _stepAudiometrie = component6;
+                if (go.TryGetComponent(out StepTelephone component7)) _stepTelephone = component7;
             }
 
 
@@ -659,6 +652,7 @@ namespace Managers{
                 { Step.Hhies, 4 },
                 { Step.WeberTest, 5 },
                 { Step.Audiometry, 6 },
+                { Step.Telephone, 7 },
             };
         }
     }

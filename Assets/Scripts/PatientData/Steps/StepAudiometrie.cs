@@ -6,7 +6,7 @@ namespace PatientData.Steps
     /// <summary>
     /// Manages the Audiometrie step UI, displaying the audiometry image and patient sprite.
     /// </summary>
-    public class Step8Audiometrie : MonoBehaviour
+    public class StepAudiometrie : MonoBehaviour
     {
         [Header("Sprite patient")]
         [SerializeField] private Image patientImage;

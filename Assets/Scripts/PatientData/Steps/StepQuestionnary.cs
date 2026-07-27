@@ -8,7 +8,7 @@ namespace PatientData.Steps{
     /// <summary>
     /// Manages the display of questionnaire questions and patient answers, along with patient sprite.
     /// </summary>
-    public class Step3And4Questionnary : MonoBehaviour{
+    public class StepQuestionnary : MonoBehaviour{
         // Content GameObject
         [Header("GameObject content")] [SerializeField]
         private GameObject content;
@@ -22,7 +22,7 @@ namespace PatientData.Steps{
         /// </summary>
         /// <param name="questions">List of questions to display.</param>
         /// <param name="answers">List of patient answers corresponding to questions.</param>
-        public void SetQuestionayText(List<QuestionData> questions, List<YesNo> answers){
+        public void SetQuestionaryText(List<QuestionData> questions, List<YesNo> answers){
             // Set text in children
             TextMeshProUGUI[] testMeshes = content.GetComponentsInChildren<TextMeshProUGUI>();
 
@@ -41,7 +41,7 @@ namespace PatientData.Steps{
             patientSprite.sprite = sprite;
             patientSprite.SetNativeSize();
         }
-        
+
         public void SetTextDialogue(string patientContext){
             textPatient.text = patientContext;
             bulleTextPatient.SetActive(!string.IsNullOrEmpty(patientContext));

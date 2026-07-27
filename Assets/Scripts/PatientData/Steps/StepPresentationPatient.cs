@@ -6,7 +6,7 @@ namespace PatientData.Steps{
     /// <summary>
     /// Manages the UI presentation of patient data in Step 1 of the algorithm.
     /// </summary>
-    public class Step1PresentationPatient : MonoBehaviour{
+    public class StepPresentationPatient : MonoBehaviour{
         [Header("Sprites")] [SerializeField] private Image patientSprite;
         [SerializeField] private Image patientSpritePhone;
         [SerializeField] private GameObject bulle;

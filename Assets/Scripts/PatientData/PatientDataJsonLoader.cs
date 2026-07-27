@@ -46,6 +46,7 @@ namespace PatientData{
             public List<AnswerDto> actionPhase;
 
             public List<string> predefinedAnswer;
+            public List<Discussion> discussion;
         }
 
         [Serializable]
@@ -212,6 +213,8 @@ namespace PatientData{
                     if (step.predefinedAnswer.Count != 7 && step.type is Step.GoNoGo) {
                         GameManager.Instance.JsonErrorAdd($"{errorText} doit avoir 7 predefinedAnswer !");
                     }
+                    
+                    step.discussion = dto.discussion;
 
                     step.overrideDiagnostic = dto.overrideDiagnostic;
                     List<AnswerData> diag = null;

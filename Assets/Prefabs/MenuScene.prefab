@@ -3105,6 +3105,7 @@ MonoBehaviour:
   - {fileID: 1866228610442900268}
   - {fileID: 8461632652091126213}
   - {fileID: 2745729286485144841}
+  - {fileID: 4337293830518642125}
   questionsDisplay: {fileID: 1421169648685751211}
   questionText: {fileID: 1180081208983912218}
   choiceButtons:
@@ -6160,6 +6161,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 240.51392
       objectReference: {fileID: 0}
+    - target: {fileID: 7806443426346142096, guid: e2c341d1748dea041b60eec46655436e, type: 3}
+      propertyPath: m_HorizontalFit
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8161344003398397471, guid: e2c341d1748dea041b60eec46655436e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6375,6 +6380,11 @@ GameObject:
 --- !u!1 &4275160913656362942 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5918094875312546998, guid: e2c341d1748dea041b60eec46655436e, type: 3}
+  m_PrefabInstance: {fileID: 7599023773279277832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4337293830518642125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6144051313660511941, guid: e2c341d1748dea041b60eec46655436e, type: 3}
   m_PrefabInstance: {fileID: 7599023773279277832}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &5037066633019997591 stripped

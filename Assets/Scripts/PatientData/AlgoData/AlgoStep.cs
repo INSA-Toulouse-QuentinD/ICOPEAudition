@@ -14,6 +14,7 @@ namespace PatientData.AlgoData{
         Hhies,
         WeberTest,
         Audiometry,
+        Telephone,
     }
 
     /// <summary>
@@ -26,6 +27,12 @@ namespace PatientData.AlgoData{
         [TextArea(5, 5)] public string correctionText;
         public RappelTip rappelTip;
         public List<Sprite> sprites;
+    }
+    
+    [System.Serializable]
+    public class Discussion{
+        public string qui;
+        public string text;
     }
 
     /// <summary>
@@ -42,6 +49,8 @@ namespace PatientData.AlgoData{
         public List<YesNo> predefinedAnswer = new(){
             YesNo.No, YesNo.No, YesNo.No, YesNo.No, YesNo.No, YesNo.No, YesNo.No
         }; // Predefined answers for patient
+
+        public List<Discussion> discussion;
 
         public Sprite spriteEarExams; // Image representing ear exams, HHIES exam or audiometry
 

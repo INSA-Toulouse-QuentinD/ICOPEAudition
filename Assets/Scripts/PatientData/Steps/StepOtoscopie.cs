@@ -6,7 +6,7 @@ namespace PatientData.Steps{
     /// <summary>
     /// Manages display of otoscopy video and patient sprite images.
     /// </summary>
-    public class Step5Otoscopie : MonoBehaviour{
+    public class StepOtoscopie : MonoBehaviour{
         [Header("Patient video otoscopie field")] [SerializeField]
         private Image videoOtoscopiePatient;
 

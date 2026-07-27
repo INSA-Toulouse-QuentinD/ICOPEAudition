@@ -10,7 +10,7 @@ namespace PatientData.Steps{
     /// <summary>
     /// Manages the Whisper Test step UI, including doctor dialogue animations and patient sprite display.
     /// </summary>
-    public class Step2WisperTest : MonoBehaviour{
+    public class StepWisperTest : MonoBehaviour{
         // DOCTOR POSITION
         [Header("Doctor position")] [SerializeField]
         private GameObject doctorPos1;

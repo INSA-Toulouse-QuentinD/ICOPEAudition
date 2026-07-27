@@ -7,7 +7,7 @@ namespace PatientData.Steps
     /// <summary>
     /// Handles the Weber test step UI, including patient and doctor dialogues and patient image.
     /// </summary>
-    public class Step7WeberTest : MonoBehaviour
+    public class StepWeberTest : MonoBehaviour
     {
         [Header("Dialogue field")]
         [SerializeField] private TextMeshProUGUI patientDialogueField;

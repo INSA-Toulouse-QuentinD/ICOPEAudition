@@ -6,7 +6,7 @@ namespace PatientData.Steps
     /// <summary>
     /// Manages the HHIES test step UI, displaying the HHIES image and the patient sprite.
     /// </summary>
-    public class Step6HhiesTest : MonoBehaviour
+    public class StepHhiesTest : MonoBehaviour
     {
         [Header("Sprite patient")]
         [SerializeField] private Image patient;
