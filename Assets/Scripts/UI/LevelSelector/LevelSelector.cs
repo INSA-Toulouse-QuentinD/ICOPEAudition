@@ -5,7 +5,6 @@ using TMPro;
 using UI.ScoreContents;
 using UnityEngine;
 using UnityEngine.UI;
-using static Managers.GameStateManager;
 
 namespace UI.LevelSelector{
     /// <summary>
@@ -13,7 +12,7 @@ namespace UI.LevelSelector{
     /// </summary>
     /// <remarks>
     /// Handles UI elements for selecting levels and patients, including dynamically instantiating buttons,
-    /// updating descriptions, and launching the game with the selected configuration.
+    /// updating image, and launching the game with the selected configuration.
     /// </remarks>
     public class LevelSelector : MonoBehaviour{
         // buttons, patient name and descriptions per levels
@@ -23,7 +22,7 @@ namespace UI.LevelSelector{
         [SerializeField, Header("Ui elements")]
         private GameObject levelSelector; // Use to desactivate levelSelector.
 
-        [SerializeField] private TextMeshProUGUI description; // descriptions text ui.
+        [SerializeField] private Image imageVisualisation; // visualisation perso ui.
 
         [SerializeField] private GameObject[]
             patientsList; // Uis to desactive when tuto selected (scroll view gameObject + Separator gameObject).
@@ -54,7 +53,7 @@ namespace UI.LevelSelector{
             // Le tutoriel et selectionner de base.
             ButtonsManager.SetButtonFocused(_levelCompos[0]);
             ActivePatientUiElements(false);
-            ChangeDescription(0);
+            ChangeImage(0);
 
             ChangeLevel(0);
         }
@@ -103,7 +102,7 @@ namespace UI.LevelSelector{
             // assign current description and patient buttons
             ShowPatientButtons(nbPatient, index);
             ActivePatientUiElements(true);
-            ChangeDescription(0);
+            ChangeImage(0);
             ButtonsManager.SetButtonFocused(patientContainer.transform.GetChild(0).GetComponent<ButtonPressDetector>());
         }
 
@@ -127,7 +126,7 @@ namespace UI.LevelSelector{
                 go.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = firstName;
 
                 var i1 = i;
-                go.GetComponent<ButtonPressDetector>().onPress.AddListener(delegate{ ChangeDescription(i1); });
+                go.GetComponent<ButtonPressDetector>().onPress.AddListener(delegate{ ChangeImage(i1); });
                 go.gameObject.SetActive(true);
 
                 if (i > currentPatient)
@@ -141,11 +140,9 @@ namespace UI.LevelSelector{
         /// Updates the description text for the currently selected patient case.
         /// </summary>
         /// <param name="indexPatientCase">Index of the selected patient case within the level.</param>
-        private void ChangeDescription(int indexPatientCase){
+        private void ChangeImage(int indexPatientCase){
             _currentIndexPatientCase = indexPatientCase;
-            string infoLevel = levelsData.patientByLevel[_currentIndexLevelSelected].patientsCase[indexPatientCase]
-                .descriptionLevel;
-            description.text = infoLevel;
+            imageVisualisation.sprite = levelsData.patientByLevel[_currentIndexLevelSelected].patientsCase[indexPatientCase].characterSprites[0];
         }
 
         /// <summary>

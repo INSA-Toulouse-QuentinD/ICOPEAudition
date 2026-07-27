@@ -37,8 +37,9 @@ namespace PatientData.Steps{
             nameFields.text = patientData.lastName;
             surnameFields.text = patientData.firstName;
             ageFields.text = patientData.age + " ans";
-            situationFields.text = patientData.familySituation;
-            activitiesFields.text = patientData.occupationalActivities;
+            situationFields.text = "<u>Mode de vie :</u> " + patientData.familySituation + " " + patientData.occupationalActivities;
+            activitiesFields.text = "";
+            //activitiesFields.text = "<u>Activités occupationnelles :</u> " + patientData.occupationalActivities;
 
             // Set contexte data
             contextField.text = patientData.context;

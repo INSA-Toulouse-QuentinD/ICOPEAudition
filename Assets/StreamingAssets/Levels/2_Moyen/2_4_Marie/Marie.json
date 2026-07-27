@@ -10,7 +10,6 @@
   "occupationalActivities": "",
   "context": "Elle a bénéficié du dépistage étape 1 avec son pharmacien, qui a testé son audition avec l'appli Höra qui retrouve une baisse auditive des deux oreilles confirmer au test de chuchotement. Vous la convoquez pour une évaluation dans le cadre du parcours ICOPE Audition.",
   "medicalHistory": "",
-  "descriptionLevel": "",
   "steps": [
     {
       "type": "CasePresentation",
@@ -26,7 +25,7 @@
         {
           "answerText": "Je réalise une vidéo-otoscopie",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l'otoscopie.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l'otoscopie.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -34,7 +33,7 @@
         {
           "answerText": "Je réalise l'audiométrie",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l'audiométrie.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non l'audiométrie.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -42,7 +41,7 @@
         {
           "answerText": "Je réalise le questionnaire HHIE-S",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non le questionnaire HHIE-S.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE avec le test Go – No Go et non le questionnaire HHIE-S.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -109,19 +108,19 @@
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
-          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste +/- ORL).",
+          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
         },
         {
           "answerText": "Il s'agit d'une perforation tympanique",
-          "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. Un avis médical est nécessaire. Voici des exemples de perforations tympanique.",
+          "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. Dans le cas d'une perforation tympanique, un avis médical est nécessaire. Voici des exemples de perforations tympanique :",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
         },
         {
           "answerText": "Il s'agit d'un bouchon de cérumen",
-          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de bouchons de cérumen.",
+          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de bouchons de cérumen :",
           "rappelTip": "Tympan",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
@@ -144,7 +143,7 @@
           "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de respecter l'algorithme décisionnel ICOPE Audition. Après un questionnaire HHIE-S orientant vers un cas simple, l'étape suivante est le test de Weber acoumétrique."
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise test de Weber",
+          "answerText": "Je continue le parcours audition et je réalise le test de Weber",
           "isCorrect": true,
           "correctionText": "Un score de 14/40 se situe dans la catégorie handicap auditif léger à modéré. Cela suppose que la personne ressent une gêne auditive dans sa vie quotidienne. Il s'agit d'un test de dépistage, il faut compléter l'évaluation. On poursuit donc le parcours ICOPE Audition avec le test de Weber."
         },

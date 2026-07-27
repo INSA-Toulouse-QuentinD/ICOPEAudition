@@ -44,8 +44,8 @@ namespace UI.TutorialContents{
         /// Advances to the next tutorial text by incrementing the index and loading the corresponding text.
         /// </summary>
         public void NextTextButton(){
-            foreach (ArrowAnimation arrowAnimation in arrowsAnimation) {
-                arrowAnimation.Hide();
+            foreach (ArrowAnimation arrowAnime in arrowsAnimation) {
+                arrowAnime.Hide();
             }
 
             if (_nameStep == "Waiting_room" && _indexText < 5) {
@@ -168,6 +168,9 @@ namespace UI.TutorialContents{
                             break;
                         case 14:
                             arrowAnimation.SuperShow();
+                            break;
+                        case 15:
+                            arrowsAnimation[10].Show();
                             break;
                     }
 

@@ -14,6 +14,8 @@ namespace PatientData.Steps{
         private GameObject content;
 
         [SerializeField] private Image patientSprite;
+        [SerializeField] private GameObject bulleTextPatient;
+        [SerializeField] private TMP_Text textPatient;
 
         /// <summary>
         /// Sets the questionnaire questions and corresponding patient answers into the UI.
@@ -38,6 +40,11 @@ namespace PatientData.Steps{
         public void SetPatientSprite(Sprite sprite){
             patientSprite.sprite = sprite;
             patientSprite.SetNativeSize();
+        }
+        
+        public void SetTextDialogue(string patientContext){
+            textPatient.text = patientContext;
+            bulleTextPatient.SetActive(!string.IsNullOrEmpty(patientContext));
         }
     }
 }

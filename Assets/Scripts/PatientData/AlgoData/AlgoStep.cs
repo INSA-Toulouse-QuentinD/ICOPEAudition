@@ -44,9 +44,11 @@ namespace PatientData.AlgoData{
         }; // Predefined answers for patient
 
         public Sprite spriteEarExams; // Image representing ear exams, HHIES exam or audiometry
-        
+
+        public string overrideDiagnostic;
         public List<AnswerData> diagnosticPhase; // Diagnostic phase data
 
+        public string overrideAction;
         public List<AnswerData> actionPhase; // Action phase data
     }
 }

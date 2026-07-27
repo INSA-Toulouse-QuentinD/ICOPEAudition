@@ -10,7 +10,6 @@
   "occupationalActivities": "Elle donne des cours de cuisine aux jeunes du quartier.",
   "context": "Adressée par un audioprothésiste formé à l'évaluation initiale du programme ICOPE, qui met en évidence un bilan pathologique.",
   "medicalHistory": "Néoplasie mammaire en rémission et une allergie aux crustacés.",
-  "descriptionLevel": "Denise Roux, ancienne cheffe cuisinière, vient vous voir après avoir été adressée par son audioprothésiste.",
   "steps": [
     {
       "type": "CasePresentation",
@@ -22,7 +21,7 @@
         {
           "answerText": "Je réalise une vidéo-otoscopie",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été réalisé par un audioprothésiste. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été réalisé par un audioprothésiste. <b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -30,7 +29,7 @@
         {
           "answerText": "Je vérifie ses oreilles",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été réalisé par un audioprothésiste. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été réalisé par un audioprothésiste. <b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -38,15 +37,15 @@
         {
           "answerText": "Je ne peux rien faire, je renvois la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation approfondie dans le cadre du parcours ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation approfondie dans le cadre du parcours ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Le test de dépistage gratuit à 35 dB par un audioprothésiste est suffisant, je lui propose ICOPE Audition",
+          "answerText": "Le test de dépistage gratuit à 35 dB par un audioprothésiste étant suffisant, je lui propose ICOPE Audition",
           "isCorrect": true,
-          "correctionText": "La patiente ayant procédé à une évaluation initiale avec un audioprothésiste, ce qui est équivalent au test de chuchotement ou au test Höra. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale initiale, en cas de doute vous pouvez refaire le test de chuchotement.",
+          "correctionText": "La patiente ayant procédé à une évaluation initiale avec un audioprothésiste, ce qui est équivalent au test de chuchotement ou au test Höra. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale, en cas de doute vous pouvez refaire le test de chuchotement.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -69,7 +68,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il y a une anomalie car elle n'a pas su restituer au moins 3 mots des 2 côtés",
+          "answerText": "Il y a une anomalie car elle n'a pas su restituer au moins 3 mots de chaque côté",
           "isCorrect": true,
           "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si la patiente est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, la patiente a répété <b>0 mots sur 4</b> pour l'oreille droite et <b>2 mots sur 4</b> pour l'oreille gauche, ce qui est <b>en dessous du seuil requis</b>.\nCela indique un risque d'<b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
           "rappelTip": "None",
@@ -87,7 +86,7 @@
         {
           "answerText": "Le test est normal",
           "isCorrect": false,
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété les 3 minimum mots de chaque côté.",
+          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>.\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété au moins 3 mots de chaque côté.",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -151,7 +150,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Elle n'a répondu que des « non », ce qui indique une suspicion de cas simple.",
+          "answerText": "Elle n'a répondu que des « non », ce qui indique une suspicion de cas simple",
           "isCorrect": true,
           "correctionText": "Si aux réponses du questionnaire Go - No Go, la patiente répond « non » à chaque question, il s'agit bien d'une suspicion de cas simple, nous poursuivons le parcours ICOPE Audition.",
           "rappelTip": "None",
@@ -167,7 +166,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Elle n'a répondu que des « non », ce qui indique une urgence ORL.",
+          "answerText": "Elle n'a répondu que des « non », ce qui indique une urgence ORL",
           "isCorrect": false,
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque la patiente répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",
@@ -219,7 +218,7 @@
         {
           "answerText": "Il existe une otomycose, je mets en place un traitement par gouttes auriculaire et lui conseille de respecter une éviction aquatique pendant toute la durée du traitement",
           "isCorrect": false,
-          "correctionText": "Non, ici il s'agit d'un bouchon de cérumen. Si on est face à cette otoscopie (cf. photos), oui on peut prescrire un traitement antifongique local et conseiller à la patiente de contrôler chez son médecin traitant à la fin du traitement. Elle sera reconvoquée pour une nouvelle évaluation à distance.",
+          "correctionText": "Non, ici il s'agit d'un bouchon de cérumen. Si on est face à cette otoscopie (cf. photos), oui on peut prescrire un traitement antifongique local par le médecin délégant si l'évaluation est réalisée par un infirmier délégué et conseiller à la patiente de contrôler chez son médecin traitant à la fin du traitement. Elle sera reconvoquée pour une nouvelle évaluation à distance.",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_2.png"
@@ -227,7 +226,7 @@
         {
           "answerText": "Il s'agit d'un bouchon de cérumen, je propose de procéder à l'ablation du bouchon en utilisation la méthode de l'irrigation",
           "isCorrect": true,
-          "correctionText": "Oui, selon la formation et la forme du bouchon de cérumen, on peut aussi procéder à une aspiration (bouchons à la sortie du conduit auditif externe, plutôt mous) ou encore les méthodes avec curette si le bouchon est latéral et qu'il est possible de glisser la curette entre le bouchon et la paroi du conduit auditif externe.",
+          "correctionText": "Oui, selon la formation et la forme du bouchon de cérumen, on peut aussi procéder   à une aspiration (bouchons à la sortie du conduit auditif externe, plutôt mous) ou encore les méthodes avec curette si le bouchon est latéral et qu'il est possible de glisser la curette entre le bouchon et la paroi du conduit auditif externe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -235,7 +234,7 @@
         {
           "answerText": "Il existe une lésion bourgeonnante du conduit auditif externe, je peux suspecter un carcinome ou une ostéite de la base du crâne",
           "isCorrect": false,
-          "correctionText": "Non, ici il s'agit d'un bouchon de cérumen.\nVoici un exemple d'ostéïte avec l'image de droite et un exemple de cholestéatomes avec l'image de gauche",
+          "correctionText": "Non, ici il s'agit d'un bouchon de cérumen.\nVoici un exemple d'ostéïte avec l'image de droite et un exemple de cholestéatomes avec l'image de gauche :",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Osteite.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cholesteatomes.png"
@@ -301,7 +300,7 @@
         {
           "answerText": "Le test est normal, je lui rappelle l'importance d'un soin quotidien avec le coton tige pour éviter une récidive de son bouchon",
           "isCorrect": false,
-          "correctionText": "Non, au contraire quand on a tendance à faire beaucoup de cérumen, le coton tige empêche l'évacuation naturelle du cérumen par le conduit auditif externe, et le plaque contre la paroi du conduit auditif externe. Il vaut mieux privilégier un savonnage et rinçage à l'eau lors de la toilette.",
+          "correctionText": "Non, au contraire quand on a tendance à faire beaucoup de cérumen, le coton tige empêche l'évacuation naturelle du cérumen par le conduit auditif externe et le plaque contre la paroi du conduit auditif externe. Il vaut mieux privilégier un savonnage et rinçage à l'eau lors de la toilette.",
           "rappelTip": "Hygiene",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -317,7 +316,7 @@
         {
           "answerText": "Le test est anormal, on enchaîne avec le questionnaire HHIE-S, tout en gardant à l'esprit cette confusion phonémique, qui nous poussera à réaliser ensuite l'évaluation de la cognition",
           "isCorrect": false,
-          "correctionText": "Non, on retrouve fréquemment des confusions phonémiques dans les premiers stades de la surdité. Ici, elle a répété pratiquement tous les mots, on peut donc considérer son test rassurant. Le test Höra était certainement atteint initialement en raison du bouchon de cérumen qui a pu provoquer une asymétrie auditive, et donc une gêne dans le bruit.",
+          "correctionText": "Non, on retrouve fréquemment des confusions phonémiques dans les premiers stades de la surdité. Ici, elle a répété pratiquement tous les mots, on peut donc considérer son test rassurant. Le test Höra était certainement atteint initialement en raison du bouchon de cérumen qui a pu provoquer une asymétrie auditive et donc une gêne dans le bruit.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

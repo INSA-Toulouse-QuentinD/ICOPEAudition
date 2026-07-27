@@ -10,7 +10,6 @@
   "occupationalActivities": "Elle organise un club de lecture.",
   "context": "Étape 1 en autodiagnostic avec Höra : patho, gestion de l'alerte.",
   "medicalHistory": "A l'interrogatoire lors de votre gestion d'alerte, vous apprenez qu'elle présente une surdité depuis environ 2 ans, qui semble s'aggraver quand elle a des vertiges. Elle a pris un rendez-vous chez l'ORL, mais n'a pas pu s'y rendre et est en attente d'un nouveau RDV. Elle n'a pas d'autre antécédent particulier.",
-  "descriptionLevel": "Élisabeth Martin est votre deuxième patiente de ce niveau 'Facile'. Analysez ses symptômes et ses réponses en parcourant l'algorithme.",
   "steps": [
     {
       "type": "CasePresentation",
@@ -77,7 +76,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "J'adresse la patiente chez l'ORL",
+          "answerText": "J'adresse la patiente vers l'ORL",
           "isCorrect": true,
           "correctionText": "Oui, surdité fluctuante et vertige : 2 raisons de l'adresser. Tableau très évocateur d'une maladie de Ménière.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
           "rappelTip": "None",

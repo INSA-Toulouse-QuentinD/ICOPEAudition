@@ -9,7 +9,6 @@
   "occupationalActivities": "Elle est autonome.",
   "context": "Elle a entendu parler du programme ICOPE via une campagne de prévention dans son village. Elle se plaint d'une gêne auditive bilatérale apparue depuis quelques mois, accompagnée d'un sifflement permanent dans les deux oreilles. Elle décrit ses acouphènes comme des bruits aigus, \"incomparables à des oiseaux\", comme lui dit une amie à elle qui en souffre également.",
   "medicalHistory": "",
-  "descriptionLevel": "",
   "steps": [
     {
       "type": "CasePresentation",
@@ -20,7 +19,7 @@
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
-          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag"
         },
         {

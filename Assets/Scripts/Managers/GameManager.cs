@@ -8,6 +8,7 @@ using UI.ScoreContents;
 using PatientData;
 using TMPro;
 using UI.LevelSelector;
+using UI.TutorialContents;
 
 namespace Managers{
     [RequireComponent(typeof(GameStateManager))]
@@ -128,6 +129,8 @@ namespace Managers{
             ClearScreen();
             folderDivider.GetSetDisplayScore(patientName);
             scorePanel.SetActive(true);
+            PartyManager.Instance.Play();
+            UITutorialControler.Instance.TutorialMichel(11);
         }
 
         // CLEAR SCREEN

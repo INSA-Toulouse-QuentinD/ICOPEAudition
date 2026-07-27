@@ -22,9 +22,6 @@ namespace PatientData{
 
         [Header("Medical History")] [TextArea] public string medicalHistory;
 
-        [TextArea, Header("Description level")]
-        public string descriptionLevel;
-
         [Header("Algorithm steps")] public List<AlgoStep> steps;
     }
 }

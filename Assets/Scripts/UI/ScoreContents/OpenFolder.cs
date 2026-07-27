@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Managers;
+using UI.TutorialContents;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -105,6 +106,8 @@ namespace UI.ScoreContents{
             folderDivider.localScale = new Vector3(-1, 1, 1);
             folderDivider.localPosition = new Vector3(-370, 0, 0);
             folderInside.localPosition = new Vector3(370, 0, 0);
+
+            UITutorialControler.Instance.TutorialMichel(15);
         }
 
         private IEnumerator CloseFolderCoroutine(float duration){

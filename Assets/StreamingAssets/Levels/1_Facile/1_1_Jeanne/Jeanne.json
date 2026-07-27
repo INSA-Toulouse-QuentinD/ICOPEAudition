@@ -8,9 +8,8 @@
   "age": 72,
   "familySituation": "Veuve et ancienne professeure de tango à la retraite.",
   "occupationalActivities": "Elle continue la danse lors de bals.",
-  "context": "Madame Durand est adressée par son médecin généraliste. Il a effectué l'évaluation initiale avec un test de chuchotement anormale. Aucun mot restitué à l'oreille droite et un seul mot restitué à l'oreille gauche.",
-  "medicalHistory": "Néoplasie mammaire en rémission; aérateurs trans-tympaniques dans l'enfance.",
-  "descriptionLevel": "Jeanne Durand est votre première patiente. Vous devrez analyser ses symptômes et ses réponses en parcourant l'algorithme vu dans le cas 'Tutoriel'.",
+  "context": "Madame Durand est adressée par son médecin généraliste. Il a effectué l'évaluation initiale avec un test de chuchotement anormal. Aucun mot restitué à l'oreille droite et un seul mot restitué à l'oreille gauche.",
+  "medicalHistory": "Néoplasie mammaire en rémission et des aérateurs trans-tympaniques dans l'enfance.",
   "steps": [
     {
       "type": "CasePresentation",
@@ -22,7 +21,7 @@
         {
           "answerText": "Je réalise une vidéo-otoscopie",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, le médecin a déjà réalisé le test de chuchotement. A ce stade, si la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation. Dans ce cas là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE avec le questionnaire Go - No Go.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, le médecin a déjà réalisé le test de chuchotement. A ce stade, si la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -30,7 +29,7 @@
         {
           "answerText": "Je lui fais passer le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "Oui, la première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, le médecin a déjà réalisé le test de chuchotement. A ce stade, si la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE avec le questionnaire Go - No Go.",
+          "correctionText": "Oui, la première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, le médecin a déjà réalisé le test de chuchotement. A ce stade, si la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation. Dans ce cas-là, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -38,7 +37,7 @@
         {
           "answerText": "Je ne peux rien faire, je renvois la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le test de chuchotement est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.\nOn poursuit donc le parcours ICOPE Audition avec le questionnaire Go - No Go.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le test de chuchotement est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis son évaluation avec le questionnaire Go - No Go.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -70,13 +69,13 @@
         {
           "answerText": "Ses réponse montrent des signes d'un trouble neurologique avancé",
           "isCorrect": false,
-          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
+          "correctionText": "Il ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Elle n'a répondu que des « non », ce qui indique une suspicion de cas simple.",
+          "answerText": "Elle n'a répondu que des « non », ce qui indique une suspicion de cas simple",
           "isCorrect": true,
           "correctionText": "Si aux réponses du questionnaire Go - No Go, la patiente répond « non » à chaque question, il s'agit bien d'une suspicion de cas simple, nous poursuivons le parcours ICOPE Audition.",
           "rappelTip": "None",
@@ -92,7 +91,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Elle n'a répondu que des « non », ce qui indique une urgence ORL.",
+          "answerText": "Elle n'a répondu que des « non », ce qui indique une urgence ORL",
           "isCorrect": false,
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque la patiente répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",
@@ -144,7 +143,7 @@
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
           "isCorrect": false,
-          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste +/- ORL).",
+          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
@@ -161,14 +160,12 @@
           "answerText": "Il s'agit d'un bouchon de cérumen",
           "isCorrect": true,
           "correctionText": "Lors de l'examen, on observe une masse brunâtre, homogène et mate, obstruant le conduit auditif externe, sans visualisation du tympan ni des repères anatomiques habituels. Ces éléments sont caractéristiques d'un bouchon de cérumen.",
-          "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
+          "rappelTip": "None"
         },
         {
           "answerText": "Il s'agit d'un tympan normal",
           "isCorrect": false,
-          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de tympans normaux.",
+          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\nVoici des exemples de tympans normaux :",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_2.png"
@@ -178,13 +175,13 @@
         {
           "answerText": "Je réalise le questionnaire HHIE-S pour savoir si je dois ou non retirer le bouchon de cérumen",
           "isCorrect": false,
-          "correctionText": "Non car c'est un bouchon de cérumen. Il faut réaliser un diagnostic clinique, si le bouchon de cérumen est non obstructif ou asymptomatique et ne gênant pas l'examen: on ne le retire pas, dans les autres cas on le retire.",
+          "correctionText": "Non car c'est un bouchon de cérumen. Il faut réaliser un diagnostic clinique, si le bouchon de cérumen est non obstructif ou asymptomatique et ne gênant pas l'examen : on ne le retire pas, dans les autres cas on le retire.",
           "rappelTip": "Bdc",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "J'adresse la patiente chez l'ORL",
+          "answerText": "J'adresse la patiente vers l'ORL",
           "isCorrect": false,
           "correctionText": "Non car il n'y a aucun drapeau rouge. Les aérateurs trans-tympaniques dans l'enfance sont fréquents et ne constituent pas une contre-indication. Il y a une contre-indication s'il y a la présence d'un aérateur trans-tympanique récent, car il y a un risque de perforation.",
           "rappelTip": "RedFlag",
@@ -242,7 +239,7 @@
       ],
       "actionPhase": [
         {
-          "answerText": "J'adresse la patiente chez l'ORL",
+          "answerText": "J'adresse la patiente vers l'ORL",
           "isCorrect": false,
           "correctionText": "Non, car la myringosclérose est une découverte bénigne, fréquente, sans retentissement clinique ni besoin de traitement. On peut donc simplement poursuivre l'examen avec un test de chuchotement pour évaluer l'audition.",
           "rappelTip": "None",
@@ -250,7 +247,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "J'adresse la patiente chez son médecin traitant pour gouttes auriculaires",
+          "answerText": "J'adresse la patiente vers son médecin traitant pour gouttes auriculaires",
           "isCorrect": false,
           "correctionText": "Non, car la myringosclérose est une lésion bénigne, asymptomatique, qui ne nécessite aucun traitement, notamment pas de gouttes auriculaires. Il n'y a pas de signe d'infection ou d'inflammation. On peut donc simplement poursuivre l'examen avec un test de chuchotement pour évaluer l'audition. En cas de doute, pensez à solliciter le médecin généraliste.",
           "rappelTip": "None",
@@ -260,7 +257,7 @@
         {
           "answerText": "Je réalise le questionnaire HHIE-S",
           "isCorrect": false,
-          "correctionText": "Non, il n'est pas pertinent de faire le questionnaire HHIE-S en premier car il s'agit d'un questionnaire évaluant le retentissement subjectif d'une perte auditive chez la personne âgée. Or, ici, on n'a pas encore objectivé de trouble auditif. On refait donc le test de chuchotement parce qu'un bouchon de cérumen a été retiré, et on souhaite maintenant réévaluer l'audition dans de bonnes conditions. Le cérumen pouvait altérer les résultats du test précédent, donc il est logique de le refaire pour savoir si l'audition est redevenue normale ou s'il persiste un trouble à explorer.",
+          "correctionText": "Non, il n'est pas pertinent de faire le questionnaire HHIE-S en premier car il s'agit d'un questionnaire évaluant le retentissement subjectif d'une perte auditive chez la personne âgée. Or, ici, on n'a pas encore objectivé de trouble auditif. On refait donc le test de chuchotement parce qu'un bouchon de cérumen a été retiré et on souhaite maintenant réévaluer l'audition dans de bonnes conditions. Le cérumen pouvait altérer les résultats du test précédent, donc il est logique de le refaire pour savoir si l'audition est redevenue normale ou s'il persiste un trouble à explorer.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -268,7 +265,7 @@
         {
           "answerText": "Je refais le test de chuchotement",
           "isCorrect": true,
-          "correctionText": "On refait le test de chuchotement parce qu'un bouchon de cérumen a été retiré, et on souhaite maintenant réévaluer l'audition dans de bonnes conditions. Le cérumen pouvait altérer les résultats du test précédent, donc il est logique de le refaire pour savoir si l'audition est redevenue normale ou s'il persiste un trouble à explorer.",
+          "correctionText": "On refait le test de chuchotement parce qu'un bouchon de cérumen a été retiré et on souhaite maintenant réévaluer l'audition dans de bonnes conditions. Le cérumen pouvait altérer les résultats du test précédent, donc il est logique de le refaire pour savoir si l'audition est redevenue normale ou s'il persiste un trouble à explorer.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -284,13 +281,13 @@
         {
           "answerText": "Le test est normal",
           "isCorrect": false,
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> de chaque côté des oreilles,\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété les 3 minimum mots de chaque côté.",
+          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> de chaque côté.\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété les 3 mots minimum de chaque côté.",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il y a une anomalie car elle n'a pas su restituer au moins 3 mots des 2 côtés",
+          "answerText": "Il y a une anomalie car elle n'a pas su restituer au moins 3 mots de chaque côtés",
           "isCorrect": true,
           "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si la patiente est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, la patiente n'a su répéter que <b>2 mots sur 4</b> pour chaque oreille, ce qui est <b>en dessous du seuil requis</b>.\nCela indique un risque d'<b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
           "rappelTip": "None",
@@ -358,7 +355,7 @@
         {
           "answerText": "Le score indique une absence totale de gêne auditive",
           "isCorrect": false,
-          "correctionText": "Un score > à 8/40 permet de dépister une déficience auditive (probabilité 11% pour un score entre 0 et 8). Un score > 16/40 permet de détecter une surdité avec une efficacité maximale (88,4%) dans le travail de Duchene et al. 2022.\n\n<color=red>On ne peut donc pas conclure à l'absence de gêne auditive.</color>",
+          "correctionText": "Un score > à 8/40 permet de dépister une déficience auditive (probabilité 11% pour un score entre 0 et 8). Un score > 16/40 permet de détecter une surdité avec une efficacité maximale (88,4%) dans le travail de Duchene et al. 2022.\n\n<b>On ne peut donc pas conclure à l'absence de gêne auditive.</b>",
           "rappelTip": "Hhies",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -374,7 +371,7 @@
         {
           "answerText": "Le résultat suggère que les troubles auditifs sont uniquement liés à une fatigue passagère",
           "isCorrect": false,
-          "correctionText": "Le score est > à 8/40 ce qui signifie que la patiente est probablement atteint d'une déficience auditive, il est nécessaire de poursuivre par un bilan audiométrique pour confirmer les critères éligibilités à un appareillage selon les critères actuellement admis en France.",
+          "correctionText": "Le score est > à 8/40 ce qui signifie que la patiente est probablement atteinte d'une déficience auditive. Il est nécessaire de poursuivre par un bilan audiométrique pour confirmer les critères éligibilités à un appareillage selon les critères actuellement admis en France.",
           "rappelTip": "Hhies",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -408,7 +405,7 @@
         {
           "answerText": "Il est pertinent de réaliser un examen audiométrique avec un test de Weber",
           "isCorrect": true,
-          "correctionText": "Le test de weber associé à l'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité, et l'indication ou non d'un appareillage audio-prothétique.",
+          "correctionText": "Le test de weber associé à l'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité et l'indication ou non d'un appareillage audio-prothétique.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -424,7 +421,7 @@
         {
           "answerText": "Ses réponses révèlent un bouchon de cérumen",
           "isCorrect": false,
-          "correctionText": "Un bouchon de cérumen est identifiable lors de l'examen otoscopique et non lors du test de Weber ! S'il avait un bouchon de cérumen côté droit, avec une otoscopie normale à gauche, on pourrait s'attendre à retrouver un Weber latéralisé à droite s'il est obstructif (et à condition qu'il n'existe pas d'autre cause sous-jacente d'asymétrie auditive), mais le diagnostic du bouchon de cérumen resterait... clinique et serait surtout réaliser avant !",
+          "correctionText": "Un bouchon de cérumen est identifiable lors de l'examen otoscopique et non lors du test de Weber ! S'il y avait un bouchon de cérumen côté droit, avec une otoscopie normale à gauche, on pourrait s'attendre à retrouver un Weber latéralisé à droite s'il est obstructif (et à condition qu'il n'existe pas d'autre cause sous-jacente d'asymétrie auditive), mais le diagnostic du bouchon de cérumen resterait clinique et serait surtout réalisé avant !",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
           "spriteJustification2": ""
@@ -432,7 +429,7 @@
         {
           "answerText": "Ses réponses révèlent une surdité de perception",
           "isCorrect": false,
-          "correctionText": "Ici, c'est un test de Weber qui est réalisé (appareil placé au milieu du front) : on recherche une asymétrie de l'audition qui se manifesterait par une latéralisation du Weber («j'entends à droite»).\n\nLe test acoumétrique de Rinne quant à lui de déterminer si le système tympano-ossiculaire est fonctionnel (dans ce cas, il est Positif : on évoque une audition normale ou une surdité neurosensorielle) ou non (dans ce cas, il est négatif : on évoque une surdité de perception).",
+          "correctionText": "Ici, c'est un test de Weber qui est réalisé (appareil placé au milieu du front) : on recherche une asymétrie de l'audition qui se manifesterait par une latéralisation du Weber (« j'entends à droite »).\n\nInformation bonus : Le test acoumétrique de Rinne quant à lui, permet de déterminer si le système tympano-ossiculaire est fonctionnel (dans ce cas, il est positif : on évoque une audition normale ou une surdité neurosensorielle) ou non (dans ce cas, il est négatif : on évoque une surdité de perception).",
           "rappelTip": "Rinne",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -440,7 +437,7 @@
         {
           "answerText": "Ses réponses ne révèlent pas d'anomalie",
           "isCorrect": true,
-          "correctionText": "Un son perçu de la même façon aux 2 oreilles est un bon signe.",
+          "correctionText": "Un son perçu de la même façon aux 2 oreilles est un bon signe. Le test de Weber est donc centré, ou non latéralisé.",
           "rappelTip": "Weber",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -450,7 +447,7 @@
         {
           "answerText": "Je laisse la patiente repartir chez elle",
           "isCorrect": false,
-          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<color=red>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</color>",
+          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<b>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</b>",
           "rappelTip": "Acoumetry",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -458,7 +455,7 @@
         {
           "answerText": "Il est pertinent de réaliser l'audiométrie",
           "isCorrect": true,
-          "correctionText": "L'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité, et l'indication ou non d'un appareillage audio-prothétique.",
+          "correctionText": "L'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité et l'indication ou non d'un appareillage audio-prothétique.",
           "rappelTip": "Hhies",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -466,7 +463,7 @@
         {
           "answerText": "Je laisse la patiente repartir et lui propose de faire le suivi ICOPE dans 6 mois",
           "isCorrect": false,
-          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<color=red>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</color>",
+          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<b>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</b>",
           "rappelTip": "Acoumetry",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -475,9 +472,7 @@
           "answerText": "J'enlève le bouchon de cérumen",
           "isCorrect": false,
           "correctionText": "Ici l'examen otoscopique est normal, le Weber est en plus centré : il n'y aucun argument évoquant la présence d'un bouchon de cérumen.\n\nEn revanche, si à l'examen on retrouve un bouchon de cérumen, il faut le retirer (si pas de contre-indication) AVANT de réaliser le test de Weber, autrement les réponses seront en lien avec la surdité occasionnée par ce bouchon de cérumen.",
-          "rappelTip": "Bdc",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
-          "spriteJustification2": ""
+          "rappelTip": "Bdc"
         }
       ]
     },
@@ -514,7 +509,7 @@
         {
           "answerText": "L'audiogramme montre une audition normale",
           "isCorrect": false,
-          "correctionText": "Ce <b>n'est pas une audition normale</b>, car les seuils d'audition mesurés sont <b>supérieurs à 20 dB HL</b> sur plusieurs fréquences pour les deux oreilles.\n\nOn considère qu'une <b>audition est normale</b> lorsque les seuils sont compris entre <b>-10 et 20 dB HL</<b>b> sur toutes les fréquences testées (500 Hz à 6000 Hz).\n\nIl s'agit d'une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie.",
+          "correctionText": "Ce <b>n'est pas une audition normale</b>, car les seuils d'audition mesurés sont <b>supérieurs à 20 dB HL</b> sur plusieurs fréquences pour les deux oreilles.\n\nOn considère qu'une <b>audition est normale</b> lorsque les seuils sont compris entre <b>-10 et 20 dB HL</b> sur toutes les fréquences testées (500 Hz à 6000 Hz).\n\nIl s'agit d'une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -540,7 +535,7 @@
         {
           "answerText": "Je prescris à la patiente un appareillage audio-prothétique bilatéral",
           "isCorrect": true,
-          "correctionText": "Oui, ici on reste dans le cadre du parcours ICOPE Audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. En tant que médecin généraliste formé à l'otologie médicale, je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "correctionText": "Oui, ici on reste dans le cadre du parcours ICOPE Audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. En tant que médecin généraliste formé à l'otologie médicale, je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

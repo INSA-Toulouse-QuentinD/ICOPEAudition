@@ -9,22 +9,21 @@
   "occupationalActivities": "Il adore jardiner et raconter ses voyages en trains.",
   "context": "À la suite de la lecture d'un article dans le journal, Michel a réalisé une auto-évaluation ICOPE. La synthèse de l'évaluation signale qu'il y a peut-être un déclin sur le plan de l'audition. Il a constaté aussi qu'il avait une gêne auditive récente dans le bruit. L'interprétation de l'alerte réalisée par un professionnel de santé formé au programme ICOPE, confirme cette suspicion de déclin et vous l'adresse pour une évaluation auditive. Vous le rencontrez pour la première fois.",
   "medicalHistory": "Dans ses antécédents on retrouve une hypertension artérielle traitée par Ramipril 5mg.",
-  "descriptionLevel": "Ce tutoriel vous guide dans la prise en main du jeu et de l'algorithme.",
   "steps": [
     {
       "type": "CasePresentation",
       "actionPhase": [
         {
           "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été fait en auto-évaluation. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été fait en auto-évaluation. <b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
         },
         {
           "answerText": "Je vérifie ses oreilles",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été fait en auto-évaluation. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été fait en auto-évaluation. <b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag"
         },
         {
@@ -44,7 +43,7 @@
           "rappelTip": "Wisper"
         },
         {
-          "answerText": "Il y a une anomalie car il n'a pas su restituer au moins 3 mots des 2 côtés",
+          "answerText": "Il y a une anomalie car il n'a pas su restituer au moins 3 mots de chaque côté",
           "isCorrect": true,
           "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si le patient est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, le patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>, ce qui est <b>en dessous du seuil requis</b>.\nCela indique un risque d'<b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>."
         },
@@ -55,7 +54,7 @@
         },
         {
           "answerText": "Le test est normal",
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, le patient doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLe patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>,\nCela signifie qu'il <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si le patient avait répété les 3 mots de chaque côté.",
+          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, le patient doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLe patient a répété <b>seulement 2 mots sur 4</b> du <b>côté gauche</b> et <b>0 mots sur 4</b> du <b>côté droit</b>.\nCela signifie qu'il <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.",
           "rappelTip": "Wisper"
         }
       ],
@@ -97,7 +96,7 @@
           "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL."
         },
         {
-          "answerText": "Il n'a répondu que des « non », ce qui indique une suspicion de cas simple.",
+          "answerText": "Il n'a répondu que des « non », ce qui indique une suspicion de cas simple",
           "isCorrect": true,
           "correctionText": "Si aux réponses du questionnaire Go - No Go, le patient répond « non » à chaque question, il s'agit bien d'une suspicion de cas simple, nous poursuivons le parcours ICOPE Audition."
         },
@@ -106,7 +105,7 @@
           "correctionText": "Non, ici il existe une suspicion de surdité suite au test de chuchotement.\nCe questionnaire ne permet pas d'évaluer ou d'estimer la fonction auditive du patient. Il s'agit d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL."
         },
         {
-          "answerText": "Il n'a répondu que des « non », ce qui indique une urgence ORL.",
+          "answerText": "Il n'a répondu que des « non », ce qui indique une urgence ORL",
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le patient répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe."
         }
       ],
@@ -123,7 +122,7 @@
         {
           "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. La vidéo-otoscopie est l'examen à réaliser en suivant."
+          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer qu'il n'y a pas d'anomalie auditive. La vidéo-otoscopie est l'examen à réaliser en suivant."
         },
         {
           "answerText": "Je renvoie le patient vers un ORL",
@@ -138,19 +137,19 @@
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
-          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste +/- ORL).",
+          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
         },
         {
           "answerText": "Il s'agit d'une perforation tympanique",
-          "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. Un avis médical est nécessaire. Voici des exemples de perforations tympanique.",
+          "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. Dans le cas d'une perforation tympanique, un avis médical est nécessaire. Voici des exemples de perforations tympanique :",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
         },
         {
           "answerText": "Il s'agit d'un bouchon de cérumen",
-          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de bouchons de cérumen.",
+          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de bouchons de cérumen :",
           "rappelTip": "Tympan",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
@@ -158,15 +157,13 @@
         {
           "answerText": "Il s'agit d'un tympan normal",
           "isCorrect": true,
-          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de tympans normaux.",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_2.png"
+          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe."
         }
       ],
       "actionPhase": [
         {
           "answerText": "Je laisse le patient repartir chez lui",
-          "correctionText": "Il s'agit d'une suspicion de cas simple, avec un dépistage pathologique : il faut continuer son évaluation ! la normalité de l'examen otoscopique n'est en rien rassurante vis à vis du statut auditif du patient."
+          "correctionText": "Il s'agit d'une suspicion de cas simple, avec un dépistage pathologique : il faut continuer son évaluation ! La normalité de l'examen otoscopique n'est en rien rassurante vis à vis du statut auditif du patient."
         },
         {
           "answerText": "Je continue le parcours audition et lui fais passer le questionnaire HHIE-S",
@@ -179,7 +176,7 @@
         },
         {
           "answerText": "Je prescris une prothèse auditive",
-          "correctionText": "Non, on doit poursuivre l'évaluation auditive, pour confirmer qu'on est bien face à un tableau de presbyacousie simple, ET avec une surdité dans les critères d'appareillage audio-prothétique.\nOn ne fait JAMAIS de prescription d'appareillage sans avoir au préalable réaliser un examen audiométrique complet.",
+          "correctionText": "Non, on doit poursuivre l'évaluation auditive, pour confirmer qu'on est bien face à un tableau de presbyacousie simple ET avec une surdité dans les critères d'appareillage audio-prothétique.\nOn ne fait JAMAIS de prescription d'appareillage sans avoir au préalable réaliser un examen audiométrique complet.",
           "rappelTip": "Prescription"
         }
       ]
@@ -195,12 +192,12 @@
         },
         {
           "answerText": "Le score indique une absence totale de gêne auditive",
-          "correctionText": "Non, le score à <b>14/40</b> est en faveur d'une surdité modérée.\n<color=red>On ne peut donc pas conclure à l'absence de gêne auditive.</color>",
+          "correctionText": "Non, le score à <b>14/40</b> est en faveur d'une surdité modérée.\n<b>On ne peut donc pas conclure à l'absence de gêne auditive.</b>",
           "rappelTip": "Hhies"
         },
         {
           "answerText": "Le score indique des difficultés auditives sévères",
-          "correctionText": "Non, en cas de difficulté auditive sévère on peut s'attendre à retrouver un score > 24. Il s'agit donc d'une surdité modérée.\n<b>La probabilité d'être porteur d'une déficience auditive augmentant avec le score.</b>",
+          "correctionText": "Non, en cas de difficulté auditive sévère on peut s'attendre à retrouver un score > 24. Il s'agit donc d'une surdité modérée.\n<b>La probabilité d'être porteur d'une déficience auditive augmente avec le score.</b>",
           "rappelTip": "Hhies"
         },
         {
@@ -223,9 +220,9 @@
           "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise test de Weber",
+          "answerText": "Je continue le parcours audition et je réalise le test de Weber",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. Le test de Weber est l'examen à réaliser en suivant."
+          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer qu'il n'y a pas d'anomalie auditive. Le test de Weber est l'examen à réaliser en suivant."
         }
       ]
     },
@@ -235,36 +232,36 @@
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses révèlent une surdité de perception",
-          "correctionText": "Ici, c'est un test de Weber qui est réalisé (appareil placé au milieu du front) : on recherche une asymétrie de l'audition qui se manifesterait par une latéralisation du Weber («j'entends à droite»).\n\nLe test acoumétrique de Rinne quant à lui de déterminer si le système tympano-ossiculaire est fonctionnel (dans ce cas, il est Positif : on évoque une audition normale ou une surdité neurosensorielle) ou non (dans ce cas, il est négatif : on évoque une surdité de perception).",
+          "correctionText": "Ici, c'est un test de Weber qui est réalisé (appareil placé au milieu du front) : on recherche une asymétrie de l'audition qui se manifesterait par une latéralisation du Weber (« j'entends à droite »).\n\nInformation bonus : Le test acoumétrique de Rinne quant à lui, permet de déterminer si le système tympano-ossiculaire est fonctionnel (dans ce cas, il est positif : on évoque une audition normale ou une surdité neurosensorielle) ou non (dans ce cas, il est négatif : on évoque une surdité de perception).",
           "rappelTip": "Rinne"
         },
         {
           "answerText": "Ses réponses ne révèlent pas d'anomalie",
           "isCorrect": true,
-          "correctionText": "Un son perçu de la même façon aux 2 oreilles est un bon signe.",
+          "correctionText": "Un son perçu de la même façon aux 2 oreilles est un bon signe. Le test de Weber est donc centré, ou non latéralisé.",
           "rappelTip": "Weber"
         },
         {
           "answerText": "Ses réponses révèlent un bouchon de cérumen",
-          "correctionText": "Un bouchon de cérumen est identifiable lors de l'examen otoscopique et non lors du test de Weber ! S'il avait un bouchon de cérumen côté droit, avec une otoscopie normale à gauche, on pourrait s'attendre à retrouver un Weber latéralisé à droite s'il est obstructif (et à condition qu'il n'existe pas d'autre cause sous-jacente d'asymétrie auditive), mais le diagnostic du bouchon de cérumen resterait... clinique et serait surtout réaliser avant !",
+          "correctionText": "Un bouchon de cérumen est identifiable lors de l'examen otoscopique et non lors du test de Weber ! S'il y avait un bouchon de cérumen côté droit, avec une otoscopie normale à gauche, on pourrait s'attendre à retrouver un Weber latéralisé à droite s'il est obstructif (et à condition qu'il n'existe pas d'autre cause sous-jacente d'asymétrie auditive), mais le diagnostic du bouchon de cérumen resterait clinique et serait surtout réalisé avant !",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png"
         }
       ],
       "actionPhase": [
         {
           "answerText": "Je laisse le patient repartir chez lui",
-          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<color=red>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</color>",
+          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<b>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</b>",
           "rappelTip": "Acoumetry"
         },
         {
           "answerText": "Il est pertinent de réaliser l'audiométrie",
           "isCorrect": true,
-          "correctionText": "L'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité, et l'indication ou non d'un appareillage audio-prothétique.",
+          "correctionText": "L'audiométrie va permettre de valider le diagnostic de presbyacousie en confirmant qu'il s'agit d'une surdité neurosensorielle, bilatérale et symétrique, prédominant souvent sur les fréquences aiguës.\nElle va également renseigner sur la sévérité de la surdité et l'indication ou non d'un appareillage audio-prothétique.",
           "rappelTip": "Hhies"
         },
         {
           "answerText": "Je laisse le patient repartir et lui propose de faire le suivi ICOPE dans 6 mois",
-          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<color=red>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</color>",
+          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<b>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</b>",
           "rappelTip": "Acoumetry"
         },
         {
@@ -290,7 +287,7 @@
         {
           "answerText": "L'audiogramme montre une surdité de perception",
           "isCorrect": true,
-          "correctionText": "Oui, oreille droite et oreille gauche en faveur d'une surdité de perception bilatérale modérée évoquant une presbyacousie.\nIl s'agit d'une surdité de perception car les seuils auditifs sont élevés en conduction aérienne sans qu'un écart avec la conduction osseuse ne soit visible, et la courbe présente une pente descendante dans les aigus, typique d'une atteinte cochléaire."
+          "correctionText": "Oui, oreille droite et oreille gauche en faveur d'une surdité de perception bilatérale modérée évoquant une presbyacousie.\nIl s'agit d'une surdité de perception car les seuils auditifs sont élevés en conduction aérienne sans qu'un écart avec la conduction osseuse ne soit visible et la courbe présente une pente descendante dans les aigus, typique d'une atteinte cochléaire."
         },
         {
           "answerText": "L'audiogramme montre une surdité de persuasion",
@@ -308,7 +305,7 @@
         },
         {
           "answerText": "Je rassure Monsieur Dupont que son audition est dans la norme et qu'aucune prise en charge n'est nécessaire",
-          "correctionText": "Non, L'audiogramme montre une surdité bilatérale avérée, donc <b>une prise en charge est indispensable</b>, notamment par appareillage."
+          "correctionText": "Non, l'audiogramme montre une surdité bilatérale avérée, donc <b>une prise en charge est indispensable</b>, notamment par appareillage."
         },
         {
           "answerText": "En accord avec votre médecin référent, une prescription de prothèse auditive est délivrée à M. Dupont",

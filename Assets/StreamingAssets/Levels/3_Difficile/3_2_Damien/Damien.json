@@ -10,22 +10,21 @@
   "occupationalActivities": "",
   "context": "Il se plaint de ne plus entendre la télévision, même volume au maximum. Une IDE ICOPE lui a proposé de faire l'évaluation étape 1, dont le test auditif.",
   "medicalHistory": "Aucun antécédent ORL connu.",
-  "descriptionLevel": "",
   "steps": [
     {
       "type": "CasePresentation",
       "actionPhase": [
         {
           "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
         },
         {
           "answerText": "Je vérifie ses oreilles",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag"
         },
         {
@@ -96,7 +95,7 @@
       "actionPhase": [
         {
           "answerText": "Je laisse le patient repartir chez lui",
-          "correctionText": "Il s'agit d'une suspicion de cas simple, avec un dépistage pathologique : il faut continuer son évaluation ! la normalité de l'examen otoscopique n'est en rien rassurante vis à vis du statut auditif du patient."
+          "correctionText": "Il s'agit d'une suspicion de cas simple, avec un dépistage pathologique : il faut continuer son évaluation ! La normalité de l'examen otoscopique n'est en rien rassurante vis à vis du statut auditif du patient."
         },
         {
           "answerText": "Je continue le parcours audition et lui fais passer le questionnaire HHIE-S",
@@ -109,7 +108,7 @@
         },
         {
           "answerText": "Je prescris une prothèse auditive",
-          "correctionText": "Non, on doit poursuivre l'évaluation auditive, pour confirmer qu'on est bien face à un tableau de presbyacousie simple, ET avec une surdité dans les critères d'appareillage audio-prothétique.\nOn ne fait JAMAIS de prescription d'appareillage sans avoir au préalable réaliser un examen audiométrique complet.",
+          "correctionText": "Non, on doit poursuivre l'évaluation auditive, pour confirmer qu'on est bien face à un tableau de presbyacousie simple ET avec une surdité dans les critères d'appareillage audio-prothétique.\nOn ne fait JAMAIS de prescription d'appareillage sans avoir au préalable réaliser un examen audiométrique complet.",
           "rappelTip": "Prescription"
         }
       ]
@@ -131,9 +130,9 @@
           "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise test de Weber",
+          "answerText": "Je continue le parcours audition et je réalise le test de Weber",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne permettent pas de confirmer qu'il n'y a pas d'anomalie auditive. Le test de Weber est l'examen à réaliser en suivant."
+          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer qu'il n'y a pas d'anomalie auditive. Le test de Weber est l'examen à réaliser en suivant."
         }
       ]
     },

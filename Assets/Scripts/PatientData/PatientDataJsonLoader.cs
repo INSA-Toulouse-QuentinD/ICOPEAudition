@@ -29,7 +29,6 @@ namespace PatientData{
             public string occupationalActivities;
             public string context;
             public string medicalHistory;
-            public string descriptionLevel;
 
             public List<AlgoStepDto> steps;
         }
@@ -41,7 +40,9 @@ namespace PatientData{
             public string dialoguePatient;
             public string spriteEarExams;
 
+            public string overrideDiagnostic;
             public List<AnswerDto> diagnosticPhase;
+            public string overrideAction;
             public List<AnswerDto> actionPhase;
 
             public List<string> predefinedAnswer;
@@ -116,7 +117,6 @@ namespace PatientData{
             data.context = dto.context;
 
             data.medicalHistory = dto.medicalHistory;
-            data.descriptionLevel = dto.descriptionLevel;
 
             List<AlgoStep> steps = null;
             yield return ConvertSteps(dto.steps, path, result => steps = result);
@@ -213,10 +213,12 @@ namespace PatientData{
                         GameManager.Instance.JsonErrorAdd($"{errorText} doit avoir 7 predefinedAnswer !");
                     }
 
+                    step.overrideDiagnostic = dto.overrideDiagnostic;
                     List<AnswerData> diag = null;
                     yield return ConvertAnswers(dto.diagnosticPhase, errorText, r => diag = r);
                     step.diagnosticPhase = diag;
 
+                    step.overrideAction = dto.overrideAction;
                     List<AnswerData> act = null;
                     yield return ConvertAnswers(dto.actionPhase, errorText, r => act = r);
                     step.actionPhase = act;

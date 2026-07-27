@@ -189,6 +189,7 @@ namespace Managers{
                     _step4And5Questionnary.SetQuestionayText(questions, answers);
                     //Set Patient Sprite
                     _step4And5Questionnary.SetPatientSprite(_patientData.characterSprites[0]);
+                    _step4And5Questionnary.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
                     // Display current step
                     displayList[_currentDisplay].SetActive(true);
 
@@ -309,7 +310,9 @@ namespace Managers{
             }
 
             if (diagCount > 0 && !_isDiagnosticValid) {
-                questionText.text = "Quelle est votre analyse ?";
+                questionText.text = string.IsNullOrEmpty(algoStep.overrideDiagnostic)
+                    ? "Quelle est votre analyse ?"
+                    : algoStep.overrideDiagnostic;
                 _answerState = AnswerState.Diagnostic;
                 CreateAnswerButtons(algoStep.diagnosticPhase);
                 ApplyTriedStateToButtons(_diagAnswerState);
@@ -317,7 +320,9 @@ namespace Managers{
             }
 
             if (actionCount > 0 && _isDiagnosticValid) {
-                questionText.text = "Que faites-vous ?";
+                questionText.text = string.IsNullOrEmpty(algoStep.overrideAction)
+                    ? "Que faites-vous ?"
+                    : algoStep.overrideAction;
                 _answerState = AnswerState.Action;
                 CreateAnswerButtons(algoStep.actionPhase);
                 ApplyTriedStateToButtons(_actionAnswerState);
@@ -397,8 +402,6 @@ namespace Managers{
                 _indexStep++;
                 if (_indexStep >= _patientData.steps.Count) {
                     GameManager.Instance.GameStateManager.SaveShowScores();
-
-                    UITutorialControler.Instance.TutorialMichel(11);
                 } else {
                     print("Increased indexStep : " + _indexStep);
                     GameManager.Instance.GameStateManager.NextStep(_patientData.steps[_indexStep]);

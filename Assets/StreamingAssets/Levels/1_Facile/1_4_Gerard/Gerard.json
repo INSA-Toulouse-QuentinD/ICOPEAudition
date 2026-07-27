@@ -8,9 +8,8 @@
   "age": 70,
   "familySituation": "Ancien agriculteur. Vit en résidence autonomie.",
   "occupationalActivities": "Il adore jouer aux jeux de société avec ses colocataires.",
-  "context": "Il a été repéré par une IDE lors d'un atelier prévention de sa mutuelle, qui véhicule les informations concernant ICOPE. Il se plaint de ne pas toujours comprendre ses interlocuteurs, surtout dans un environnement bruyant. Il n'a pas d'antécédent ORL connu.",
+  "context": "Il a été repéré par une IDE lors d'un atelier prévention de sa mutuelle, qui véhicule les informations concernant ICOPE. Il se plaint de ne pas toujours comprendre ses interlocuteurs, surtout dans un environnement bruyant.",
   "medicalHistory": "Pas d'antécédent ORL connu.",
-  "descriptionLevel": "Gérard Fontaine, ancien agriculteur, vient vous voir car il ne comprend pas toujours ses interlocuteurs.",
   "steps": [
     {
       "type": "CasePresentation",
@@ -22,7 +21,7 @@
         {
           "answerText": "Je réalise une vidéo-otoscopie",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été fait en auto-évaluation. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été fait en auto-évaluation. <b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -30,7 +29,7 @@
         {
           "answerText": "Je vérifie ses oreilles",
           "isCorrect": false,
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été fait en auto-évaluation. <color=red>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</color> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nLe repérage a été fait en auto-évaluation. <b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -46,7 +45,7 @@
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
           "isCorrect": false,
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est en faveur d'une anomalie.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -112,7 +111,7 @@
         {
           "answerText": "Je passe à l'examen audiométrique",
           "isCorrect": false,
-          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go - No Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
+          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go - No Go afin d'identifier un éventuel cas complexe nécessitant une prise en charge par l'ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -120,7 +119,7 @@
         {
           "answerText": "Je lui fais passer le questionnaire HHIE-S",
           "isCorrect": false,
-          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go - No Go afin d'identifier d'éventuel cas complexe nécessitant une prise en charge par l'ORL.",
+          "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go - No Go afin d'identifier un éventuel cas complexe nécessitant une prise en charge par l'ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -150,7 +149,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'a répondu que des « non », ce qui indique une suspicion de cas simple.",
+          "answerText": "Il n'a répondu que des « non », ce qui indique une suspicion de cas simple",
           "isCorrect": true,
           "correctionText": "Si aux réponses du questionnaire Go - No Go, le patient répond « non » à chaque question, il s'agit bien d'une suspicion de cas simple, nous poursuivons le parcours ICOPE Audition.",
           "rappelTip": "None",
@@ -166,7 +165,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Il n'a répondu que des « non », ce qui indique une urgence ORL.",
+          "answerText": "Il n'a répondu que des « non », ce qui indique une urgence ORL",
           "isCorrect": false,
           "correctionText": "Les urgences ORL et autres situations nécessitant un avis ORL, sont plutôt évoquées lorsque le patient répond « oui » à une ou plusieurs questions (drapeaux rouges).\n\nLes vraies urgences ORL, justifiant de la mise en place d'un traitement rapide sont :\n- Les surdités brusques récentes, indiquant une corticothérapie.\n- Les otorrhées avec otalgies, évocatrices d'une otite externe.\nElles nécessitent un avis médical (médecin généraliste ou ORL).",
           "rappelTip": "None",
@@ -218,7 +217,7 @@
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
           "isCorrect": false,
-          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive, photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste +/- ORL).",
+          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
@@ -226,7 +225,7 @@
         {
           "answerText": "Il s'agit d'une perforation tympanique",
           "isCorrect": true,
-          "correctionText": "Il s'agit bien d'une perforation de la membrane.\nVoici d'autres exemples.",
+          "correctionText": "Il s'agit bien d'une perforation de la membrane.\nVoici d'autres exemples :",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
@@ -234,7 +233,7 @@
         {
           "answerText": "Il s'agit d'un bouchon de cérumen",
           "isCorrect": false,
-          "correctionText": "Voici des exemples de bouchons de cérumen.",
+          "correctionText": "Non, voici des exemples de bouchons de cérumen :",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
@@ -242,7 +241,7 @@
         {
           "answerText": "Il s'agit d'un tympan normal",
           "isCorrect": false,
-          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de tympans normaux.",
+          "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\nVoici des exemples de tympans normaux :",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_2.png"

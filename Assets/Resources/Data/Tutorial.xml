@@ -3,7 +3,7 @@
     <Step Name="Waiting_room">
         <Entry>
             <ID>0</ID>
-            <Intitule>Bonjour, et bienvenue !</Intitule>
+            <Intitule>Bonjour et bienvenue !</Intitule>
             <Text>Vous allez apprendre à utiliser les fonctionnalités essentielles du jeu.</Text>
         </Entry>
         <Entry>
@@ -25,7 +25,7 @@ Il vous donne également la possibilité de retourner à l'accueil ou de modifie
         <Entry>
             <ID>3</ID>
             <Intitule>Démarrer une consultation :</Intitule>
-            <Text>Pour commencer une consultation, cliquez sur le personnage ou sur le téléphone s'il sonne « dring dring »</Text>
+            <Text>Pour commencer une consultation, cliquez sur le personnage ou sur le téléphone s'il sonne « dring dring ».</Text>
         </Entry>
         <Entry>
             <ID>4</ID>
@@ -45,7 +45,7 @@ Il vous attend, à vous de jouer !
         <Entry>
             <ID>0</ID>
             <Intitule>Présentation du patient</Intitule>
-            <Text>Avant de commencer l'examen, vérifiez que le patient a bien présenté une alerte sur le plan de l'audition lors de l'étape 1 du programme ICOPE et qu'il est bien éligible à la prise en charge du parcours ICOPE Audition.
+            <Text>Avant de commencer l'examen, vérifiez que le patient a bien présenté une alerte sur le plan de l'audition lors de l'évaluation initiale du programme ICOPE et qu'il est bien éligible à la prise en charge du parcours ICOPE Audition.
 Pour vous aider, une fiche de présentation du patient sera disponible avant chaque examen.
                 
 Prenez le temps de consulter l'ensemble des informations : certaines pourront être utiles pour la suite de la prise en charge.
@@ -86,13 +86,13 @@ N'hésitez pas à lire la justification présente en dessous de la réponse pour
             <ID>5</ID>
             <Intitule>Test du chuchotement</Intitule>
             <Text>Le patient vous indique le nombre de mots qu'il a entendu pour chaque oreille.
-Attendez la fin de l'animation et prenez le temps de lire attentivement les informations affichées afin d'établir le diagnostic le plus adapté.</Text>
+Attendez la fin de l'animation et prenez le temps de lire attentivement les informations affichées afin de faire votre analyse la plus adaptée.</Text>
         </Entry>
         <Entry>
             <ID>6</ID>
-            <Intitule>Questionnaire Go-No-Go</Intitule>
+            <Intitule>Questionnaire Go - No Go</Intitule>
             <Text>Vous venez d'interroger le patient à l'aide du questionnaire Go – No Go. Voici les résultats.
-Prenez le temps d'observer attentivement les réponses afin d'établir votre diagnostic.</Text>
+Prenez le temps d'observer attentivement les réponses afin de faire votre analyse.</Text>
         </Entry>
         <Entry>
             <ID>7</ID>
@@ -127,7 +127,7 @@ Une fois terminé, refermez le dossier puis cliquez sur le bouton « retour au m
         <Entry>
             <ID>12</ID>
             <Intitule>Bouton Rappel</Intitule>
-            <Text>Après avoir fait certains choix, un bouton apparaitra en bas à gauche de l'écran pendant la phase de justification.
+            <Text>Après avoir fait certains choix, un bouton apparaîtra en bas à gauche de l'écran pendant la phase de justification.
 Cliquer sur celui-ci vous permettra de voir des informations ayant pour but de vous faire comprendre vos erreurs ou bien de vous donner plus de précisions.
             </Text>
         </Entry>
@@ -142,6 +142,11 @@ Cela permet de mieux observer les détails et d'avoir une vue plus précise du c
             <ID>14</ID>
             <Intitule>Phase de choix - Mauvaise réponse</Intitule>
             <Text>Pour ce premier choix, il vous est demandé de cliquer sur l'option « Je réalise une vidéo-otoscopie »</Text>
+        </Entry>
+        <Entry>
+            <ID>15</ID>
+            <Intitule>Synthèse - Partie 2</Intitule>
+            <Text>Cliquez sur le bouton « Fermer le dossier » pour lorsque vous souhaitez terminer la consultation.</Text>
         </Entry>
     </Step>
 </Tutorial>
