@@ -90,56 +90,10 @@
       ]
     },
     {
-      "type": "Otoscopy",
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
-      "actionPhase": [
-        {
-          "answerText": "Je laisse le patient repartir chez lui",
-          "correctionText": "Il s'agit d'une suspicion de cas simple, avec un dépistage pathologique : il faut continuer son évaluation ! La normalité de l'examen otoscopique n'est en rien rassurante vis à vis du statut auditif du patient."
-        },
-        {
-          "answerText": "Je continue le parcours audition et lui fais passer le questionnaire HHIE-S",
-          "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. Le questionnaire HHIE-S est l'examen à réaliser en suivant."
-        },
-        {
-          "answerText": "J'adresse le patient aux urgences",
-          "correctionText": "Aucune indication ! L'examen du tympan est normal, on peut poursuivre l'exploration auditive par le questionnaire HHIE-S.",
-          "rappelTip": "RedFlag"
-        },
-        {
-          "answerText": "Je prescris une prothèse auditive",
-          "correctionText": "Non, on doit poursuivre l'évaluation auditive, pour confirmer qu'on est bien face à un tableau de presbyacousie simple ET avec une surdité dans les critères d'appareillage audio-prothétique.\nOn ne fait JAMAIS de prescription d'appareillage sans avoir au préalable réaliser un examen audiométrique complet.",
-          "rappelTip": "Prescription"
-        }
-      ]
-    },
-    {
-      "type": "Hhies",
+      "type": "HhiesWeber",
+      "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 16 et le test de Weber est centré.",
       "spriteEarExams": "Images\\Steps\\HHIE-S\\16_HHIES.png",
-      "actionPhase": [
-        {
-          "answerText": "J'adresse le patient vers l'ORL",
-          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
-        },
-        {
-          "answerText": "J'oriente le patient vers son médecin traitant",
-          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
-        },
-        {
-          "answerText": "Je propose au patient un prochain rendez-vous de suivi",
-          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
-        },
-        {
-          "answerText": "Je continue le parcours audition et je réalise le test de Weber",
-          "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer qu'il n'y a pas d'anomalie auditive. Le test de Weber est l'examen à réaliser en suivant."
-        }
-      ]
-    },
-    {
-      "type": "WeberTest",
-      "dialoguePatient": "Je n'arrive pas à savoir, j'ai entendu la même chose des deux côtés.",
+      "spriteEarExams2": "Images\\Steps\\VideoOtoscopy\\Normal_1.png",
       "actionPhase": [
         {
           "answerText": "Je prescris un appareillage",

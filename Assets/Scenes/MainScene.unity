@@ -595,6 +595,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1970634250236359946, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
+      propertyPath: m_Name
+      value: OtoscopieHhiesWeber
+      objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: alwaysRight
       value: 1

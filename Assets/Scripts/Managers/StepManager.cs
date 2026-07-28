@@ -57,10 +57,11 @@ namespace Managers{
         private StepWisperTest _stepWisperTest;
         private StepQuestionnary _stepQuestionnary;
         private StepOtoscopie _stepOtoscopie;
-        private StepWeberTest _stepWeberTest;
         private StepHhiesTest _stepHhiesTest;
+        private StepWeberTest _stepWeberTest;
         private StepAudiometrie _stepAudiometrie;
         private StepTelephone _stepTelephone;
+        private StepHhiesWeber _stepHhiesWeber;
 
         // Enums
         private enum InteractionState{
@@ -89,8 +90,6 @@ namespace Managers{
         private bool _isDiagnosticValid;
         private bool _isActionValid;
         private Step _step;
-
-        private Dictionary<Step, int> _mappingDisplays;
 
         private sealed class AnswerDisplayState{
             public List<int> ShuffledOrder = new();
@@ -148,7 +147,7 @@ namespace Managers{
             _isDiagnosticValid = false;
             _isActionValid = false;
             ResetTriedState();
-            _currentDisplay = _mappingDisplays[currentStep];
+            _currentDisplay = (int)currentStep;
 
             Sprite patientSprite = null;
 
@@ -217,15 +216,22 @@ namespace Managers{
                     // Load patient audiometrie + patient sprite
                     _stepAudiometrie.SetSprite(_patientData.steps[_indexStep].spriteEarExams,
                         _patientData.characterSprites[0]);
-                    
+
                     UITutorialControler.Instance.TutorialMichel(10);
                     break;
                 case Step.Telephone:
                     _stepTelephone.SetSprites(_patientData.characterSprites[0]);
-                    
+
                     StartCoroutine(_stepTelephone.StartConv(_patientData.steps[_indexStep].discussion));
                     break;
+                case Step.HhiesWeber:
+                    _stepHhiesWeber.SetText(_patientData.steps[_indexStep].dialoguePatient);
+                    _stepHhiesWeber.SetImages(_patientData.characterSprites[1],
+                        _patientData.steps[_indexStep].spriteEarExams,
+                        _patientData.steps[_indexStep].spriteEarExams2);
+                    break;
             }
+
             // Display current step
             displayList[_currentDisplay].SetActive(true);
 
@@ -637,23 +643,12 @@ namespace Managers{
                 if (go.TryGetComponent(out StepWeberTest component5)) _stepWeberTest = component5;
                 if (go.TryGetComponent(out StepAudiometrie component6)) _stepAudiometrie = component6;
                 if (go.TryGetComponent(out StepTelephone component7)) _stepTelephone = component7;
+                if (go.TryGetComponent(out StepHhiesWeber component8)) _stepHhiesWeber = component8;
             }
-
 
             //SET LISTENER
             confirmNextButton.onClick.AddListener(ButtonNext);
             returnButton.onClick.AddListener(ButtonBack);
-
-            _mappingDisplays = new Dictionary<Step, int>(){
-                { Step.CasePresentation, 0 },
-                { Step.WisperTest, 1 },
-                { Step.GoNoGo, 2 },
-                { Step.Otoscopy, 3 },
-                { Step.Hhies, 4 },
-                { Step.WeberTest, 5 },
-                { Step.Audiometry, 6 },
-                { Step.Telephone, 7 },
-            };
         }
     }
 }

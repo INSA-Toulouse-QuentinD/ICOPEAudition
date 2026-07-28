@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using TMPro;
-using UI.TutorialContents;
 using UnityEngine;
 using UnityEngine.UI;
 

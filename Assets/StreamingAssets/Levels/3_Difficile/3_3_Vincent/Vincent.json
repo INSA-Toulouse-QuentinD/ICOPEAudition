@@ -113,31 +113,9 @@
       ]
     },
     {
-      "type": "Hhies",
+      "type": "HhiesWeber",
+      "dialoguePatient": "Son score au questionnaire HHIE-S est de 30 et le test de Weber est symétrique.",
       "spriteEarExams": "Images\\Steps\\HHIE-S\\30_HHIES.png",
-      "actionPhase": [
-        {
-          "answerText": "J'adresse le patient vers l'ORL",
-          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
-        },
-        {
-          "answerText": "J'oriente le patient vers son médecin traitant",
-          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
-        },
-        {
-          "answerText": "Je propose au patient un prochain rendez-vous de suivi",
-          "correctionText": "Non, son questionnaire HHIE-S est altéré, ce qui suggère la présence d'une surdité. Pour le confirmer, il faut réaliser l'examen audiométrique."
-        },
-        {
-          "answerText": "Je continue le parcours audition et je réalise le test de Weber",
-          "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer qu'il n'y a pas d'anomalie auditive. Le test de Weber est l'examen à réaliser en suivant."
-        }
-      ]
-    },
-    {
-      "type": "WeberTest",
-      "dialoguePatient": "Je n'arrive pas à savoir, j'ai entendu la même chose des deux côtés.",
       "actionPhase": [
         {
           "answerText": "Je fais un bilan cognitif",

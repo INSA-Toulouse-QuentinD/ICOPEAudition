@@ -39,6 +39,7 @@ namespace PatientData{
             public string dialogueDoctor;
             public string dialoguePatient;
             public string spriteEarExams;
+            public string spriteEarExams2;
 
             public string overrideDiagnostic;
             public List<AnswerDto> diagnosticPhase;
@@ -207,6 +208,12 @@ namespace PatientData{
                         if (!step.spriteEarExams && step.type is Step.Otoscopy or Step.Hhies or Step.Audiometry) {
                             GameManager.Instance.JsonErrorAdd($"{errorText} doit avoir un spriteEarExams !");
                         }
+                    }
+                    
+                    if (!string.IsNullOrEmpty(dto.spriteEarExams2)) {
+                        Sprite ear = null;
+                        yield return LoadSprite(dto.spriteEarExams2, s => ear = s);
+                        step.spriteEarExams2 = ear;
                     }
 
                     step.predefinedAnswer = ConvertYesNo(dto.predefinedAnswer);

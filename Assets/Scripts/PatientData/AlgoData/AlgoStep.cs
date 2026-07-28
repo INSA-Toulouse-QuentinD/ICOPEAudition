@@ -7,14 +7,15 @@ namespace PatientData.AlgoData{
     /// Enum representing the different steps in the medical algorithm.
     /// </summary>
     public enum Step{
-        CasePresentation,
-        WisperTest,
-        GoNoGo,
-        Otoscopy,
-        Hhies,
-        WeberTest,
-        Audiometry,
-        Telephone,
+        CasePresentation = 0,
+        WisperTest = 1,
+        GoNoGo = 2,
+        Otoscopy = 3,
+        Hhies = 4,
+        WeberTest = 5,
+        Audiometry = 6,
+        Telephone = 7,
+        HhiesWeber = 8,
     }
 
     /// <summary>
@@ -53,6 +54,7 @@ namespace PatientData.AlgoData{
         public List<Discussion> discussion;
 
         public Sprite spriteEarExams; // Image representing ear exams, HHIES exam or audiometry
+        public Sprite spriteEarExams2;
 
         public string overrideDiagnostic;
         public List<AnswerData> diagnosticPhase; // Diagnostic phase data
