@@ -130,7 +130,6 @@ namespace Managers{
             folderDivider.GetSetDisplayScore(patientName);
             scorePanel.SetActive(true);
             PartyManager.Instance.Play();
-            UITutorialControler.Instance.TutorialMichel(11);
         }
 
         // CLEAR SCREEN

@@ -93,7 +93,7 @@
       "type": "HhiesWeber",
       "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 16 et le test de Weber est centré.",
       "spriteEarExams": "Images\\Steps\\HHIE-S\\16_HHIES.png",
-      "spriteEarExams2": "Images\\Steps\\VideoOtoscopy\\Normal_1.png",
+      "spriteEarExams2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
       "actionPhase": [
         {
           "answerText": "Je prescris un appareillage",
