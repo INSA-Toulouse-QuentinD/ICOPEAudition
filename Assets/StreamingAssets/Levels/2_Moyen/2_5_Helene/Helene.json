@@ -81,7 +81,7 @@
         {
           "answerText": "Je renvoie la patiente vers un ORL",
           "isCorrect": true,
-          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition ➝ adressage spécialisé ORL pour une évaluation complète.",
           "rappelTip": "Acouphene"
         },
         {

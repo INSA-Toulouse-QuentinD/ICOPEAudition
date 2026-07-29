@@ -194,7 +194,7 @@
         {
           "answerText": "Il s'agit d'un cas complexe avec une indication de prise en charge ORL",
           "isCorrect": true,
-          "correctionText": "Il s'agit d'un No Go car l'audiométrie confirme la surdité de transmission. Dans le cadre du parcours ICOPE Audition, seules les surdités de perception (surdités neurosensorielles) sont prises en charge. Dans ce cas, l'ORL va rechercher l'étiologie et proposer un traitement adapté.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau."
+          "correctionText": "Il s'agit d'un No Go car l'audiométrie confirme la surdité de transmission. Dans le cadre du parcours ICOPE Audition, seules les surdités de perception (surdités neurosensorielles) sont prises en charge. Dans ce cas, l'ORL va rechercher l'étiologie et proposer un traitement adapté."
         },
         {
           "answerText": "Je prescris à la patiente un appareillage immédiat",

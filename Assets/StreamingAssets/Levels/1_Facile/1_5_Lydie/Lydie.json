@@ -69,7 +69,7 @@
         {
           "answerText": "Il y a une anomalie car elle n'a pas su restituer au moins 3 mots de chaque côté",
           "isCorrect": true,
-          "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente a répété que <b>2 mots sur 4</b> pour l'oreille gauche et <b>3 mots sur 4</b> pour celle de droite, ce qui est <b>en dessous du seuil requis</b> pour l'oreille gauche.\nCela indique un risque d'<b>atteinte de l'audition unilatéral</b>, car le <b>côtés gauche</b> n'atteint pas le critère minimal de <b>3 mots correctement restitués sur 4.</b>",
+          "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente a répété que <b>2 mots sur 4</b> pour l'oreille gauche et <b>3 mots sur 4</b> pour celle de droite, ce qui est <b>en dessous du seuil requis</b> pour l'oreille gauche.\nCela indique une <b>atteinte de l'audition unilatéral</b>, car le <b>côtés gauche</b> n'atteint pas le critère minimal de <b>3 mots correctement restitués sur 4.</b>",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -143,7 +143,7 @@
         {
           "answerText": "Ses réponses montrent des signes d'un trouble neurologique avancé",
           "isCorrect": false,
-          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL.",
+          "correctionText": "Le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.\n\nIl ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -338,7 +338,7 @@
         {
           "answerText": "Le test étant normal, je rassure et je conseille un nouveau dépistage par l'application HORA dans 6 mois",
           "isCorrect": true,
-          "correctionText": "Oui\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "correctionText": "Oui, elle a répété pratiquement tous les mots, on peut donc considérer son test rassurant.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

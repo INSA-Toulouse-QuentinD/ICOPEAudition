@@ -89,7 +89,7 @@
         {
           "answerText": "J'adresse le patient à l'ORL",
           "isCorrect": true,
-          "correctionText": "Un antécédent de tympanoplastie est une contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau."
+          "correctionText": "Un antécédent de tympanoplastie est une contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL."
         }
       ]
     }

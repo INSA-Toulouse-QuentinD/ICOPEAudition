@@ -69,7 +69,7 @@
         {
           "answerText": "Ses réponse montrent des signes d'un trouble neurologique avancé",
           "isCorrect": false,
-          "correctionText": "Il ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, mais plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
+          "correctionText": "Il ne s'agit pas d'un questionnaire de repérage des troubles cognitifs, plutôt d'un outil d'aide à l'interrogatoire, afin de ne pas oublier les situations fortement évocatrices d'une surdité complexe qui justifieraient alors un adressage ORL. Ici le questionnaire ne met pas en évidence de signal d'alerte en faveur d'une situation complexe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -289,7 +289,7 @@
         {
           "answerText": "Il y a une anomalie car elle n'a pas su restituer au moins 3 mots de chaque côtés",
           "isCorrect": true,
-          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si la patiente est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, la patiente n'a su répéter que <b>2 mots sur 4</b> pour chaque oreille, ce qui est <b>en dessous du seuil requis</b>.\nCela indique un risque d'<b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
+          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si la patiente est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, la patiente n'a su répéter que <b>2 mots sur 4</b> pour chaque oreille, ce qui est <b>en dessous du seuil requis</b>.\nCela indique une <b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -447,7 +447,7 @@
         {
           "answerText": "Je laisse la patiente repartir chez elle",
           "isCorrect": false,
-          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<b>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</b>",
+          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\nIl n'y a aucun caractère rassurant concernant la normalité de l'audition.",
           "rappelTip": "Acoumetry",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -463,7 +463,7 @@
         {
           "answerText": "Je laisse la patiente repartir et lui propose de faire le suivi ICOPE dans 6 mois",
           "isCorrect": false,
-          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\n\n<b>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</b>",
+          "correctionText": "Non, le test de Weber est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, <b>à condition que l'audition soit symétrique</b>.\nIl n'y a aucun caractère rassurant concernant la normalité de l'audition.",
           "rappelTip": "Acoumetry",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -535,7 +535,7 @@
         {
           "answerText": "Je prescris à la patiente un appareillage audio-prothétique bilatéral",
           "isCorrect": true,
-          "correctionText": "Oui, ici on reste dans le cadre du parcours ICOPE Audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. En tant que médecin généraliste formé à l'otologie médicale, je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL.\n\n<b>Bravo !!</b> Tu as bien identifié le cas présent.\n\nPrise en charge réussie. Tu as débloqué un nouveau niveau.",
+          "correctionText": "Oui, ici on reste dans le cadre du parcours ICOPE Audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. En tant que médecin généraliste formé à l'otologie médicale, je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
