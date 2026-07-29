@@ -76,7 +76,7 @@
         {
           "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
           "isCorrect": true,
-          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer qu'il n'y a pas d'anomalie auditive. La vidéo-otoscopie est l'examen à réaliser en suivant."
+          "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. La vidéo-otoscopie est l'examen à réaliser en suivant."
         },
         {
           "answerText": "Il est pertinent de réaliser l'audiométrie",

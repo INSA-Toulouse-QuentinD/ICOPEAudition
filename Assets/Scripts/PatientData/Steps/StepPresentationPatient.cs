@@ -56,7 +56,11 @@ namespace PatientData.Steps{
         /// <param name="phone">The sprite of the phone.</param>
         public void SetSprites(Sprite patient, bool isPhone, Sprite phone){
             patientSprite.sprite = isPhone ? phone : patient;
-            patientSprite.SetNativeSize();
+            if (isPhone) {
+                patientSprite.rectTransform.sizeDelta = new Vector2(700, 700);
+            } else {
+                patientSprite.SetNativeSize();
+            }
             
             patientSpritePhone.sprite = patient;
             bulle.SetActive(isPhone);

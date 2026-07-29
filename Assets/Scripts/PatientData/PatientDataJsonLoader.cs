@@ -134,7 +134,7 @@ namespace PatientData{
                 if (step is {type: Step.WisperTest or Step.Otoscopy}) {
                     needSit = true;
                 }
-                if (step.type == Step.WeberTest) {
+                if (step is {type: Step.WeberTest or Step.HhiesWeber}) {
                     hasWeberTest = true;
                 }
             }
