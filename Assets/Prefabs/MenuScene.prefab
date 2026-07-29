@@ -3107,6 +3107,7 @@ MonoBehaviour:
   - {fileID: 2745729286485144841}
   - {fileID: 4337293830518642125}
   - {fileID: 1970634250236359946}
+  - {fileID: 8363655906589762021}
   questionsDisplay: {fileID: 1421169648685751211}
   questionText: {fileID: 1180081208983912218}
   choiceButtons:
@@ -6444,6 +6445,11 @@ GameObject:
 --- !u!1 &8335869204228929754 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1935372721586285522, guid: e2c341d1748dea041b60eec46655436e, type: 3}
+  m_PrefabInstance: {fileID: 7599023773279277832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8363655906589762021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2117970970310226669, guid: e2c341d1748dea041b60eec46655436e, type: 3}
   m_PrefabInstance: {fileID: 7599023773279277832}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &8461632652091126213 stripped

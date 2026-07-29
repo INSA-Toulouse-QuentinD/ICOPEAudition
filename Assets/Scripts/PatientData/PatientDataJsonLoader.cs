@@ -131,7 +131,7 @@ namespace PatientData{
             bool hasWeberTest = false;
             bool needSit = false;
             foreach (AlgoStep step in steps) {
-                if (step is {type: Step.WisperTest or Step.Otoscopy}) {
+                if (step is {type: Step.WisperTest or Step.Otoscopy or Step.AudiometryVocale}) {
                     needSit = true;
                 }
                 if (step is {type: Step.WeberTest or Step.HhiesWeber}) {

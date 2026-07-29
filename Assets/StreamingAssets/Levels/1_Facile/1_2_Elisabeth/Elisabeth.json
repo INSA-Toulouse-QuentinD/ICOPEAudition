@@ -8,7 +8,7 @@
   "age": 67,
   "familySituation": "Vit seule, sans enfants, il s'agit d'une ancienne professeure de lettre.",
   "occupationalActivities": "Elle dirige un club de lecture.",
-  "context": "Étape 1 réalisée en auto-évaluation complétée avec l,auto-dépistage auditif de l,application Höra.",
+  "context": "Étape 1 réalisée en auto-évaluation complétée avec l'auto-dépistage auditif de l'application Höra.",
   "medicalHistory": "Non connus.",
   "steps": [
     {
@@ -20,7 +20,7 @@
         {
           "answerText": "Je convoque la patiente pour réaliser l'otoscopie et l'audiométrie",
           "isCorrect": false,
-          "correctionText": "Non, on réalise d'abord la gestion d,alerte au téléphone pour vérifier la véracité de l,alerte.",
+          "correctionText": "Non, on réalise d'abord la gestion d'alerte au téléphone pour vérifier la véracité de l'alerte.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -36,15 +36,15 @@
         {
           "answerText": "Je convoque la patiente pour réaliser l'interrogatoire et le questionnaire Go - No Go",
           "isCorrect": false,
-          "correctionText": "Non, on réalise d,abord la gestion d,alerte au téléphone pour vérifier la véracité de l,alerte puis le questionnaire Go - No Go permet de rechercher des signes évocateurs d,une surdité complexe nécessitant l,adressage vers l,ORL.",
+          "correctionText": "Non, on réalise d'abord la gestion d'alerte au téléphone pour vérifier la véracité de l'alerte puis le questionnaire Go - No Go permet de rechercher des signes évocateurs d'une surdité complexe nécessitant l'adressage vers l'ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je réalise la gestion d,alerte au téléphone",
+          "answerText": "Je réalise la gestion d'alerte au téléphone",
           "isCorrect": true,
-          "correctionText": "Oui, pour vérifier la véracité de l,alerte.",
+          "correctionText": "Oui, pour vérifier la véracité de l'alerte.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -84,7 +84,7 @@
         },
         {
           "qui": "Patient",
-          "text": "J'avais pris un rendez-vous mais je n,ai pas pu m,y rendre et je suis en attente d,un nouveau rendez-vous."
+          "text": "J'avais pris un rendez-vous mais je n'ai pas pu m'y rendre et je suis en attente d'un nouveau rendez-vous."
         },
         {
           "qui": "Doc",
@@ -97,21 +97,21 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je convoque la patiente pour réaliser l,otoscopie et l,audiométrie",
-          "correctionText": "Non, on réalise d,abord le questionnaire Go - No Go pour rechercher des signes de surdité complexe."
+          "answerText": "Je convoque la patiente pour réaliser l'otoscopie et l'audiométrie",
+          "correctionText": "Non, on réalise d'abord le questionnaire Go - No Go pour rechercher des signes de surdité complexe."
         },
         {
           "answerText": "Je convoque la patiente pour réaliser un test de chuchotement",
-          "correctionText": "Non, il n,est pas nécessaire de répéter le test après avoir réalisé l,évaluation avec l,application Höra."
+          "correctionText": "Non, il n'est pas nécessaire de répéter le test après avoir réalisé l'évaluation avec l'application Höra."
         },
         {
-          "answerText": "Je convoque la patiente pour réaliser l,interrogatoire et le questionnaire Go - No Go",
+          "answerText": "Je convoque la patiente pour réaliser l'interrogatoire et le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "Oui, on recherche d,abord des signes évocateurs d,une surdité complexe nécessitant l,adressage vers l,ORL."
+          "correctionText": "Oui, on recherche d'abord des signes évocateurs d'une surdité complexe nécessitant l'adressage vers l'ORL."
         },
         {
-          "answerText": "Je l,adresse chez l,ORL",
-          "correctionText": "Non, à ce stade il est possible de lui proposer le parcours ICOPE Audition car elle n,est pas encore pris en charge."
+          "answerText": "Je l'adresse chez l'ORL",
+          "correctionText": "Non, à ce stade il est possible de lui proposer le parcours ICOPE Audition car elle n'est pas encore pris en charge."
         }
       ]
     },
@@ -128,21 +128,21 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je poursuis l,évaluation approfondie",
-          "correctionText": "Non, ici on est dans une situation No Go, il faut l,adresser vers un ORL. Ce tableau évoque en premier lieu une maladie de Ménière : surdité fluctuante avec vertiges."
+          "answerText": "Je poursuis l'évaluation approfondie",
+          "correctionText": "Non, ici on est dans une situation No Go, il faut l'adresser vers un ORL. Ce tableau évoque en premier lieu une maladie de Ménière : surdité fluctuante avec vertiges."
         },
         {
           "answerText": "Je poursuis pour réaliser le test de chuchotement",
-          "correctionText": "Non, ici on est dans une situation No Go, il faut l,adresser vers un ORL. Ce tableau évoque en premier lieu une maladie de Ménière : surdité fluctuante avec vertiges"
+          "correctionText": "Non, ici on est dans une situation No Go, il faut l'adresser vers un ORL. Ce tableau évoque en premier lieu une maladie de Ménière : surdité fluctuante avec vertiges"
         },
         {
-          "answerText": "Je poursuis pour réaliser une vidéo-otoscopie à la recherche d,un bouchon de cérumen, qui peut se manifester de cette manière quand il est obstructif",
-          "correctionText": "Non, certains bouchons peuvent provoquer ce genre de symptômes. Mais, depuis 2 ans on peut quand même espérer qu,elle a bénéficié d,une consultation chez son médecin qui a écarté un bouchon de cérumen."
+          "answerText": "Je poursuis pour réaliser une vidéo-otoscopie à la recherche d'un bouchon de cérumen, qui peut se manifester de cette manière quand il est obstructif",
+          "correctionText": "Non, certains bouchons peuvent provoquer ce genre de symptômes. Mais, depuis 2 ans on peut quand même espérer qu'elle a bénéficié d'une consultation chez son médecin qui a écarté un bouchon de cérumen."
         },
         {
-          "answerText": "Je l,adresse chez l,ORL",
+          "answerText": "Je l'adresse chez l'ORL",
           "isCorrect": true,
-          "correctionText": "Oui, il s,agit d,une surdité fluctuante et vertige : 2 raisons de l,adresser. Tableau très évocateur d,une maladie de Ménière."
+          "correctionText": "Oui, il s'agit d'une surdité fluctuante et vertige : 2 raisons de l'adresser. Tableau très évocateur d'une maladie de Ménière."
         }
       ]
     }

@@ -16,6 +16,7 @@ namespace PatientData.AlgoData{
         Audiometry = 6,
         Telephone = 7,
         HhiesWeber = 8,
+        AudiometryVocale = 9,
     }
 
     /// <summary>

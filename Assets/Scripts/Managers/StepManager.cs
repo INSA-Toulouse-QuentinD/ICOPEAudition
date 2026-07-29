@@ -62,6 +62,7 @@ namespace Managers{
         private StepAudiometrie _stepAudiometrie;
         private StepTelephone _stepTelephone;
         private StepHhiesWeber _stepHhiesWeber;
+        private StepAudiometrieVocale _stepAudiometrieVocale;
 
         // Enums
         private enum InteractionState{
@@ -229,6 +230,9 @@ namespace Managers{
                     _stepHhiesWeber.SetImages(_patientData.characterSprites[2],
                         _patientData.steps[_indexStep].spriteEarExams,
                         _patientData.steps[_indexStep].spriteEarExams2);
+                    break;
+                case Step.AudiometryVocale:
+                    _stepAudiometrieVocale.SetStep(_patientData.steps[_indexStep].dialoguePatient, _patientData.characterSprites[1]);
                     break;
             }
 
@@ -636,14 +640,15 @@ namespace Managers{
             // WARNING : don't trigger error if component not found. 
             foreach (GameObject go in displayList) {
                 if (go.TryGetComponent(out StepPresentationPatient component)) _stepPresentationPatient = component;
-                if (go.TryGetComponent(out StepWisperTest component1)) _stepWisperTest = component1;
-                if (go.TryGetComponent(out StepQuestionnary component2)) _stepQuestionnary = component2;
-                if (go.TryGetComponent(out StepOtoscopie component3)) _stepOtoscopie = component3;
-                if (go.TryGetComponent(out StepHhiesTest component4)) _stepHhiesTest = component4;
-                if (go.TryGetComponent(out StepWeberTest component5)) _stepWeberTest = component5;
-                if (go.TryGetComponent(out StepAudiometrie component6)) _stepAudiometrie = component6;
-                if (go.TryGetComponent(out StepTelephone component7)) _stepTelephone = component7;
-                if (go.TryGetComponent(out StepHhiesWeber component8)) _stepHhiesWeber = component8;
+                else if (go.TryGetComponent(out StepWisperTest component1)) _stepWisperTest = component1;
+                else if (go.TryGetComponent(out StepQuestionnary component2)) _stepQuestionnary = component2;
+                else if (go.TryGetComponent(out StepOtoscopie component3)) _stepOtoscopie = component3;
+                else if (go.TryGetComponent(out StepHhiesTest component4)) _stepHhiesTest = component4;
+                else if (go.TryGetComponent(out StepWeberTest component5)) _stepWeberTest = component5;
+                else if (go.TryGetComponent(out StepAudiometrie component6)) _stepAudiometrie = component6;
+                else if (go.TryGetComponent(out StepTelephone component7)) _stepTelephone = component7;
+                else if (go.TryGetComponent(out StepHhiesWeber component8)) _stepHhiesWeber = component8;
+                else if (go.TryGetComponent(out StepAudiometrieVocale component9)) _stepAudiometrieVocale = component9;
             }
 
             //SET LISTENER

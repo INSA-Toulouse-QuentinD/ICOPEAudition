@@ -122,7 +122,7 @@
           "correctionText": "Cet examen est incomplet et insuffisant pour prescrire des prothèses auditives, il faut continuer avec l'audiométrie vocale."
         },
         {
-          "answerText": "Cet examen est incomplet, il faut continuer avec l'audiométrie vocale (DEBUG!!!)",
+          "answerText": "Cet examen est incomplet, il faut continuer avec l'audiométrie vocale",
           "isCorrect": true,
           "correctionText": "Cet examen est incomplet et insuffisant pour prescrire des prothèses auditives, il faut continuer avec l'audiométrie vocale."
         },
@@ -137,8 +137,8 @@
       ]
     },
     {
-      "type": "Audiometry",
-      "spriteEarExams": "Images\\Steps\\Audiometry\\3_1_Audiometrie.png",
+      "type": "AudiometryVocale",
+      "dialoguePatient": "Le résultat de l’audiométrie vocale et vocale dans le bruit retrouve une distorsion et RSB = + 2 dB.",
       "actionPhase": [
         {
           "answerText": "Je prescris un appareillage",

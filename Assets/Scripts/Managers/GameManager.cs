@@ -8,7 +8,6 @@ using UI.ScoreContents;
 using PatientData;
 using TMPro;
 using UI.LevelSelector;
-using UI.TutorialContents;
 
 namespace Managers{
     [RequireComponent(typeof(GameStateManager))]
