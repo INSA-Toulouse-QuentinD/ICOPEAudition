@@ -18,6 +18,10 @@ namespace PatientData.Steps{
         }
 
         public IEnumerator StartConv(List<Discussion> discussion){
+            foreach (Transform child in content) {
+                Destroy(child.gameObject);
+            }
+            
             foreach (Discussion d in discussion) {
                 GameObject go = Instantiate(bulleDiscussion, content);
 
@@ -29,7 +33,7 @@ namespace PatientData.Steps{
                 }
 
                 // Retire la surbrillance de l'ancienne bulle
-                if (_lastBubble != null) {
+                if (_lastBubble) {
                     _lastBubble.color = Color.white;
                 }
 
