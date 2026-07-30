@@ -16,19 +16,19 @@
         {
           "answerText": "Je réalise le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "Oui, la première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'IDE a déjà réalisé le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE Audition avec le test Go – No Go."
+          "correctionText": "Oui, la première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'IDE a déjà réalisé le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
         },
         {
           "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE Audition avec le test Go – No Go."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
         },
         {
           "answerText": "Je réalise l'audiométrie",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE Audition avec le test Go – No Go."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
         },
         {
           "answerText": "Je réalise le questionnaire HHIE-S",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE Audition avec le test Go – No Go."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale par le test de chuchotement.\nA ce stade, la suspicion est donc confirmée car le test de chuchotement est anormal.\nNous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
         }
       ]
     },
@@ -47,7 +47,7 @@
         {
           "answerText": "Je continue le parcours ICOPE Audition et je réalise une vidéo-otoscopie",
           "isCorrect": true,
-          "correctionText": "Le questionnaire Go – No Go est un Go permettant la poursuite du parcours ICOPE Audition.\nDans l'algorithme décisionnel la vidéo-otoscopie est la prochaine étape du parcours."
+          "correctionText": "Le questionnaire Go - No Go est un Go permettant la poursuite du parcours ICOPE Audition.\nDans l'algorithme décisionnel la vidéo-otoscopie est la prochaine étape du parcours."
         },
         {
           "answerText": "Je renvoie le patient vers un ORL",
@@ -56,12 +56,12 @@
         },
         {
           "answerText": "Je répète le test de chuchotement",
-          "correctionText": "Il est inutile de réaliser à nouveau le test du chuchotement, car celui-ci a déjà été effectué lors de l'évaluation initiale et n'apportera pas d'informations supplémentaires concernant M. Thomas. Il est important de bien respecter l'algorithme décisionnel. Après la réalisation du test Go – No Go, qui oriente vers une suspicion de cas simple, le parcours ICOPE Audition se poursuit par la réalisation d'une otoscopie.",
+          "correctionText": "Il est inutile de réaliser à nouveau le test du chuchotement, car celui-ci a déjà été effectué lors de l'évaluation initiale et n'apportera pas d'informations supplémentaires concernant M. Thomas. Il est important de bien respecter l'ordre de l'algorithme décisionnel. Après la réalisation du questionnaire Go - No Go, qui oriente vers une suspicion de cas simple, le parcours ICOPE Audition se poursuit par la réalisation d'une otoscopie.",
           "rappelTip": "Algorithme"
         },
         {
           "answerText": "Je réalise le questionnaire HHIE-S",
-          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un test Go – No, un Go oriente vers une suspicion de cas simple, l'étape suivante est la vidéo-otoscopie. Le questionnaire HHIE-S intervient ensuite dans le parcours, après la vidéo-otoscopie.",
+          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un test Go - No, un Go oriente vers une suspicion de cas simple, l'étape suivante est la vidéo-otoscopie. Le questionnaire HHIE-S intervient ensuite dans le parcours, après la vidéo-otoscopie.",
           "rappelTip": "Algorithme"
         }
       ]
@@ -73,17 +73,17 @@
       "actionPhase": [
         {
           "answerText": "J'utilise l'irrigation pour retirer le bouchon",
-          "correctionText": "Antécédent de tympanoplastie : contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.",
+          "correctionText": "Un antécédent de tympanoplastie est une contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.",
           "rappelTip": "Bdc"
         },
         {
           "answerText": "Je prescris un cérumenolytique et je le revois dans une semaine",
-          "correctionText": "Antécédent de tympanoplastie : contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.",
+          "correctionText": "Un antécédent de tympanoplastie est une contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.",
           "rappelTip": "Bdc"
         },
         {
           "answerText": "Je réalise l'ablation à la curette ou à l'aspiration",
-          "correctionText": "Antécédent de tympanoplastie : contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.",
+          "correctionText": "Un antécédent de tympanoplastie est une contre-indication à toute tentative d'ablation par l'IDE. Le patient sort du parcours ICOPE Audition et doit être adressé vers un ORL.",
           "rappelTip": "Bdc"
         },
         {

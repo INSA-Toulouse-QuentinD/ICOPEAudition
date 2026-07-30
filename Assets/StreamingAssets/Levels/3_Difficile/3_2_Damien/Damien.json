@@ -40,21 +40,21 @@
       "actionPhase": [
         {
           "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go, avant de poursuivre par la vidéo-otoscopie."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go, avant de poursuivre par la vidéo-otoscopie."
         },
         {
           "answerText": "Il est pertinent de réaliser l'audiométrie",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go, avant de poursuivre par l'évaluation audiométrique.",
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go, avant de poursuivre par l'évaluation audiométrique.",
           "rappelTip": "Weber"
         },
         {
           "answerText": "Je réalise le questionnaire HHIE-S",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
         },
         {
           "answerText": "Je fais passer le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "A ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go."
+          "correctionText": "A ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
         }
       ]
     },
@@ -72,20 +72,20 @@
       "actionPhase": [
         {
           "answerText": "Il est pertinent de réaliser l'audiométrie",
-          "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
+          "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un questionnaire Go - No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
         },
         {
           "answerText": "Je continue le parcours ICOPE Audition et je réalise une vidéo-otoscopie",
           "isCorrect": true,
-          "correctionText": "Après un test Go – No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
+          "correctionText": "Après un questionnaire Go - No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
         },
         {
           "answerText": "Je lui fais fait passer le questionnaire HHIE-S",
-          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
+          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un questionnaire Go - No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
         },
         {
           "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
-          "correctionText": "Le test Go – No Go est faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE Audition, la prochaine étape à suivre est la vidéo-otoscopie."
+          "correctionText": "Le questionnaire Go - No Go est faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE Audition, la prochaine étape à suivre est la vidéo-otoscopie."
         }
       ]
     },
