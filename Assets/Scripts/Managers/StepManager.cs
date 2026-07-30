@@ -227,7 +227,7 @@ namespace Managers{
                     break;
                 case Step.HhiesWeber:
                     _stepHhiesWeber.SetText(_patientData.steps[_indexStep].dialoguePatient);
-                    _stepHhiesWeber.SetImages(_patientData.characterSprites[2],
+                    _stepHhiesWeber.SetImages(_patientData.characterSprites[^1],
                         _patientData.steps[_indexStep].spriteEarExams,
                         _patientData.steps[_indexStep].spriteEarExams2);
                     break;
