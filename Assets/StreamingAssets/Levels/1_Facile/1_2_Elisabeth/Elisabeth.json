@@ -18,7 +18,7 @@
       "spriteEarExams": "",
       "actionPhase": [
         {
-          "answerText": "Je convoque la patiente pour réaliser l'otoscopie et l'audiométrie",
+          "answerText": "Je convoque la patiente pour réaliser la vidéo-otoscopie et l'audiométrie",
           "isCorrect": false,
           "correctionText": "Non, on réalise d'abord la gestion d'alerte au téléphone pour vérifier la véracité de l'alerte.",
           "rappelTip": "None",
@@ -97,7 +97,7 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je convoque la patiente pour réaliser l'otoscopie et l'audiométrie",
+          "answerText": "Je convoque la patiente pour réaliser la vidéo-otoscopie et l'audiométrie",
           "correctionText": "Non, on réalise d'abord le questionnaire Go - No Go pour rechercher des signes de surdité complexe."
         },
         {

@@ -1232,7 +1232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.96862745, g: 0.6784314, b: 0.5019608, a: 1}
+  m_Color: {r: 1, g: 0.89411765, b: 0.8039216, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1481,10 +1481,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1273755347549140548}
-        m_TargetAssemblyTypeName: UI.ScoreContents.PlayerScoreDisplayManager, Assembly-CSharp
-        m_MethodName: GoToMenu
-        m_Mode: 1
+      - m_Target: {fileID: 8797029029428453038}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1492,6 +1492,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Managers.GameStateManager, Assembly-CSharp
+        m_MethodName: NextPatientCase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &3504923863893926768
 GameObject:
@@ -3916,10 +3940,10 @@ MonoBehaviour:
   iconColors:
   - targetGraphic: {fileID: 3159931323213928816}
     colorBlock:
-      m_NormalColor: {r: 0.96862745, g: 0.6784314, b: 0.5019608, a: 1}
-      m_HighlightedColor: {r: 1, g: 0.8943053, b: 0.8039216, a: 1}
-      m_PressedColor: {r: 0.68235296, g: 0.43950737, b: 0.23529409, a: 1}
-      m_SelectedColor: {r: 0.68235296, g: 0.4735438, b: 0.23529409, a: 1}
+      m_NormalColor: {r: 1, g: 0.89411765, b: 0.8039216, a: 1}
+      m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+      m_PressedColor: {r: 1, g: 0.89411765, b: 0.8039216, a: 1}
+      m_SelectedColor: {r: 1, g: 0.89411765, b: 0.8039216, a: 1}
       m_DisabledColor: {r: 0.6830188, g: 0.6830188, b: 0.6830188, a: 1}
       m_ColorMultiplier: 0
       m_FadeDuration: 0

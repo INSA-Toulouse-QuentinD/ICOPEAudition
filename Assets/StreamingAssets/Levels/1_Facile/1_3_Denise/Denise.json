@@ -37,13 +37,13 @@
         {
           "answerText": "Je ne peux rien faire, je renvois la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation approfondie dans le cadre du parcours ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation approfondie dans le cadre du parcours ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Le test de dépistage gratuit à 35 dB par un audioprothésiste étant suffisant, je lui propose ICOPE Audition",
+          "answerText": "Le test de dépistage gratuit à 35 dB par un audioprothésiste étant suffisant, je lui propose le parcours ICOPE Audition",
           "isCorrect": true,
           "correctionText": "La patiente ayant procédé à une évaluation initiale avec un audioprothésiste, ce qui est équivalent au test de chuchotement ou au test Höra. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale, en cas de doute vous pouvez refaire le test de chuchotement.",
           "rappelTip": "None",
@@ -192,7 +192,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
+          "answerText": "Je continue le parcours ICOPE Audition et je réalise une vidéo-otoscopie",
           "isCorrect": true,
           "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. La vidéo-otoscopie est l'examen à réaliser en suivant.",
           "rappelTip": "None",
@@ -216,7 +216,7 @@
       "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\1_3_cerumen.png",
       "diagnosticPhase": [
         {
-          "answerText": "Il existe une otomycose, je mets en place un traitement par gouttes auriculaire et lui conseille de respecter une éviction aquatique pendant toute la durée du traitement",
+          "answerText": "Il existe une otomycose, je mets en place un traitement par gouttes auriculaire et lui conseille de bien respecter une éviction aquatique pendant toute la durée du traitement",
           "isCorrect": false,
           "correctionText": "Non, ici il s'agit d'un bouchon de cérumen. Si on est face à cette otoscopie (cf. photos), oui on peut prescrire un traitement antifongique local par le médecin délégant si l'évaluation est réalisée par un infirmier délégué et conseiller à la patiente de contrôler chez son médecin traitant à la fin du traitement. Elle sera reconvoquée pour une nouvelle évaluation à distance.",
           "rappelTip": "None",

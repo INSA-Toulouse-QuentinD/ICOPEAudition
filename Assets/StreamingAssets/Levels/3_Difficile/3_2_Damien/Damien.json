@@ -8,7 +8,7 @@
   "age": 75,
   "familySituation": "Vit seul en appartement.",
   "occupationalActivities": "",
-  "context": "Il se plaint de ne plus entendre la télévision, même volume au maximum. Une IDE ICOPE lui a proposé de faire l'évaluation étape 1, dont le test auditif.",
+  "context": "Il se plaint de ne plus entendre la télévision, même volume au maximum. Une IDE ICOPE lui a proposé de faire l'évaluation étape initiale, dont le test auditif.",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [
     {
@@ -24,7 +24,7 @@
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag"
         },
         {
@@ -75,7 +75,7 @@
           "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
+          "answerText": "Je continue le parcours ICOPE Audition et je réalise une vidéo-otoscopie",
           "isCorrect": true,
           "correctionText": "Après un test Go – No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
         },
@@ -85,7 +85,7 @@
         },
         {
           "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
-          "correctionText": "Le test Go – No Go est faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE audition, la prochaine étape à suivre est la vidéo-otoscopie."
+          "correctionText": "Le test Go – No Go est faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE Audition, la prochaine étape à suivre est la vidéo-otoscopie."
         }
       ]
     },

@@ -8,7 +8,7 @@
   "age": 76,
   "familySituation": "",
   "occupationalActivities": "",
-  "context": "Il se plaint d'une difficulté à comprendre les mots. Il a entendu parler du programme ICOPE au salon du sénior l'année dernière. Il a donc pris RDV pour réaliser son dépistage (étape 1), dans son centre médical de proximité.",
+  "context": "Il se plaint d'une difficulté à comprendre les mots. Il a entendu parler du programme ICOPE au salon du sénior l'année dernière. Il a donc pris RDV pour réaliser son dépistage (étape initiale), dans son centre médical de proximité.",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [
     {
@@ -24,7 +24,7 @@
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag"
         },
         {
@@ -52,7 +52,7 @@
           "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go, avant de poursuivre par l'évaluation audiométrique."
         },
         {
-          "answerText": "Je fais passer l'otoscopie",
+          "answerText": "Je fais passer la vidéo-otoscopie",
           "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go – No Go, avant de poursuivre par l'évaluation otoscopique."
         }
       ]
@@ -74,7 +74,7 @@
           "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un test Go – No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
+          "answerText": "Je continue le parcours ICOPE Audition et je réalise une vidéo-otoscopie",
           "isCorrect": true,
           "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. La vidéo-otoscopie est l'examen à réaliser en suivant."
         },
@@ -84,7 +84,7 @@
         },
         {
           "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
-          "correctionText": "Le test Go – No Go est faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE audition, la prochaine étape à suivre est la vidéo-otoscopie."
+          "correctionText": "Le test Go – No Go est faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE Audition, la prochaine étape à suivre est la vidéo-otoscopie."
         }
       ]
     },
@@ -138,7 +138,7 @@
     },
     {
       "type": "AudiometryVocale",
-      "dialoguePatient": "Le résultat de l’audiométrie vocale et vocale dans le bruit retrouve une distorsion et RSB = + 2 dB.",
+      "dialoguePatient": "Le résultat de l'audiométrie vocale et vocale dans le bruit retrouve une distorsion et RSB = + 2 dB.",
       "actionPhase": [
         {
           "answerText": "Je prescris un appareillage",

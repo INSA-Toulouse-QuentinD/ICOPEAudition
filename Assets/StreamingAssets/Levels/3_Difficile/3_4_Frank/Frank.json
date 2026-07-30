@@ -7,7 +7,7 @@
   "age": 70,
   "familySituation": "Vit chez lui et est suivi par une infirmière ASALEE.",
   "occupationalActivities": "",
-  "context": ". Il se plaint de moments où il « entend comme dans une bulle ». Il a fait le test Höra à domicile, résultat pathologique. Adressage pour une évaluation étape 2 de l'audition",
+  "context": ". Il se plaint de moments où il « entend comme dans une bulle ». Il a fait le test Höra à domicile, résultat pathologique. Il vous est adressé pour une évaluation approfondie de l'audition",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [
     {
@@ -23,7 +23,7 @@
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag"
         },
         {
@@ -76,7 +76,7 @@
           "correctionText": "Après un questionnaire Go – No Go orientant vers un cas complexe, il faut adresser le patient à l'ORL."
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
+          "answerText": "Je continue le parcours ICOPE Audition et je réalise une vidéo-otoscopie",
           "correctionText": "Après un questionnaire Go – No Go orientant vers un cas complexe, il faut adresser le patient à l'ORL."
         },
         {

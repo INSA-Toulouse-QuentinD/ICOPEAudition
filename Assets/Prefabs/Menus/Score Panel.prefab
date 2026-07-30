@@ -11420,17 +11420,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2683253072704735945, guid: bb1caf0ed753ff149a489f998ab05a04, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2683253072704735945, guid: bb1caf0ed753ff149a489f998ab05a04, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NextPatientCase
-      objectReference: {fileID: 0}
-    - target: {fileID: 2683253072704735945, guid: bb1caf0ed753ff149a489f998ab05a04, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Managers.GameStateManager, Assembly-CSharp
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1680996604591119563}
     - target: {fileID: 2897328580322957953, guid: bb1caf0ed753ff149a489f998ab05a04, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

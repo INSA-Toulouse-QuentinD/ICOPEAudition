@@ -37,7 +37,7 @@
         {
           "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage semble être anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -101,7 +101,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
+          "answerText": "Je continue le parcours ICOPE Audition et je réalise une vidéo-otoscopie",
           "isCorrect": false,
           "correctionText": "Non, il faut d'abord faire l'interrogatoire avec le questionnaire Go - No Go afin d'identifier un éventuel cas complexe nécessitant une prise en charge par l'ORL.",
           "rappelTip": "None",
@@ -191,7 +191,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je continue le parcours audition et je réalise une vidéo-otoscopie",
+          "answerText": "Je continue le parcours ICOPE Audition et je réalise une vidéo-otoscopie",
           "isCorrect": true,
           "correctionText": "Les étapes précédentes ne suffisent pas à confirmer l'absence d'anomalie auditive. La vidéo-otoscopie est l'examen à réaliser en suivant.",
           "rappelTip": "None",
@@ -217,7 +217,7 @@
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
           "isCorrect": false,
-          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à l'otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
+          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à la vidéo-otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
