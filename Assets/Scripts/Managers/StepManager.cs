@@ -246,8 +246,8 @@ namespace Managers{
         // SET TEXT AND INTERACTION
         /// <summary>
         /// Updates the navigation buttons' interactability and text based on the current interaction state.
-        /// - In IsReading state: disables the return button, enables the confirm/next button with text "Répondre".
-        /// - In IsAnswering state: enables the return button, disables the confirm/next button with text "Suivant".
+        /// - In IsReading state: disables the return button, enables the confirm/next button.
+        /// - In IsAnswering state: enables the return button, disables the confirm/next button.
         /// - In IsCorrection state: 
         ///     - Checks if the current answer is valid (diagnostic or action).
         ///     - If valid, enables confirm/next button and disables return button, setting confirm button text to "Suivant".

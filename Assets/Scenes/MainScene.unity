@@ -617,11 +617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: alwaysRight
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: skipAssistante
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: canAccessAllLevel
@@ -629,11 +629,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: instanteAnimation
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2022124782820224094, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: forcePositionChoice
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2061959279230732702, guid: efdab5c044c0a6349909a677e4e23f48, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

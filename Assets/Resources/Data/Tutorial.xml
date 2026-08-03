@@ -44,7 +44,7 @@ Il vous attend, à vous de jouer !
     <Step Name="Tutorial">
         <Entry>
             <ID>0</ID>
-            <Intitule>Présentation du patient</Intitule>
+            <Intitule>Présentation du patient :</Intitule>
             <Text>Avant de commencer l'examen, vérifiez que le patient a bien présenté une alerte sur le plan de l'audition lors de l'évaluation initiale du programme ICOPE et qu'il est bien éligible à la prise en charge du parcours ICOPE Audition.
 Pour vous aider, une fiche de présentation du patient sera disponible avant chaque examen.
                 
@@ -53,12 +53,12 @@ Prenez le temps de consulter l'ensemble des informations : certaines pourront ê
         </Entry>
         <Entry>
             <ID>1</ID>
-            <Intitule>Passer à la suite</Intitule>
-            <Text>Après avoir pris connaissance de la fiche patiente, cliquez sur « Suivant » pour passer à l'étape suivante.</Text>
+            <Intitule>Passer à la suite :</Intitule>
+            <Text>Après avoir pris connaissance de la fiche patient, cliquez sur « Suivant » pour passer à l'étape suivante.</Text>
         </Entry>
         <Entry>
             <ID>2</ID>
-            <Intitule>Phase de choix</Intitule>
+            <Intitule>Phase de choix :</Intitule>
             <Text>Il est maintenant temps de décider de la prochaine étape pour votre patient.
 Avant de faire votre choix, vous pouvez à tout moment revenir en arrière en cliquant sur le bouton « Précédent » afin de consulter à nouveau les résultats du test ou les informations mises à votre disposition.
                 
@@ -67,7 +67,7 @@ Sélectionnez ensuite l'option qui vous semble la plus adaptée à la question :
         </Entry>
         <Entry>
             <ID>3</ID>
-            <Intitule>Mauvaise réponse</Intitule>
+            <Intitule>Mauvaise réponse :</Intitule>
             <Text>On dirait bien que ce n'est pas la bonne réponse.
 Pas de panique, vous pouvez retourner en arrière pour sélectionner une nouvelle option en cliquant sur le bouton « compris ».
                 
@@ -76,7 +76,7 @@ Prenez le temps de bien lire les informations à votre disposition et de les ana
         </Entry>
         <Entry>
             <ID>4</ID>
-            <Intitule>Bonne réponse</Intitule>
+            <Intitule>Bonne réponse :</Intitule>
             <Text>Félicitations, vous avez fait le bon choix ! Vous pouvez passer à l'étape suivante.
                 
 N'hésitez pas à lire la justification présente en dessous de la réponse pour mieux comprendre les raisons de ce choix.
@@ -84,39 +84,39 @@ N'hésitez pas à lire la justification présente en dessous de la réponse pour
         </Entry>
         <Entry>
             <ID>5</ID>
-            <Intitule>Test du chuchotement</Intitule>
+            <Intitule>Test du chuchotement :</Intitule>
             <Text>Le patient vous indique le nombre de mots qu'il a entendu pour chaque oreille.
 Attendez la fin de l'animation et prenez le temps de lire attentivement les informations affichées afin de faire votre analyse la plus adaptée.</Text>
         </Entry>
         <Entry>
             <ID>6</ID>
-            <Intitule>Questionnaire Go - No Go</Intitule>
+            <Intitule>Questionnaire Go - No Go :</Intitule>
             <Text>Vous venez d'interroger le patient à l'aide du questionnaire Go – No Go. Voici les résultats.
 Prenez le temps d'observer attentivement les réponses afin de faire votre analyse.</Text>
         </Entry>
         <Entry>
             <ID>7</ID>
-            <Intitule>Otoscopie</Intitule>
+            <Intitule>Otoscopie :</Intitule>
             <Text>Vous observez avec l'otoscope l'image suivante. Prenez le temps d'examiner le tympan.</Text>
         </Entry>
         <Entry>
             <ID>8</ID>
-            <Intitule>Questionnaire HHEI-S</Intitule>
+            <Intitule>Questionnaire HHIE-S :</Intitule>
             <Text>Vous venez d'interroger le patient à l'aide du questionnaire HHIE-S. Observez les réponses.</Text>
         </Entry>
         <Entry>
             <ID>9</ID>
-            <Intitule>Test de Weber</Intitule>
+            <Intitule>Test de Weber :</Intitule>
             <Text>Vous venez d'effectuer le test de Weber. Prenez connaissance du ressenti du patient, de quel côté il a perçu le son.</Text>
         </Entry>
         <Entry>
             <ID>10</ID>
-            <Intitule>Audiométrie</Intitule>
+            <Intitule>Audiométrie :</Intitule>
             <Text>Vous venez de réaliser l'audiométrie. Les résultats s'affichent à l'écran. Analysez l'audiogramme.</Text>
         </Entry>
         <Entry>
             <ID>11</ID>
-            <Intitule>Synthèse</Intitule>
+            <Intitule>Synthèse :</Intitule>
             <Text>Félicitations, vous avez terminé la prise en charge du patient !
                 
 Un compte rendu récapitulatif vous indique le nombre de réponses correctes et incorrectes.
@@ -126,27 +126,27 @@ Une fois terminé, refermez le dossier puis cliquez sur le bouton « retour au m
         </Entry>
         <Entry>
             <ID>12</ID>
-            <Intitule>Bouton Rappel</Intitule>
+            <Intitule>Bouton Rappel :</Intitule>
             <Text>Après avoir fait certains choix, un bouton apparaîtra en bas à gauche de l'écran pendant la phase de justification.
 Cliquer sur celui-ci vous permettra de voir des informations ayant pour but de vous faire comprendre vos erreurs ou bien de vous donner plus de précisions.
             </Text>
         </Entry>
         <Entry>
             <ID>13</ID>
-            <Intitule>Agrandir une image</Intitule>
+            <Intitule>Agrandir une image :</Intitule>
             <Text>En cliquant sur une image, celle-ci s'agrandira pour être affichée en plein écran.
 Cela permet de mieux observer les détails et d'avoir une vue plus précise du contenu. Un nouveau clic permet de revenir à l'affichage initial.
             </Text>
         </Entry>
         <Entry>
             <ID>14</ID>
-            <Intitule>Phase de choix - Mauvaise réponse</Intitule>
+            <Intitule>Phase de choix - Mauvaise réponse :</Intitule>
             <Text>Pour ce premier choix, il vous est demandé de cliquer sur l'option « Je réalise une vidéo-otoscopie »</Text>
         </Entry>
         <Entry>
             <ID>15</ID>
-            <Intitule>Synthèse - Partie 2</Intitule>
-            <Text>Cliquez sur le bouton « Fermer le dossier » pour lorsque vous souhaitez terminer la consultation.</Text>
+            <Intitule>Synthèse - Partie 2 :</Intitule>
+            <Text>Cliquez sur le bouton « Fermer le dossier » lorsque vous souhaitez terminer la consultation.</Text>
         </Entry>
     </Step>
 </Tutorial>
