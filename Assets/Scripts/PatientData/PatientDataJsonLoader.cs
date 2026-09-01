@@ -217,8 +217,8 @@ namespace PatientData{
                     }
 
                     step.predefinedAnswer = ConvertYesNo(dto.predefinedAnswer);
-                    if (step.predefinedAnswer.Count != 7 && step.type is Step.GoNoGo) {
-                        GameManager.Instance.JsonErrorAdd($"{errorText} doit avoir 7 predefinedAnswer !");
+                    if (step.predefinedAnswer.Count != 6 && step.type is Step.GoNoGo) {
+                        GameManager.Instance.JsonErrorAdd($"{errorText} doit avoir 6 predefinedAnswer !");
                     }
                     
                     step.discussion = dto.discussion;

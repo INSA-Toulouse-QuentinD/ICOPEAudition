@@ -29,8 +29,7 @@ namespace PatientData.Steps{
             int max = Mathf.Min(answers.Count, testMeshes.Length);
 
             for (int i = 0; i < max; i++) {
-                testMeshes[i].text = "- " + questions[i].questionText + " " +
-                                     (answers[i] == YesNo.Yes ? "<b>Oui</b>" : "<b>Non</b>");
+                testMeshes[i].text = "- " + questions[i].questionText + "\n" + (answers[i] == YesNo.Yes ? "<b>Oui</b>" : "<b>Non</b>");
             }
         }
 

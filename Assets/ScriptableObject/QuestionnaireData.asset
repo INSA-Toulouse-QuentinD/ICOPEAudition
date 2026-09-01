@@ -13,28 +13,23 @@ MonoBehaviour:
   m_Name: QuestionnaireData
   m_EditorClassIdentifier: 
   questions:
-  - questionText: "Etes-vous devenu sourd brutalement ou avez-vous une surdit\xE9
+  - questionText: "\xCAtes-vous devenu sourd brutalement et/ou avez-vous une surdit\xE9
       qui varie dans le temps ?"
   - questionText: "Avez-vous une perte d\u2019audition (g\xE8ne auditive) qui touche
-      une seule oreille ou une perte d\u2019audition qui pr\xE9domine d\u2019un c\xF4t\xE9
-      ?"
+      une seule oreille et/ou une perte d\u2019audition qui pr\xE9domine d\u2019un
+      c\xF4t\xE9\_?"
   - questionText: "Avez-vous des acouph\xE8nes (les \xAB oreilles qui sifflent \xBB
-      ou qui \xAB bourdonnent \xBB ou entendez-vous des grincements\u2026) d\u2019un
-      seul c\xF4t\xE9 ?"
-  - questionText: "Avez-vous l\u2019impression que les sons que vous entendez suivent
-      le rythme de votre c\u0153ur (acouph\xE8nes pulsatiles) ou sont \xE9volutifs
-      ? "
-  - questionText: "Souffrez-vous d\u2019une hypersensibilit\xE9 ou d\u2019une intol\xE9rance
-      aux bruits (hyperacousie) par exemple aux bruits de la vie quotidienne (foule,
-      circulation \u2026) ou dans certains environnements bruyants (concerts, cin\xE9ma\u2026)
-      ou quand vous \xEAtes expos\xE9s \xE0 certains sons (klaxons, sonneries\u2026)
-      ? "
-  - questionText: "Avez-vous des vertiges c \xE0 d \xAB la t\xEAte qui tourne \xBB
-      (l\u2019impression que tout tourne autour de vous de D \xE0 G, de G \xE0 D
-      ou d\u2019avant en arri\xE8re) ou avez-vous des troubles de l\u2019\xE9quilibre
-      comme \xEAtre attir\xE9 d\u2019un c\xF4t\xE9 quand vous vous d\xE9placez ou
-      que vous changez de position comme si vous \xE9tiez ivre ? "
-  - questionText: "Avez-vous eu mal aux oreilles, un \xE9coulement ou un saignement
-      au niveau des oreilles ? Avez-vous \xE9t\xE9 suivi ou \xEAtes-vous suivi pour
-      une maladie des oreilles par exemple une maladie de Meni\xE8re, un chol\xE9
-      st\xE9atome, un neurinome ? "
+      ou qui \xAB bourdonnent \xBB et/ou entendez-vous des grincements\u2026) d\u2019un
+      seul c\xF4t\xE9 ? Avez-vous l\u2019impression que les sons que vous entendez
+      suivent le rythme de votre c\u0153ur (acouph\xE8nes pulsatiles) et sont \xE9volutifs
+      ?"
+  - questionText: "Souffrez-vous d\u2019une hypersensibilit\xE9 et/ou d\u2019une
+      intol\xE9rance aux bruits (hyperacousie) par exemple aux bruits de la vie quotidienne
+      (foule, circulation \u2026) et/ou dans certains environnements bruyants (concerts,
+      cin\xE9ma\u2026) et/ou quand vous \xEAtes expos\xE9s \xE0 certains sons (klaxons,
+      sonneries\u2026) ?"
+  - questionText: "Avez-vous des vertiges rotatoires et/ou des troubles de l\u2019\xE9quilibre\_?"
+  - questionText: "Avez-vous eu mal aux oreilles, un \xE9coulement et/ou un saignement
+      au niveau des oreilles ? Avez-vous \xE9t\xE9 suivi et/ou \xEAtes-vous suivi
+      pour une maladie des oreilles par exemple une maladie de M\xE9ni\xE8re, un
+      cholest\xE9atome, un neurinome ?"

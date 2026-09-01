@@ -9,7 +9,7 @@
   "familySituation": "Vit en résidence senior autonome",
   "occupationalActivities": "",
   "context": "Il se plaint de ne plus entendre la télévision, même volume au maximum. Une IDE ICOPE lui a proposé de faire l'évaluation étape initiale, dont le test auditif.",
-  "medicalHistory": "Aucun antécédent ORL connu.$",
+  "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [
     {
       "type": "CasePresentation",
@@ -61,7 +61,6 @@
     {
       "type": "GoNoGo",
       "predefinedAnswer": [
-        "No",
         "No",
         "No",
         "No",
