@@ -2940,6 +2940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSelector: {fileID: 1313396014788797188}
+  leaveButton: {fileID: 7855020362016588262}
   canAccessAllLevel: 1
   instanteAnimation: 1
   skipAssistante: 0
@@ -4174,6 +4175,11 @@ RectTransform:
 --- !u!1 &5673527906439566191 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5054758546005955579, guid: 3499563e7acc0164ca20a6475e3459bd, type: 3}
+  m_PrefabInstance: {fileID: 619939358917951636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7855020362016588262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7320835292487942514, guid: 3499563e7acc0164ca20a6475e3459bd, type: 3}
   m_PrefabInstance: {fileID: 619939358917951636}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &750477324079047284

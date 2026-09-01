@@ -28,6 +28,7 @@ namespace Managers{
         private PatientAnimation PatientAnimation{ get; set; }
         private StepManager StepManager{ get; set; }
         public LevelSelector levelSelector;
+        public GameObject leaveButton;
 
         #region Structures
 
@@ -290,6 +291,10 @@ namespace Managers{
         void Start(){
             // Check validity of tutorial XML
             XmlManager.ValidateXML(_pathXmlFile, _pathXsdFile);
+            
+#if UNITY_WEBGL && !UNITY_EDITOR
+            leaveButton.SetActive(false);
+#endif
 
             StartCoroutine(PatientDataJsonLoader.LoadLevelData(
                 levels => {
@@ -343,6 +348,10 @@ namespace Managers{
             Debug.LogError(error);
             jsonButton.SetActive(true);
             Instantiate(logPrefab, jsonInfoContent).GetComponent<TextMeshProUGUI>().text = error;
+        }
+
+        public void Leave() {
+            Application.Quit();
         }
     }
 }
