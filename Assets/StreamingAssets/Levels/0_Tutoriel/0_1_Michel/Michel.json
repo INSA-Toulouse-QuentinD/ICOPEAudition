@@ -381,7 +381,7 @@
           "isCorrect": false,
           "correctionText": "Un bouchon de cérumen est identifiable lors de l'examen otoscopique et non lors du test de Weber acoumétrique ! S'il y avait un bouchon de cérumen côté droit, avec une otoscopie normale à gauche, on pourrait s'attendre à retrouver un Weber latéralisé à droite s'il est obstructif (et à condition qu'il n'existe pas d'autre cause sous-jacente d'asymétrie auditive), mais le diagnostic du bouchon de cérumen resterait clinique et serait surtout réalisé avant !",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
+          "spriteJustification1": "",
           "spriteJustification2": ""
         }
       ],
@@ -414,7 +414,7 @@
           "isCorrect": false,
           "correctionText": "Ici l'examen otoscopique est normal, le Weber est en plus centré : il n'y aucun argument évoquant la présence d'un bouchon de cérumen.\n\nEn revanche, si à l'examen on retrouve un bouchon de cérumen, il faut le retirer (si pas de contre-indication) AVANT de réaliser le test de Weber acoumétrique, autrement les réponses seront en lien avec la surdité occasionnée par ce bouchon de cérumen.",
           "rappelTip": "Bdc",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
+          "spriteJustification1": "",
           "spriteJustification2": ""
         }
       ]
@@ -460,7 +460,7 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Je recommande un traitement antibiotique pour améliorer l'audition de Monsieur Dupont",
+          "answerText": "Je recommande un traitement antibiotique pour améliorer l'audition de Mr Dupont",
           "isCorrect": false,
           "correctionText": "Les antibiotiques n'ont aucun effet sur une surdité de perception comme la presbyacousie.",
           "rappelTip": "None",
@@ -468,7 +468,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je propose une chirurgie de l'oreille moyenne pour corriger cette perte auditive",
+          "answerText": "Je propose une chirurgie de l'oreille moyenne à Mr Dupont pour corriger cette perte auditive",
           "isCorrect": false,
           "correctionText": "La chirurgie est indiquée dans certaines surdités de transmission, mais <b>pas</b> dans la presbyacousie, qui est une atteinte de l'oreille interne.",
           "rappelTip": "None",
@@ -476,7 +476,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je rassure Monsieur Dupont que son audition est dans la norme et qu'aucune prise en charge n'est nécessaire",
+          "answerText": "Je rassure Mr Dupont que son audition est dans la norme et qu'aucune prise en charge n'est nécessaire",
           "isCorrect": false,
           "correctionText": "Non, l'audiogramme montre une surdité bilatérale avérée, donc <b>une prise en charge est indispensable</b>, notamment par appareillage.",
           "rappelTip": "None",
@@ -484,7 +484,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "En accord avec votre médecin référent, une prescription de prothèse auditive est délivrée à Monsieur Dupont",
+          "answerText": "En accord avec votre médecin référent, une prescription de prothèse auditive est délivrée à Mr Dupont",
           "isCorrect": true,
           "correctionText": "Oui, l'audiogramme montre une surdité bilatérale avérée, donc <b>une prise en charge est indispensable</b>, notamment par appareillage.",
           "rappelTip": "Appareil",

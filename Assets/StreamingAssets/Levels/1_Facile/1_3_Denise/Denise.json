@@ -35,7 +35,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je ne peux rien faire, je renvois la patiente vers l'ORL",
+          "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
           "isCorrect": false,
           "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation approfondie dans le cadre du parcours ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag",
@@ -45,7 +45,7 @@
         {
           "answerText": "Le test de dépistage gratuit à 35 dB par un audioprothésiste étant suffisant, je lui propose le parcours ICOPE Audition",
           "isCorrect": true,
-          "correctionText": "La patiente ayant procédé à une évaluation initiale avec un audioprothésiste, ce qui est équivalent au test de chuchotement ou au test Höra. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale, en cas de doute vous pouvez refaire le test de chuchotement.",
+          "correctionText": "La patiente a procédé à une évaluation initiale avec un audioprothésiste, ce qui est équivalent au test de chuchotement ou au test Höra. En cas de doute vous pouvez refaire le test de chuchotement.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -70,7 +70,7 @@
         {
           "answerText": "Il y a une anomalie car elle n'a pas su restituer au moins 3 mots de chaque côté",
           "isCorrect": true,
-          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si la patiente est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, la patiente a répété <b>0 mots sur 4</b> pour l'oreille droite et <b>2 mots sur 4</b> pour l'oreille gauche, ce qui est <b>en dessous du seuil requis</b>.\nCela indique une <b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
+          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si la patiente est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, la patiente a répété <b>0 mots sur 4</b> pour l'oreille droite et <b>2 mots sur 4</b> pour l'oreille gauche, ce qui est <b>en dessous du seuil requis</b>.\nCela indique un risque d'<b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -225,7 +225,7 @@
         {
           "answerText": "Il s'agit d'un bouchon de cérumen, je propose de procéder à l'ablation du bouchon en utilisation la méthode de l'irrigation",
           "isCorrect": true,
-          "correctionText": "Oui, selon la formation et la forme du bouchon de cérumen, on peut aussi procéder   à une aspiration (bouchons à la sortie du conduit auditif externe, plutôt mous) ou encore les méthodes avec curette si le bouchon est latéral et qu'il est possible de glisser la curette entre le bouchon et la paroi du conduit auditif externe.",
+          "correctionText": "Oui, selon la formation et la forme du bouchon de cérumen, on peut aussi procéder à une aspiration (bouchons à la sortie du conduit auditif externe, plutôt mous) ou encore les méthodes avec curette si le bouchon est latéral et qu'il est possible de glisser la curette entre le bouchon et la paroi du conduit auditif externe.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -259,7 +259,7 @@
         {
           "answerText": "Son otoscopie est normale, je peux lui faire passer le questionnaire HHIE-S",
           "isCorrect": false,
-          "correctionText": "Non, d'abord on répète le dépistage, par exemple avec le test de chuchotement.",
+          "correctionText": "Non, d'abord on répète le dépistage, par exemple avec le test de chuchotement pour vérifier si l'anomalie persiste.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -313,7 +313,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Le test est anormal, on enchaîne avec le questionnaire HHIE-S, tout en gardant à l'esprit cette confusion phonémique, qui nous poussera à réaliser ensuite l'évaluation de la cognition",
+          "answerText": "Le test est anormal, on poursuit avec le questionnaire HHIE-S, tout en gardant à l'esprit cette confusion phonémique, qui nous poussera à réaliser ensuite l'évaluation de la cognition",
           "isCorrect": false,
           "correctionText": "Non, on retrouve fréquemment des confusions phonémiques dans les premiers stades de la surdité. Ici, elle a répété pratiquement tous les mots, on peut donc considérer son test rassurant. Le test Höra était certainement atteint initialement en raison du bouchon de cérumen qui a pu provoquer une asymétrie auditive et donc une gêne dans le bruit.",
           "rappelTip": "None",

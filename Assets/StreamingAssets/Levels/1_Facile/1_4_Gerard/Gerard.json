@@ -61,7 +61,7 @@
         {
           "answerText": "Le test est normal car le patient a réussi à entendre au moins un mot de chaque côté",
           "isCorrect": false,
-          "correctionText": "Non, le test est bien pathologique. Le test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.",
+          "correctionText": "Non, le test est bien pathologique. Le <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -69,7 +69,7 @@
         {
           "answerText": "Il n'y a pas d'anomalie auditive car la performance est identique des deux côtés",
           "isCorrect": false,
-          "correctionText": "Non, même si la performance est symétrique, elle est <b>anormalement basse</b> des deux côtés. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>au moins 3 mots</b> sur 4 au patient pour chaque oreille.\n\nLe test est considéré comme normal lorsque le patient répète correctement 3 ou 4 mots par oreille.",
+          "correctionText": "Non, même si la performance est symétrique, elle est <b>anormalement basse</b> des deux côtés. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>au moins 3 mots</b> sur 4 au patient pour chaque oreille.\n\nLe <b>critère normal</b> pour considérer qu'il n'y a <b>pas d'anomalie auditive</b> est la <b>répétition correcte de l'ensemble des 4 mots</b> (ou 3 mots minimum par oreille).",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -77,7 +77,7 @@
         {
           "answerText": "Le test est anormal car le patient n'a pas su répéter au moins 3 mots sur 4 de chaque côté",
           "isCorrect": true,
-          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si le patient est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, le patient n'a su répéter que <b>2 mots sur 4</b> pour <b>chaque côté</b>, ce qui est <b>en dessous du seuil requis</b>.\nCela indique une <b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
+          "correctionText": "Lors du <b>test de chuchotement</b>, on considère que l'audition est <b>normale</b> si le patient est capable de <b>répéter correctement au moins 3 mots sur 4</b> pour <b>chaque oreille</b>.\nDans ce cas, le patient n'a su répéter que <b>2 mots sur 4</b> pour <b>chaque côté</b>, ce qui est <b>en dessous du seuil requis</b>.\nCela indique un risque d'<b>atteinte de l'audition bilatérale</b>, car <b>aucun des deux côtés</b> n'atteint le critère minimal de <b>3 mots correctement restitués sur 4</b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

@@ -8,7 +8,7 @@
   "age": 72,
   "familySituation": "Veuve et ancienne professeure de tango à la retraite.",
   "occupationalActivities": "Elle continue la danse lors de bals.",
-  "context": "Madame Durand est adressée par son médecin généraliste. Il a effectué l'évaluation initiale avec un test de chuchotement anormal. Aucun mot restitué à l'oreille droite et un seul mot restitué à l'oreille gauche.",
+  "context": "Mme Durand est adressée par son médecin généraliste. Il a effectué l'évaluation initiale avec un test de chuchotement anormal. Aucun mot restitué à l'oreille droite et un seul mot restitué à l'oreille gauche.",
   "medicalHistory": "Néoplasie mammaire en rémission et des aérateurs trans-tympaniques dans l'enfance.",
   "steps": [
     {
@@ -174,7 +174,7 @@
         {
           "answerText": "Je réalise le questionnaire HHIE-S pour savoir si je dois ou non retirer le bouchon de cérumen",
           "isCorrect": false,
-          "correctionText": "Non car c'est un bouchon de cérumen. Il faut réaliser un diagnostic clinique, si le bouchon de cérumen est non obstructif ou asymptomatique et ne gênant pas l'examen : on ne le retire pas, dans les autres cas on le retire.",
+          "correctionText": "Non, car c'est un bouchon de cérumen. Il faut réaliser un diagnostic clinique, si le bouchon de cérumen est non obstructif ou asymptomatique et ne gênant pas l'examen : on ne le retire pas, dans les autres cas on le retire.",
           "rappelTip": "Bdc",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -182,13 +182,13 @@
         {
           "answerText": "J'adresse la patiente vers l'ORL",
           "isCorrect": false,
-          "correctionText": "Non car il n'y a aucun drapeau rouge. Les aérateurs trans-tympaniques dans l'enfance sont fréquents et ne constituent pas une contre-indication. Il y a une contre-indication s'il y a la présence d'un aérateur trans-tympanique récent, car il y a un risque de perforation.",
+          "correctionText": "Non, car il n'y a aucun drapeau rouge. Les aérateurs trans-tympaniques dans l'enfance sont fréquents et ne constituent pas une contre-indication. Il y a une contre-indication s'il y a la présence d'un aérateur trans-tympanique récent, car il y a un risque de perforation.",
           "rappelTip": "RedFlag",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je propose de procéder à l'ablation du bouchon de cérumen en utilisation la méthode de l'irrigation",
+          "answerText": "Je propose de procéder à l'ablation du bouchon de cérumen en utilisant la méthode de l'irrigation",
           "isCorrect": true,
           "correctionText": "Oui, selon la formation et la forme du bouchon de cérumen, on peut aussi procéder à une aspiration.",
           "rappelTip": "None",
@@ -206,7 +206,7 @@
         {
           "answerText": "Cette otoscopie peut être considérée comme normale, en tous cas, cet aspect n'est généralement pas associé à une surdité",
           "isCorrect": true,
-          "correctionText": "Oui, la myringosclérose ou tympanosclérose est fréquente, il s'agit d'une infiltration hyaline de la membrane tympanique. Elle est asymptomatique et n'est pas responsable de surdité. On retrouve fréquemment des antécédents d'otites à répétition dans l'enfance, ce qui colle assez bien avec son antécédent de pose d'aérateur trans-tympanique dans l'enfance.",
+          "correctionText": "Oui, la myringosclérose ou tympanosclérose est fréquente, il s'agit d'une infiltration hyaline de la membrane tympanique. Elle est asymptomatique et n'est pas responsable de surdité. On retrouve fréquemment des antécédents d'otites à répétition dans l'enfance, ce qui colle assez bien avec son antécédent de pose d'aérateurs trans-tympaniques dans l'enfance.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -222,13 +222,13 @@
         {
           "answerText": "Ces lésions blanchâtres de la membrane tympanique évoquent une otomycose",
           "isCorrect": false,
-          "correctionText": "Non, dans l'otomycose on retrouve des dépôts blanchâtres, ou des tiges aspergillaires, ou encore des écoulements dans le conduit auditif externe. Elles sont fréquemment associées à des facteurs de risques tel qu'un diabète mal équilibré, une macération du conduit auditif externe (baignades fréquentes, appareils auditifs, perforation tympanique suintante, lésions chroniques du conduit auditif externe comme l'eczéma ou des lésions par introduction répétées de corps étrangers.",
+          "correctionText": "Non, dans l'otomycose on retrouve des dépôts blanchâtres, ou des tiges aspergillaires, ou encore des écoulements dans le conduit auditif externe. Elles sont fréquemment associées à des facteurs de risques tel qu'un diabète mal équilibré, une macération du conduit auditif externe (baignades fréquentes, appareils auditifs, perforation tympanique suintante, lésions chroniques du conduit auditif externe comme l'eczéma ou des lésions par introduction répétées de corps étrangers).",
           "rappelTip": "Tympan",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_1.png",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Ces lésions de la membrane tympaniques sont corrélées avec l'avancée en âge. On les retrouve fréquemment chez les presbyacousiques",
+          "answerText": "Ces lésions de la membrane tympanique sont corrélées avec l'avancée en âge. On les retrouve fréquemment chez les presbyacousiques",
           "isCorrect": false,
           "correctionText": "Non, ce ne sont pas des lésions liées au vieillissement de la membrane.",
           "rappelTip": "Tympan",
@@ -280,7 +280,7 @@
         {
           "answerText": "Le test est normal",
           "isCorrect": false,
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> de chaque côté.\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété les 3 mots minimum de chaque côté.",
+          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> de chaque côté.\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété au moins 3 mots de chaque côté.",
           "rappelTip": "Wisper",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -322,7 +322,7 @@
         {
           "answerText": "Je rassure la patiente et lui prodigue des conseils pour l'hygiène auriculaire",
           "isCorrect": false,
-          "correctionText": "Non le test est pathologique, il faut continuer l'évaluation. En revanche, il faut bien entendu lui rappeler les consignes d'hygiène auriculaire.",
+          "correctionText": "Non, le test est pathologique, il faut continuer l'évaluation. En revanche, il faut bien entendu lui rappeler les consignes d'hygiène auriculaire.",
           "rappelTip": "Hygiene",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -370,7 +370,7 @@
         {
           "answerText": "Le résultat suggère que les troubles auditifs sont uniquement liés à une fatigue passagère",
           "isCorrect": false,
-          "correctionText": "Le score est > à 8/40 ce qui signifie que la patiente est probablement atteinte d'une déficience auditive. Il est nécessaire de poursuivre par un bilan audiométrique pour confirmer les critères éligibilités à un appareillage selon les critères actuellement admis en France.",
+          "correctionText": "Le score est > à 8/40 ce qui signifie que la patiente est probablement atteinte d'une déficience auditive. Il est nécessaire de poursuivre par un bilan audiométrique pour confirmer les critères d'éligibilité à un appareillage selon les critères actuellement admis en France.",
           "rappelTip": "Hhies",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -422,7 +422,7 @@
           "isCorrect": false,
           "correctionText": "Un bouchon de cérumen est identifiable lors de l'examen otoscopique et non lors du test de Weber acoumétrique ! S'il y avait un bouchon de cérumen côté droit, avec une otoscopie normale à gauche, on pourrait s'attendre à retrouver un Weber latéralisé à droite s'il est obstructif (et à condition qu'il n'existe pas d'autre cause sous-jacente d'asymétrie auditive), mais le diagnostic du bouchon de cérumen resterait clinique et serait surtout réalisé avant !",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
+          "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
@@ -534,7 +534,7 @@
         {
           "answerText": "Je prescris à la patiente un appareillage audio-prothétique bilatéral",
           "isCorrect": true,
-          "correctionText": "Oui, ici on reste dans le cadre du parcours ICOPE Audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. En tant que médecin généraliste formé à l'otologie médicale, je peux lui prescrire un appareillage audio-prothétique sans avoir besoin de l'adresser vers l'ORL.",
+          "correctionText": "Oui, ici on reste dans le cadre du parcours ICOPE Audition simple, puisqu'on a une surdité neurosensorielle bilatérale et symétrique, qui prédomine sur les aigus et qui évoque donc une presbyacousie. La prescription d'un appareillage audio-prothétique peut être réalisée par un médecin formé à l'otologie médicale, sans avoir besoin de l'adresser vers l'ORL.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""

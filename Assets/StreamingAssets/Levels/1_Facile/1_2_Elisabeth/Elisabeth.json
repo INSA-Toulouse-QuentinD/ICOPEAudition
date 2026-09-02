@@ -6,9 +6,9 @@
   "lastName": "MARTIN",
   "firstName": "Elisabeth",
   "age": 67,
-  "familySituation": "Vit seule, sans enfants, il s'agit d'une ancienne professeure de lettre.",
+  "familySituation": "Vit seule, sans enfants, il s'agit d'une ancienne professeure de lettres.",
   "occupationalActivities": "Elle dirige un club de lecture.",
-  "context": "Étape 1 réalisée en auto-évaluation complétée avec l'auto-dépistage auditif de l'application Höra.",
+  "context": "Évaluation initiale réalisée en auto-évaluation complétée avec l'auto-dépistage auditif de l'application Höra.",
   "medicalHistory": "Non connus.",
   "steps": [
     {
@@ -110,8 +110,8 @@
           "correctionText": "Oui, on recherche d'abord des signes évocateurs d'une surdité complexe nécessitant l'adressage vers l'ORL."
         },
         {
-          "answerText": "Je l'adresse chez l'ORL",
-          "correctionText": "Non, à ce stade il est possible de lui proposer le parcours ICOPE Audition car elle n'est pas encore pris en charge."
+          "answerText": "Je renvoie la patiente vers un ORL",
+          "correctionText": "Non, à ce stade il est possible de lui proposer le parcours ICOPE Audition car elle n'est pas encore prise en charge."
         }
       ]
     },
@@ -141,7 +141,7 @@
         {
           "answerText": "Je l'adresse chez l'ORL",
           "isCorrect": true,
-          "correctionText": "Oui, il s'agit d'une surdité fluctuante et vertige : 2 raisons de l'adresser. Tableau très évocateur d'une maladie de Ménière."
+          "correctionText": "Oui, il s'agit d'une surdité fluctuante et vertiges : 2 raisons de l'adresser. Tableau très évocateur d'une maladie de Ménière."
         }
       ]
     }
