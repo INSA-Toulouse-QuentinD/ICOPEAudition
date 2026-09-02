@@ -113,25 +113,25 @@
     },
     {
       "type": "HhiesWeber",
-      "dialoguePatient": "Son score au questionnaire HHIE-S est de 30 et le test de Weber est symétrique.",
+      "dialoguePatient": "Son score au questionnaire HHIE-S est de 30 et le test de Weber acoumétrique est symétrique.",
       "spriteEarExams": "Images\\Steps\\HHIE-S\\30_HHIES.png",
       "actionPhase": [
         {
           "answerText": "Je fais un bilan cognitif",
-          "correctionText": "Le questionnaire HHIE-S n'est pas un test de dépistage cognitif. Un résultat a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. Il faut réaliser le bilan audiométrique."
+          "correctionText": "Le questionnaire HHIE-S n'est pas un test de dépistage cognitif. Un résultat a 30 est faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
         },
         {
           "answerText": "J'adresse le patient vers l'ORL",
-          "correctionText": "Il n'y a pas d'argument en faveur d'une situation complexe. Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. Il faut réaliser le bilan audiométrique."
+          "correctionText": "Il n'y a pas d'argument en faveur d'une situation complexe. Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
         },
         {
           "answerText": "Je fais une audiométrie",
           "isCorrect": true,
-          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. L'étape suivante est le bilan audiométrique."
+          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. L'étape suivante est le bilan audiométrique."
         },
         {
           "answerText": "Je prescris une prothèse auditive",
-          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber est centré. Il faut réaliser le bilan audiométrique pour vérifier l'indication avant de prescrire.",
+          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique pour vérifier l'indication avant de prescrire.",
           "rappelTip": "Prescription"
         }
       ]

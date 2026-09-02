@@ -119,9 +119,9 @@
           "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un questionnaire HHIE-S orientant vers un cas simple, l'étape suivante est le test de Weber acoumétrique."
         },
         {
-          "answerText": "Je continue le parcours ICOPE Audition et je réalise le test de Weber",
+          "answerText": "Je continue le parcours ICOPE Audition et je réalise le test de Weber acoumétrique",
           "isCorrect": true,
-          "correctionText": "Un score de 14/40 se situe dans la catégorie handicap auditif léger à modéré. Cela suppose que la personne ressent une gêne auditive dans sa vie quotidienne. Il s'agit d'un questionnaire de dépistage, il faut compléter l'évaluation par un bilan audiométrique (acoumétrie + audiométrie). On poursuit donc le parcours ICOPE Audition avec le test de Weber."
+          "correctionText": "Un score de 14/40 se situe dans la catégorie handicap auditif léger à modéré. Cela suppose que la personne ressent une gêne auditive dans sa vie quotidienne. Il s'agit d'un questionnaire de dépistage, il faut compléter l'évaluation par un bilan audiométrique (acoumétrie + audiométrie). On poursuit donc le parcours ICOPE Audition avec le test de Weber acoumétrique."
         },
         {
           "answerText": "Je rassure la patiente et je mets fin au parcours Audition, les premiers tests étant normaux",

@@ -139,6 +139,16 @@ namespace Managers{
             GameManager.Instance.LoadStep(_currentStep);
         }
 
+        public string MessageScoreToShow() {
+            if (_currentPatientCase + 1 < _patientCaseLevel.patientsCase.Count) {
+                return "Tu as débloqué un nouveau cas.";
+            }
+            if (_currentLevel + 1 < levelsData.patientByLevel.Count) {
+                return "Tu as débloqué un nouveau niveau.";
+            }
+            return "Tu as terminé tous les cas.";
+        }
+
         /// <summary>
         /// Advances the game to the next level and patient case if available.
         /// If the current level is less than the total number of levels, it sets the current level and patient case,

@@ -549,6 +549,7 @@ GameObject:
   - component: {fileID: 2807817132277226699}
   - component: {fileID: 5910098676803513722}
   - component: {fileID: 7420839092361678918}
+  - component: {fileID: 689224284837021490}
   m_Layer: 5
   m_Name: DoctorSprite
   m_TagString: Untagged
@@ -573,7 +574,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -231, y: 257.45}
-  m_SizeDelta: {x: 381.65, y: 989.89}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5910098676803513722
 CanvasRenderer:
@@ -603,7 +604,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4467637358421277366, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d179d031c555ea94f97cb46ac0980b27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -613,6 +614,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &689224284837021490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270018295728955741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 2
 --- !u!1 &311767418031510285
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,10 +873,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5531762145750269782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 249.99, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 179.995, y: -11.175}
+  m_SizeDelta: {x: 249.99, y: 22.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2759575296142013550
 CanvasRenderer:
@@ -1149,12 +1163,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4387366092808328758}
+  - {fileID: 4996382355398015660}
   m_Father: {fileID: 3287337500620218507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 129, y: 76.17}
+  m_AnchoredPosition: {x: 130, y: 76.17}
   m_SizeDelta: {x: 1126.4, y: 1126.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5085802464962694940
@@ -1551,6 +1567,7 @@ GameObject:
   - component: {fileID: 4207182999305623333}
   - component: {fileID: 5142884758321996845}
   - component: {fileID: 2960907693165178467}
+  - component: {fileID: 786692807524845023}
   m_Layer: 5
   m_Name: DoctorSprite
   m_TagString: Untagged
@@ -1574,8 +1591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 590, y: -74}
-  m_SizeDelta: {x: 345, y: 895}
+  m_AnchoredPosition: {x: 582, y: -118}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5142884758321996845
 CanvasRenderer:
@@ -1605,7 +1622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4467637358421277366, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d179d031c555ea94f97cb46ac0980b27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1615,6 +1632,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &786692807524845023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679934920271615913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 2
 --- !u!1 &680689311876384109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,6 +2081,7 @@ GameObject:
   - component: {fileID: 2923711428865998948}
   - component: {fileID: 7784346819900532007}
   - component: {fileID: 3485771051578907074}
+  - component: {fileID: 5352752944444932022}
   m_Layer: 5
   m_Name: DoctorSprite
   m_TagString: Untagged
@@ -2075,7 +2106,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 242, y: 351}
-  m_SizeDelta: {x: 345, y: 895}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7784346819900532007
 CanvasRenderer:
@@ -2105,7 +2136,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4467637358421277366, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d179d031c555ea94f97cb46ac0980b27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2115,6 +2146,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5352752944444932022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902688719515889942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 2
 --- !u!1 &919757414945135659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,10 +2897,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 945698690697531751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -179.725}
+  m_SizeDelta: {x: 290, y: 45.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9128161756759562522
 CanvasRenderer:
@@ -2990,10 +3034,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 625190884502905197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 45, y: -11.175}
+  m_SizeDelta: {x: 90, y: 22.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4156190269176780223
 CanvasRenderer:
@@ -3199,8 +3243,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1981449725533815328}
-  - {fileID: 4996382355398015660}
-  - {fileID: 4387366092808328758}
   - {fileID: 9215657555414050177}
   - {fileID: 8917680552711946109}
   - {fileID: 7941747881445930483}
@@ -3234,6 +3276,7 @@ MonoBehaviour:
   content: {fileID: 4838795224576825172}
   patientSprite: {fileID: 1074763927822671144}
   bulleTextPatient: {fileID: 5246156572579987361}
+  questionnaire: {fileID: 524365829681293897}
   textPatient: {fileID: 8094073505627003493}
 --- !u!1 &1835067898885469811
 GameObject:
@@ -3397,6 +3440,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7138659159285848839}
+  - {fileID: 1062445875163389249}
   - {fileID: 8078486887911568108}
   m_Father: {fileID: 3961489100253045115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3551,6 +3595,7 @@ GameObject:
   - component: {fileID: 8469937598615027399}
   - component: {fileID: 5951391704035360127}
   - component: {fileID: 4144962391655270116}
+  - component: {fileID: 711297781036675560}
   m_Layer: 5
   m_Name: DoctorSprite
   m_TagString: Untagged
@@ -3575,7 +3620,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 17, y: -198}
-  m_SizeDelta: {x: 345, y: 895}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5951391704035360127
 CanvasRenderer:
@@ -3605,7 +3650,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4467637358421277366, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d179d031c555ea94f97cb46ac0980b27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3615,6 +3660,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &711297781036675560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2157393860499368092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 2
 --- !u!1 &2180251482561939263
 GameObject:
   m_ObjectHideFlags: 0
@@ -4322,6 +4380,7 @@ GameObject:
   - component: {fileID: 7941747881445930483}
   - component: {fileID: 6954353954429971909}
   - component: {fileID: 3477811828678157496}
+  - component: {fileID: 3045221433776712427}
   m_Layer: 5
   m_Name: Doctor
   m_TagString: Untagged
@@ -4338,15 +4397,15 @@ RectTransform:
   m_GameObject: {fileID: 2442946507760672280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3287337500620218507}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -189, y: 353}
-  m_SizeDelta: {x: 378, y: 1153}
+  m_AnchoredPosition: {x: -242, y: 349}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6954353954429971909
 CanvasRenderer:
@@ -4376,7 +4435,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7980856816745209919, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50628ca30e3553240ada79648f3c32de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4386,6 +4445,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3045221433776712427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2442946507760672280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 0
 --- !u!1 &2450068558695647011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5760,10 +5832,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 625190884502905197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 217.92, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 198.95999, y: -11.175}
+  m_SizeDelta: {x: 217.92, y: 22.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1795219787311977170
 CanvasRenderer:
@@ -6213,11 +6285,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3287337500620218507}
+  m_Father: {fileID: 1981449725533815328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 134.62, y: -144.33002}
+  m_AnchoredPosition: {x: 5.619995, y: -243.70001}
   m_SizeDelta: {x: 660, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6068274850541453247
@@ -6839,6 +6911,95 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &3994922717946389962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062445875163389249}
+  - component: {fileID: 5185949970841084997}
+  - component: {fileID: 5777476534290496605}
+  - component: {fileID: 3090678617952456390}
+  m_Layer: 5
+  m_Name: DoctorBadSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1062445875163389249
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994922717946389962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8876799706393035373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 283, y: -126.5}
+  m_SizeDelta: {x: 683, y: 1024}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5185949970841084997
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994922717946389962}
+  m_CullTransparentMesh: 1
+--- !u!114 &5777476534290496605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994922717946389962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: bf377c21dc30c1a4491f91acca8c8eab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3090678617952456390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994922717946389962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 1
 --- !u!1 &4230240347587431438
 GameObject:
   m_ObjectHideFlags: 0
@@ -7828,11 +7989,11 @@ RectTransform:
   - {fileID: 9215589788464117932}
   - {fileID: 7154570785509462803}
   - {fileID: 3535356262517689007}
-  m_Father: {fileID: 3287337500620218507}
+  m_Father: {fileID: 1981449725533815328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1091.4031, y: -537.00037}
+  m_AnchoredPosition: {x: 565.86, y: -636.37036}
   m_SizeDelta: {x: 654.07, y: 685.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2371360912455307217
@@ -8012,6 +8173,7 @@ GameObject:
   - component: {fileID: 2553109236562531052}
   - component: {fileID: 2815768952627446910}
   - component: {fileID: 5686608263455906901}
+  - component: {fileID: 3241018331442986613}
   m_Layer: 5
   m_Name: DoctorSprite
   m_TagString: Untagged
@@ -8036,7 +8198,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 254, y: 340}
-  m_SizeDelta: {x: 345, y: 1050}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2815768952627446910
 CanvasRenderer:
@@ -8066,7 +8228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8603473853748788035, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50628ca30e3553240ada79648f3c32de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8076,6 +8238,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3241018331442986613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4879466812499276519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 0
 --- !u!1 &4980210458951912628
 GameObject:
   m_ObjectHideFlags: 0
@@ -8241,10 +8416,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 945698690697531751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -25}
+  m_SizeDelta: {x: 290, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4770047557735291927
 CanvasRenderer:
@@ -8422,7 +8597,7 @@ GameObject:
   - component: {fileID: 8009496112555895886}
   - component: {fileID: 9176182172641056469}
   m_Layer: 5
-  m_Name: 'Rappel: Test de Weber'
+  m_Name: "Rappel: Test de Weber acoum\xE9trique"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8753,6 +8928,7 @@ GameObject:
   - component: {fileID: 4898534321873106752}
   - component: {fileID: 9126739792262654442}
   - component: {fileID: 5828973490970981866}
+  - component: {fileID: 8629696851144443515}
   m_Layer: 5
   m_Name: DoctorPos_2
   m_TagString: Untagged
@@ -8776,8 +8952,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -178, y: -228}
-  m_SizeDelta: {x: 390, y: 1015}
+  m_AnchoredPosition: {x: -192, y: -228}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9126739792262654442
 CanvasRenderer:
@@ -8807,7 +8983,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4467637358421277366, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d179d031c555ea94f97cb46ac0980b27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8817,6 +8993,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8629696851144443515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5248165087034756645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 2
 --- !u!1 &5260868207475358056
 GameObject:
   m_ObjectHideFlags: 0
@@ -9942,10 +10131,10 @@ RectTransform:
   - {fileID: 7250063815138139902}
   m_Father: {fileID: 945698690697531751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 158.95999, y: -103.525}
+  m_SizeDelta: {x: 307.91998, y: 22.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6351503147058704006
 MonoBehaviour:
@@ -9984,6 +10173,7 @@ GameObject:
   - component: {fileID: 7830982191583402255}
   - component: {fileID: 3811931779637637715}
   - component: {fileID: 6060753374253027832}
+  - component: {fileID: 8117192281089363629}
   m_Layer: 5
   m_Name: DoctorSprite
   m_TagString: Untagged
@@ -10007,8 +10197,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -231, y: 257.45}
-  m_SizeDelta: {x: 381.65, y: 989.89}
+  m_AnchoredPosition: {x: -264, y: 334}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3811931779637637715
 CanvasRenderer:
@@ -10038,7 +10228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4145143747416769920, guid: 5dc35a92ad9dbeb48945652fb0e8926d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5dc35a92ad9dbeb48945652fb0e8926d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -10048,6 +10238,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8117192281089363629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809640654227232280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 5
 --- !u!1 &5845861141257570903
 GameObject:
   m_ObjectHideFlags: 0
@@ -10080,10 +10283,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5531762145750269782}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 55, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 27.5, y: -11.175}
+  m_SizeDelta: {x: 55, y: 22.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6114971920686939694
 CanvasRenderer:
@@ -10335,6 +10538,7 @@ GameObject:
   - component: {fileID: 1278460302721399126}
   - component: {fileID: 6762315856758986190}
   - component: {fileID: 7261215793385111437}
+  - component: {fileID: 7870225925839705271}
   m_Layer: 5
   m_Name: DoctorPos_1
   m_TagString: Untagged
@@ -10358,8 +10562,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: -163}
-  m_SizeDelta: {x: 390, y: 1015}
+  m_AnchoredPosition: {x: 128, y: -163}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6762315856758986190
 CanvasRenderer:
@@ -10389,7 +10593,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4467637358421277366, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d179d031c555ea94f97cb46ac0980b27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10399,6 +10603,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7870225925839705271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919020625541361876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 2
 --- !u!1 &6042696143517780033
 GameObject:
   m_ObjectHideFlags: 0
@@ -10974,7 +11191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.203613, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3701389551724705135
@@ -12203,7 +12420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7949415626263258350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12223,7 +12440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.203613, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1293271063863713168
@@ -12930,8 +13147,9 @@ GameObject:
   - component: {fileID: 7138659159285848839}
   - component: {fileID: 8721289259213766934}
   - component: {fileID: 6469086128568774099}
+  - component: {fileID: 4372768119372167838}
   m_Layer: 5
-  m_Name: DoctorSprite
+  m_Name: DoctorGoodSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12954,7 +13172,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 283, y: -126.5}
-  m_SizeDelta: {x: 378, y: 1153}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8721289259213766934
 CanvasRenderer:
@@ -12984,7 +13202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7980856816745209919, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50628ca30e3553240ada79648f3c32de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12994,6 +13212,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4372768119372167838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6906537595250866818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 0
 --- !u!1 &6946061016615832051
 GameObject:
   m_ObjectHideFlags: 0
@@ -13629,6 +13860,7 @@ GameObject:
   - component: {fileID: 8879810595311408866}
   - component: {fileID: 3450785663912656069}
   - component: {fileID: 2159626831469359666}
+  - component: {fileID: 5336086338828338799}
   m_Layer: 5
   m_Name: DoctorSprite
   m_TagString: Untagged
@@ -13652,8 +13884,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 66, y: -198}
-  m_SizeDelta: {x: 345, y: 895}
+  m_AnchoredPosition: {x: 58, y: -198}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3450785663912656069
 CanvasRenderer:
@@ -13683,7 +13915,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4467637358421277366, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d179d031c555ea94f97cb46ac0980b27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13693,6 +13925,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5336086338828338799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7139419250506023175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 2
 --- !u!1 &7179850338559708218
 GameObject:
   m_ObjectHideFlags: 0
@@ -14114,10 +14359,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 329325178056197963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 247.91, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 183.955, y: -11.175}
+  m_SizeDelta: {x: 247.91, y: 22.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6106002377580578450
 CanvasRenderer:
@@ -14372,10 +14617,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 945698690697531751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -246.56999}
+  m_SizeDelta: {x: 290, y: 68.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7278934649621150263
 CanvasRenderer:
@@ -14917,10 +15162,10 @@ RectTransform:
   - {fileID: 6893569522602498329}
   m_Father: {fileID: 945698690697531751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 157.495, y: -135.875}
+  m_SizeDelta: {x: 304.99, y: 22.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6839776749951022508
 MonoBehaviour:
@@ -15293,6 +15538,7 @@ GameObject:
   - component: {fileID: 3465550118512004344}
   - component: {fileID: 4537817309044325964}
   - component: {fileID: 2992569152032062285}
+  - component: {fileID: 2501347347110408753}
   m_Layer: 5
   m_Name: DoctorSprite
   m_TagString: Untagged
@@ -15316,8 +15562,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: -245}
-  m_SizeDelta: {x: 390, y: 807}
+  m_AnchoredPosition: {x: 256, y: -228}
+  m_SizeDelta: {x: 683, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4537817309044325964
 CanvasRenderer:
@@ -15347,7 +15593,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -551014991, guid: ce2c87ae6ddc42b44ac7a287b8838536, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 326ee055a1eb9b148abf4d45e9d36f08, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -15357,6 +15603,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2501347347110408753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7893922649237152604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822bcc6eb3824f47b4af2c7c0a955b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.DocSprite
+  spritePose: 3
 --- !u!1 &7940641855002618100
 GameObject:
   m_ObjectHideFlags: 0
@@ -15713,10 +15972,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 329325178056197963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 60, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 30, y: -11.175}
+  m_SizeDelta: {x: 60, y: 22.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2099367349743551529
 CanvasRenderer:
@@ -17269,10 +17528,10 @@ RectTransform:
   - {fileID: 1249610106897662524}
   m_Father: {fileID: 945698690697531751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 158.955, y: -71.175}
+  m_SizeDelta: {x: 307.91, y: 22.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1508821268623936144
 MonoBehaviour:

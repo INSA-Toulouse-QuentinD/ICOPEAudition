@@ -8,6 +8,7 @@ using UI.ScoreContents;
 using PatientData;
 using TMPro;
 using UI.LevelSelector;
+using UI.PersoSelect;
 
 namespace Managers{
     [RequireComponent(typeof(GameStateManager))]
@@ -29,6 +30,7 @@ namespace Managers{
         private StepManager StepManager{ get; set; }
         public LevelSelector levelSelector;
         public GameObject leaveButton;
+        [HideInInspector] public SpriteDocType selectType = SpriteDocType.Man;
 
         #region Structures
 
@@ -59,6 +61,7 @@ namespace Managers{
         [Header("Debug")] public bool canAccessAllLevel;
         public bool instanteAnimation;
         public bool skipAssistante;
+        public bool skipGender;
         public bool alwaysRight;
         public bool forcePositionChoice;
 
@@ -81,6 +84,7 @@ namespace Managers{
         [SerializeField] private GameObject gameMenu;
         [SerializeField] private GameObject stepMenu;
         [SerializeField] private GameObject isTutorialActive;
+        [SerializeField] private GameObject genderActive;
         [SerializeField] private GameObject scorePanel;
         [SerializeField] private GameObject pauseButton;
         [SerializeField] private GameObject levelButton;
@@ -97,6 +101,7 @@ namespace Managers{
 
         [SerializeField] private Image stepBackground;
         [SerializeField] private Image scoreBackground;
+        [SerializeField] private TextMeshProUGUI textScorePanel;
 
         #endregion
 
@@ -108,6 +113,10 @@ namespace Managers{
         #endregion
 
         #region Internal methods
+
+        public void SetPersoType(int nb) {
+            selectType = (SpriteDocType)nb;
+        }
 
         // LOAD STEP
         internal void LoadStep(Step stepIndex){
@@ -128,7 +137,8 @@ namespace Managers{
         internal void LoadScore(string patientName){
             ClearScreen();
             folderDivider.GetSetDisplayScore(patientName);
-            scorePanel.SetActive(true);
+            textScorePanel.text = "Bravo !! Tu as bien identifié le cas présent. Prise en charge réussie.\n\n" + GameStateManager.MessageScoreToShow();
+            scorePanel.SetActive(true); //DEBUG ICI
             PartyManager.Instance.Play();
         }
 
@@ -185,6 +195,7 @@ namespace Managers{
 
         private void EnableTutorial(){
             if (Instance.GameData.FirstGameSession()) {
+                genderActive.SetActive(!skipGender);
                 isTutorialActive.SetActive(_tutorialAnswer);
             }
         }

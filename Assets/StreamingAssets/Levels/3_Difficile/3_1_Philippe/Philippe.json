@@ -89,7 +89,7 @@
     },
     {
       "type": "HhiesWeber",
-      "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 22 et le test de Weber est symétrique.",
+      "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 22 et le test de Weber acoumétrique est symétrique.",
       "spriteEarExams": "Images\\Steps\\HHIE-S\\22_HHIES.png",
       "spriteEarExams2": "Images\\Steps\\VideoOtoscopy\\3_1_normal.png",
       "actionPhase": [
@@ -104,11 +104,11 @@
         {
           "answerText": "Il est pertinent de réaliser l'audiométrie",
           "isCorrect": true,
-          "correctionText": "Le questionnaire HHIE-S a 22 est faveur d'une gêne auditive et le test de Weber est centré. L'étape suivante est le bilan audiométrique."
+          "correctionText": "Le questionnaire HHIE-S a 22 est faveur d'une gêne auditive et le test de Weber acoumétrique est centré. L'étape suivante est le bilan audiométrique."
         },
         {
           "answerText": "Je laisse le patient repartir et lui propose de faire le suivi ICOPE dans 6 mois",
-          "correctionText": "Le questionnaire HHIE-S a 22 est faveur d'une gêne auditive et le test de Weber est centré. Il faut réaliser le bilan audiométrique."
+          "correctionText": "Le questionnaire HHIE-S a 22 est faveur d'une gêne auditive et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
         }
       ]
     },

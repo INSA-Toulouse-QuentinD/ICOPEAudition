@@ -9,22 +9,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
 
-namespace Managers{
-    public class StepManager : MonoBehaviour{
+namespace Managers {
+    public class StepManager : MonoBehaviour {
         [SerializeField] private Button returnButton;
         [SerializeField] private Button confirmNextButton;
 
         // GameObject
-        [Header("Steps gameObject")] [SerializeField]
+        [Header("Steps gameObject")]
+        [SerializeField]
         private List<GameObject> displayList;
 
-        [Header("Question gameObject")] [SerializeField]
+        [Header("Question gameObject")]
+        [SerializeField]
         private GameObject questionsDisplay;
 
         [SerializeField] private TextMeshProUGUI questionText;
         [SerializeField] private Button[] choiceButtons;
 
-        [Header("Correction gameObject")] [SerializeField]
+        [Header("Correction gameObject")]
+        [SerializeField]
         private GameObject correctionDisplay;
 
         [SerializeField] private TextMeshProUGUI answerText;
@@ -32,24 +35,24 @@ namespace Managers{
         [SerializeField] private GameObject answerJustification;
         [SerializeField] private List<GameObject> answerGameObjectSprites;
 
-        [Header("Colors answer")] [SerializeField]
+        [Header("Colors answer")]
+        [SerializeField]
         private Color correctColor;
 
         [SerializeField] private Color incorrectColor;
         [SerializeField] private Image backgroundAnswer;
 
-        // Sprite Doctor (1st position happy expression, 2nd position sad expression, 3rd position talking)
-        // For the future to change to allow player to choose his character.
-        [Header("Sprite doctor")] [SerializeField]
-        private Sprite[] doctorSprite;
-
-        [Header("Phone (case presentation)")] [SerializeField]
+        [Header("Phone (case presentation)")]
+        [SerializeField]
         private Sprite phoneCaseSprite;
 
-        [Header("GameObject Image correction")] [SerializeField]
-        private Image doctorExpressionsImages;
+        [Header("GameObject Image correction")]
+        [SerializeField]
+        private GameObject doctorGoodExpressionsImages;
+        [SerializeField] private GameObject doctorBadExpressionsImages;
 
-        [Header("Questionnary")] [SerializeField]
+        [Header("Questionnary")]
+        [SerializeField]
         private QuestionnaireData questionnaireData;
 
         // Script of each step display
@@ -65,7 +68,7 @@ namespace Managers{
         private StepAudiometrieVocale _stepAudiometrieVocale;
 
         // Enums
-        private enum InteractionState{
+        private enum InteractionState {
             IsReading,
             IsAnswering,
             IsCorrection
@@ -73,7 +76,7 @@ namespace Managers{
 
         private InteractionState _interactionState;
 
-        private enum AnswerState{
+        private enum AnswerState {
             Diagnostic,
             Action
         }
@@ -92,11 +95,11 @@ namespace Managers{
         private bool _isActionValid;
         private Step _step;
 
-        private sealed class AnswerDisplayState{
+        private sealed class AnswerDisplayState {
             public List<int> ShuffledOrder = new();
             public readonly List<bool> IncorrectTried = new();
 
-            public void Reset(){
+            public void Reset() {
                 ShuffledOrder.Clear();
                 IncorrectTried.Clear();
             }
@@ -112,7 +115,7 @@ namespace Managers{
         /// to start fresh for a new patient case.
         /// </summary>
         /// <param name="patient">The new patient data to initialize.</param>
-        public void Initialize(PatientData.PatientData patient){
+        public void Initialize(PatientData.PatientData patient) {
             _indexStep = 0; // reset current step to 0
             _currentDisplay = 0;
             _patientData = patient;
@@ -125,7 +128,7 @@ namespace Managers{
             ResetTriedState();
         }
 
-        private void ResetTriedState(){
+        private void ResetTriedState() {
             _diagAnswerState.Reset();
             _actionAnswerState.Reset();
         }
@@ -136,7 +139,7 @@ namespace Managers{
         /// Resets validation flags and sets the current display index accordingly.
         /// </summary>
         /// <param name="currentStep">The step to load and display.</param>
-        public void LoadStep(Step currentStep){
+        public void LoadStep(Step currentStep) {
             ClearAllDisplay();
             TipsManager.Instance.HideButton();
 
@@ -253,7 +256,7 @@ namespace Managers{
         ///     - If valid, enables confirm/next button and disables return button, setting confirm button text to "Suivant".
         ///     - If not valid, disables confirm/next button and enables return button.
         /// </summary>
-        private void SetTextButtonsNavigation(){
+        private void SetTextButtonsNavigation() {
             TextMeshProUGUI retourText = returnButton.GetComponentInChildren<TextMeshProUGUI>();
 
             if (_interactionState == InteractionState.IsReading) {
@@ -301,7 +304,7 @@ namespace Managers{
         /// - If the step has an action phase and the diagnostic phase is valid,
         ///   it sets the answer state to ACTION and creates the corresponding action answer buttons.
         /// </summary>
-        private void SetResponses(){
+        private void SetResponses() {
             AlgoStep algoStep = _patientData.steps[_indexStep];
             int diagCount = algoStep.diagnosticPhase.Count;
             int actionCount = algoStep.actionPhase.Count;
@@ -333,7 +336,7 @@ namespace Managers{
             UITutorialControler.Instance.TutorialMichel(2);
         }
 
-        private void ApplyTriedStateToButtons(AnswerDisplayState state){
+        private void ApplyTriedStateToButtons(AnswerDisplayState state) {
             int max = Mathf.Min(choiceButtons.Length, state.IncorrectTried.Count);
             for (int i = 0; i < max; i++) {
                 if (!choiceButtons[i].gameObject.activeSelf) continue;
@@ -353,7 +356,7 @@ namespace Managers{
         /// - Enables and makes the button visible.
         /// </summary>
         /// <param name="answerData">List of possible answers for the current phase.</param>
-        private void CreateAnswerButtons(List<AnswerData> answerData){
+        private void CreateAnswerButtons(List<AnswerData> answerData) {
             ClearQuestion();
 
             int max = Mathf.Min(answerData.Count, choiceButtons.Length);
@@ -390,7 +393,7 @@ namespace Managers{
         /// If both phases are completed, the current step is the last, it displays the player's scores.
         /// If the step is not completed, switches the UI to the question answering display
         /// </summary>
-        private void ButtonNext(){
+        private void ButtonNext() {
             TipsManager.Instance.HideButton();
 
             // Control if diagnostic & action is completed
@@ -421,7 +424,7 @@ namespace Managers{
         /// Returns from the correction/answering state back to the question answering/document (reading) display
         /// clearing all displays and resetting the interaction state and buttons accordingly.
         /// </summary>
-        private void ButtonBack(){
+        private void ButtonBack() {
             TipsManager.Instance.HideButton();
 
             if (_interactionState == InteractionState.IsCorrection) {
@@ -452,7 +455,7 @@ namespace Managers{
         /// the question display, and the correction display.
         /// Used to reset the UI before showing new content.
         /// </summary>
-        private void ClearAllDisplay(){
+        private void ClearAllDisplay() {
             foreach (var t in displayList) {
                 t.SetActive(false);
             }
@@ -465,7 +468,7 @@ namespace Managers{
         /// Deactivates all answer choice buttons.
         /// Clears the current questions answer options from the UI.
         /// </summary>
-        private void ClearQuestion(){
+        private void ClearQuestion() {
             foreach (var t in choiceButtons) {
                 t.gameObject.SetActive(false);
             }
@@ -479,7 +482,7 @@ namespace Managers{
         /// </summary>
         /// <param name="answerData">List of possible answers for the current phase.</param>
         /// <param name="index">The index of the selected answer button.</param>
-        private void OnAnswerCorrect(List<AnswerData> answerData, int index){
+        private void OnAnswerCorrect(List<AnswerData> answerData, int index) {
             for (int i = 0; i < 4; i++)
                 choiceButtons[i].GetComponentInChildren<ArrowAnimation>(true).SuperHide();
             _badTuto = false;
@@ -539,7 +542,7 @@ namespace Managers{
         /// <param name="answerData">List of possible answers.</param>
         /// <param name="index">Index of the selected answer.</param>
         /// <returns>True if the answer is correct; otherwise, false.</returns>
-        private static bool IsAnswerCorrect(List<AnswerData> answerData, int index){
+        private static bool IsAnswerCorrect(List<AnswerData> answerData, int index) {
             if (index < 0 || index >= answerData.Count) {
                 Debug.LogError("index out of bound");
                 return false;
@@ -548,11 +551,11 @@ namespace Managers{
             return answerData[index].isCorrect;
         }
 
-        private AnswerDisplayState GetCurrentAnswerDisplayState(){
+        private AnswerDisplayState GetCurrentAnswerDisplayState() {
             return _answerState == AnswerState.Diagnostic ? _diagAnswerState : _actionAnswerState;
         }
 
-        private static void EnsureAnswerOrder(AnswerDisplayState state, int size, bool forcePositionChoice){
+        private static void EnsureAnswerOrder(AnswerDisplayState state, int size, bool forcePositionChoice) {
             if (size < 0) size = 0;
             if (state.ShuffledOrder.Count == size && state.IncorrectTried.Count == size) return;
 
@@ -570,7 +573,7 @@ namespace Managers{
             }
         }
 
-        private static int GetSourceAnswerIndex(AnswerDisplayState state, int displayedIndex){
+        private static int GetSourceAnswerIndex(AnswerDisplayState state, int displayedIndex) {
             if (displayedIndex < 0 || displayedIndex >= state.ShuffledOrder.Count) return displayedIndex;
 
             return state.ShuffledOrder[displayedIndex];
@@ -584,7 +587,7 @@ namespace Managers{
         /// <param name="answer">The answer data containing text, correction, and images.</param>
         /// <param name="feedBackText">Feedback message to display ("Correct!" or "Incorrect!").</param>
         /// <param name="answerCorrect">Indicates if the selected answer was correct.</param>
-        private void ShowAnswerDetail(AnswerData answer, string feedBackText, bool answerCorrect){
+        private void ShowAnswerDetail(AnswerData answer, string feedBackText, bool answerCorrect) {
             _interactionState = InteractionState.IsCorrection;
 
             // Clear images
@@ -597,13 +600,11 @@ namespace Managers{
             answerSelected.text = answer.answerText;
 
             // Set background color
-            if (answerCorrect) {
-                backgroundAnswer.color = correctColor;
-                doctorExpressionsImages.sprite = doctorSprite[0]; // Happy expression
-            } else {
-                backgroundAnswer.color = incorrectColor;
-                doctorExpressionsImages.sprite = doctorSprite[1]; // Sad expression
-            }
+            backgroundAnswer.color = answerCorrect ? correctColor : incorrectColor;
+
+            // Set Doc Expression
+            doctorGoodExpressionsImages.SetActive(answerCorrect);
+            doctorBadExpressionsImages.SetActive(!answerCorrect);
 
             // Load correction text if not null
             if (answer.correctionText != "") {
@@ -636,7 +637,7 @@ namespace Managers{
         /// Also sets up button listeners for navigation and interaction,
         /// and initializes a dictionary mapping each Step enum to its corresponding display index.
         /// </summary>
-        private void Awake(){
+        private void Awake() {
             // WARNING : don't trigger error if component not found. 
             foreach (GameObject go in displayList) {
                 if (go.TryGetComponent(out StepPresentationPatient component)) _stepPresentationPatient = component;

@@ -15,6 +15,7 @@ namespace PatientData.Steps{
 
         [SerializeField] private Image patientSprite;
         [SerializeField] private GameObject bulleTextPatient;
+        [SerializeField] private GameObject questionnaire;
         [SerializeField] private TMP_Text textPatient;
 
         /// <summary>
@@ -44,6 +45,11 @@ namespace PatientData.Steps{
         public void SetTextDialogue(string patientContext){
             textPatient.text = patientContext;
             bulleTextPatient.SetActive(!string.IsNullOrEmpty(patientContext));
+
+            RectTransform rect = questionnaire.GetComponent<RectTransform>();
+            Vector2 pos = rect.anchoredPosition;
+            pos.x = string.IsNullOrEmpty(patientContext) ? 0 : 130;
+            rect.anchoredPosition = pos;
         }
     }
 }

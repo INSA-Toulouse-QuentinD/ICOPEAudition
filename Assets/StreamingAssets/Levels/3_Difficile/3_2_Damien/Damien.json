@@ -90,26 +90,26 @@
     },
     {
       "type": "HhiesWeber",
-      "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 16 et le test de Weber est centré.",
+      "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 16 et le test de Weber acoumétrique est centré.",
       "spriteEarExams": "Images\\Steps\\HHIE-S\\16_HHIES.png",
       "spriteEarExams2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
       "actionPhase": [
         {
           "answerText": "Je prescris un appareillage",
-          "correctionText": "Le questionnaire HHIE-S a 16 est faveur d'une gêne auditive et le test de Weber est centré. Il faut réaliser le bilan audiométrique pour vérifier l'indication avant de prescrire."
+          "correctionText": "Le questionnaire HHIE-S a 16 est faveur d'une gêne auditive et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique pour vérifier l'indication avant de prescrire."
         },
         {
           "answerText": "Je fais une audiométrie",
           "isCorrect": true,
-          "correctionText": "Le questionnaire HHIE-S a 16 est faveur d'une gêne auditive et le test de Weber est centré. L'étape suivante est le bilan audiométrique."
+          "correctionText": "Le questionnaire HHIE-S a 16 est faveur d'une gêne auditive et le test de Weber acoumétrique est centré. L'étape suivante est le bilan audiométrique."
         },
         {
           "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
-          "correctionText": "Le questionnaire HHIE-S a 16 est faveur d'une gêne auditive et le test de Weber est centré. Il faut réaliser le bilan audiométrique."
+          "correctionText": "Le questionnaire HHIE-S a 16 est faveur d'une gêne auditive et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
         },
         {
           "answerText": "J'adresse le patient vers l'ORL",
-          "correctionText": "Le questionnaire HHIE-S a 16 est faveur d'une gêne auditive et le test de Weber est centré. Il faut réaliser le bilan audiométrique. Il n'existe pas d'argument en faveur d'une situation complexe."
+          "correctionText": "Le questionnaire HHIE-S a 16 est faveur d'une gêne auditive et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique. Il n'existe pas d'argument en faveur d'une situation complexe."
         }
       ]
     },
