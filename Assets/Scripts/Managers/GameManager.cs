@@ -109,12 +109,14 @@ namespace Managers{
 
         private bool _isTutorialUIEnable;
         private bool _tutorialAnswer = true;
+        private bool _genderAnswer = false;
 
         #endregion
 
         #region Internal methods
 
         public void SetPersoType(int nb) {
+            _genderAnswer = true;
             selectType = (SpriteDocType)nb;
         }
 
@@ -195,7 +197,7 @@ namespace Managers{
 
         private void EnableTutorial(){
             if (Instance.GameData.FirstGameSession()) {
-                genderActive.SetActive(!skipGender);
+                genderActive.SetActive(!(skipGender || _genderAnswer));
                 isTutorialActive.SetActive(_tutorialAnswer);
             }
         }
