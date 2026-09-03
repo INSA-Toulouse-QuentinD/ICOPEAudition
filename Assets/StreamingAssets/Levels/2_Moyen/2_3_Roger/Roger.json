@@ -4,9 +4,9 @@
   "lastName": "BONNET",
   "firstName": "Roger",
   "age": 72,
-  "familySituation": "",
+  "familySituation": "Marié et un enfant, ancien professeur des écoles.",
   "occupationalActivities": "",
-  "context": "M. Bonnet se plaint d'une gêne auditive droite avec douleurs et écoulements intermittents.\nIl a été repéré anormal sur un test auditif de dépistage réalisé par l'audioprothésiste qui suit son épouse.\nIl vous est adressé pour une évaluation approfondie de l'audition.",
+  "context": "Mr Bonnet se plaint d'une gêne auditive droite avec douleurs et écoulements intermittents.\nIl a réalisé une évaluation initiale ainsi qu’un dépistage auditif réalisé par l’audioprothésiste qui suit son épouse. Le résultat du dépistage auditif est anormal. Il vous est adressé pour une évaluation approfondie de l’audition.",
   "medicalHistory": "Diabétique de type 2 mal équilibré.",
   "steps": [
     {
@@ -14,12 +14,12 @@
       "actionPhase": [
         {
           "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35 dB équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
         },
         {
           "answerText": "Je lui fais passer le questionnaire Go - No Go",
           "isCorrect": true,
-          "correctionText": "La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
+          "correctionText": "La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35 dB équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
@@ -28,7 +28,7 @@
         },
         {
           "answerText": "Je réalise le test de chuchotement",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35db équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel. La première étape de l'évaluation approfondie vise à confirmer la suspicion de surdité détectée lors de l'évaluation initiale. Pour cela, l'audioprothésiste a déjà réalisé un dépistage auditif à 35 dB équivalent au test de chuchotement. A ce stade, la suspicion est confirmée. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go."
         }
       ]
     },
@@ -52,7 +52,7 @@
           "correctionText": "Non, il s'agit d'un No Go, il est impératif d'adresser le patient vers l'ORL ou le médecin généraliste, le parcours ICOPE Audition s'arrête."
         },
         {
-          "answerText": "Je lui fais fait passer le questionnaire HHIE-S",
+          "answerText": "Je lui fais passer le questionnaire HHIE-S",
           "correctionText": "Non, il s'agit d'un No Go, il est impératif d'adresser le patient vers l'ORL ou le médecin généraliste, le parcours ICOPE Audition s'arrête."
         },
         {

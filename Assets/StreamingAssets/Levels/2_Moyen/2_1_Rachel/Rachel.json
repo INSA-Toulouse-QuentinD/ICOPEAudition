@@ -69,7 +69,7 @@
         {
           "answerText": "Il y a une anomalie car elle n'a pas su restituer au moins 3 mots de chaque côté",
           "isCorrect": true,
-          "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente n'a su répéter que 2 mots sur 4 pour chaque côté, ce qui est en dessous du seuil requis.\nCela indique une <b>atteinte de l'audition bilatérale</b>, car aucun des deux côtés n'atteint le critère minimal de 3 mots correctement restitués sur 4.",
+          "correctionText": "Lors du test de chuchotement, on considère que l'audition est normale si la patiente est capable de répéter correctement au moins 3 mots sur 4 pour chaque oreille.\nDans ce cas, la patiente n'a su répéter que 2 mots sur 4 pour chaque côté, ce qui est en dessous du seuil requis.\nCela indique un risque d'<b>atteinte de l'audition bilatérale</b>, car aucun des deux côtés n'atteint le critère minimal de 3 mots correctement restitués sur 4.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -77,7 +77,7 @@
         {
           "answerText": "Il n'y a pas d'anomalie car elle a su restituer les 2 mots du côté gauche",
           "isCorrect": false,
-          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe test est considéré comme normal lorsque la patiente répète correctement 3 ou 4 mots par oreille.\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
+          "correctionText": "Non, il existe bien une anomalie. Lors du <b>test de chuchotement</b>, l'évaluation de l'audition consiste à faire répéter <b>4 mots</b> à la patiente pour chaque oreille et non 2 mots comme sur cette affirmation.\n\nLe critère normal pour considérer qu’il n’y a pas d’anomalie auditive est la répétition correcte de l’ensemble des 4 mots ou 3 mots minimum par oreille.\nOr, dans ce cas précis, la patiente n'a répété que <b>2 mots sur 4</b> pour <b>chaque oreille</b>. Cela traduit une <b>diminution de l'acuité auditive</b> bilatérale et constitue une <b>anomalie du test<b>.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -85,7 +85,7 @@
         {
           "answerText": "Le test est normal",
           "isCorrect": false,
-          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> de chaque côté.\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe test aurait été normal si la patiente avait répété au moins 3 mots de chaque côté.",
+          "correctionText": "Pour que le test soit considéré comme <b>normal</b>, la patiente doit être capable de répéter <b>au moins 3 mots sur 4 par oreille</b>.\nDans la situation décrite :\nLa patiente a répété <b>seulement 2 mots sur 4</b> de chaque côté.\nCela signifie qu'elle <b>n'atteint pas le seuil minimal requis</b> pour une audition normale <b>sur aucune des deux oreilles</b>.\n\nLe critère normal pour considérer qu’il n’y a pas d’anomalie auditive est la répétition correcte de l’ensemble des 4 mots ou 3 mots minimum par oreille.",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -224,7 +224,7 @@
         {
           "answerText": "Il s'agit d'une perforation tympanique",
           "isCorrect": false,
-          "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. Dans le cas d'une perforation tympanique, un avis médical est nécessaire. Voici des exemples de perforations tympanique :",
+          "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. En cas de doute de perforation tympanique, un avis médical est nécessaire. Voici des exemples de perforations tympaniques :",
           "rappelTip": "None",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
@@ -375,14 +375,6 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Ses réponses révèlent une surdité de transmission",
-          "isCorrect": false,
-          "correctionText": "C'est plutôt le test de Rinne qui permet d'évoquer une surdité de transmission, quand il est négatif.\n\nAutrement, quand la patiente décrit une asymétrie auditive, on peut évoquer une surdité de transmission quand il latéralise le Weber du côté de l'oreille la plus sourde.",
-          "rappelTip": "None",
-          "spriteJustification1": "",
-          "spriteJustification2": ""
-        },
-        {
           "answerText": "Ses réponses révèlent un bouchon de cérumen",
           "isCorrect": false,
           "correctionText": "Un bouchon de cérumen est identifiable lors de l'examen otoscopique et non lors du test de Weber acoumétrique ! Si elle avait un bouchon de cérumen côté droit, avec une otoscopie normale à gauche, on pourrait s'attendre à retrouver un Weber latéralisé à droite s'il est obstructif (et à condition qu'il n'existe pas d'autre cause sous-jacente d'asymétrie auditive), mais le diagnostic du bouchon de cérumen resterait clinique et serait surtout réalisé avant !",
@@ -395,7 +387,7 @@
         {
           "answerText": "Je laisse la patiente repartir chez elle",
           "isCorrect": false,
-          "correctionText": "Non, le test de Weber acoumétrique est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, à condition que l'audition soit symétrique.\n\n<b>Elle n'a aucun caractère rassurant concernant la normalité de l'audition.</b>",
+          "correctionText": "Non, le test de Weber acoumétrique est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, à condition que l'audition soit symétrique.\n\n<b>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</b>",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -409,9 +401,9 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je laisse la patiente repartir et lui propose de faire le suivi ICOPE dans 6 mois",
+          "answerText": "Je laisse la patiente repartir chez elle et lui propose de faire le suivi ICOPE dans 6 mois",
           "isCorrect": false,
-          "correctionText": "Non, le test de Weber acoumétrique est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, à condition que l'audition soit symétrique.\n\n<b>Elle n'a aucun caractère rassurant concernant la normalité de l'audition.</b>",
+          "correctionText": "Non, le test de Weber acoumétrique est utile afin d'orienter son examen audiométrique. On peut retrouver une surdité sévère avec un test de Weber centré, à condition que l'audition soit symétrique.\n\n<b>Il n'y a aucun caractère rassurant concernant la normalité de l'audition.</b>",
           "rappelTip": "None",
           "spriteJustification1": "",
           "spriteJustification2": ""
@@ -465,15 +457,15 @@
       ],
       "actionPhase": [
         {
-          "answerText": "En accord avec votre médecin référent, une prescription de prothèse auditive est délivrée à Mme. Bernier",
+          "answerText": "En accord avec votre médecin référent, une prescription de prothèse auditive est délivrée à Mme Bernier",
           "isCorrect": true,
-          "correctionText": "La patiente décrit une gêne auditive au quotidien et l'audiométrie confirme une surdité neurosensorielle légère bilatérale compatible avec les critères d'appareillage.",
+          "correctionText": "La patiente décrit une gêne auditive au quotidien et l'audiométrie confirme une surdité neurosensorielle légère et bilatérale compatible avec les critères d'appareillage.",
           "rappelTip": "Appareil",
           "spriteJustification1": "",
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je lui propose un prochain rendez-vous de suivi ICOPE",
+          "answerText": "Je propose à Mme Bernier un prochain rendez-vous de suivi ICOPE",
           "isCorrect": false,
           "correctionText": "La patiente est symptomatique (gêne auditive, fatigue à l'écoute) et l'audiométrie est en faveur d'une presbyacousie avec une indication d'appareillage. Une simple surveillance retarderait la prise en charge.",
           "rappelTip": "None",
@@ -481,7 +473,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je recommande un traitement antibiotique pour améliorer l'audition de Madame Bernier",
+          "answerText": "Je recommande un traitement antibiotique pour améliorer l'audition de Mme Bernier",
           "isCorrect": false,
           "correctionText": "Les antibiotiques n'ont aucun effet sur une surdité de perception comme la presbyacousie.",
           "rappelTip": "None",
@@ -489,7 +481,7 @@
           "spriteJustification2": ""
         },
         {
-          "answerText": "Je fais passer un scanner cérébral à Mme. Bernier",
+          "answerText": "Je fais passer un scanner cérébral à Mme Bernier",
           "isCorrect": false,
           "correctionText": "La perte auditive bilatérale et symétrique est compatible avec une presbyacousie liée à l'âge. Il n'y a pas de signe de drapeaux rouges justifiant une imagerie cérébrale.",
           "rappelTip": "None",

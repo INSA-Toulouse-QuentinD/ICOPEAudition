@@ -8,7 +8,7 @@
   "age": 78,
   "familySituation": "Elle vit seule à domicile. Ancienne employée de mairie, elle aime bricoler, lire le journal et retrouver ses amis pour jouer aux cartes.",
   "occupationalActivities": "",
-  "context": "Mme. Lefèvre a bénéficié d'une évaluation initiale avec son pharmacien, qui a testé son audition avec l'application Höra. On retrouve une baisse auditive des deux oreilles, confirmée au test de chuchotement. Vous la convoquez pour une évaluation dans le cadre du parcours ICOPE Audition.",
+  "context": "Mme Lefèvre a bénéficié d'une évaluation initiale avec son pharmacien, qui a testé son audition avec l'application Höra. On retrouve une baisse auditive des deux oreilles, confirmée au test de chuchotement. Vous la convoquez pour une évaluation dans le cadre du parcours ICOPE Audition.",
   "medicalHistory": "Pas d'antécédent connu.",
   "steps": [
     {
@@ -62,7 +62,7 @@
         {
           "answerText": "Je lui fais passer une vidéo-otoscopie",
           "isCorrect": true,
-          "correctionText": "Le questionnaire Go - No est un Go permettant la poursuite du parcours ICOPE Audition.\nDans l'algorithme décisionnel la vidéo-otoscopie est la prochaine étape du parcours."
+          "correctionText": "Le questionnaire Go - No Go est un Go permettant la poursuite du parcours ICOPE Audition.\nDans l'algorithme décisionnel la vidéo-otoscopie est la prochaine étape du parcours."
         },
         {
           "answerText": "Je lui fais passer une audiométrie",
@@ -93,7 +93,7 @@
         },
         {
           "answerText": "Il s'agit d'une perforation tympanique",
-          "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. Dans le cas d'une perforation tympanique, un avis médical est nécessaire. Voici des exemples de perforations tympanique :",
+          "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. Dans le cas d'une perforation tympanique, un avis médical est nécessaire. Voici des exemples de perforations tympaniques :",
           "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
           "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
         },
@@ -115,7 +115,7 @@
       "spriteEarExams": "Images\\Steps\\HHIE-S\\14_HHIES.png",
       "actionPhase": [
         {
-          "answerText": "Je continue le parcours ICOPE Audition et lui fait passer l'audiométrie",
+          "answerText": "Je continue le parcours ICOPE Audition et lui fais passer l'audiométrie",
           "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un questionnaire HHIE-S orientant vers un cas simple, l'étape suivante est le test de Weber acoumétrique."
         },
         {
@@ -124,7 +124,7 @@
           "correctionText": "Un score de 14/40 se situe dans la catégorie handicap auditif léger à modéré. Cela suppose que la personne ressent une gêne auditive dans sa vie quotidienne. Il s'agit d'un questionnaire de dépistage, il faut compléter l'évaluation par un bilan audiométrique (acoumétrie + audiométrie). On poursuit donc le parcours ICOPE Audition avec le test de Weber acoumétrique."
         },
         {
-          "answerText": "Je rassure la patiente et je mets fin au parcours Audition, les premiers tests étant normaux",
+          "answerText": "Je rassure la patiente et je mets fin au parcours ICOPE Audition, les premiers tests étant normaux",
           "correctionText": "Un score de 14/40 se situe dans la catégorie handicap auditif léger à modéré. Cela suppose que la personne ressent une gêne auditive dans sa vie quotidienne. Il s'agit d'un questionnaire de dépistage, il faut compléter l'évaluation par un bilan audiométrique (acoumétrie + audiométrie). On poursuit donc le parcours ICOPE Audition avec le test de Weber acoumétrique.",
           "rappelTip": "Hhies"
         }
@@ -136,20 +136,20 @@
       "diagnosticPhase": [
         {
           "answerText": "Ses réponses révèlent une surdité neurosensorielle gauche",
-          "correctionText": "Dans le cas d'une surdité neurosensorielle gauche, le son est perçu plus fort à droite (oreille saine). Dans ce cas-là, Mme Lefèvre, perçoit le son plus fort à gauche, cohérent avec le résultat du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Attention un weber latéralisé nécessite un avis ORL."
+          "correctionText": "Dans le cas d'une surdité neurosensorielle gauche, le son est perçu plus fort à droite (oreille saine). Dans ce cas-là, Mme Lefèvre perçoit le son plus fort à gauche, cohérent avec le résultat du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Attention un test de Weber acoumétrique normal latéralisé nécessite un avis ORL."
         },
         {
           "answerText": "Ses réponses révèlent une surdité de transmission gauche",
           "isCorrect": true,
-          "correctionText": "Dans le cas d'une surdité de transmission, le Weber est latéralisé du côté atteint, donc à gauche. Ce résultat est cohérent avec celui du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Attention une surdité de transmission nécessite un avis ORL."
+          "correctionText": "Dans le cas d'une surdité de transmission, le test de Weber acoumétrique est latéralisé du côté atteint, donc à gauche. Ce résultat est cohérent avec celui du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Attention une surdité de transmission nécessite un avis ORL."
         },
         {
           "answerText": "Ses réponses révèlent un cas normal",
-          "correctionText": "Le Weber n'est pas latéralisé (son perçu au centre), ce qui n'est pas le cas actuellement. Attention un weber latéralisé nécessite un avis ORL."
+          "correctionText": "Un test de Weber acoumétrique normal n'est pas latéralisé (son perçu au centre), ce qui n'est pas le cas actuellement. Attention un test de Weber acoumétrique latéralisé nécessite un avis ORL."
         },
         {
           "answerText": "Ses réponses sont discordantes avec la plainte",
-          "correctionText": "Le Weber latéralisé à gauche est cohérent avec la plainte lors du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Il est donc important de valider cette suspicion avec la dernière étape du parcours, l'audiométrie."
+          "correctionText": "Le test de Weber acoumétrique latéralisé à gauche est cohérent avec la plainte lors du test de chuchotement (2/4 mots répétés à gauche et 4/4 à droite). Il est donc important de valider cette suspicion avec la dernière étape du parcours, l'audiométrie."
         }
       ]
     },

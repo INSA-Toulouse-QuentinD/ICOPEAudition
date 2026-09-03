@@ -7,7 +7,7 @@
   "age": 81,
   "familySituation": "Elle vit seule à domicile avec ses deux petits chiens.\nElle apprécie faire de longues balades avec ses animaux.",
   "occupationalActivities": "",
-  "context": "Mme. Lambert a entendu parler du programme ICOPE via une campagne de prévention dans son village. Elle se plaint d'une gêne auditive bilatérale apparue depuis quelques mois, accompagnée d'un sifflement permanent dans les deux oreilles. Elle décrit ses acouphènes comme des bruits aigus, \"comparables à des oiseaux\", comme lui dit une amie à elle qui en souffre également. Elle avoue avoir évité plusieurs repas de famille récemment et se sent de plus en plus isolée.",
+  "context": "Mme Lambert a entendu parler du programme ICOPE via une campagne de prévention dans son village. Elle se plaint d'une gêne auditive bilatérale apparue depuis quelques mois, accompagnée d'un sifflement permanent dans les deux oreilles. Elle décrit ses acouphènes comme des bruits aigus, \"comparables à des oiseaux\", comme lui dit une amie à elle qui en souffre également. Elle avoue avoir évité plusieurs repas de famille récemment et se sent de plus en plus isolée.",
   "medicalHistory": "Pas d'antécédent connu.",
   "steps": [
     {
@@ -19,7 +19,7 @@
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie la patiente vers l'ORL",
-          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Non, la patiente est une bonne candidate pour l'évaluation ICOPE Audition : elle a plus de 60 ans et son autonomie est préservée.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag"
         },
         {
@@ -69,23 +69,23 @@
       "actionPhase": [
         {
           "answerText": "Je poursuis avec la vidéo-otoscopie",
-          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition. Adressage spécialisé ORL pour une évaluation complète.",
+          "correctionText": "Acouphènes récents à fort retentissement = No Go suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition. Adressage spécialisé ORL pour une évaluation complète.",
           "rappelTip": "Acouphene"
         },
         {
-          "answerText": "Je lui fais fait passer le questionnaire HHIE-S",
-          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition. Adressage spécialisé ORL pour une évaluation complète.",
+          "answerText": "Je lui fais passer le questionnaire HHIE-S",
+          "correctionText": "Acouphènes récents à fort retentissement = No Go suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition. Adressage spécialisé ORL pour une évaluation complète.",
           "rappelTip": "Acouphene"
         },
         {
           "answerText": "Je renvoie la patiente vers un ORL",
           "isCorrect": true,
-          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition. Adressage spécialisé ORL pour une évaluation complète.",
+          "correctionText": "Acouphènes récents à fort retentissement = No Go suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition. Adressage spécialisé ORL pour une évaluation complète.",
           "rappelTip": "Acouphene"
         },
         {
           "answerText": "Je programme un rendez-vous dans 6 mois pour voir l'évolution de sa gêne auditive",
-          "correctionText": "Acouphènes récents à fort retentissement = NO GO suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition. Adressage spécialisé ORL pour une évaluation complète.",
+          "correctionText": "Acouphènes récents à fort retentissement = No Go suspicion de cas complexe, critère d'exclusion du parcours ICOPE Audition. Adressage spécialisé ORL pour une évaluation complète.",
           "rappelTip": "Acouphene"
         }
       ]
