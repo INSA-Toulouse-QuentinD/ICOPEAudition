@@ -6,37 +6,13 @@
   "lastName": "MILANE",
   "firstName": "Vincent",
   "age": 83,
-  "familySituation": "Vit en résidence senior autonome",
+  "familySituation": "Vit en résidence autonomie. Aime faire du sport et regarder le tour de France à la télévison.",
   "occupationalActivities": "",
-  "context": "Il se plaint de ne plus entendre la télévision, même volume au maximum. Une IDE ICOPE lui a proposé de faire l'évaluation étape initiale, dont le test auditif.",
+  "context": "Mr Milaine se plaint de ne plus entendre la télévision, même volume au maximum. Une IDE ICOPE lui a proposé de faire l'évaluation initiale, avec un résultat au test de chuchotement de 0 mots répétés pour les deux oreilles.",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [
     {
       "type": "CasePresentation",
-      "actionPhase": [
-        {
-          "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
-        },
-        {
-          "answerText": "Je vérifie ses oreilles",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\n<b>La première étape de l'évaluation approfondie vise donc à confirmer la suspicion de surdité</b> détectée lors de l'évaluation initiale. Pour cela, je peux utiliser :\n- Le test de chuchotement\n- Le test Höra\n- Le test de dépistage gratuit à 35 dB par un audioprothésiste\nSi la suspicion n'est pas confirmée, il n'est pas nécessaire de poursuivre l'évaluation."
-        },
-        {
-          "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
-          "rappelTip": "RedFlag"
-        },
-        {
-          "answerText": "Je réalise le test de chuchotement",
-          "isCorrect": true,
-          "correctionText": "Le patient ayant procédé à une auto-évaluation ICOPE, le test de chuchotement n'a pas été réalisé. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale."
-        }
-      ]
-    },
-    {
-      "type": "WisperTest",
-      "dialoguePatient": "Je n'ai entendu aucun mot pour les deux oreilles.",
       "actionPhase": [
         {
           "answerText": "J'adresse immédiatement le patient vers l'ORL",
@@ -59,7 +35,9 @@
       ]
     },
     {
-      "type": "GoNoGo",
+      "type": "GoNoGoOtoscopy",
+      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\3_3_tympanosclérose.png",
+      "dialogueDoctor": "On ne trouve aucune alerte au questionnaire Go - No Go et voici le résultat de la vidéo-otoscopie :",
       "predefinedAnswer": [
         "No",
         "No",
@@ -70,44 +48,27 @@
       ],
       "actionPhase": [
         {
-          "answerText": "Il est pertinent de réaliser l'audiométrie",
-          "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un questionnaire Go - No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
-        },
-        {
-          "answerText": "Je continue le parcours ICOPE Audition et je réalise une vidéo-otoscopie",
-          "isCorrect": true,
-          "correctionText": "Après un questionnaire Go - No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
-        },
-        {
-          "answerText": "Je lui fais passer le questionnaire HHIE-S",
-          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire HHIE-S à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Après un questionnaire Go - No Go orientant vers un cas simple, l'étape suivante est la vidéo-otoscopie."
-        },
-        {
-          "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
-          "correctionText": "Le questionnaire Go - No Go est faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE Audition, la prochaine étape à suivre est la vidéo-otoscopie."
-        }
-      ]
-    },
-    {
-      "type": "Otoscopy",
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\3_3_tympanosclérose.png",
-      "diagnosticPhase": [
-        {
-          "answerText": "Il s'agit d'un bouchon de cérumen",
-          "correctionText": "Lors de l'examen, on observe une masse brunâtre, homogène et mate, obstruant le conduit auditif externe, sans visualisation de tympan ni des repères anatomiques habituels. Ces éléments sont caractéristiques d'un bouchon de cérumen."
+          "answerText": "Il s’agit d’aérateurs trans-tympaniques",
+          "correctionText": "Non, voici des images d’aérateurs trans-tympaniques (cf. photos). Les aérateurs trans-tympaniques dans l’enfance sont fréquents et ne constituent pas une contre-indication. Il y a une contre-indication s’il y a la présence d’un aérateur trans-tympanique récent, car il y a un risque de perforation.",
+          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Aerateurs_trans-tympaniques_1.png",
+          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Aerateurs_trans-tympaniques_2.png"
         },
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
-          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à la vidéo-otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire."
+          "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à la vidéo-otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire.",
+          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
+          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
         },
         {
-          "answerText": "Il s'agit d'une perforation tympanique ",
-          "correctionText": "Dans cette situation, l'annulus n'est pas visible sur toute sa circonférence. Il n'est donc pas possible de confirmer l'absence de perforation de la membrane tympanique. En cas de suspicion de perforation, un avis médical est nécessaire. Voici quelques exemples de perforations tympaniques."
+          "answerText": "Il s’agit d’une otomycose",
+          "correctionText": "Non, voici des images d’otomycose (cf. photos). Si on est face à ce cas on peut prescrire un traitement antifongique local par le médecin délégant si l’évaluation est réalisée par un infirmier délégué et conseiller au patient de contrôler chez son médecin traitant à la fin du traitement. Il sera reconvoqué pour une nouvelle évaluation à distance.",
+          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_1.png",
+          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_2.png"
         },
         {
           "answerText": "Il s'agit d'une tympanosclérose / myringosclérose",
           "isCorrect": true,
-          "correctionText": "C'est une affection caractérisée par des plaques blanchâtres, épaisses et calcifiées qui se forment sur le tympan."
+          "correctionText": "Oui, c'est une affection caractérisée par des plaques blanchâtres, épaisses et calcifiées qui se forment sur le tympan."
         }
       ]
     },
@@ -118,20 +79,20 @@
       "actionPhase": [
         {
           "answerText": "Je fais un bilan cognitif",
-          "correctionText": "Le questionnaire HHIE-S n'est pas un test de dépistage cognitif. Un résultat a 30 est faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
+          "correctionText": "Le questionnaire HHIE-S n'est pas un test de dépistage cognitif. Un résultat à 30 est en faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
         },
         {
           "answerText": "J'adresse le patient vers l'ORL",
-          "correctionText": "Il n'y a pas d'argument en faveur d'une situation complexe. Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
+          "correctionText": "Il n'y a pas d'argument en faveur d'une situation complexe. Le questionnaire HHIE-S avec un score à 30 est en faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
         },
         {
           "answerText": "Je fais une audiométrie",
           "isCorrect": true,
-          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. L'étape suivante est le bilan audiométrique."
+          "correctionText": "Le questionnaire HHIE-S avec un score à 30 est en faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. L'étape suivante est le bilan audiométrique."
         },
         {
           "answerText": "Je prescris une prothèse auditive",
-          "correctionText": "Le questionnaire HHIE-S a 30 est faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique pour vérifier l'indication avant de prescrire.",
+          "correctionText": "Le questionnaire HHIE-S avec un score à 30 est en faveur d'une gêne auditive modérée et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique pour vérifier l'indication avant de prescrire.",
           "rappelTip": "Prescription"
         }
       ]
@@ -143,39 +104,39 @@
         {
           "answerText": "Surdité neurosensorielle sévère bilatérale symétrique ou surdité de perception sévère bilatérale symétrique",
           "isCorrect": true,
-          "correctionText": "La bonne réponse est « Surdité neurosensorielle sévère bilatérale symétrique ou surdité de perception sévère bilatérale symétrique »."
+          "correctionText": "Oui, il s’agit bien d’une surdité neurosensorielle sévère bilatérale symétrique ou surdité de perception sévère bilatérale symétrique."
         },
         {
           "answerText": "Surdité neurosensorielle légère bilatérale symétrique ou surdité de perception légère bilatérale symétrique",
-          "correctionText": "La bonne réponse est « Surdité neurosensorielle sévère bilatérale symétrique ou surdité de perception sévère bilatérale symétrique »."
+          "correctionText": "Non, il ne s’agit pas d’une perte légère, voici pour rappel la classification des déficiences auditives selon le BIAP : \n\t<b>I. Audition normale ou subnormale</b>\nLa perte tonale moyenne ne dépasse pas 20 dB. Il s'agit éventuellement d'une atteinte tonale légère sans incidence sociale.\n\t<b>II. Déficience auditive légère</b>\nLa perte tonale moyenne est comprise entre <b>21 dB et 40 dB</b>.\nLa parole est perçue à voix normale, elle est difficilement perçue à voix basse ou lointaine.\nLa plupart des bruits familiaux sont perçus.\n\t<b>III. Déficience auditive moyenne</b>\n\t-\t<b>Premier degré</b> : la perte tonale moyenne est comprise entre <b>41 et 55 dB</b>.\n\t-\t<b>Deuxième degré</b> : la perte tonale moyenne est comprise entre <b>56 et 70 dB</b>.\nLa parole est perçue si on élève la voix. Le sujet comprend mieux en regardant parler. Quelques bruits familiers sont encore perçus.\n\t<b>IV. Déficience auditive sévère</b>\n\t-\t<b>Premier degré</b> : la perte tonale moyenne est comprise entre <b>71 et 80 dB</b>.\n\t-\t<b>Deuxième degré</b> : la perte tonale moyenne est comprise entre <b>81 et 90 dB</b>.\nLa parole est perçue à voix forte près de l'oreille.\nLes bruits forts sont perçus.\n\t<b>V. Déficience auditive profonde</b>\n\t-\t<b>Premier degré</b> : la perte tonale moyenne est comprise entre <b>91 et 100 dB</b>.\n\t-\t<b>Deuxième degré</b> : la perte tonale moyenne est comprise entre <b>101 et 110 dB</b>.\n\t-\t<b>Troisième degré</b> : la perte tonale moyenne est comprise entre <b>111 et 119 dB</b>.\nAucune perception de la parole.\nSeuls les bruits très puissants sont perçus.\n\t<b>VI. Déficience auditive totale - Cophose</b>\nLa perte moyenne est de <b>120 dB</b>.\nRien n'est perçu."
         },
         {
           "answerText": "Surdité neurosensorielle modérée bilatérale symétrique ou surdité de perception modérée bilatérale symétrique",
-          "correctionText": "La bonne réponse est « Surdité neurosensorielle sévère bilatérale symétrique ou surdité de perception sévère bilatérale symétrique »."
+          "correctionText": "Non, il ne s’agit pas d’une perte légère, voici pour rappel la classification des déficiences auditives selon le BIAP : \n\t<b>I. Audition normale ou subnormale</b>\nLa perte tonale moyenne ne dépasse pas 20 dB. Il s'agit éventuellement d'une atteinte tonale légère sans incidence sociale.\n\t<b>II. Déficience auditive légère</b>\nLa perte tonale moyenne est comprise entre <b>21 dB et 40 dB</b>.\nLa parole est perçue à voix normale, elle est difficilement perçue à voix basse ou lointaine.\nLa plupart des bruits familiaux sont perçus.\n\t<b>III. Déficience auditive moyenne</b>\n\t-\t<b>Premier degré</b> : la perte tonale moyenne est comprise entre <b>41 et 55 dB</b>.\n\t-\t<b>Deuxième degré</b> : la perte tonale moyenne est comprise entre <b>56 et 70 dB</b>.\nLa parole est perçue si on élève la voix. Le sujet comprend mieux en regardant parler. Quelques bruits familiers sont encore perçus.\n\t<b>IV. Déficience auditive sévère</b>\n\t-\t<b>Premier degré</b> : la perte tonale moyenne est comprise entre <b>71 et 80 dB</b>.\n\t-\t<b>Deuxième degré</b> : la perte tonale moyenne est comprise entre <b>81 et 90 dB</b>.\nLa parole est perçue à voix forte près de l'oreille.\nLes bruits forts sont perçus.\n\t<b>V. Déficience auditive profonde</b>\n\t-\t<b>Premier degré</b> : la perte tonale moyenne est comprise entre <b>91 et 100 dB</b>.\n\t-\t<b>Deuxième degré</b> : la perte tonale moyenne est comprise entre <b>101 et 110 dB</b>.\n\t-\t<b>Troisième degré</b> : la perte tonale moyenne est comprise entre <b>111 et 119 dB</b>.\nAucune perception de la parole.\nSeuls les bruits très puissants sont perçus.\n\t<b>VI. Déficience auditive totale - Cophose</b>\nLa perte moyenne est de <b>120 dB</b>.\nRien n'est perçu."
         },
         {
           "answerText": "Surdité de transmission modérée bilatérale symétrique",
-          "correctionText": "La bonne réponse est « Surdité neurosensorielle sévère bilatérale symétrique ou surdité de perception sévère bilatérale symétrique »."
+          "correctionText": "Non, il ne s’agit pas d’une surdité de transmission, une courbe de surdité de transmission se caractérise sur un audiogramme par une conduction osseuse normale et une conduction aérienne abaissée, créant un espace vide appelé « Rinne ».\nPour rappel, les caractéristiques principales d’une courbe de transmission sont :\n\t- Conduction osseuse (CO) : Elle reste normale (située entre 0 et 20 dB), ce qui montre que l'oreille interne fonctionne bien.\n\t- Conduction aérienne (CA) : Elle est descendue ou abaissée, ce qui indique que le son a du mal à traverser l'oreille externe ou moyenne.\n\t- Le Rinne audiométrique : C'est l'écart net entre la courbe aérienne (plus basse) et la courbe osseuse (plus haute).\n\t- Forme de la perte : La baisse de la conduction aérienne touche souvent toutes les fréquences de façon homogène, ou pire un peu plus les sons graves."
         }
       ],
       "actionPhase": [
         {
-          "answerText": "Je prescris une prothèse auditive",
-          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire.",
+          "answerText": "Je prescris des prothèses auditives",
+          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et doit être complété par un bilan cognitif et orthophonique. Un essai d’appareillage doit d’abord être réalisé. S’il s’avère insuffisant ou inefficace, un bilan est nécessaire afin d’évaluer l’indication d’un implant cochléaire.",
           "rappelTip": "Prescription"
         },
         {
           "answerText": "J'adresse le patient vers l'ORL",
           "isCorrect": true,
-          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire."
+          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et doit être complété par un bilan cognitif et orthophonique. Un essai d’appareillage doit d’abord être réalisé. S’il s’avère insuffisant ou inefficace, un bilan est nécessaire afin d’évaluer l’indication d’un implant cochléaire."
         },
         {
           "answerText": "Je prescris un implant cochléaire",
-          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire."
+          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et doit être complété par un bilan cognitif et orthophonique. Un essai d’appareillage doit d’abord être réalisé. S’il s’avère insuffisant ou inefficace, un bilan est nécessaire afin d’évaluer l’indication d’un implant cochléaire."
         },
         {
           "answerText": "Je propose une surveillance avec un contrôle dans 6 mois",
-          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et il est complété par un bilan cognitif et orthophonique. Essai appareillage voire bilan pour un implant cochléaire."
+          "correctionText": "Devant cette surdité sévère un bilan approfondi ORL est nécessaire et doit être complété par un bilan cognitif et orthophonique. Un essai d’appareillage doit d’abord être réalisé. S’il s’avère insuffisant ou inefficace, un bilan est nécessaire afin d’évaluer l’indication d’un implant cochléaire."
         }
       ]
     }

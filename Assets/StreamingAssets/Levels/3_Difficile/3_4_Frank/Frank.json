@@ -5,9 +5,9 @@
   "lastName": "LEVEAU",
   "firstName": "Frank",
   "age": 70,
-  "familySituation": "Vit chez lui et est suivi par une infirmière ASALEE.",
+  "familySituation": "Vit chez lui et est suivi par une infirmière.",
   "occupationalActivities": "",
-  "context": "Il se plaint de moments où il « entend comme dans une bulle ». Il a fait le test Höra à domicile, résultat pathologique. Il vous est adressé pour une évaluation approfondie de l'audition",
+  "context": "Mr Leveau se plaint de moments où il « entend comme dans une bulle ». Il a fait le test Höra à domicile, résultat pathologique. Son infirmière vous l’adresse pour une évaluation approfondie de l'audition.",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [
     {
@@ -23,18 +23,19 @@
         },
         {
           "answerText": "Je ne peux rien faire, je renvoie le patient vers l'ORL",
-          "correctionText": "Le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
+          "correctionText": "Non, le patient est un bon candidat pour l'évaluation ICOPE Audition : il a plus de 60 ans, son autonomie est préservée, le dépistage est anormal.\nA ce stade, aucun drapeau rouge est identifié, je poursuis l'évaluation.",
           "rappelTip": "RedFlag"
         },
         {
           "answerText": "Je réalise le test de chuchotement",
           "isCorrect": true,
-          "correctionText": "Le patient ayant procédé à une auto-évaluation ICOPE, le test de chuchotement n'a pas été réalisé. Vous commencez par cette étape pour vous assurer qu'il y a bien eu une anomalie à l'évaluation initiale."
+          "correctionText": "Le patient a procédé à une évaluation avec l’application Höra, ce qui est équivalent au test de chuchotement ou à un dépistage auditif avec un audioprothésite. En cas de doute vous pouvez refaire le test de chuchotement."
         }
       ]
     },
     {
       "type": "WisperTest",
+      "dialogueDoctor": "Le test Höra étant à la limite de la normale, je vais réaliser le test de chuchotement.",
       "dialoguePatient": "J'ai entendu 3 mots à droite et seulement 2 à gauche.",
       "actionPhase": [
         {
@@ -48,7 +49,7 @@
         },
         {
           "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go, avant de poursuivre par la vidéo-otoscopie<."
+          "correctionText": "Il est important de bien respecter l'ordre de l'algorithme décisionnel.\nA ce stade, la suspicion est confirmée car le test de chuchotement est anormal. Nous poursuivons alors le parcours ICOPE Audition avec le questionnaire Go - No Go, avant de poursuivre par la vidéo-otoscopie."
         },
         {
           "answerText": "Je fais passer le questionnaire Go - No Go",
@@ -59,7 +60,7 @@
     },
     {
       "type": "GoNoGo",
-      "dialoguePatient": "J'entend souvent comme dans une bulle et parfois c'est accompagnés de vertiges discrets.",
+      "dialoguePatient": "J'entend souvent comme dans une bulle et parfois c'est accompagné de vertiges discrets.",
       "predefinedAnswer": [
         "Yes",
         "No",
@@ -91,21 +92,21 @@
       "overrideAction": "Quelle pathologie pouvez-vous suspecter ?",
       "actionPhase": [
         {
-          "answerText": "Une Maladie de Ménière",
+          "answerText": "Une maladie de Ménière",
           "isCorrect": true,
-          "correctionText": "La présence de sensation de bulle accompagnés de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+          "correctionText": "La présence de sensation de bulle accompagné de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
         },
         {
           "answerText": "Un Schwanomme",
-          "correctionText": "La présence de sensation de bulle accompagnés de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+          "correctionText": "La présence de sensation de bulle accompagné de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
         },
         {
-          "answerText": "Une Presbyacousie légère",
-          "correctionText": "La présence de sensation de bulle accompagnés de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+          "answerText": "Une presbyacousie légère",
+          "correctionText": "La présence de sensation de bulle accompagné de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
         },
         {
-          "answerText": "Des Acouphènes",
-          "correctionText": "La présence de sensation de bulle accompagnés de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+          "answerText": "Des acouphènes",
+          "correctionText": "La présence de sensation de bulle accompagné de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
         }
       ]
     }

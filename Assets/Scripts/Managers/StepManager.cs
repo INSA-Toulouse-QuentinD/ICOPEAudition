@@ -66,6 +66,7 @@ namespace Managers {
         private StepTelephone _stepTelephone;
         private StepHhiesWeber _stepHhiesWeber;
         private StepAudiometrieVocale _stepAudiometrieVocale;
+        private StepGoNoGoOtoscopie _stepGoNoGoOtoscopie;
 
         // Enums
         private enum InteractionState {
@@ -180,11 +181,8 @@ namespace Managers {
                     UITutorialControler.Instance.TutorialMichel(5);
                     break;
                 case Step.GoNoGo:
-                    // Load questionary & answer
-                    List<QuestionData> questions = questionnaireData.questions;
-                    List<YesNo> answers = _patientData.steps[_indexStep].predefinedAnswer;
                     // Set texts
-                    _stepQuestionnary.SetQuestionaryText(questions, answers);
+                    _stepQuestionnary.SetQuestionaryText(questionnaireData.questions, _patientData.steps[_indexStep].predefinedAnswer);
                     //Set Patient Sprite
                     _stepQuestionnary.SetPatientSprite(_patientData.characterSprites[0]);
                     _stepQuestionnary.SetTextDialogue(_patientData.steps[_indexStep].dialoguePatient);
@@ -218,8 +216,8 @@ namespace Managers {
                     break;
                 case Step.Audiometry:
                     // Load patient audiometrie + patient sprite
-                    _stepAudiometrie.SetSprite(_patientData.steps[_indexStep].spriteEarExams,
-                        _patientData.characterSprites[0]);
+                    _stepAudiometrie.SetSprite(_patientData.steps[_indexStep].spriteEarExams, _patientData.characterSprites[0]);
+                    _stepAudiometrie.SetText(_patientData.steps[_indexStep].dialogueDoctor);
 
                     UITutorialControler.Instance.TutorialMichel(10);
                     break;
@@ -236,6 +234,15 @@ namespace Managers {
                     break;
                 case Step.AudiometryVocale:
                     _stepAudiometrieVocale.SetStep(_patientData.steps[_indexStep].dialoguePatient, _patientData.characterSprites[1]);
+                    break;
+                case Step.GoNoGoOtoscopy:
+                    _stepGoNoGoOtoscopie.SetQuestionaryText(questionnaireData.questions, _patientData.steps[_indexStep].predefinedAnswer);
+                    
+                    if (_patientData.characterSprites.Length > 1) {
+                        patientSprite = _patientData.characterSprites[1];
+                    }
+                    _stepGoNoGoOtoscopie.SetImages(_patientData.steps[_indexStep].spriteEarExams, patientSprite);
+                    _stepGoNoGoOtoscopie.SetTextDialogue(_patientData.steps[_indexStep].dialogueDoctor);
                     break;
             }
 
@@ -650,6 +657,7 @@ namespace Managers {
                 else if (go.TryGetComponent(out StepTelephone component7)) _stepTelephone = component7;
                 else if (go.TryGetComponent(out StepHhiesWeber component8)) _stepHhiesWeber = component8;
                 else if (go.TryGetComponent(out StepAudiometrieVocale component9)) _stepAudiometrieVocale = component9;
+                else if (go.TryGetComponent(out StepGoNoGoOtoscopie component10)) _stepGoNoGoOtoscopie = component10;
             }
 
             //SET LISTENER

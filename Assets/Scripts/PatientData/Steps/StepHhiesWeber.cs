@@ -19,7 +19,9 @@ namespace PatientData.Steps{
         public void SetImages(Sprite patient, Sprite hhies, Sprite otoscopie){
             imagePatient.sprite = patient;
             imageHhies.sprite = hhies;
+
             imageOtoscopie.sprite = otoscopie;
+            imageOtoscopie.enabled = otoscopie;
         }
     }
 }

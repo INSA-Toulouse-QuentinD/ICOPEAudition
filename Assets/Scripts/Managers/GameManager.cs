@@ -30,6 +30,7 @@ namespace Managers{
         private StepManager StepManager{ get; set; }
         public LevelSelector levelSelector;
         public GameObject leaveButton;
+        public OpenFolder openFolder;
         [HideInInspector] public SpriteDocType selectType = SpriteDocType.Man;
 
         #region Structures
@@ -218,6 +219,7 @@ namespace Managers{
 
         //LOAD GAME ON GRANDMA CLICK -> CALL LaunchGameAfterTime()
         public void LaunchGame(){
+            openFolder.Reset();
             ClearAnimation();
             StartCoroutine(LaunchGameAfterTime());
         }

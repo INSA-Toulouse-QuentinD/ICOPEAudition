@@ -57,7 +57,7 @@ namespace UI.ScoreContents{
                     realName = $"Etape {stepNumber}: Test de chuchotement";
                     break;
                 case Step.GoNoGo:
-                    realName = $"Etape {stepNumber}: Questionnaire Go-No-Go";
+                    realName = $"Etape {stepNumber}: Questionnaire Go - No Go";
                     break;
                 case Step.Otoscopy:
                     realName = $"Etape {stepNumber}: Vidéo otoscopie";

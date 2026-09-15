@@ -17,6 +17,7 @@ namespace PatientData.AlgoData{
         Telephone = 7,
         HhiesWeber = 8,
         AudiometryVocale = 9,
+        GoNoGoOtoscopy = 10,
     }
 
     /// <summary>
@@ -48,7 +49,7 @@ namespace PatientData.AlgoData{
         [TextArea] public string dialogueDoctor;
         [TextArea] public string dialoguePatient;
 
-        public List<YesNo> predefinedAnswer = new(){
+        public List<YesNo> predefinedAnswer = new List<YesNo> {
             YesNo.No, YesNo.No, YesNo.No, YesNo.No, YesNo.No, YesNo.No, YesNo.No
         }; // Predefined answers for patient
 

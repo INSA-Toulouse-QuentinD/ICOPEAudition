@@ -6,9 +6,9 @@
   "lastName": "BRIAR",
   "firstName": "Philippe",
   "age": 76,
-  "familySituation": "",
+  "familySituation": "Il vit en métropole et profite pleinement de sa retraite entre voyage et sorties culturelles avec ses amis.",
   "occupationalActivities": "",
-  "context": "Il se plaint d'une difficulté à comprendre les mots. Il a entendu parler du programme ICOPE au salon du sénior l'année dernière. Il a donc pris RDV pour réaliser son dépistage (étape initiale), dans son centre médical de proximité.",
+  "context": "Mr Briar se plaint d'une difficulté à comprendre les mots. Il a entendu parler du programme ICOPE au salon du sénior l'année dernière. Il a donc pris RDV pour réaliser son dépistage (évaluation initiale), dans le CCAS de sa commune. Il a réalisé son évaluation avec une assistante sociale.",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [
     {
@@ -83,32 +83,32 @@
         },
         {
           "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
-          "correctionText": "Le questionnaire Go - No Go est faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE Audition, la prochaine étape à suivre est la vidéo-otoscopie."
+          "correctionText": "Le questionnaire Go - No Go est en faveur d'une suspicion de cas simple, il faut continuer le parcours ICOPE Audition, la prochaine étape à suivre est la vidéo-otoscopie."
         }
       ]
     },
     {
       "type": "HhiesWeber",
-      "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 22 et le test de Weber acoumétrique est symétrique.",
+      "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 22 et le test de Weber acoumétrique est centré.",
       "spriteEarExams": "Images\\Steps\\HHIE-S\\22_HHIES.png",
       "spriteEarExams2": "Images\\Steps\\VideoOtoscopy\\3_1_normal.png",
       "actionPhase": [
         {
           "answerText": "Je fais passer le questionnaire Go - No Go",
-          "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. Le questionnaire Go-No Go a déjà été réalisé."
+          "correctionText": "Il n'est pas indiqué de réaliser le questionnaire Go - No Go à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. De plus, le questionnaire Go - No Go a déjà été réalisé."
         },
         {
           "answerText": "Je réalise une vidéo-otoscopie",
-          "correctionText": "Il n'est pas indiqué de réaliser l'audiométrie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. L'otoscopie a déjà été réalisé."
+          "correctionText": "Il n'est pas indiqué de réaliser la vidéo-otoscopie à ce stade du parcours. Il est important de bien respecter l'ordre de l'algorithme décisionnel du parcours ICOPE Audition. De plus, la vidéo-otoscopie a déjà été réalisé."
         },
         {
           "answerText": "Il est pertinent de réaliser l'audiométrie",
           "isCorrect": true,
-          "correctionText": "Le questionnaire HHIE-S a 22 est faveur d'une gêne auditive et le test de Weber acoumétrique est centré. L'étape suivante est le bilan audiométrique."
+          "correctionText": "Le questionnaire HHIE-S avec un score à 22 est en faveur d'une gêne auditive et le test de Weber acoumétrique est centré. L'étape suivante est le bilan audiométrique."
         },
         {
-          "answerText": "Je laisse le patient repartir et lui propose de faire le suivi ICOPE dans 6 mois",
-          "correctionText": "Le questionnaire HHIE-S a 22 est faveur d'une gêne auditive et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
+          "answerText": "Je laisse le patient repartir chez lui et lui propose de faire le suivi ICOPE dans 6 mois",
+          "correctionText": "Le questionnaire HHIE-S avec un score à 22 est en faveur d'une gêne auditive et le test de Weber acoumétrique est centré. Il faut réaliser le bilan audiométrique."
         }
       ]
     },
@@ -127,11 +127,11 @@
         },
         {
           "answerText": "J'adresse le patient vers l'ORL",
-          "correctionText": "Cet examen est incomplet et insuffisant pour prescrire des prothèses auditives, il faut continuer avec l'audiométrie vocale."
+          "correctionText": "Cet examen est incomplet et insuffisant pour justifier d'un adressage vers l’ORL, il faut continuer avec l'audiométrie vocale."
         },
         {
           "answerText": "Je rassure le patient et programme un rendez-vous dans 6 mois",
-          "correctionText": "Cet examen est incomplet et insuffisant pour prescrire des prothèses auditives, il faut continuer avec l'audiométrie vocale."
+          "correctionText": "Cet examen est incomplet et insuffisant pour programmer seulement un rendez-vous dans 6 mois, il faut continuer avec l'audiométrie vocale."
         }
       ]
     },

@@ -21,6 +21,13 @@ namespace UI.ScoreContents{
 
         private Dictionary<string, GameData.StepRecords> _records;
         private List<RectTransform> _pagesSteps;
+        
+        public GameObject happyDisplay;
+
+        public void Reset() {
+            happyDisplay.SetActive(true);
+            gameObject.SetActive(false);
+        }
 
         void OnEnable(){
             openDetailsButton.onPress.AddListener(OpenFolderVoid);
