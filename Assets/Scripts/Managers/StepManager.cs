@@ -7,6 +7,9 @@ using UI.Buttons;
 using UI.TutorialContents;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Button = UnityEngine.UI.Button;
+using Image = UnityEngine.UI.Image;
 using Random = System.Random;
 
 namespace Managers {
@@ -33,6 +36,8 @@ namespace Managers {
         [SerializeField] private TextMeshProUGUI answerText;
         [SerializeField] private TextMeshProUGUI answerSelected;
         [SerializeField] private GameObject answerJustification;
+        [SerializeField] private RectTransform scrollViewRect;
+        private ScrollRect scrollRect;
         [SerializeField] private List<GameObject> answerGameObjectSprites;
 
         [Header("Colors answer")]
@@ -617,16 +622,23 @@ namespace Managers {
             if (answer.correctionText != "") {
                 answerJustification.GetComponent<TextMeshProUGUI>().text =
                     "<u><b>Justification :</b></u> " + answer.correctionText;
+                
+                Canvas.ForceUpdateCanvases();
+                scrollRect.verticalNormalizedPosition = 1f;
             }
 
             // Load image if not null
             if (answer.sprites.Count > 0) {
+                scrollViewRect.sizeDelta = new Vector2(1275, 280);
+                
                 int max = Mathf.Min(answer.sprites.Count, answerGameObjectSprites.Count);
                 for (int i = 0; i < max; i++) {
                     answerGameObjectSprites[i].GetComponent<Image>().sprite = answer.sprites[i];
                     // Set gameObject actif
                     answerGameObjectSprites[i].SetActive(true);
                 }
+            } else {
+                scrollViewRect.sizeDelta = new Vector2(1275, 600);
             }
 
             // Set GameObject active
@@ -663,6 +675,8 @@ namespace Managers {
             //SET LISTENER
             confirmNextButton.onClick.AddListener(ButtonNext);
             returnButton.onClick.AddListener(ButtonBack);
+
+            scrollRect = scrollViewRect.GetComponent<ScrollRect>();
         }
     }
 }

@@ -187,6 +187,7 @@ namespace Managers{
             PatientAnimation.SetCharacterInArea(levelsData.patientByLevel[currentLevel].patientsCase[currentPatient]);
 
             // SHOW TUTORIAL
+            genderActive.SetActive(!(skipGender || _genderAnswer));
             if (skipAssistante) return;
 
             if (instanteAnimation) {
@@ -198,7 +199,6 @@ namespace Managers{
 
         private void EnableTutorial(){
             if (Instance.GameData.FirstGameSession()) {
-                genderActive.SetActive(!(skipGender || _genderAnswer));
                 isTutorialActive.SetActive(_tutorialAnswer);
             }
         }

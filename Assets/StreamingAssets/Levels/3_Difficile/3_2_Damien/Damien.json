@@ -116,16 +116,16 @@
     },
     {
       "type": "Audiometry",
-      "dialogueDoctor": "Oreille droite perte légère, oreille gauche perte moyenne (écart de 20 dB)\nVocale avec distorsion unilatératle\nRSB pathologique.",
+      "dialogueDoctor": "Oreille droite perte légère, oreille gauche perte moyenne (écart de 20 dB)\nVocale avec distorsion unilatérale\nRSB pathologique",
       "spriteEarExams": "Images\\Steps\\Audiometry\\3_2_Audiometrie.png",
       "actionPhase": [
         {
           "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
-          "correctionText": "non, il s'agit d'une situation complexe en présence d'une d'asymétrie auditive, il faut absolument penser au schwannome et réaliser une IRM nécessaire et prendre un avis ORL."
+          "correctionText": "Non, il s'agit d'une situation complexe en présence d'une d'asymétrie auditive, il faut absolument penser au schwannome et réaliser une IRM nécessaire et prendre un avis ORL."
         },
         {
           "answerText": "Je prescris au patient un appareillage audio-prothétique bilatéral",
-          "correctionText": "non, il s'agit d'une situation complexe en présence d'une d'asymétrie auditive, il faut absolument penser au schwannome et réaliser une IRM nécessaire et prendre un avis ORL."
+          "correctionText": "Non, il s'agit d'une situation complexe en présence d'une d'asymétrie auditive, il faut absolument penser au schwannome et réaliser une IRM nécessaire et prendre un avis ORL."
         },
         {
           "answerText": "J'adresse le patient vers l'ORL",
@@ -134,7 +134,7 @@
         },
         {
           "answerText": "Il faudra répéter l'audiométrie dans 6 mois",
-          "correctionText": "non, il s'agit d'une situation complexe en présence d'une d'asymétrie auditive, il faut absolument penser au schwannome et réaliser une IRM nécessaire et prendre un avis ORL."
+          "correctionText": "Non, il s'agit d'une situation complexe en présence d'une d'asymétrie auditive, il faut absolument penser au schwannome et réaliser une IRM nécessaire et prendre un avis ORL."
         }
       ]
     }

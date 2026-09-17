@@ -29,7 +29,7 @@
         {
           "answerText": "Je réalise le test de chuchotement",
           "isCorrect": true,
-          "correctionText": "Le patient a procédé à une évaluation avec l’application Höra, ce qui est équivalent au test de chuchotement ou à un dépistage auditif avec un audioprothésite. En cas de doute vous pouvez refaire le test de chuchotement."
+          "correctionText": "Le patient a procédé à une évaluation avec l’application Höra, ce qui est équivalent au test de chuchotement ou à un dépistage auditif avec un audioprothésiste. En cas de doute vous pouvez refaire le test de chuchotement."
         }
       ]
     },
@@ -94,19 +94,19 @@
         {
           "answerText": "Une maladie de Ménière",
           "isCorrect": true,
-          "correctionText": "La présence de sensation de bulle accompagné de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+          "correctionText": "La présence de sensation de bulle accompagnée de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
         },
         {
           "answerText": "Un Schwanomme",
-          "correctionText": "La présence de sensation de bulle accompagné de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+          "correctionText": "La présence de sensation de bulle accompagnée de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
         },
         {
           "answerText": "Une presbyacousie légère",
-          "correctionText": "La présence de sensation de bulle accompagné de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+          "correctionText": "La présence de sensation de bulle accompagnée de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
         },
         {
           "answerText": "Des acouphènes",
-          "correctionText": "La présence de sensation de bulle accompagné de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
+          "correctionText": "La présence de sensation de bulle accompagnée de vertiges doit faire penser à une maladie de Ménière et nécessite un avis spécialisé ORL."
         }
       ]
     }

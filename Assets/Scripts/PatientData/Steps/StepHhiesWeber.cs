@@ -9,6 +9,7 @@ namespace PatientData.Steps{
     public class StepHhiesWeber : MonoBehaviour{
         [SerializeField] private TextMeshProUGUI textDoc;
         [SerializeField] private Image imagePatient;
+        [SerializeField] private RectTransform porteDocument;
         [SerializeField] private Image imageHhies;
         [SerializeField] private Image imageOtoscopie;
 
@@ -19,9 +20,19 @@ namespace PatientData.Steps{
         public void SetImages(Sprite patient, Sprite hhies, Sprite otoscopie){
             imagePatient.sprite = patient;
             imageHhies.sprite = hhies;
-
-            imageOtoscopie.sprite = otoscopie;
-            imageOtoscopie.enabled = otoscopie;
+            
+            if (otoscopie) {
+                imageOtoscopie.sprite = otoscopie;
+                imageOtoscopie.enabled = true;
+                
+                porteDocument.anchoredPosition = new Vector3(690, -200, 0);
+                porteDocument.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+            } else {
+                imageOtoscopie.enabled = false;
+                
+                porteDocument.anchoredPosition = new Vector3(540, 75, 0);
+                porteDocument.localScale = new Vector3(0.85f, 0.85f, 0.85f);
+            }
         }
     }
 }
