@@ -1,7 +1,7 @@
 {
-  "spriteUp": "Levels\\1_Facile\\1_1_Jeanne\\Jeanne_up.png",
-  "spriteSit": "Levels\\1_Facile\\1_1_Jeanne\\Jeanne_sit.png",
-  "spriteWeber": "Levels\\1_Facile\\1_1_Jeanne\\Jeanne_weber.png",
+  "spriteUp": "Levels/1_Facile/1_1_Jeanne/Jeanne_up.png",
+  "spriteSit": "Levels/1_Facile/1_1_Jeanne/Jeanne_sit.png",
+  "spriteWeber": "Levels/1_Facile/1_1_Jeanne/Jeanne_weber.png",
   "isOnPhone": false,
   "lastName": "DURAND",
   "firstName": "Jeanne",
@@ -137,23 +137,23 @@
       "type": "Otoscopy",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png",
+      "spriteEarExams": "Images/Steps/VideoOtoscopy/Exemples/Cerumen_2.png",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
           "isCorrect": false,
           "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à la vidéo-otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Otite_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Otite_2.png"
         },
         {
           "answerText": "Il s'agit d'une perforation tympanique",
           "isCorrect": false,
           "correctionText": "Dans notre cas, on ne peut pas suivre l'annulus sur toute sa circonférence en raison du bouchon de cérumen qui affecte sa visibilité. Voici des exemples de perforations tympanique :",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Perforation_tympan_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Perforation_tympan_2.png"
         },
         {
           "answerText": "Il s'agit d'un bouchon de cérumen",
@@ -166,8 +166,8 @@
           "isCorrect": false,
           "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\nVoici des exemples de tympans normaux :",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Normal_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Normal_2.png"
         }
       ],
       "actionPhase": [
@@ -201,7 +201,7 @@
       "type": "Otoscopy",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\1_1_normal.png",
+      "spriteEarExams": "Images/Steps/VideoOtoscopy/1_1_normal.png",
       "diagnosticPhase": [
         {
           "answerText": "Cette otoscopie peut être considérée comme normale, en tous cas, cet aspect n'est généralement pas associé à une surdité",
@@ -224,7 +224,7 @@
           "isCorrect": false,
           "correctionText": "Non, dans l'otomycose on retrouve des dépôts blanchâtres, ou des tiges aspergillaires, ou encore des écoulements dans le conduit auditif externe. Elles sont fréquemment associées à des facteurs de risques tel qu'un diabète mal équilibré, une macération du conduit auditif externe (baignades fréquentes, appareils auditifs, perforation tympanique suintante, lésions chroniques du conduit auditif externe comme l'eczéma ou des lésions par introduction répétées de corps étrangers).",
           "rappelTip": "Tympan",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_1.png",
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Otomycose_1.png",
           "spriteJustification2": ""
         },
         {
@@ -341,7 +341,7 @@
       "type": "Hhies",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\HHIE-S\\14_HHIES.png",
+      "spriteEarExams": "Images/Steps/HHIE-S/14_HHIES.png",
       "diagnosticPhase": [
         {
           "answerText": "Le score est en faveur de difficultés modérées",
@@ -479,7 +479,7 @@
       "type": "Audiometry",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\Audiometry\\1_1_Audiometrie.png",
+      "spriteEarExams": "Images/Steps/Audiometry/1_1_Audiometrie.png",
       "diagnosticPhase": [
         {
           "answerText": "L'audiogramme montre une surdité de transmission bilatérale",

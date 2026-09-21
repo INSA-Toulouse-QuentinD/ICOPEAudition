@@ -1,6 +1,6 @@
 {
-  "spriteUp": "Levels\\1_Facile\\1_4_Gerard\\Gerard_up.png",
-  "spriteSit": "Levels\\1_Facile\\1_4_Gerard\\Gerard_sit.png",
+  "spriteUp": "Levels/1_Facile/1_4_Gerard/Gerard_up.png",
+  "spriteSit": "Levels/1_Facile/1_4_Gerard/Gerard_sit.png",
   "spriteWeber": "",
   "isOnPhone": false,
   "lastName": "FONTAINE",
@@ -211,39 +211,39 @@
       "type": "Otoscopy",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\1_4_perforation_tympan.png",
+      "spriteEarExams": "Images/Steps/VideoOtoscopy/1_4_perforation_tympan.png",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
           "isCorrect": false,
           "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à la vidéo-otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Otite_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Otite_2.png"
         },
         {
           "answerText": "Il s'agit d'une perforation tympanique",
           "isCorrect": true,
           "correctionText": "Il s'agit bien d'une perforation de la membrane.\nVoici d'autres exemples :",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Perforation_tympan_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Perforation_tympan_2.png"
         },
         {
           "answerText": "Il s'agit d'un bouchon de cérumen",
           "isCorrect": false,
           "correctionText": "Non, voici des exemples de bouchons de cérumen :",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Cerumen_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Cerumen_2.png"
         },
         {
           "answerText": "Il s'agit d'un tympan normal",
           "isCorrect": false,
           "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\nVoici des exemples de tympans normaux :",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Normal_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Normal_2.png"
         }
       ],
       "actionPhase": [

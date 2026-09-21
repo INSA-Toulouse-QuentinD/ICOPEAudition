@@ -1,7 +1,7 @@
 {
-  "spriteUp": "Levels\\3_Difficile\\3_3_Vincent\\Vincent_up.png",
-  "spriteSit": "Levels\\3_Difficile\\3_3_Vincent\\Vincent_sit.png",
-  "spriteWeber": "Levels\\3_Difficile\\3_3_Vincent\\Vincent_weber.png",
+  "spriteUp": "Levels/3_Difficile/3_3_Vincent/Vincent_up.png",
+  "spriteSit": "Levels/3_Difficile/3_3_Vincent/Vincent_sit.png",
+  "spriteWeber": "Levels/3_Difficile/3_3_Vincent/Vincent_weber.png",
   "isOnPhone": false,
   "lastName": "MILANE",
   "firstName": "Vincent",
@@ -36,7 +36,7 @@
     },
     {
       "type": "GoNoGoOtoscopy",
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\3_3_tympanosclérose.png",
+      "spriteEarExams": "Images/Steps/VideoOtoscopy/3_3_tympanosclérose.png",
       "dialogueDoctor": "On ne trouve aucune alerte au questionnaire Go - No Go et voici le résultat de la vidéo-otoscopie :",
       "predefinedAnswer": [
         "No",
@@ -50,20 +50,20 @@
         {
           "answerText": "Il s’agit d’aérateurs trans-tympaniques",
           "correctionText": "Non, voici des images d’aérateurs trans-tympaniques (cf. photos). Les aérateurs trans-tympaniques dans l’enfance sont fréquents et ne constituent pas une contre-indication. Il y a une contre-indication s’il y a la présence d’un aérateur trans-tympanique récent, car il y a un risque de perforation.",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Aerateurs_trans-tympaniques_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Aerateurs_trans-tympaniques_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Aerateurs_trans-tympaniques_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Aerateurs_trans-tympaniques_2.png"
         },
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
           "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à la vidéo-otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire.",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Otite_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Otite_2.png"
         },
         {
           "answerText": "Il s’agit d’une otomycose",
           "correctionText": "Non, voici des images d’otomycose (cf. photos). Si on est face à ce cas on peut prescrire un traitement antifongique local par le médecin délégant si l’évaluation est réalisée par un infirmier délégué et conseiller au patient de contrôler chez son médecin traitant à la fin du traitement. Il sera reconvoqué pour une nouvelle évaluation à distance.",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Otomycose_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Otomycose_2.png"
         },
         {
           "answerText": "Il s'agit d'une tympanosclérose / myringosclérose",
@@ -75,7 +75,7 @@
     {
       "type": "HhiesWeber",
       "dialoguePatient": "Son score au questionnaire HHIE-S est de 30 et le test de Weber acoumétrique est symétrique.",
-      "spriteEarExams": "Images\\Steps\\HHIE-S\\30_HHIES.png",
+      "spriteEarExams": "Images/Steps/HHIE-S/30_HHIES.png",
       "actionPhase": [
         {
           "answerText": "Je fais un bilan cognitif",
@@ -99,7 +99,7 @@
     },
     {
       "type": "Audiometry",
-      "spriteEarExams": "Images\\Steps\\Audiometry\\3_3_Audiometrie.png",
+      "spriteEarExams": "Images/Steps/Audiometry/3_3_Audiometrie.png",
       "diagnosticPhase": [
         {
           "answerText": "Surdité neurosensorielle sévère bilatérale symétrique ou surdité de perception sévère bilatérale symétrique",

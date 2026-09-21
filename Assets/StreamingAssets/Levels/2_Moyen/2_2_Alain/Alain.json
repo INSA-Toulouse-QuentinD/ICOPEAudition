@@ -1,6 +1,6 @@
 {
-  "spriteUp": "Levels\\2_Moyen\\2_2_Alain\\Alain_up.png",
-  "spriteSit": "Levels\\2_Moyen\\2_2_Alain\\Alain_sit.png",
+  "spriteUp": "Levels/2_Moyen/2_2_Alain/Alain_up.png",
+  "spriteSit": "Levels/2_Moyen/2_2_Alain/Alain_sit.png",
   "isOnPhone": false,
   "lastName": "THOMAS",
   "firstName": "Alain",
@@ -68,7 +68,7 @@
     {
       "type": "Otoscopy",
       "dialoguePatient": "J'ai oublié de dire, j'ai été opéré d'une tympanoplastie il y a environ 10 ans.",
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\2_2_cerumen.png",
+      "spriteEarExams": "Images/Steps/VideoOtoscopy/2_2_cerumen.png",
       "actionPhase": [
         {
           "answerText": "J'utilise l'irrigation pour retirer le bouchon",

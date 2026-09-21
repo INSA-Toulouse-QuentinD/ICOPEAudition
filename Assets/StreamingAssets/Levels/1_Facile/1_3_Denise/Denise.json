@@ -1,6 +1,6 @@
 {
-  "spriteUp": "Levels\\1_Facile\\1_3_Denise\\Denise_up.png",
-  "spriteSit": "Levels\\1_Facile\\1_3_Denise\\Denise_sit.png",
+  "spriteUp": "Levels/1_Facile/1_3_Denise/Denise_up.png",
+  "spriteSit": "Levels/1_Facile/1_3_Denise/Denise_sit.png",
   "spriteWeber": "",
   "isOnPhone": false,
   "lastName": "ROUX",
@@ -212,15 +212,15 @@
       "type": "Otoscopy",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\1_3_cerumen.png",
+      "spriteEarExams": "Images/Steps/VideoOtoscopy/1_3_cerumen.png",
       "diagnosticPhase": [
         {
           "answerText": "Il existe une otomycose, je mets en place un traitement par gouttes auriculaire et lui conseille de bien respecter une éviction aquatique pendant toute la durée du traitement",
           "isCorrect": false,
           "correctionText": "Non, ici il s'agit d'un bouchon de cérumen. Si on est face à cette otoscopie (cf. photos), oui on peut prescrire un traitement antifongique local par le médecin délégant si l'évaluation est réalisée par un infirmier délégué et conseiller à la patiente de contrôler chez son médecin traitant à la fin du traitement. Elle sera reconvoquée pour une nouvelle évaluation à distance.",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otomycose_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Otomycose_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Otomycose_2.png"
         },
         {
           "answerText": "Il s'agit d'un bouchon de cérumen, je propose de procéder à l'ablation du bouchon en utilisation la méthode de l'irrigation",
@@ -235,8 +235,8 @@
           "isCorrect": false,
           "correctionText": "Non, ici il s'agit d'un bouchon de cérumen.\nVoici un exemple d'ostéïte avec l'image de droite et un exemple de cholestéatomes avec l'image de gauche :",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Osteite.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cholesteatomes.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Osteite.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Cholesteatomes.png"
         }
       ],
       "actionPhase": []
@@ -245,7 +245,7 @@
       "type": "Otoscopy",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
+      "spriteEarExams": "Images/Steps/VideoOtoscopy/Exemples/Normal_1.png",
       "diagnosticPhase": [],
       "actionPhase": [
         {

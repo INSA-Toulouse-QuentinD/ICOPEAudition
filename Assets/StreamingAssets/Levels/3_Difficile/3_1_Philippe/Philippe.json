@@ -1,7 +1,7 @@
 {
-  "spriteUp": "Levels\\3_Difficile\\3_1_Philippe\\Philippe_up.png",
-  "spriteSit": "Levels\\3_Difficile\\3_1_Philippe\\Philippe_sit.png",
-  "spriteWeber": "Levels\\3_Difficile\\3_1_Philippe\\Philippe_weber.png",
+  "spriteUp": "Levels/3_Difficile/3_1_Philippe/Philippe_up.png",
+  "spriteSit": "Levels/3_Difficile/3_1_Philippe/Philippe_sit.png",
+  "spriteWeber": "Levels/3_Difficile/3_1_Philippe/Philippe_weber.png",
   "isOnPhone": false,
   "lastName": "BRIAR",
   "firstName": "Philippe",
@@ -90,8 +90,8 @@
     {
       "type": "HhiesWeber",
       "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 22 et le test de Weber acoumétrique est centré.",
-      "spriteEarExams": "Images\\Steps\\HHIE-S\\22_HHIES.png",
-      "spriteEarExams2": "Images\\Steps\\VideoOtoscopy\\3_1_normal.png",
+      "spriteEarExams": "Images/Steps/HHIE-S/22_HHIES.png",
+      "spriteEarExams2": "Images/Steps/VideoOtoscopy/3_1_normal.png",
       "actionPhase": [
         {
           "answerText": "Je fais passer le questionnaire Go - No Go",
@@ -114,7 +114,7 @@
     },
     {
       "type": "Audiometry",
-      "spriteEarExams": "Images\\Steps\\Audiometry\\3_1_Audiometrie.png",
+      "spriteEarExams": "Images/Steps/Audiometry/3_1_Audiometrie.png",
       "actionPhase": [
         {
           "answerText": "Je prescris un appareillage",

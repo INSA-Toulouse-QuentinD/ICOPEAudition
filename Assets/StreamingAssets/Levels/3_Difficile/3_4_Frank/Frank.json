@@ -1,6 +1,6 @@
 {
-  "spriteUp": "Levels\\3_Difficile\\3_4_Frank\\Frank_up.png",
-  "spriteSit": "Levels\\3_Difficile\\3_4_Frank\\Frank_sit.png",
+  "spriteUp": "Levels/3_Difficile/3_4_Frank/Frank_up.png",
+  "spriteSit": "Levels/3_Difficile/3_4_Frank/Frank_sit.png",
   "isOnPhone": false,
   "lastName": "LEVEAU",
   "firstName": "Frank",

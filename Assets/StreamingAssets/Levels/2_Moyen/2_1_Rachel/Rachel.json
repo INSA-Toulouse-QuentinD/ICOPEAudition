@@ -1,7 +1,7 @@
 {
-  "spriteUp": "Levels\\2_Moyen\\2_1_Rachel\\Rachel_up.png",
-  "spriteSit": "Levels\\2_Moyen\\2_1_Rachel\\Rachel_sit.png",
-  "spriteWeber": "Levels\\2_Moyen\\2_1_Rachel\\Rachel_weber.png",
+  "spriteUp": "Levels/2_Moyen/2_1_Rachel/Rachel_up.png",
+  "spriteSit": "Levels/2_Moyen/2_1_Rachel/Rachel_sit.png",
+  "spriteWeber": "Levels/2_Moyen/2_1_Rachel/Rachel_weber.png",
   "isOnPhone": false,
   "lastName": "BERNIER",
   "firstName": "Rachel",
@@ -211,31 +211,31 @@
       "type": "Otoscopy",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\VideoOtoscopy\\2_1_normal.png",
+      "spriteEarExams": "Images/Steps/VideoOtoscopy/2_1_normal.png",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une otite moyenne aiguë",
           "isCorrect": false,
           "correctionText": "Une otite moyenne aiguë est diagnostiquée quand il existe une congestion de la membrane tympanique (phase congestive : photo de gauche), ou une congestion associée à un épanchement purulent rétro tympanique.\nOn constate souvent une disparition des repères habituellement retrouvés à la vidéo-otoscopie. Il existe une douleur associée et souvent de la fièvre. Un avis médical est nécessaire (médecin généraliste ou ORL).",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Otite_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Otite_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Otite_2.png"
         },
         {
           "answerText": "Il s'agit d'une perforation tympanique",
           "isCorrect": false,
           "correctionText": "Dans notre cas, on peut suivre l'annulus sur toute sa circonférence, il n'existe donc pas de perforation de la membrane. En cas de doute de perforation tympanique, un avis médical est nécessaire. Voici des exemples de perforations tympaniques :",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Perforation_tympan_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Perforation_tympan_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Perforation_tympan_2.png"
         },
         {
           "answerText": "Il s'agit d'un bouchon de cérumen",
           "isCorrect": false,
           "correctionText": "Un tympan normal est classiquement transparent, de couleur grise, bien tendu autour de la circonférence (annulus), situé au fond du conduit auditif externe.\n\nVoici des exemples de bouchons de cérumen :",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
-          "spriteJustification2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_2.png"
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Cerumen_1.png",
+          "spriteJustification2": "Images/Steps/VideoOtoscopy/Exemples/Cerumen_2.png"
         },
         {
           "answerText": "Il s'agit d'un tympan normal",
@@ -282,7 +282,7 @@
       "type": "Hhies",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\HHIE-S\\10_HHIES.png",
+      "spriteEarExams": "Images/Steps/HHIE-S/10_HHIES.png",
       "diagnosticPhase": [
         {
           "answerText": "Le score est en faveur de difficultés modérées",
@@ -379,7 +379,7 @@
           "isCorrect": false,
           "correctionText": "Un bouchon de cérumen est identifiable lors de l'examen otoscopique et non lors du test de Weber acoumétrique ! Si elle avait un bouchon de cérumen côté droit, avec une otoscopie normale à gauche, on pourrait s'attendre à retrouver un Weber latéralisé à droite s'il est obstructif (et à condition qu'il n'existe pas d'autre cause sous-jacente d'asymétrie auditive), mais le diagnostic du bouchon de cérumen resterait clinique et serait surtout réalisé avant !",
           "rappelTip": "None",
-          "spriteJustification1": "Images\\Steps\\VideoOtoscopy\\Exemples\\Cerumen_1.png",
+          "spriteJustification1": "Images/Steps/VideoOtoscopy/Exemples/Cerumen_1.png",
           "spriteJustification2": ""
         }
       ],
@@ -420,7 +420,7 @@
       "type": "Audiometry",
       "dialoguePatient": "",
       "predefinedAnswer": [],
-      "spriteEarExams": "Images\\Steps\\Audiometry\\2_1_Audiometrie.png",
+      "spriteEarExams": "Images/Steps/Audiometry/2_1_Audiometrie.png",
       "diagnosticPhase": [
         {
           "answerText": "Il s'agit d'une surdité de transmission moyenne et symétrique",

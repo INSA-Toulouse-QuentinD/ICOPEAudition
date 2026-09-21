@@ -1,7 +1,7 @@
 {
-  "spriteUp": "Levels\\3_Difficile\\3_2_Damien\\Damien_up.png",
-  "spriteSit": "Levels\\3_Difficile\\3_2_Damien\\Damien_sit.png",
-  "spriteWeber": "Levels\\3_Difficile\\3_2_Damien\\Damien_weber.png",
+  "spriteUp": "Levels/3_Difficile/3_2_Damien/Damien_up.png",
+  "spriteSit": "Levels/3_Difficile/3_2_Damien/Damien_sit.png",
+  "spriteWeber": "Levels/3_Difficile/3_2_Damien/Damien_weber.png",
   "isOnPhone": false,
   "lastName": "ROBERT",
   "firstName": "Damien",
@@ -92,8 +92,8 @@
     {
       "type": "HhiesWeber",
       "dialoguePatient": "Son otoscopie est normale, son score au questionnaire HHIE-S est de 16 et le test de Weber acoumétrique est centré.",
-      "spriteEarExams": "Images\\Steps\\HHIE-S\\16_HHIES.png",
-      "spriteEarExams2": "Images\\Steps\\VideoOtoscopy\\Exemples\\Normal_1.png",
+      "spriteEarExams": "Images/Steps/HHIE-S/16_HHIES.png",
+      "spriteEarExams2": "Images/Steps/VideoOtoscopy/Exemples/Normal_1.png",
       "actionPhase": [
         {
           "answerText": "Je prescris un appareillage",
@@ -117,7 +117,7 @@
     {
       "type": "Audiometry",
       "dialogueDoctor": "Oreille droite perte légère, oreille gauche perte moyenne (écart de 20 dB)\nVocale avec distorsion unilatérale\nRSB pathologique",
-      "spriteEarExams": "Images\\Steps\\Audiometry\\3_2_Audiometrie.png",
+      "spriteEarExams": "Images/Steps/Audiometry/3_2_Audiometrie.png",
       "actionPhase": [
         {
           "answerText": "Je réalise une surveillance en programmant un rendez-vous dans 6 mois",
