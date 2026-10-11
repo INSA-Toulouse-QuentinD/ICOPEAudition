@@ -168,8 +168,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 50%
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
+  m_sharedMaterial: {fileID: 2855645844639110271, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -371,8 +371,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
+  m_sharedMaterial: {fileID: 2855645844639110271, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -629,8 +629,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nombre d'\xE9tapes r\xE9ussies :\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
+  m_sharedMaterial: {fileID: -6593777996681390383, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1101,8 +1101,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fermer le dossier
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 21d99d9bdee50f24aa14b72249087708, type: 2}
+  m_sharedMaterial: {fileID: 3067868463887245083, guid: 21d99d9bdee50f24aa14b72249087708, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1126,13 +1126,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.9
+  m_fontSize: 36.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 28
   m_fontSizeMax: 38
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1787,8 +1787,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nombre d'actions r\xE9ussies :\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
+  m_sharedMaterial: {fileID: -6593777996681390383, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1988,8 +1988,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Retour au menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 054727b5794009c4daf10b108a84072d, type: 2}
+  m_sharedMaterial: {fileID: -990987138112724309, guid: 054727b5794009c4daf10b108a84072d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2125,8 +2125,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "D\xE9tails"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 21d99d9bdee50f24aa14b72249087708, type: 2}
+  m_sharedMaterial: {fileID: 3067868463887245083, guid: 21d99d9bdee50f24aa14b72249087708, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2156,7 +2156,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 28
   m_fontSizeMax: 38
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -2262,8 +2262,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nombre d'actions rat\xE9es :"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
+  m_sharedMaterial: {fileID: -6593777996681390383, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2401,8 +2401,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
+  m_sharedMaterial: {fileID: 2855645844639110271, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2540,8 +2540,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
+  m_sharedMaterial: {fileID: 2855645844639110271, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2677,8 +2677,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <u>Score :</u> 10000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbc4397628baf4f4e84bffeaeb8db000, type: 2}
+  m_sharedMaterial: {fileID: 8306023203111371572, guid: dbc4397628baf4f4e84bffeaeb8db000, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2814,8 +2814,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Synth\xE8se du patient"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dbc4397628baf4f4e84bffeaeb8db000, type: 2}
+  m_sharedMaterial: {fileID: 8306023203111371572, guid: dbc4397628baf4f4e84bffeaeb8db000, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2951,8 +2951,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Taux de r\xE9ussite :"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
+  m_sharedMaterial: {fileID: -6593777996681390383, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3273,8 +3273,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nombre de diagnostics r\xE9ussis :\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
+  m_sharedMaterial: {fileID: -6593777996681390383, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3547,8 +3547,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nombre d'\xE9tapes rat\xE9es :\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
+  m_sharedMaterial: {fileID: -6593777996681390383, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3761,8 +3761,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
+  m_sharedMaterial: {fileID: 2855645844639110271, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4030,8 +4030,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '[Name]'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e2083a41ce28ed7459599b65628021ca, type: 2}
+  m_sharedMaterial: {fileID: -2886229544632674907, guid: e2083a41ce28ed7459599b65628021ca, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4169,8 +4169,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
+  m_sharedMaterial: {fileID: 2855645844639110271, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4306,8 +4306,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: x1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
+  m_sharedMaterial: {fileID: 2855645844639110271, guid: 3bfe7f88b8936df44b5bc55eb21ed45a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4584,6 +4584,7 @@ MonoBehaviour:
   - {fileID: 1115963472380244250}
   prefab: {fileID: 3546430388443936348, guid: 284a2425908c69c4b91fc413669c2ebd, type: 3}
   parentTransform: {fileID: 6504489142346460351}
+  happyDisplay: {fileID: 0}
 --- !u!1 &9173529136289137796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4651,8 +4652,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nombre de diagnostics rat\xE9s :\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
+  m_sharedMaterial: {fileID: -6593777996681390383, guid: e05ebac9d3aa9fe4799a7da6bff384bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4868,6 +4869,10 @@ PrefabInstance:
     - target: {fileID: 3546430388443936348, guid: 284a2425908c69c4b91fc413669c2ebd, type: 3}
       propertyPath: m_Name
       value: FolderInsidePage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3546430388443936348, guid: 284a2425908c69c4b91fc413669c2ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3633240063796489925, guid: 284a2425908c69c4b91fc413669c2ebd, type: 3}
       propertyPath: m_SizeDelta.x
