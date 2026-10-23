@@ -6,8 +6,7 @@
   "lastName": "ROUX",
   "firstName": "Denise",
   "age": 76,
-  "familySituation": "Mariée et ancienne chef cuisinière.",
-  "occupationalActivities": "Elle donne des cours de cuisine aux jeunes du quartier.",
+  "lifestyle": "Mariée et ancienne chef cuisinière. Elle donne des cours de cuisine aux jeunes du quartier.",
   "context": "Adressée par un audioprothésiste formé à l'évaluation initiale du programme ICOPE, qui met en évidence un bilan pathologique.",
   "medicalHistory": "Néoplasie mammaire en rémission et une allergie aux crustacés.",
   "steps": [

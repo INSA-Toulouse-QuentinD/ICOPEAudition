@@ -25,8 +25,7 @@ namespace PatientData{
             public string firstName;
             public int age;
 
-            public string familySituation;
-            public string occupationalActivities;
+            public string lifestyle;
             public string context;
             public string medicalHistory;
 
@@ -114,8 +113,7 @@ namespace PatientData{
 
             data.age = dto.age;
 
-            data.familySituation = dto.familySituation;
-            data.occupationalActivities = dto.occupationalActivities;
+            data.lifestyle = dto.lifestyle;
             data.context = dto.context;
 
             data.medicalHistory = dto.medicalHistory;

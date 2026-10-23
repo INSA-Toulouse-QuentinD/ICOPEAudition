@@ -40,21 +40,19 @@ namespace Managers {
         private ScrollRect scrollRect;
         [SerializeField] private List<GameObject> answerGameObjectSprites;
 
-        [Header("Colors answer")]
-        [SerializeField]
-        private Color correctColor;
-
-        [SerializeField] private Color incorrectColor;
+        [Header("Area Answer")]
+        [SerializeField] private RectTransform areaAnswer;
         [SerializeField] private Image backgroundAnswer;
+        [SerializeField] private Sprite goodBackgroundAnswer;
+        [SerializeField] private Sprite badBackgroundAnswer;
+        [SerializeField] private Image backgroundTitle;
+        [SerializeField] private Sprite goodBackgroundTitle;
+        [SerializeField] private Sprite badBackgroundTitle;
+        
 
         [Header("Phone (case presentation)")]
         [SerializeField]
         private Sprite phoneCaseSprite;
-
-        [Header("GameObject Image correction")]
-        [SerializeField]
-        private GameObject doctorGoodExpressionsImages;
-        [SerializeField] private GameObject doctorBadExpressionsImages;
 
         [Header("Questionnary")]
         [SerializeField]
@@ -270,19 +268,21 @@ namespace Managers {
         /// </summary>
         private void SetTextButtonsNavigation() {
             TextMeshProUGUI retourText = returnButton.GetComponentInChildren<TextMeshProUGUI>();
+            AnswerButton retourAnswerButton = returnButton.GetComponent<AnswerButton>();
+            AnswerButton confirmAnswerNextButton = confirmNextButton.GetComponent<AnswerButton>();
 
             if (_interactionState == InteractionState.IsReading) {
                 // update buttons and text
-                returnButton.interactable = false;
+                retourAnswerButton.SetInteractable(false);
                 retourText.text = "Précédent";
-                confirmNextButton.interactable = true;
+                confirmAnswerNextButton.SetInteractable(true);
             }
 
             if (_interactionState == InteractionState.IsAnswering) {
                 // Update button and text
-                returnButton.interactable = true;
+                retourAnswerButton.SetInteractable(true);
                 retourText.text = "Précédent";
-                confirmNextButton.interactable = false;
+                confirmAnswerNextButton.SetInteractable(false);
             }
 
             if (_interactionState == InteractionState.IsCorrection) {
@@ -297,12 +297,12 @@ namespace Managers {
                 }
 
                 if (isValid || GameManager.Instance.alwaysRight) {
-                    returnButton.interactable = GameManager.Instance.alwaysRight;
-                    confirmNextButton.interactable = true;
+                    retourAnswerButton.SetInteractable(GameManager.Instance.alwaysRight);
+                    confirmAnswerNextButton.SetInteractable(true);
                     confirmNextButton.gameObject.SetActive(true);
                 } else {
-                    confirmNextButton.interactable = false;
-                    returnButton.interactable = true;
+                    retourAnswerButton.SetInteractable(true);
+                    confirmAnswerNextButton.SetInteractable(false);
                     retourText.text = "Compris";
                 }
             }
@@ -383,7 +383,7 @@ namespace Managers {
                 choiceButtons[i].onClick.RemoveAllListeners();
                 choiceButtons[i].GetComponent<AnswerButton>().Reset();
                 choiceButtons[i].onClick.AddListener(() => OnAnswerCorrect(answerData, buttonIndex));
-                choiceButtons[i].interactable = !_badTuto || text.text == "Je réalise une vidéo-otoscopie";
+                choiceButtons[i].GetComponent<AnswerButton>().SetInteractable(!_badTuto || text.text == "Je réalise une vidéo-otoscopie");
                 choiceButtons[i].enabled = true;
                 choiceButtons[i].gameObject.SetActive(true);
 
@@ -612,16 +612,12 @@ namespace Managers {
             answerSelected.text = answer.answerText;
 
             // Set background color
-            backgroundAnswer.color = answerCorrect ? correctColor : incorrectColor;
-
-            // Set Doc Expression
-            doctorGoodExpressionsImages.SetActive(answerCorrect);
-            doctorBadExpressionsImages.SetActive(!answerCorrect);
+            backgroundAnswer.sprite = answerCorrect ? goodBackgroundAnswer : badBackgroundAnswer;
+            backgroundTitle.sprite = answerCorrect ? goodBackgroundTitle : badBackgroundTitle;
 
             // Load correction text if not null
             if (answer.correctionText != "") {
-                answerJustification.GetComponent<TextMeshProUGUI>().text =
-                    "<u><b>Justification :</b></u> " + answer.correctionText;
+                answerJustification.GetComponent<TextMeshProUGUI>().text = answer.correctionText;
                 
                 Canvas.ForceUpdateCanvases();
                 scrollRect.verticalNormalizedPosition = 1f;
@@ -629,7 +625,7 @@ namespace Managers {
 
             // Load image if not null
             if (answer.sprites.Count > 0) {
-                scrollViewRect.sizeDelta = new Vector2(1275, 280);
+                areaAnswer.anchoredPosition = new Vector3(-220, 0, 0);
                 
                 int max = Mathf.Min(answer.sprites.Count, answerGameObjectSprites.Count);
                 for (int i = 0; i < max; i++) {
@@ -638,7 +634,7 @@ namespace Managers {
                     answerGameObjectSprites[i].SetActive(true);
                 }
             } else {
-                scrollViewRect.sizeDelta = new Vector2(1275, 600);
+                areaAnswer.anchoredPosition = new Vector3(0, 0, 0);
             }
 
             // Set GameObject active

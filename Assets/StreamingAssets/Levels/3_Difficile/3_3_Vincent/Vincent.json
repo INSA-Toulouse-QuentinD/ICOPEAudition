@@ -6,8 +6,7 @@
   "lastName": "MILANE",
   "firstName": "Vincent",
   "age": 83,
-  "familySituation": "Vit en résidence autonomie. Aime faire du sport et regarder le tour de France à la télévision.",
-  "occupationalActivities": "",
+  "lifestyle": "Vit en résidence autonomie. Aime faire du sport et regarder le tour de France à la télévision.",
   "context": "Mr Milane se plaint de ne plus entendre la télévision, même volume au maximum. Une IDE ICOPE lui a proposé de faire l'évaluation initiale, avec un résultat au test de chuchotement de 0 mots répétés pour les deux oreilles.",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [

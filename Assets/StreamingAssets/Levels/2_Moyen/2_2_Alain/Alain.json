@@ -5,8 +5,7 @@
   "lastName": "THOMAS",
   "firstName": "Alain",
   "age": 79,
-  "familySituation": "Réside seul à domicile en appartement.",
-  "occupationalActivities": "Il est bénévole pour plusieurs associations.",
+  "lifestyle": "Réside seul à domicile en appartement. Il est bénévole pour plusieurs associations.",
   "context": "Il est adressé par son IDE formée à l'évaluation initiale, car le test de chuchotement est pathologique (1 mot répété sur 4 à l'oreille droite, 2 sur 4 à l'oreille gauche).\nIl se plaint également d'une gêne auditive progressive, qui le gêne dans ses activités associatives.\nIl vous est adressé pour une évaluation approfondie de l'audition.",
   "medicalHistory": "Pas d'antécédent connu.",
   "steps": [

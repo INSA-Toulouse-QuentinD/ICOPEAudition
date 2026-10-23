@@ -6,8 +6,7 @@
   "lastName": "BERNIER",
   "firstName": "Rachel",
   "age": 81,
-  "familySituation": "Elle vit seule à domicile, en bonne autonomie.",
-  "occupationalActivities": "Elle adore voyager. Elle travaillait dans une usine.",
+  "lifestyle": "Elle vit seule à domicile, en bonne autonomie. Elle adore voyager. Elle travaillait dans une usine.",
   "context": "Elle a entendu parler d'ICOPE via une campagne à la médiathèque de son quartier. Elle se plaint d'une gêne auditive modérée et d'un « sifflement dans les deux oreilles », présent depuis plusieurs années, mais non invalidant. Elle trouve cela juste fatiguant quand elle est déjà fatiguée, cela lui rappelle sa jeunesse quand elle travaillait encore à l'usine.",
   "medicalHistory": "Aucun antécédent réel connu.",
   "steps": [

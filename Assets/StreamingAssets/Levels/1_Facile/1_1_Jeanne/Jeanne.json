@@ -6,8 +6,7 @@
   "lastName": "DURAND",
   "firstName": "Jeanne",
   "age": 72,
-  "familySituation": "Veuve et ancienne professeure de tango à la retraite.",
-  "occupationalActivities": "Elle continue la danse lors de bals.",
+  "lifestyle": "Veuve et ancienne professeure de tango à la retraite. Elle continue la danse lors de bals.",
   "context": "Mme Durand est adressée par son médecin généraliste. Il a effectué l'évaluation initiale avec un test de chuchotement anormal. Aucun mot restitué à l'oreille droite et un seul mot restitué à l'oreille gauche.",
   "medicalHistory": "Néoplasie mammaire en rémission et des aérateurs trans-tympaniques dans l'enfance.",
   "steps": [

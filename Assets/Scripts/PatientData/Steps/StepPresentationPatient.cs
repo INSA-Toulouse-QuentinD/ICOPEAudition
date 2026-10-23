@@ -18,7 +18,6 @@ namespace PatientData.Steps{
         [SerializeField] private TextMeshProUGUI surnameFields;
         [SerializeField] private TextMeshProUGUI ageFields;
         [SerializeField] private TextMeshProUGUI situationFields;
-        [SerializeField] private TextMeshProUGUI activitiesFields;
 
         // CONTEXT DATA
         [Header("Context field")] [SerializeField]
@@ -34,12 +33,10 @@ namespace PatientData.Steps{
         /// <param name="patientData">Data about the patient to display.</param>
         public void SetPresentationTexts(PatientData patientData){
             // Set profil data
-            nameFields.text = patientData.lastName;
-            surnameFields.text = patientData.firstName;
-            ageFields.text = patientData.age + " ans";
-            situationFields.text = "<u>Mode de vie :</u> " + patientData.familySituation + " " + patientData.occupationalActivities;
-            activitiesFields.text = "";
-            //activitiesFields.text = "<u>Activités occupationnelles :</u> " + patientData.occupationalActivities;
+            nameFields.text = "<font=\"Articulate-ExtraBold SDF\">Nom :</font> " + patientData.lastName.ToUpper();
+            surnameFields.text = "<font=\"Articulate-ExtraBold SDF\">Prénom :</font> " + patientData.firstName;
+            ageFields.text = "<font=\"Articulate-ExtraBold SDF\">Âge :</font> " + patientData.age + " ans";
+            situationFields.text = "<font=\"Articulate-ExtraBold SDF\">Mode de vie :</font> " + patientData.lifestyle;
 
             // Set contexte data
             contextField.text = patientData.context;

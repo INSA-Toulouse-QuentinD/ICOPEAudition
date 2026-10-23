@@ -6,8 +6,7 @@
   "lastName": "MARTIN",
   "firstName": "Elisabeth",
   "age": 67,
-  "familySituation": "Vit seule, sans enfants, il s'agit d'une ancienne professeure de lettres.",
-  "occupationalActivities": "Elle dirige un club de lecture.",
+  "lifestyle": "Vit seule, sans enfants, il s'agit d'une ancienne professeure de lettres. Elle dirige un club de lecture.",
   "context": "Évaluation initiale réalisée en auto-évaluation complétée avec l'auto-dépistage auditif de l'application Höra.",
   "medicalHistory": "Non connus.",
   "steps": [

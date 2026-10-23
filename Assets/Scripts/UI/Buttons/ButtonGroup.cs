@@ -1,12 +1,11 @@
 using UnityEngine;
 
-namespace UI.Buttons{
+namespace UI.Buttons {
     /// <summary>
     /// Manages a group of AnswerButton components, handling selection,
     /// interaction states, and answer validation feedback.
     /// </summary>
-    public class ButtonGroup : MonoBehaviour
-    {
+    public class ButtonGroup : MonoBehaviour {
 
         /// <summary>
         /// Event triggered when a button is selected.
@@ -21,12 +20,10 @@ namespace UI.Buttons{
         /// attaches click listeners to each button to handle clicks,
         /// and resets the buttons to their default state.
         /// </summary>
-        private void Start()
-        {
+        private void Start() {
             _answerButtons = GetComponentsInChildren<AnswerButton>(true);
-            foreach (AnswerButton answerButton in _answerButtons)
-            {
-                answerButton.AssociatedButton.onClick.AddListener(() => OnButtonClicked(answerButton));
+            foreach (AnswerButton answerButton in _answerButtons) {
+                answerButton.button.onClick.AddListener(() => OnButtonClicked(answerButton));
             }
 
             Reset();
@@ -37,13 +34,10 @@ namespace UI.Buttons{
         /// Disables all buttons except the clicked one (unless confirmed).
         /// Sets the selected index and invokes the selection event.
         /// </summary>
-        private void OnButtonClicked(AnswerButton clickedButton)
-        {
-            for (int i = 0; i < _answerButtons.Length; i++)
-            {
+        private void OnButtonClicked(AnswerButton clickedButton) {
+            for (int i = 0; i < _answerButtons.Length; i++) {
                 _answerButtons[i].SetInteractable(_answerButtons[i] != clickedButton && !_answerButtons[i].IsConfirmed);
-                if (_answerButtons[i] == clickedButton)
-                {
+                if (_answerButtons[i] == clickedButton) {
                     SelectedButtonIndex = i;
                 }
             }
@@ -53,8 +47,7 @@ namespace UI.Buttons{
         /// <summary>
         /// Resets all buttons to normal state and clears selection.
         /// </summary>
-        public void Reset()
-        {
+        public void Reset() {
             foreach (AnswerButton answerButton in _answerButtons) answerButton.Reset();
             SelectedButtonIndex = -1;
         }
@@ -62,11 +55,9 @@ namespace UI.Buttons{
         /// <summary>
         /// Marks the button at the given index as correct and disables all buttons.
         /// </summary>
-        public void SetRightAnswer(int index)
-        {
+        public void SetRightAnswer(int index) {
             _answerButtons[index].SetCorrect();
-            foreach (AnswerButton answerButton in _answerButtons)
-            {
+            foreach (AnswerButton answerButton in _answerButtons) {
                 answerButton.SetInteractable(false);
             }
         }
@@ -75,8 +66,7 @@ namespace UI.Buttons{
         /// <summary>
         /// Marks the button at the given index as incorrect and clears selection.
         /// </summary>
-        public void SetWrongAnswer(int index)
-        {
+        public void SetWrongAnswer(int index) {
             _answerButtons[index].SetIncorrect();
             SelectedButtonIndex = -1;
         }
@@ -86,10 +76,8 @@ namespace UI.Buttons{
         /// Calls SetRightAnswer or SetWrongAnswer accordingly.
         /// Logs an error if index is out of range.
         /// </summary>
-        public void SetAnswerValidity(int index, bool isCorrect)
-        {
-            if (index < 0 || index >= _answerButtons.Length)
-            {
+        public void SetAnswerValidity(int index, bool isCorrect) {
+            if (index < 0 || index >= _answerButtons.Length) {
                 Debug.LogError("Button index out of range");
                 return;
             }

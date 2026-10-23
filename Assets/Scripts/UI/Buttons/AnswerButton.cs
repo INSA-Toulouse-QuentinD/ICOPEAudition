@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI.Buttons{
+namespace UI.Buttons {
     /// <summary>
     /// Manages an answer button in the UI with different visual states
     /// for normal, correct, and incorrect answers.
@@ -10,65 +10,50 @@ namespace UI.Buttons{
     /// </summary>
     [RequireComponent(typeof(Button))]
     [RequireComponent(typeof(Image))]
-    public class AnswerButton : MonoBehaviour
-    {
+    public class AnswerButton : MonoBehaviour {
         public bool IsConfirmed { get; private set; }
-        public Button AssociatedButton
-        {
-            get { return _button; }
-        }
-        private Button _button;
-        private TMP_Text _text;
-        private Image _image;
+        [HideInInspector] public Button button;
+        private TMP_Text text;
+        private Image image;
 
-        [Header("Colors")]
-        [SerializeField] private Color _normalColor;
-        [SerializeField] private Color _correctColor;
-        [SerializeField] private Color _incorrectColor;
+        [Header("Colors")] [SerializeField] private Color normalColor;
+        [SerializeField] private Color disableColor;
+        [SerializeField] private Color correctColor;
+        [SerializeField] private Color incorrectColor;
 
         /// <summary>
         /// Initializes references to the Button, TMP_Text, and Image components on the GameObject and its children.
         /// </summary>
-        void Awake()
-        {
-            _button = gameObject.GetComponent<Button>();
-            _text = gameObject.GetComponentInChildren<TMP_Text>();
-            _image = gameObject.GetComponent<Image>();
-        }
-
-        /// <summary> Sets the button's displayed text. </summary>
-        public void SetText(string text)
-        {
-            _text.text = text;
+        void Awake() {
+            button = gameObject.GetComponent<Button>();
+            text = gameObject.GetComponentInChildren<TMP_Text>();
+            image = gameObject.GetComponent<Image>();
         }
 
         /// <summary> Enables or disables interaction on the button. </summary>
-        public void SetInteractable(bool interactable)
-        {
-            _button.interactable = interactable;
+        public void SetInteractable(bool interactable) {
+            button.interactable = interactable;
+            text.color = interactable ? normalColor : disableColor;
         }
 
         /// <summary> Resets the button to its normal state and makes it interactable. </summary>
-        public void Reset()
-        {
+        public void Reset() {
             IsConfirmed = false;
-            _image.color = _normalColor;
+            image.color = normalColor;
             SetInteractable(true);
         }
 
         /// <summary> Marks the button as correct, changes color, and disables interaction. </summary>
-        public void SetCorrect()
-        {
+        public void SetCorrect() {
             IsConfirmed = true;
-            _image.color = _correctColor;
+            image.color = correctColor;
             SetInteractable(false);
         }
 
         /// <summary> Marks the button as incorrect, changes color, and disables interaction. </summary>
-        public void SetIncorrect()
-        {
+        public void SetIncorrect() {
             IsConfirmed = true;
-            _image.color = _incorrectColor;
+            image.color = incorrectColor;
             SetInteractable(false);
         }
     }

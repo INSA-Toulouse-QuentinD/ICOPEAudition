@@ -4,8 +4,7 @@
   "lastName": "BONNET",
   "firstName": "Roger",
   "age": 72,
-  "familySituation": "Marié et un enfant, ancien professeur des écoles.",
-  "occupationalActivities": "",
+  "lifestyle": "Marié et un enfant, ancien professeur des écoles.",
   "context": "Mr Bonnet se plaint d'une gêne auditive droite avec douleurs et écoulements intermittents.\nIl a réalisé une évaluation initiale ainsi qu’un dépistage auditif réalisé par l’audioprothésiste qui suit son épouse. Le résultat du dépistage auditif est anormal. Il vous est adressé pour une évaluation approfondie de l’audition.",
   "medicalHistory": "Diabétique de type 2 mal équilibré.",
   "steps": [

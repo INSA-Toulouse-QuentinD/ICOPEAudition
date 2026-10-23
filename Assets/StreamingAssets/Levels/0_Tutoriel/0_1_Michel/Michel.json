@@ -6,8 +6,7 @@
   "lastName": "DUPONT",
   "firstName": "Michel",
   "age": 68,
-  "familySituation": "Marié avec 3 enfants et retraité de la SNCF.",
-  "occupationalActivities": "Il adore jardiner et raconter ses voyages en trains.",
+  "lifestyle": "Marié avec 3 enfants et retraité de la SNCF. Il adore jardiner et raconter ses voyages en trains.",
   "context": "À la suite de la lecture d'un article dans le journal, Michel a réalisé une auto-évaluation ICOPE. La synthèse de l'évaluation signale qu'il y a peut-être un déclin sur le plan de l'audition. Il a constaté aussi qu'il avait une gêne auditive récente dans le bruit. L'interprétation de l'alerte réalisée par un professionnel de santé formé au programme ICOPE, confirme cette suspicion de déclin et vous l'adresse pour une évaluation auditive. Vous le rencontrez pour la première fois.",
   "medicalHistory": "Dans ses antécédents on retrouve une hypertension artérielle traitée par Ramipril 5mg.",
   "steps": [

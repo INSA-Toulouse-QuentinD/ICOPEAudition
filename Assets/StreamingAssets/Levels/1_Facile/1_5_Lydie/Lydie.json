@@ -6,8 +6,7 @@
   "lastName": "CIBEL",
   "firstName": "Lydie",
   "age": 84,
-  "familySituation": "Vit seule, cette ancienne couturière aime toujours coudre et jardiner.",
-  "occupationalActivities": "",
+  "lifestyle": "Vit seule, cette ancienne couturière aime toujours coudre et jardiner.",
   "context": "Mme Cibel a entendu parler du programme ICOPE par le biais d'une amie. Elle se plaint d'une baisse auditive à gauche depuis quelques semaines, qui l'inquiète un petit peu car elle n'arrive pas à prendre rendez-vous chez un ORL.",
   "medicalHistory": "Pas d'antécédents.",
   "steps": [

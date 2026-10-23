@@ -5,8 +5,7 @@
   "lastName": "LEVEAU",
   "firstName": "Frank",
   "age": 70,
-  "familySituation": "Vit chez lui et est suivi par une infirmière.",
-  "occupationalActivities": "",
+  "lifestyle": "Vit chez lui et est suivi par une infirmière.",
   "context": "Mr Leveau se plaint de moments où il « entend comme dans une bulle ». Il a fait le test Höra à domicile, résultat pathologique. Son infirmière vous l’adresse pour une évaluation approfondie de l'audition.",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [

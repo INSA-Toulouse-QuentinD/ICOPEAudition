@@ -6,8 +6,7 @@
   "lastName": "ROBERT",
   "firstName": "Damien",
   "age": 75,
-  "familySituation": "Vit seul en appartement.",
-  "occupationalActivities": "",
+  "lifestyle": "Vit seul en appartement.",
   "context": "Mr Robert a découvert l’application Höra et l’existence du programme ICOPE via une conférence municipale et a obtenu un résultat pathologique.\nIl est adressé pour une évaluation approfondie de l’audition.",
   "medicalHistory": "Aucun antécédent ORL connu.",
   "steps": [

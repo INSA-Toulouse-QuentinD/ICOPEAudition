@@ -14,9 +14,7 @@ namespace PatientData{
         public string firstName;
         public int age;
 
-        [Header("Fiche patient")] [TextArea] public string familySituation;
-
-        [TextArea] public string occupationalActivities;
+        [Header("Fiche patient")] [TextArea] public string lifestyle;
 
         [TextArea] public string context;
 

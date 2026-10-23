@@ -6,8 +6,7 @@
   "lastName": "FONTAINE",
   "firstName": "Gérard",
   "age": 70,
-  "familySituation": "Ancien agriculteur. Vit en résidence autonomie.",
-  "occupationalActivities": "Il adore jouer aux jeux de société avec ses colocataires.",
+  "lifestyle": "Ancien agriculteur. Vit en résidence autonomie. Il adore jouer aux jeux de société avec ses colocataires.",
   "context": "Il a été repéré par une IDE lors d'un atelier prévention de sa mutuelle, qui véhicule les informations concernant ICOPE. Il se plaint de ne pas toujours comprendre ses interlocuteurs, surtout dans un environnement bruyant.",
   "medicalHistory": "Pas d'antécédent ORL connu.",
   "steps": [

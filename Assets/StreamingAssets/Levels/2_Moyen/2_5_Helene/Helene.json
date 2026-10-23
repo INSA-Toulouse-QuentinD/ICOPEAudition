@@ -5,8 +5,7 @@
   "lastName": "LAMBERT",
   "firstName": "Hélène",
   "age": 81,
-  "familySituation": "Elle vit seule à domicile avec ses deux petits chiens.\nElle apprécie faire de longues balades avec ses animaux.",
-  "occupationalActivities": "",
+  "lifestyle": "Elle vit seule à domicile avec ses deux petits chiens. Elle apprécie faire de longues balades avec ses animaux.",
   "context": "Mme Lambert a entendu parler du programme ICOPE via une campagne de prévention dans son village. Elle se plaint d'une gêne auditive bilatérale apparue depuis quelques mois, accompagnée d'un sifflement permanent dans les deux oreilles. Elle décrit ses acouphènes comme des bruits aigus, \"comparables à des oiseaux\", comme lui dit une amie à elle qui en souffre également. Elle avoue avoir évité plusieurs repas de famille récemment et se sent de plus en plus isolée.",
   "medicalHistory": "Pas d'antécédent connu.",
   "steps": [

@@ -6,8 +6,7 @@
   "lastName": "LEFÈVRE",
   "firstName": "Marie",
   "age": 78,
-  "familySituation": "Elle vit seule à domicile. Ancienne employée de mairie, elle aime bricoler, lire le journal et retrouver ses amis pour jouer aux cartes.",
-  "occupationalActivities": "",
+  "lifestyle": "Elle vit seule à domicile. Ancienne employée de mairie, elle aime bricoler, lire le journal et retrouver ses amis pour jouer aux cartes.",
   "context": "Mme Lefèvre a bénéficié d'une évaluation initiale avec son pharmacien, qui a testé son audition avec l'application Höra. On retrouve une baisse auditive des deux oreilles, confirmée au test de chuchotement. Vous la convoquez pour une évaluation dans le cadre du parcours ICOPE Audition.",
   "medicalHistory": "Pas d'antécédent connu.",
   "steps": [

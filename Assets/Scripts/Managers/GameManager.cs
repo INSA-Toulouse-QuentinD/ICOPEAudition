@@ -279,7 +279,8 @@ namespace Managers{
                 return;
             }
 
-            Instance = this;
+            Instance = this;    
+            playButton.interactable = false;
 
             GameStateManager = GetComponent<GameStateManager>();
             GameData = GetComponent<GameData>();
