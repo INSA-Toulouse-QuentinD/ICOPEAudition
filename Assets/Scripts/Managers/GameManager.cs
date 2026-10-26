@@ -40,7 +40,7 @@ namespace Managers{
             set{
                 int previousMoney = money;
                 money = value;
-                PlayerPrefs.SetInt("money", money);
+                PlayerPrefs.SetInt("money", money); //Debug!!! SET argent
                 OnMoneyChanged?.Invoke(money, money - previousMoney);
             }
         }
@@ -50,7 +50,7 @@ namespace Managers{
             set{
                 bool isEnable = isTutorialEnable;
                 isTutorialEnable = value;
-                PlayerPrefs.SetInt("enableTutorial", isTutorialEnable ? 1 : 0);
+                PlayerPrefs.SetInt("enableTutorial", isTutorialEnable ? 1 : 0); //Debug!!! SET tuto activé
                 OnAssistantDisabled?.Invoke(isTutorialEnable, isEnable);
             }
         }
@@ -66,7 +66,7 @@ namespace Managers{
         public bool alwaysRight;
         public bool forcePositionChoice;
 
-        [HideInInspector, Header("Levels")] [SerializeField]
+        [Header("Levels")] [SerializeField]
         public LevelsData levelsData;
 
         [SerializeField] private GameObject jsonButton;
@@ -209,7 +209,7 @@ namespace Managers{
 
         // SAVE BOUGHT ITEM IN PLAYERPREFS
         public static void AddBoughtItem(string name){
-            PlayerPrefs.SetString("items", $"{name};{PlayerPrefs.GetString("items", "")}");
+            PlayerPrefs.SetString("items", $"{name};{PlayerPrefs.GetString("items", "")}"); //Debug!!! GET items de décoration de la salle d'attente
             PlayerPrefs.Save();
         }
 
@@ -334,8 +334,8 @@ namespace Managers{
 
             LoadListItems();
 
-            Money = PlayerPrefs.GetInt("money", 0);
-            isTutorialEnable = PlayerPrefs.GetInt("enableTutorial") == 1;
+            Money = PlayerPrefs.GetInt("money", 0); //Debug!!! GET argent
+            isTutorialEnable = PlayerPrefs.GetInt("enableTutorial") == 1; //Debug!!! GET tuto activé
             AudioManager.PlayBGM("skyline");
 
             LoadMainMenu();
@@ -347,7 +347,7 @@ namespace Managers{
         private void LoadListItems(){
             Transform items = gameMenu.transform.GetChild(0).GetChild(0).GetChild(0).GetChild(2);
             Transform itemButtons = shopPanel.transform.GetChild(0).GetChild(0).GetChild(1);
-            string[] savedItems = PlayerPrefs.GetString("items", "").Split(";");
+            string[] savedItems = PlayerPrefs.GetString("items", "").Split(";"); //Debug!!! SET items de décoration de la salle d'attente
 
             foreach (string item in savedItems) {
                 if (string.IsNullOrEmpty(item)) continue;

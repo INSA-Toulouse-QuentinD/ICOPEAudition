@@ -11,6 +11,7 @@ namespace PatientData.Steps{
         [SerializeField] private Image imagePatient;
         [SerializeField] private RectTransform porteDocument;
         [SerializeField] private Image imageHhies;
+        [SerializeField] private GameObject zoneOtoscopie;
         [SerializeField] private Image imageOtoscopie;
 
         public void SetText(string text){
@@ -23,12 +24,12 @@ namespace PatientData.Steps{
             
             if (otoscopie) {
                 imageOtoscopie.sprite = otoscopie;
-                imageOtoscopie.enabled = true;
+                zoneOtoscopie.gameObject.SetActive(true);
                 
                 porteDocument.anchoredPosition = new Vector3(690, -200, 0);
                 porteDocument.localScale = new Vector3(0.6f, 0.6f, 0.6f);
             } else {
-                imageOtoscopie.enabled = false;
+                zoneOtoscopie.gameObject.SetActive(false);
                 
                 porteDocument.anchoredPosition = new Vector3(540, 75, 0);
                 porteDocument.localScale = new Vector3(0.85f, 0.85f, 0.85f);

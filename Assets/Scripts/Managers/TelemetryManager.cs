@@ -44,11 +44,11 @@ namespace Managers{
         }
 
         public void SendLevelResult(string levelId, float duration, int wrongAnswers){
-            LevelResultData data = new(){
+            LevelResultData data = new LevelResultData {
                 userId = _userId,
                 levelId = levelId,
                 duration = duration,
-                wrongAnswers = wrongAnswers, //DEBUG!!! juste pour teste ! Doit différentier chaque étape dans la version finale
+                wrongAnswers = wrongAnswers,
                 timestamp = DateTime.UtcNow.ToString("o")
             };
 

@@ -16,6 +16,9 @@ namespace Managers{
         private int _currentLevel;
         private int _currentPatientCase;
         private Dictionary<int, int> _maxPatientCase;
+        private Dictionary<int, int> maxByLevel = new Dictionary<int, int>() {
+            { 0, 1 }, { 1, 5 }, { 2, 5 }, { 3, 4 }
+        };
         private Step _currentStep;
 
         [HideInInspector] public LevelsData levelsData;
@@ -31,7 +34,34 @@ namespace Managers{
             // Set by default current level and current patient case (change later if player has a save)
             _currentLevel = 0;
             _currentPatientCase = 0;
+            UpdateMaxPatientCase();
+        }
+        
+        private void UpdateMaxPatientCase() {
+            int maxSave = PlayerPrefs.GetInt("MaxLevel", 0); //Debug!!! GET nb niveau fini
             _maxPatientCase = new Dictionary<int, int>();
+
+            foreach (KeyValuePair<int, int> level in maxByLevel) {
+                if (maxSave <= 0) {
+                    _maxPatientCase[level.Key] = -1;
+                    continue;
+                }
+
+                int completedCases = Mathf.Min(maxSave, level.Value);
+                _maxPatientCase[level.Key] = completedCases;
+                maxSave -= completedCases;
+            }
+        }
+        
+        private void SaveMaxLevel() {
+            int maxSave = 0;
+
+            foreach (KeyValuePair<int, int> level in _maxPatientCase) {
+                maxSave += Mathf.Max(0, level.Value);
+            }
+            
+            PlayerPrefs.SetInt("MaxLevel", maxSave); //Debug!!! SET nb niveau fini
+            PlayerPrefs.Save();
         }
 
         // MAIN MENU / GAME MENU TRANSITIONS
@@ -181,7 +211,7 @@ namespace Managers{
         /// </summary>
         public void NextPatientCase(){
             _currentPatientCase++;
-            _maxPatientCase[_currentLevel] = _currentPatientCase;
+            _maxPatientCase[_currentLevel] = Mathf.Max(_maxPatientCase[_currentLevel], _currentPatientCase);
             if (_currentPatientCase < _patientCaseLevel.patientsCase.Count) {
                 SetPatientCase(_currentPatientCase, _patientCaseLevel.patientsCase[(int)_currentPatientCase]);
                 ReturnToGameMenu();
@@ -189,10 +219,11 @@ namespace Managers{
                 Debug.Log("Tous les cas patient sont terminer! Next Level !");
                 _currentPatientCase = 0; // Reset patient case
                 _currentLevel++;
-                _maxPatientCase[_currentLevel] = 0;
+                _maxPatientCase[_currentLevel] = Mathf.Max(_maxPatientCase[_currentLevel], 0);
                 // Clear patient case records                 
                 NextLevel();
             }
+            SaveMaxLevel();
         }
 
         /// <summary>
