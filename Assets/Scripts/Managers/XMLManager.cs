@@ -14,9 +14,8 @@ namespace Managers{
     /// </summary>
     public static class XmlManager{
         // Cache simple pour éviter de re-parser le même TextAsset à chaque appel.
-        // Note: si Unity recharge l'asset / change son contenu, son instanceId changera, donc le cache restera cohérent.
-        private static int _cachedTutorialTextAssetInstanceId;
-        private static XmlDocument _cachedTutorialDoc;
+        private static TextAsset cachedTutorialTextAsset;
+        private static XmlDocument cachedTutorialDoc;
 
         /// <summary>
         /// Loads a tutorial entry from an XML TextAsset based on the given step name and entry ID.
@@ -41,14 +40,13 @@ namespace Managers{
 
             // Parse (ou réutilise) le document XML.
             XmlDocument doc;
-            int instanceId = path.GetInstanceID();
-            if (_cachedTutorialDoc != null && _cachedTutorialTextAssetInstanceId == instanceId) {
-                doc = _cachedTutorialDoc;
+            if (cachedTutorialDoc != null && cachedTutorialTextAsset == path) {
+                doc = cachedTutorialDoc;
             } else {
                 doc = new XmlDocument();
                 doc.LoadXml(path.text);
-                _cachedTutorialDoc = doc;
-                _cachedTutorialTextAssetInstanceId = instanceId;
+                cachedTutorialDoc = doc;
+                cachedTutorialTextAsset = path;
             }
 
             XmlNode node = doc.DocumentElement;

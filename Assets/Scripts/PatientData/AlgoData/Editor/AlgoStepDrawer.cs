@@ -160,7 +160,7 @@ namespace PatientData.AlgoData.Editor{
         }
 
         private static ReorderableList GetDiagnosticList(SerializedProperty rootProperty, SerializedProperty arrayProperty){
-            string key = $"{rootProperty.serializedObject.targetObject.GetInstanceID()}|{rootProperty.propertyPath}.diagnosticPhase";
+            string key = $"{rootProperty.serializedObject.targetObject.GetEntityId()}|{rootProperty.propertyPath}.diagnosticPhase";
 
             if (!DiagnosticLists.TryGetValue(key, out ReorderableList list) || list == null) {
                 list = new ReorderableList(rootProperty.serializedObject, arrayProperty, true, false, true, true);
