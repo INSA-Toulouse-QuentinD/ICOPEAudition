@@ -170,6 +170,7 @@ namespace UI.ScoreContents{
                     _pagesSteps[_pageId].GetComponent<PrefabStepDisplayUi>().papier.SetAsLastSibling();
                 }
 
+                _pagesSteps[_pageId].GetComponent<PrefabStepDisplayUi>().papier.SetAsLastSibling();
                 _pagesSteps[_pageId].localScale = new Vector3(Mathf.Lerp(-1, 1, time / duration), 1, 1);
                 _pagesSteps[_pageId].localPosition = new Vector3(Mathf.Lerp(-1150, -389, time / duration), _pagesSteps[_pageId].localPosition.y, 0);
                 time += Time.deltaTime;
@@ -196,7 +197,8 @@ namespace UI.ScoreContents{
                     elementsShowed = true;
                     _pagesSteps[_pageId].GetComponent<PrefabStepDisplayUi>().papier.SetAsFirstSibling();
                 }
-
+                
+                _pagesSteps[_pageId].GetComponent<PrefabStepDisplayUi>().papier.SetAsFirstSibling();
                 _pagesSteps[_pageId].localScale = new Vector3(Mathf.Lerp(1, -1, time / duration), 1, 1);
                 _pagesSteps[_pageId].localPosition = new Vector3(Mathf.Lerp(-389, -1150, time / duration), _pagesSteps[_pageId].localPosition.y, 0);
                 time += Time.deltaTime;
