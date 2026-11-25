@@ -104,15 +104,15 @@ namespace UI.ScoreContents{
                 }
 
                 folderDivider.localScale = new Vector3(Mathf.Lerp(1, -1, time / duration), 1, 1);
-                folderDivider.localPosition = new Vector3(Mathf.Lerp(0, -370, time / duration), 0, 0);
-                folderInside.localPosition = new Vector3(Mathf.Lerp(0, 370, time / duration), 0, 0);
+                folderDivider.localPosition = new Vector3(Mathf.Lerp(370, -780, time / duration), folderDivider.localPosition.y, 0);
+                folderInside.localPosition = new Vector3(Mathf.Lerp(0, 370, time / duration), folderInside.localPosition.y, 0);
                 time += Time.deltaTime;
                 yield return null;
             }
 
             folderDivider.localScale = new Vector3(-1, 1, 1);
-            folderDivider.localPosition = new Vector3(-370, 0, 0);
-            folderInside.localPosition = new Vector3(370, 0, 0);
+            folderDivider.localPosition = new Vector3(-780, folderDivider.localPosition.y, 0);
+            folderInside.localPosition = new Vector3(370, folderInside.localPosition.y, 0);
 
             UITutorialControler.Instance.TutorialMichel(15);
         }
@@ -136,15 +136,15 @@ namespace UI.ScoreContents{
                 }
 
                 folderDivider.localScale = new Vector3(Mathf.Lerp(-1, 1, time / duration), 1, 1);
-                folderDivider.localPosition = new Vector3(Mathf.Lerp(-370, 0, time / duration), 0, 0);
-                folderInside.localPosition = new Vector3(Mathf.Lerp(370, 0, time / duration), 0, 0);
+                folderDivider.localPosition = new Vector3(Mathf.Lerp(-780, 370, time / duration), folderDivider.localPosition.y, 0);
+                folderInside.localPosition = new Vector3(Mathf.Lerp(370, 0, time / duration), folderInside.localPosition.y, 0);
                 time += Time.deltaTime;
                 yield return null;
             }
 
             folderDivider.localScale = new Vector3(1, 1, 1);
-            folderDivider.localPosition = new Vector3(0, 0, 0);
-            folderInside.localPosition = new Vector3(0, 0, 0);
+            folderDivider.localPosition = new Vector3(370, folderDivider.localPosition.y, 0);
+            folderInside.localPosition = new Vector3(0, folderInside.localPosition.y, 0);
         }
 
         private void SwitchPages(bool nextPage){
