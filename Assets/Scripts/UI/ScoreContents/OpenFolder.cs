@@ -14,6 +14,7 @@ namespace UI.ScoreContents{
         [SerializeField] private Button[] pagesNavigationButs;
 
         [SerializeField] private GameObject prefab;
+        [SerializeField] private Transform buttonChangePage;
         [SerializeField] private Transform parentTransform;
 
         private bool _folderOpen;
@@ -72,6 +73,7 @@ namespace UI.ScoreContents{
                 stepNumber++;
             }
 
+            buttonChangePage.SetAsLastSibling();
             _pagesSteps[0].gameObject.SetActive(true);
         }
 
@@ -162,24 +164,23 @@ namespace UI.ScoreContents{
 
             float time = 0;
             bool elementsHided = false;
-            _pagesSteps[_pageId].GetComponent<Image>().color = new Color(1, 1, 1, 1);
             while (time < duration) {
                 if (!elementsHided && time >= duration / 2) {
                     elementsHided = true;
-                    _pagesSteps[_pageId].GetChild(0).gameObject.SetActive(false);
+                    _pagesSteps[_pageId].GetComponent<PrefabStepDisplayUi>().papier.SetAsLastSibling();
                 }
 
                 _pagesSteps[_pageId].localScale = new Vector3(Mathf.Lerp(-1, 1, time / duration), 1, 1);
-                _pagesSteps[_pageId].localPosition = new Vector3(Mathf.Lerp(-742, -30, time / duration), 0, 0);
+                _pagesSteps[_pageId].localPosition = new Vector3(Mathf.Lerp(-1150, -389, time / duration), _pagesSteps[_pageId].localPosition.y, 0);
                 time += Time.deltaTime;
                 yield return null;
             }
 
             _pagesSteps[_pageId].localScale = new Vector3(1, 1, 1);
-            _pagesSteps[_pageId].localPosition = new Vector3(-30, 0, 0);
-            _pagesSteps[_pageId].GetComponent<Image>().color = new Color(0.97f, 0.97f, 0.97f, 1);
+            _pagesSteps[_pageId].localPosition = new Vector3(-389, _pagesSteps[_pageId].localPosition.y, 0);
             _pageId++;
             HideButtons();
+            buttonChangePage.SetAsLastSibling();
         }
 
         private IEnumerator PreviousPage(float duration){
@@ -190,24 +191,23 @@ namespace UI.ScoreContents{
             _pageId--;
             float time = 0;
             bool elementsShowed = false;
-            _pagesSteps[_pageId].GetComponent<Image>().color = new Color(1, 1, 1, 1);
             while (time < duration) {
                 if (!elementsShowed && time >= duration / 2) {
                     elementsShowed = true;
-                    _pagesSteps[_pageId].GetChild(0).gameObject.SetActive(true);
+                    _pagesSteps[_pageId].GetComponent<PrefabStepDisplayUi>().papier.SetAsFirstSibling();
                 }
 
                 _pagesSteps[_pageId].localScale = new Vector3(Mathf.Lerp(1, -1, time / duration), 1, 1);
-                _pagesSteps[_pageId].localPosition = new Vector3(Mathf.Lerp(-30, -742, time / duration), 0, 0);
+                _pagesSteps[_pageId].localPosition = new Vector3(Mathf.Lerp(-389, -1150, time / duration), _pagesSteps[_pageId].localPosition.y, 0);
                 time += Time.deltaTime;
                 yield return null;
             }
 
             _pagesSteps[_pageId].localScale = new Vector3(-1, 1, 1);
-            _pagesSteps[_pageId].localPosition = new Vector3(-742, 0, 0);
-            _pagesSteps[_pageId].GetComponent<Image>().color = new Color(0.97f, 0.97f, 0.97f, 1);
+            _pagesSteps[_pageId].localPosition = new Vector3(-1150, _pagesSteps[_pageId].localPosition.y, 0);
             _pagesSteps[_pageId].SetParent(folderInside);
             HideButtons();
+            buttonChangePage.SetAsLastSibling();
         }
 
         private void InteractableButtons(bool interactable){

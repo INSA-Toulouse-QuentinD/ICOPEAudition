@@ -12,6 +12,8 @@ namespace UI.ScoreContents{
         [Header("Sprite")] [SerializeField] private Sprite correctSprite;
         [SerializeField] private Sprite incorrectSprite;
 
+        public RectTransform papier;
+
         public void SetText(string stepName, List<string> diagAnswer, List<string> actionAnswer, int stepNumber){
             HideFields();
 
@@ -70,6 +72,18 @@ namespace UI.ScoreContents{
                     break;
                 case Step.Audiometry:
                     realName = $"Etape {stepNumber}: Audiométrie";
+                    break;
+                case Step.Telephone:
+                    realName = $"Etape {stepNumber}: Echange téléphonique";
+                    break;
+                case Step.HhiesWeber:
+                    realName = $"Etape {stepNumber}: Test HHIE-S + Test Weber";
+                    break;
+                case Step.AudiometryVocale:
+                    realName = $"Etape {stepNumber}: Audiométrie Vocale";
+                    break;
+                case Step.GoNoGoOtoscopy:
+                    realName = $"Etape {stepNumber}: Questionnaire Go - No Go + Vidéo otoscopie";
                     break;
             }
 

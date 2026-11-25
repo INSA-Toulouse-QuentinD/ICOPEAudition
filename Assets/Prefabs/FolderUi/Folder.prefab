@@ -4584,6 +4584,7 @@ MonoBehaviour:
   - {fileID: 2382589044113311657}
   - {fileID: 1115963472380244250}
   prefab: {fileID: 3546430388443936348, guid: 284a2425908c69c4b91fc413669c2ebd, type: 3}
+  buttonChangePage: {fileID: 2887155352926580126}
   parentTransform: {fileID: 6504489142346460351}
   happyDisplay: {fileID: 0}
 --- !u!1 &9173529136289137796

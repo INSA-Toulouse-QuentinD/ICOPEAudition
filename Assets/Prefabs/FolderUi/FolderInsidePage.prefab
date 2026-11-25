@@ -1510,6 +1510,7 @@ MonoBehaviour:
     image: {fileID: 5505066493347798158}
   correctSprite: {fileID: 21300000, guid: f47aac33dbfe6d54a8549de2bbffacbb, type: 3}
   incorrectSprite: {fileID: 21300000, guid: 362b6fdfa50db6848a0a947934323b07, type: 3}
+  papier: {fileID: 9093995653195039447}
 --- !u!1 &3816027518177819376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,8 +2564,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Action :'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dbc4397628baf4f4e84bffeaeb8db000, type: 2}
-  m_sharedMaterial: {fileID: 8306023203111371572, guid: dbc4397628baf4f4e84bffeaeb8db000, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3515,8 +3516,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Diagnostic :'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dbc4397628baf4f4e84bffeaeb8db000, type: 2}
-  m_sharedMaterial: {fileID: 8306023203111371572, guid: dbc4397628baf4f4e84bffeaeb8db000, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
